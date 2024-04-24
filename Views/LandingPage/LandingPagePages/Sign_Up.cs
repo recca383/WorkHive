@@ -16,5 +16,7 @@ namespace WorkHive.Views.LandingPage.LandingPagePages
         {
             InitializeComponent();
         }
+
+
     }
 }

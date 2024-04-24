@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WorkHive.Controller;
+using WorkHive.Views;
 using WorkHive.Views.LandingPage;
 
 namespace WorkHive

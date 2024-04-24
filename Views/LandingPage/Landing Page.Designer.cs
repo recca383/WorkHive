@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.LandingPageViewPanel = new System.Windows.Forms.FlowLayoutPanel();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.LandingPageViewPanel = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -47,14 +47,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(636, 657);
             this.panel1.TabIndex = 0;
-            // 
-            // LandingPageViewPanel
-            // 
-            this.LandingPageViewPanel.Dock = System.Windows.Forms.DockStyle.Right;
-            this.LandingPageViewPanel.Location = new System.Drawing.Point(632, 0);
-            this.LandingPageViewPanel.Name = "LandingPageViewPanel";
-            this.LandingPageViewPanel.Size = new System.Drawing.Size(495, 657);
-            this.LandingPageViewPanel.TabIndex = 1;
             // 
             // label2
             // 
@@ -84,6 +76,14 @@
             this.pictureBox1.TabIndex = 6;
             this.pictureBox1.TabStop = false;
             // 
+            // LandingPageViewPanel
+            // 
+            this.LandingPageViewPanel.Dock = System.Windows.Forms.DockStyle.Right;
+            this.LandingPageViewPanel.Location = new System.Drawing.Point(633, 0);
+            this.LandingPageViewPanel.Name = "LandingPageViewPanel";
+            this.LandingPageViewPanel.Size = new System.Drawing.Size(494, 657);
+            this.LandingPageViewPanel.TabIndex = 1;
+            // 
             // Landing_Page
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -103,9 +103,9 @@
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.FlowLayoutPanel LandingPageViewPanel;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
+        public System.Windows.Forms.Panel LandingPageViewPanel;
     }
 }

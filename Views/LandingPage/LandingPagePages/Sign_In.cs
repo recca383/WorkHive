@@ -12,9 +12,21 @@ namespace WorkHive.Views.LandingPage.LandingPagePages
 {
     public partial class Sign_In : UserControl
     {
+
+        Landing_Page landingpage;
+        
         public Sign_In()
         {
             InitializeComponent();
+            landingpage = new Landing_Page();
+        }
+
+        private void btnSignUp_Click(object sender, EventArgs e)
+        {
+            Panel panel = landingpage.LandingPageViewPanel;
+            Sign_Up signup = new Sign_Up();
+            panel.Controls.Add(signup);
+            signup.BringToFront();
         }
     }
 }

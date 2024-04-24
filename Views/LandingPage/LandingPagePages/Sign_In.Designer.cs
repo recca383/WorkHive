@@ -45,6 +45,7 @@
             this.btnSignUp.Size = new System.Drawing.Size(123, 16);
             this.btnSignUp.TabIndex = 12;
             this.btnSignUp.Text = "New here? Sign-Up";
+            this.btnSignUp.Click += new System.EventHandler(this.btnSignUp_Click);
             // 
             // btnSignIn
             // 
@@ -89,7 +90,7 @@
             this.label3.TabIndex = 7;
             this.label3.Text = "Welcome!";
             // 
-            // Sign_Up
+            // Sign_In
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -99,7 +100,7 @@
             this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.btnForgotPass);
             this.Controls.Add(this.label3);
-            this.Name = "Sign_Up";
+            this.Name = "Sign_In";
             this.Size = new System.Drawing.Size(495, 657);
             this.ResumeLayout(false);
             this.PerformLayout();
