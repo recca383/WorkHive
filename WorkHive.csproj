@@ -35,6 +35,8 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing.Design" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -46,16 +48,56 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Views\Landing Page.cs">
+    <Compile Include="Controller\DashboardNavigation.cs" />
+    <Compile Include="Views\Admin\Dashboard-Admin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\Landing Page.Designer.cs">
-      <DependentUpon>Landing Page.cs</DependentUpon>
+    <Compile Include="Views\Admin\Dashboard-Admin.Designer.cs">
+      <DependentUpon>Dashboard-Admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Admin\DashboardPages\EmployeesView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Admin\DashboardPages\EmployeesView.Designer.cs">
+      <DependentUpon>EmployeesView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Admin\DashboardPages\TasksView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Admin\DashboardPages\TasksView.Designer.cs">
+      <DependentUpon>TasksView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\LandingPage\Landing Page - Sign In.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\LandingPage\Landing Page - Sign In.Designer.cs">
+      <DependentUpon>Landing Page - Sign In.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Views\Landing Page.resx">
-      <DependentUpon>Landing Page.cs</DependentUpon>
+    <Compile Include="Views\Admin\DashboardPages\DashboardView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Admin\DashboardPages\DashboardView.Designer.cs">
+      <DependentUpon>DashboardView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\LandingPage\LandingPagePages\Sign_Up.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\LandingPage\LandingPagePages\Sign_Up.Designer.cs">
+      <DependentUpon>Sign_Up.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Views\Admin\Dashboard-Admin.resx">
+      <DependentUpon>Dashboard-Admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Admin\DashboardPages\EmployeesView.resx">
+      <DependentUpon>EmployeesView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Admin\DashboardPages\TasksView.resx">
+      <DependentUpon>TasksView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\LandingPage\Landing Page - Sign In.resx">
+      <DependentUpon>Landing Page - Sign In.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -66,6 +108,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Views\Admin\DashboardPages\DashboardView.resx">
+      <DependentUpon>DashboardView.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
