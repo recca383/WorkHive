@@ -9,21 +9,36 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using WorkHive.Controller;
+using WorkHive.Views.Admin.DashboardPages;
 using WorkHive.Views.LandingPage.LandingPagePages;
+using WorkHive.Views.Pages;
 
 namespace WorkHive.Views.LandingPage
 {
     public partial class Landing_Page : Form
     {
-        
+        static DashboardNavigation dashboardNavigation;
         public Landing_Page()
         {
-            Sign_In sign_In = new Sign_In();
             InitializeComponent();
-            LandingPageViewPanel.Controls.Add(sign_In);
-            sign_In.BringToFront();
+            Initialize_Navigation_Controls();
         }
+        private void Initialize_Navigation_Controls()
+        {
+            List<UserControl> list = new List<UserControl>()
+            { new Sign_In(), new Sign_Up() };
 
+            dashboardNavigation = new DashboardNavigation(list, LandingPageViewPanel);
+            dashboardNavigation.Display(0);
+        }
+        public static void btnSign_InEvent()
+        {
+            dashboardNavigation.Display(0);
+        }
+        public static void btnSign_UpEvent()
+        {
+            dashboardNavigation.Display(1);
+        }
 
 
     }

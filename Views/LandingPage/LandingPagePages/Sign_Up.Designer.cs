@@ -39,7 +39,7 @@
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
+            this.btnSignIn = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label3
@@ -142,22 +142,23 @@
     "";
             this.label6.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // label7
+            // btnSignIn
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(145, 578);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(190, 20);
-            this.label7.TabIndex = 22;
-            this.label7.Text = "I already have an account";
-            this.label7.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnSignIn.AutoSize = true;
+            this.btnSignIn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSignIn.Location = new System.Drawing.Point(145, 578);
+            this.btnSignIn.Name = "btnSignIn";
+            this.btnSignIn.Size = new System.Drawing.Size(190, 20);
+            this.btnSignIn.TabIndex = 22;
+            this.btnSignIn.Text = "I already have an account";
+            this.btnSignIn.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnSignIn.Click += new System.EventHandler(this.btnSignIn_Click);
             // 
             // Sign_Up
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.label7);
+            this.Controls.Add(this.btnSignIn);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label5);
@@ -189,6 +190,6 @@
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label btnSignIn;
     }
 }

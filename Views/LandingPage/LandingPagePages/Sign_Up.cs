@@ -17,6 +17,9 @@ namespace WorkHive.Views.LandingPage.LandingPagePages
             InitializeComponent();
         }
 
-
+        private void btnSignIn_Click(object sender, EventArgs e)
+        {
+            Landing_Page.btnSign_InEvent();
+        }
     }
 }
