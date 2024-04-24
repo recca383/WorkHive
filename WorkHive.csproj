@@ -67,12 +67,6 @@
     <Compile Include="Views\Admin\DashboardPages\TasksView.Designer.cs">
       <DependentUpon>TasksView.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\LandingPage\Landing Page - Sign In.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Views\LandingPage\Landing Page - Sign In.Designer.cs">
-      <DependentUpon>Landing Page - Sign In.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Views\Admin\DashboardPages\DashboardView.cs">
@@ -80,6 +74,18 @@
     </Compile>
     <Compile Include="Views\Admin\DashboardPages\DashboardView.Designer.cs">
       <DependentUpon>DashboardView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\LandingPage\Landing Page.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\LandingPage\Landing Page.Designer.cs">
+      <DependentUpon>Landing Page.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\LandingPage\LandingPagePages\Sign_In.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\LandingPage\LandingPagePages\Sign_In.Designer.cs">
+      <DependentUpon>Sign_In.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\LandingPage\LandingPagePages\Sign_Up.cs">
       <SubType>UserControl</SubType>
@@ -96,9 +102,6 @@
     <EmbeddedResource Include="Views\Admin\DashboardPages\TasksView.resx">
       <DependentUpon>TasksView.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\LandingPage\Landing Page - Sign In.resx">
-      <DependentUpon>Landing Page - Sign In.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -110,6 +113,15 @@
     </Compile>
     <EmbeddedResource Include="Views\Admin\DashboardPages\DashboardView.resx">
       <DependentUpon>DashboardView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\LandingPage\Landing Page.resx">
+      <DependentUpon>Landing Page.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\LandingPage\LandingPagePages\Sign_In.resx">
+      <DependentUpon>Sign_In.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\LandingPage\LandingPagePages\Sign_Up.resx">
+      <DependentUpon>Sign_Up.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

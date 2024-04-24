@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace WorkHive
+namespace WorkHive.Views.LandingPage
 {
-    public partial class Form1 : Form
+    public partial class Landing_Page : Form
     {
-        public Form1()
+        public Landing_Page()
         {
             InitializeComponent();
         }
