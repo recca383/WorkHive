@@ -149,6 +149,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="Views\Admin\DashboardPages\DashboardView.resx">
       <DependentUpon>DashboardView.cs</DependentUpon>
@@ -180,6 +181,39 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Button - Dashboard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Button -  Menu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Button -  Mail.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Button -  Calendar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Button - Edit Tasks.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Button - Tasks.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Button - Employees.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sidebar BG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Button - Notification.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Button - User Profile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Button - Bullet.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

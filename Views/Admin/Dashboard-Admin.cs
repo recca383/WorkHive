@@ -15,6 +15,8 @@ namespace WorkHive.Views
 {
     public partial class Dashboard_Admin : Form
     {
+        
+
         DashboardNavigation dashboardNavigation;
         public Dashboard_Admin()
         {
@@ -44,6 +46,91 @@ namespace WorkHive.Views
         private void btnTasks_Click(object sender, EventArgs e)
         {
             dashboardNavigation.Display(2);
+        }
+
+        private void Dashboard_Admin_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        bool sidebarExpand;
+
+        private void sidebarTimer_Tick(object sender, EventArgs e)
+        {
+            // if sidebar is expanded, minimize
+            if (sidebarExpand)
+            {
+                sidebar.Width -= 10;
+                if (sidebar.Width <= 70)
+                {
+                    sidebarExpand = false;
+                    sidebarTransition.Stop();
+
+                    pnDashBoard.Width = sidebar.Width;
+                    pnEmployees.Width = sidebar.Width;
+                    pnTasks.Width = sidebar.Width;
+                    edittasksContainer.Width = sidebar.Width;
+                    pnCalendar.Width = sidebar.Width;
+                    pnMail.Width = sidebar.Width;
+
+                }
+            }
+            else
+            {
+                sidebar.Width += 10;
+                if (sidebar.Width >= 191)
+                {
+                    sidebarExpand = true;
+                    sidebarTransition.Stop();
+
+                    pnDashBoard.Width = sidebar.Width;
+                    pnEmployees.Width = sidebar.Width;
+                    pnTasks.Width = sidebar.Width;
+                    edittasksContainer.Width = sidebar.Width;
+                    pnCalendar.Width = sidebar.Width;
+                    pnMail.Width = sidebar.Width;
+
+                }
+            }
+        }
+
+        bool edittasksExpand; 
+      
+        private void edittasksTransition_Tick(object sender, EventArgs e)
+        {
+            if (edittasksExpand == false)
+            {
+                edittasksContainer.Height += 10;
+                if (edittasksContainer.Height >= 159)
+                {
+                    edittasksTransition.Stop();
+                    edittasksExpand = true;
+                }
+            }
+            else
+            {
+                edittasksContainer.Height -= 10;
+                if (edittasksContainer.Height <= 65)
+                {
+                    edittasksTransition.Stop();
+                    edittasksExpand = false;
+                }
+            }
+        }
+
+        private void bunifuButton4_Click(object sender, EventArgs e)
+        {
+            edittasksTransition.Start();
+        }
+
+        private void btnHam_Click(object sender, EventArgs e)
+        {
+            sidebarTransition.Start();
         }
     }
 }
