@@ -117,19 +117,18 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <metadata name="bunifuElipse1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="bunifuVScrollBar1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="TaskProgress.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAABIAAAHyCAYAAADm/Z5hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHkSURBVHhe7dCvTsNQHEfxSiQSieQRkEgeA0OCwSMRSBSC
-        lyCZw7abIqi9AQrUSMafAAkT8O0oSSkNZ1uQ5yafld77u4dsRXdVVbURR3E5HA4n8dGYZK+M49hqxvtX
-        BvZz4X40Gs1agT6PmT1trv1c9X/LwEPnwl+e4zr31prEPHKYzafW0ELKsnzL8+w7spmXaXtgSdM0tuvQ
-        SV7oNyEX379N3+HC0ripQ699h8sq+jZXYYgZYoaYIWaIGWKGmCFmiBlihpghZogZYoaYIWaIGWKGmCFm
-        iBlihpghZogZYoaYIWaIGWKGmCFmiBlihpghZogZYoaYIWaIGWKGmCFmiBlihpghZogZYoaYIWaIGWKG
-        mCFmiBlihpghZogZYoaYIWaIGWKGmCFmiBlihpghZogZYoaYIWaIGWKGmCFmiBlihpghZogZYoaYIWaI
-        GWKGmCFmiBlihpghZogZYoaYIWaIGWKGmCFmiBlihpghZogZYoaYIWaIGWKGmCFmiBlihpgh9q+hWXdz
-        FXVo3N1cwaQOnXc2l1ZVVVnkYycv0+7hEp7T2CvqlT8G8d4ztIjxPFKvRNbiboXYbe5sNJmvlY31GORw
-        ka/5EuNfkfbK4W6GrvJ8bF2cy95rnnXgoBlvVlF8AuIvKwfAbVX4AAAAAElFTkSuQmCC
+        iVBORw0KGgoAAAANSUhEUgAAAmMAAAAKCAYAAAD4rFnGAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADXSURBVHhe7dwxTsMwGAbQHIORJQ7qhFQbVkbGqnWAkZEj
+        MPZWHAluABNtnARVKhmxxPA+6cmK/B/gk624EREREZF/klXqL7r17q5L/R4AgL8XUr7vbh8v5/p1Spv6
+        6xDz+zB0AACgopg/h/V5rmHTidhQxD5+DQIAUEfMX+UwbCxj4eZhszgEAEA1IfWvYxkbPsod5uIQAADV
+        7H/K2MvZBgAA9U1lLKy3VwubAADU8V3W8mflWMZKyp3l2RAAALXE/DbXsFPGdy/mNzAAAKijjflpal9N
+        cwSvgboHaQvgoAAAAABJRU5ErkJggg==
 </value>
   </data>
 </root>

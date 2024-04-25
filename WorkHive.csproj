@@ -33,10 +33,29 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Bunifu.Core, Version=1.11.5.1, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9" />
+    <Reference Include="Bunifu.UI.WinForms.BunifuLabel">
+      <HintPath>D:\Coding\Bunifu_UI_WinForms_1.11.5.1\Bunifu_UI_WinForms_1.11.5.1\Bunifu.UI.WinForms.BunifuLabel.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuPictureBox">
+      <HintPath>D:\Coding\Bunifu_UI_WinForms_1.11.5.1\Bunifu_UI_WinForms_1.11.5.1\Bunifu.UI.WinForms.BunifuPictureBox.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuProgressBar">
+      <HintPath>D:\Coding\Bunifu_UI_WinForms_1.11.5.1\Bunifu_UI_WinForms_1.11.5.1\Bunifu.UI.WinForms.BunifuProgressBar.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuScrollBar">
+      <HintPath>D:\Coding\Bunifu_UI_WinForms_1.11.5.1\Bunifu_UI_WinForms_1.11.5.1\Bunifu.UI.WinForms.BunifuScrollBar.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu_UI_v1.5.3">
+      <HintPath>D:\Coding\Bunifu_UI_WinForms_1.11.5.1\Bunifu_UI_WinForms_1.11.5.1\Bunifu_UI_v1.5.3.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Design" />
     <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -49,17 +68,19 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controller\DashboardNavigation.cs" />
+    <Compile Include="Model\SampleMemberModel.cs" />
+    <Compile Include="Model\SampleTaskModel.cs" />
     <Compile Include="Views\Admin\Dashboard-Admin.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Views\Admin\Dashboard-Admin.Designer.cs">
       <DependentUpon>Dashboard-Admin.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\Admin\DashboardPages\EmployeesView.cs">
+    <Compile Include="Views\Admin\DashboardPages\MemberView.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Views\Admin\DashboardPages\EmployeesView.Designer.cs">
-      <DependentUpon>EmployeesView.cs</DependentUpon>
+    <Compile Include="Views\Admin\DashboardPages\MemberView.Designer.cs">
+      <DependentUpon>MemberView.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\Admin\DashboardPages\TasksView.cs">
       <SubType>UserControl</SubType>
@@ -74,6 +95,18 @@
     </Compile>
     <Compile Include="Views\Admin\DashboardPages\DashboardView.Designer.cs">
       <DependentUpon>DashboardView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Cards\ProfileCard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Cards\ProfileCard.Designer.cs">
+      <DependentUpon>ProfileCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Cards\TaskCard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Cards\TaskCard.Designer.cs">
+      <DependentUpon>TaskCard.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\LandingPage\Landing Page.cs">
       <SubType>Form</SubType>
@@ -96,8 +129,8 @@
     <EmbeddedResource Include="Views\Admin\Dashboard-Admin.resx">
       <DependentUpon>Dashboard-Admin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\Admin\DashboardPages\EmployeesView.resx">
-      <DependentUpon>EmployeesView.cs</DependentUpon>
+    <EmbeddedResource Include="Views\Admin\DashboardPages\MemberView.resx">
+      <DependentUpon>MemberView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\Admin\DashboardPages\TasksView.resx">
       <DependentUpon>TasksView.cs</DependentUpon>
@@ -113,6 +146,12 @@
     </Compile>
     <EmbeddedResource Include="Views\Admin\DashboardPages\DashboardView.resx">
       <DependentUpon>DashboardView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Cards\ProfileCard.resx">
+      <DependentUpon>ProfileCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Cards\TaskCard.resx">
+      <DependentUpon>TaskCard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\LandingPage\Landing Page.resx">
       <DependentUpon>Landing Page.cs</DependentUpon>

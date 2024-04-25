@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace WorkHive.Views.Admin.DashboardPages
+namespace WorkHive.Views.Cards
 {
-    public partial class EmployeesView : UserControl
+    public partial class TaskCard : UserControl
     {
-        public EmployeesView()
+        public TaskCard()
         {
             InitializeComponent();
         }

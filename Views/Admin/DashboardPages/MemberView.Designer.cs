@@ -1,6 +1,6 @@
 ﻿namespace WorkHive.Views.Admin.DashboardPages
 {
-    partial class EmployeesView
+    partial class MemberView
     {
         /// <summary> 
         /// Required designer variable.
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.Employees = new System.Windows.Forms.Label();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.MembersFlow = new System.Windows.Forms.FlowLayoutPanel();
             this.SuspendLayout();
             // 
             // Employees
@@ -38,22 +38,22 @@
             this.Employees.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Employees.Location = new System.Drawing.Point(29, 28);
             this.Employees.Name = "Employees";
-            this.Employees.Size = new System.Drawing.Size(203, 42);
+            this.Employees.Size = new System.Drawing.Size(173, 42);
             this.Employees.TabIndex = 1;
-            this.Employees.Text = "Employees";
+            this.Employees.Text = "Members";
             // 
-            // flowLayoutPanel1
+            // MembersFlow
             // 
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(82, 88);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(810, 498);
-            this.flowLayoutPanel1.TabIndex = 2;
+            this.MembersFlow.Location = new System.Drawing.Point(82, 88);
+            this.MembersFlow.Name = "MembersFlow";
+            this.MembersFlow.Size = new System.Drawing.Size(810, 498);
+            this.MembersFlow.TabIndex = 2;
             // 
             // EmployeesView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.flowLayoutPanel1);
+            this.Controls.Add(this.MembersFlow);
             this.Controls.Add(this.Employees);
             this.Name = "EmployeesView";
             this.Size = new System.Drawing.Size(932, 586);
@@ -65,6 +65,6 @@
         #endregion
 
         private System.Windows.Forms.Label Employees;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private System.Windows.Forms.FlowLayoutPanel MembersFlow;
     }
 }
