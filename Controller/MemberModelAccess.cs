@@ -21,8 +21,8 @@ namespace WorkHive.Controller
                 Username = "recca383",
                 Password = "123",
                 IsLeader = true,
-                Profile_Pic = "Resources\\Default_Admin_Pics\\tatik.jpg",
-                TaskID = TaskModelAccess.GetTaskInfo(1)
+                Profile_Pic = "Resources\\Default_Admin_Pics\\tatik.jpg"
+
             },
             {
             new MemberModel()
@@ -32,8 +32,8 @@ namespace WorkHive.Controller
                 Username = "joko",
                 Password = "123",
                 IsLeader = true,
-                Profile_Pic = "Resources\\Default_Admin_Pics\\joko.jpg",
-                TaskID = TaskModelAccess.GetTaskInfo(2)
+                Profile_Pic = "Resources\\Default_Admin_Pics\\joko.jpg"
+
             }
             },
             {
@@ -44,8 +44,7 @@ namespace WorkHive.Controller
                 Username = "Wincel",
                 Password = "123",
                 IsLeader = true,
-                Profile_Pic = "Resources\\Default_Admin_Pics\\wincel.jpg",
-                TaskID = TaskModelAccess.GetTaskInfo(3)
+                Profile_Pic = "Resources\\Default_Admin_Pics\\wincel.jpg"
 
             }
             }
