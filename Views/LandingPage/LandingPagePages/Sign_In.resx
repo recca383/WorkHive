@@ -120,22 +120,22 @@
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="btnForgotPass.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAAJIAAAAaCAYAAABcmAU7AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAlSURBVGhD7cEBAQAAAIIg/69uSEAAAAAAAAAAAAAAAAAA
-        AHCoBjtqAAFSe3UEAAAAAElFTkSuQmCC
+        iVBORw0KGgoAAAANSUhEUgAAAMMAAAAgCAYAAACvr8yGAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAAvSURBVHhe7cEBDQAAAMKg909tDwcEAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAABwrQZhoAABHbDIxQAAAABJRU5ErkJggg==
 </value>
   </data>
   <data name="btnSignUp.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAAIoAAAAaCAYAAABo4cQnAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAlSURBVGhD7cEBDQAAAMKg909tDjcgAAAAAAAAAAAAAAAA
-        AOBWDTgqAAG8KrquAAAAAElFTkSuQmCC
+        iVBORw0KGgoAAAANSUhEUgAAALgAAAAgCAYAAAChBrLpAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAAuSURBVHhe7cExAQAAAMKg9U9tCy8gAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAOCkBlwgAAHSE/deAAAAAElFTkSuQmCC
 </value>
   </data>
   <data name="btnSignIn.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAcoAAAAlCAYAAADC+ak/AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        DgAACw4BQL7hQQAAS/VJREFUeF6FnefXrmlR5ftLN5hbRcwBMwZURDFnMYEg5kDQMWLgwPwBugZMOBJM
+        DAAACwwBP0AiyAAAS/VJREFUeF6FnefXrmlR5ftLN5hbRcwBMwZURDFnMYEg5kDQMWLgwPwBugZMOBJM
         iAFFxYytqKOog6AiOgbUwRyOQPfpk0OfwHy6n6m9d+2quu7nbTxr7VXX/XZ//61fVV3Xc9tJ/66cPnXn
         jdedOnXrP0/dFTkdOdz8z6cebv3nU7ebp596UL6NuXX627ab/xHn//jWw62q37Ldinrz35Fvqdz4t28+
         3Kw8Zbvxr0853Dwp//JNUb9pu4H6L9+43fjnb2SNHG788zccbv7zN2w3/ukbDjf+6etxVv2nr99u/CPq

@@ -16,6 +16,7 @@ namespace WorkHive.Views.LandingPage.LandingPagePages
         public Sign_In()
         {
             InitializeComponent();
+
         }
 
         private void btnSignUp_Click(object sender, EventArgs e)
@@ -57,5 +58,29 @@ namespace WorkHive.Views.LandingPage.LandingPagePages
             }
             
         }
+
+        private void txtEmail_OnValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtEmail_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                txtPassword.Focus();
+            }
+        }
+
+       /* private void txtPassword_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                btnSignIn.PeformClick();
+              
+            } di gumagana sa flat button :(
+        }*/
+
+
     }
 }
