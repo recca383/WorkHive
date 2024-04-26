@@ -55,6 +55,7 @@
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties47 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties48 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnHam = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -75,9 +76,9 @@
             this.btnCalendar = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.pnMail = new System.Windows.Forms.Panel();
             this.btnMail = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
-            this.btnHam = new System.Windows.Forms.PictureBox();
             this.edittasksTransition = new System.Windows.Forms.Timer(this.components);
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnHam)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -88,7 +89,6 @@
             this.pnTasks.SuspendLayout();
             this.pnCalendar.SuspendLayout();
             this.pnMail.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btnHam)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -101,18 +101,29 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.ForeColor = System.Drawing.Color.White;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1503, 87);
+            this.panel1.Size = new System.Drawing.Size(1127, 71);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // btnHam
+            // 
+            this.btnHam.BackColor = System.Drawing.Color.Transparent;
+            this.btnHam.Image = global::WorkHive.Properties.Resources.Button____Menu;
+            this.btnHam.Location = new System.Drawing.Point(179, 16);
+            this.btnHam.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnHam.Name = "btnHam";
+            this.btnHam.Size = new System.Drawing.Size(30, 44);
+            this.btnHam.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.btnHam.TabIndex = 6;
+            this.btnHam.TabStop = false;
+            this.btnHam.Click += new System.EventHandler(this.btnHam_Click);
             // 
             // pictureBox3
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox3.Image = global::WorkHive.Properties.Resources.Button___Notification;
-            this.pictureBox3.Location = new System.Drawing.Point(1384, 32);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox3.Location = new System.Drawing.Point(1038, 26);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(23, 22);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -122,8 +133,7 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = global::WorkHive.Properties.Resources.Button___User_Profile;
-            this.pictureBox2.Location = new System.Drawing.Point(1442, 26);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox2.Location = new System.Drawing.Point(1082, 21);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(28, 32);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -133,8 +143,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(28, 15);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox1.Location = new System.Drawing.Point(21, 12);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(192, 56);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -143,11 +152,10 @@
             // 
             // ViewPanel
             // 
-            this.ViewPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ViewPanel.Location = new System.Drawing.Point(0, 87);
-            this.ViewPanel.Margin = new System.Windows.Forms.Padding(4);
+            this.ViewPanel.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.ViewPanel.Location = new System.Drawing.Point(148, 77);
             this.ViewPanel.Name = "ViewPanel";
-            this.ViewPanel.Size = new System.Drawing.Size(1503, 722);
+            this.ViewPanel.Size = new System.Drawing.Size(979, 581);
             this.ViewPanel.TabIndex = 4;
             // 
             // sidebarTransition
@@ -161,9 +169,10 @@
             this.edittasksContainer.Controls.Add(this.bunifuButton8);
             this.edittasksContainer.Controls.Add(this.bunifuButton7);
             this.edittasksContainer.Controls.Add(this.btnEditTasks);
-            this.edittasksContainer.Location = new System.Drawing.Point(3, 216);
+            this.edittasksContainer.Location = new System.Drawing.Point(2, 173);
+            this.edittasksContainer.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.edittasksContainer.Name = "edittasksContainer";
-            this.edittasksContainer.Size = new System.Drawing.Size(188, 65);
+            this.edittasksContainer.Size = new System.Drawing.Size(141, 53);
             this.edittasksContainer.TabIndex = 10;
             // 
             // bunifuButton8
@@ -203,7 +212,8 @@
             this.bunifuButton8.IdleIconLeftImage = global::WorkHive.Properties.Resources.Button___Bullet;
             this.bunifuButton8.IdleIconRightImage = null;
             this.bunifuButton8.IndicateFocus = false;
-            this.bunifuButton8.Location = new System.Drawing.Point(9, 111);
+            this.bunifuButton8.Location = new System.Drawing.Point(7, 90);
+            this.bunifuButton8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.bunifuButton8.Name = "bunifuButton8";
             stateProperties33.BorderColor = System.Drawing.Color.Transparent;
             stateProperties33.BorderRadius = 15;
@@ -223,7 +233,7 @@
             stateProperties34.IconLeftImage = global::WorkHive.Properties.Resources.Button___Bullet;
             stateProperties34.IconRightImage = null;
             this.bunifuButton8.OnPressedState = stateProperties34;
-            this.bunifuButton8.Size = new System.Drawing.Size(164, 45);
+            this.bunifuButton8.Size = new System.Drawing.Size(123, 37);
             this.bunifuButton8.TabIndex = 9;
             this.bunifuButton8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.bunifuButton8.TextMarginLeft = 0;
@@ -266,7 +276,8 @@
             this.bunifuButton7.IdleIconLeftImage = global::WorkHive.Properties.Resources.Button___Bullet;
             this.bunifuButton7.IdleIconRightImage = null;
             this.bunifuButton7.IndicateFocus = false;
-            this.bunifuButton7.Location = new System.Drawing.Point(9, 60);
+            this.bunifuButton7.Location = new System.Drawing.Point(7, 49);
+            this.bunifuButton7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.bunifuButton7.Name = "bunifuButton7";
             stateProperties35.BorderColor = System.Drawing.Color.Transparent;
             stateProperties35.BorderRadius = 15;
@@ -286,7 +297,7 @@
             stateProperties36.IconLeftImage = global::WorkHive.Properties.Resources.Button___Bullet;
             stateProperties36.IconRightImage = null;
             this.bunifuButton7.OnPressedState = stateProperties36;
-            this.bunifuButton7.Size = new System.Drawing.Size(164, 45);
+            this.bunifuButton7.Size = new System.Drawing.Size(123, 37);
             this.bunifuButton7.TabIndex = 8;
             this.bunifuButton7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.bunifuButton7.TextMarginLeft = 0;
@@ -329,7 +340,8 @@
             this.btnEditTasks.IdleIconLeftImage = global::WorkHive.Properties.Resources.Button___Edit_Tasks;
             this.btnEditTasks.IdleIconRightImage = null;
             this.btnEditTasks.IndicateFocus = false;
-            this.btnEditTasks.Location = new System.Drawing.Point(9, 9);
+            this.btnEditTasks.Location = new System.Drawing.Point(7, 7);
+            this.btnEditTasks.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnEditTasks.Name = "btnEditTasks";
             stateProperties37.BorderColor = System.Drawing.Color.Transparent;
             stateProperties37.BorderRadius = 15;
@@ -349,7 +361,7 @@
             stateProperties38.IconLeftImage = global::WorkHive.Properties.Resources.Button___Edit_Tasks;
             stateProperties38.IconRightImage = null;
             this.btnEditTasks.OnPressedState = stateProperties38;
-            this.btnEditTasks.Size = new System.Drawing.Size(164, 45);
+            this.btnEditTasks.Size = new System.Drawing.Size(123, 37);
             this.btnEditTasks.TabIndex = 6;
             this.btnEditTasks.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnEditTasks.TextMarginLeft = 0;
@@ -366,18 +378,20 @@
             this.sidebar.Controls.Add(this.pnCalendar);
             this.sidebar.Controls.Add(this.pnMail);
             this.sidebar.Dock = System.Windows.Forms.DockStyle.Left;
-            this.sidebar.Location = new System.Drawing.Point(0, 87);
+            this.sidebar.Location = new System.Drawing.Point(0, 71);
+            this.sidebar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.sidebar.Name = "sidebar";
-            this.sidebar.Size = new System.Drawing.Size(191, 722);
+            this.sidebar.Size = new System.Drawing.Size(143, 586);
             this.sidebar.TabIndex = 5;
             // 
             // pnDashBoard
             // 
             this.pnDashBoard.BackColor = System.Drawing.Color.Transparent;
             this.pnDashBoard.Controls.Add(this.btnDashBoard);
-            this.pnDashBoard.Location = new System.Drawing.Point(3, 3);
+            this.pnDashBoard.Location = new System.Drawing.Point(2, 2);
+            this.pnDashBoard.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pnDashBoard.Name = "pnDashBoard";
-            this.pnDashBoard.Size = new System.Drawing.Size(188, 65);
+            this.pnDashBoard.Size = new System.Drawing.Size(141, 53);
             this.pnDashBoard.TabIndex = 7;
             // 
             // btnDashBoard
@@ -417,7 +431,8 @@
             this.btnDashBoard.IdleIconLeftImage = global::WorkHive.Properties.Resources.Button___Dashboard;
             this.btnDashBoard.IdleIconRightImage = null;
             this.btnDashBoard.IndicateFocus = false;
-            this.btnDashBoard.Location = new System.Drawing.Point(9, 9);
+            this.btnDashBoard.Location = new System.Drawing.Point(7, 7);
+            this.btnDashBoard.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnDashBoard.Name = "btnDashBoard";
             stateProperties39.BorderColor = System.Drawing.Color.Transparent;
             stateProperties39.BorderRadius = 15;
@@ -437,19 +452,21 @@
             stateProperties40.IconLeftImage = global::WorkHive.Properties.Resources.Button___Dashboard;
             stateProperties40.IconRightImage = null;
             this.btnDashBoard.OnPressedState = stateProperties40;
-            this.btnDashBoard.Size = new System.Drawing.Size(164, 45);
+            this.btnDashBoard.Size = new System.Drawing.Size(123, 37);
             this.btnDashBoard.TabIndex = 6;
             this.btnDashBoard.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnDashBoard.TextMarginLeft = 0;
             this.btnDashBoard.UseDefaultRadiusAndThickness = true;
+            this.btnDashBoard.Click += new System.EventHandler(this.btnDashBoard_Click);
             // 
             // pnEmployees
             // 
             this.pnEmployees.BackColor = System.Drawing.Color.Transparent;
             this.pnEmployees.Controls.Add(this.btnEmployees);
-            this.pnEmployees.Location = new System.Drawing.Point(3, 74);
+            this.pnEmployees.Location = new System.Drawing.Point(2, 59);
+            this.pnEmployees.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pnEmployees.Name = "pnEmployees";
-            this.pnEmployees.Size = new System.Drawing.Size(188, 65);
+            this.pnEmployees.Size = new System.Drawing.Size(141, 53);
             this.pnEmployees.TabIndex = 8;
             // 
             // btnEmployees
@@ -489,7 +506,8 @@
             this.btnEmployees.IdleIconLeftImage = global::WorkHive.Properties.Resources.Button___Employees;
             this.btnEmployees.IdleIconRightImage = null;
             this.btnEmployees.IndicateFocus = false;
-            this.btnEmployees.Location = new System.Drawing.Point(9, 9);
+            this.btnEmployees.Location = new System.Drawing.Point(7, 7);
+            this.btnEmployees.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnEmployees.Name = "btnEmployees";
             stateProperties41.BorderColor = System.Drawing.Color.Transparent;
             stateProperties41.BorderRadius = 15;
@@ -509,19 +527,21 @@
             stateProperties42.IconLeftImage = global::WorkHive.Properties.Resources.Button___Employees;
             stateProperties42.IconRightImage = null;
             this.btnEmployees.OnPressedState = stateProperties42;
-            this.btnEmployees.Size = new System.Drawing.Size(164, 45);
+            this.btnEmployees.Size = new System.Drawing.Size(123, 37);
             this.btnEmployees.TabIndex = 6;
             this.btnEmployees.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnEmployees.TextMarginLeft = 0;
             this.btnEmployees.UseDefaultRadiusAndThickness = true;
+            this.btnEmployees.Click += new System.EventHandler(this.btnEmployees_Click);
             // 
             // pnTasks
             // 
             this.pnTasks.BackColor = System.Drawing.Color.Transparent;
             this.pnTasks.Controls.Add(this.btnTasks);
-            this.pnTasks.Location = new System.Drawing.Point(3, 145);
+            this.pnTasks.Location = new System.Drawing.Point(2, 116);
+            this.pnTasks.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pnTasks.Name = "pnTasks";
-            this.pnTasks.Size = new System.Drawing.Size(188, 65);
+            this.pnTasks.Size = new System.Drawing.Size(141, 53);
             this.pnTasks.TabIndex = 9;
             // 
             // btnTasks
@@ -561,7 +581,8 @@
             this.btnTasks.IdleIconLeftImage = global::WorkHive.Properties.Resources.Button___Tasks;
             this.btnTasks.IdleIconRightImage = null;
             this.btnTasks.IndicateFocus = false;
-            this.btnTasks.Location = new System.Drawing.Point(9, 9);
+            this.btnTasks.Location = new System.Drawing.Point(7, 7);
+            this.btnTasks.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnTasks.Name = "btnTasks";
             stateProperties43.BorderColor = System.Drawing.Color.Transparent;
             stateProperties43.BorderRadius = 15;
@@ -581,19 +602,21 @@
             stateProperties44.IconLeftImage = global::WorkHive.Properties.Resources.Button___Tasks;
             stateProperties44.IconRightImage = null;
             this.btnTasks.OnPressedState = stateProperties44;
-            this.btnTasks.Size = new System.Drawing.Size(164, 45);
+            this.btnTasks.Size = new System.Drawing.Size(123, 37);
             this.btnTasks.TabIndex = 6;
             this.btnTasks.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnTasks.TextMarginLeft = 0;
             this.btnTasks.UseDefaultRadiusAndThickness = true;
+            this.btnTasks.Click += new System.EventHandler(this.btnTasks_Click);
             // 
             // pnCalendar
             // 
             this.pnCalendar.BackColor = System.Drawing.Color.Transparent;
             this.pnCalendar.Controls.Add(this.btnCalendar);
-            this.pnCalendar.Location = new System.Drawing.Point(3, 287);
+            this.pnCalendar.Location = new System.Drawing.Point(2, 230);
+            this.pnCalendar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pnCalendar.Name = "pnCalendar";
-            this.pnCalendar.Size = new System.Drawing.Size(188, 65);
+            this.pnCalendar.Size = new System.Drawing.Size(141, 53);
             this.pnCalendar.TabIndex = 11;
             // 
             // btnCalendar
@@ -633,7 +656,8 @@
             this.btnCalendar.IdleIconLeftImage = global::WorkHive.Properties.Resources.Button____Calendar;
             this.btnCalendar.IdleIconRightImage = null;
             this.btnCalendar.IndicateFocus = false;
-            this.btnCalendar.Location = new System.Drawing.Point(9, 9);
+            this.btnCalendar.Location = new System.Drawing.Point(7, 7);
+            this.btnCalendar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnCalendar.Name = "btnCalendar";
             stateProperties45.BorderColor = System.Drawing.Color.Transparent;
             stateProperties45.BorderRadius = 15;
@@ -653,7 +677,7 @@
             stateProperties46.IconLeftImage = global::WorkHive.Properties.Resources.Button____Calendar;
             stateProperties46.IconRightImage = null;
             this.btnCalendar.OnPressedState = stateProperties46;
-            this.btnCalendar.Size = new System.Drawing.Size(164, 45);
+            this.btnCalendar.Size = new System.Drawing.Size(123, 37);
             this.btnCalendar.TabIndex = 6;
             this.btnCalendar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnCalendar.TextMarginLeft = 0;
@@ -663,9 +687,10 @@
             // 
             this.pnMail.BackColor = System.Drawing.Color.Transparent;
             this.pnMail.Controls.Add(this.btnMail);
-            this.pnMail.Location = new System.Drawing.Point(3, 358);
+            this.pnMail.Location = new System.Drawing.Point(2, 287);
+            this.pnMail.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pnMail.Name = "pnMail";
-            this.pnMail.Size = new System.Drawing.Size(188, 65);
+            this.pnMail.Size = new System.Drawing.Size(141, 53);
             this.pnMail.TabIndex = 12;
             // 
             // btnMail
@@ -705,7 +730,8 @@
             this.btnMail.IdleIconLeftImage = global::WorkHive.Properties.Resources.Button____Mail;
             this.btnMail.IdleIconRightImage = null;
             this.btnMail.IndicateFocus = false;
-            this.btnMail.Location = new System.Drawing.Point(9, 9);
+            this.btnMail.Location = new System.Drawing.Point(7, 7);
+            this.btnMail.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnMail.Name = "btnMail";
             stateProperties47.BorderColor = System.Drawing.Color.Transparent;
             stateProperties47.BorderRadius = 15;
@@ -725,23 +751,11 @@
             stateProperties48.IconLeftImage = global::WorkHive.Properties.Resources.Button____Mail;
             stateProperties48.IconRightImage = null;
             this.btnMail.OnPressedState = stateProperties48;
-            this.btnMail.Size = new System.Drawing.Size(164, 45);
+            this.btnMail.Size = new System.Drawing.Size(123, 37);
             this.btnMail.TabIndex = 6;
             this.btnMail.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnMail.TextMarginLeft = 0;
             this.btnMail.UseDefaultRadiusAndThickness = true;
-            // 
-            // btnHam
-            // 
-            this.btnHam.BackColor = System.Drawing.Color.Transparent;
-            this.btnHam.Image = global::WorkHive.Properties.Resources.Button____Menu;
-            this.btnHam.Location = new System.Drawing.Point(239, 20);
-            this.btnHam.Name = "btnHam";
-            this.btnHam.Size = new System.Drawing.Size(30, 44);
-            this.btnHam.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.btnHam.TabIndex = 6;
-            this.btnHam.TabStop = false;
-            this.btnHam.Click += new System.EventHandler(this.btnHam_Click);
             // 
             // edittasksTransition
             // 
@@ -750,18 +764,18 @@
             // 
             // Dashboard_Admin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1503, 809);
+            this.ClientSize = new System.Drawing.Size(1127, 657);
             this.Controls.Add(this.sidebar);
             this.Controls.Add(this.ViewPanel);
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Dashboard_Admin";
             this.Text = "Dashboard_Admin";
             this.Load += new System.EventHandler(this.Dashboard_Admin_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnHam)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -772,7 +786,6 @@
             this.pnTasks.ResumeLayout(false);
             this.pnCalendar.ResumeLayout(false);
             this.pnMail.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.btnHam)).EndInit();
             this.ResumeLayout(false);
 
         }

@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WorkHive.Controller;
 using WorkHive.Model;
 using WorkHive.Views.Cards;
 
@@ -22,7 +23,7 @@ namespace WorkHive.Views.Admin.DashboardPages
         }
         private void AddTaskElements()
         {
-            for (int i = 0; i < SampleTaskModel.GetTaskCount(); i++)
+            for (int i = 0; i < TaskModelAccess.GetTaskCount(); i++)
             {
                 
             }

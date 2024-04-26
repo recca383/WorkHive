@@ -34,6 +34,7 @@
             this.lblTask_Title = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.lblTask_Date = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.TaskProgress = new Bunifu.UI.Winforms.BunifuProgressBar();
+            this.Archived = new Bunifu.Framework.UI.BunifuCheckbox();
             this.SuspendLayout();
             // 
             // bunifuElipse1
@@ -80,11 +81,24 @@
             this.TaskProgress.TabIndex = 2;
             this.TaskProgress.Value = 0;
             // 
+            // Archived
+            // 
+            this.Archived.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
+            this.Archived.ChechedOffColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
+            this.Archived.Checked = true;
+            this.Archived.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
+            this.Archived.ForeColor = System.Drawing.Color.White;
+            this.Archived.Location = new System.Drawing.Point(723, 29);
+            this.Archived.Name = "Archived";
+            this.Archived.Size = new System.Drawing.Size(20, 20);
+            this.Archived.TabIndex = 3;
+            // 
             // TaskCard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.Archived);
             this.Controls.Add(this.TaskProgress);
             this.Controls.Add(this.lblTask_Date);
             this.Controls.Add(this.lblTask_Title);
@@ -101,5 +115,6 @@
         public Bunifu.Framework.UI.BunifuCustomLabel lblTask_Date;
         public Bunifu.Framework.UI.BunifuCustomLabel lblTask_Title;
         public Bunifu.UI.Winforms.BunifuProgressBar TaskProgress;
+        public Bunifu.Framework.UI.BunifuCheckbox Archived;
     }
 }

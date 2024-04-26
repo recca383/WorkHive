@@ -34,7 +34,7 @@
             this.btnAll = new System.Windows.Forms.Label();
             this.btnOngoing = new System.Windows.Forms.Label();
             this.btnCompleted = new System.Windows.Forms.Label();
-            this.Archived = new System.Windows.Forms.Label();
+            this.btnArchived = new System.Windows.Forms.Label();
             this.bunifuVScrollBar1 = new Bunifu.UI.WinForms.BunifuVScrollBar();
             this.SuspendLayout();
             // 
@@ -90,15 +90,16 @@
             this.btnCompleted.Text = "Completed";
             this.btnCompleted.Click += new System.EventHandler(this.btnCompleted_Click);
             // 
-            // Archived
+            // btnArchived
             // 
-            this.Archived.AutoSize = true;
-            this.Archived.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Archived.Location = new System.Drawing.Point(696, 40);
-            this.Archived.Name = "Archived";
-            this.Archived.Size = new System.Drawing.Size(70, 20);
-            this.Archived.TabIndex = 7;
-            this.Archived.Text = "Archived";
+            this.btnArchived.AutoSize = true;
+            this.btnArchived.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnArchived.Location = new System.Drawing.Point(696, 40);
+            this.btnArchived.Name = "btnArchived";
+            this.btnArchived.Size = new System.Drawing.Size(70, 20);
+            this.btnArchived.TabIndex = 7;
+            this.btnArchived.Text = "Archived";
+            this.btnArchived.Click += new System.EventHandler(this.btnArchived_Click);
             // 
             // bunifuVScrollBar1
             // 
@@ -144,7 +145,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.bunifuVScrollBar1);
-            this.Controls.Add(this.Archived);
+            this.Controls.Add(this.btnArchived);
             this.Controls.Add(this.btnCompleted);
             this.Controls.Add(this.btnOngoing);
             this.Controls.Add(this.btnAll);
@@ -164,7 +165,7 @@
         private System.Windows.Forms.Label btnAll;
         private System.Windows.Forms.Label btnOngoing;
         private System.Windows.Forms.Label btnCompleted;
-        private System.Windows.Forms.Label Archived;
+        private System.Windows.Forms.Label btnArchived;
         private Bunifu.UI.WinForms.BunifuVScrollBar bunifuVScrollBar1;
     }
 }

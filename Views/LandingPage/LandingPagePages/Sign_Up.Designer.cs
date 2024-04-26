@@ -49,10 +49,9 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft YaHei UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(62, 144);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Location = new System.Drawing.Point(46, 117);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(326, 52);
+            this.label3.Size = new System.Drawing.Size(264, 42);
             this.label3.TabIndex = 8;
             this.label3.Text = "Bee a Member!";
             // 
@@ -79,14 +78,13 @@
             this.button1.IconVisible = true;
             this.button1.IconZoom = 90D;
             this.button1.IsTab = false;
-            this.button1.Location = new System.Drawing.Point(71, 599);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Location = new System.Drawing.Point(53, 487);
             this.button1.Name = "button1";
             this.button1.Normalcolor = System.Drawing.Color.Transparent;
             this.button1.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.button1.OnHoverTextColor = System.Drawing.Color.Black;
             this.button1.selected = false;
-            this.button1.Size = new System.Drawing.Size(500, 55);
+            this.button1.Size = new System.Drawing.Size(375, 45);
             this.button1.TabIndex = 23;
             this.button1.Text = "SIGN UP";
             this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -130,7 +128,8 @@
             this.btnSignIn.IdleIconLeftImage = null;
             this.btnSignIn.IdleIconRightImage = null;
             this.btnSignIn.IndicateFocus = false;
-            this.btnSignIn.Location = new System.Drawing.Point(208, 716);
+            this.btnSignIn.Location = new System.Drawing.Point(142, 582);
+            this.btnSignIn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnSignIn.Name = "btnSignIn";
             stateProperties1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
             stateProperties1.BorderRadius = 3;
@@ -150,11 +149,12 @@
             stateProperties2.IconLeftImage = null;
             stateProperties2.IconRightImage = null;
             this.btnSignIn.OnPressedState = stateProperties2;
-            this.btnSignIn.Size = new System.Drawing.Size(230, 32);
+            this.btnSignIn.Size = new System.Drawing.Size(201, 26);
             this.btnSignIn.TabIndex = 24;
             this.btnSignIn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnSignIn.TextMarginLeft = 0;
             this.btnSignIn.UseDefaultRadiusAndThickness = true;
+            this.btnSignIn.Click += new System.EventHandler(this.btnSignIn_Click);
             // 
             // label6
             // 
@@ -194,7 +194,8 @@
             this.label6.IdleIconLeftImage = null;
             this.label6.IdleIconRightImage = null;
             this.label6.IndicateFocus = true;
-            this.label6.Location = new System.Drawing.Point(77, 553);
+            this.label6.Location = new System.Drawing.Point(58, 449);
+            this.label6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.label6.Name = "label6";
             stateProperties3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
             stateProperties3.BorderRadius = 3;
@@ -215,7 +216,7 @@
             stateProperties4.IconRightImage = null;
             this.label6.OnPressedState = stateProperties4;
             this.label6.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label6.Size = new System.Drawing.Size(493, 50);
+            this.label6.Size = new System.Drawing.Size(370, 41);
             this.label6.TabIndex = 25;
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label6.TextMarginLeft = 0;
@@ -236,11 +237,10 @@
             this.textBox3.LineIdleColor = System.Drawing.Color.Gold;
             this.textBox3.LineMouseHoverColor = System.Drawing.Color.Crimson;
             this.textBox3.LineThickness = 3;
-            this.textBox3.Location = new System.Drawing.Point(70, 370);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(4);
+            this.textBox3.Location = new System.Drawing.Point(52, 301);
             this.textBox3.MaxLength = 32767;
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(500, 45);
+            this.textBox3.Size = new System.Drawing.Size(375, 37);
             this.textBox3.TabIndex = 26;
             this.textBox3.Text = "Enter Password";
             this.textBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -260,11 +260,10 @@
             this.textBox4.LineIdleColor = System.Drawing.Color.Gold;
             this.textBox4.LineMouseHoverColor = System.Drawing.Color.Crimson;
             this.textBox4.LineThickness = 3;
-            this.textBox4.Location = new System.Drawing.Point(70, 455);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(4);
+            this.textBox4.Location = new System.Drawing.Point(52, 370);
             this.textBox4.MaxLength = 32767;
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(500, 45);
+            this.textBox4.Size = new System.Drawing.Size(375, 37);
             this.textBox4.TabIndex = 27;
             this.textBox4.Text = "Confirm Password";
             this.textBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -284,11 +283,10 @@
             this.textBox2.LineIdleColor = System.Drawing.Color.Gold;
             this.textBox2.LineMouseHoverColor = System.Drawing.Color.Crimson;
             this.textBox2.LineThickness = 3;
-            this.textBox2.Location = new System.Drawing.Point(70, 294);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(4);
+            this.textBox2.Location = new System.Drawing.Point(52, 239);
             this.textBox2.MaxLength = 32767;
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(500, 45);
+            this.textBox2.Size = new System.Drawing.Size(375, 37);
             this.textBox2.TabIndex = 28;
             this.textBox2.Text = "Enter E-mail";
             this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -308,18 +306,17 @@
             this.textBox1.LineIdleColor = System.Drawing.Color.Gold;
             this.textBox1.LineMouseHoverColor = System.Drawing.Color.Crimson;
             this.textBox1.LineThickness = 3;
-            this.textBox1.Location = new System.Drawing.Point(70, 218);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.textBox1.Location = new System.Drawing.Point(52, 177);
             this.textBox1.MaxLength = 32767;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(500, 45);
+            this.textBox1.Size = new System.Drawing.Size(375, 37);
             this.textBox1.TabIndex = 29;
             this.textBox1.Text = "Name";
             this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // Sign_Up
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.textBox2);
@@ -329,9 +326,8 @@
             this.Controls.Add(this.btnSignIn);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label3);
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Sign_Up";
-            this.Size = new System.Drawing.Size(660, 809);
+            this.Size = new System.Drawing.Size(495, 657);
             this.ResumeLayout(false);
             this.PerformLayout();
 
