@@ -7,7 +7,7 @@ using WorkHive.Model;
 
 namespace WorkHive.Controller
 {
-    internal class TaskModelAccess
+    public class TaskModelAccess
     {
         private static List<TaskModel> Tasks = new List<TaskModel>()
         {

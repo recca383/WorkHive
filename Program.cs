@@ -19,7 +19,7 @@ namespace WorkHive
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Dashboard_Admin());
+            Application.Run(new Landing_Page());
         }
     }
 }

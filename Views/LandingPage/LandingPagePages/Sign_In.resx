@@ -118,10 +118,24 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="btnForgotPass.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAJIAAAAaCAYAAABcmAU7AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAlSURBVGhD7cEBAQAAAIIg/69uSEAAAAAAAAAAAAAAAAAA
+        AHCoBjtqAAFSe3UEAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="btnSignUp.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAIoAAAAaCAYAAABo4cQnAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAlSURBVGhD7cEBDQAAAMKg909tDjcgAAAAAAAAAAAAAAAA
+        AOBWDTgqAAG8KrquAAAAAElFTkSuQmCC
+</value>
+  </data>
   <data name="btnSignIn.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAcoAAAAlCAYAAADC+ak/AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EAAACxABrSO9dQAAS/VJREFUeF6FnefXrmlR5ftLN5hbRcwBMwZURDFnMYEg5kDQMWLgwPwBugZMOBJM
+        DgAACw4BQL7hQQAAS/VJREFUeF6FnefXrmlR5ftLN5hbRcwBMwZURDFnMYEg5kDQMWLgwPwBugZMOBJM
         iAFFxYytqKOog6AiOgbUwRyOQPfpk0OfwHy6n6m9d+2quu7nbTxr7VXX/XZ//61fVV3Xc9tJ/66cPnXn
         jdedOnXrP0/dFTkdOdz8z6cebv3nU7ebp596UL6NuXX627ab/xHn//jWw62q37Ldinrz35Fvqdz4t28+
         3Kw8Zbvxr0853Dwp//JNUb9pu4H6L9+43fjnb2SNHG788zccbv7zN2w3/ukbDjf+6etxVv2nr99u/CPq
@@ -446,20 +460,6 @@
         cc4o6/k6QpJnbL4SlAZkGOQA5TKjTEjix5pn+9VGyYWenVEmJDmvtE1q2xWgDHPk9w6QNMqGZQNTRjmt
         cs4mBcm6JhJ/uzNqhkYJYAYod4s8fTUE0IQ9JiRhlYDjMEnPJzmbDFCOx9EBx2671rarzwJlw5I5HVZ5
         193PfMCp099x552JwPHvttv+P2BZJKB939k8AAAAAElFTkSuQmCC
-</value>
-  </data>
-  <data name="btnSignUp.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAAIoAAAAaCAYAAABo4cQnAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAlSURBVGhD7cEBDQAAAMKg909tDjcgAAAAAAAAAAAAAAAA
-        AOBWDTgqAAG8KrquAAAAAElFTkSuQmCC
-</value>
-  </data>
-  <data name="btnForgotPass.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAAIoAAAAaCAYAAABo4cQnAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAlSURBVGhD7cEBDQAAAMKg909tDjcgAAAAAAAAAAAAAAAA
-        AOBWDTgqAAG8KrquAAAAAElFTkSuQmCC
 </value>
   </data>
 </root>

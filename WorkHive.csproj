@@ -74,8 +74,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controller\DashboardNavigation.cs" />
+    <Compile Include="Controller\MemberModelAccess.cs" />
     <Compile Include="Controller\TaskModelAccess.cs" />
-    <Compile Include="Model\SampleMemberModel.cs" />
+    <Compile Include="Model\MemberModel.cs" />
     <Compile Include="Model\TaskModel.cs" />
     <Compile Include="Views\Admin\Dashboard-Admin.cs">
       <SubType>Form</SubType>
@@ -215,6 +216,14 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Button - Bullet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Views\Member\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Default_Admin_Pics\joko.jpg" />
+    <Content Include="Resources\Default_Admin_Pics\tatik.jpg" />
+    <Content Include="Resources\Default_Admin_Pics\wincel.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

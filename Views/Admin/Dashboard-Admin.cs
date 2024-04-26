@@ -3,11 +3,14 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using WorkHive.Controller;
+using WorkHive.Model;
 using WorkHive.Views.Admin.DashboardPages;
 using WorkHive.Views.Pages;
 
@@ -15,15 +18,21 @@ namespace WorkHive.Views
 {
     public partial class Dashboard_Admin : Form
     {
-        
+        MemberModel CurrentUser;
 
         DashboardNavigation dashboardNavigation;
-        public Dashboard_Admin()
+        public Dashboard_Admin(MemberModel CurrentUser)
         {
+            this.CurrentUser = CurrentUser;
             InitializeComponent();
+            Initialize_Controls_According_To_User();
             Initialize_Navigation_Controls();
         }
-
+        private void Initialize_Controls_According_To_User()
+        {
+            var parent = Directory.GetParent(Directory.GetCurrentDirectory()).FullName;
+            ProfilePicBox.Image = Image.FromFile(Path.Combine(Path.GetDirectoryName(parent),CurrentUser.Profile_Pic));
+        }
         private void Initialize_Navigation_Controls()
         {
             List<UserControl> list = new List<UserControl>()
@@ -46,16 +55,6 @@ namespace WorkHive.Views
         private void btnTasks_Click(object sender, EventArgs e)
         {
             dashboardNavigation.Display(2);
-        }
-
-        private void Dashboard_Admin_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
         }
 
         bool sidebarExpand;
