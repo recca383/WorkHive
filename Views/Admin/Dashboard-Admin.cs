@@ -57,79 +57,56 @@ namespace WorkHive.Views
             dashboardNavigation.Display(2);
         }
 
-        bool sidebarExpand;
+ 
 
-        private void sidebarTimer_Tick(object sender, EventArgs e)
+
+        private void ViewPanel_Paint(object sender, PaintEventArgs e)
         {
-            // if sidebar is expanded, minimize
-            if (sidebarExpand)
+
+        }
+
+        private void btnMenu_Click(object sender, EventArgs e)
+        {
+            CollapseMenu();
+        }
+
+        private void CollapseMenu()
+        {
+            if (this.sidebar.Width > 200)
             {
-                sidebar.Width -= 10;
-                if (sidebar.Width <= 70)
+                sidebar.Width = 42;
+                pictureBox1.Visible = false;
+                btnMenu.Dock = DockStyle.Left;
+                foreach (Button menubutton in sidebar.Controls.OfType<Button>()) 
                 {
-                    sidebarExpand = false;
-                    sidebarTransition.Stop();
-
-                    pnDashBoard.Width = sidebar.Width;
-                    pnEmployees.Width = sidebar.Width;
-                    pnTasks.Width = sidebar.Width;
-                    edittasksContainer.Width = sidebar.Width;
-                    pnCalendar.Width = sidebar.Width;
-                    pnMail.Width = sidebar.Width;
-
+                    menubutton.Text = "";
+                    menubutton.ImageAlign = ContentAlignment.MiddleCenter;
+                    menubutton.Padding = new Padding(0);
                 }
             }
             else
             {
-                sidebar.Width += 10;
-                if (sidebar.Width >= 191)
+                sidebar.Width = 244;
+                pictureBox1.Visible = true;
+                btnMenu.Dock = DockStyle.None;
+                foreach (Button menubutton in sidebar.Controls.OfType<Button>())
                 {
-                    sidebarExpand = true;
-                    sidebarTransition.Stop();
-
-                    pnDashBoard.Width = sidebar.Width;
-                    pnEmployees.Width = sidebar.Width;
-                    pnTasks.Width = sidebar.Width;
-                    edittasksContainer.Width = sidebar.Width;
-                    pnCalendar.Width = sidebar.Width;
-                    pnMail.Width = sidebar.Width;
-
+                    menubutton.Text = "  " + menubutton.Tag.ToString();
+                    menubutton.ImageAlign = ContentAlignment.MiddleCenter;
+                    menubutton.Padding = new Padding(0);
                 }
+
             }
         }
 
-        bool edittasksExpand; 
-      
-        private void edittasksTransition_Tick(object sender, EventArgs e)
+        private void ViewPanel_Paint_1(object sender, PaintEventArgs e)
         {
-            if (edittasksExpand == false)
-            {
-                edittasksContainer.Height += 10;
-                if (edittasksContainer.Height >= 159)
-                {
-                    edittasksTransition.Stop();
-                    edittasksExpand = true;
-                }
-            }
-            else
-            {
-                edittasksContainer.Height -= 10;
-                if (edittasksContainer.Height <= 65)
-                {
-                    edittasksTransition.Stop();
-                    edittasksExpand = false;
-                }
-            }
+
         }
 
-        private void bunifuButton4_Click(object sender, EventArgs e)
+        private void pictureBox1_Click(object sender, EventArgs e)
         {
-            edittasksTransition.Start();
-        }
 
-        private void btnHam_Click(object sender, EventArgs e)
-        {
-            sidebarTransition.Start();
         }
     }
 }
