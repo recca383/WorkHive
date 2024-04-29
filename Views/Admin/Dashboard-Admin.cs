@@ -18,7 +18,7 @@ namespace WorkHive.Views
 {
     public partial class Dashboard_Admin : Form
     {
-        MemberModel CurrentUser;
+        readonly MemberModel CurrentUser;
 
         DashboardNavigation dashboardNavigation;
         public Dashboard_Admin(MemberModel CurrentUser)
@@ -33,7 +33,7 @@ namespace WorkHive.Views
             var parent = Directory.GetParent(Directory.GetCurrentDirectory()).FullName;
             if(CurrentUser.Profile_Pic == null)
             {
-                ProfilePicBox.Image = default(Image);
+                ProfilePicBox.Image = Image.FromFile(Path.Combine(Path.GetDirectoryName(parent), "Resources\\Default_Pics\\Userdefault.png"));
             }
             else
             {
@@ -50,24 +50,19 @@ namespace WorkHive.Views
             dashboardNavigation.Display(0);
         }
 
-        private void btnDashBoard_Click_1(object sender, EventArgs e)
+        private void btnDashBoard_Click(object sender, EventArgs e)
         {
             dashboardNavigation.Display(0);
         }
 
-        private void btnEmployees_Click_1(object sender, EventArgs e)
+        private void btnEmployees_Click(object sender, EventArgs e)
         {
             dashboardNavigation.Display(1);
         }
 
-        private void btnTasks_Click_1(object sender, EventArgs e)
+        private void btnTasks_Click(object sender, EventArgs e)
         {
             dashboardNavigation.Display(2);
-        }
-
-        private void ViewPanel_Paint(object sender, PaintEventArgs e)
-        {
-
         }
 
         private void btnMenu_Click(object sender, EventArgs e)
@@ -104,14 +99,5 @@ namespace WorkHive.Views
             }
         }
 
-        private void ViewPanel_Paint_1(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

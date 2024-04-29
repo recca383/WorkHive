@@ -140,6 +140,11 @@
     <Compile Include="Controller\TaskModelAccess.cs" />
     <Compile Include="Model\MemberModel.cs" />
     <Compile Include="Model\TaskModel.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Views\Admin\Dashboard-Admin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -213,14 +218,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <EmbeddedResource Include="Views\Admin\DashboardPages\DashboardView.resx">
       <DependentUpon>DashboardView.cs</DependentUpon>
     </EmbeddedResource>
@@ -292,6 +292,8 @@
     <Folder Include="Views\Member\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Resources\Default_Pics\Userdefault.png" />
+    <None Include="Resources\Default_Pics\UserAdminDefault.png" />
     <None Include="Resources\Button - Chat.png" />
     <Content Include="Resources\Default_Admin_Pics\joko.jpg" />
     <Content Include="Resources\Default_Admin_Pics\tatik.jpg" />

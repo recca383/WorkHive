@@ -29,6 +29,24 @@ namespace WorkHive.Views.LandingPage.LandingPagePages
             SignIn();
         }
 
+        private void txtPassword_OnValueChanged(object sender, EventArgs e)
+        {
+            if(txtPassword.Text == "")
+            {
+                txtPassword.isPassword = false;
+            }
+            else
+            {
+                txtPassword.isPassword = true;
+            }
+            
+        }
+
+        private void txtPassword_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter) SignIn();
+
+        }
         private void SignIn()
         {
             var memberModel = MemberModelAccess.GetMemberModel();
@@ -50,39 +68,6 @@ namespace WorkHive.Views.LandingPage.LandingPagePages
                 //member dashboard
             }
         }
-
-        private void txtPassword_OnValueChanged(object sender, EventArgs e)
-        {
-            if(txtPassword.Text == "")
-            {
-                txtPassword.isPassword = false;
-            }
-            else
-            {
-                txtPassword.isPassword = true;
-            }
-            
-        }
-
-        private void txtEmail_OnValueChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtPassword_KeyDown(object sender, KeyEventArgs e)
-        {
-            if (e.KeyCode == Keys.Enter) SignIn();
-
-        }
-
-        /* private void txtPassword_KeyDown(object sender, KeyEventArgs e)
-         {
-             if (e.KeyCode == Keys.Enter)
-             {
-                 btnSignIn.PeformClick();
-
-             } di gumagana sa flat button :(
-         }*/
 
 
     }

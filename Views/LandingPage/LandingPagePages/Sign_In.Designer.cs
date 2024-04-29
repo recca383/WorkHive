@@ -101,7 +101,6 @@
             this.txtEmail.Size = new System.Drawing.Size(398, 37);
             this.txtEmail.TabIndex = 1;
             this.txtEmail.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.txtEmail.OnValueChanged += new System.EventHandler(this.txtEmail_OnValueChanged);
             // 
             // btnForgotPass
             // 

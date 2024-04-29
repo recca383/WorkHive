@@ -65,9 +65,9 @@
             this.sidebar.Controls.Add(this.btnChats);
             this.sidebar.Dock = System.Windows.Forms.DockStyle.Left;
             this.sidebar.Location = new System.Drawing.Point(0, 0);
-            this.sidebar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.sidebar.Margin = new System.Windows.Forms.Padding(2);
             this.sidebar.Name = "sidebar";
-            this.sidebar.Size = new System.Drawing.Size(271, 809);
+            this.sidebar.Size = new System.Drawing.Size(271, 657);
             this.sidebar.TabIndex = 5;
             // 
             // panel1
@@ -76,7 +76,7 @@
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(2, 2);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(181, 81);
             this.panel1.TabIndex = 1;
@@ -90,7 +90,7 @@
             this.pnTitleBar.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnTitleBar.Location = new System.Drawing.Point(271, 0);
             this.pnTitleBar.Name = "pnTitleBar";
-            this.pnTitleBar.Size = new System.Drawing.Size(1232, 77);
+            this.pnTitleBar.Size = new System.Drawing.Size(856, 77);
             this.pnTitleBar.TabIndex = 1;
             // 
             // ViewPanel
@@ -99,16 +99,15 @@
             this.ViewPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ViewPanel.Location = new System.Drawing.Point(271, 77);
             this.ViewPanel.Name = "ViewPanel";
-            this.ViewPanel.Size = new System.Drawing.Size(1232, 732);
+            this.ViewPanel.Size = new System.Drawing.Size(856, 580);
             this.ViewPanel.TabIndex = 6;
-            this.ViewPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.ViewPanel_Paint_1);
             // 
             // pictureBox3
             // 
             this.pictureBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(1091, 31);
+            this.pictureBox3.Location = new System.Drawing.Point(715, 31);
             this.pictureBox3.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(23, 22);
@@ -133,13 +132,12 @@
             this.ProfilePicBox.AllowFocused = false;
             this.ProfilePicBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.ProfilePicBox.BorderRadius = 0;
-            this.ProfilePicBox.Image = ((System.Drawing.Image)(resources.GetObject("ProfilePicBox.Image")));
             this.ProfilePicBox.IsCircle = false;
-            this.ProfilePicBox.Location = new System.Drawing.Point(1148, 13);
+            this.ProfilePicBox.Location = new System.Drawing.Point(772, 13);
             this.ProfilePicBox.Margin = new System.Windows.Forms.Padding(4);
             this.ProfilePicBox.Name = "ProfilePicBox";
-            this.ProfilePicBox.Size = new System.Drawing.Size(59, 54);
-            this.ProfilePicBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.ProfilePicBox.Size = new System.Drawing.Size(71, 48);
+            this.ProfilePicBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.ProfilePicBox.TabIndex = 7;
             this.ProfilePicBox.TabStop = false;
             this.ProfilePicBox.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Custom;
@@ -366,7 +364,6 @@
             this.btnChats.DisabledColor = System.Drawing.Color.Gray;
             this.btnChats.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnChats.Iconcolor = System.Drawing.Color.Transparent;
-            this.btnChats.Iconimage = global::WorkHive.Properties.Resources.Button___Chat;
             this.btnChats.Iconimage_right = null;
             this.btnChats.Iconimage_right_Selected = null;
             this.btnChats.Iconimage_Selected = null;
@@ -377,8 +374,8 @@
             this.btnChats.IconVisible = true;
             this.btnChats.IconZoom = 30D;
             this.btnChats.IsTab = false;
-            this.btnChats.Location = new System.Drawing.Point(4, 405);
-            this.btnChats.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnChats.Location = new System.Drawing.Point(4, 324);
+            this.btnChats.Margin = new System.Windows.Forms.Padding(4);
             this.btnChats.Name = "btnChats";
             this.btnChats.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(44)))), ((int)(((byte)(49)))));
             this.btnChats.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
