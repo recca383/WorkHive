@@ -33,6 +33,7 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.pnTitleBar = new System.Windows.Forms.Panel();
             this.ViewPanel = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.btnMenu = new System.Windows.Forms.Button();
             this.ProfilePicBox = new Bunifu.UI.WinForms.BunifuPictureBox();
@@ -44,6 +45,7 @@
             this.btnEditTasks = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnCalendar = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnChats = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.bunifuFlatButton1 = new Bunifu.Framework.UI.BunifuFlatButton();
             this.sidebar.SuspendLayout();
             this.panel1.SuspendLayout();
             this.pnTitleBar.SuspendLayout();
@@ -63,11 +65,13 @@
             this.sidebar.Controls.Add(this.btnEditTasks);
             this.sidebar.Controls.Add(this.btnCalendar);
             this.sidebar.Controls.Add(this.btnChats);
+            this.sidebar.Controls.Add(this.panel2);
+            this.sidebar.Controls.Add(this.bunifuFlatButton1);
             this.sidebar.Dock = System.Windows.Forms.DockStyle.Left;
             this.sidebar.Location = new System.Drawing.Point(0, 0);
-            this.sidebar.Margin = new System.Windows.Forms.Padding(2);
+            this.sidebar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.sidebar.Name = "sidebar";
-            this.sidebar.Size = new System.Drawing.Size(271, 657);
+            this.sidebar.Size = new System.Drawing.Size(249, 809);
             this.sidebar.TabIndex = 5;
             // 
             // panel1
@@ -75,10 +79,10 @@
             this.panel1.Controls.Add(this.pictureBox2);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(2, 2);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2);
+            this.panel1.Location = new System.Drawing.Point(3, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(181, 81);
+            this.panel1.Size = new System.Drawing.Size(241, 100);
             this.panel1.TabIndex = 1;
             // 
             // pnTitleBar
@@ -88,27 +92,36 @@
             this.pnTitleBar.Controls.Add(this.btnMenu);
             this.pnTitleBar.Controls.Add(this.ProfilePicBox);
             this.pnTitleBar.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnTitleBar.Location = new System.Drawing.Point(271, 0);
+            this.pnTitleBar.Location = new System.Drawing.Point(249, 0);
+            this.pnTitleBar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pnTitleBar.Name = "pnTitleBar";
-            this.pnTitleBar.Size = new System.Drawing.Size(856, 77);
+            this.pnTitleBar.Size = new System.Drawing.Size(1254, 95);
             this.pnTitleBar.TabIndex = 1;
             // 
             // ViewPanel
             // 
             this.ViewPanel.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ViewPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ViewPanel.Location = new System.Drawing.Point(271, 77);
+            this.ViewPanel.Location = new System.Drawing.Point(249, 95);
+            this.ViewPanel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ViewPanel.Name = "ViewPanel";
-            this.ViewPanel.Size = new System.Drawing.Size(856, 580);
+            this.ViewPanel.Size = new System.Drawing.Size(1254, 714);
             this.ViewPanel.TabIndex = 6;
+            // 
+            // panel2
+            // 
+            this.panel2.Location = new System.Drawing.Point(3, 407);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(200, 350);
+            this.panel2.TabIndex = 0;
             // 
             // pictureBox3
             // 
             this.pictureBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(715, 31);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox3.Location = new System.Drawing.Point(1084, 38);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(5);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(23, 22);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -120,9 +133,10 @@
             this.btnMenu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMenu.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(44)))), ((int)(((byte)(49)))));
             this.btnMenu.Image = ((System.Drawing.Image)(resources.GetObject("btnMenu.Image")));
-            this.btnMenu.Location = new System.Drawing.Point(6, 7);
+            this.btnMenu.Location = new System.Drawing.Point(8, 9);
+            this.btnMenu.Margin = new System.Windows.Forms.Padding(4);
             this.btnMenu.Name = "btnMenu";
-            this.btnMenu.Size = new System.Drawing.Size(48, 64);
+            this.btnMenu.Size = new System.Drawing.Size(64, 79);
             this.btnMenu.TabIndex = 0;
             this.btnMenu.UseVisualStyleBackColor = true;
             this.btnMenu.Click += new System.EventHandler(this.btnMenu_Click);
@@ -132,46 +146,47 @@
             this.ProfilePicBox.AllowFocused = false;
             this.ProfilePicBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.ProfilePicBox.BorderRadius = 0;
+            this.ProfilePicBox.Image = global::WorkHive.Properties.Resources.UserProfile;
             this.ProfilePicBox.IsCircle = false;
-            this.ProfilePicBox.Location = new System.Drawing.Point(772, 13);
-            this.ProfilePicBox.Margin = new System.Windows.Forms.Padding(4);
+            this.ProfilePicBox.Location = new System.Drawing.Point(1152, 30);
+            this.ProfilePicBox.Margin = new System.Windows.Forms.Padding(5);
             this.ProfilePicBox.Name = "ProfilePicBox";
-            this.ProfilePicBox.Size = new System.Drawing.Size(71, 48);
-            this.ProfilePicBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.ProfilePicBox.Size = new System.Drawing.Size(48, 43);
+            this.ProfilePicBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.ProfilePicBox.TabIndex = 7;
             this.ProfilePicBox.TabStop = false;
             this.ProfilePicBox.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Custom;
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(4, 13);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox2.Image = global::WorkHive.Properties.Resources.logo;
+            this.pictureBox2.Location = new System.Drawing.Point(5, 23);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(5);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(46, 46);
+            this.pictureBox2.Size = new System.Drawing.Size(42, 42);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 1;
             this.pictureBox2.TabStop = false;
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(57, 28);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox1.Image = global::WorkHive.Properties.Resources.logo_name;
+            this.pictureBox1.Location = new System.Drawing.Point(57, 36);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(5);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(137, 20);
+            this.pictureBox1.Size = new System.Drawing.Size(146, 20);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
             // 
             // btnDashBoard
             // 
-            this.btnDashBoard.Active = false;
-            this.btnDashBoard.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.btnDashBoard.Active = true;
+            this.btnDashBoard.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(194)))), ((int)(((byte)(1)))));
             this.btnDashBoard.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(44)))), ((int)(((byte)(49)))));
             this.btnDashBoard.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnDashBoard.BorderRadius = 0;
-            this.btnDashBoard.ButtonText = "  Dashboard";
+            this.btnDashBoard.ButtonText = "   Dashboard";
             this.btnDashBoard.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnDashBoard.DisabledColor = System.Drawing.Color.Gray;
             this.btnDashBoard.Dock = System.Windows.Forms.DockStyle.Top;
@@ -185,18 +200,19 @@
             this.btnDashBoard.IconRightVisible = true;
             this.btnDashBoard.IconRightZoom = 0D;
             this.btnDashBoard.IconVisible = true;
-            this.btnDashBoard.IconZoom = 30D;
+            this.btnDashBoard.IconZoom = 40D;
             this.btnDashBoard.IsTab = false;
-            this.btnDashBoard.Location = new System.Drawing.Point(3, 88);
+            this.btnDashBoard.Location = new System.Drawing.Point(0, 104);
+            this.btnDashBoard.Margin = new System.Windows.Forms.Padding(0);
             this.btnDashBoard.Name = "btnDashBoard";
             this.btnDashBoard.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(44)))), ((int)(((byte)(49)))));
             this.btnDashBoard.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(194)))), ((int)(((byte)(1)))));
             this.btnDashBoard.OnHoverTextColor = System.Drawing.Color.White;
-            this.btnDashBoard.selected = false;
-            this.btnDashBoard.Size = new System.Drawing.Size(180, 41);
+            this.btnDashBoard.selected = true;
+            this.btnDashBoard.Size = new System.Drawing.Size(250, 50);
             this.btnDashBoard.TabIndex = 1;
             this.btnDashBoard.Tag = "Dashboard";
-            this.btnDashBoard.Text = "  Dashboard";
+            this.btnDashBoard.Text = "   Dashboard";
             this.btnDashBoard.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnDashBoard.Textcolor = System.Drawing.Color.White;
             this.btnDashBoard.TextFont = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -204,12 +220,12 @@
             // 
             // btnEmployees
             // 
-            this.btnEmployees.Active = false;
-            this.btnEmployees.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.btnEmployees.Active = true;
+            this.btnEmployees.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(194)))), ((int)(((byte)(1)))));
             this.btnEmployees.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(44)))), ((int)(((byte)(49)))));
             this.btnEmployees.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnEmployees.BorderRadius = 0;
-            this.btnEmployees.ButtonText = "  Employees";
+            this.btnEmployees.ButtonText = "   Employees";
             this.btnEmployees.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnEmployees.DisabledColor = System.Drawing.Color.Gray;
             this.btnEmployees.Dock = System.Windows.Forms.DockStyle.Top;
@@ -223,18 +239,19 @@
             this.btnEmployees.IconRightVisible = true;
             this.btnEmployees.IconRightZoom = 0D;
             this.btnEmployees.IconVisible = true;
-            this.btnEmployees.IconZoom = 30D;
+            this.btnEmployees.IconZoom = 40D;
             this.btnEmployees.IsTab = false;
-            this.btnEmployees.Location = new System.Drawing.Point(3, 135);
+            this.btnEmployees.Location = new System.Drawing.Point(0, 154);
+            this.btnEmployees.Margin = new System.Windows.Forms.Padding(0);
             this.btnEmployees.Name = "btnEmployees";
             this.btnEmployees.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(44)))), ((int)(((byte)(49)))));
-            this.btnEmployees.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.btnEmployees.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(194)))), ((int)(((byte)(1)))));
             this.btnEmployees.OnHoverTextColor = System.Drawing.Color.White;
-            this.btnEmployees.selected = false;
-            this.btnEmployees.Size = new System.Drawing.Size(180, 41);
+            this.btnEmployees.selected = true;
+            this.btnEmployees.Size = new System.Drawing.Size(250, 50);
             this.btnEmployees.TabIndex = 2;
             this.btnEmployees.Tag = "Employees";
-            this.btnEmployees.Text = "  Employees";
+            this.btnEmployees.Text = "   Employees";
             this.btnEmployees.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnEmployees.Textcolor = System.Drawing.Color.White;
             this.btnEmployees.TextFont = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -242,12 +259,12 @@
             // 
             // btnTasks
             // 
-            this.btnTasks.Active = false;
-            this.btnTasks.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.btnTasks.Active = true;
+            this.btnTasks.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(194)))), ((int)(((byte)(1)))));
             this.btnTasks.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(44)))), ((int)(((byte)(49)))));
             this.btnTasks.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnTasks.BorderRadius = 0;
-            this.btnTasks.ButtonText = "  Tasks";
+            this.btnTasks.ButtonText = "   Tasks";
             this.btnTasks.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnTasks.DisabledColor = System.Drawing.Color.Gray;
             this.btnTasks.Dock = System.Windows.Forms.DockStyle.Top;
@@ -261,18 +278,19 @@
             this.btnTasks.IconRightVisible = true;
             this.btnTasks.IconRightZoom = 0D;
             this.btnTasks.IconVisible = true;
-            this.btnTasks.IconZoom = 30D;
+            this.btnTasks.IconZoom = 40D;
             this.btnTasks.IsTab = false;
-            this.btnTasks.Location = new System.Drawing.Point(3, 182);
+            this.btnTasks.Location = new System.Drawing.Point(0, 204);
+            this.btnTasks.Margin = new System.Windows.Forms.Padding(0);
             this.btnTasks.Name = "btnTasks";
             this.btnTasks.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(44)))), ((int)(((byte)(49)))));
-            this.btnTasks.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.btnTasks.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(194)))), ((int)(((byte)(1)))));
             this.btnTasks.OnHoverTextColor = System.Drawing.Color.White;
-            this.btnTasks.selected = false;
-            this.btnTasks.Size = new System.Drawing.Size(180, 41);
+            this.btnTasks.selected = true;
+            this.btnTasks.Size = new System.Drawing.Size(250, 50);
             this.btnTasks.TabIndex = 3;
             this.btnTasks.Tag = "Tasks";
-            this.btnTasks.Text = "  Tasks";
+            this.btnTasks.Text = "   Tasks";
             this.btnTasks.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnTasks.Textcolor = System.Drawing.Color.White;
             this.btnTasks.TextFont = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -280,12 +298,12 @@
             // 
             // btnEditTasks
             // 
-            this.btnEditTasks.Active = false;
-            this.btnEditTasks.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.btnEditTasks.Active = true;
+            this.btnEditTasks.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(194)))), ((int)(((byte)(1)))));
             this.btnEditTasks.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(44)))), ((int)(((byte)(49)))));
             this.btnEditTasks.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnEditTasks.BorderRadius = 0;
-            this.btnEditTasks.ButtonText = "  Edit Tasks";
+            this.btnEditTasks.ButtonText = "   Edit Tasks";
             this.btnEditTasks.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnEditTasks.DisabledColor = System.Drawing.Color.Gray;
             this.btnEditTasks.Dock = System.Windows.Forms.DockStyle.Top;
@@ -299,30 +317,31 @@
             this.btnEditTasks.IconRightVisible = true;
             this.btnEditTasks.IconRightZoom = 0D;
             this.btnEditTasks.IconVisible = true;
-            this.btnEditTasks.IconZoom = 30D;
+            this.btnEditTasks.IconZoom = 40D;
             this.btnEditTasks.IsTab = false;
-            this.btnEditTasks.Location = new System.Drawing.Point(3, 229);
+            this.btnEditTasks.Location = new System.Drawing.Point(0, 254);
+            this.btnEditTasks.Margin = new System.Windows.Forms.Padding(0);
             this.btnEditTasks.Name = "btnEditTasks";
             this.btnEditTasks.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(44)))), ((int)(((byte)(49)))));
-            this.btnEditTasks.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.btnEditTasks.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(194)))), ((int)(((byte)(1)))));
             this.btnEditTasks.OnHoverTextColor = System.Drawing.Color.White;
-            this.btnEditTasks.selected = false;
-            this.btnEditTasks.Size = new System.Drawing.Size(180, 41);
+            this.btnEditTasks.selected = true;
+            this.btnEditTasks.Size = new System.Drawing.Size(250, 50);
             this.btnEditTasks.TabIndex = 4;
             this.btnEditTasks.Tag = "Edit Tasks";
-            this.btnEditTasks.Text = "  Edit Tasks";
+            this.btnEditTasks.Text = "   Edit Tasks";
             this.btnEditTasks.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnEditTasks.Textcolor = System.Drawing.Color.White;
             this.btnEditTasks.TextFont = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             // 
             // btnCalendar
             // 
-            this.btnCalendar.Active = false;
-            this.btnCalendar.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.btnCalendar.Active = true;
+            this.btnCalendar.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(194)))), ((int)(((byte)(1)))));
             this.btnCalendar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(44)))), ((int)(((byte)(49)))));
             this.btnCalendar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnCalendar.BorderRadius = 0;
-            this.btnCalendar.ButtonText = "  Calendar";
+            this.btnCalendar.ButtonText = "   Calendar";
             this.btnCalendar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCalendar.DisabledColor = System.Drawing.Color.Gray;
             this.btnCalendar.Dock = System.Windows.Forms.DockStyle.Top;
@@ -336,34 +355,36 @@
             this.btnCalendar.IconRightVisible = true;
             this.btnCalendar.IconRightZoom = 0D;
             this.btnCalendar.IconVisible = true;
-            this.btnCalendar.IconZoom = 30D;
+            this.btnCalendar.IconZoom = 40D;
             this.btnCalendar.IsTab = false;
-            this.btnCalendar.Location = new System.Drawing.Point(3, 276);
+            this.btnCalendar.Location = new System.Drawing.Point(0, 304);
+            this.btnCalendar.Margin = new System.Windows.Forms.Padding(0);
             this.btnCalendar.Name = "btnCalendar";
             this.btnCalendar.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(44)))), ((int)(((byte)(49)))));
-            this.btnCalendar.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.btnCalendar.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(194)))), ((int)(((byte)(1)))));
             this.btnCalendar.OnHoverTextColor = System.Drawing.Color.White;
-            this.btnCalendar.selected = false;
-            this.btnCalendar.Size = new System.Drawing.Size(180, 41);
+            this.btnCalendar.selected = true;
+            this.btnCalendar.Size = new System.Drawing.Size(250, 50);
             this.btnCalendar.TabIndex = 5;
             this.btnCalendar.Tag = "Calendar";
-            this.btnCalendar.Text = "  Calendar";
+            this.btnCalendar.Text = "   Calendar";
             this.btnCalendar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnCalendar.Textcolor = System.Drawing.Color.White;
             this.btnCalendar.TextFont = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             // 
             // btnChats
             // 
-            this.btnChats.Active = false;
-            this.btnChats.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.btnChats.Active = true;
+            this.btnChats.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(194)))), ((int)(((byte)(1)))));
             this.btnChats.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(44)))), ((int)(((byte)(49)))));
             this.btnChats.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnChats.BorderRadius = 0;
-            this.btnChats.ButtonText = "  Chats";
+            this.btnChats.ButtonText = "   Chats";
             this.btnChats.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnChats.DisabledColor = System.Drawing.Color.Gray;
             this.btnChats.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnChats.Iconcolor = System.Drawing.Color.Transparent;
+            this.btnChats.Iconimage = global::WorkHive.Properties.Resources.Button___Chat1;
             this.btnChats.Iconimage_right = null;
             this.btnChats.Iconimage_right_Selected = null;
             this.btnChats.Iconimage_Selected = null;
@@ -372,31 +393,70 @@
             this.btnChats.IconRightVisible = true;
             this.btnChats.IconRightZoom = 0D;
             this.btnChats.IconVisible = true;
-            this.btnChats.IconZoom = 30D;
+            this.btnChats.IconZoom = 40D;
             this.btnChats.IsTab = false;
-            this.btnChats.Location = new System.Drawing.Point(4, 324);
-            this.btnChats.Margin = new System.Windows.Forms.Padding(4);
+            this.btnChats.Location = new System.Drawing.Point(0, 354);
+            this.btnChats.Margin = new System.Windows.Forms.Padding(0);
             this.btnChats.Name = "btnChats";
             this.btnChats.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(44)))), ((int)(((byte)(49)))));
-            this.btnChats.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.btnChats.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(194)))), ((int)(((byte)(1)))));
             this.btnChats.OnHoverTextColor = System.Drawing.Color.White;
-            this.btnChats.selected = false;
-            this.btnChats.Size = new System.Drawing.Size(240, 51);
+            this.btnChats.selected = true;
+            this.btnChats.Size = new System.Drawing.Size(250, 50);
             this.btnChats.TabIndex = 6;
             this.btnChats.Tag = "Chats";
-            this.btnChats.Text = "  Chats";
+            this.btnChats.Text = "   Chats";
             this.btnChats.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnChats.Textcolor = System.Drawing.Color.White;
             this.btnChats.TextFont = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             // 
+            // bunifuFlatButton1
+            // 
+            this.bunifuFlatButton1.Active = true;
+            this.bunifuFlatButton1.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(194)))), ((int)(((byte)(1)))));
+            this.bunifuFlatButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(44)))), ((int)(((byte)(49)))));
+            this.bunifuFlatButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuFlatButton1.BorderRadius = 0;
+            this.bunifuFlatButton1.ButtonText = "   Log Out";
+            this.bunifuFlatButton1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuFlatButton1.DisabledColor = System.Drawing.Color.Gray;
+            this.bunifuFlatButton1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.bunifuFlatButton1.Iconcolor = System.Drawing.Color.Transparent;
+            this.bunifuFlatButton1.Iconimage = global::WorkHive.Properties.Resources.Button___LogOut;
+            this.bunifuFlatButton1.Iconimage_right = null;
+            this.bunifuFlatButton1.Iconimage_right_Selected = null;
+            this.bunifuFlatButton1.Iconimage_Selected = null;
+            this.bunifuFlatButton1.IconMarginLeft = 0;
+            this.bunifuFlatButton1.IconMarginRight = 0;
+            this.bunifuFlatButton1.IconRightVisible = true;
+            this.bunifuFlatButton1.IconRightZoom = 0D;
+            this.bunifuFlatButton1.IconVisible = true;
+            this.bunifuFlatButton1.IconZoom = 40D;
+            this.bunifuFlatButton1.IsTab = false;
+            this.bunifuFlatButton1.Location = new System.Drawing.Point(0, 760);
+            this.bunifuFlatButton1.Margin = new System.Windows.Forms.Padding(0);
+            this.bunifuFlatButton1.Name = "bunifuFlatButton1";
+            this.bunifuFlatButton1.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(44)))), ((int)(((byte)(49)))));
+            this.bunifuFlatButton1.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(194)))), ((int)(((byte)(1)))));
+            this.bunifuFlatButton1.OnHoverTextColor = System.Drawing.Color.White;
+            this.bunifuFlatButton1.selected = true;
+            this.bunifuFlatButton1.Size = new System.Drawing.Size(316, 50);
+            this.bunifuFlatButton1.TabIndex = 8;
+            this.bunifuFlatButton1.Tag = "Chats";
+            this.bunifuFlatButton1.Text = "   Log Out";
+            this.bunifuFlatButton1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.bunifuFlatButton1.Textcolor = System.Drawing.Color.White;
+            this.bunifuFlatButton1.TextFont = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            // 
             // Dashboard_Admin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1127, 657);
+            this.ClientSize = new System.Drawing.Size(1503, 809);
             this.Controls.Add(this.ViewPanel);
             this.Controls.Add(this.pnTitleBar);
             this.Controls.Add(this.sidebar);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Dashboard_Admin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Dashboard_Admin";
@@ -428,5 +488,7 @@
         private Bunifu.Framework.UI.BunifuFlatButton btnChats;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Panel panel2;
+        private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton1;
     }
 }

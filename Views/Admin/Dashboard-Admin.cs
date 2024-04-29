@@ -72,7 +72,7 @@ namespace WorkHive.Views
 
         private void CollapseMenu()
         {
-            if (this.sidebar.Width > 200)
+            if (this.sidebar.Width > 150)
             {
                 sidebar.Width = 42;
                 pictureBox1.Visible = false;
@@ -86,7 +86,7 @@ namespace WorkHive.Views
             }
             else
             {
-                sidebar.Width = 244;
+                sidebar.Width = 180;
                 pictureBox1.Visible = true;
                 btnMenu.Dock = DockStyle.None;
                 foreach (Button menubutton in sidebar.Controls.OfType<Button>())

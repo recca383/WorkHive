@@ -292,7 +292,12 @@
     <Folder Include="Views\Member\" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\Button - Chat1.png" />
+    <None Include="Resources\Button - LogOut.png" />
     <Content Include="Resources\Default_Pics\Userdefault.png" />
+    <None Include="Resources\logo1.png" />
+    <None Include="Resources\logo name1.png" />
+    <None Include="Resources\UserProfile1.png" />
     <None Include="Resources\Default_Pics\UserAdminDefault.png" />
     <None Include="Resources\Button - Chat.png" />
     <Content Include="Resources\Default_Admin_Pics\joko.jpg" />
