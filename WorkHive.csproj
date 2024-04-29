@@ -171,6 +171,12 @@
     <Compile Include="Views\Admin\DashboardPages\DashboardView.Designer.cs">
       <DependentUpon>DashboardView.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\Cards\AdminCard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Cards\AdminCard.Designer.cs">
+      <DependentUpon>AdminCard.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\Cards\ProfileCard.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -217,6 +223,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Views\Admin\DashboardPages\DashboardView.resx">
       <DependentUpon>DashboardView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Cards\AdminCard.resx">
+      <DependentUpon>AdminCard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\Cards\ProfileCard.resx">
       <DependentUpon>ProfileCard.cs</DependentUpon>
@@ -290,6 +299,8 @@
     <None Include="Resources\Tasks Cards P1.png" />
     <None Include="Resources\Button - Chat1.png" />
     <None Include="Resources\Button - LogOut.png" />
+    <None Include="Resources\AdminCard TOP1.png" />
+    <None Include="Resources\AdminCard RIGHT1.png" />
     <Content Include="Resources\Default_Pics\Userdefault.png" />
     <None Include="Resources\logo1.png" />
     <None Include="Resources\logo name1.png" />
