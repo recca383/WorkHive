@@ -19,22 +19,22 @@ namespace WorkHive.Views.Cards
             InitializeComponent();
         }
 
-        static DashboardNavigation dashboardNavigation;
-        private void Initialize_Navigation_Controls()
-        {
-            List<UserControl> list = new List<UserControl>()
-            { new Sign_In(), new Sign_Up() };
-
-            dashboardNavigation = new DashboardNavigation(list, TasksPanel);
-            dashboardNavigation.Display(0);
-        }
-
         private void lblTask_Title_Click(object sender, EventArgs e)
         {
 
         }
 
         private void TaskCard_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Archived_OnChange(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
         {
 
         }

@@ -183,12 +183,6 @@
     <Compile Include="Views\Cards\TaskCard.Designer.cs">
       <DependentUpon>TaskCard.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\Cards\TaskCardInfo.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Views\Cards\TaskCardInfo.Designer.cs">
-      <DependentUpon>TaskCardInfo.cs</DependentUpon>
-    </Compile>
     <Compile Include="Views\LandingPage\Landing Page.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -229,9 +223,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Views\Cards\TaskCard.resx">
       <DependentUpon>TaskCard.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Views\Cards\TaskCardInfo.resx">
-      <DependentUpon>TaskCardInfo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\LandingPage\Landing Page.resx">
       <DependentUpon>Landing Page.cs</DependentUpon>
@@ -292,6 +283,9 @@
     <Folder Include="Views\Member\" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\Tasks Cards P21.png" />
+    <None Include="Resources\Tasks Cards TOP2.png" />
+    <None Include="Resources\Tasks Cards P1.png" />
     <None Include="Resources\Button - Chat1.png" />
     <None Include="Resources\Button - LogOut.png" />
     <Content Include="Resources\Default_Pics\Userdefault.png" />

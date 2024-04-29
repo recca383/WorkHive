@@ -223,6 +223,36 @@ namespace WorkHive.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Tasks_Cards_P1 {
+            get {
+                object obj = ResourceManager.GetObject("Tasks Cards P1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Tasks_Cards_P2 {
+            get {
+                object obj = ResourceManager.GetObject("Tasks Cards P2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Tasks_Cards_TOP {
+            get {
+                object obj = ResourceManager.GetObject("Tasks Cards TOP", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap UserAdminDefault {
             get {
                 object obj = ResourceManager.GetObject("UserAdminDefault", resourceCulture);
