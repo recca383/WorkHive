@@ -283,6 +283,8 @@
     <Folder Include="Views\Member\" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\Profile1.png" />
+    <None Include="Resources\MemberCard1.png" />
     <None Include="Resources\Tasks Cards P21.png" />
     <None Include="Resources\Tasks Cards TOP2.png" />
     <None Include="Resources\Tasks Cards P1.png" />
