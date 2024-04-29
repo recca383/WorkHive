@@ -178,6 +178,12 @@
     <Compile Include="Views\Cards\TaskCard.Designer.cs">
       <DependentUpon>TaskCard.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\Cards\TaskCardInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Cards\TaskCardInfo.Designer.cs">
+      <DependentUpon>TaskCardInfo.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\LandingPage\Landing Page.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -223,6 +229,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Views\Cards\TaskCard.resx">
       <DependentUpon>TaskCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Cards\TaskCardInfo.resx">
+      <DependentUpon>TaskCardInfo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\LandingPage\Landing Page.resx">
       <DependentUpon>Landing Page.cs</DependentUpon>
@@ -283,6 +292,7 @@
     <Folder Include="Views\Member\" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\Button - Chat.png" />
     <Content Include="Resources\Default_Admin_Pics\joko.jpg" />
     <Content Include="Resources\Default_Admin_Pics\tatik.jpg" />
     <Content Include="Resources\Default_Admin_Pics\wincel.jpg" />

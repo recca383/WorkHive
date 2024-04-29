@@ -40,5 +40,9 @@ namespace WorkHive.Views.LandingPage
             dashboardNavigation.Display(1);
         }
 
+        private void LandingPageViewPanel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

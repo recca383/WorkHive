@@ -91,5 +91,10 @@ namespace WorkHive.Views.Admin.DashboardPages
                 TasksFlow.Controls.Add(result);
             }
         }
+
+        private void TasksFlow_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
