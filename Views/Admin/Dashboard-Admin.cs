@@ -42,23 +42,20 @@ namespace WorkHive.Views
             dashboardNavigation.Display(0);
         }
 
-        private void btnDashBoard_Click(object sender, EventArgs e)
+        private void btnDashBoard_Click_1(object sender, EventArgs e)
         {
             dashboardNavigation.Display(0);
         }
 
-        private void btnEmployees_Click(object sender, EventArgs e)
+        private void btnEmployees_Click_1(object sender, EventArgs e)
         {
             dashboardNavigation.Display(1);
         }
 
-        private void btnTasks_Click(object sender, EventArgs e)
+        private void btnTasks_Click_1(object sender, EventArgs e)
         {
             dashboardNavigation.Display(2);
         }
-
- 
-
 
         private void ViewPanel_Paint(object sender, PaintEventArgs e)
         {
@@ -81,7 +78,7 @@ namespace WorkHive.Views
                 {
                     menubutton.Text = "";
                     menubutton.ImageAlign = ContentAlignment.MiddleCenter;
-                    menubutton.Padding = new Padding(0);
+
                 }
             }
             else
@@ -93,7 +90,7 @@ namespace WorkHive.Views
                 {
                     menubutton.Text = "  " + menubutton.Tag.ToString();
                     menubutton.ImageAlign = ContentAlignment.MiddleCenter;
-                    menubutton.Padding = new Padding(0);
+
                 }
 
             }

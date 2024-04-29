@@ -78,6 +78,7 @@
             this.LandingPageViewPanel.Name = "LandingPageViewPanel";
             this.LandingPageViewPanel.Size = new System.Drawing.Size(659, 809);
             this.LandingPageViewPanel.TabIndex = 1;
+            this.LandingPageViewPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.LandingPageViewPanel_Paint);
             // 
             // Landing_Page
             // 
