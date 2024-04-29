@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WorkHive.Controller;
+using WorkHive.Model;
 
 namespace WorkHive.Views.LandingPage.LandingPagePages
 {
@@ -26,7 +28,7 @@ namespace WorkHive.Views.LandingPage.LandingPagePages
         {
             if (e.KeyCode == Keys.Enter)
             {
-                textBox2.Focus();
+                txtEmail.Focus();
             }
         }
 
@@ -35,7 +37,7 @@ namespace WorkHive.Views.LandingPage.LandingPagePages
 
             if (e.KeyCode == Keys.Enter)
             {
-                textBox3.Focus();
+                txtPassword.Focus();
             }
         }
 
@@ -43,16 +45,43 @@ namespace WorkHive.Views.LandingPage.LandingPagePages
         {
             if (e.KeyCode == Keys.Enter)
             {
-                textBox4.Focus();
+                txtConfirmPassword.Focus();
             }
         }
 
-       /* private void textBox4_KeyDown(object sender, KeyEventArgs e)
+        private void btnSignUp_Click(object sender, EventArgs e)
         {
-            if (e.KeyCode == Keys.Enter)
+            List<MemberModel> model = MemberModelAccess.GetMemberModel();
+            if (model.Any(n => n.Username == txtName.Text)) MessageBox.Show("Username Taken");
+            else if (model.Any(m => m.Email == txtEmail.Text)) MessageBox.Show("Email Already Used");
+            else if (!(txtPassword.Text == txtConfirmPassword.Text)) MessageBox.Show("Password Does Not Match");
+            else
             {
-                button1.PeformClick();
+                MemberModelAccess.AddMember(new MemberModel()
+                {
+                    Username = txtName.Text,
+                    Email = txtEmail.Text,
+                    Password = txtPassword.Text,
+                    IsLeader = true // change to false for creating member as default
+                    
+                });
+
+                MessageBox.Show("Sign Up Complete!", "Complete", MessageBoxButtons.OK);
+                txtName.Text = default;
+                txtEmail.Text = default;
+                txtPassword.Text = default;
+                txtConfirmPassword.Text = default;
+
+
             }
-        }*/
+        }
+
+        /* private void textBox4_KeyDown(object sender, KeyEventArgs e)
+         {
+             if (e.KeyCode == Keys.Enter)
+             {
+                 button1.PeformClick();
+             }
+         }*/
     }
 }

@@ -31,7 +31,15 @@ namespace WorkHive.Views
         private void Initialize_Controls_According_To_User()
         {
             var parent = Directory.GetParent(Directory.GetCurrentDirectory()).FullName;
-            ProfilePicBox.Image = Image.FromFile(Path.Combine(Path.GetDirectoryName(parent),CurrentUser.Profile_Pic));
+            if(CurrentUser.Profile_Pic == null)
+            {
+                ProfilePicBox.Image = default(Image);
+            }
+            else
+            {
+                ProfilePicBox.Image = Image.FromFile(Path.Combine(Path.GetDirectoryName(parent), CurrentUser.Profile_Pic));
+            }
+            
         }
         private void Initialize_Navigation_Controls()
         {

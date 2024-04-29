@@ -26,6 +26,11 @@ namespace WorkHive.Views.LandingPage.LandingPagePages
 
         private void btnSignIn_Click(object sender, EventArgs e)
         {
+            SignIn();
+        }
+
+        private void SignIn()
+        {
             var memberModel = MemberModelAccess.GetMemberModel();
             var CurrentUser = memberModel.FirstOrDefault(c => c.Email == txtEmail.Text && c.Password == txtPassword.Text);
 
@@ -38,7 +43,7 @@ namespace WorkHive.Views.LandingPage.LandingPagePages
                 Dashboard_Admin admin = new Dashboard_Admin(CurrentUser);
                 admin.Show();
                 this.ParentForm.Hide();
-                
+
             }
             else if (!CurrentUser.IsLeader)
             {
@@ -64,22 +69,20 @@ namespace WorkHive.Views.LandingPage.LandingPagePages
 
         }
 
-        private void txtEmail_KeyDown(object sender, KeyEventArgs e)
+        private void txtPassword_KeyDown(object sender, KeyEventArgs e)
         {
-            if (e.KeyCode == Keys.Enter)
-            {
-                txtPassword.Focus();
-            }
+            if (e.KeyCode == Keys.Enter) SignIn();
+
         }
 
-       /* private void txtPassword_KeyDown(object sender, KeyEventArgs e)
-        {
-            if (e.KeyCode == Keys.Enter)
-            {
-                btnSignIn.PeformClick();
-              
-            } di gumagana sa flat button :(
-        }*/
+        /* private void txtPassword_KeyDown(object sender, KeyEventArgs e)
+         {
+             if (e.KeyCode == Keys.Enter)
+             {
+                 btnSignIn.PeformClick();
+
+             } di gumagana sa flat button :(
+         }*/
 
 
     }

@@ -54,6 +54,10 @@ namespace WorkHive.Controller
         {
             return memberModel;
         }
+        public static void AddMember(MemberModel member)
+        {
+            memberModel.Add(member);
+        }
 
     }
 }
