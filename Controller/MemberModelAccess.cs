@@ -4,6 +4,8 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Web.UI.Design.WebControls;
+using System.Windows.Forms;
 using WorkHive.Model;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
@@ -18,7 +20,7 @@ namespace WorkHive.Controller
             {
                 ID = 0,
                 Email = "Pat",
-                Username = "recca383",
+                FirstName = "recca383",
                 Password = "123",
                 IsLeader = true,
                 Profile_Pic = "Resources\\Default_Admin_Pics\\tatik.jpg"
@@ -29,7 +31,7 @@ namespace WorkHive.Controller
             {
                 ID = 1,
                 Email = "joko",
-                Username = "joko",
+                FirstName = "joko",
                 Password = "123",
                 IsLeader = true,
                 Profile_Pic = "Resources\\Default_Admin_Pics\\joko.jpg"
@@ -41,7 +43,7 @@ namespace WorkHive.Controller
             {
                 ID = 2,
                 Email = "Wincel",
-                Username = "Wincel",
+                FirstName = "Wincel",
                 Password = "123",
                 IsLeader = true,
                 Profile_Pic = "Resources\\Default_Admin_Pics\\wincel.jpg"
@@ -57,6 +59,26 @@ namespace WorkHive.Controller
         public static void AddMember(MemberModel member)
         {
             memberModel.Add(member);
+        }
+        public static void ChangePassword (MemberModel member, string currentPassword, string newPassword, string newPasswordConfirm)
+        {
+            if (!(member.Password == currentPassword))
+            {
+                MessageBox.Show("Wrong Password");
+            }
+            else if (!(member.Password == newPassword))
+            {
+                MessageBox.Show("Password Doesn't Match");
+            }
+            else if(member.Password == newPassword)
+            {
+                MessageBox.Show("You can't use your old password");
+            }
+            else
+            {
+                member.Password = newPassword;
+                MessageBox.Show("Change Password Successful");
+            }
         }
 
     }
