@@ -17,6 +17,6 @@ namespace WorkHive.Views.Admin
             InitializeComponent();
         }
 
-      
+        
     }
 }
