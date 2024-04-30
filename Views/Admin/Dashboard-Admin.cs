@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Drawing2D;
 using System.IO;
 using System.Linq;
 using System.Reflection;
@@ -31,7 +32,7 @@ namespace WorkHive.Views
         private void Initialize_Controls_According_To_User()
         {
             var parent = Directory.GetParent(Directory.GetCurrentDirectory()).FullName;
-            if(CurrentUser.Profile_Pic == null)
+            if (CurrentUser.Profile_Pic == null)
             {
                 ProfilePicBox.Image = Image.FromFile(Path.Combine(Path.GetDirectoryName(parent), "Resources\\Default_Pics\\Userdefault.png"));
             }
@@ -39,7 +40,7 @@ namespace WorkHive.Views
             {
                 ProfilePicBox.Image = Image.FromFile(Path.Combine(Path.GetDirectoryName(parent), CurrentUser.Profile_Pic));
             }
-            
+
         }
         private void Initialize_Navigation_Controls()
         {
@@ -77,7 +78,7 @@ namespace WorkHive.Views
                 sidebar.Width = 42;
                 pictureBox1.Visible = false;
                 btnMenu.Dock = DockStyle.Left;
-                foreach (Button menubutton in sidebar.Controls.OfType<Button>()) 
+                foreach (Button menubutton in sidebar.Controls.OfType<Button>())
                 {
                     menubutton.Text = "";
                     menubutton.ImageAlign = ContentAlignment.MiddleCenter;
@@ -99,5 +100,16 @@ namespace WorkHive.Views
             }
         }
 
+    }
+
+    public class CircularPictureBox : PictureBox
+    {
+        protected override void OnPaint(PaintEventArgs pe)
+        {
+            GraphicsPath g = new GraphicsPath();
+            g.AddEllipse(0, 0, ClientSize.Width, ClientSize.Height);
+            this.Region = new System.Drawing.Region(g);
+            base.OnPaint(pe);
+        } 
     }
 }

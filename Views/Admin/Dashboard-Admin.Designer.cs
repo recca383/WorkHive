@@ -31,12 +31,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Dashboard_Admin));
             this.sidebar = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.pnTitleBar = new System.Windows.Forms.Panel();
-            this.ViewPanel = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.btnMenu = new System.Windows.Forms.Button();
-            this.ProfilePicBox = new Bunifu.UI.WinForms.BunifuPictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnDashBoard = new Bunifu.Framework.UI.BunifuFlatButton();
@@ -45,14 +39,20 @@
             this.btnEditTasks = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnCalendar = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnChats = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.bunifuFlatButton1 = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.pnTitleBar = new System.Windows.Forms.Panel();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.btnMenu = new System.Windows.Forms.Button();
+            this.ViewPanel = new System.Windows.Forms.Panel();
+            this.ProfilePicBox = new WorkHive.Views.CircularPictureBox();
             this.sidebar.SuspendLayout();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.pnTitleBar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ProfilePicBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // sidebar
@@ -84,78 +84,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(241, 100);
             this.panel1.TabIndex = 1;
-            // 
-            // pnTitleBar
-            // 
-            this.pnTitleBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(44)))), ((int)(((byte)(49)))));
-            this.pnTitleBar.Controls.Add(this.pictureBox3);
-            this.pnTitleBar.Controls.Add(this.btnMenu);
-            this.pnTitleBar.Controls.Add(this.ProfilePicBox);
-            this.pnTitleBar.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnTitleBar.Location = new System.Drawing.Point(249, 0);
-            this.pnTitleBar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.pnTitleBar.Name = "pnTitleBar";
-            this.pnTitleBar.Size = new System.Drawing.Size(1254, 95);
-            this.pnTitleBar.TabIndex = 1;
-            // 
-            // ViewPanel
-            // 
-            this.ViewPanel.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ViewPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ViewPanel.Location = new System.Drawing.Point(249, 95);
-            this.ViewPanel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.ViewPanel.Name = "ViewPanel";
-            this.ViewPanel.Size = new System.Drawing.Size(1254, 714);
-            this.ViewPanel.TabIndex = 6;
-            // 
-            // panel2
-            // 
-            this.panel2.Location = new System.Drawing.Point(3, 407);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(200, 350);
-            this.panel2.TabIndex = 0;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(1084, 38);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(5);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(23, 22);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox3.TabIndex = 2;
-            this.pictureBox3.TabStop = false;
-            // 
-            // btnMenu
-            // 
-            this.btnMenu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMenu.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(44)))), ((int)(((byte)(49)))));
-            this.btnMenu.Image = ((System.Drawing.Image)(resources.GetObject("btnMenu.Image")));
-            this.btnMenu.Location = new System.Drawing.Point(8, 9);
-            this.btnMenu.Margin = new System.Windows.Forms.Padding(4);
-            this.btnMenu.Name = "btnMenu";
-            this.btnMenu.Size = new System.Drawing.Size(64, 79);
-            this.btnMenu.TabIndex = 0;
-            this.btnMenu.UseVisualStyleBackColor = true;
-            this.btnMenu.Click += new System.EventHandler(this.btnMenu_Click);
-            // 
-            // ProfilePicBox
-            // 
-            this.ProfilePicBox.AllowFocused = false;
-            this.ProfilePicBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.ProfilePicBox.BorderRadius = 0;
-            this.ProfilePicBox.Image = global::WorkHive.Properties.Resources.UserProfile;
-            this.ProfilePicBox.IsCircle = false;
-            this.ProfilePicBox.Location = new System.Drawing.Point(1152, 30);
-            this.ProfilePicBox.Margin = new System.Windows.Forms.Padding(5);
-            this.ProfilePicBox.Name = "ProfilePicBox";
-            this.ProfilePicBox.Size = new System.Drawing.Size(48, 43);
-            this.ProfilePicBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.ProfilePicBox.TabIndex = 7;
-            this.ProfilePicBox.TabStop = false;
-            this.ProfilePicBox.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Custom;
             // 
             // pictureBox2
             // 
@@ -410,6 +338,13 @@
             this.btnChats.Textcolor = System.Drawing.Color.White;
             this.btnChats.TextFont = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             // 
+            // panel2
+            // 
+            this.panel2.Location = new System.Drawing.Point(3, 407);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(200, 350);
+            this.panel2.TabIndex = 0;
+            // 
             // bunifuFlatButton1
             // 
             this.bunifuFlatButton1.Active = true;
@@ -448,6 +383,65 @@
             this.bunifuFlatButton1.Textcolor = System.Drawing.Color.White;
             this.bunifuFlatButton1.TextFont = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             // 
+            // pnTitleBar
+            // 
+            this.pnTitleBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(44)))), ((int)(((byte)(49)))));
+            this.pnTitleBar.Controls.Add(this.ProfilePicBox);
+            this.pnTitleBar.Controls.Add(this.pictureBox3);
+            this.pnTitleBar.Controls.Add(this.btnMenu);
+            this.pnTitleBar.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnTitleBar.Location = new System.Drawing.Point(249, 0);
+            this.pnTitleBar.Margin = new System.Windows.Forms.Padding(4);
+            this.pnTitleBar.Name = "pnTitleBar";
+            this.pnTitleBar.Size = new System.Drawing.Size(1254, 95);
+            this.pnTitleBar.TabIndex = 1;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Location = new System.Drawing.Point(1084, 38);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(5);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(23, 22);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox3.TabIndex = 2;
+            this.pictureBox3.TabStop = false;
+            // 
+            // btnMenu
+            // 
+            this.btnMenu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMenu.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(44)))), ((int)(((byte)(49)))));
+            this.btnMenu.Image = ((System.Drawing.Image)(resources.GetObject("btnMenu.Image")));
+            this.btnMenu.Location = new System.Drawing.Point(8, 9);
+            this.btnMenu.Margin = new System.Windows.Forms.Padding(4);
+            this.btnMenu.Name = "btnMenu";
+            this.btnMenu.Size = new System.Drawing.Size(64, 79);
+            this.btnMenu.TabIndex = 0;
+            this.btnMenu.UseVisualStyleBackColor = true;
+            this.btnMenu.Click += new System.EventHandler(this.btnMenu_Click);
+            // 
+            // ViewPanel
+            // 
+            this.ViewPanel.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.ViewPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ViewPanel.Location = new System.Drawing.Point(249, 95);
+            this.ViewPanel.Margin = new System.Windows.Forms.Padding(4);
+            this.ViewPanel.Name = "ViewPanel";
+            this.ViewPanel.Size = new System.Drawing.Size(1254, 714);
+            this.ViewPanel.TabIndex = 6;
+            // 
+            // ProfilePicBox
+            // 
+            this.ProfilePicBox.Image = global::WorkHive.Properties.Resources.Button___User_Profile;
+            this.ProfilePicBox.Location = new System.Drawing.Point(1133, 9);
+            this.ProfilePicBox.Name = "ProfilePicBox";
+            this.ProfilePicBox.Size = new System.Drawing.Size(81, 79);
+            this.ProfilePicBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.ProfilePicBox.TabIndex = 0;
+            this.ProfilePicBox.TabStop = false;
+            // 
             // Dashboard_Admin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -456,18 +450,18 @@
             this.Controls.Add(this.ViewPanel);
             this.Controls.Add(this.pnTitleBar);
             this.Controls.Add(this.sidebar);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Dashboard_Admin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Dashboard_Admin";
             this.sidebar.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.pnTitleBar.ResumeLayout(false);
             this.pnTitleBar.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ProfilePicBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -475,7 +469,6 @@
         #endregion
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.FlowLayoutPanel sidebar;
-        private Bunifu.UI.WinForms.BunifuPictureBox ProfilePicBox;
         private System.Windows.Forms.Panel pnTitleBar;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel ViewPanel;
@@ -490,5 +483,6 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Panel panel2;
         private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton1;
+        private CircularPictureBox ProfilePicBox;
     }
 }
