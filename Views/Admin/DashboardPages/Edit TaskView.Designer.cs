@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Edit_TaskView));
-            this.EditScrollBar1 = new Bunifu.UI.WinForms.BunifuVScrollBar();
             this.EditTasksFlow = new System.Windows.Forms.FlowLayoutPanel();
             this.btnEditArchived = new System.Windows.Forms.Label();
             this.Employees = new System.Windows.Forms.Label();
@@ -37,47 +36,8 @@
             this.btnEditOngoing = new System.Windows.Forms.Label();
             this.btnEditAll = new System.Windows.Forms.Label();
             this.Addtasksbtn = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.EditScrollBar1 = new Bunifu.UI.WinForms.BunifuVScrollBar();
             this.SuspendLayout();
-            // 
-            // EditScrollBar1
-            // 
-            this.EditScrollBar1.AllowCursorChanges = true;
-            this.EditScrollBar1.AllowHomeEndKeysDetection = false;
-            this.EditScrollBar1.AllowIncrementalClickMoves = true;
-            this.EditScrollBar1.AllowMouseDownEffects = true;
-            this.EditScrollBar1.AllowMouseHoverEffects = true;
-            this.EditScrollBar1.AllowScrollingAnimations = true;
-            this.EditScrollBar1.AllowScrollKeysDetection = true;
-            this.EditScrollBar1.AllowScrollOptionsMenu = true;
-            this.EditScrollBar1.AllowShrinkingOnFocusLost = false;
-            this.EditScrollBar1.BackgroundColor = System.Drawing.Color.Silver;
-            this.EditScrollBar1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("EditScrollBar1.BackgroundImage")));
-            this.EditScrollBar1.BindingContainer = this.EditTasksFlow;
-            this.EditScrollBar1.BorderColor = System.Drawing.Color.Silver;
-            this.EditScrollBar1.BorderRadius = 14;
-            this.EditScrollBar1.BorderThickness = 1;
-            this.EditScrollBar1.DurationBeforeShrink = 2000;
-            this.EditScrollBar1.LargeChange = 10;
-            this.EditScrollBar1.Location = new System.Drawing.Point(1219, 86);
-            this.EditScrollBar1.Margin = new System.Windows.Forms.Padding(5);
-            this.EditScrollBar1.Maximum = 100;
-            this.EditScrollBar1.Minimum = 0;
-            this.EditScrollBar1.MinimumThumbLength = 18;
-            this.EditScrollBar1.Name = "EditScrollBar1";
-            this.EditScrollBar1.OnDisable.ScrollBarBorderColor = System.Drawing.Color.Silver;
-            this.EditScrollBar1.OnDisable.ScrollBarColor = System.Drawing.Color.Transparent;
-            this.EditScrollBar1.OnDisable.ThumbColor = System.Drawing.Color.Silver;
-            this.EditScrollBar1.ScrollBarBorderColor = System.Drawing.Color.Silver;
-            this.EditScrollBar1.ScrollBarColor = System.Drawing.Color.Silver;
-            this.EditScrollBar1.ShrinkSizeLimit = 3;
-            this.EditScrollBar1.Size = new System.Drawing.Size(24, 627);
-            this.EditScrollBar1.SmallChange = 1;
-            this.EditScrollBar1.TabIndex = 15;
-            this.EditScrollBar1.ThumbColor = System.Drawing.Color.Gray;
-            this.EditScrollBar1.ThumbLength = 61;
-            this.EditScrollBar1.ThumbMargin = 1;
-            this.EditScrollBar1.ThumbStyle = Bunifu.UI.WinForms.BunifuVScrollBar.ThumbStyles.Inset;
-            this.EditScrollBar1.Value = 0;
             // 
             // EditTasksFlow
             // 
@@ -164,7 +124,7 @@
             this.Addtasksbtn.IconRightVisible = true;
             this.Addtasksbtn.IconRightZoom = 0D;
             this.Addtasksbtn.IconVisible = true;
-            this.Addtasksbtn.IconZoom = 82D;
+            this.Addtasksbtn.IconZoom = 85D;
             this.Addtasksbtn.IsTab = false;
             this.Addtasksbtn.Location = new System.Drawing.Point(1142, 25);
             this.Addtasksbtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
@@ -179,6 +139,46 @@
             this.Addtasksbtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.Addtasksbtn.Textcolor = System.Drawing.Color.White;
             this.Addtasksbtn.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            // 
+            // EditScrollBar1
+            // 
+            this.EditScrollBar1.AllowCursorChanges = true;
+            this.EditScrollBar1.AllowHomeEndKeysDetection = false;
+            this.EditScrollBar1.AllowIncrementalClickMoves = true;
+            this.EditScrollBar1.AllowMouseDownEffects = true;
+            this.EditScrollBar1.AllowMouseHoverEffects = true;
+            this.EditScrollBar1.AllowScrollingAnimations = true;
+            this.EditScrollBar1.AllowScrollKeysDetection = true;
+            this.EditScrollBar1.AllowScrollOptionsMenu = true;
+            this.EditScrollBar1.AllowShrinkingOnFocusLost = false;
+            this.EditScrollBar1.BackgroundColor = System.Drawing.Color.Silver;
+            this.EditScrollBar1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("EditScrollBar1.BackgroundImage")));
+            this.EditScrollBar1.BindingContainer = this.EditTasksFlow;
+            this.EditScrollBar1.BorderColor = System.Drawing.Color.Silver;
+            this.EditScrollBar1.BorderRadius = 14;
+            this.EditScrollBar1.BorderThickness = 1;
+            this.EditScrollBar1.DurationBeforeShrink = 2000;
+            this.EditScrollBar1.LargeChange = 10;
+            this.EditScrollBar1.Location = new System.Drawing.Point(1219, 86);
+            this.EditScrollBar1.Margin = new System.Windows.Forms.Padding(5);
+            this.EditScrollBar1.Maximum = 100;
+            this.EditScrollBar1.Minimum = 0;
+            this.EditScrollBar1.MinimumThumbLength = 18;
+            this.EditScrollBar1.Name = "EditScrollBar1";
+            this.EditScrollBar1.OnDisable.ScrollBarBorderColor = System.Drawing.Color.Silver;
+            this.EditScrollBar1.OnDisable.ScrollBarColor = System.Drawing.Color.Transparent;
+            this.EditScrollBar1.OnDisable.ThumbColor = System.Drawing.Color.Silver;
+            this.EditScrollBar1.ScrollBarBorderColor = System.Drawing.Color.Silver;
+            this.EditScrollBar1.ScrollBarColor = System.Drawing.Color.Silver;
+            this.EditScrollBar1.ShrinkSizeLimit = 3;
+            this.EditScrollBar1.Size = new System.Drawing.Size(24, 627);
+            this.EditScrollBar1.SmallChange = 1;
+            this.EditScrollBar1.TabIndex = 15;
+            this.EditScrollBar1.ThumbColor = System.Drawing.Color.Gray;
+            this.EditScrollBar1.ThumbLength = 61;
+            this.EditScrollBar1.ThumbMargin = 1;
+            this.EditScrollBar1.ThumbStyle = Bunifu.UI.WinForms.BunifuVScrollBar.ThumbStyles.Inset;
+            this.EditScrollBar1.Value = 0;
             // 
             // Edit_TaskView
             // 

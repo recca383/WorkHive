@@ -65,7 +65,7 @@
             this.ProfilePictureADMIN.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.ProfilePictureADMIN.BackColor = System.Drawing.Color.Transparent;
             this.ProfilePictureADMIN.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ProfilePictureADMIN.BackgroundImage")));
-            this.ProfilePictureADMIN.BorderRadius = 10;
+            this.ProfilePictureADMIN.BorderRadius = 15;
             this.ProfilePictureADMIN.Image = ((System.Drawing.Image)(resources.GetObject("ProfilePictureADMIN.Image")));
             this.ProfilePictureADMIN.IsCircle = true;
             this.ProfilePictureADMIN.Location = new System.Drawing.Point(31, 53);

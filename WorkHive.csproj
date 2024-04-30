@@ -135,6 +135,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Views\Admin\DashboardPages\AddTask.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Admin\DashboardPages\AddTask.Designer.cs">
+      <DependentUpon>AddTask.cs</DependentUpon>
+    </Compile>
     <Compile Include="Controller\DashboardNavigation.cs" />
     <Compile Include="Controller\MemberModelAccess.cs" />
     <Compile Include="Controller\TaskModelAccess.cs" />
@@ -227,6 +233,9 @@
     </Compile>
     <EmbeddedResource Include="Views\Admin\Dashboard-Admin.resx">
       <DependentUpon>Dashboard-Admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Admin\DashboardPages\AddTask.resx">
+      <DependentUpon>AddTask.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\Admin\DashboardPages\Edit TaskView.resx">
       <DependentUpon>Edit TaskView.cs</DependentUpon>
