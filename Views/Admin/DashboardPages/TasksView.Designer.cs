@@ -35,8 +35,8 @@
             this.btnOngoing = new System.Windows.Forms.Label();
             this.btnCompleted = new System.Windows.Forms.Label();
             this.btnArchived = new System.Windows.Forms.Label();
-            this.bunifuVScrollBar1 = new Bunifu.UI.WinForms.BunifuVScrollBar();
             this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
+            this.bunifuVScrollBar1 = new Bunifu.UI.WinForms.BunifuVScrollBar();
             this.SuspendLayout();
             // 
             // Employees
@@ -54,9 +54,9 @@
             // 
             this.TasksFlow.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
             this.TasksFlow.Location = new System.Drawing.Point(48, 102);
-            this.TasksFlow.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TasksFlow.Margin = new System.Windows.Forms.Padding(4);
             this.TasksFlow.Name = "TasksFlow";
-            this.TasksFlow.Size = new System.Drawing.Size(1147, 615);
+            this.TasksFlow.Size = new System.Drawing.Size(1169, 615);
             this.TasksFlow.TabIndex = 3;
             this.TasksFlow.WrapContents = false;
             this.TasksFlow.Paint += new System.Windows.Forms.PaintEventHandler(this.TasksFlow_Paint);
@@ -128,8 +128,8 @@
             this.bunifuVScrollBar1.BorderThickness = 1;
             this.bunifuVScrollBar1.DurationBeforeShrink = 2000;
             this.bunifuVScrollBar1.LargeChange = 10;
-            this.bunifuVScrollBar1.Location = new System.Drawing.Point(1203, 105);
-            this.bunifuVScrollBar1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.bunifuVScrollBar1.Location = new System.Drawing.Point(1219, 102);
+            this.bunifuVScrollBar1.Margin = new System.Windows.Forms.Padding(5);
             this.bunifuVScrollBar1.Maximum = 100;
             this.bunifuVScrollBar1.Minimum = 0;
             this.bunifuVScrollBar1.MinimumThumbLength = 18;
@@ -140,11 +140,11 @@
             this.bunifuVScrollBar1.ScrollBarBorderColor = System.Drawing.Color.Silver;
             this.bunifuVScrollBar1.ScrollBarColor = System.Drawing.Color.Silver;
             this.bunifuVScrollBar1.ShrinkSizeLimit = 3;
-            this.bunifuVScrollBar1.Size = new System.Drawing.Size(24, 613);
+            this.bunifuVScrollBar1.Size = new System.Drawing.Size(24, 619);
             this.bunifuVScrollBar1.SmallChange = 1;
             this.bunifuVScrollBar1.TabIndex = 8;
             this.bunifuVScrollBar1.ThumbColor = System.Drawing.Color.Gray;
-            this.bunifuVScrollBar1.ThumbLength = 60;
+            this.bunifuVScrollBar1.ThumbLength = 61;
             this.bunifuVScrollBar1.ThumbMargin = 1;
             this.bunifuVScrollBar1.ThumbStyle = Bunifu.UI.WinForms.BunifuVScrollBar.ThumbStyles.Inset;
             this.bunifuVScrollBar1.Value = 0;
@@ -160,9 +160,10 @@
             this.Controls.Add(this.btnAll);
             this.Controls.Add(this.TasksFlow);
             this.Controls.Add(this.Employees);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "TasksView";
             this.Size = new System.Drawing.Size(1243, 721);
+            this.Load += new System.EventHandler(this.TasksView_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

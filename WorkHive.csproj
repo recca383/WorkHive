@@ -151,6 +151,12 @@
     <Compile Include="Views\Admin\Dashboard-Admin.Designer.cs">
       <DependentUpon>Dashboard-Admin.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\Admin\DashboardPages\Edit TaskView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Admin\DashboardPages\Edit TaskView.Designer.cs">
+      <DependentUpon>Edit TaskView.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\Admin\DashboardPages\MemberView.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -170,6 +176,12 @@
     </Compile>
     <Compile Include="Views\Admin\DashboardPages\DashboardView.Designer.cs">
       <DependentUpon>DashboardView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Admin\EditTasks.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Admin\EditTasks.Designer.cs">
+      <DependentUpon>EditTasks.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\Admin\ProfileAdmin.cs">
       <SubType>Form</SubType>
@@ -216,6 +228,9 @@
     <EmbeddedResource Include="Views\Admin\Dashboard-Admin.resx">
       <DependentUpon>Dashboard-Admin.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Views\Admin\DashboardPages\Edit TaskView.resx">
+      <DependentUpon>Edit TaskView.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\Admin\DashboardPages\MemberView.resx">
       <DependentUpon>MemberView.cs</DependentUpon>
     </EmbeddedResource>
@@ -229,6 +244,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Views\Admin\DashboardPages\DashboardView.resx">
       <DependentUpon>DashboardView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Admin\EditTasks.resx">
+      <DependentUpon>EditTasks.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\Admin\ProfileAdmin.resx">
       <DependentUpon>ProfileAdmin.cs</DependentUpon>

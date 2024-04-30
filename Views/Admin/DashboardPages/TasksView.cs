@@ -96,5 +96,10 @@ namespace WorkHive.Views.Admin.DashboardPages
         {
 
         }
+
+        private void TasksView_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
