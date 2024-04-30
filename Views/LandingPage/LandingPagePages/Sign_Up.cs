@@ -52,14 +52,14 @@ namespace WorkHive.Views.LandingPage.LandingPagePages
         private void btnSignUp_Click(object sender, EventArgs e)
         {
             List<MemberModel> model = MemberModelAccess.GetMemberModel();
-            if (model.Any(n => n.Username == txtName.Text)) MessageBox.Show("Username Taken");
+            if (model.Any(n => n.FirstName == txtName.Text)) MessageBox.Show("Username Taken");
             else if (model.Any(m => m.Email == txtEmail.Text)) MessageBox.Show("Email Already Used");
             else if (!(txtPassword.Text == txtConfirmPassword.Text)) MessageBox.Show("Password Does Not Match");
             else
             {
                 MemberModelAccess.AddMember(new MemberModel()
                 {
-                    Username = txtName.Text,
+                    FirstName = txtName.Text,
                     Email = txtEmail.Text,
                     Password = txtPassword.Text,
                     IsLeader = true // change to false for creating member as default
