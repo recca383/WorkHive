@@ -130,7 +130,7 @@
             this.TaskNametxt.BorderColorActive = System.Drawing.Color.Transparent;
             this.TaskNametxt.BorderColorDisabled = System.Drawing.Color.Transparent;
             this.TaskNametxt.BorderColorHover = System.Drawing.Color.Red;
-            this.TaskNametxt.BorderColorIdle = System.Drawing.Color.Gold;
+            this.TaskNametxt.BorderColorIdle = System.Drawing.Color.DarkGray;
             this.TaskNametxt.BorderRadius = 15;
             this.TaskNametxt.BorderThickness = 2;
             this.TaskNametxt.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
@@ -166,7 +166,7 @@
             stateProperties11.ForeColor = System.Drawing.Color.Empty;
             stateProperties11.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.TaskNametxt.OnHoverState = stateProperties11;
-            stateProperties12.BorderColor = System.Drawing.Color.Gold;
+            stateProperties12.BorderColor = System.Drawing.Color.DarkGray;
             stateProperties12.FillColor = System.Drawing.Color.WhiteSmoke;
             stateProperties12.ForeColor = System.Drawing.Color.Empty;
             stateProperties12.PlaceholderForeColor = System.Drawing.Color.Empty;
@@ -217,7 +217,7 @@
             this.Employeedropdown.BorderColorActive = System.Drawing.Color.Transparent;
             this.Employeedropdown.BorderColorDisabled = System.Drawing.Color.Transparent;
             this.Employeedropdown.BorderColorHover = System.Drawing.Color.Red;
-            this.Employeedropdown.BorderColorIdle = System.Drawing.Color.Gold;
+            this.Employeedropdown.BorderColorIdle = System.Drawing.Color.DarkGray;
             this.Employeedropdown.BorderRadius = 15;
             this.Employeedropdown.BorderThickness = 2;
             this.Employeedropdown.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
@@ -253,7 +253,7 @@
             stateProperties7.ForeColor = System.Drawing.Color.Empty;
             stateProperties7.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.Employeedropdown.OnHoverState = stateProperties7;
-            stateProperties8.BorderColor = System.Drawing.Color.Gold;
+            stateProperties8.BorderColor = System.Drawing.Color.DarkGray;
             stateProperties8.FillColor = System.Drawing.Color.WhiteSmoke;
             stateProperties8.ForeColor = System.Drawing.Color.Empty;
             stateProperties8.PlaceholderForeColor = System.Drawing.Color.Empty;
@@ -314,7 +314,7 @@
             // 
             this.DatePickerDeadline.BackColor = System.Drawing.Color.WhiteSmoke;
             this.DatePickerDeadline.BorderRadius = 15;
-            this.DatePickerDeadline.Color = System.Drawing.Color.Gold;
+            this.DatePickerDeadline.Color = System.Drawing.Color.DarkGray;
             this.DatePickerDeadline.Cursor = System.Windows.Forms.Cursors.Hand;
             this.DatePickerDeadline.DateBorderThickness = Bunifu.UI.WinForms.BunifuDatePicker.BorderThickness.Thick;
             this.DatePickerDeadline.DateTextAlign = Bunifu.UI.WinForms.BunifuDatePicker.TextAlign.Right;
@@ -328,11 +328,11 @@
             this.DatePickerDeadline.IconColor = System.Drawing.Color.Gold;
             this.DatePickerDeadline.IconLocation = Bunifu.UI.WinForms.BunifuDatePicker.Indicator.Left;
             this.DatePickerDeadline.Location = new System.Drawing.Point(70, 375);
-            this.DatePickerDeadline.MinimumSize = new System.Drawing.Size(0, 46);
+            this.DatePickerDeadline.MinimumSize = new System.Drawing.Size(268, 46);
             this.DatePickerDeadline.Name = "DatePickerDeadline";
             this.DatePickerDeadline.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.DatePickerDeadline.ShowCheckBox = true;
-            this.DatePickerDeadline.Size = new System.Drawing.Size(271, 46);
+            this.DatePickerDeadline.Size = new System.Drawing.Size(268, 46);
             this.DatePickerDeadline.TabIndex = 4;
             // 
             // Descriptiontxt
@@ -347,7 +347,7 @@
             this.Descriptiontxt.BorderColorActive = System.Drawing.Color.Transparent;
             this.Descriptiontxt.BorderColorDisabled = System.Drawing.Color.Transparent;
             this.Descriptiontxt.BorderColorHover = System.Drawing.Color.Red;
-            this.Descriptiontxt.BorderColorIdle = System.Drawing.Color.Gold;
+            this.Descriptiontxt.BorderColorIdle = System.Drawing.Color.DarkGray;
             this.Descriptiontxt.BorderRadius = 15;
             this.Descriptiontxt.BorderThickness = 2;
             this.Descriptiontxt.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
@@ -383,7 +383,7 @@
             stateProperties3.ForeColor = System.Drawing.Color.Empty;
             stateProperties3.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.Descriptiontxt.OnHoverState = stateProperties3;
-            stateProperties4.BorderColor = System.Drawing.Color.Gold;
+            stateProperties4.BorderColor = System.Drawing.Color.DarkGray;
             stateProperties4.FillColor = System.Drawing.Color.WhiteSmoke;
             stateProperties4.ForeColor = System.Drawing.Color.Empty;
             stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;

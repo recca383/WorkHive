@@ -52,55 +52,55 @@
             // btnEditArchived
             // 
             this.btnEditArchived.AutoSize = true;
-            this.btnEditArchived.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEditArchived.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEditArchived.Location = new System.Drawing.Point(916, 33);
             this.btnEditArchived.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.btnEditArchived.Name = "btnEditArchived";
-            this.btnEditArchived.Size = new System.Drawing.Size(89, 25);
+            this.btnEditArchived.Size = new System.Drawing.Size(97, 25);
             this.btnEditArchived.TabIndex = 14;
             this.btnEditArchived.Text = "Archived";
             // 
             // Employees
             // 
             this.Employees.AutoSize = true;
-            this.Employees.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Employees.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Employees.Location = new System.Drawing.Point(27, 18);
             this.Employees.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Employees.Name = "Employees";
-            this.Employees.Size = new System.Drawing.Size(242, 54);
+            this.Employees.Size = new System.Drawing.Size(252, 54);
             this.Employees.TabIndex = 9;
             this.Employees.Text = "Edit Tasks";
             // 
             // btnEditCompleted
             // 
             this.btnEditCompleted.AutoSize = true;
-            this.btnEditCompleted.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEditCompleted.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEditCompleted.Location = new System.Drawing.Point(733, 33);
             this.btnEditCompleted.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.btnEditCompleted.Name = "btnEditCompleted";
-            this.btnEditCompleted.Size = new System.Drawing.Size(107, 25);
+            this.btnEditCompleted.Size = new System.Drawing.Size(116, 25);
             this.btnEditCompleted.TabIndex = 13;
             this.btnEditCompleted.Text = "Completed";
             // 
             // btnEditOngoing
             // 
             this.btnEditOngoing.AutoSize = true;
-            this.btnEditOngoing.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEditOngoing.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEditOngoing.Location = new System.Drawing.Point(572, 33);
             this.btnEditOngoing.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.btnEditOngoing.Name = "btnEditOngoing";
-            this.btnEditOngoing.Size = new System.Drawing.Size(87, 25);
+            this.btnEditOngoing.Size = new System.Drawing.Size(94, 25);
             this.btnEditOngoing.TabIndex = 12;
             this.btnEditOngoing.Text = "Ongoing";
             // 
             // btnEditAll
             // 
             this.btnEditAll.AutoSize = true;
-            this.btnEditAll.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEditAll.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEditAll.Location = new System.Drawing.Point(473, 33);
             this.btnEditAll.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.btnEditAll.Name = "btnEditAll";
-            this.btnEditAll.Size = new System.Drawing.Size(34, 25);
+            this.btnEditAll.Size = new System.Drawing.Size(37, 25);
             this.btnEditAll.TabIndex = 11;
             this.btnEditAll.Text = "All";
             // 

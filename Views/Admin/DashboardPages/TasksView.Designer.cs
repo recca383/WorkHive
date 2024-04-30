@@ -42,11 +42,11 @@
             // Employees
             // 
             this.Employees.AutoSize = true;
-            this.Employees.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Employees.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Employees.Location = new System.Drawing.Point(39, 34);
             this.Employees.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Employees.Name = "Employees";
-            this.Employees.Size = new System.Drawing.Size(150, 54);
+            this.Employees.Size = new System.Drawing.Size(155, 54);
             this.Employees.TabIndex = 2;
             this.Employees.Text = "Tasks";
             // 
@@ -64,11 +64,11 @@
             // btnAll
             // 
             this.btnAll.AutoSize = true;
-            this.btnAll.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAll.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAll.Location = new System.Drawing.Point(485, 49);
             this.btnAll.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.btnAll.Name = "btnAll";
-            this.btnAll.Size = new System.Drawing.Size(34, 25);
+            this.btnAll.Size = new System.Drawing.Size(37, 25);
             this.btnAll.TabIndex = 4;
             this.btnAll.Text = "All";
             this.btnAll.Click += new System.EventHandler(this.btnAll_Click);
@@ -76,11 +76,11 @@
             // btnOngoing
             // 
             this.btnOngoing.AutoSize = true;
-            this.btnOngoing.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnOngoing.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnOngoing.Location = new System.Drawing.Point(584, 49);
             this.btnOngoing.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.btnOngoing.Name = "btnOngoing";
-            this.btnOngoing.Size = new System.Drawing.Size(87, 25);
+            this.btnOngoing.Size = new System.Drawing.Size(94, 25);
             this.btnOngoing.TabIndex = 5;
             this.btnOngoing.Text = "Ongoing";
             this.btnOngoing.Click += new System.EventHandler(this.btnOngoing_Click);
@@ -88,11 +88,11 @@
             // btnCompleted
             // 
             this.btnCompleted.AutoSize = true;
-            this.btnCompleted.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCompleted.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCompleted.Location = new System.Drawing.Point(745, 49);
             this.btnCompleted.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.btnCompleted.Name = "btnCompleted";
-            this.btnCompleted.Size = new System.Drawing.Size(107, 25);
+            this.btnCompleted.Size = new System.Drawing.Size(116, 25);
             this.btnCompleted.TabIndex = 6;
             this.btnCompleted.Text = "Completed";
             this.btnCompleted.Click += new System.EventHandler(this.btnCompleted_Click);
@@ -100,11 +100,11 @@
             // btnArchived
             // 
             this.btnArchived.AutoSize = true;
-            this.btnArchived.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnArchived.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnArchived.Location = new System.Drawing.Point(928, 49);
             this.btnArchived.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.btnArchived.Name = "btnArchived";
-            this.btnArchived.Size = new System.Drawing.Size(89, 25);
+            this.btnArchived.Size = new System.Drawing.Size(97, 25);
             this.btnArchived.TabIndex = 7;
             this.btnArchived.Text = "Archived";
             this.btnArchived.Click += new System.EventHandler(this.btnArchived_Click);

@@ -195,6 +195,12 @@
     <Compile Include="Views\Admin\ProfileAdmin.Designer.cs">
       <DependentUpon>ProfileAdmin.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\Admin\ResetPassword.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Admin\ResetPassword.Designer.cs">
+      <DependentUpon>ResetPassword.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\Cards\AdminCard.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -259,6 +265,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Views\Admin\ProfileAdmin.resx">
       <DependentUpon>ProfileAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Admin\ResetPassword.resx">
+      <DependentUpon>ResetPassword.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\Cards\AdminCard.resx">
       <DependentUpon>AdminCard.cs</DependentUpon>
