@@ -596,6 +596,7 @@
     <Folder Include="Views\Member\" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\Landing page1.png" />
     <None Include="Resources\Profile Box.png" />
     <None Include="Resources\NEW Sidebar BG.png" />
     <None Include="Resources\maki_home.png" />
