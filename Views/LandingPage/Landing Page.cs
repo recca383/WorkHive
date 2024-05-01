@@ -34,7 +34,7 @@ namespace WorkHive.Views.LandingPage
         public static void btnSign_InEvent()
         {
             dashboardNavigation.Display(0);
-            MailNotif.Send();
+            //MailNotif.Send();
         }
         public static void btnSign_UpEvent()
         {

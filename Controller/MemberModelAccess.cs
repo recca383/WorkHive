@@ -23,7 +23,7 @@ namespace WorkHive.Controller
                 Email = "sirpatrick121402@gmail.com",
                 FirstName = "recca383",
                 Password = "123",
-                IsLeader = true,
+                IsLeader = false,
                 Profile_Pic = "Resources\\Default_Admin_Pics\\tatik.jpg"
 
             },
