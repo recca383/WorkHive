@@ -59,14 +59,15 @@ namespace WorkHive.Views.LandingPage.LandingPagePages
             {
                 MemberModelAccess.AddMember(new MemberModel()
                 {
+                    ID = model.Count,
                     FirstName = txtName.Text,
                     Email = txtEmail.Text,
                     Password = txtPassword.Text,
                     IsLeader = true // change to false for creating member as default
-                    
-                });
 
-                MessageBox.Show("Sign Up Complete!", "Complete", MessageBoxButtons.OK);
+                }) ;
+
+                MessageBox.Show("Sign Up Complete!", "Complete", MessageBoxButtons.OK); 
                 txtName.Text = default;
                 txtEmail.Text = default;
                 txtPassword.Text = default;

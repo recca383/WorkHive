@@ -17,7 +17,7 @@ namespace WorkHive.Model
         public DateTime TaskStart { get; set; }
         public DateTime TaskCompleted { get; set; }
         public bool Archived { get; set; }
-
+        public DateTime Deadline { get; set; }
         
 
     }

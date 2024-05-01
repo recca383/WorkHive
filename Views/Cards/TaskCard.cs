@@ -38,5 +38,10 @@ namespace WorkHive.Views.Cards
         {
 
         }
+
+        private void TaskCard_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

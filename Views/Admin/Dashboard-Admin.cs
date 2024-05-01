@@ -46,7 +46,7 @@ namespace WorkHive.Views
         private void Initialize_Navigation_Controls()
         {
             List<UserControl> list = new List<UserControl>()
-            { new DashboardView(), new MemberView(), new TasksView() };
+            { new DashboardView(), new MemberView(), new TasksView(), new Edit_TaskView()};
 
             dashboardNavigation = new DashboardNavigation(list, ViewPanel);
             dashboardNavigation.Display(0);
@@ -65,6 +65,10 @@ namespace WorkHive.Views
         private void btnTasks_Click(object sender, EventArgs e)
         {
             dashboardNavigation.Display(2);
+        }
+        private void btnEditTasks_Click(object sender, EventArgs e)
+        {
+            dashboardNavigation.Display(3);
         }
 
         private void btnMenu_Click(object sender, EventArgs e)
@@ -107,6 +111,8 @@ namespace WorkHive.Views
             this.Hide();
             landingpage.Show();
         }
+
+
     }
 
     public class CircularPictureBox : PictureBox

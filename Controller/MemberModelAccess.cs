@@ -85,6 +85,14 @@ namespace WorkHive.Controller
         {
             return memberModel.FirstOrDefault(i => i.ID == ID);
         }
-
+        public static int GetMemberCount()
+        {
+            return memberModel.Count;
+        }
+        public static void AssignTask(int ID, int taskID)
+        {
+            MemberModel selectedMember = GetMemberInfo(ID);
+            selectedMember.TaskID = taskID;
+        }
     }
 }

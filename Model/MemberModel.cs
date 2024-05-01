@@ -41,7 +41,7 @@ namespace WorkHive.Model
         public DateTime Birthdate { get; set; }
         public string Password { get; set; }
         public bool IsLeader { get; set; }
-        public TaskModel TaskID {  get; set; }
+        public int TaskID {  get; set; }
         public string Profile_Pic { get; set; }
 
     }

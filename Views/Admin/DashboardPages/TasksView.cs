@@ -16,7 +16,10 @@ namespace WorkHive.Views.Admin.DashboardPages
 {
     public partial class TasksView : UserControl
     {
-        private List<TaskCard> list = new List<TaskCard>();
+        private List<TaskModel> tasks;
+        private List<TaskCard> filteredlist = new List<TaskCard>();
+
+
         public TasksView()
         {
             InitializeComponent();
@@ -26,30 +29,45 @@ namespace WorkHive.Views.Admin.DashboardPages
 
         private void AddTaskElements()
         {
-            
-            for (int i = 0; i < TaskModelAccess.GetTaskCount(); i++)
-            {
-                TaskModel TaskModel = TaskModelAccess.GetTaskInfo(i);
-                TaskCard card = new TaskCard();
-                card.lblTask_Title.Text = TaskModel.TaskName;
-                card.lblTask_Date.Text = ($"{CultureInfo.CurrentCulture.DateTimeFormat.GetMonthName(TaskModel.TaskStart.Month)} {TaskModel.TaskStart.Day}");
-                card.TaskProgress.Value = TaskModel.TaskProgress;
-                card.Archived.Checked = !TaskModel.Archived;
-                list.Add( card );
-                
-            }
+            RefreshList();
+        }
 
+        private void RefreshList()
+        {
+            filteredlist.Clear();
+            tasks = TaskModelAccess.GetTaskModel();
+            
+            if(tasks is null)
+            {
+                MessageBox.Show("Wala pang laman, palagyan ng design to HAHAHAHA");
+            }
+            else
+            {
+                foreach (TaskModel taskModel in tasks)
+                {
+                    TaskCard card = new TaskCard();
+                    card.lblTask_Title.Text = taskModel.TaskName;
+                    card.lblTask_Date.Text = ($"{CultureInfo.CurrentCulture.DateTimeFormat.GetMonthName(taskModel.TaskStart.Month)} {taskModel.TaskStart.Day}");
+                    card.Deadlinetxt.Text = ($"{CultureInfo.CurrentCulture.DateTimeFormat.GetMonthName(taskModel.Deadline.Month)} {taskModel.Deadline.Day}");
+                    card.TaskProgress.Value = taskModel.TaskProgress;
+                    card.Archived.Checked = !taskModel.Archived;
+                    filteredlist.Add(card);
+                }
+            }
+            
         }
 
         private void btnAll_Click(object sender, EventArgs e)
         {
+            RefreshList();
             SortAllTasks();
         }
 
         private void SortAllTasks()
         {
+            RefreshList();
             TasksFlow.Controls.Clear();
-            var results = list
+            var results = filteredlist
                 .Where(p => p.Archived.Checked)
                 .OrderBy(p => p.TaskProgress.Value);
             foreach (var result in results)
@@ -60,8 +78,9 @@ namespace WorkHive.Views.Admin.DashboardPages
 
         private void btnOngoing_Click(object sender, EventArgs e)
         {
+            RefreshList();
             TasksFlow.Controls.Clear();
-            var results = list
+            var results = filteredlist
                 .Where(p => p.TaskProgress.Value < 100 && p.Archived.Checked)
                 .OrderBy(p => p.TaskProgress.Value);
             foreach ( var result in results )
@@ -72,8 +91,9 @@ namespace WorkHive.Views.Admin.DashboardPages
 
         private void btnCompleted_Click(object sender, EventArgs e)
         {
+            RefreshList();
             TasksFlow.Controls.Clear();
-            var results = list
+            var results = filteredlist
                 .Where(p => p.TaskProgress.Value == 100 && p.Archived.Checked)
                 .OrderBy(p => p.TaskProgress.Value);
             foreach (var result in results)
@@ -84,8 +104,9 @@ namespace WorkHive.Views.Admin.DashboardPages
 
         private void btnArchived_Click(object sender, EventArgs e)
         {
+            RefreshList();
             TasksFlow.Controls.Clear();
-            var results = list.Where(p => !p.Archived.Checked);
+            var results = filteredlist.Where(p => !p.Archived.Checked);
             foreach (var result in results)
             {
                 TasksFlow.Controls.Add(result);
