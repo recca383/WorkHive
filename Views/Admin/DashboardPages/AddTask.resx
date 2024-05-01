@@ -124,7 +124,7 @@
   <data name="$this.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAqMAAAMGCAYAAADGOY2BAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EQAACxEBf2RfkQAArIVJREFUeF7t/Y3zJdlZ3wm6X6u6qn711lXqLqmAQjQgGjMGSi8w2OPaCPDszsR4
+        DwAACw8BkvkDpQAArIVJREFUeF7t/Y3zJdlZ3wm6X6u6qn711lXqLqmAQjQgGjMGSi8w2OPaCPDszsR4
         PaDyYGM25NVGbMRGeCwRjljvzKwpe8c2cg9NhzZkGwtjZsaWLWkDRm9NhxWE0BpTNG0h64XutQD9SnTL
         P7opw7D7B/Seb3aeq6xbz72Z9+Z5Ms85+cmIT+S9efPmyZs3z8nvec7zPOeP1b784R/+4ZXAd96+ffsd
         4j/8h/9wIxK2/5Ow/qnutj14l44bjrUivo9ldlnfHt5f+/3f//1r6+uhvPLKK995dHR0ZV/ay8TCwsLC
@@ -866,9 +866,6 @@
   <metadata name="ADDTASKLBL.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <data name="ADDTASKLBL.BaseStylesheet" xml:space="preserve">
-    <value>#bunifu-label { padding: 1.2px; font-family: 'Microsoft Sans Serif'; font-size: 22.2pt; width: 100%; height: 100%; font-style: normal; font-weight: bold; text-decoration: none; color: ; text-align: center; }</value>
-  </data>
   <data name="btnAddTaskSubmit.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAHsAAAAuCAYAAAAIhGY7AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
@@ -1014,8 +1011,8 @@
   </data>
   <data name="TaskDescriptiontxt.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAAggAAACXCAYAAABwU6PcAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAARxSURBVHhe7dwxaxtZAIVRlSm33DJlyi1TpkzpcsuU+Qkp
+        iVBORw0KGgoAAAANSUhEUgAAAggAAACnCAYAAAB0KaRxAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAASxSURBVHhe7dwxaxtZAIVRlSm33DJlyi1TpkzpcsuU+Qkp
         0+1P2FKVmLFsMAKDGoMxCAxuDMYoGNynEQRXAiGinSc/JXauEzalpXPgYhhp1M7HaOQeAMBvOzo6+qNp
         mjf7+/sfzczM7NnvbXddf1kv87+n3++/6D7gn7ZtP3d/V2ZmZrZd667xX7q/zXA4/LNe/n+tO+F1d8Kn
         hx9yenq6ury8XF1fX5uZmdkz3dXV1fqafnh4+GMovK0Z8LQaB+sTxuPxajabrQCA7XN3d7c6OTn5FgpN
@@ -1030,15 +1027,13 @@
         AASBAAAEgQAABIEAAASBAAAEgQAABIEAAASBAAAEgQAABIEAAASBAAAEgQAABIEAAASBAAAEgQAABIEA
         AASBAAAEgQAABIEAAASBAAAEgQAABIEAAASBAAAEgQAABIEAAASBAAAEgQAABIEAAASBAAAEgQAABIEA
         AASBAAAEgQAABIEAAASBAAAEgQAABIEAAASBAAAEgQAABIEAAASBAAAEgQAABIEAAASBAAAEgQAABIEA
-        AASBAAAEgQAAhJ8FwvtycDKZ1LcBALtkOp1mIAyHw7/KwfF4XN8GAOyScpOgtEDbtn/XPOj1+v3+i+7g
-        vLwwn8/rWwGAXbBcLlfHx8frQCg3DWoe3OsOnpYXfM0AALtl8/xB27afy02Dmgb3BoPBq+7F9V2E29vb
-        egoAsM1ms9nq4ODgaw2EvZoFj3Uvrh9WLLu4uFgtFot6OgCwbcqDiZs46NavOfC0pmk+bCJhNBqtzs/P
-        1x9Qbj+YmZnZ897Nzc36JkD5YcLmel/iIL5aeErbtq+7N396cKKZmZlt2brr/Zeffq3wKyUUmqZ5131I
-        +UdKZmZmth17313f3/yvuwYAAPd6vf8AYWL5qmo5Z04AAAAASUVORK5CYII=
+        AASBAAAEgQAABIEAAASBAAAEgQAABIEAAASBAAAEgQAABIEAAASBAAAEgQAABIEAAASBAAAEgQAABIEA
+        AASBAAAEgQAABIEAAISfBcL7cnAymdS3AQC7ZDqdZiAMh8O/ysHxeFzfBgDsknKToLRA27Z/1zzo9fr9
+        /ovu4Ly8MJ/P61sBgF2wXC5Xx8fH60AoNw1qHtzrDp6WF3zNAAC7ZfP8Qdu2n8tNg5oG9waDwavuxfVd
+        hNvb23oKALDNZrPZ6uDg4GsNhL2aBY91L64fViy7uLhYLRaLejoAsG3Kg4mbOOjWrznwtKZpPmwiYTQa
+        rc7Pz9cfUG4/mJmZ2fPezc3N+iZA+WHC5npf4iC+WnhK27avuzd/enCimZmZbdm66/2Xn36t8CslFJqm
+        edd9SPlHSmZmZrYde99d39/8r7sGAAD3er3/AN9BnzlTFAjCAAAAAElFTkSuQmCC
 </value>
-  </data>
-  <data name="TaskDescriptionlbl.BaseStylesheet" xml:space="preserve">
-    <value>#bunifu-label { padding: 1.2px; font-family: 'Microsoft Sans Serif'; font-size: 16.2pt; width: 100%; height: 100%; font-style: normal; font-weight: bold; text-decoration: none; color: ; text-align: left; }</value>
   </data>
   <data name="DatePickerDeadline.Icon" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1060,32 +1055,23 @@
         zdT1TYyuk6Y1LSqT6Q8t4yR6WM3X0gAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="Deadlinetasklbl.BaseStylesheet" xml:space="preserve">
-    <value>#bunifu-label { padding: 1.2px; font-family: 'Microsoft Sans Serif'; font-size: 16.2pt; width: 100%; height: 100%; font-style: normal; font-weight: bold; text-decoration: none; color: ; text-align: left; }</value>
-  </data>
-  <data name="Assigntasklbl.BaseStylesheet" xml:space="preserve">
-    <value>#bunifu-label { padding: 1.2px; font-family: 'Microsoft Sans Serif'; font-size: 16.2pt; width: 100%; height: 100%; font-style: normal; font-weight: bold; text-decoration: none; color: ; text-align: left; }</value>
-  </data>
   <data name="TaskNametxt.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAAggAAAAuCAYAAABNluFhAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAALASURBVHhe7dw9SyNBAAbglJZXXnml5ZWWlpaWV1r6E660
+        iVBORw0KGgoAAAANSUhEUgAAAggAAAAqCAYAAADWB6N3AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAKvSURBVHhe7dw9SyNBAAbglJZXXnml5ZWWlpaWV1r6E660
         u59wZaqwYxQkIKQRRAgINoJIRLC3CYhVIITbm1knftyonKXZ54GXwOzOtvMyO5sOAMCHHRwcfKmqan13
         d3dHREREPn024rr+LS/zH9PtdlfiA36FEG7jby0iIiLLlbjG38Xfqt/vf83L//vihLU44er5Q46Pj+vz
         8/P68vJSREREPmkuLi6aNX1/f//forCRa8DrcjloJgyHw3oymdQAwPK5v7+vj46OHotCVVVbuQ68lF8r
         NDsHo9Gons1m+REAwLJKOwu5JExfPZsQQvidbkg7B/P5PE8DAJbdycnJoiSc5lrwJL+D8FoBAFpmOp0+
         nkt4cWix1+utpsHBYJBvBQDaZLGLEELYzPWg2T3YTIPpIgDQPukLh9QFqqr6metBpxMH0h8nNBcBgPYZ
         j8eLcwg7uR48FYR0khEAaJ9nXzMoCADAAwUBACgoCABAQUEAAAoKAgBQUBAAgIKCAAAUFAQAoKAgAAAF
-        BQEAKCgIAEBBQQAACgoCAFBQEACAgoIAABQUBACgoCAAAAUFAQAoKAgAQEFBAAAKCgIAUFAQAICCggAA
-        FBQEAKDwVkHYToOj0SjfBgC0yXg8LgtCv9//ngaHw2G+DQBok7RJkLpACOFHrgedTrfbXYmD03RhOp3m
-        WwGANpjP5/Xh4WFTENKmQa4HD+LgcbrgNQMAtMvi/EEI4TZtGuRq8KDX663Gi80uws3NTZ4CACyzyWRS
-        7+3t/ckFYTPXgpfixeawYsrZ2Vk9m83ydABg2aSDiYtyENPNdeB1VVX9XJSEwWBQn56eNg9I2w8iIiLy
-        uXN9fd1sAqQPExbrfSoHxauF14QQ1uLNV88mioiIyJIlrvd3b75WeE8qClVVbcWHpD9SEhERkeXIdlzf
-        1/9r1wAA4EGn8xeBvbtWVSweqQAAAABJRU5ErkJggg==
+        BQEAKCgIAEBBQQAACgoCAFBQEACAgoIAABQUBACgoCAAAAUFAQAoKAgAQEFBAAAKbxWE7TQ4Go3ybQBA
+        m4zH47Ig9Pv972lwOBzm2wCANkmbBKkLhBB+5HrQ6XS73ZU4OE0XptNpvhUAaIP5fF4fHh42BSFtGuR6
+        8CAOHqcLXjMAQLsszh+EEG7TpkGuBg96vd5qvNjsItzc3OQpAMAym0wm9d7e3p9cEDZzLXgpXmwOK6ac
+        nZ3Vs9ksTwcAlk06mLgoBzHdXAdeV1XVz0VJGAwG9enpafOAtP0gIiIinzvX19fNJkD6MGGx3qdyULxa
+        eE0IYS3efPVsooiIiCxZ4np/9+ZrhfekolBV1VZ8SPojJREREVmObMf1ff2/dg0AAB50On8BVzqR9qlE
+        xrEAAAAASUVORK5CYII=
 </value>
-  </data>
-  <data name="TaskName.BaseStylesheet" xml:space="preserve">
-    <value>#bunifu-label { padding: 1.2px; font-family: 'Microsoft Sans Serif'; font-size: 16.2pt; width: 100%; height: 100%; font-style: normal; font-weight: bold; text-decoration: none; color: ; text-align: left; }</value>
   </data>
   <data name="btnAddTaskExit.Iconimage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>

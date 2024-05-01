@@ -37,18 +37,20 @@
             // Employees
             // 
             this.Employees.AutoSize = true;
-            this.Employees.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Employees.Location = new System.Drawing.Point(29, 28);
+            this.Employees.Font = new System.Drawing.Font("Montserrat", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Employees.Location = new System.Drawing.Point(15, 11);
+            this.Employees.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Employees.Name = "Employees";
-            this.Employees.Size = new System.Drawing.Size(173, 42);
+            this.Employees.Size = new System.Drawing.Size(243, 61);
             this.Employees.TabIndex = 1;
             this.Employees.Text = "Members";
             // 
             // MembersFlow
             // 
-            this.MembersFlow.Location = new System.Drawing.Point(82, 88);
+            this.MembersFlow.Location = new System.Drawing.Point(109, 108);
+            this.MembersFlow.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MembersFlow.Name = "MembersFlow";
-            this.MembersFlow.Size = new System.Drawing.Size(816, 480);
+            this.MembersFlow.Size = new System.Drawing.Size(1088, 591);
             this.MembersFlow.TabIndex = 2;
             // 
             // bunifuVScrollBar1
@@ -70,7 +72,8 @@
             this.bunifuVScrollBar1.BorderThickness = 1;
             this.bunifuVScrollBar1.DurationBeforeShrink = 2000;
             this.bunifuVScrollBar1.LargeChange = 10;
-            this.bunifuVScrollBar1.Location = new System.Drawing.Point(904, 88);
+            this.bunifuVScrollBar1.Location = new System.Drawing.Point(1205, 108);
+            this.bunifuVScrollBar1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.bunifuVScrollBar1.Maximum = 100;
             this.bunifuVScrollBar1.Minimum = 0;
             this.bunifuVScrollBar1.MinimumThumbLength = 18;
@@ -81,24 +84,25 @@
             this.bunifuVScrollBar1.ScrollBarBorderColor = System.Drawing.Color.Silver;
             this.bunifuVScrollBar1.ScrollBarColor = System.Drawing.Color.Silver;
             this.bunifuVScrollBar1.ShrinkSizeLimit = 3;
-            this.bunifuVScrollBar1.Size = new System.Drawing.Size(18, 480);
+            this.bunifuVScrollBar1.Size = new System.Drawing.Size(24, 591);
             this.bunifuVScrollBar1.SmallChange = 1;
             this.bunifuVScrollBar1.TabIndex = 3;
             this.bunifuVScrollBar1.ThumbColor = System.Drawing.Color.Gray;
-            this.bunifuVScrollBar1.ThumbLength = 47;
+            this.bunifuVScrollBar1.ThumbLength = 58;
             this.bunifuVScrollBar1.ThumbMargin = 1;
             this.bunifuVScrollBar1.ThumbStyle = Bunifu.UI.WinForms.BunifuVScrollBar.ThumbStyles.Inset;
             this.bunifuVScrollBar1.Value = 0;
             // 
             // MemberView
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.bunifuVScrollBar1);
             this.Controls.Add(this.MembersFlow);
             this.Controls.Add(this.Employees);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "MemberView";
-            this.Size = new System.Drawing.Size(932, 586);
+            this.Size = new System.Drawing.Size(1243, 721);
             this.ResumeLayout(false);
             this.PerformLayout();
 

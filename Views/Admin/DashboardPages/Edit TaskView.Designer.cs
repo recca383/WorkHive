@@ -44,7 +44,7 @@
             // 
             this.EditTasksFlow.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
             this.EditTasksFlow.Location = new System.Drawing.Point(36, 86);
-            this.EditTasksFlow.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.EditTasksFlow.Margin = new System.Windows.Forms.Padding(4);
             this.EditTasksFlow.Name = "EditTasksFlow";
             this.EditTasksFlow.Size = new System.Drawing.Size(1181, 631);
             this.EditTasksFlow.TabIndex = 10;
@@ -53,11 +53,11 @@
             // btnEditArchived
             // 
             this.btnEditArchived.AutoSize = true;
-            this.btnEditArchived.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEditArchived.Location = new System.Drawing.Point(916, 33);
+            this.btnEditArchived.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEditArchived.Location = new System.Drawing.Point(792, 33);
             this.btnEditArchived.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.btnEditArchived.Name = "btnEditArchived";
-            this.btnEditArchived.Size = new System.Drawing.Size(97, 25);
+            this.btnEditArchived.Size = new System.Drawing.Size(107, 27);
             this.btnEditArchived.TabIndex = 14;
             this.btnEditArchived.Text = "Archived";
             this.btnEditArchived.Click += new System.EventHandler(this.btnArchived_Click);
@@ -65,22 +65,22 @@
             // Employees
             // 
             this.Employees.AutoSize = true;
-            this.Employees.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Employees.Location = new System.Drawing.Point(27, 18);
+            this.Employees.Font = new System.Drawing.Font("Montserrat", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Employees.Location = new System.Drawing.Point(15, 11);
             this.Employees.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Employees.Name = "Employees";
-            this.Employees.Size = new System.Drawing.Size(252, 54);
+            this.Employees.Size = new System.Drawing.Size(258, 61);
             this.Employees.TabIndex = 9;
             this.Employees.Text = "Edit Tasks";
             // 
             // btnEditCompleted
             // 
             this.btnEditCompleted.AutoSize = true;
-            this.btnEditCompleted.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEditCompleted.Location = new System.Drawing.Point(733, 33);
+            this.btnEditCompleted.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEditCompleted.Location = new System.Drawing.Point(609, 33);
             this.btnEditCompleted.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.btnEditCompleted.Name = "btnEditCompleted";
-            this.btnEditCompleted.Size = new System.Drawing.Size(116, 25);
+            this.btnEditCompleted.Size = new System.Drawing.Size(130, 27);
             this.btnEditCompleted.TabIndex = 13;
             this.btnEditCompleted.Text = "Completed";
             this.btnEditCompleted.Click += new System.EventHandler(this.btnCompleted_Click);
@@ -88,11 +88,11 @@
             // btnEditOngoing
             // 
             this.btnEditOngoing.AutoSize = true;
-            this.btnEditOngoing.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEditOngoing.Location = new System.Drawing.Point(572, 33);
+            this.btnEditOngoing.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEditOngoing.Location = new System.Drawing.Point(448, 33);
             this.btnEditOngoing.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.btnEditOngoing.Name = "btnEditOngoing";
-            this.btnEditOngoing.Size = new System.Drawing.Size(94, 25);
+            this.btnEditOngoing.Size = new System.Drawing.Size(104, 27);
             this.btnEditOngoing.TabIndex = 12;
             this.btnEditOngoing.Text = "Ongoing";
             this.btnEditOngoing.Click += new System.EventHandler(this.btnOngoing_Click);
@@ -100,11 +100,11 @@
             // btnEditAll
             // 
             this.btnEditAll.AutoSize = true;
-            this.btnEditAll.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEditAll.Location = new System.Drawing.Point(473, 33);
+            this.btnEditAll.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEditAll.Location = new System.Drawing.Point(349, 33);
             this.btnEditAll.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.btnEditAll.Name = "btnEditAll";
-            this.btnEditAll.Size = new System.Drawing.Size(37, 25);
+            this.btnEditAll.Size = new System.Drawing.Size(39, 27);
             this.btnEditAll.TabIndex = 11;
             this.btnEditAll.Text = "All";
             this.btnEditAll.Click += new System.EventHandler(this.btnAll_Click);
@@ -132,7 +132,7 @@
             this.btnAddtasks.IconZoom = 86D;
             this.btnAddtasks.IsTab = false;
             this.btnAddtasks.Location = new System.Drawing.Point(1141, 25);
-            this.btnAddtasks.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.btnAddtasks.Margin = new System.Windows.Forms.Padding(5);
             this.btnAddtasks.Name = "btnAddtasks";
             this.btnAddtasks.Normalcolor = System.Drawing.Color.Transparent;
             this.btnAddtasks.OnHovercolor = System.Drawing.Color.Transparent;
@@ -166,7 +166,7 @@
             this.EditScrollBar1.DurationBeforeShrink = 2000;
             this.EditScrollBar1.LargeChange = 10;
             this.EditScrollBar1.Location = new System.Drawing.Point(1219, 86);
-            this.EditScrollBar1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.EditScrollBar1.Margin = new System.Windows.Forms.Padding(5);
             this.EditScrollBar1.Maximum = 100;
             this.EditScrollBar1.Minimum = 0;
             this.EditScrollBar1.MinimumThumbLength = 18;
@@ -191,7 +191,7 @@
             this.AddTaskPanel.BackColor = System.Drawing.Color.Transparent;
             this.AddTaskPanel.ForeColor = System.Drawing.Color.Transparent;
             this.AddTaskPanel.Location = new System.Drawing.Point(309, 33);
-            this.AddTaskPanel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.AddTaskPanel.Margin = new System.Windows.Forms.Padding(4);
             this.AddTaskPanel.Name = "AddTaskPanel";
             this.AddTaskPanel.Size = new System.Drawing.Size(0, 0);
             this.AddTaskPanel.TabIndex = 17;

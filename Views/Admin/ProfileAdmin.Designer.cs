@@ -90,7 +90,7 @@
             this.bunifuFlatButton1.BackColor = System.Drawing.Color.White;
             this.bunifuFlatButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.bunifuFlatButton1.BorderRadius = 5;
-            this.bunifuFlatButton1.ButtonText = "     Log Out";
+            this.bunifuFlatButton1.ButtonText = "    Log Out";
             this.bunifuFlatButton1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.bunifuFlatButton1.DisabledColor = System.Drawing.Color.Transparent;
             this.bunifuFlatButton1.Iconcolor = System.Drawing.Color.Transparent;
@@ -115,10 +115,10 @@
             this.bunifuFlatButton1.selected = false;
             this.bunifuFlatButton1.Size = new System.Drawing.Size(392, 64);
             this.bunifuFlatButton1.TabIndex = 5;
-            this.bunifuFlatButton1.Text = "     Log Out";
+            this.bunifuFlatButton1.Text = "    Log Out";
             this.bunifuFlatButton1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.bunifuFlatButton1.Textcolor = System.Drawing.Color.Black;
-            this.bunifuFlatButton1.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuFlatButton1.TextFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             // 
             // MessageBtn
             // 
@@ -155,7 +155,7 @@
             this.MessageBtn.Text = "     Message";
             this.MessageBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.MessageBtn.Textcolor = System.Drawing.Color.Black;
-            this.MessageBtn.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MessageBtn.TextFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             // 
             // ResetPassBtn
             // 
@@ -191,7 +191,7 @@
             this.ResetPassBtn.Text = "    Reset Password";
             this.ResetPassBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.ResetPassBtn.Textcolor = System.Drawing.Color.Black;
-            this.ResetPassBtn.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ResetPassBtn.TextFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             // 
             // ProfileBtn
             // 
@@ -227,7 +227,7 @@
             this.ProfileBtn.Text = "   Profile";
             this.ProfileBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.ProfileBtn.Textcolor = System.Drawing.Color.Black;
-            this.ProfileBtn.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ProfileBtn.TextFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             // 
             // ProfilePictureADMIN
             // 
