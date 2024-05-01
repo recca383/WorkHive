@@ -126,9 +126,6 @@
   <metadata name="bunifuElipse1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
-  <metadata name="$this.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="bunifuFlatButton1.Iconimage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -191,9 +188,6 @@
         YAAAAABJRU5ErkJggg==
 </value>
   </data>
-  <metadata name="ProfilePictureADMIN.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
   <data name="ProfilePictureADMIN.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAGYAAABvCAYAAAAe0LWqAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
@@ -475,13 +469,10 @@
         iYmJiYmJiYmJU+Lh4S8q/uczm0HorQAAAABJRU5ErkJggg==
 </value>
   </data>
-  <metadata name="bunifuPictureBox1.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="bunifuPictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="Profile.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAVEAAAGbCAYAAAB9BaOQAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        DQAACw0B7QfALAAAxotJREFUeF7svQXYtltXlf3TqJQijUEpKWJQEqKCgHSHiKKUSihpoCBhUAIKiiIl
+        DAAACwwBP0AiyAAAxotJREFUeF7svQXYtltXlf3TqJQijUEpKWJQEqKCgHSHiKKUSihpoCBhUAIKiiIl
         CgqKoEiotAIqIQiISkhZpAEYv/8afM+AscceM677fvcH8n/nccxjrTXmmHNd77v3u57rzuf/+bnI//k/
         /+epON4QTx00j9bj14CRqE89nD+Fp/AUnsKTFT2QTuBwQzztiac78QwnnvHEz3+IX/AQzyRzBPOIn2fj
         FPAxsBdDNc/rHNfIePqH4FxzDHo88Of14N8DxxTIIZ7mQuDv2Nce6b+La7r+vzrC/4s/9UMx5X2tgdxT

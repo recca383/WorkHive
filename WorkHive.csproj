@@ -443,6 +443,12 @@
     <Compile Include="Views\Admin\ProfileAdmin.Designer.cs">
       <DependentUpon>ProfileAdmin.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\Admin\ProfileEdit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Admin\ProfileEdit.Designer.cs">
+      <DependentUpon>ProfileEdit.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\Admin\ResetPassword.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -513,6 +519,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Views\Admin\ProfileAdmin.resx">
       <DependentUpon>ProfileAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Admin\ProfileEdit.resx">
+      <DependentUpon>ProfileEdit.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\Admin\ResetPassword.resx">
       <DependentUpon>ResetPassword.cs</DependentUpon>
@@ -587,6 +596,26 @@
     <Folder Include="Views\Member\" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\maki_home.png" />
+    <None Include="Resources\Group 89 %281%291.png" />
+    <None Include="Resources\Group 89 %281%29.png" />
+    <None Include="Resources\Group 89.png" />
+    <None Include="Resources\tdesign_personal-information.png" />
+    <None Include="Resources\Rectangle 102.png" />
+    <None Include="Resources\Rectangle 101.png" />
+    <None Include="Resources\Rectangle 10.png" />
+    <None Include="Resources\Group 88.png" />
+    <None Include="Resources\Group 86.png" />
+    <None Include="Resources\Group 84.png" />
+    <None Include="Resources\Group 82.png" />
+    <None Include="Resources\Group 81 %281%29.png" />
+    <None Include="Resources\Group 81.png" />
+    <None Include="Resources\Vector %282%29.png" />
+    <None Include="Resources\Rectangle 9 %281%291.png" />
+    <None Include="Resources\Rectangle 9 %281%29.png" />
+    <None Include="Resources\Rectangle 9.png" />
+    <None Include="Resources\healthicons_ui-user-profile.png" />
+    <None Include="Resources\Rectangle 14.png" />
     <None Include="Resources\Profile Box %282%29.png" />
     <None Include="Resources\Profile1.png" />
     <None Include="Resources\MemberCard1.png" />

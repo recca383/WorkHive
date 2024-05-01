@@ -29,14 +29,14 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties5 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties6 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties7 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties8 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties1 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties2 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties3 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties4 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties13 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties14 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties15 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties16 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties9 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties10 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties11 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties12 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddTask));
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.bunifuElipse2 = new Bunifu.Framework.UI.BunifuElipse(this.components);
@@ -51,6 +51,7 @@
             this.btnAddTaskSubmit = new Bunifu.Framework.UI.BunifuFlatButton();
             this.ArchivedCheckbox = new Bunifu.Framework.UI.BunifuCheckbox();
             this.Dropdownassigntask = new Bunifu.UI.WinForms.BunifuDropdown();
+            this.ADDTASKLBL = new Bunifu.UI.WinForms.BunifuLabel();
             this.SuspendLayout();
             // 
             // bunifuElipse1
@@ -60,7 +61,7 @@
             // 
             // bunifuElipse2
             // 
-            this.bunifuElipse2.ElipseRadius = 5;
+            this.bunifuElipse2.ElipseRadius = 100;
             this.bunifuElipse2.TargetControl = this;
             // 
             // btnAddTaskExit
@@ -86,7 +87,7 @@
             this.btnAddTaskExit.IconZoom = 90D;
             this.btnAddTaskExit.IsTab = false;
             this.btnAddTaskExit.Location = new System.Drawing.Point(596, 21);
-            this.btnAddTaskExit.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.btnAddTaskExit.Margin = new System.Windows.Forms.Padding(5);
             this.btnAddTaskExit.Name = "btnAddTaskExit";
             this.btnAddTaskExit.Normalcolor = System.Drawing.Color.Transparent;
             this.btnAddTaskExit.OnHovercolor = System.Drawing.Color.Transparent;
@@ -150,26 +151,26 @@
             this.TaskNametxt.Modified = false;
             this.TaskNametxt.Multiline = false;
             this.TaskNametxt.Name = "TaskNametxt";
-            stateProperties5.BorderColor = System.Drawing.Color.Transparent;
-            stateProperties5.FillColor = System.Drawing.Color.Empty;
-            stateProperties5.ForeColor = System.Drawing.Color.Empty;
-            stateProperties5.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.TaskNametxt.OnActiveState = stateProperties5;
-            stateProperties6.BorderColor = System.Drawing.Color.Transparent;
-            stateProperties6.FillColor = System.Drawing.Color.White;
-            stateProperties6.ForeColor = System.Drawing.Color.Empty;
-            stateProperties6.PlaceholderForeColor = System.Drawing.Color.Silver;
-            this.TaskNametxt.OnDisabledState = stateProperties6;
-            stateProperties7.BorderColor = System.Drawing.Color.Red;
-            stateProperties7.FillColor = System.Drawing.Color.Empty;
-            stateProperties7.ForeColor = System.Drawing.Color.Empty;
-            stateProperties7.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.TaskNametxt.OnHoverState = stateProperties7;
-            stateProperties8.BorderColor = System.Drawing.Color.DarkGray;
-            stateProperties8.FillColor = System.Drawing.Color.White;
-            stateProperties8.ForeColor = System.Drawing.Color.Black;
-            stateProperties8.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.TaskNametxt.OnIdleState = stateProperties8;
+            stateProperties13.BorderColor = System.Drawing.Color.Transparent;
+            stateProperties13.FillColor = System.Drawing.Color.Empty;
+            stateProperties13.ForeColor = System.Drawing.Color.Empty;
+            stateProperties13.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.TaskNametxt.OnActiveState = stateProperties13;
+            stateProperties14.BorderColor = System.Drawing.Color.Transparent;
+            stateProperties14.FillColor = System.Drawing.Color.White;
+            stateProperties14.ForeColor = System.Drawing.Color.Empty;
+            stateProperties14.PlaceholderForeColor = System.Drawing.Color.Silver;
+            this.TaskNametxt.OnDisabledState = stateProperties14;
+            stateProperties15.BorderColor = System.Drawing.Color.Red;
+            stateProperties15.FillColor = System.Drawing.Color.Empty;
+            stateProperties15.ForeColor = System.Drawing.Color.Empty;
+            stateProperties15.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.TaskNametxt.OnHoverState = stateProperties15;
+            stateProperties16.BorderColor = System.Drawing.Color.DarkGray;
+            stateProperties16.FillColor = System.Drawing.Color.White;
+            stateProperties16.ForeColor = System.Drawing.Color.Black;
+            stateProperties16.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.TaskNametxt.OnIdleState = stateProperties16;
             this.TaskNametxt.PasswordChar = '\0';
             this.TaskNametxt.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.TaskNametxt.PlaceholderText = "Enter Task Name";
@@ -222,7 +223,7 @@
             // 
             // DatePickerDeadline
             // 
-            this.DatePickerDeadline.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.DatePickerDeadline.BackColor = System.Drawing.Color.White;
             this.DatePickerDeadline.BorderRadius = 15;
             this.DatePickerDeadline.Color = System.Drawing.Color.DarkGray;
             this.DatePickerDeadline.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -231,7 +232,6 @@
             this.DatePickerDeadline.DisabledColor = System.Drawing.Color.Gray;
             this.DatePickerDeadline.DisplayWeekNumbers = false;
             this.DatePickerDeadline.DPHeight = 0;
-            this.DatePickerDeadline.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
             this.DatePickerDeadline.FillDatePicker = false;
             this.DatePickerDeadline.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DatePickerDeadline.ForeColor = System.Drawing.Color.Black;
@@ -265,7 +265,8 @@
             this.TaskDescriptiontxt.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.TaskDescriptiontxt.DefaultFont = new System.Drawing.Font("Segoe UI Semibold", 9.75F);
             this.TaskDescriptiontxt.DefaultText = "";
-            this.TaskDescriptiontxt.FillColor = System.Drawing.Color.WhiteSmoke;
+            this.TaskDescriptiontxt.FillColor = System.Drawing.Color.White;
+            this.TaskDescriptiontxt.ForeColor = System.Drawing.Color.Black;
             this.TaskDescriptiontxt.HideSelection = true;
             this.TaskDescriptiontxt.IconLeft = null;
             this.TaskDescriptiontxt.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
@@ -280,26 +281,26 @@
             this.TaskDescriptiontxt.Modified = false;
             this.TaskDescriptiontxt.Multiline = false;
             this.TaskDescriptiontxt.Name = "TaskDescriptiontxt";
-            stateProperties1.BorderColor = System.Drawing.Color.Transparent;
-            stateProperties1.FillColor = System.Drawing.Color.Empty;
-            stateProperties1.ForeColor = System.Drawing.Color.Empty;
-            stateProperties1.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.TaskDescriptiontxt.OnActiveState = stateProperties1;
-            stateProperties2.BorderColor = System.Drawing.Color.Transparent;
-            stateProperties2.FillColor = System.Drawing.Color.White;
-            stateProperties2.ForeColor = System.Drawing.Color.Empty;
-            stateProperties2.PlaceholderForeColor = System.Drawing.Color.Silver;
-            this.TaskDescriptiontxt.OnDisabledState = stateProperties2;
-            stateProperties3.BorderColor = System.Drawing.Color.Red;
-            stateProperties3.FillColor = System.Drawing.Color.Empty;
-            stateProperties3.ForeColor = System.Drawing.Color.Empty;
-            stateProperties3.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.TaskDescriptiontxt.OnHoverState = stateProperties3;
-            stateProperties4.BorderColor = System.Drawing.Color.DarkGray;
-            stateProperties4.FillColor = System.Drawing.Color.WhiteSmoke;
-            stateProperties4.ForeColor = System.Drawing.Color.Empty;
-            stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.TaskDescriptiontxt.OnIdleState = stateProperties4;
+            stateProperties9.BorderColor = System.Drawing.Color.Transparent;
+            stateProperties9.FillColor = System.Drawing.Color.Empty;
+            stateProperties9.ForeColor = System.Drawing.Color.Empty;
+            stateProperties9.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.TaskDescriptiontxt.OnActiveState = stateProperties9;
+            stateProperties10.BorderColor = System.Drawing.Color.Transparent;
+            stateProperties10.FillColor = System.Drawing.Color.White;
+            stateProperties10.ForeColor = System.Drawing.Color.Empty;
+            stateProperties10.PlaceholderForeColor = System.Drawing.Color.Silver;
+            this.TaskDescriptiontxt.OnDisabledState = stateProperties10;
+            stateProperties11.BorderColor = System.Drawing.Color.Red;
+            stateProperties11.FillColor = System.Drawing.Color.Empty;
+            stateProperties11.ForeColor = System.Drawing.Color.Empty;
+            stateProperties11.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.TaskDescriptiontxt.OnHoverState = stateProperties11;
+            stateProperties12.BorderColor = System.Drawing.Color.DarkGray;
+            stateProperties12.FillColor = System.Drawing.Color.White;
+            stateProperties12.ForeColor = System.Drawing.Color.Black;
+            stateProperties12.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.TaskDescriptiontxt.OnIdleState = stateProperties12;
             this.TaskDescriptiontxt.PasswordChar = '\0';
             this.TaskDescriptiontxt.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.TaskDescriptiontxt.PlaceholderText = "Enter Task Description...";
@@ -360,7 +361,7 @@
             this.btnAddTaskSubmit.IconZoom = 90D;
             this.btnAddTaskSubmit.IsTab = false;
             this.btnAddTaskSubmit.Location = new System.Drawing.Point(467, 677);
-            this.btnAddTaskSubmit.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.btnAddTaskSubmit.Margin = new System.Windows.Forms.Padding(5);
             this.btnAddTaskSubmit.Name = "btnAddTaskSubmit";
             this.btnAddTaskSubmit.Normalcolor = System.Drawing.Color.Transparent;
             this.btnAddTaskSubmit.OnHovercolor = System.Drawing.Color.Red;
@@ -381,14 +382,14 @@
             this.ArchivedCheckbox.CheckedOnColor = System.Drawing.Color.Gold;
             this.ArchivedCheckbox.ForeColor = System.Drawing.Color.White;
             this.ArchivedCheckbox.Location = new System.Drawing.Point(560, 453);
-            this.ArchivedCheckbox.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.ArchivedCheckbox.Margin = new System.Windows.Forms.Padding(5);
             this.ArchivedCheckbox.Name = "ArchivedCheckbox";
             this.ArchivedCheckbox.Size = new System.Drawing.Size(20, 20);
             this.ArchivedCheckbox.TabIndex = 10;
             // 
             // Dropdownassigntask
             // 
-            this.Dropdownassigntask.BackColor = System.Drawing.Color.Transparent;
+            this.Dropdownassigntask.BackColor = System.Drawing.Color.White;
             this.Dropdownassigntask.BorderRadius = 13;
             this.Dropdownassigntask.Color = System.Drawing.Color.DarkGray;
             this.Dropdownassigntask.Direction = Bunifu.UI.WinForms.BunifuDropdown.Directions.Down;
@@ -401,7 +402,7 @@
             this.Dropdownassigntask.FillIndicator = false;
             this.Dropdownassigntask.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Dropdownassigntask.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F);
-            this.Dropdownassigntask.ForeColor = System.Drawing.Color.DarkGray;
+            this.Dropdownassigntask.ForeColor = System.Drawing.Color.Black;
             this.Dropdownassigntask.FormattingEnabled = true;
             this.Dropdownassigntask.Icon = null;
             this.Dropdownassigntask.IndicatorColor = System.Drawing.Color.Black;
@@ -410,11 +411,11 @@
             this.Dropdownassigntask.ItemBorderColor = System.Drawing.Color.White;
             this.Dropdownassigntask.ItemForeColor = System.Drawing.Color.Black;
             this.Dropdownassigntask.ItemHeight = 40;
-            this.Dropdownassigntask.ItemHighLightColor = System.Drawing.Color.Thistle;
+            this.Dropdownassigntask.ItemHighLightColor = System.Drawing.Color.Gold;
             this.Dropdownassigntask.Items.AddRange(new object[] {
             "Sample"});
             this.Dropdownassigntask.Location = new System.Drawing.Point(69, 272);
-            this.Dropdownassigntask.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Dropdownassigntask.Margin = new System.Windows.Forms.Padding(4);
             this.Dropdownassigntask.MaximumSize = new System.Drawing.Size(520, 0);
             this.Dropdownassigntask.MinimumSize = new System.Drawing.Size(520, 0);
             this.Dropdownassigntask.Name = "Dropdownassigntask";
@@ -423,12 +424,27 @@
             this.Dropdownassigntask.Text = "Select Member";
             this.Dropdownassigntask.SelectedIndexChanged += new System.EventHandler(this.Dropdownassigntask_onItemSelected);
             // 
+            // ADDTASKLBL
+            // 
+            this.ADDTASKLBL.AutoEllipsis = false;
+            this.ADDTASKLBL.CursorType = null;
+            this.ADDTASKLBL.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ADDTASKLBL.Location = new System.Drawing.Point(212, 26);
+            this.ADDTASKLBL.Name = "ADDTASKLBL";
+            this.ADDTASKLBL.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.ADDTASKLBL.Size = new System.Drawing.Size(259, 44);
+            this.ADDTASKLBL.TabIndex = 12;
+            this.ADDTASKLBL.Text = "Add New Task";
+            this.ADDTASKLBL.TextAlignment = System.Drawing.ContentAlignment.TopCenter;
+            this.ADDTASKLBL.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            // 
             // AddTask
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Transparent;
+            this.BackColor = System.Drawing.Color.White;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.Controls.Add(this.ADDTASKLBL);
             this.Controls.Add(this.Dropdownassigntask);
             this.Controls.Add(this.ArchivedCheckbox);
             this.Controls.Add(this.btnAddTaskSubmit);
@@ -463,5 +479,6 @@
         private Bunifu.Framework.UI.BunifuFlatButton btnAddTaskSubmit;
         private Bunifu.Framework.UI.BunifuCheckbox ArchivedCheckbox;
         private Bunifu.UI.WinForms.BunifuDropdown Dropdownassigntask;
+        private Bunifu.UI.WinForms.BunifuLabel ADDTASKLBL;
     }
 }
