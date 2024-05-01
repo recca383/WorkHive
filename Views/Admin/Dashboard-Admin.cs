@@ -13,6 +13,7 @@ using System.Windows.Forms;
 using WorkHive.Controller;
 using WorkHive.Model;
 using WorkHive.Views.Admin.DashboardPages;
+using WorkHive.Views.LandingPage;
 using WorkHive.Views.Pages;
 
 namespace WorkHive.Views
@@ -100,6 +101,12 @@ namespace WorkHive.Views
             }
         }
 
+        private void btnLogout_Click(object sender, EventArgs e)
+        {
+            Landing_Page landingpage = new Landing_Page();
+            this.Hide();
+            landingpage.Show();
+        }
     }
 
     public class CircularPictureBox : PictureBox

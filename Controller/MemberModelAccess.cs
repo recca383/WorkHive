@@ -9,6 +9,7 @@ using System.Windows.Forms;
 using WorkHive.Model;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.TrackBar;
 
 namespace WorkHive.Controller
 {
@@ -79,6 +80,10 @@ namespace WorkHive.Controller
                 member.Password = newPassword;
                 MessageBox.Show("Change Password Successful");
             }
+        }
+        public static MemberModel GetMemberInfo(int ID)
+        {
+            return memberModel.FirstOrDefault(i => i.ID == ID);
         }
 
     }
