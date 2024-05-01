@@ -43,8 +43,9 @@
             this.panel1.Controls.Add(this.label2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(636, 657);
+            this.panel1.Size = new System.Drawing.Size(848, 809);
             this.panel1.TabIndex = 0;
             // 
             // pictureBox1
@@ -53,6 +54,7 @@
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(771, 882);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -63,9 +65,10 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(201, 240);
+            this.label2.Location = new System.Drawing.Point(268, 295);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(286, 110);
+            this.label2.Size = new System.Drawing.Size(355, 138);
             this.label2.TabIndex = 8;
             this.label2.Text = "Together for\r\n One Goal";
             // 
@@ -73,23 +76,23 @@
             // 
             this.LandingPageViewPanel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.LandingPageViewPanel.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.LandingPageViewPanel.Location = new System.Drawing.Point(844, 0);
-            this.LandingPageViewPanel.Margin = new System.Windows.Forms.Padding(4);
+            this.LandingPageViewPanel.Location = new System.Drawing.Point(846, 0);
+            this.LandingPageViewPanel.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.LandingPageViewPanel.Name = "LandingPageViewPanel";
-            this.LandingPageViewPanel.Size = new System.Drawing.Size(494, 657);
+            this.LandingPageViewPanel.Size = new System.Drawing.Size(657, 809);
             this.LandingPageViewPanel.TabIndex = 1;
             this.LandingPageViewPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.LandingPageViewPanel_Paint);
             // 
             // Landing_Page
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ClientSize = new System.Drawing.Size(1127, 657);
+            this.ClientSize = new System.Drawing.Size(1503, 809);
             this.Controls.Add(this.LandingPageViewPanel);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Margin = new System.Windows.Forms.Padding(4);
+            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.Name = "Landing_Page";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
