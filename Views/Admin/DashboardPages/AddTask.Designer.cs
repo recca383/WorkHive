@@ -40,18 +40,18 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddTask));
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.btnAddTaskExit = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.TaskName = new Bunifu.UI.WinForms.BunifuLabel();
             this.TaskNametxt = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox();
-            this.Assigntasklbl = new Bunifu.UI.WinForms.BunifuLabel();
-            this.Deadlinetasklbl = new Bunifu.UI.WinForms.BunifuLabel();
             this.DatePickerDeadline = new Bunifu.UI.WinForms.BunifuDatePicker();
             this.TaskDescriptiontxt = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox();
-            this.TaskDescriptionlbl = new Bunifu.UI.WinForms.BunifuLabel();
             this.btnAddTaskSubmit = new Bunifu.Framework.UI.BunifuFlatButton();
             this.ArchivedCheckbox = new Bunifu.Framework.UI.BunifuCheckbox();
             this.Dropdownassigntask = new Bunifu.UI.WinForms.BunifuDropdown();
-            this.ADDTASKLBL = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuElipse2 = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.TaskName = new System.Windows.Forms.Label();
+            this.AssignTask = new System.Windows.Forms.Label();
+            this.DeadlineTask = new System.Windows.Forms.Label();
+            this.TaskDescription = new System.Windows.Forms.Label();
+            this.AddNewTask = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // bunifuElipse1
@@ -95,21 +95,6 @@
             this.btnAddTaskExit.Textcolor = System.Drawing.Color.White;
             this.btnAddTaskExit.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAddTaskExit.Click += new System.EventHandler(this.btnAddTaskExit_Click);
-            // 
-            // TaskName
-            // 
-            this.TaskName.AutoEllipsis = false;
-            this.TaskName.CursorType = null;
-            this.TaskName.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TaskName.Location = new System.Drawing.Point(69, 108);
-            this.TaskName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.TaskName.Name = "TaskName";
-            this.TaskName.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.TaskName.Size = new System.Drawing.Size(144, 39);
-            this.TaskName.TabIndex = 1;
-            this.TaskName.Text = "Task Name";
-            this.TaskName.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.TaskName.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
             // TaskNametxt
             // 
@@ -185,36 +170,6 @@
             this.TaskNametxt.TextPlaceholder = "Enter Task Name";
             this.TaskNametxt.UseSystemPasswordChar = false;
             this.TaskNametxt.WordWrap = true;
-            // 
-            // Assigntasklbl
-            // 
-            this.Assigntasklbl.AutoEllipsis = false;
-            this.Assigntasklbl.CursorType = null;
-            this.Assigntasklbl.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Assigntasklbl.Location = new System.Drawing.Point(69, 233);
-            this.Assigntasklbl.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.Assigntasklbl.Name = "Assigntasklbl";
-            this.Assigntasklbl.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.Assigntasklbl.Size = new System.Drawing.Size(152, 39);
-            this.Assigntasklbl.TabIndex = 3;
-            this.Assigntasklbl.Text = "Assign Task";
-            this.Assigntasklbl.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.Assigntasklbl.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
-            // 
-            // Deadlinetasklbl
-            // 
-            this.Deadlinetasklbl.AutoEllipsis = false;
-            this.Deadlinetasklbl.CursorType = null;
-            this.Deadlinetasklbl.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Deadlinetasklbl.Location = new System.Drawing.Point(69, 336);
-            this.Deadlinetasklbl.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.Deadlinetasklbl.Name = "Deadlinetasklbl";
-            this.Deadlinetasklbl.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.Deadlinetasklbl.Size = new System.Drawing.Size(216, 39);
-            this.Deadlinetasklbl.TabIndex = 6;
-            this.Deadlinetasklbl.Text = "Deadline of Task";
-            this.Deadlinetasklbl.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.Deadlinetasklbl.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
             // DatePickerDeadline
             // 
@@ -316,21 +271,6 @@
             this.TaskDescriptiontxt.UseSystemPasswordChar = false;
             this.TaskDescriptiontxt.WordWrap = true;
             // 
-            // TaskDescriptionlbl
-            // 
-            this.TaskDescriptionlbl.AutoEllipsis = false;
-            this.TaskDescriptionlbl.CursorType = null;
-            this.TaskDescriptionlbl.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TaskDescriptionlbl.Location = new System.Drawing.Point(69, 443);
-            this.TaskDescriptionlbl.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.TaskDescriptionlbl.Name = "TaskDescriptionlbl";
-            this.TaskDescriptionlbl.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.TaskDescriptionlbl.Size = new System.Drawing.Size(216, 39);
-            this.TaskDescriptionlbl.TabIndex = 8;
-            this.TaskDescriptionlbl.Text = "Task Description";
-            this.TaskDescriptionlbl.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.TaskDescriptionlbl.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
-            // 
             // btnAddTaskSubmit
             // 
             this.btnAddTaskSubmit.Active = false;
@@ -419,24 +359,70 @@
             this.Dropdownassigntask.Text = "Select Member";
             this.Dropdownassigntask.SelectedIndexChanged += new System.EventHandler(this.Dropdownassigntask_onItemSelected);
             // 
-            // ADDTASKLBL
-            // 
-            this.ADDTASKLBL.AutoEllipsis = false;
-            this.ADDTASKLBL.CursorType = null;
-            this.ADDTASKLBL.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ADDTASKLBL.Location = new System.Drawing.Point(212, 26);
-            this.ADDTASKLBL.Name = "ADDTASKLBL";
-            this.ADDTASKLBL.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.ADDTASKLBL.Size = new System.Drawing.Size(224, 47);
-            this.ADDTASKLBL.TabIndex = 12;
-            this.ADDTASKLBL.Text = "Add New Task";
-            this.ADDTASKLBL.TextAlignment = System.Drawing.ContentAlignment.TopCenter;
-            this.ADDTASKLBL.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
-            // 
             // bunifuElipse2
             // 
             this.bunifuElipse2.ElipseRadius = 100;
             this.bunifuElipse2.TargetControl = this;
+            // 
+            // TaskName
+            // 
+            this.TaskName.AutoSize = true;
+            this.TaskName.BackColor = System.Drawing.Color.Transparent;
+            this.TaskName.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TaskName.ForeColor = System.Drawing.Color.Black;
+            this.TaskName.Location = new System.Drawing.Point(62, 106);
+            this.TaskName.Name = "TaskName";
+            this.TaskName.Size = new System.Drawing.Size(160, 38);
+            this.TaskName.TabIndex = 13;
+            this.TaskName.Text = "Task Name";
+            // 
+            // AssignTask
+            // 
+            this.AssignTask.AutoSize = true;
+            this.AssignTask.BackColor = System.Drawing.Color.Transparent;
+            this.AssignTask.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AssignTask.ForeColor = System.Drawing.Color.Black;
+            this.AssignTask.Location = new System.Drawing.Point(62, 230);
+            this.AssignTask.Name = "AssignTask";
+            this.AssignTask.Size = new System.Drawing.Size(168, 38);
+            this.AssignTask.TabIndex = 14;
+            this.AssignTask.Text = "Assign Task";
+            // 
+            // DeadlineTask
+            // 
+            this.DeadlineTask.AutoSize = true;
+            this.DeadlineTask.BackColor = System.Drawing.Color.Transparent;
+            this.DeadlineTask.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DeadlineTask.ForeColor = System.Drawing.Color.Black;
+            this.DeadlineTask.Location = new System.Drawing.Point(62, 335);
+            this.DeadlineTask.Name = "DeadlineTask";
+            this.DeadlineTask.Size = new System.Drawing.Size(234, 38);
+            this.DeadlineTask.TabIndex = 15;
+            this.DeadlineTask.Text = "Deadline of Task";
+            // 
+            // TaskDescription
+            // 
+            this.TaskDescription.AutoSize = true;
+            this.TaskDescription.BackColor = System.Drawing.Color.Transparent;
+            this.TaskDescription.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TaskDescription.ForeColor = System.Drawing.Color.Black;
+            this.TaskDescription.Location = new System.Drawing.Point(62, 440);
+            this.TaskDescription.Name = "TaskDescription";
+            this.TaskDescription.Size = new System.Drawing.Size(232, 38);
+            this.TaskDescription.TabIndex = 16;
+            this.TaskDescription.Text = "Task Description";
+            // 
+            // AddNewTask
+            // 
+            this.AddNewTask.AutoSize = true;
+            this.AddNewTask.BackColor = System.Drawing.Color.Transparent;
+            this.AddNewTask.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AddNewTask.ForeColor = System.Drawing.Color.Black;
+            this.AddNewTask.Location = new System.Drawing.Point(200, 24);
+            this.AddNewTask.Name = "AddNewTask";
+            this.AddNewTask.Size = new System.Drawing.Size(245, 46);
+            this.AddNewTask.TabIndex = 17;
+            this.AddNewTask.Text = "Add New Task";
             // 
             // AddTask
             // 
@@ -444,17 +430,17 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.Controls.Add(this.ADDTASKLBL);
+            this.Controls.Add(this.AddNewTask);
+            this.Controls.Add(this.TaskDescription);
+            this.Controls.Add(this.DeadlineTask);
+            this.Controls.Add(this.AssignTask);
+            this.Controls.Add(this.TaskName);
             this.Controls.Add(this.Dropdownassigntask);
             this.Controls.Add(this.ArchivedCheckbox);
             this.Controls.Add(this.btnAddTaskSubmit);
             this.Controls.Add(this.TaskDescriptiontxt);
-            this.Controls.Add(this.TaskDescriptionlbl);
             this.Controls.Add(this.DatePickerDeadline);
-            this.Controls.Add(this.Deadlinetasklbl);
-            this.Controls.Add(this.Assigntasklbl);
             this.Controls.Add(this.TaskNametxt);
-            this.Controls.Add(this.TaskName);
             this.Controls.Add(this.btnAddTaskExit);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "AddTask";
@@ -467,18 +453,18 @@
         #endregion
 
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
-        private Bunifu.UI.WinForms.BunifuLabel TaskName;
         private Bunifu.Framework.UI.BunifuFlatButton btnAddTaskExit;
         private Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox TaskNametxt;
-        private Bunifu.UI.WinForms.BunifuLabel Assigntasklbl;
         private Bunifu.UI.WinForms.BunifuDatePicker DatePickerDeadline;
-        private Bunifu.UI.WinForms.BunifuLabel Deadlinetasklbl;
         private Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox TaskDescriptiontxt;
-        private Bunifu.UI.WinForms.BunifuLabel TaskDescriptionlbl;
         private Bunifu.Framework.UI.BunifuFlatButton btnAddTaskSubmit;
         private Bunifu.Framework.UI.BunifuCheckbox ArchivedCheckbox;
         private Bunifu.UI.WinForms.BunifuDropdown Dropdownassigntask;
-        private Bunifu.UI.WinForms.BunifuLabel ADDTASKLBL;
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse2;
+        private System.Windows.Forms.Label TaskDescription;
+        private System.Windows.Forms.Label DeadlineTask;
+        private System.Windows.Forms.Label AssignTask;
+        private System.Windows.Forms.Label TaskName;
+        private System.Windows.Forms.Label AddNewTask;
     }
 }

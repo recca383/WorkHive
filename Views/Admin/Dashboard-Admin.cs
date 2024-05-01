@@ -46,7 +46,7 @@ namespace WorkHive.Views
         private void Initialize_Navigation_Controls()
         {
             List<UserControl> list = new List<UserControl>()
-            { new DashboardView(), new MemberView(), new TasksView(), new Edit_TaskView()};
+            { new DashboardView(), new MemberView(), new TasksView(), new Edit_TaskView(), new CalendarView()};
 
             dashboardNavigation = new DashboardNavigation(list, ViewPanel);
             dashboardNavigation.Display(0);
@@ -69,6 +69,11 @@ namespace WorkHive.Views
         private void btnEditTasks_Click(object sender, EventArgs e)
         {
             dashboardNavigation.Display(3);
+        }
+
+        private void btnCalendar_Click(object sender, EventArgs e)
+        {
+            dashboardNavigation.Display(4);
         }
 
         private void btnMenu_Click(object sender, EventArgs e)
@@ -117,7 +122,9 @@ namespace WorkHive.Views
 
         }
 
-        private void btnCalendar_Click(object sender, EventArgs e)
+        
+
+        private void ViewPanel_Paint(object sender, PaintEventArgs e)
         {
 
         }

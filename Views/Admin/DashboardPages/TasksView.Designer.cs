@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TasksView));
-            this.Employees = new System.Windows.Forms.Label();
+            this.TasksName = new System.Windows.Forms.Label();
             this.TasksFlow = new System.Windows.Forms.FlowLayoutPanel();
             this.btnAll = new System.Windows.Forms.Label();
             this.btnOngoing = new System.Windows.Forms.Label();
@@ -39,16 +39,16 @@
             this.bunifuVScrollBar1 = new Bunifu.UI.WinForms.BunifuVScrollBar();
             this.SuspendLayout();
             // 
-            // Employees
+            // TasksName
             // 
-            this.Employees.AutoSize = true;
-            this.Employees.Font = new System.Drawing.Font("Montserrat", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Employees.Location = new System.Drawing.Point(15, 11);
-            this.Employees.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.Employees.Name = "Employees";
-            this.Employees.Size = new System.Drawing.Size(154, 61);
-            this.Employees.TabIndex = 2;
-            this.Employees.Text = "Tasks";
+            this.TasksName.AutoSize = true;
+            this.TasksName.Font = new System.Drawing.Font("Montserrat", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TasksName.Location = new System.Drawing.Point(15, 11);
+            this.TasksName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.TasksName.Name = "TasksName";
+            this.TasksName.Size = new System.Drawing.Size(154, 61);
+            this.TasksName.TabIndex = 2;
+            this.TasksName.Text = "Tasks";
             // 
             // TasksFlow
             // 
@@ -159,7 +159,7 @@
             this.Controls.Add(this.btnOngoing);
             this.Controls.Add(this.btnAll);
             this.Controls.Add(this.TasksFlow);
-            this.Controls.Add(this.Employees);
+            this.Controls.Add(this.TasksName);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "TasksView";
             this.Size = new System.Drawing.Size(1243, 720);
@@ -171,7 +171,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Label Employees;
+        private System.Windows.Forms.Label TasksName;
         private System.Windows.Forms.FlowLayoutPanel TasksFlow;
         private System.Windows.Forms.Label btnAll;
         private System.Windows.Forms.Label btnOngoing;

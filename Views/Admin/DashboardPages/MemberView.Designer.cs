@@ -29,28 +29,28 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MemberView));
-            this.Employees = new System.Windows.Forms.Label();
+            this.MembersName = new System.Windows.Forms.Label();
             this.MembersFlow = new System.Windows.Forms.FlowLayoutPanel();
             this.bunifuVScrollBar1 = new Bunifu.UI.WinForms.BunifuVScrollBar();
             this.SuspendLayout();
             // 
-            // Employees
+            // MembersName
             // 
-            this.Employees.AutoSize = true;
-            this.Employees.Font = new System.Drawing.Font("Montserrat", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Employees.Location = new System.Drawing.Point(15, 11);
-            this.Employees.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.Employees.Name = "Employees";
-            this.Employees.Size = new System.Drawing.Size(243, 61);
-            this.Employees.TabIndex = 1;
-            this.Employees.Text = "Members";
+            this.MembersName.AutoSize = true;
+            this.MembersName.Font = new System.Drawing.Font("Montserrat", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MembersName.Location = new System.Drawing.Point(15, 11);
+            this.MembersName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.MembersName.Name = "MembersName";
+            this.MembersName.Size = new System.Drawing.Size(243, 61);
+            this.MembersName.TabIndex = 1;
+            this.MembersName.Text = "Members";
             // 
             // MembersFlow
             // 
-            this.MembersFlow.Location = new System.Drawing.Point(109, 108);
+            this.MembersFlow.Location = new System.Drawing.Point(36, 86);
             this.MembersFlow.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MembersFlow.Name = "MembersFlow";
-            this.MembersFlow.Size = new System.Drawing.Size(1088, 591);
+            this.MembersFlow.Size = new System.Drawing.Size(1181, 631);
             this.MembersFlow.TabIndex = 2;
             // 
             // bunifuVScrollBar1
@@ -72,7 +72,7 @@
             this.bunifuVScrollBar1.BorderThickness = 1;
             this.bunifuVScrollBar1.DurationBeforeShrink = 2000;
             this.bunifuVScrollBar1.LargeChange = 10;
-            this.bunifuVScrollBar1.Location = new System.Drawing.Point(1205, 108);
+            this.bunifuVScrollBar1.Location = new System.Drawing.Point(1219, 86);
             this.bunifuVScrollBar1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.bunifuVScrollBar1.Maximum = 100;
             this.bunifuVScrollBar1.Minimum = 0;
@@ -84,11 +84,11 @@
             this.bunifuVScrollBar1.ScrollBarBorderColor = System.Drawing.Color.Silver;
             this.bunifuVScrollBar1.ScrollBarColor = System.Drawing.Color.Silver;
             this.bunifuVScrollBar1.ShrinkSizeLimit = 3;
-            this.bunifuVScrollBar1.Size = new System.Drawing.Size(24, 591);
+            this.bunifuVScrollBar1.Size = new System.Drawing.Size(24, 626);
             this.bunifuVScrollBar1.SmallChange = 1;
             this.bunifuVScrollBar1.TabIndex = 3;
             this.bunifuVScrollBar1.ThumbColor = System.Drawing.Color.Gray;
-            this.bunifuVScrollBar1.ThumbLength = 58;
+            this.bunifuVScrollBar1.ThumbLength = 61;
             this.bunifuVScrollBar1.ThumbMargin = 1;
             this.bunifuVScrollBar1.ThumbStyle = Bunifu.UI.WinForms.BunifuVScrollBar.ThumbStyles.Inset;
             this.bunifuVScrollBar1.Value = 0;
@@ -99,7 +99,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.bunifuVScrollBar1);
             this.Controls.Add(this.MembersFlow);
-            this.Controls.Add(this.Employees);
+            this.Controls.Add(this.MembersName);
             this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "MemberView";
             this.Size = new System.Drawing.Size(1243, 721);
@@ -110,7 +110,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Label Employees;
+        private System.Windows.Forms.Label MembersName;
         private System.Windows.Forms.FlowLayoutPanel MembersFlow;
         private Bunifu.UI.WinForms.BunifuVScrollBar bunifuVScrollBar1;
     }

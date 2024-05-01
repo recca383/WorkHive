@@ -405,6 +405,12 @@
     <Compile Include="Views\Admin\Dashboard-Admin.Designer.cs">
       <DependentUpon>Dashboard-Admin.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\Admin\DashboardPages\CalendarView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Admin\DashboardPages\CalendarView.Designer.cs">
+      <DependentUpon>CalendarView.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\Admin\DashboardPages\Edit TaskView.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -496,6 +502,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Views\Admin\DashboardPages\AddTask.resx">
       <DependentUpon>AddTask.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Admin\DashboardPages\CalendarView.resx">
+      <DependentUpon>CalendarView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\Admin\DashboardPages\Edit TaskView.resx">
       <DependentUpon>Edit TaskView.cs</DependentUpon>

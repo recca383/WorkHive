@@ -124,7 +124,7 @@
   <data name="$this.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAqMAAAMGCAYAAADGOY2BAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        DwAACw8BkvkDpQAArIVJREFUeF7t/Y3zJdlZ3wm6X6u6qn711lXqLqmAQjQgGjMGSi8w2OPaCPDszsR4
+        DgAACw4BQL7hQQAArIVJREFUeF7t/Y3zJdlZ3wm6X6u6qn711lXqLqmAQjQgGjMGSi8w2OPaCPDszsR4
         PaDyYGM25NVGbMRGeCwRjljvzKwpe8c2cg9NhzZkGwtjZsaWLWkDRm9NhxWE0BpTNG0h64XutQD9SnTL
         P7opw7D7B/Seb3aeq6xbz72Z9+Z5Ms85+cmIT+S9efPmyZs3z8nvec7zPOeP1b784R/+4ZXAd96+ffsd
         4j/8h/9wIxK2/5Ow/qnutj14l44bjrUivo9ldlnfHt5f+/3f//1r6+uhvPLKK995dHR0ZV/ay8TCwsLC
@@ -863,9 +863,6 @@
         LCwsLCwsyZZ1gblQwfnH/tj/H+hF+Rmpgo1wAAAAAElFTkSuQmCC
 </value>
   </data>
-  <metadata name="ADDTASKLBL.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
   <data name="btnAddTaskSubmit.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAHsAAAAuCAYAAAAIhGY7AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
