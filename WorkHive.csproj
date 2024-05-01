@@ -382,6 +382,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Views\Admin\DashboardPages\AddTask.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Admin\DashboardPages\AddTask.Designer.cs">
+      <DependentUpon>AddTask.cs</DependentUpon>
+    </Compile>
     <Compile Include="Controller\DashboardNavigation.cs" />
     <Compile Include="Controller\MailNotif.cs" />
     <Compile Include="Controller\MemberModelAccess.cs" />
@@ -398,6 +404,12 @@
     </Compile>
     <Compile Include="Views\Admin\Dashboard-Admin.Designer.cs">
       <DependentUpon>Dashboard-Admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Admin\DashboardPages\Edit TaskView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Admin\DashboardPages\Edit TaskView.Designer.cs">
+      <DependentUpon>Edit TaskView.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\Admin\DashboardPages\MemberView.cs">
       <SubType>UserControl</SubType>
@@ -419,11 +431,23 @@
     <Compile Include="Views\Admin\DashboardPages\DashboardView.Designer.cs">
       <DependentUpon>DashboardView.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\Admin\EditTasks.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Admin\EditTasks.Designer.cs">
+      <DependentUpon>EditTasks.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\Admin\ProfileAdmin.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Views\Admin\ProfileAdmin.Designer.cs">
       <DependentUpon>ProfileAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Admin\ResetPassword.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Admin\ResetPassword.Designer.cs">
+      <DependentUpon>ResetPassword.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\Cards\AdminCard.cs">
       <SubType>UserControl</SubType>
@@ -464,6 +488,12 @@
     <EmbeddedResource Include="Views\Admin\Dashboard-Admin.resx">
       <DependentUpon>Dashboard-Admin.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Views\Admin\DashboardPages\AddTask.resx">
+      <DependentUpon>AddTask.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Admin\DashboardPages\Edit TaskView.resx">
+      <DependentUpon>Edit TaskView.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\Admin\DashboardPages\MemberView.resx">
       <DependentUpon>MemberView.cs</DependentUpon>
     </EmbeddedResource>
@@ -478,8 +508,14 @@
     <EmbeddedResource Include="Views\Admin\DashboardPages\DashboardView.resx">
       <DependentUpon>DashboardView.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Views\Admin\EditTasks.resx">
+      <DependentUpon>EditTasks.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\Admin\ProfileAdmin.resx">
       <DependentUpon>ProfileAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Admin\ResetPassword.resx">
+      <DependentUpon>ResetPassword.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\Cards\AdminCard.resx">
       <DependentUpon>AdminCard.cs</DependentUpon>

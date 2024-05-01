@@ -34,7 +34,7 @@ namespace WorkHive.Views.Cards
 
         }
 
-        private void pictureBox2_Click(object sender, EventArgs e)
+        private void panel3_Paint(object sender, PaintEventArgs e)
         {
 
         }

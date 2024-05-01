@@ -49,12 +49,12 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox1.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(636, 657);
+            this.pictureBox1.Size = new System.Drawing.Size(849, 810);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pictureBox1.TabIndex = 9;
             this.pictureBox1.TabStop = false;
@@ -71,8 +71,10 @@
             // 
             // LandingPageViewPanel
             // 
-            this.LandingPageViewPanel.Dock = System.Windows.Forms.DockStyle.Right;
-            this.LandingPageViewPanel.Location = new System.Drawing.Point(633, 0);
+            this.LandingPageViewPanel.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.LandingPageViewPanel.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.LandingPageViewPanel.Location = new System.Drawing.Point(844, 0);
+            this.LandingPageViewPanel.Margin = new System.Windows.Forms.Padding(4);
             this.LandingPageViewPanel.Name = "LandingPageViewPanel";
             this.LandingPageViewPanel.Size = new System.Drawing.Size(494, 657);
             this.LandingPageViewPanel.TabIndex = 1;
@@ -86,7 +88,10 @@
             this.ClientSize = new System.Drawing.Size(1127, 657);
             this.Controls.Add(this.LandingPageViewPanel);
             this.Controls.Add(this.panel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Landing_Page";
+            this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Landing_Page";
             this.panel1.ResumeLayout(false);

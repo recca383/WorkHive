@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace WorkHive.Views.Admin
 {
-    public partial class ProfileAdmin : Form
+    public partial class ResetPassword : UserControl
     {
-        public ProfileAdmin()
+        public ResetPassword()
         {
             InitializeComponent();
         }

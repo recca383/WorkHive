@@ -10,13 +10,11 @@ using System.Windows.Forms;
 
 namespace WorkHive.Views.Admin
 {
-    public partial class ProfileAdmin : Form
+    public partial class EditTasks : UserControl
     {
-        public ProfileAdmin()
+        public EditTasks()
         {
             InitializeComponent();
         }
-
-       
     }
 }

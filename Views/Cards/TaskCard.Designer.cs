@@ -31,16 +31,17 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TaskCard));
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
-            this.Archived = new Bunifu.Framework.UI.BunifuCheckbox();
-            this.lblTask_Date = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.lblTask_Title = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.bunifuElipse2 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.panel3 = new System.Windows.Forms.Panel();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.lblTask_Title = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.lblTask_Date = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.TaskProgress = new Bunifu.UI.Winforms.BunifuProgressBar();
+            this.Archived = new Bunifu.Framework.UI.BunifuCheckbox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -54,42 +55,6 @@
             this.bunifuElipse1.ElipseRadius = 30;
             this.bunifuElipse1.TargetControl = this;
             // 
-            // Archived
-            // 
-            this.Archived.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
-            this.Archived.ChechedOffColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
-            this.Archived.Checked = true;
-            this.Archived.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
-            this.Archived.ForeColor = System.Drawing.Color.White;
-            this.Archived.Location = new System.Drawing.Point(806, 27);
-            this.Archived.Margin = new System.Windows.Forms.Padding(5);
-            this.Archived.Name = "Archived";
-            this.Archived.Size = new System.Drawing.Size(20, 20);
-            this.Archived.TabIndex = 11;
-            this.Archived.OnChange += new System.EventHandler(this.Archived_OnChange);
-            // 
-            // lblTask_Date
-            // 
-            this.lblTask_Date.AutoSize = true;
-            this.lblTask_Date.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTask_Date.Location = new System.Drawing.Point(10, 47);
-            this.lblTask_Date.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblTask_Date.Name = "lblTask_Date";
-            this.lblTask_Date.Size = new System.Drawing.Size(59, 23);
-            this.lblTask_Date.TabIndex = 9;
-            this.lblTask_Date.Text = "April 5";
-            // 
-            // lblTask_Title
-            // 
-            this.lblTask_Title.AutoSize = true;
-            this.lblTask_Title.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTask_Title.Location = new System.Drawing.Point(7, 9);
-            this.lblTask_Title.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblTask_Title.Name = "lblTask_Title";
-            this.lblTask_Title.Size = new System.Drawing.Size(189, 38);
-            this.lblTask_Title.TabIndex = 8;
-            this.lblTask_Title.Text = "Lorem Ipsum";
-            // 
             // panel1
             // 
             this.panel1.Controls.Add(this.pictureBox1);
@@ -101,7 +66,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox1.Image = global::WorkHive.Properties.Resources.Tasks_Cards_P1;
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
@@ -112,6 +77,7 @@
             // 
             // panel2
             // 
+            this.panel2.BackColor = System.Drawing.Color.Transparent;
             this.panel2.Controls.Add(this.pictureBox2);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(118, 0);
@@ -128,10 +94,15 @@
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 13;
             this.pictureBox2.TabStop = false;
-            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
+            // 
+            // bunifuElipse2
+            // 
+            this.bunifuElipse2.ElipseRadius = 5;
+            this.bunifuElipse2.TargetControl = this;
             // 
             // panel3
             // 
+            this.panel3.BackColor = System.Drawing.Color.Transparent;
             this.panel3.Controls.Add(this.pictureBox3);
             this.panel3.Controls.Add(this.lblTask_Title);
             this.panel3.Controls.Add(this.lblTask_Date);
@@ -141,7 +112,8 @@
             this.panel3.Location = new System.Drawing.Point(118, 41);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1029, 125);
-            this.panel3.TabIndex = 12;
+            this.panel3.TabIndex = 13;
+            this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
             // pictureBox3
             // 
@@ -152,6 +124,28 @@
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pictureBox3.TabIndex = 12;
             this.pictureBox3.TabStop = false;
+            // 
+            // lblTask_Title
+            // 
+            this.lblTask_Title.AutoSize = true;
+            this.lblTask_Title.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTask_Title.Location = new System.Drawing.Point(7, 9);
+            this.lblTask_Title.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblTask_Title.Name = "lblTask_Title";
+            this.lblTask_Title.Size = new System.Drawing.Size(189, 38);
+            this.lblTask_Title.TabIndex = 8;
+            this.lblTask_Title.Text = "Lorem Ipsum";
+            // 
+            // lblTask_Date
+            // 
+            this.lblTask_Date.AutoSize = true;
+            this.lblTask_Date.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTask_Date.Location = new System.Drawing.Point(10, 47);
+            this.lblTask_Date.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblTask_Date.Name = "lblTask_Date";
+            this.lblTask_Date.Size = new System.Drawing.Size(59, 23);
+            this.lblTask_Date.TabIndex = 9;
+            this.lblTask_Date.Text = "April 5";
             // 
             // TaskProgress
             // 
@@ -173,11 +167,25 @@
             this.TaskProgress.TabIndex = 10;
             this.TaskProgress.Value = 0;
             // 
+            // Archived
+            // 
+            this.Archived.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
+            this.Archived.ChechedOffColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
+            this.Archived.Checked = true;
+            this.Archived.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
+            this.Archived.ForeColor = System.Drawing.Color.White;
+            this.Archived.Location = new System.Drawing.Point(806, 27);
+            this.Archived.Margin = new System.Windows.Forms.Padding(5);
+            this.Archived.Name = "Archived";
+            this.Archived.Size = new System.Drawing.Size(20, 20);
+            this.Archived.TabIndex = 11;
+            // 
             // TaskCard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -199,15 +207,16 @@
         #endregion
 
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
-        public Bunifu.Framework.UI.BunifuCheckbox Archived;
-        public Bunifu.UI.Winforms.BunifuProgressBar TaskProgress;
-        public Bunifu.Framework.UI.BunifuCustomLabel lblTask_Date;
-        public Bunifu.Framework.UI.BunifuCustomLabel lblTask_Title;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel2;
+        private Bunifu.Framework.UI.BunifuElipse bunifuElipse2;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.PictureBox pictureBox3;
+        public Bunifu.Framework.UI.BunifuCustomLabel lblTask_Title;
+        public Bunifu.Framework.UI.BunifuCustomLabel lblTask_Date;
+        public Bunifu.UI.Winforms.BunifuProgressBar TaskProgress;
+        public Bunifu.Framework.UI.BunifuCheckbox Archived;
     }
 }

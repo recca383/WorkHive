@@ -8,15 +8,15 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace WorkHive.Views.Admin
+namespace WorkHive
 {
-    public partial class ProfileAdmin : Form
+    public partial class AddTask : UserControl
     {
-        public ProfileAdmin()
+        public AddTask()
         {
             InitializeComponent();
         }
 
-       
+    
     }
 }
