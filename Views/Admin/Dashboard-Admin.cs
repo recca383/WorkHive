@@ -80,7 +80,7 @@ namespace WorkHive.Views
         {
             if (this.sidebar.Width > 150)
             {
-                sidebar.Width = 42;
+                sidebar.Width = 54;
                 pictureBox1.Visible = false;
                 btnMenu.Dock = DockStyle.Left;
                 foreach (Button menubutton in sidebar.Controls.OfType<Button>())
@@ -112,7 +112,15 @@ namespace WorkHive.Views
             landingpage.Show();
         }
 
+        private void btnChats_Click(object sender, EventArgs e)
+        {
 
+        }
+
+        private void btnCalendar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 
     public class CircularPictureBox : PictureBox
