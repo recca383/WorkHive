@@ -382,6 +382,18 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Views\Admin\CalendarCurrentDays.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Admin\CalendarCurrentDays.Designer.cs">
+      <DependentUpon>CalendarCurrentDays.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Admin\CalendarDays.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Admin\CalendarDays.Designer.cs">
+      <DependentUpon>CalendarDays.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\Admin\DashboardPages\AddTask.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -515,6 +527,12 @@
     <Compile Include="Views\LandingPage\NewPassword.Designer.cs">
       <DependentUpon>NewPassword.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Views\Admin\CalendarCurrentDays.resx">
+      <DependentUpon>CalendarCurrentDays.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Admin\CalendarDays.resx">
+      <DependentUpon>CalendarDays.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\Admin\Dashboard-Admin.resx">
       <DependentUpon>Dashboard-Admin.cs</DependentUpon>
     </EmbeddedResource>
