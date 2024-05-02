@@ -503,6 +503,18 @@
     <Compile Include="Views\LandingPage\LandingPagePages\Sign_Up.Designer.cs">
       <DependentUpon>Sign_Up.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\LandingPage\LandingPagePages\VerifyCode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\LandingPage\LandingPagePages\VerifyCode.Designer.cs">
+      <DependentUpon>VerifyCode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\LandingPage\NewPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\LandingPage\NewPassword.Designer.cs">
+      <DependentUpon>NewPassword.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Views\Admin\Dashboard-Admin.resx">
       <DependentUpon>Dashboard-Admin.cs</DependentUpon>
     </EmbeddedResource>
@@ -563,6 +575,12 @@
     <EmbeddedResource Include="Views\LandingPage\LandingPagePages\Sign_Up.resx">
       <DependentUpon>Sign_Up.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Views\LandingPage\LandingPagePages\VerifyCode.resx">
+      <DependentUpon>VerifyCode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\LandingPage\NewPassword.resx">
+      <DependentUpon>NewPassword.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -614,6 +632,10 @@
     <Folder Include="Views\Member\" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\NewPassword.png" />
+    <None Include="Resources\VerifyCode.png" />
+    <None Include="Resources\ResetPassword.png" />
+    <None Include="Resources\Reset Password.png" />
     <None Include="Resources\Update Password.png" />
     <None Include="Resources\Landing page1.png" />
     <None Include="Resources\Profile Box.png" />
@@ -648,6 +670,7 @@
     <None Include="Resources\Button - LogOut.png" />
     <None Include="Resources\AdminCard TOP1.png" />
     <None Include="Resources\AdminCard RIGHT1.png" />
+    <None Include="Resources\BackButton.png" />
     <Content Include="Resources\Default_Pics\Userdefault.png" />
     <None Include="Resources\logo1.png" />
     <None Include="Resources\logo name1.png" />
