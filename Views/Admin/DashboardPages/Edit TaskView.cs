@@ -16,7 +16,8 @@ namespace WorkHive.Views.Admin.DashboardPages
 {
     public partial class Edit_TaskView : UserControl
     {
-        private List<TaskCard> list = new List<TaskCard>();
+        private List<EditTasks> list = new List<EditTasks>();
+        private List<TaskModel> tasks;
         public Edit_TaskView()
         {
             InitializeComponent();
@@ -27,32 +28,39 @@ namespace WorkHive.Views.Admin.DashboardPages
 
         private void AddTaskElements()
         {
+            RefreshList();
 
+        }
+
+        private void RefreshList()
+        {
+            list.Clear();
             for (int i = 0; i < TaskModelAccess.GetTaskCount(); i++)
             {
                 TaskModel taskModel = TaskModelAccess.GetTaskInfo(i);
-                TaskCard card = new TaskCard();
-                card.lblTask_Title.Text = taskModel.TaskName;
-                card.lblTask_Date.Text = ($"{CultureInfo.CurrentCulture.DateTimeFormat.GetMonthName(taskModel.TaskStart.Month)} {taskModel.TaskStart.Day}");
-                card.TaskProgress.Value = taskModel.TaskProgress;
-                card.Archived.Checked = !taskModel.Archived;
+                EditTasks card = new EditTasks();
+                card.lblEditTask_Title.Text = taskModel.TaskName;
+                card.lblEditTask_Date.Text = ($"{CultureInfo.CurrentCulture.DateTimeFormat.GetMonthName(taskModel.TaskStart.Month)} {taskModel.TaskStart.Day}");
+                card.EditTaskProgress.Value = taskModel.TaskProgress;
+                card.EditArchived.Checked = !taskModel.Archived;
                 list.Add(card);
 
             }
-
         }
 
         private void btnAll_Click(object sender, EventArgs e)
         {
+            RefreshList();
             SortAllTasks();
         }
 
         private void SortAllTasks()
         {
+            RefreshList();
             EditTasksFlow.Controls.Clear();
             var results = list
-                .Where(p => p.Archived.Checked)
-                .OrderBy(p => p.TaskProgress.Value);
+                .Where(p => p.EditArchived.Checked)
+                .OrderBy(p => p.EditTaskProgress.Value);
             foreach (var result in results)
             {
                 EditTasksFlow.Controls.Add(result);
@@ -61,10 +69,11 @@ namespace WorkHive.Views.Admin.DashboardPages
 
         private void btnOngoing_Click(object sender, EventArgs e)
         {
+            RefreshList();
             EditTasksFlow.Controls.Clear();
             var results = list
-                .Where(p => p.TaskProgress.Value < 100 && p.Archived.Checked)
-                .OrderBy(p => p.TaskProgress.Value);
+                .Where(p => p.EditTaskProgress.Value < 100 && p.EditArchived.Checked)
+                .OrderBy(p => p.EditTaskProgress.Value);
             foreach (var result in results)
             {
                 EditTasksFlow.Controls.Add(result);
@@ -73,10 +82,11 @@ namespace WorkHive.Views.Admin.DashboardPages
 
         private void btnCompleted_Click(object sender, EventArgs e)
         {
+            RefreshList();
             EditTasksFlow.Controls.Clear();
             var results = list
-                .Where(p => p.TaskProgress.Value == 100 && p.Archived.Checked)
-                .OrderBy(p => p.TaskProgress.Value);
+                .Where(p => p.EditTaskProgress.Value == 100 && p.EditArchived.Checked)
+                .OrderBy(p => p.EditTaskProgress.Value);
             foreach (var result in results)
             {
                 EditTasksFlow.Controls.Add(result);
@@ -85,8 +95,9 @@ namespace WorkHive.Views.Admin.DashboardPages
 
         private void btnArchived_Click(object sender, EventArgs e)
         {
+            RefreshList();
             EditTasksFlow.Controls.Clear();
-            var results = list.Where(p => !p.Archived.Checked);
+            var results = list.Where(p => !p.EditArchived.Checked);
             foreach (var result in results)
             {
                 EditTasksFlow.Controls.Add(result);
