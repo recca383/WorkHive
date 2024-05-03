@@ -69,6 +69,11 @@ namespace WorkHive.Views.LandingPage.LandingPagePages
             }
         }
 
-
+        private void btnForgotPass_Click(object sender, EventArgs e)
+        {
+            var forgotPassword = new ForgotPasswordPage();
+            forgotPassword.Show();
+           // ParentForm.Enabled = false;
+        }
     }
 }

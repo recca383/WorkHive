@@ -23,7 +23,7 @@ namespace WorkHive.Controller
                 Email = "sirpatrick121402@gmail.com",
                 FirstName = "recca383",
                 Password = "123",
-                IsLeader = false,
+                IsLeader = true,
                 Profile_Pic = "Resources\\Default_Admin_Pics\\tatik.jpg"
 
             },
@@ -61,13 +61,14 @@ namespace WorkHive.Controller
         {
             memberModel.Add(member);
         }
-        public static void ChangePassword (MemberModel member, string currentPassword, string newPassword, string newPasswordConfirm)
+        public static bool ChangePassword (MemberModel member, string currentPassword, string newPassword, string newPasswordConfirm)
         {
+            bool loop = false;
             if (!(member.Password == currentPassword))
             {
                 MessageBox.Show("Wrong Password");
             }
-            else if (!(member.Password == newPassword))
+            else if (!(newPasswordConfirm == newPassword))
             {
                 MessageBox.Show("Password Doesn't Match");
             }
@@ -78,8 +79,30 @@ namespace WorkHive.Controller
             else
             {
                 member.Password = newPassword;
+                loop = true;
+                MessageBox.Show("Change Password Successful");
+                
+            }
+            return loop;
+        }
+        public static bool ChangePassword(MemberModel member,string newPassword, string newPasswordConfirm)
+        {
+            bool loop = true;
+            if (!(newPasswordConfirm == newPassword))
+            {
+                MessageBox.Show("Password Doesn't Match");
+            }
+            else if (member.Password == newPassword)
+            {
+                MessageBox.Show("You can't use your old password");
+            }
+            else
+            {
+                member.Password = newPassword;
+                loop = false;
                 MessageBox.Show("Change Password Successful");
             }
+            return loop;
         }
         public static MemberModel GetMemberInfo(int ID)
         {

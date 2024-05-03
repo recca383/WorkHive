@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Net;
 using System.Net.Mail;
+using System.Runtime.Remoting.Metadata.W3cXsd2001;
 using System.Text;
 using System.Threading.Tasks;
 using WorkHive.Model;
@@ -14,7 +15,30 @@ namespace WorkHive.Controller
 {
     public class MailNotif
     {
-        public static async Task Send(string template, int id)
+        private string _email;
+        private string _template;
+        private string[] elements;
+
+        public enum Mailfunctions
+        {
+            ResetPassword
+
+        }
+        public MailNotif(string email, Mailfunctions function, string elements)
+        {
+            _email = email;
+            switch (function)
+            {
+                case Mailfunctions.ResetPassword:
+                    _template = ResetPasswordTemplate(elements);
+                    
+                    break;
+
+            }
+            Send(_email, _template);
+        }
+
+        private static async Task Send(string emailaddress, string template)
         {
             var sender = new SmtpSender(() => new SmtpClient("smtp.gmail.com", 587)
             {
@@ -27,18 +51,19 @@ namespace WorkHive.Controller
             Email.DefaultSender = sender;
             Email.DefaultRenderer = new RazorRenderer();
 
-            
-            var member = MemberModelAccess.GetMemberInfo(id);
+            List<MemberModel> members = MemberModelAccess.GetMemberModel();
+
+            var member = members.FirstOrDefault(m => m.Email == emailaddress);
 
             var email = await Email
                 .From("0323-2059@lspu.edu.ph", "noreply - WorkHive")
-                .To(member.Email)
+                .To(emailaddress)
                 .Subject("WorkHive Notif")
-                .UsingTemplate(template.ToString(), member)
+                .UsingTemplate(template, new { member.FirstName })
                 .SendAsync();
 
         }
-        private static string ResetPasswordTemplate(string oneTimeCodeString)
+        public static string ResetPasswordTemplate(string oneTimeCodeString)
         {
             
             StringBuilder template = new StringBuilder();

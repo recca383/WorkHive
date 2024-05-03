@@ -491,17 +491,23 @@
     <Compile Include="Views\Cards\TaskCard.Designer.cs">
       <DependentUpon>TaskCard.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\LandingPage\ForgotPassword.cs">
+    <Compile Include="Views\LandingPage\ForgotPasswordPage.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\LandingPage\ForgotPassword.Designer.cs">
-      <DependentUpon>ForgotPassword.cs</DependentUpon>
+    <Compile Include="Views\LandingPage\ForgotPasswordPage.Designer.cs">
+      <DependentUpon>ForgotPasswordPage.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\LandingPage\Landing Page.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Views\LandingPage\Landing Page.Designer.cs">
       <DependentUpon>Landing Page.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\LandingPage\LandingPagePages\ForgotPassword.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\LandingPage\LandingPagePages\ForgotPassword.Designer.cs">
+      <DependentUpon>ForgotPassword.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\LandingPage\LandingPagePages\Sign_In.cs">
       <SubType>UserControl</SubType>
@@ -515,17 +521,17 @@
     <Compile Include="Views\LandingPage\LandingPagePages\Sign_Up.Designer.cs">
       <DependentUpon>Sign_Up.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\LandingPage\LandingPagePages\VerifyCode.cs">
-      <SubType>Form</SubType>
+    <Compile Include="Views\LandingPage\LandingPagePages\NewPassword.cs">
+      <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Views\LandingPage\LandingPagePages\VerifyCode.Designer.cs">
-      <DependentUpon>VerifyCode.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Views\LandingPage\NewPassword.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Views\LandingPage\NewPassword.Designer.cs">
+    <Compile Include="Views\LandingPage\LandingPagePages\NewPassword.Designer.cs">
       <DependentUpon>NewPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\LandingPage\LandingPagePages\VerifyPassword.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\LandingPage\LandingPagePages\VerifyPassword.Designer.cs">
+      <DependentUpon>VerifyPassword.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Views\Admin\CalendarCurrentDays.resx">
       <DependentUpon>CalendarCurrentDays.cs</DependentUpon>
@@ -580,12 +586,15 @@
     <EmbeddedResource Include="Views\Cards\TaskCard.resx">
       <DependentUpon>TaskCard.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\LandingPage\ForgotPassword.resx">
-      <DependentUpon>ForgotPassword.cs</DependentUpon>
+    <EmbeddedResource Include="Views\LandingPage\ForgotPasswordPage.resx">
+      <DependentUpon>ForgotPasswordPage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\LandingPage\Landing Page.resx">
       <DependentUpon>Landing Page.cs</DependentUpon>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\LandingPage\LandingPagePages\ForgotPassword.resx">
+      <DependentUpon>ForgotPassword.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\LandingPage\LandingPagePages\Sign_In.resx">
       <DependentUpon>Sign_In.cs</DependentUpon>
@@ -593,11 +602,11 @@
     <EmbeddedResource Include="Views\LandingPage\LandingPagePages\Sign_Up.resx">
       <DependentUpon>Sign_Up.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\LandingPage\LandingPagePages\VerifyCode.resx">
-      <DependentUpon>VerifyCode.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Views\LandingPage\NewPassword.resx">
+    <EmbeddedResource Include="Views\LandingPage\LandingPagePages\NewPassword.resx">
       <DependentUpon>NewPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\LandingPage\LandingPagePages\VerifyPassword.resx">
+      <DependentUpon>VerifyPassword.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
