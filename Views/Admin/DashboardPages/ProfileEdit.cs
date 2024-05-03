@@ -7,16 +7,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WorkHive.Model;
 
 namespace WorkHive.Views.Admin
 {
-    public partial class ResetPassword : UserControl
+    public partial class ProfileEdit : UserControl
     {
-        public ResetPassword()
+        MemberModel currentUser;
+        public ProfileEdit(MemberModel _Currentuser)
         {
+            this.currentUser = _Currentuser;
             InitializeComponent();
         }
-
-       
     }
 }

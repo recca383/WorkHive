@@ -382,16 +382,16 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Views\Admin\CalendarCurrentDays.cs">
+    <Compile Include="Views\Admin\DashboardPages\CalendarCurrentDays.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Views\Admin\CalendarCurrentDays.Designer.cs">
+    <Compile Include="Views\Admin\DashboardPages\CalendarCurrentDays.Designer.cs">
       <DependentUpon>CalendarCurrentDays.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\Admin\CalendarDays.cs">
+    <Compile Include="Views\Admin\DashboardPages\CalendarDays.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Views\Admin\CalendarDays.Designer.cs">
+    <Compile Include="Views\Admin\DashboardPages\CalendarDays.Designer.cs">
       <DependentUpon>CalendarDays.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\Admin\DashboardPages\AddTask.cs">
@@ -449,28 +449,28 @@
     <Compile Include="Views\Admin\DashboardPages\DashboardView.Designer.cs">
       <DependentUpon>DashboardView.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\Admin\EditTasks.cs">
+    <Compile Include="Views\Cards\EditTasks.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Views\Admin\EditTasks.Designer.cs">
+    <Compile Include="Views\Cards\EditTasks.Designer.cs">
       <DependentUpon>EditTasks.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\Admin\ProfileAdmin.cs">
-      <SubType>Form</SubType>
+      <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Views\Admin\ProfileAdmin.Designer.cs">
       <DependentUpon>ProfileAdmin.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\Admin\ProfileEdit.cs">
+    <Compile Include="Views\Admin\DashboardPages\ProfileEdit.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Views\Admin\ProfileEdit.Designer.cs">
+    <Compile Include="Views\Admin\DashboardPages\ProfileEdit.Designer.cs">
       <DependentUpon>ProfileEdit.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\Admin\ResetPassword.cs">
+    <Compile Include="Views\Admin\DashboardPages\ResetPassword.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Views\Admin\ResetPassword.Designer.cs">
+    <Compile Include="Views\Admin\DashboardPages\ResetPassword.Designer.cs">
       <DependentUpon>ResetPassword.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\Cards\AdminCard.cs">
@@ -533,10 +533,10 @@
     <Compile Include="Views\LandingPage\LandingPagePages\VerifyPassword.Designer.cs">
       <DependentUpon>VerifyPassword.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Views\Admin\CalendarCurrentDays.resx">
+    <EmbeddedResource Include="Views\Admin\DashboardPages\CalendarCurrentDays.resx">
       <DependentUpon>CalendarCurrentDays.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\Admin\CalendarDays.resx">
+    <EmbeddedResource Include="Views\Admin\DashboardPages\CalendarDays.resx">
       <DependentUpon>CalendarDays.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\Admin\Dashboard-Admin.resx">
@@ -565,16 +565,16 @@
     <EmbeddedResource Include="Views\Admin\DashboardPages\DashboardView.resx">
       <DependentUpon>DashboardView.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\Admin\EditTasks.resx">
+    <EmbeddedResource Include="Views\Cards\EditTasks.resx">
       <DependentUpon>EditTasks.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\Admin\ProfileAdmin.resx">
       <DependentUpon>ProfileAdmin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\Admin\ProfileEdit.resx">
+    <EmbeddedResource Include="Views\Admin\DashboardPages\ProfileEdit.resx">
       <DependentUpon>ProfileEdit.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\Admin\ResetPassword.resx">
+    <EmbeddedResource Include="Views\Admin\DashboardPages\ResetPassword.resx">
       <DependentUpon>ResetPassword.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\Cards\AdminCard.resx">

@@ -12,6 +12,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using WorkHive.Controller;
 using WorkHive.Model;
+using WorkHive.Views.Admin;
 using WorkHive.Views.Admin.DashboardPages;
 using WorkHive.Views.LandingPage;
 using WorkHive.Views.Pages;
@@ -22,7 +23,7 @@ namespace WorkHive.Views
     {
         readonly MemberModel CurrentUser;
 
-        DashboardNavigation dashboardNavigation;
+        static DashboardNavigation dashboardNavigation;
         public Dashboard_Admin(MemberModel CurrentUser)
         {
             this.CurrentUser = CurrentUser;
@@ -46,7 +47,7 @@ namespace WorkHive.Views
         private void Initialize_Navigation_Controls()
         {
             List<UserControl> list = new List<UserControl>()
-            { new DashboardView(), new MemberView(), new TasksView(), new Edit_TaskView(), new CalendarView()};
+            { new DashboardView(), new MemberView(), new TasksView(), new Edit_TaskView(), new CalendarView(), new ProfileEdit(CurrentUser), new ResetPassword(CurrentUser)};
 
             dashboardNavigation = new DashboardNavigation(list, ViewPanel);
             dashboardNavigation.Display(0);
@@ -70,11 +71,16 @@ namespace WorkHive.Views
         {
             dashboardNavigation.Display(3);
         }
-
         private void btnCalendar_Click(object sender, EventArgs e)
         {
             dashboardNavigation.Display(4);
         }
+        public static void btnResetPassword_Click()
+        {
+            dashboardNavigation.Display(6);
+        }
+
+        
 
         private void btnMenu_Click(object sender, EventArgs e)
         {
@@ -127,6 +133,25 @@ namespace WorkHive.Views
         private void ViewPanel_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void ProfilePicBox_Click(object sender, EventArgs e)
+        {
+            ProfileAdmin profile = new ProfileAdmin(CurrentUser);
+            profilepanel.Controls.Add(profile);
+            profile.Dock = DockStyle.Fill;
+            profile.Show();
+            profilepanel.Parent = ViewPanel;
+            profilepanel.BringToFront();
+            if (profilepanel.Size == new Size(0, 0))
+            {
+                profilepanel.Size = new Size(344, 466);
+                
+            }
+            else
+            {
+                profilepanel.Size = new Size(0, 0);
+            }
         }
     }
 

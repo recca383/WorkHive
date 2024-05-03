@@ -63,7 +63,7 @@ namespace WorkHive.Controller
         }
         public static bool ChangePassword (MemberModel member, string currentPassword, string newPassword, string newPasswordConfirm)
         {
-            bool loop = false;
+            bool loop = true;
             if (!(member.Password == currentPassword))
             {
                 MessageBox.Show("Wrong Password");
@@ -79,7 +79,7 @@ namespace WorkHive.Controller
             else
             {
                 member.Password = newPassword;
-                loop = true;
+                loop = false;
                 MessageBox.Show("Change Password Successful");
                 
             }

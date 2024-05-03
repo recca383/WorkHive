@@ -3,20 +3,62 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Drawing2D;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WorkHive.Model;
+using WorkHive.Views.LandingPage;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.TextBox;
 
 namespace WorkHive.Views.Admin
 {
-    public partial class ProfileAdmin : Form
+    public partial class ProfileAdmin : UserControl
     {
-        public ProfileAdmin()
+        readonly private MemberModel CurrentUser;
+        public ProfileAdmin(MemberModel member)
         {
+            CurrentUser = member;
             InitializeComponent();
+            SetElememts();
+        }
+        private void SetElememts()
+        {
+            var parent = Directory.GetParent(Directory.GetCurrentDirectory()).FullName;
+            if (CurrentUser.Profile_Pic == null)
+            {
+                ProfilePictureADMIN.Image = Image.FromFile(Path.Combine(Path.GetDirectoryName(parent), "Resources\\Default_Pics\\Userdefault.png"));
+            }
+            else
+            {
+                ProfilePictureADMIN.Image = Image.FromFile(Path.Combine(Path.GetDirectoryName(parent), CurrentUser.Profile_Pic));
+            }
+
+            AdminName.Text = CurrentUser.FullName;
+            if (CurrentUser.IsLeader)
+            {
+                Positionlbl.Text = "Leader";
+            }
+            else
+            {
+                Positionlbl.Text = "Member";
+            }
+            
         }
 
-       
+        private void ResetPassBtn_Click(object sender, EventArgs e)
+        {
+            Dashboard_Admin.btnResetPassword_Click();
+        }
+
+        private void btnLogout_Click(object sender, EventArgs e)
+        {
+            Landing_Page landing_Page = new Landing_Page();
+            ParentForm.Hide();
+            landing_Page.Show();
+            
+        }
     }
 }

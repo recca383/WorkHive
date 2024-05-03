@@ -124,7 +124,7 @@
   <data name="pnProfileBoxBG.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAUYAAACdCAYAAADIWdGoAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EAAACxABrSO9dQAAwjVJREFUeF7t/Unstt2W3oURIGAw7nCdpjpXZRYlJDhSBhCJ2FImEUrjTJIQCDhS
+        DAAACwwBP0AiyAAAwjVJREFUeF7t/Unstt2W3oURIGAw7nCdpjpXZRYlJDhSBhCJ2FImEUrjTJIQCDhS
         BhEWgYQMnA7cHrsKFzbu7c/VuVxlF27KfQtKRsmAQUZxBq4DGcAIpExc53yne99c7dpr3//nO6dc7wFs
         fD7p0lp77fv5v2Wk8+Nae+37ef6ev0P/++XQr4Z+HfTD0E9B/0H0/4Pef0vf0rf0n5n4vzn+b+//Fv0O
         iP/b/FUQ/7f6rf/+U/jvF0OEIP8/9v8L+hb4vqVv6e8s8X+zBeavhPi/6W/993P473uhfx3i/8d89f+h
@@ -1237,7 +1237,7 @@
         iYmJiYmJiYmJU+Lh4S8q/uczm0HorQAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="bunifuFlatButton1.Iconimage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnLogout.Iconimage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAADcAAAAoCAYAAABaW2IIAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
         DAAACwwBP0AiyAAAAXxJREFUaEPtl9FtwjAQhjOCMQswQkdgBDaAEdiAbpA2zntH6AgdhREilYQ8Ujtc
