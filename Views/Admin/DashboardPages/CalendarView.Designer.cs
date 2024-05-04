@@ -31,8 +31,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CalendarView));
             this.CalendarName = new System.Windows.Forms.Label();
             this.DayContainer = new System.Windows.Forms.FlowLayoutPanel();
-            this.btnNext = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.btnPrevious = new Bunifu.Framework.UI.BunifuFlatButton();
             this.Sunday = new System.Windows.Forms.Label();
             this.Monday = new System.Windows.Forms.Label();
             this.Tuesday = new System.Windows.Forms.Label();
@@ -40,8 +38,10 @@
             this.Thursday = new System.Windows.Forms.Label();
             this.Friday = new System.Windows.Forms.Label();
             this.Saturday = new System.Windows.Forms.Label();
-            this.bunifuVScrollBar1 = new Bunifu.UI.WinForms.BunifuVScrollBar();
             this.lblDate = new System.Windows.Forms.Label();
+            this.bunifuVScrollBar1 = new Bunifu.UI.WinForms.BunifuVScrollBar();
+            this.btnPrevious = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.btnNext = new Bunifu.Framework.UI.BunifuFlatButton();
             this.SuspendLayout();
             // 
             // CalendarName
@@ -61,82 +61,6 @@
             this.DayContainer.Name = "DayContainer";
             this.DayContainer.Size = new System.Drawing.Size(1185, 641);
             this.DayContainer.TabIndex = 3;
-            // 
-            // btnNext
-            // 
-            this.btnNext.Active = true;
-            this.btnNext.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(194)))), ((int)(((byte)(1)))));
-            this.btnNext.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(44)))), ((int)(((byte)(49)))));
-            this.btnNext.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnNext.BorderRadius = 0;
-            this.btnNext.ButtonText = "Next";
-            this.btnNext.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnNext.DisabledColor = System.Drawing.Color.Gray;
-            this.btnNext.Iconcolor = System.Drawing.Color.Transparent;
-            this.btnNext.Iconimage = null;
-            this.btnNext.Iconimage_right = null;
-            this.btnNext.Iconimage_right_Selected = null;
-            this.btnNext.Iconimage_Selected = null;
-            this.btnNext.IconMarginLeft = 20;
-            this.btnNext.IconMarginRight = 0;
-            this.btnNext.IconRightVisible = true;
-            this.btnNext.IconRightZoom = 0D;
-            this.btnNext.IconVisible = true;
-            this.btnNext.IconZoom = 40D;
-            this.btnNext.IsTab = false;
-            this.btnNext.Location = new System.Drawing.Point(1051, 772);
-            this.btnNext.Margin = new System.Windows.Forms.Padding(0);
-            this.btnNext.Name = "btnNext";
-            this.btnNext.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(44)))), ((int)(((byte)(49)))));
-            this.btnNext.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(194)))), ((int)(((byte)(1)))));
-            this.btnNext.OnHoverTextColor = System.Drawing.Color.White;
-            this.btnNext.selected = true;
-            this.btnNext.Size = new System.Drawing.Size(166, 39);
-            this.btnNext.TabIndex = 5;
-            this.btnNext.Tag = "Members";
-            this.btnNext.Text = "Next";
-            this.btnNext.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnNext.Textcolor = System.Drawing.Color.White;
-            this.btnNext.TextFont = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNext.Click += new System.EventHandler(this.btnNext_Click);
-            // 
-            // btnPrevious
-            // 
-            this.btnPrevious.Active = true;
-            this.btnPrevious.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(194)))), ((int)(((byte)(1)))));
-            this.btnPrevious.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(44)))), ((int)(((byte)(49)))));
-            this.btnPrevious.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnPrevious.BorderRadius = 0;
-            this.btnPrevious.ButtonText = "Previous";
-            this.btnPrevious.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnPrevious.DisabledColor = System.Drawing.Color.Gray;
-            this.btnPrevious.Iconcolor = System.Drawing.Color.Transparent;
-            this.btnPrevious.Iconimage = null;
-            this.btnPrevious.Iconimage_right = null;
-            this.btnPrevious.Iconimage_right_Selected = null;
-            this.btnPrevious.Iconimage_Selected = null;
-            this.btnPrevious.IconMarginLeft = 20;
-            this.btnPrevious.IconMarginRight = 0;
-            this.btnPrevious.IconRightVisible = true;
-            this.btnPrevious.IconRightZoom = 0D;
-            this.btnPrevious.IconVisible = true;
-            this.btnPrevious.IconZoom = 40D;
-            this.btnPrevious.IsTab = false;
-            this.btnPrevious.Location = new System.Drawing.Point(868, 772);
-            this.btnPrevious.Margin = new System.Windows.Forms.Padding(0);
-            this.btnPrevious.Name = "btnPrevious";
-            this.btnPrevious.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(44)))), ((int)(((byte)(49)))));
-            this.btnPrevious.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(194)))), ((int)(((byte)(1)))));
-            this.btnPrevious.OnHoverTextColor = System.Drawing.Color.White;
-            this.btnPrevious.selected = true;
-            this.btnPrevious.Size = new System.Drawing.Size(166, 39);
-            this.btnPrevious.TabIndex = 6;
-            this.btnPrevious.Tag = "Members";
-            this.btnPrevious.Text = "Previous";
-            this.btnPrevious.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnPrevious.Textcolor = System.Drawing.Color.White;
-            this.btnPrevious.TextFont = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPrevious.Click += new System.EventHandler(this.btnPrevious_Click);
             // 
             // Sunday
             // 
@@ -208,6 +132,16 @@
             this.Saturday.TabIndex = 13;
             this.Saturday.Text = "Saturday";
             // 
+            // lblDate
+            // 
+            this.lblDate.Font = new System.Drawing.Font("Montserrat", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDate.Location = new System.Drawing.Point(599, 26);
+            this.lblDate.Name = "lblDate";
+            this.lblDate.Size = new System.Drawing.Size(469, 42);
+            this.lblDate.TabIndex = 15;
+            this.lblDate.Text = "MONTH YEAR";
+            this.lblDate.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
             // bunifuVScrollBar1
             // 
             this.bunifuVScrollBar1.AllowCursorChanges = true;
@@ -248,15 +182,79 @@
             this.bunifuVScrollBar1.ThumbStyle = Bunifu.UI.WinForms.BunifuVScrollBar.ThumbStyles.Inset;
             this.bunifuVScrollBar1.Value = 0;
             // 
-            // lblDate
+            // btnPrevious
             // 
-            this.lblDate.Font = new System.Drawing.Font("Montserrat", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDate.Location = new System.Drawing.Point(566, 29);
-            this.lblDate.Name = "lblDate";
-            this.lblDate.Size = new System.Drawing.Size(645, 42);
-            this.lblDate.TabIndex = 15;
-            this.lblDate.Text = "MONTH YEAR";
-            this.lblDate.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnPrevious.Active = true;
+            this.btnPrevious.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(194)))), ((int)(((byte)(1)))));
+            this.btnPrevious.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(44)))), ((int)(((byte)(49)))));
+            this.btnPrevious.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnPrevious.BorderRadius = 0;
+            this.btnPrevious.ButtonText = "";
+            this.btnPrevious.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnPrevious.DisabledColor = System.Drawing.Color.Gray;
+            this.btnPrevious.Iconcolor = System.Drawing.Color.Transparent;
+            this.btnPrevious.Iconimage = global::WorkHive.Properties.Resources.arrowleft;
+            this.btnPrevious.Iconimage_right = null;
+            this.btnPrevious.Iconimage_right_Selected = null;
+            this.btnPrevious.Iconimage_Selected = null;
+            this.btnPrevious.IconMarginLeft = 20;
+            this.btnPrevious.IconMarginRight = 0;
+            this.btnPrevious.IconRightVisible = true;
+            this.btnPrevious.IconRightZoom = 0D;
+            this.btnPrevious.IconVisible = true;
+            this.btnPrevious.IconZoom = 40D;
+            this.btnPrevious.IsTab = false;
+            this.btnPrevious.Location = new System.Drawing.Point(1080, 29);
+            this.btnPrevious.Margin = new System.Windows.Forms.Padding(0);
+            this.btnPrevious.Name = "btnPrevious";
+            this.btnPrevious.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(44)))), ((int)(((byte)(49)))));
+            this.btnPrevious.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(194)))), ((int)(((byte)(1)))));
+            this.btnPrevious.OnHoverTextColor = System.Drawing.Color.White;
+            this.btnPrevious.selected = true;
+            this.btnPrevious.Size = new System.Drawing.Size(60, 39);
+            this.btnPrevious.TabIndex = 6;
+            this.btnPrevious.Tag = "Members";
+            this.btnPrevious.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnPrevious.Textcolor = System.Drawing.Color.White;
+            this.btnPrevious.TextFont = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPrevious.Click += new System.EventHandler(this.btnPrevious_Click);
+            // 
+            // btnNext
+            // 
+            this.btnNext.Active = true;
+            this.btnNext.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(194)))), ((int)(((byte)(1)))));
+            this.btnNext.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(44)))), ((int)(((byte)(49)))));
+            this.btnNext.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnNext.BorderRadius = 0;
+            this.btnNext.ButtonText = "";
+            this.btnNext.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnNext.DisabledColor = System.Drawing.Color.Gray;
+            this.btnNext.Iconcolor = System.Drawing.Color.Transparent;
+            this.btnNext.Iconimage = global::WorkHive.Properties.Resources.arrowright;
+            this.btnNext.Iconimage_right = null;
+            this.btnNext.Iconimage_right_Selected = null;
+            this.btnNext.Iconimage_Selected = null;
+            this.btnNext.IconMarginLeft = 20;
+            this.btnNext.IconMarginRight = 0;
+            this.btnNext.IconRightVisible = true;
+            this.btnNext.IconRightZoom = 0D;
+            this.btnNext.IconVisible = true;
+            this.btnNext.IconZoom = 40D;
+            this.btnNext.IsTab = false;
+            this.btnNext.Location = new System.Drawing.Point(1151, 29);
+            this.btnNext.Margin = new System.Windows.Forms.Padding(0);
+            this.btnNext.Name = "btnNext";
+            this.btnNext.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(44)))), ((int)(((byte)(49)))));
+            this.btnNext.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(194)))), ((int)(((byte)(1)))));
+            this.btnNext.OnHoverTextColor = System.Drawing.Color.White;
+            this.btnNext.selected = true;
+            this.btnNext.Size = new System.Drawing.Size(60, 39);
+            this.btnNext.TabIndex = 5;
+            this.btnNext.Tag = "Members";
+            this.btnNext.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnNext.Textcolor = System.Drawing.Color.White;
+            this.btnNext.TextFont = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNext.Click += new System.EventHandler(this.btnNext_Click);
             // 
             // CalendarView
             // 

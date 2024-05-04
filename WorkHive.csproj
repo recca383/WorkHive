@@ -707,6 +707,8 @@
     <None Include="Resources\AdminCard TOP1.png" />
     <None Include="Resources\AdminCard RIGHT1.png" />
     <None Include="Resources\BackButton.png" />
+    <None Include="Resources\arrowleft.png" />
+    <None Include="Resources\arrowright.png" />
     <Content Include="Resources\Default_Pics\Userdefault.png" />
     <None Include="Resources\logo1.png" />
     <None Include="Resources\logo name1.png" />
