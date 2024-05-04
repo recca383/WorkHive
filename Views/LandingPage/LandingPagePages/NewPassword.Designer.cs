@@ -52,9 +52,10 @@
             // label4
             // 
             this.label4.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(79, 461);
+            this.label4.Location = new System.Drawing.Point(105, 567);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(160, 20);
+            this.label4.Size = new System.Drawing.Size(213, 25);
             this.label4.TabIndex = 42;
             this.label4.Text = "Confirm Password";
             // 
@@ -73,20 +74,21 @@
             this.txtConfirmPassword.LineIdleColor = System.Drawing.Color.Gold;
             this.txtConfirmPassword.LineMouseHoverColor = System.Drawing.Color.Crimson;
             this.txtConfirmPassword.LineThickness = 3;
-            this.txtConfirmPassword.Location = new System.Drawing.Point(82, 482);
+            this.txtConfirmPassword.Location = new System.Drawing.Point(109, 593);
             this.txtConfirmPassword.Margin = new System.Windows.Forms.Padding(0);
             this.txtConfirmPassword.MaxLength = 32767;
             this.txtConfirmPassword.Name = "txtConfirmPassword";
-            this.txtConfirmPassword.Size = new System.Drawing.Size(242, 27);
+            this.txtConfirmPassword.Size = new System.Drawing.Size(323, 33);
             this.txtConfirmPassword.TabIndex = 41;
             this.txtConfirmPassword.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // label2
             // 
             this.label2.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(79, 396);
+            this.label2.Location = new System.Drawing.Point(105, 487);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(160, 20);
+            this.label2.Size = new System.Drawing.Size(213, 25);
             this.label2.TabIndex = 40;
             this.label2.Text = "New Password";
             // 
@@ -105,11 +107,11 @@
             this.txtNewPassword.LineIdleColor = System.Drawing.Color.Gold;
             this.txtNewPassword.LineMouseHoverColor = System.Drawing.Color.Crimson;
             this.txtNewPassword.LineThickness = 3;
-            this.txtNewPassword.Location = new System.Drawing.Point(82, 417);
+            this.txtNewPassword.Location = new System.Drawing.Point(109, 513);
             this.txtNewPassword.Margin = new System.Windows.Forms.Padding(0);
             this.txtNewPassword.MaxLength = 32767;
             this.txtNewPassword.Name = "txtNewPassword";
-            this.txtNewPassword.Size = new System.Drawing.Size(242, 27);
+            this.txtNewPassword.Size = new System.Drawing.Size(323, 33);
             this.txtNewPassword.TabIndex = 39;
             this.txtNewPassword.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
@@ -117,8 +119,8 @@
             // 
             this.bunifuImageButton1.Image = global::WorkHive.Properties.Resources.BackButton;
             this.bunifuImageButton1.ImageActive = null;
-            this.bunifuImageButton1.Location = new System.Drawing.Point(28, 41);
-            this.bunifuImageButton1.Margin = new System.Windows.Forms.Padding(2);
+            this.bunifuImageButton1.Location = new System.Drawing.Point(61, 68);
+            this.bunifuImageButton1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bunifuImageButton1.Name = "bunifuImageButton1";
             this.bunifuImageButton1.Size = new System.Drawing.Size(21, 21);
             this.bunifuImageButton1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -151,14 +153,14 @@
             this.btnSave.IconVisible = true;
             this.btnSave.IconZoom = 90D;
             this.btnSave.IsTab = false;
-            this.btnSave.Location = new System.Drawing.Point(82, 543);
-            this.btnSave.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.btnSave.Location = new System.Drawing.Point(108, 668);
+            this.btnSave.Margin = new System.Windows.Forms.Padding(5, 7, 5, 7);
             this.btnSave.Name = "btnSave";
             this.btnSave.Normalcolor = System.Drawing.Color.Transparent;
             this.btnSave.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.btnSave.OnHoverTextColor = System.Drawing.Color.Black;
             this.btnSave.selected = false;
-            this.btnSave.Size = new System.Drawing.Size(242, 33);
+            this.btnSave.Size = new System.Drawing.Size(324, 41);
             this.btnSave.TabIndex = 37;
             this.btnSave.Text = "SAVE";
             this.btnSave.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -169,20 +171,21 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::WorkHive.Properties.Resources.NewPassword;
-            this.pictureBox1.Location = new System.Drawing.Point(97, 86);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox1.Location = new System.Drawing.Point(132, 110);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(210, 186);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox1.Size = new System.Drawing.Size(254, 230);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 36;
             this.pictureBox1.TabStop = false;
             // 
             // label1
             // 
             this.label1.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(79, 322);
+            this.label1.Location = new System.Drawing.Point(99, 376);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(245, 42);
+            this.label1.Size = new System.Drawing.Size(327, 52);
             this.label1.TabIndex = 35;
             this.label1.Text = "Please Enter Your New Password. It Must Contain 8 Characters.";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -190,16 +193,17 @@
             // label3
             // 
             this.label3.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(82, 39);
+            this.label3.Location = new System.Drawing.Point(103, 68);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(242, 22);
+            this.label3.Size = new System.Drawing.Size(329, 27);
             this.label3.TabIndex = 34;
             this.label3.Text = "Create New Password";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // NewPassword
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.label4);
@@ -211,8 +215,9 @@
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label3);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "NewPassword";
-            this.Size = new System.Drawing.Size(401, 650);
+            this.Size = new System.Drawing.Size(535, 764);
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
