@@ -515,6 +515,12 @@
     <Compile Include="Views\LandingPage\LandingPagePages\ForgotPassword.Designer.cs">
       <DependentUpon>ForgotPassword.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\LandingPage\LandingPagePages\Messageboxes.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\LandingPage\LandingPagePages\Messageboxes.Designer.cs">
+      <DependentUpon>Messageboxes.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\LandingPage\LandingPagePages\Sign_In.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -538,6 +544,30 @@
     </Compile>
     <Compile Include="Views\LandingPage\LandingPagePages\VerifyPassword.Designer.cs">
       <DependentUpon>VerifyPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Member\DashboardPagesMember\Dashboard-Member.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Member\DashboardPagesMember\Dashboard-Member.Designer.cs">
+      <DependentUpon>Dashboard-Member.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Member\DashboardPagesMember\ProfileEditMember.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Member\DashboardPagesMember\ProfileEditMember.Designer.cs">
+      <DependentUpon>ProfileEditMember.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Member\DashboardPagesMember\ProfileMember.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Member\DashboardPagesMember\ProfileMember.Designer.cs">
+      <DependentUpon>ProfileMember.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Member\DashboardPagesMember\ResetPasswordMember.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Member\DashboardPagesMember\ResetPasswordMember.Designer.cs">
+      <DependentUpon>ResetPasswordMember.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Views\Admin\DashboardPages\CalendarCurrentDays.resx">
       <DependentUpon>CalendarCurrentDays.cs</DependentUpon>
@@ -605,6 +635,9 @@
     <EmbeddedResource Include="Views\LandingPage\LandingPagePages\ForgotPassword.resx">
       <DependentUpon>ForgotPassword.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Views\LandingPage\LandingPagePages\Messageboxes.resx">
+      <DependentUpon>Messageboxes.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\LandingPage\LandingPagePages\Sign_In.resx">
       <DependentUpon>Sign_In.cs</DependentUpon>
     </EmbeddedResource>
@@ -616,6 +649,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Views\LandingPage\LandingPagePages\VerifyPassword.resx">
       <DependentUpon>VerifyPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Member\DashboardPagesMember\Dashboard-Member.resx">
+      <DependentUpon>Dashboard-Member.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Member\DashboardPagesMember\ProfileEditMember.resx">
+      <DependentUpon>ProfileEditMember.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Member\DashboardPagesMember\ProfileMember.resx">
+      <DependentUpon>ProfileMember.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Member\DashboardPagesMember\ResetPasswordMember.resx">
+      <DependentUpon>ResetPasswordMember.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -664,10 +709,14 @@
   <ItemGroup>
     <None Include="Resources\Button - Bullet.png" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="Views\Member\" />
-  </ItemGroup>
-  <ItemGroup>
+    <None Include="Resources\Notification.png" />
+    <None Include="Resources\Member\Group 88 %281%29.png" />
+    <None Include="Resources\Message box.png" />
+    <None Include="Resources\octicon_x-12 %281%29.png" />
+    <None Include="Resources\Group 77 %282%29.png" />
+    <None Include="Resources\Rectangle 26.png" />
     <None Include="Resources\NewPassword.png" />
     <None Include="Resources\VerifyCode.png" />
     <None Include="Resources\ResetPassword.png" />

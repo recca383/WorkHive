@@ -243,6 +243,16 @@ namespace WorkHive.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Group_77__2_ {
+            get {
+                object obj = ResourceManager.GetObject("Group 77 (2)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Group_81 {
             get {
                 object obj = ResourceManager.GetObject("Group 81", resourceCulture);
@@ -296,6 +306,16 @@ namespace WorkHive.Properties {
         internal static System.Drawing.Bitmap Group_88 {
             get {
                 object obj = ResourceManager.GetObject("Group 88", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Group_88__1_ {
+            get {
+                object obj = ResourceManager.GetObject("Group 88 (1)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -393,6 +413,16 @@ namespace WorkHive.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Message_box {
+            get {
+                object obj = ResourceManager.GetObject("Message box", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap NEW_Sidebar_BG {
             get {
                 object obj = ResourceManager.GetObject("NEW Sidebar BG", resourceCulture);
@@ -406,6 +436,26 @@ namespace WorkHive.Properties {
         internal static System.Drawing.Bitmap NewPassword {
             get {
                 object obj = ResourceManager.GetObject("NewPassword", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Notification {
+            get {
+                object obj = ResourceManager.GetObject("Notification", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap octicon_x_12__1_ {
+            get {
+                object obj = ResourceManager.GetObject("octicon_x-12 (1)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -476,6 +526,16 @@ namespace WorkHive.Properties {
         internal static System.Drawing.Bitmap Rectangle_14 {
             get {
                 object obj = ResourceManager.GetObject("Rectangle 14", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Rectangle_26 {
+            get {
+                object obj = ResourceManager.GetObject("Rectangle 26", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

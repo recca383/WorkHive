@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Messaging.Design;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -54,7 +55,9 @@ namespace WorkHive.Views.LandingPage.LandingPagePages
 
             if (CurrentUser == null)
             {
-                MessageBox.Show("Wrong Credentials");
+                MessageBox.Show("Wrong Credentials!");
+               /*Messageboxes Wrong = new Messageboxes();
+               Wrong.Show();*/
             }
             else if (CurrentUser.IsLeader)
             {
