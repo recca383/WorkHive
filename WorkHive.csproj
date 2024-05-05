@@ -569,6 +569,12 @@
     <Compile Include="Views\Member\DashboardPagesMember\ResetPasswordMember.Designer.cs">
       <DependentUpon>ResetPasswordMember.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\Member\DashboardPagesMember\TaskViewMember.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Member\DashboardPagesMember\TaskViewMember.Designer.cs">
+      <DependentUpon>TaskViewMember.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Views\Admin\DashboardPages\CalendarCurrentDays.resx">
       <DependentUpon>CalendarCurrentDays.cs</DependentUpon>
     </EmbeddedResource>
@@ -661,6 +667,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Views\Member\DashboardPagesMember\ResetPasswordMember.resx">
       <DependentUpon>ResetPasswordMember.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Member\DashboardPagesMember\TaskViewMember.resx">
+      <DependentUpon>TaskViewMember.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
