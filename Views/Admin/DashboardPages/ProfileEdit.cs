@@ -3,26 +3,41 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WorkHive.Controller;
 using WorkHive.Model;
 
 namespace WorkHive.Views.Admin
 {
     public partial class ProfileEdit : UserControl
     {
+        int currentUserID;
         MemberModel currentUser;
         
         public ProfileEdit(MemberModel _Currentuser)
         {
             this.currentUser = _Currentuser;
+            this.currentUserID = _Currentuser.ID;
             InitializeComponent();
-            AddDefaultValues();
+            RefreshValues();
         }
-        private void AddDefaultValues()
+        private void RefreshValues()
         {
+            currentUser = MemberModelAccess.GetMemberInfo(currentUserID);
+            var parent = Directory.GetParent(Directory.GetCurrentDirectory()).FullName;
+            if (currentUser.Profile_Pic == null)
+            {
+                ProfilePic.Image = Image.FromFile(Path.Combine(Path.GetDirectoryName(parent), "Resources\\Default_Pics\\Userdefault.png"));
+            }
+            else
+            {
+                ProfilePic.Image = Image.FromFile(Path.Combine(Path.GetDirectoryName(parent), currentUser.Profile_Pic));
+            }
+
             Namelbl.Text = currentUser.FullName;
             Positionlbl.Text = "Leader";
 
@@ -55,6 +70,53 @@ namespace WorkHive.Views.Admin
             provincetxt.Text = currentUser.Province;
             zipcodetxt.Text = currentUser.ZipCode.ToString();
 
+            btnConfirmEdit.Visible = false;
+            btnCancelEdit.Visible = false;
+
+        }
+
+        private void btnCancelEdit_Click(object sender, EventArgs e)
+        {
+            RefreshValues();
+            EditPanel.Enabled = false;
+
+        }
+
+        private void btnConfirmEdit_Click(object sender, EventArgs e)
+        {
+            int contactresult;
+            int zipcoderesult;
+            var editedmember = new MemberModel();
+
+                editedmember.ID = currentUser.ID;
+                editedmember.Email = emailtxt.Text;
+                editedmember.FirstName = firstnametxt.Text;
+                editedmember.LastName = Lastnametxt.Text;
+                editedmember.MiddleName = Middlenametxt.Text;
+                editedmember.ExtensionName = Extensiontxt.Text;
+                editedmember.Sex = (sex) SexDrop.SelectedIndex; 
+                editedmember.BloodType = (bloodType)bloodTypeDrop.SelectedIndex;
+            editedmember.Birthdate = BirthPicker.Value;
+                editedmember.HouseNumber = HouseNumbertxt.Text;
+                editedmember.Street = Streettxt.Text;
+                editedmember.Barangay = barangaytxt.Text;
+                editedmember.City_Municipality = citymunicipaltxt.Text;
+                editedmember.Province = provincetxt.Text;
+
+            
+            if (int.TryParse(contacttxt.Text, out contactresult))editedmember.ContactNumber = contactresult;
+            if (int.TryParse(zipcodetxt.Text, out zipcoderesult)) editedmember.ZipCode = zipcoderesult;
+
+            MemberModelAccess.EditMemberInfo(editedmember, currentUser.ID);
+            EditPanel.Enabled = false;
+            RefreshValues();
+        }
+
+        private void btnEdit_Click(object sender, EventArgs e)
+        {
+            EditPanel.Enabled = true;
+            btnCancelEdit.Visible = true;
+            btnConfirmEdit.Visible = true;
         }
     }
 }

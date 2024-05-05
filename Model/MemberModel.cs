@@ -34,9 +34,9 @@ namespace WorkHive.Model
         public string  FullName 
         { get 
             {
-                if (MiddleName != null && ExtensionName != null)
+                if (MiddleName != "" && ExtensionName != "")
                 {
-                    return FirstName + MiddleName[0] + "." + " " + LastName + " " + ExtensionName;
+                    return FirstName + " "+ MiddleName + "." + " " + LastName + " " + ExtensionName;
                 }
                 else
                 {

@@ -117,5 +117,68 @@ namespace WorkHive.Controller
             MemberModel selectedMember = GetMemberInfo(ID);
             selectedMember.TaskID = taskID;
         }
+        public static void EditMemberInfo (MemberModel editedmember, int id)
+        {
+            MemberModel currentMember = GetMemberInfo(id);
+            var newid = currentMember.ID;
+            var newEmail = currentMember.Email;
+            var newFirstName = currentMember.FirstName;
+            var newLastName = currentMember.LastName;
+            var newMiddleName = currentMember.MiddleName;
+            var newExtensionName = currentMember.ExtensionName;
+            var newContactNumber = currentMember.ContactNumber;
+            var newSex = currentMember.Sex;
+            var newbloodType = currentMember.BloodType;
+            var newbirthdate = currentMember.Birthdate;
+            var newhousenumber = currentMember.HouseNumber;
+            var newstreet = currentMember.Street;
+            var newbarangay = currentMember.Barangay;
+            var newcity = currentMember.City_Municipality;
+            var newprovince = currentMember.Province;
+            var newzipcode = currentMember.ZipCode;
+
+            if(editedmember.Email != null) newEmail = editedmember.Email;
+            if (editedmember.FirstName != null) newFirstName = editedmember.FirstName;
+            if (editedmember.LastName != null) newLastName = editedmember.LastName;
+            if (editedmember.MiddleName != null) newMiddleName = editedmember.MiddleName;
+            if (editedmember.ExtensionName != null) newExtensionName = editedmember.ExtensionName;
+            if (editedmember.ContactNumber != 0) newContactNumber = editedmember.ContactNumber;
+            if (editedmember.Sex != sex.None) newSex = editedmember.Sex;
+            if (editedmember.BloodType != bloodType.None) newbloodType = editedmember.BloodType;
+            if (editedmember.Birthdate != DateTime.Now) newbirthdate = editedmember.Birthdate;
+            if (editedmember.HouseNumber != null) newhousenumber = editedmember.HouseNumber;
+            if (editedmember.Street != null) newstreet = editedmember.Street;
+            if (editedmember.Barangay != null) newbarangay = editedmember.Barangay;
+            if (editedmember.City_Municipality != null) newcity = editedmember.City_Municipality;
+            if (editedmember.Province != null) newprovince = editedmember.Province;
+            if (editedmember.ZipCode != 0) newzipcode = editedmember.ZipCode;
+
+            memberModel.Remove(GetMemberInfo(id));
+            memberModel.Add(new MemberModel
+            {
+                ID = newid,
+                Email = newEmail,
+                FirstName = newFirstName,
+                LastName = newLastName,
+                MiddleName = newMiddleName,
+                ExtensionName = newExtensionName,
+                ContactNumber = newContactNumber,
+                Sex = newSex,
+                BloodType = newbloodType,
+                Birthdate = newbirthdate,
+                Password = currentMember.Password,
+                IsLeader = currentMember.IsLeader,
+                TaskID = currentMember.TaskID,
+                Profile_Pic = currentMember.Profile_Pic,
+                HouseNumber = newhousenumber,
+                Street = newstreet,
+                Barangay = newbarangay,
+                City_Municipality = newcity,
+                Province = newprovince,
+                ZipCode = newzipcode,
+
+            });
+
+        }
     }
 }
