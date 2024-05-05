@@ -80,7 +80,7 @@
             // 
             // bunifuElipse1
             // 
-            this.bunifuElipse1.ElipseRadius = 160;
+            this.bunifuElipse1.ElipseRadius = 135;
             this.bunifuElipse1.TargetControl = this;
             // 
             // btnLogout
