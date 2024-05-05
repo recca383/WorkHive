@@ -50,11 +50,10 @@
             this.AdminName.CursorType = null;
             this.AdminName.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AdminName.ForeColor = System.Drawing.Color.White;
-            this.AdminName.Location = new System.Drawing.Point(177, 64);
-            this.AdminName.Margin = new System.Windows.Forms.Padding(4);
+            this.AdminName.Location = new System.Drawing.Point(133, 52);
             this.AdminName.Name = "AdminName";
             this.AdminName.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.AdminName.Size = new System.Drawing.Size(172, 39);
+            this.AdminName.Size = new System.Drawing.Size(140, 32);
             this.AdminName.TabIndex = 6;
             this.AdminName.Text = "Wincel Crusit";
             this.AdminName.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -68,11 +67,10 @@
             this.Positionlbl.CursorType = null;
             this.Positionlbl.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Positionlbl.ForeColor = System.Drawing.Color.Black;
-            this.Positionlbl.Location = new System.Drawing.Point(177, 111);
-            this.Positionlbl.Margin = new System.Windows.Forms.Padding(4);
+            this.Positionlbl.Location = new System.Drawing.Point(133, 90);
             this.Positionlbl.Name = "Positionlbl";
             this.Positionlbl.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.Positionlbl.Size = new System.Drawing.Size(172, 25);
+            this.Positionlbl.Size = new System.Drawing.Size(129, 20);
             this.Positionlbl.TabIndex = 7;
             this.Positionlbl.Text = "ADMIN";
             this.Positionlbl.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -106,14 +104,14 @@
             this.btnLogout.IconZoom = 95D;
             this.btnLogout.ImeMode = System.Windows.Forms.ImeMode.Off;
             this.btnLogout.IsTab = false;
-            this.btnLogout.Location = new System.Drawing.Point(40, 450);
-            this.btnLogout.Margin = new System.Windows.Forms.Padding(5);
+            this.btnLogout.Location = new System.Drawing.Point(30, 366);
+            this.btnLogout.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnLogout.Name = "btnLogout";
             this.btnLogout.Normalcolor = System.Drawing.Color.White;
             this.btnLogout.OnHovercolor = System.Drawing.Color.Transparent;
             this.btnLogout.OnHoverTextColor = System.Drawing.Color.Firebrick;
             this.btnLogout.selected = false;
-            this.btnLogout.Size = new System.Drawing.Size(392, 64);
+            this.btnLogout.Size = new System.Drawing.Size(294, 52);
             this.btnLogout.TabIndex = 5;
             this.btnLogout.Text = "    Log Out";
             this.btnLogout.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -144,14 +142,14 @@
             this.MessageBtn.IconZoom = 75D;
             this.MessageBtn.ImeMode = System.Windows.Forms.ImeMode.Off;
             this.MessageBtn.IsTab = false;
-            this.MessageBtn.Location = new System.Drawing.Point(40, 332);
-            this.MessageBtn.Margin = new System.Windows.Forms.Padding(5);
+            this.MessageBtn.Location = new System.Drawing.Point(30, 270);
+            this.MessageBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MessageBtn.Name = "MessageBtn";
             this.MessageBtn.Normalcolor = System.Drawing.Color.White;
             this.MessageBtn.OnHovercolor = System.Drawing.Color.Transparent;
             this.MessageBtn.OnHoverTextColor = System.Drawing.Color.Firebrick;
             this.MessageBtn.selected = false;
-            this.MessageBtn.Size = new System.Drawing.Size(400, 62);
+            this.MessageBtn.Size = new System.Drawing.Size(300, 50);
             this.MessageBtn.TabIndex = 4;
             this.MessageBtn.Text = "     Message";
             this.MessageBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -180,14 +178,14 @@
             this.ResetPassBtn.IconVisible = true;
             this.ResetPassBtn.IconZoom = 76D;
             this.ResetPassBtn.IsTab = false;
-            this.ResetPassBtn.Location = new System.Drawing.Point(37, 266);
-            this.ResetPassBtn.Margin = new System.Windows.Forms.Padding(5);
+            this.ResetPassBtn.Location = new System.Drawing.Point(28, 216);
+            this.ResetPassBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ResetPassBtn.Name = "ResetPassBtn";
             this.ResetPassBtn.Normalcolor = System.Drawing.Color.White;
             this.ResetPassBtn.OnHovercolor = System.Drawing.Color.Transparent;
             this.ResetPassBtn.OnHoverTextColor = System.Drawing.Color.Firebrick;
             this.ResetPassBtn.selected = false;
-            this.ResetPassBtn.Size = new System.Drawing.Size(400, 73);
+            this.ResetPassBtn.Size = new System.Drawing.Size(300, 59);
             this.ResetPassBtn.TabIndex = 3;
             this.ResetPassBtn.Text = "    Reset Password";
             this.ResetPassBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -217,19 +215,20 @@
             this.ProfileBtn.IconVisible = true;
             this.ProfileBtn.IconZoom = 94D;
             this.ProfileBtn.IsTab = false;
-            this.ProfileBtn.Location = new System.Drawing.Point(40, 199);
-            this.ProfileBtn.Margin = new System.Windows.Forms.Padding(5);
+            this.ProfileBtn.Location = new System.Drawing.Point(30, 162);
+            this.ProfileBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ProfileBtn.Name = "ProfileBtn";
             this.ProfileBtn.Normalcolor = System.Drawing.Color.White;
             this.ProfileBtn.OnHovercolor = System.Drawing.Color.Transparent;
             this.ProfileBtn.OnHoverTextColor = System.Drawing.Color.Firebrick;
             this.ProfileBtn.selected = false;
-            this.ProfileBtn.Size = new System.Drawing.Size(392, 70);
+            this.ProfileBtn.Size = new System.Drawing.Size(294, 57);
             this.ProfileBtn.TabIndex = 2;
             this.ProfileBtn.Text = "   Profile";
             this.ProfileBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.ProfileBtn.Textcolor = System.Drawing.Color.Black;
             this.ProfileBtn.TextFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ProfileBtn.Click += new System.EventHandler(this.ProfileBtn_Click);
             // 
             // ProfilePictureADMIN
             // 
@@ -240,10 +239,9 @@
             this.ProfilePictureADMIN.BorderRadius = 0;
             this.ProfilePictureADMIN.Image = ((System.Drawing.Image)(resources.GetObject("ProfilePictureADMIN.Image")));
             this.ProfilePictureADMIN.IsCircle = false;
-            this.ProfilePictureADMIN.Location = new System.Drawing.Point(37, 49);
-            this.ProfilePictureADMIN.Margin = new System.Windows.Forms.Padding(4);
+            this.ProfilePictureADMIN.Location = new System.Drawing.Point(28, 40);
             this.ProfilePictureADMIN.Name = "ProfilePictureADMIN";
-            this.ProfilePictureADMIN.Size = new System.Drawing.Size(101, 107);
+            this.ProfilePictureADMIN.Size = new System.Drawing.Size(76, 87);
             this.ProfilePictureADMIN.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.ProfilePictureADMIN.TabIndex = 1;
             this.ProfilePictureADMIN.TabStop = false;
@@ -258,24 +256,25 @@
             this.pnProfileBoxBG.Controls.Add(this.AdminName);
             this.pnProfileBoxBG.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnProfileBoxBG.Location = new System.Drawing.Point(0, 0);
-            this.pnProfileBoxBG.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pnProfileBoxBG.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pnProfileBoxBG.Name = "pnProfileBoxBG";
-            this.pnProfileBoxBG.Size = new System.Drawing.Size(459, 180);
+            this.pnProfileBoxBG.Size = new System.Drawing.Size(344, 146);
             this.pnProfileBoxBG.TabIndex = 8;
             // 
             // label1
             // 
             this.label1.BackColor = System.Drawing.Color.Orange;
             this.label1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label1.Location = new System.Drawing.Point(11, 430);
+            this.label1.Location = new System.Drawing.Point(8, 349);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(435, 4);
+            this.label1.Size = new System.Drawing.Size(326, 3);
             this.label1.TabIndex = 9;
             this.label1.Text = "                                             ";
             // 
             // ProfileAdmin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.Black;
@@ -289,9 +288,8 @@
             this.Controls.Add(this.ProfileBtn);
             this.DoubleBuffered = true;
             this.Location = new System.Drawing.Point(950, 20);
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "ProfileAdmin";
-            this.Size = new System.Drawing.Size(459, 574);
+            this.Size = new System.Drawing.Size(344, 466);
             ((System.ComponentModel.ISupportInitialize)(this.ProfilePictureADMIN)).EndInit();
             this.pnProfileBoxBG.ResumeLayout(false);
             this.pnProfileBoxBG.PerformLayout();

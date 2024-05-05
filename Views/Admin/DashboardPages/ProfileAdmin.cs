@@ -37,14 +37,8 @@ namespace WorkHive.Views.Admin
             }
 
             AdminName.Text = CurrentUser.FullName;
-            if (CurrentUser.IsLeader)
-            {
-                Positionlbl.Text = "Leader";
-            }
-            else
-            {
-                Positionlbl.Text = "Member";
-            }
+            Positionlbl.Text = "Leader";
+
             
         }
 
@@ -59,6 +53,11 @@ namespace WorkHive.Views.Admin
             ParentForm.Hide();
             landing_Page.Show();
             
+        }
+
+        private void ProfileBtn_Click(object sender, EventArgs e)
+        {
+            Dashboard_Admin.btnProfileEdit_Click();
         }
     }
 }

@@ -75,6 +75,10 @@ namespace WorkHive.Views
         {
             dashboardNavigation.Display(4);
         }
+        public static void btnProfileEdit_Click()
+        {
+            dashboardNavigation.Display(5);
+        }
         public static void btnResetPassword_Click()
         {
             dashboardNavigation.Display(6);

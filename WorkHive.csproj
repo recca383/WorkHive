@@ -461,10 +461,10 @@
     <Compile Include="Views\Cards\EditTasks.Designer.cs">
       <DependentUpon>EditTasks.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\Admin\ProfileAdmin.cs">
+    <Compile Include="Views\Admin\DashboardPages\ProfileAdmin.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Views\Admin\ProfileAdmin.Designer.cs">
+    <Compile Include="Views\Admin\DashboardPages\ProfileAdmin.Designer.cs">
       <DependentUpon>ProfileAdmin.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\Admin\DashboardPages\ProfileEdit.cs">
@@ -607,7 +607,7 @@
     <EmbeddedResource Include="Views\Cards\EditTasks.resx">
       <DependentUpon>EditTasks.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\Admin\ProfileAdmin.resx">
+    <EmbeddedResource Include="Views\Admin\DashboardPages\ProfileAdmin.resx">
       <DependentUpon>ProfileAdmin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\Admin\DashboardPages\ProfileEdit.resx">
