@@ -65,7 +65,7 @@
             // 
             // pnTitleBar
             // 
-            this.pnTitleBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(150)))), ((int)(((byte)(0)))));
+            this.pnTitleBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(147)))), ((int)(((byte)(47)))));
             this.pnTitleBar.Controls.Add(this.profilepanel);
             this.pnTitleBar.Controls.Add(this.pictureBox3);
             this.pnTitleBar.Controls.Add(this.ProfilePicBoxMember);
@@ -90,8 +90,8 @@
             // 
             this.pictureBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox3.Image = global::WorkHive.Properties.Resources.Notification;
-            this.pictureBox3.Location = new System.Drawing.Point(1227, 41);
+            this.pictureBox3.Image = global::WorkHive.Properties.Resources.Notification1;
+            this.pictureBox3.Location = new System.Drawing.Point(1209, 41);
             this.pictureBox3.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(23, 22);
@@ -103,7 +103,7 @@
             // 
             this.ProfilePicBoxMember.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.ProfilePicBoxMember.Image = ((System.Drawing.Image)(resources.GetObject("ProfilePicBoxMember.Image")));
-            this.ProfilePicBoxMember.Location = new System.Drawing.Point(1283, 28);
+            this.ProfilePicBoxMember.Location = new System.Drawing.Point(1265, 28);
             this.ProfilePicBoxMember.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ProfilePicBoxMember.Name = "ProfilePicBoxMember";
             this.ProfilePicBoxMember.Size = new System.Drawing.Size(48, 46);
@@ -125,7 +125,7 @@
             // 
             // sidebarmember
             // 
-            this.sidebarmember.BackgroundImage = global::WorkHive.Properties.Resources.Group_88__1_;
+            this.sidebarmember.BackgroundImage = global::WorkHive.Properties.Resources.Member___Sidebar;
             this.sidebarmember.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.sidebarmember.Controls.Add(this.btnDashBoardMember);
             this.sidebarmember.Controls.Add(this.btnChatsMember);
@@ -327,7 +327,7 @@
             // 
             // panel3
             // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(150)))), ((int)(((byte)(0)))));
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(147)))), ((int)(((byte)(47)))));
             this.panel3.Controls.Add(this.pictureBox1);
             this.panel3.Controls.Add(this.pictureBox2);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;

@@ -423,6 +423,16 @@ namespace WorkHive.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Member___Sidebar {
+            get {
+                object obj = ResourceManager.GetObject("Member - Sidebar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap MemberCard {
             get {
                 object obj = ResourceManager.GetObject("MemberCard", resourceCulture);
@@ -466,6 +476,16 @@ namespace WorkHive.Properties {
         internal static System.Drawing.Bitmap Notification {
             get {
                 object obj = ResourceManager.GetObject("Notification", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Notification1 {
+            get {
+                object obj = ResourceManager.GetObject("Notification1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

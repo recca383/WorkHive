@@ -738,6 +738,8 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <None Include="Resources\Notification1.png" />
+    <None Include="Resources\Member - Sidebar.png" />
     <None Include="Resources\refresh.png" />
     <None Include="Resources\Vector %283%29.png" />
     <None Include="Resources\Rectangle 95 %281%29.png" />
