@@ -47,7 +47,7 @@ namespace WorkHive.Views
         private void Initialize_Navigation_Controls()
         {
             List<UserControl> list = new List<UserControl>()
-            { new DashboardView(), new MemberView(), new TasksView(), new Edit_TaskView(), new CalendarView(), new ProfileEdit(CurrentUser), new ResetPassword(CurrentUser)};
+            { new DashboardView(CurrentUser), new MemberView(), new TasksView(), new Edit_TaskView(), new CalendarView(), new ProfileEdit(CurrentUser), new ResetPassword(CurrentUser)};
 
             dashboardNavigation = new DashboardNavigation(list, ViewPanel);
             dashboardNavigation.Display(0);

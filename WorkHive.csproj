@@ -497,6 +497,12 @@
     <Compile Include="Views\Cards\TaskCard.Designer.cs">
       <DependentUpon>TaskCard.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\Cards\TaskSummaryCard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Cards\TaskSummaryCard.Designer.cs">
+      <DependentUpon>TaskSummaryCard.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\LandingPage\ForgotPasswordPage.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -630,6 +636,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Views\Cards\TaskCard.resx">
       <DependentUpon>TaskCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Cards\TaskSummaryCard.resx">
+      <DependentUpon>TaskSummaryCard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\LandingPage\ForgotPasswordPage.resx">
       <DependentUpon>ForgotPasswordPage.cs</DependentUpon>

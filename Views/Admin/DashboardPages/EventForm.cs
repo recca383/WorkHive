@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using MySql.Data.MySQLClient;
+//using MySql.Data.MySQLClient;
 
 
 namespace WorkHive.Views.Admin.DashboardPages
