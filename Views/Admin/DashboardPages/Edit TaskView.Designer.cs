@@ -35,9 +35,9 @@
             this.btnEditCompleted = new System.Windows.Forms.Label();
             this.btnEditOngoing = new System.Windows.Forms.Label();
             this.btnEditAll = new System.Windows.Forms.Label();
+            this.AddTaskPanel = new System.Windows.Forms.Panel();
             this.btnAddtasks = new Bunifu.Framework.UI.BunifuFlatButton();
             this.EditScrollBar1 = new Bunifu.UI.WinForms.BunifuVScrollBar();
-            this.AddTaskPanel = new System.Windows.Forms.Panel();
             this.SuspendLayout();
             // 
             // EditTasksFlow
@@ -109,6 +109,18 @@
             this.btnEditAll.Text = "All";
             this.btnEditAll.Click += new System.EventHandler(this.btnAll_Click);
             // 
+            // AddTaskPanel
+            // 
+            this.AddTaskPanel.BackColor = System.Drawing.Color.Transparent;
+            this.AddTaskPanel.ForeColor = System.Drawing.Color.Transparent;
+            this.AddTaskPanel.Location = new System.Drawing.Point(309, 33);
+            this.AddTaskPanel.Margin = new System.Windows.Forms.Padding(4);
+            this.AddTaskPanel.Name = "AddTaskPanel";
+            this.AddTaskPanel.Size = new System.Drawing.Size(0, 0);
+            this.AddTaskPanel.TabIndex = 17;
+            this.AddTaskPanel.ControlAdded += new System.Windows.Forms.ControlEventHandler(this.AddTaskPanel_ControlAdded);
+            this.AddTaskPanel.ControlRemoved += new System.Windows.Forms.ControlEventHandler(this.AddTaskPanel_ControlRemoved);
+            // 
             // btnAddtasks
             // 
             this.btnAddtasks.Active = false;
@@ -120,8 +132,8 @@
             this.btnAddtasks.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnAddtasks.DisabledColor = System.Drawing.Color.Gray;
             this.btnAddtasks.Iconcolor = System.Drawing.Color.Transparent;
-            this.btnAddtasks.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnAddtasks.Iconimage")));
-            this.btnAddtasks.Iconimage_right = null;
+            this.btnAddtasks.Iconimage = null;
+            this.btnAddtasks.Iconimage_right = global::WorkHive.Properties.Resources.Vector__3_;
             this.btnAddtasks.Iconimage_right_Selected = null;
             this.btnAddtasks.Iconimage_Selected = null;
             this.btnAddtasks.IconMarginLeft = 0;
@@ -129,16 +141,17 @@
             this.btnAddtasks.IconRightVisible = true;
             this.btnAddtasks.IconRightZoom = 0D;
             this.btnAddtasks.IconVisible = true;
-            this.btnAddtasks.IconZoom = 85D;
+            this.btnAddtasks.IconZoom = 100D;
+            this.btnAddtasks.ImeMode = System.Windows.Forms.ImeMode.On;
             this.btnAddtasks.IsTab = false;
-            this.btnAddtasks.Location = new System.Drawing.Point(1141, 25);
+            this.btnAddtasks.Location = new System.Drawing.Point(1165, 19);
             this.btnAddtasks.Margin = new System.Windows.Forms.Padding(5);
             this.btnAddtasks.Name = "btnAddtasks";
             this.btnAddtasks.Normalcolor = System.Drawing.Color.Transparent;
             this.btnAddtasks.OnHovercolor = System.Drawing.Color.Transparent;
             this.btnAddtasks.OnHoverTextColor = System.Drawing.Color.White;
             this.btnAddtasks.selected = false;
-            this.btnAddtasks.Size = new System.Drawing.Size(41, 38);
+            this.btnAddtasks.Size = new System.Drawing.Size(52, 52);
             this.btnAddtasks.TabIndex = 16;
             this.btnAddtasks.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnAddtasks.Textcolor = System.Drawing.Color.White;
@@ -184,18 +197,6 @@
             this.EditScrollBar1.ThumbMargin = 1;
             this.EditScrollBar1.ThumbStyle = Bunifu.UI.WinForms.BunifuVScrollBar.ThumbStyles.Inset;
             this.EditScrollBar1.Value = 0;
-            // 
-            // AddTaskPanel
-            // 
-            this.AddTaskPanel.BackColor = System.Drawing.Color.Transparent;
-            this.AddTaskPanel.ForeColor = System.Drawing.Color.Transparent;
-            this.AddTaskPanel.Location = new System.Drawing.Point(309, 33);
-            this.AddTaskPanel.Margin = new System.Windows.Forms.Padding(4);
-            this.AddTaskPanel.Name = "AddTaskPanel";
-            this.AddTaskPanel.Size = new System.Drawing.Size(0, 0);
-            this.AddTaskPanel.TabIndex = 17;
-            this.AddTaskPanel.ControlAdded += new System.Windows.Forms.ControlEventHandler(this.AddTaskPanel_ControlAdded);
-            this.AddTaskPanel.ControlRemoved += new System.Windows.Forms.ControlEventHandler(this.AddTaskPanel_ControlRemoved);
             // 
             // Edit_TaskView
             // 

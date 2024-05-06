@@ -149,7 +149,7 @@ namespace WorkHive.Views
             profilepanel.BringToFront();
             if (profilepanel.Size == new Size(0, 0))
             {
-                profilepanel.Size = new Size(344, 466);
+                profilepanel.Size = new Size(383, 465);
                 
             }
             else
