@@ -58,7 +58,7 @@
             // 
             // EditpictureBox1
             // 
-            this.EditpictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.EditpictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.EditpictureBox1.Image = global::WorkHive.Properties.Resources.Tasks_Cards_P1;
             this.EditpictureBox1.Location = new System.Drawing.Point(0, 0);
             this.EditpictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
@@ -80,11 +80,10 @@
             // 
             // panel2
             // 
+            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.panel2.BackColor = System.Drawing.Color.Transparent;
             this.panel2.Controls.Add(this.eDIT3);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(88, 0);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel2.Location = new System.Drawing.Point(118, 0);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(772, 33);
             this.panel2.TabIndex = 17;
@@ -102,6 +101,7 @@
             // 
             // panel3
             // 
+            this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.panel3.BackColor = System.Drawing.Color.Transparent;
             this.panel3.Controls.Add(this.txtID);
             this.panel3.Controls.Add(this.EditFlatButton);
@@ -110,9 +110,7 @@
             this.panel3.Controls.Add(this.lblEditTask_Date);
             this.panel3.Controls.Add(this.EditTaskProgress);
             this.panel3.Controls.Add(this.EditArchived);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel3.Location = new System.Drawing.Point(88, 33);
-            this.panel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel3.Location = new System.Drawing.Point(118, 41);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(772, 102);
             this.panel3.TabIndex = 18;

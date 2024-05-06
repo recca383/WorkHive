@@ -12,9 +12,16 @@ namespace WorkHive.Views.Admin
 {
     public partial class CalendarDays : UserControl
     {
+        
         public CalendarDays()
         {
             InitializeComponent();
+          
+        }
+
+        private void CalendarDays_Resize(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
         }
 
         private void CalendarDays_Load(object sender, EventArgs e)

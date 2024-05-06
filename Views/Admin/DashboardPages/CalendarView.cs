@@ -11,11 +11,72 @@ using System.Windows.Forms;
 
 namespace WorkHive.Views.Admin.DashboardPages
 {
+   
     public partial class CalendarView : UserControl
     {
+        private Size CalendarViewOriginalSize;
+     
+        private Rectangle recDayContainer;
+        private Rectangle recCalendarName;
+        private Rectangle reclblDate;
+        private Rectangle recbtnPrevious;
+        private Rectangle recbtnNext;
+        private Rectangle recSunday;
+        private Rectangle recMonday;
+        private Rectangle recTuesday;   
+        private Rectangle recWednesday;
+        private Rectangle recThursday;
+        private Rectangle recFriday;
+        private Rectangle recSaturday;
         public CalendarView()
         {
             InitializeComponent();
+            this.Resize += CalendarView_Resize;
+            CalendarViewOriginalSize = this.Size;
+        
+            recDayContainer = new Rectangle(DayContainer.Location, DayContainer.Size);
+            recCalendarName = new Rectangle(CalendarName.Location, CalendarName.Size);
+            reclblDate = new Rectangle(lblDate.Location, lblDate.Size);
+            recbtnPrevious = new Rectangle(btnPrevious.Location, btnPrevious.Size);
+            recbtnNext = new Rectangle(btnNext.Location, btnNext.Size);
+            recSunday = new Rectangle(Sunday.Location, Sunday.Size);
+            recMonday = new Rectangle(Monday.Location, Monday.Size);
+            recTuesday = new Rectangle(Tuesday.Location, Tuesday.Size);
+            recWednesday = new Rectangle(Wednesday.Location, Wednesday.Size);
+            recThursday = new Rectangle(Thursday.Location, Thursday.Size);
+            recFriday = new Rectangle(Friday.Location, Friday.Size);
+            recSaturday = new Rectangle(Saturday.Location, Saturday.Size);
+
+        }
+
+        private void CalendarView_Resize(object sender, EventArgs e)
+        {
+            resize_Control(DayContainer, recDayContainer);
+            resize_Control(CalendarName, recCalendarName);
+            resize_Control(lblDate, reclblDate);
+            resize_Control(btnPrevious, recbtnPrevious);
+            resize_Control(btnNext, recbtnNext);
+            resize_Control(Sunday, recSunday);
+            resize_Control(Monday, recMonday);
+            resize_Control(Tuesday, recTuesday);
+            resize_Control(Wednesday, recWednesday);
+            resize_Control(Thursday, recThursday);
+            resize_Control(Friday, recFriday);
+            resize_Control(Saturday, recSaturday);
+        }
+        private void resize_Control(Control c, Rectangle r)
+        {
+            float xRatio = (float)(this.Width) / (float)(CalendarViewOriginalSize.Width);
+            float yRatio = (float)(this.Height) / (float)(CalendarViewOriginalSize.Height);
+            int newX = (int)(r.X * xRatio);
+            int newY = (int)(r.Y * yRatio);
+
+            int newWidth = (int)(r.Width * xRatio);
+            int newHeight = (int)(r.Height * yRatio);
+
+            c.Location = new Point(newX, newY);
+            c.Size = new Size(newWidth, newHeight);
+
         }
 
         private void CalendarView_Load(object sender, EventArgs e)

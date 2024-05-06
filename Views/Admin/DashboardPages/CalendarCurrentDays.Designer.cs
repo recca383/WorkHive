@@ -34,10 +34,10 @@
             // lblDays
             // 
             this.lblDays.AutoSize = true;
-            this.lblDays.Font = new System.Drawing.Font("Montserrat", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDays.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDays.Location = new System.Drawing.Point(10, 11);
             this.lblDays.Name = "lblDays";
-            this.lblDays.Size = new System.Drawing.Size(34, 24);
+            this.lblDays.Size = new System.Drawing.Size(29, 20);
             this.lblDays.TabIndex = 0;
             this.lblDays.Text = "00";
             // 
