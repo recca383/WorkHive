@@ -720,6 +720,7 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <None Include="Resources\Vector %281%291.png" />
     <None Include="Resources\Notification.png" />
     <None Include="Resources\Member\Group 88 %281%29.png" />
     <None Include="Resources\Message box.png" />
@@ -767,6 +768,8 @@
     <None Include="Resources\BackButton.png" />
     <None Include="Resources\arrowleft.png" />
     <None Include="Resources\arrowright.png" />
+    <None Include="Resources\Confirmbtn.png" />
+    <None Include="Resources\Cancelbtn.png" />
     <Content Include="Resources\Default_Pics\Userdefault.png" />
     <None Include="Resources\logo1.png" />
     <None Include="Resources\logo name1.png" />

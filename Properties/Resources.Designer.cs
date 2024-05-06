@@ -243,6 +243,26 @@ namespace WorkHive.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Cancelbtn {
+            get {
+                object obj = ResourceManager.GetObject("Cancelbtn", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Confirmbtn {
+            get {
+                object obj = ResourceManager.GetObject("Confirmbtn", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Group_77__2_ {
             get {
                 object obj = ResourceManager.GetObject("Group 77 (2)", resourceCulture);
@@ -696,6 +716,16 @@ namespace WorkHive.Properties {
         internal static System.Drawing.Bitmap UserProfile {
             get {
                 object obj = ResourceManager.GetObject("UserProfile", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Vector__1_ {
+            get {
+                object obj = ResourceManager.GetObject("Vector (1)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
