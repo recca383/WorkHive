@@ -729,6 +729,8 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <None Include="Resources\Rectangle 951.png" />
+    <None Include="Resources\Rectangle 95.png" />
     <None Include="Resources\Vector %281%291.png" />
     <None Include="Resources\Notification.png" />
     <None Include="Resources\Member\Group 88 %281%29.png" />
