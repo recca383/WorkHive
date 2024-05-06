@@ -17,10 +17,12 @@ namespace WorkHive.Views.Admin
         private Rectangle recpanel2;
         private Rectangle recpanel3;
         private Rectangle recEditpictureBox1;
-        public EditTasks()
-        static int Id;
+
+        private int Id;
         public EditTasks(int id)
         {
+            Id = id;
+            txtID.Text = id.ToString();
             InitializeComponent();
             this.Resize += EditTasks_Resize;
             recpanel2 = new Rectangle(panel2.Location, panel2.Size);
@@ -47,8 +49,7 @@ namespace WorkHive.Views.Admin
             c.Location = new Point(newX, newY);
             c.Size = new Size(newWidth, newHeight);
 
-            Id = id;
-            txtID.Text = id.ToString();
+            
         }
 
     }
