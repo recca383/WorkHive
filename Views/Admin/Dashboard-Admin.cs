@@ -20,8 +20,10 @@ using WorkHive.Views.Pages;
 
 namespace WorkHive.Views
 {
+
     public partial class Dashboard_Admin : Form
     {
+
         private Size DashBoardAdminOriginalSize;
         private Rectangle recViewPanel;
         private Rectangle recPnTitleBar;
@@ -119,7 +121,8 @@ namespace WorkHive.Views
         }
         private void Initialize_Navigation_Controls()
         {
-            List<UserControl> list = new List<UserControl>()
+            
+            List <UserControl> list = new List<UserControl>()
             { new DashboardView(CurrentUser), new MemberView(), new TasksView(), new Edit_TaskView(), new CalendarView(), new ProfileEdit(CurrentUser), new ResetPassword(CurrentUser)};
 
             dashboardNavigation = new DashboardNavigation(list, ViewPanel);

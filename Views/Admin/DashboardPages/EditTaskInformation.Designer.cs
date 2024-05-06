@@ -64,9 +64,10 @@
             this.AddNewTask.BackColor = System.Drawing.Color.Transparent;
             this.AddNewTask.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AddNewTask.ForeColor = System.Drawing.Color.Black;
-            this.AddNewTask.Location = new System.Drawing.Point(258, 25);
+            this.AddNewTask.Location = new System.Drawing.Point(194, 20);
+            this.AddNewTask.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.AddNewTask.Name = "AddNewTask";
-            this.AddNewTask.Size = new System.Drawing.Size(156, 45);
+            this.AddNewTask.Size = new System.Drawing.Size(130, 37);
             this.AddNewTask.TabIndex = 29;
             this.AddNewTask.Text = "Edit Task";
             // 
@@ -76,9 +77,10 @@
             this.TaskDescription.BackColor = System.Drawing.Color.Transparent;
             this.TaskDescription.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TaskDescription.ForeColor = System.Drawing.Color.Black;
-            this.TaskDescription.Location = new System.Drawing.Point(62, 440);
+            this.TaskDescription.Location = new System.Drawing.Point(46, 358);
+            this.TaskDescription.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.TaskDescription.Name = "TaskDescription";
-            this.TaskDescription.Size = new System.Drawing.Size(291, 38);
+            this.TaskDescription.Size = new System.Drawing.Size(230, 30);
             this.TaskDescription.TabIndex = 28;
             this.TaskDescription.Text = "Edit Task Description";
             // 
@@ -88,9 +90,10 @@
             this.DeadlineTask.BackColor = System.Drawing.Color.Transparent;
             this.DeadlineTask.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DeadlineTask.ForeColor = System.Drawing.Color.Black;
-            this.DeadlineTask.Location = new System.Drawing.Point(62, 335);
+            this.DeadlineTask.Location = new System.Drawing.Point(46, 272);
+            this.DeadlineTask.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.DeadlineTask.Name = "DeadlineTask";
-            this.DeadlineTask.Size = new System.Drawing.Size(234, 38);
+            this.DeadlineTask.Size = new System.Drawing.Size(182, 30);
             this.DeadlineTask.TabIndex = 27;
             this.DeadlineTask.Text = "Deadline of Task";
             // 
@@ -100,9 +103,10 @@
             this.AssignTask.BackColor = System.Drawing.Color.Transparent;
             this.AssignTask.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AssignTask.ForeColor = System.Drawing.Color.Black;
-            this.AssignTask.Location = new System.Drawing.Point(62, 230);
+            this.AssignTask.Location = new System.Drawing.Point(46, 187);
+            this.AssignTask.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.AssignTask.Name = "AssignTask";
-            this.AssignTask.Size = new System.Drawing.Size(168, 38);
+            this.AssignTask.Size = new System.Drawing.Size(132, 30);
             this.AssignTask.TabIndex = 26;
             this.AssignTask.Text = "Assign Task";
             // 
@@ -112,9 +116,10 @@
             this.TaskName.BackColor = System.Drawing.Color.Transparent;
             this.TaskName.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TaskName.ForeColor = System.Drawing.Color.Black;
-            this.TaskName.Location = new System.Drawing.Point(62, 106);
+            this.TaskName.Location = new System.Drawing.Point(46, 86);
+            this.TaskName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.TaskName.Name = "TaskName";
-            this.TaskName.Size = new System.Drawing.Size(160, 38);
+            this.TaskName.Size = new System.Drawing.Size(125, 30);
             this.TaskName.TabIndex = 25;
             this.TaskName.Text = "Task Name";
             // 
@@ -145,12 +150,11 @@
             this.EditDropdownassigntask.ItemHighLightColor = System.Drawing.Color.Gold;
             this.EditDropdownassigntask.Items.AddRange(new object[] {
             "Sample"});
-            this.EditDropdownassigntask.Location = new System.Drawing.Point(69, 272);
-            this.EditDropdownassigntask.Margin = new System.Windows.Forms.Padding(4);
-            this.EditDropdownassigntask.MaximumSize = new System.Drawing.Size(520, 0);
-            this.EditDropdownassigntask.MinimumSize = new System.Drawing.Size(520, 0);
+            this.EditDropdownassigntask.Location = new System.Drawing.Point(52, 221);
+            this.EditDropdownassigntask.MaximumSize = new System.Drawing.Size(391, 0);
+            this.EditDropdownassigntask.MinimumSize = new System.Drawing.Size(391, 0);
             this.EditDropdownassigntask.Name = "EditDropdownassigntask";
-            this.EditDropdownassigntask.Size = new System.Drawing.Size(520, 46);
+            this.EditDropdownassigntask.Size = new System.Drawing.Size(391, 46);
             this.EditDropdownassigntask.TabIndex = 24;
             this.EditDropdownassigntask.Text = "Reselect Member";
             // 
@@ -161,8 +165,8 @@
             this.ArchivedCheckbox.Checked = true;
             this.ArchivedCheckbox.CheckedOnColor = System.Drawing.Color.Gold;
             this.ArchivedCheckbox.ForeColor = System.Drawing.Color.White;
-            this.ArchivedCheckbox.Location = new System.Drawing.Point(560, 453);
-            this.ArchivedCheckbox.Margin = new System.Windows.Forms.Padding(5);
+            this.ArchivedCheckbox.Location = new System.Drawing.Point(420, 368);
+            this.ArchivedCheckbox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ArchivedCheckbox.Name = "ArchivedCheckbox";
             this.ArchivedCheckbox.Size = new System.Drawing.Size(20, 20);
             this.ArchivedCheckbox.TabIndex = 23;
@@ -191,18 +195,19 @@
             this.EditTaskSubmitbtn.IconVisible = true;
             this.EditTaskSubmitbtn.IconZoom = 90D;
             this.EditTaskSubmitbtn.IsTab = false;
-            this.EditTaskSubmitbtn.Location = new System.Drawing.Point(467, 677);
-            this.EditTaskSubmitbtn.Margin = new System.Windows.Forms.Padding(5);
+            this.EditTaskSubmitbtn.Location = new System.Drawing.Point(350, 550);
+            this.EditTaskSubmitbtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.EditTaskSubmitbtn.Name = "EditTaskSubmitbtn";
             this.EditTaskSubmitbtn.Normalcolor = System.Drawing.Color.Transparent;
             this.EditTaskSubmitbtn.OnHovercolor = System.Drawing.Color.Red;
             this.EditTaskSubmitbtn.OnHoverTextColor = System.Drawing.Color.White;
             this.EditTaskSubmitbtn.selected = false;
-            this.EditTaskSubmitbtn.Size = new System.Drawing.Size(123, 46);
+            this.EditTaskSubmitbtn.Size = new System.Drawing.Size(92, 37);
             this.EditTaskSubmitbtn.TabIndex = 22;
             this.EditTaskSubmitbtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.EditTaskSubmitbtn.Textcolor = System.Drawing.Color.White;
             this.EditTaskSubmitbtn.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EditTaskSubmitbtn.Click += new System.EventHandler(this.EditTaskSubmitbtn_Click);
             // 
             // EditTaskDescriptiontxt
             // 
@@ -232,10 +237,10 @@
             this.EditTaskDescriptiontxt.IconRight = null;
             this.EditTaskDescriptiontxt.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.EditTaskDescriptiontxt.Lines = new string[0];
-            this.EditTaskDescriptiontxt.Location = new System.Drawing.Point(69, 480);
-            this.EditTaskDescriptiontxt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.EditTaskDescriptiontxt.Location = new System.Drawing.Point(52, 390);
+            this.EditTaskDescriptiontxt.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.EditTaskDescriptiontxt.MaxLength = 32767;
-            this.EditTaskDescriptiontxt.MinimumSize = new System.Drawing.Size(100, 34);
+            this.EditTaskDescriptiontxt.MinimumSize = new System.Drawing.Size(75, 28);
             this.EditTaskDescriptiontxt.Modified = false;
             this.EditTaskDescriptiontxt.Multiline = false;
             this.EditTaskDescriptiontxt.Name = "EditTaskDescriptiontxt";
@@ -268,7 +273,7 @@
             this.EditTaskDescriptiontxt.SelectionLength = 0;
             this.EditTaskDescriptiontxt.SelectionStart = 0;
             this.EditTaskDescriptiontxt.ShortcutsEnabled = true;
-            this.EditTaskDescriptiontxt.Size = new System.Drawing.Size(520, 167);
+            this.EditTaskDescriptiontxt.Size = new System.Drawing.Size(390, 136);
             this.EditTaskDescriptiontxt.Style = Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox._Style.Bunifu;
             this.EditTaskDescriptiontxt.TabIndex = 21;
             this.EditTaskDescriptiontxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -296,12 +301,12 @@
             this.EditDatePickerDeadline.Icon = ((System.Drawing.Image)(resources.GetObject("EditDatePickerDeadline.Icon")));
             this.EditDatePickerDeadline.IconColor = System.Drawing.Color.Gold;
             this.EditDatePickerDeadline.IconLocation = Bunifu.UI.WinForms.BunifuDatePicker.Indicator.Left;
-            this.EditDatePickerDeadline.Location = new System.Drawing.Point(69, 375);
-            this.EditDatePickerDeadline.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.EditDatePickerDeadline.MinimumSize = new System.Drawing.Size(304, 46);
+            this.EditDatePickerDeadline.Location = new System.Drawing.Point(52, 305);
+            this.EditDatePickerDeadline.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.EditDatePickerDeadline.MinimumSize = new System.Drawing.Size(229, 46);
             this.EditDatePickerDeadline.Name = "EditDatePickerDeadline";
             this.EditDatePickerDeadline.ShowCheckBox = true;
-            this.EditDatePickerDeadline.Size = new System.Drawing.Size(304, 46);
+            this.EditDatePickerDeadline.Size = new System.Drawing.Size(229, 46);
             this.EditDatePickerDeadline.TabIndex = 20;
             // 
             // EditTaskNametxt
@@ -332,10 +337,10 @@
             this.EditTaskNametxt.IconRight = null;
             this.EditTaskNametxt.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.EditTaskNametxt.Lines = new string[0];
-            this.EditTaskNametxt.Location = new System.Drawing.Point(69, 146);
-            this.EditTaskNametxt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.EditTaskNametxt.Location = new System.Drawing.Point(52, 119);
+            this.EditTaskNametxt.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.EditTaskNametxt.MaxLength = 32767;
-            this.EditTaskNametxt.MinimumSize = new System.Drawing.Size(100, 34);
+            this.EditTaskNametxt.MinimumSize = new System.Drawing.Size(75, 28);
             this.EditTaskNametxt.Modified = false;
             this.EditTaskNametxt.Multiline = false;
             this.EditTaskNametxt.Name = "EditTaskNametxt";
@@ -368,7 +373,7 @@
             this.EditTaskNametxt.SelectionLength = 0;
             this.EditTaskNametxt.SelectionStart = 0;
             this.EditTaskNametxt.ShortcutsEnabled = true;
-            this.EditTaskNametxt.Size = new System.Drawing.Size(520, 42);
+            this.EditTaskNametxt.Size = new System.Drawing.Size(390, 34);
             this.EditTaskNametxt.Style = Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox._Style.Bunifu;
             this.EditTaskNametxt.TabIndex = 19;
             this.EditTaskNametxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -401,14 +406,14 @@
             this.EditTaskExitbtn.IconVisible = true;
             this.EditTaskExitbtn.IconZoom = 90D;
             this.EditTaskExitbtn.IsTab = false;
-            this.EditTaskExitbtn.Location = new System.Drawing.Point(596, 21);
-            this.EditTaskExitbtn.Margin = new System.Windows.Forms.Padding(5);
+            this.EditTaskExitbtn.Location = new System.Drawing.Point(447, 17);
+            this.EditTaskExitbtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.EditTaskExitbtn.Name = "EditTaskExitbtn";
             this.EditTaskExitbtn.Normalcolor = System.Drawing.Color.Transparent;
             this.EditTaskExitbtn.OnHovercolor = System.Drawing.Color.Transparent;
             this.EditTaskExitbtn.OnHoverTextColor = System.Drawing.Color.Transparent;
             this.EditTaskExitbtn.selected = false;
-            this.EditTaskExitbtn.Size = new System.Drawing.Size(47, 49);
+            this.EditTaskExitbtn.Size = new System.Drawing.Size(35, 40);
             this.EditTaskExitbtn.TabIndex = 18;
             this.EditTaskExitbtn.Text = "bunifuFlatButton1";
             this.EditTaskExitbtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -417,7 +422,7 @@
             // 
             // EditTaskInformation
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::WorkHive.Properties.Resources.Group_77__2_;
             this.Controls.Add(this.AddNewTask);
@@ -432,8 +437,9 @@
             this.Controls.Add(this.EditDatePickerDeadline);
             this.Controls.Add(this.EditTaskNametxt);
             this.Controls.Add(this.EditTaskExitbtn);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "EditTaskInformation";
-            this.Size = new System.Drawing.Size(667, 766);
+            this.Size = new System.Drawing.Size(500, 622);
             this.ResumeLayout(false);
             this.PerformLayout();
 

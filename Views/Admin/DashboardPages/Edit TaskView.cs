@@ -38,7 +38,7 @@ namespace WorkHive.Views.Admin.DashboardPages
             for (int i = 0; i < TaskModelAccess.GetTaskCount(); i++)
             {
                 TaskModel taskModel = TaskModelAccess.GetTaskInfo(i);
-                EditTasks card = new EditTasks();
+                EditTasks card = new EditTasks(i);
                 card.lblEditTask_Title.Text = taskModel.TaskName;
                 card.lblEditTask_Date.Text = ($"{CultureInfo.CurrentCulture.DateTimeFormat.GetMonthName(taskModel.TaskStart.Month)} {taskModel.TaskStart.Day}");
                 card.EditTaskProgress.Value = taskModel.TaskProgress;
@@ -109,6 +109,14 @@ namespace WorkHive.Views.Admin.DashboardPages
             AddTask addTask = new AddTask();
             addTask.Dock = DockStyle.Fill;
             AddTaskPanel.Controls.Add(addTask);
+        }
+        public void btnEdittasks_Click(object sender, EventArgs e, int id)
+        {
+            EditTaskInformation editTask = new EditTaskInformation(TaskModelAccess.GetTaskInfo(id));
+            editTask.Dock = DockStyle.Fill;
+            
+            AddTaskPanel.Controls.Add(editTask);
+
         }
 
         private void AddTaskPanel_ControlAdded(object sender, ControlEventArgs e)

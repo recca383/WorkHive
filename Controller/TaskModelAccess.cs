@@ -72,24 +72,25 @@ public static TaskModel GetTaskInfo(int ID)
         {
             return Tasks.Count();
         }
-        public static void EditTask(TaskModel taskModel)
+        public static void EditTask(TaskModel edittaskModel, int id)
         {
+            TaskModel taskModel = GetTaskInfo(id);
             //Default valuess
             var newTaskName = taskModel.TaskName;
             var newTaskDescription = taskModel.TaskDescription;
             var newTaskProgress = taskModel.TaskProgress;
-            var newArchived = taskModel.Archived;
+            var newArchived = edittaskModel.Archived;
 
-            //if(txtTaskName.Text != default) newTaskName = txtTaskName.Text;
-            //if (txtTaskDescription.Text != default) newTaskDescription= txtTaskDescription.Text;
-            //if (txtTaskProgress.Text != default) newTaskProgress = txtTaskProgress.Text;
-            //if (txtArchived.Text != default) newArchived = txtArchived.Text;
+            if (edittaskModel.TaskName != default) newTaskName = edittaskModel.TaskName;
+            if (edittaskModel.TaskDescription != default) newTaskDescription = edittaskModel.TaskDescription;
+            if (edittaskModel.TaskProgress != default) newTaskProgress = edittaskModel.TaskProgress;
+            
 
 
             Tasks.Remove(GetTaskInfo(taskModel.TaskID));
             Tasks.Add(new TaskModel
             {
-                TaskID = taskModel.TaskID,
+                TaskID = id,
                 TaskName = newTaskName,
                 TaskDescription = newTaskDescription,
                 TaskProgress = newTaskProgress,
