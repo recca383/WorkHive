@@ -39,7 +39,7 @@
             this.Friday = new System.Windows.Forms.Label();
             this.Saturday = new System.Windows.Forms.Label();
             this.lblDate = new System.Windows.Forms.Label();
-            this.bunifuVScrollBar1 = new Bunifu.UI.WinForms.BunifuVScrollBar();
+            this.CalendarScroll = new Bunifu.UI.WinForms.BunifuVScrollBar();
             this.btnPrevious = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnNext = new Bunifu.Framework.UI.BunifuFlatButton();
             this.SuspendLayout();
@@ -47,16 +47,17 @@
             // CalendarName
             // 
             this.CalendarName.AutoSize = true;
-            this.CalendarName.Font = new System.Drawing.Font("Montserrat", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CalendarName.Font = new System.Drawing.Font("Microsoft Sans Serif", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CalendarName.Location = new System.Drawing.Point(15, 11);
             this.CalendarName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.CalendarName.Name = "CalendarName";
-            this.CalendarName.Size = new System.Drawing.Size(230, 60);
+            this.CalendarName.Size = new System.Drawing.Size(205, 51);
             this.CalendarName.TabIndex = 2;
             this.CalendarName.Text = "Calendar";
             // 
             // DayContainer
             // 
+            this.DayContainer.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.DayContainer.Location = new System.Drawing.Point(26, 119);
             this.DayContainer.Name = "DayContainer";
             this.DayContainer.Size = new System.Drawing.Size(1185, 641);
@@ -65,76 +66,76 @@
             // Sunday
             // 
             this.Sunday.AutoSize = true;
-            this.Sunday.Font = new System.Drawing.Font("Montserrat", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Sunday.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Sunday.Location = new System.Drawing.Point(76, 92);
             this.Sunday.Name = "Sunday";
-            this.Sunday.Size = new System.Drawing.Size(77, 24);
+            this.Sunday.Size = new System.Drawing.Size(70, 20);
             this.Sunday.TabIndex = 7;
             this.Sunday.Text = "Sunday";
             // 
             // Monday
             // 
             this.Monday.AutoSize = true;
-            this.Monday.Font = new System.Drawing.Font("Montserrat", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Monday.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Monday.Location = new System.Drawing.Point(241, 92);
             this.Monday.Name = "Monday";
-            this.Monday.Size = new System.Drawing.Size(81, 24);
+            this.Monday.Size = new System.Drawing.Size(73, 20);
             this.Monday.TabIndex = 8;
             this.Monday.Text = "Monday";
             // 
             // Tuesday
             // 
             this.Tuesday.AutoSize = true;
-            this.Tuesday.Font = new System.Drawing.Font("Montserrat", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Tuesday.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Tuesday.Location = new System.Drawing.Point(409, 92);
             this.Tuesday.Name = "Tuesday";
-            this.Tuesday.Size = new System.Drawing.Size(85, 24);
+            this.Tuesday.Size = new System.Drawing.Size(79, 20);
             this.Tuesday.TabIndex = 9;
             this.Tuesday.Text = "Tuesday";
             // 
             // Wednesday
             // 
             this.Wednesday.AutoSize = true;
-            this.Wednesday.Font = new System.Drawing.Font("Montserrat", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Wednesday.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Wednesday.Location = new System.Drawing.Point(562, 92);
             this.Wednesday.Name = "Wednesday";
-            this.Wednesday.Size = new System.Drawing.Size(116, 24);
+            this.Wednesday.Size = new System.Drawing.Size(105, 20);
             this.Wednesday.TabIndex = 10;
             this.Wednesday.Text = "Wednesday";
             // 
             // Thursday
             // 
             this.Thursday.AutoSize = true;
-            this.Thursday.Font = new System.Drawing.Font("Montserrat", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Thursday.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Thursday.Location = new System.Drawing.Point(736, 92);
             this.Thursday.Name = "Thursday";
-            this.Thursday.Size = new System.Drawing.Size(93, 24);
+            this.Thursday.Size = new System.Drawing.Size(86, 20);
             this.Thursday.TabIndex = 11;
             this.Thursday.Text = "Thursday";
             // 
             // Friday
             // 
             this.Friday.AutoSize = true;
-            this.Friday.Font = new System.Drawing.Font("Montserrat", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Friday.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Friday.Location = new System.Drawing.Point(922, 92);
             this.Friday.Name = "Friday";
-            this.Friday.Size = new System.Drawing.Size(65, 24);
+            this.Friday.Size = new System.Drawing.Size(61, 20);
             this.Friday.TabIndex = 12;
             this.Friday.Text = "Friday";
             // 
             // Saturday
             // 
             this.Saturday.AutoSize = true;
-            this.Saturday.Font = new System.Drawing.Font("Montserrat", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Saturday.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Saturday.Location = new System.Drawing.Point(1079, 92);
             this.Saturday.Name = "Saturday";
-            this.Saturday.Size = new System.Drawing.Size(89, 24);
+            this.Saturday.Size = new System.Drawing.Size(83, 20);
             this.Saturday.TabIndex = 13;
             this.Saturday.Text = "Saturday";
             // 
             // lblDate
             // 
-            this.lblDate.Font = new System.Drawing.Font("Montserrat", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDate.Location = new System.Drawing.Point(599, 26);
             this.lblDate.Name = "lblDate";
             this.lblDate.Size = new System.Drawing.Size(469, 42);
@@ -142,45 +143,47 @@
             this.lblDate.Text = "MONTH YEAR";
             this.lblDate.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // bunifuVScrollBar1
+            // CalendarScroll
             // 
-            this.bunifuVScrollBar1.AllowCursorChanges = true;
-            this.bunifuVScrollBar1.AllowHomeEndKeysDetection = false;
-            this.bunifuVScrollBar1.AllowIncrementalClickMoves = true;
-            this.bunifuVScrollBar1.AllowMouseDownEffects = true;
-            this.bunifuVScrollBar1.AllowMouseHoverEffects = true;
-            this.bunifuVScrollBar1.AllowScrollingAnimations = true;
-            this.bunifuVScrollBar1.AllowScrollKeysDetection = true;
-            this.bunifuVScrollBar1.AllowScrollOptionsMenu = true;
-            this.bunifuVScrollBar1.AllowShrinkingOnFocusLost = false;
-            this.bunifuVScrollBar1.BackgroundColor = System.Drawing.Color.Silver;
-            this.bunifuVScrollBar1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuVScrollBar1.BackgroundImage")));
-            this.bunifuVScrollBar1.BindingContainer = this;
-            this.bunifuVScrollBar1.BorderColor = System.Drawing.Color.Silver;
-            this.bunifuVScrollBar1.BorderRadius = 14;
-            this.bunifuVScrollBar1.BorderThickness = 1;
-            this.bunifuVScrollBar1.DurationBeforeShrink = 2000;
-            this.bunifuVScrollBar1.LargeChange = 10;
-            this.bunifuVScrollBar1.Location = new System.Drawing.Point(1219, 118);
-            this.bunifuVScrollBar1.Margin = new System.Windows.Forms.Padding(5);
-            this.bunifuVScrollBar1.Maximum = 100;
-            this.bunifuVScrollBar1.Minimum = 0;
-            this.bunifuVScrollBar1.MinimumThumbLength = 18;
-            this.bunifuVScrollBar1.Name = "bunifuVScrollBar1";
-            this.bunifuVScrollBar1.OnDisable.ScrollBarBorderColor = System.Drawing.Color.Silver;
-            this.bunifuVScrollBar1.OnDisable.ScrollBarColor = System.Drawing.Color.Transparent;
-            this.bunifuVScrollBar1.OnDisable.ThumbColor = System.Drawing.Color.Silver;
-            this.bunifuVScrollBar1.ScrollBarBorderColor = System.Drawing.Color.Silver;
-            this.bunifuVScrollBar1.ScrollBarColor = System.Drawing.Color.Silver;
-            this.bunifuVScrollBar1.ShrinkSizeLimit = 3;
-            this.bunifuVScrollBar1.Size = new System.Drawing.Size(24, 642);
-            this.bunifuVScrollBar1.SmallChange = 1;
-            this.bunifuVScrollBar1.TabIndex = 14;
-            this.bunifuVScrollBar1.ThumbColor = System.Drawing.Color.Gray;
-            this.bunifuVScrollBar1.ThumbLength = 63;
-            this.bunifuVScrollBar1.ThumbMargin = 1;
-            this.bunifuVScrollBar1.ThumbStyle = Bunifu.UI.WinForms.BunifuVScrollBar.ThumbStyles.Inset;
-            this.bunifuVScrollBar1.Value = 0;
+            this.CalendarScroll.AllowCursorChanges = true;
+            this.CalendarScroll.AllowHomeEndKeysDetection = false;
+            this.CalendarScroll.AllowIncrementalClickMoves = true;
+            this.CalendarScroll.AllowMouseDownEffects = true;
+            this.CalendarScroll.AllowMouseHoverEffects = true;
+            this.CalendarScroll.AllowScrollingAnimations = true;
+            this.CalendarScroll.AllowScrollKeysDetection = true;
+            this.CalendarScroll.AllowScrollOptionsMenu = true;
+            this.CalendarScroll.AllowShrinkingOnFocusLost = false;
+            this.CalendarScroll.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.CalendarScroll.AutoScroll = true;
+            this.CalendarScroll.BackgroundColor = System.Drawing.Color.Silver;
+            this.CalendarScroll.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("CalendarScroll.BackgroundImage")));
+            this.CalendarScroll.BindingContainer = this;
+            this.CalendarScroll.BorderColor = System.Drawing.Color.Silver;
+            this.CalendarScroll.BorderRadius = 14;
+            this.CalendarScroll.BorderThickness = 1;
+            this.CalendarScroll.DurationBeforeShrink = 2000;
+            this.CalendarScroll.LargeChange = 10;
+            this.CalendarScroll.Location = new System.Drawing.Point(1219, 118);
+            this.CalendarScroll.Margin = new System.Windows.Forms.Padding(5);
+            this.CalendarScroll.Maximum = 100;
+            this.CalendarScroll.Minimum = 0;
+            this.CalendarScroll.MinimumThumbLength = 18;
+            this.CalendarScroll.Name = "CalendarScroll";
+            this.CalendarScroll.OnDisable.ScrollBarBorderColor = System.Drawing.Color.Silver;
+            this.CalendarScroll.OnDisable.ScrollBarColor = System.Drawing.Color.Transparent;
+            this.CalendarScroll.OnDisable.ThumbColor = System.Drawing.Color.Silver;
+            this.CalendarScroll.ScrollBarBorderColor = System.Drawing.Color.Silver;
+            this.CalendarScroll.ScrollBarColor = System.Drawing.Color.Silver;
+            this.CalendarScroll.ShrinkSizeLimit = 3;
+            this.CalendarScroll.Size = new System.Drawing.Size(24, 642);
+            this.CalendarScroll.SmallChange = 1;
+            this.CalendarScroll.TabIndex = 14;
+            this.CalendarScroll.ThumbColor = System.Drawing.Color.Gray;
+            this.CalendarScroll.ThumbLength = 63;
+            this.CalendarScroll.ThumbMargin = 1;
+            this.CalendarScroll.ThumbStyle = Bunifu.UI.WinForms.BunifuVScrollBar.ThumbStyles.Inset;
+            this.CalendarScroll.Value = 0;
             // 
             // btnPrevious
             // 
@@ -261,7 +264,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.lblDate);
-            this.Controls.Add(this.bunifuVScrollBar1);
+            this.Controls.Add(this.CalendarScroll);
             this.Controls.Add(this.Saturday);
             this.Controls.Add(this.Friday);
             this.Controls.Add(this.Thursday);
@@ -294,7 +297,7 @@
         private System.Windows.Forms.Label Thursday;
         private System.Windows.Forms.Label Friday;
         private System.Windows.Forms.Label Saturday;
-        private Bunifu.UI.WinForms.BunifuVScrollBar bunifuVScrollBar1;
+        private Bunifu.UI.WinForms.BunifuVScrollBar CalendarScroll;
         private System.Windows.Forms.Label lblDate;
     }
 }

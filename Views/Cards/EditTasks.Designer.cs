@@ -57,7 +57,7 @@
             // 
             // EditpictureBox1
             // 
-            this.EditpictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.EditpictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.EditpictureBox1.Image = global::WorkHive.Properties.Resources.Tasks_Cards_P1;
             this.EditpictureBox1.Location = new System.Drawing.Point(0, 0);
             this.EditpictureBox1.Name = "EditpictureBox1";
@@ -77,9 +77,9 @@
             // 
             // panel2
             // 
+            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.panel2.BackColor = System.Drawing.Color.Transparent;
             this.panel2.Controls.Add(this.eDIT3);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(118, 0);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1029, 41);
@@ -97,6 +97,7 @@
             // 
             // panel3
             // 
+            this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.panel3.BackColor = System.Drawing.Color.Transparent;
             this.panel3.Controls.Add(this.EditFlatButton);
             this.panel3.Controls.Add(this.eDITBox2);
@@ -104,7 +105,6 @@
             this.panel3.Controls.Add(this.lblEditTask_Date);
             this.panel3.Controls.Add(this.EditTaskProgress);
             this.panel3.Controls.Add(this.EditArchived);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel3.Location = new System.Drawing.Point(118, 41);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1029, 125);

@@ -31,7 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Edit_TaskView));
             this.EditTasksFlow = new System.Windows.Forms.FlowLayoutPanel();
             this.btnEditArchived = new System.Windows.Forms.Label();
-            this.Employees = new System.Windows.Forms.Label();
+            this.EditTask = new System.Windows.Forms.Label();
             this.btnEditCompleted = new System.Windows.Forms.Label();
             this.btnEditOngoing = new System.Windows.Forms.Label();
             this.btnEditAll = new System.Windows.Forms.Label();
@@ -42,6 +42,7 @@
             // 
             // EditTasksFlow
             // 
+            this.EditTasksFlow.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.EditTasksFlow.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
             this.EditTasksFlow.Location = new System.Drawing.Point(36, 86);
             this.EditTasksFlow.Margin = new System.Windows.Forms.Padding(4);
@@ -62,16 +63,16 @@
             this.btnEditArchived.Text = "Archived";
             this.btnEditArchived.Click += new System.EventHandler(this.btnArchived_Click);
             // 
-            // Employees
+            // EditTask
             // 
-            this.Employees.AutoSize = true;
-            this.Employees.Font = new System.Drawing.Font("Microsoft Sans Serif", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Employees.Location = new System.Drawing.Point(15, 11);
-            this.Employees.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.Employees.Name = "Employees";
-            this.Employees.Size = new System.Drawing.Size(234, 51);
-            this.Employees.TabIndex = 9;
-            this.Employees.Text = "Edit Tasks";
+            this.EditTask.AutoSize = true;
+            this.EditTask.Font = new System.Drawing.Font("Microsoft Sans Serif", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EditTask.Location = new System.Drawing.Point(15, 11);
+            this.EditTask.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.EditTask.Name = "EditTask";
+            this.EditTask.Size = new System.Drawing.Size(234, 51);
+            this.EditTask.TabIndex = 9;
+            this.EditTask.Text = "Edit Tasks";
             // 
             // btnEditCompleted
             // 
@@ -210,7 +211,7 @@
             this.Controls.Add(this.btnEditOngoing);
             this.Controls.Add(this.btnEditAll);
             this.Controls.Add(this.EditTasksFlow);
-            this.Controls.Add(this.Employees);
+            this.Controls.Add(this.EditTask);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Edit_TaskView";
             this.Size = new System.Drawing.Size(1243, 720);
@@ -224,7 +225,7 @@
         private Bunifu.UI.WinForms.BunifuVScrollBar EditScrollBar1;
         private System.Windows.Forms.FlowLayoutPanel EditTasksFlow;
         private System.Windows.Forms.Label btnEditArchived;
-        private System.Windows.Forms.Label Employees;
+        private System.Windows.Forms.Label EditTask;
         private System.Windows.Forms.Label btnEditCompleted;
         private System.Windows.Forms.Label btnEditOngoing;
         private System.Windows.Forms.Label btnEditAll;
