@@ -29,16 +29,15 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties5 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties6 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties7 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties8 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddTask));
             Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties1 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties2 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties3 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties4 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddTask));
-            this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties5 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties6 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties7 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties8 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
             this.btnAddTaskExit = new Bunifu.Framework.UI.BunifuFlatButton();
             this.TaskNametxt = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox();
             this.DatePickerDeadline = new Bunifu.UI.WinForms.BunifuDatePicker();
@@ -46,18 +45,13 @@
             this.btnAddTaskSubmit = new Bunifu.Framework.UI.BunifuFlatButton();
             this.ArchivedCheckbox = new Bunifu.Framework.UI.BunifuCheckbox();
             this.Dropdownassigntask = new Bunifu.UI.WinForms.BunifuDropdown();
-            this.bunifuElipse2 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.TaskName = new System.Windows.Forms.Label();
             this.AssignTask = new System.Windows.Forms.Label();
             this.DeadlineTask = new System.Windows.Forms.Label();
             this.TaskDescription = new System.Windows.Forms.Label();
             this.AddNewTask = new System.Windows.Forms.Label();
+            this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.SuspendLayout();
-            // 
-            // bunifuElipse1
-            // 
-            this.bunifuElipse1.ElipseRadius = 55;
-            this.bunifuElipse1.TargetControl = this;
             // 
             // btnAddTaskExit
             // 
@@ -131,26 +125,26 @@
             this.TaskNametxt.Modified = false;
             this.TaskNametxt.Multiline = false;
             this.TaskNametxt.Name = "TaskNametxt";
-            stateProperties5.BorderColor = System.Drawing.Color.Transparent;
-            stateProperties5.FillColor = System.Drawing.Color.Empty;
-            stateProperties5.ForeColor = System.Drawing.Color.Empty;
-            stateProperties5.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.TaskNametxt.OnActiveState = stateProperties5;
-            stateProperties6.BorderColor = System.Drawing.Color.Transparent;
-            stateProperties6.FillColor = System.Drawing.Color.White;
-            stateProperties6.ForeColor = System.Drawing.Color.Empty;
-            stateProperties6.PlaceholderForeColor = System.Drawing.Color.Silver;
-            this.TaskNametxt.OnDisabledState = stateProperties6;
-            stateProperties7.BorderColor = System.Drawing.Color.Red;
-            stateProperties7.FillColor = System.Drawing.Color.Empty;
-            stateProperties7.ForeColor = System.Drawing.Color.Empty;
-            stateProperties7.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.TaskNametxt.OnHoverState = stateProperties7;
-            stateProperties8.BorderColor = System.Drawing.Color.DarkGray;
-            stateProperties8.FillColor = System.Drawing.Color.White;
-            stateProperties8.ForeColor = System.Drawing.Color.Black;
-            stateProperties8.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.TaskNametxt.OnIdleState = stateProperties8;
+            stateProperties1.BorderColor = System.Drawing.Color.Transparent;
+            stateProperties1.FillColor = System.Drawing.Color.Empty;
+            stateProperties1.ForeColor = System.Drawing.Color.Empty;
+            stateProperties1.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.TaskNametxt.OnActiveState = stateProperties1;
+            stateProperties2.BorderColor = System.Drawing.Color.Transparent;
+            stateProperties2.FillColor = System.Drawing.Color.White;
+            stateProperties2.ForeColor = System.Drawing.Color.Empty;
+            stateProperties2.PlaceholderForeColor = System.Drawing.Color.Silver;
+            this.TaskNametxt.OnDisabledState = stateProperties2;
+            stateProperties3.BorderColor = System.Drawing.Color.Red;
+            stateProperties3.FillColor = System.Drawing.Color.Empty;
+            stateProperties3.ForeColor = System.Drawing.Color.Empty;
+            stateProperties3.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.TaskNametxt.OnHoverState = stateProperties3;
+            stateProperties4.BorderColor = System.Drawing.Color.DarkGray;
+            stateProperties4.FillColor = System.Drawing.Color.White;
+            stateProperties4.ForeColor = System.Drawing.Color.Black;
+            stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.TaskNametxt.OnIdleState = stateProperties4;
             this.TaskNametxt.PasswordChar = '\0';
             this.TaskNametxt.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.TaskNametxt.PlaceholderText = "Enter Task Name";
@@ -231,26 +225,26 @@
             this.TaskDescriptiontxt.Modified = false;
             this.TaskDescriptiontxt.Multiline = false;
             this.TaskDescriptiontxt.Name = "TaskDescriptiontxt";
-            stateProperties1.BorderColor = System.Drawing.Color.Transparent;
-            stateProperties1.FillColor = System.Drawing.Color.Empty;
-            stateProperties1.ForeColor = System.Drawing.Color.Empty;
-            stateProperties1.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.TaskDescriptiontxt.OnActiveState = stateProperties1;
-            stateProperties2.BorderColor = System.Drawing.Color.Transparent;
-            stateProperties2.FillColor = System.Drawing.Color.White;
-            stateProperties2.ForeColor = System.Drawing.Color.Empty;
-            stateProperties2.PlaceholderForeColor = System.Drawing.Color.Silver;
-            this.TaskDescriptiontxt.OnDisabledState = stateProperties2;
-            stateProperties3.BorderColor = System.Drawing.Color.Red;
-            stateProperties3.FillColor = System.Drawing.Color.Empty;
-            stateProperties3.ForeColor = System.Drawing.Color.Empty;
-            stateProperties3.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.TaskDescriptiontxt.OnHoverState = stateProperties3;
-            stateProperties4.BorderColor = System.Drawing.Color.DarkGray;
-            stateProperties4.FillColor = System.Drawing.Color.White;
-            stateProperties4.ForeColor = System.Drawing.Color.Black;
-            stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.TaskDescriptiontxt.OnIdleState = stateProperties4;
+            stateProperties5.BorderColor = System.Drawing.Color.Transparent;
+            stateProperties5.FillColor = System.Drawing.Color.Empty;
+            stateProperties5.ForeColor = System.Drawing.Color.Empty;
+            stateProperties5.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.TaskDescriptiontxt.OnActiveState = stateProperties5;
+            stateProperties6.BorderColor = System.Drawing.Color.Transparent;
+            stateProperties6.FillColor = System.Drawing.Color.White;
+            stateProperties6.ForeColor = System.Drawing.Color.Empty;
+            stateProperties6.PlaceholderForeColor = System.Drawing.Color.Silver;
+            this.TaskDescriptiontxt.OnDisabledState = stateProperties6;
+            stateProperties7.BorderColor = System.Drawing.Color.Red;
+            stateProperties7.FillColor = System.Drawing.Color.Empty;
+            stateProperties7.ForeColor = System.Drawing.Color.Empty;
+            stateProperties7.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.TaskDescriptiontxt.OnHoverState = stateProperties7;
+            stateProperties8.BorderColor = System.Drawing.Color.DarkGray;
+            stateProperties8.FillColor = System.Drawing.Color.White;
+            stateProperties8.ForeColor = System.Drawing.Color.Black;
+            stateProperties8.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.TaskDescriptiontxt.OnIdleState = stateProperties8;
             this.TaskDescriptiontxt.PasswordChar = '\0';
             this.TaskDescriptiontxt.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.TaskDescriptiontxt.PlaceholderText = "Enter Task Description...";
@@ -359,11 +353,6 @@
             this.Dropdownassigntask.Text = "Select Member";
             this.Dropdownassigntask.SelectedIndexChanged += new System.EventHandler(this.Dropdownassigntask_onItemSelected);
             // 
-            // bunifuElipse2
-            // 
-            this.bunifuElipse2.ElipseRadius = 100;
-            this.bunifuElipse2.TargetControl = this;
-            // 
             // TaskName
             // 
             this.TaskName.AutoSize = true;
@@ -420,9 +409,14 @@
             this.AddNewTask.ForeColor = System.Drawing.Color.Black;
             this.AddNewTask.Location = new System.Drawing.Point(200, 24);
             this.AddNewTask.Name = "AddNewTask";
-            this.AddNewTask.Size = new System.Drawing.Size(245, 46);
+            this.AddNewTask.Size = new System.Drawing.Size(238, 45);
             this.AddNewTask.TabIndex = 17;
             this.AddNewTask.Text = "Add New Task";
+            // 
+            // bunifuElipse1
+            // 
+            this.bunifuElipse1.ElipseRadius = 120;
+            this.bunifuElipse1.TargetControl = this;
             // 
             // AddTask
             // 
@@ -451,8 +445,6 @@
         }
 
         #endregion
-
-        private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
         private Bunifu.Framework.UI.BunifuFlatButton btnAddTaskExit;
         private Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox TaskNametxt;
         private Bunifu.UI.WinForms.BunifuDatePicker DatePickerDeadline;
@@ -460,11 +452,11 @@
         private Bunifu.Framework.UI.BunifuFlatButton btnAddTaskSubmit;
         private Bunifu.Framework.UI.BunifuCheckbox ArchivedCheckbox;
         private Bunifu.UI.WinForms.BunifuDropdown Dropdownassigntask;
-        private Bunifu.Framework.UI.BunifuElipse bunifuElipse2;
         private System.Windows.Forms.Label TaskDescription;
         private System.Windows.Forms.Label DeadlineTask;
         private System.Windows.Forms.Label AssignTask;
         private System.Windows.Forms.Label TaskName;
         private System.Windows.Forms.Label AddNewTask;
+        private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
     }
 }

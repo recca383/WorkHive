@@ -429,6 +429,12 @@
     <Compile Include="Views\Admin\DashboardPages\Edit TaskView.Designer.cs">
       <DependentUpon>Edit TaskView.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\Admin\DashboardPages\EditTaskInformation.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Admin\DashboardPages\EditTaskInformation.Designer.cs">
+      <DependentUpon>EditTaskInformation.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\Admin\DashboardPages\EventForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -599,6 +605,9 @@
     <EmbeddedResource Include="Views\Admin\DashboardPages\Edit TaskView.resx">
       <DependentUpon>Edit TaskView.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Views\Admin\DashboardPages\EditTaskInformation.resx">
+      <DependentUpon>EditTaskInformation.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\Admin\DashboardPages\EventForm.resx">
       <DependentUpon>EventForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -729,6 +738,7 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <None Include="Resources\Rectangle 95 %281%29.png" />
     <None Include="Resources\Rectangle 951.png" />
     <None Include="Resources\Rectangle 95.png" />
     <None Include="Resources\Vector %281%291.png" />

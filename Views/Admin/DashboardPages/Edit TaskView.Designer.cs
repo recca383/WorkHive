@@ -53,11 +53,11 @@
             // btnEditArchived
             // 
             this.btnEditArchived.AutoSize = true;
-            this.btnEditArchived.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEditArchived.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEditArchived.Location = new System.Drawing.Point(792, 33);
             this.btnEditArchived.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.btnEditArchived.Name = "btnEditArchived";
-            this.btnEditArchived.Size = new System.Drawing.Size(107, 27);
+            this.btnEditArchived.Size = new System.Drawing.Size(97, 25);
             this.btnEditArchived.TabIndex = 14;
             this.btnEditArchived.Text = "Archived";
             this.btnEditArchived.Click += new System.EventHandler(this.btnArchived_Click);
@@ -65,22 +65,22 @@
             // Employees
             // 
             this.Employees.AutoSize = true;
-            this.Employees.Font = new System.Drawing.Font("Montserrat", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Employees.Font = new System.Drawing.Font("Microsoft Sans Serif", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Employees.Location = new System.Drawing.Point(15, 11);
             this.Employees.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Employees.Name = "Employees";
-            this.Employees.Size = new System.Drawing.Size(258, 61);
+            this.Employees.Size = new System.Drawing.Size(234, 51);
             this.Employees.TabIndex = 9;
             this.Employees.Text = "Edit Tasks";
             // 
             // btnEditCompleted
             // 
             this.btnEditCompleted.AutoSize = true;
-            this.btnEditCompleted.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEditCompleted.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEditCompleted.Location = new System.Drawing.Point(609, 33);
             this.btnEditCompleted.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.btnEditCompleted.Name = "btnEditCompleted";
-            this.btnEditCompleted.Size = new System.Drawing.Size(130, 27);
+            this.btnEditCompleted.Size = new System.Drawing.Size(116, 25);
             this.btnEditCompleted.TabIndex = 13;
             this.btnEditCompleted.Text = "Completed";
             this.btnEditCompleted.Click += new System.EventHandler(this.btnCompleted_Click);
@@ -88,11 +88,11 @@
             // btnEditOngoing
             // 
             this.btnEditOngoing.AutoSize = true;
-            this.btnEditOngoing.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEditOngoing.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEditOngoing.Location = new System.Drawing.Point(448, 33);
             this.btnEditOngoing.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.btnEditOngoing.Name = "btnEditOngoing";
-            this.btnEditOngoing.Size = new System.Drawing.Size(104, 27);
+            this.btnEditOngoing.Size = new System.Drawing.Size(94, 25);
             this.btnEditOngoing.TabIndex = 12;
             this.btnEditOngoing.Text = "Ongoing";
             this.btnEditOngoing.Click += new System.EventHandler(this.btnOngoing_Click);
@@ -100,11 +100,11 @@
             // btnEditAll
             // 
             this.btnEditAll.AutoSize = true;
-            this.btnEditAll.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEditAll.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEditAll.Location = new System.Drawing.Point(349, 33);
             this.btnEditAll.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.btnEditAll.Name = "btnEditAll";
-            this.btnEditAll.Size = new System.Drawing.Size(39, 27);
+            this.btnEditAll.Size = new System.Drawing.Size(37, 25);
             this.btnEditAll.TabIndex = 11;
             this.btnEditAll.Text = "All";
             this.btnEditAll.Click += new System.EventHandler(this.btnAll_Click);
@@ -114,9 +114,9 @@
             this.btnAddtasks.Active = false;
             this.btnAddtasks.Activecolor = System.Drawing.Color.Transparent;
             this.btnAddtasks.BackColor = System.Drawing.Color.Transparent;
-            this.btnAddtasks.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnAddtasks.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btnAddtasks.BorderRadius = 0;
-            this.btnAddtasks.ButtonText = "bunifuFlatButton1";
+            this.btnAddtasks.ButtonText = "";
             this.btnAddtasks.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnAddtasks.DisabledColor = System.Drawing.Color.Gray;
             this.btnAddtasks.Iconcolor = System.Drawing.Color.Transparent;
@@ -129,7 +129,7 @@
             this.btnAddtasks.IconRightVisible = true;
             this.btnAddtasks.IconRightZoom = 0D;
             this.btnAddtasks.IconVisible = true;
-            this.btnAddtasks.IconZoom = 86D;
+            this.btnAddtasks.IconZoom = 85D;
             this.btnAddtasks.IsTab = false;
             this.btnAddtasks.Location = new System.Drawing.Point(1141, 25);
             this.btnAddtasks.Margin = new System.Windows.Forms.Padding(5);
@@ -140,8 +140,7 @@
             this.btnAddtasks.selected = false;
             this.btnAddtasks.Size = new System.Drawing.Size(41, 38);
             this.btnAddtasks.TabIndex = 16;
-            this.btnAddtasks.Text = "bunifuFlatButton1";
-            this.btnAddtasks.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAddtasks.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnAddtasks.Textcolor = System.Drawing.Color.White;
             this.btnAddtasks.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAddtasks.Click += new System.EventHandler(this.btnAddtasks_Click);

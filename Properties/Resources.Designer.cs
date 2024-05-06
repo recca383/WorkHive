@@ -603,6 +603,16 @@ namespace WorkHive.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Rectangle_95__1_ {
+            get {
+                object obj = ResourceManager.GetObject("Rectangle 95 (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Rectangle_951 {
             get {
                 object obj = ResourceManager.GetObject("Rectangle 951", resourceCulture);

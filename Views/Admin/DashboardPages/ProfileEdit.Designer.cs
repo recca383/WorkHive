@@ -98,9 +98,6 @@
             this.bloodTypeDrop = new Bunifu.UI.WinForms.BunifuDropdown();
             this.bunifuLabel10 = new Bunifu.UI.WinForms.BunifuLabel();
             this.EditPanel = new System.Windows.Forms.Panel();
-            this.btnConfirmEdit = new Bunifu.UI.WinForms.BunifuPictureBox();
-            this.btnCancelEdit = new Bunifu.UI.WinForms.BunifuPictureBox();
-            this.btnEdit = new Bunifu.UI.WinForms.BunifuPictureBox();
             this.BirthPicker = new Bunifu.UI.WinForms.BunifuDatePicker();
             this.emailtxt = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox();
             this.contacttxt = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox();
@@ -111,13 +108,6 @@
             this.bunifuPictureBox8 = new Bunifu.UI.WinForms.BunifuPictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.bunifuLabel25 = new Bunifu.UI.WinForms.BunifuLabel();
-            this.bunifuLabel24 = new Bunifu.UI.WinForms.BunifuLabel();
-            this.bunifuLabel23 = new Bunifu.UI.WinForms.BunifuLabel();
-            this.bunifuLabel22 = new Bunifu.UI.WinForms.BunifuLabel();
-            this.bunifuLabel21 = new Bunifu.UI.WinForms.BunifuLabel();
-            this.bunifuLabel20 = new Bunifu.UI.WinForms.BunifuLabel();
-            this.bunifuLabel19 = new Bunifu.UI.WinForms.BunifuLabel();
             this.zipcodetxt = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox();
             this.bunifuLabel18 = new Bunifu.UI.WinForms.BunifuLabel();
             this.provincetxt = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox();
@@ -132,7 +122,9 @@
             this.bunifuLabel14 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuLabel12 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuLabel11 = new Bunifu.UI.WinForms.BunifuLabel();
-            this.bunifuPictureBox9 = new Bunifu.UI.WinForms.BunifuPictureBox();
+            this.btnConfirmEdit = new Bunifu.UI.WinForms.BunifuPictureBox();
+            this.btnCancelEdit = new Bunifu.UI.WinForms.BunifuPictureBox();
+            this.btnEdit = new Bunifu.UI.WinForms.BunifuPictureBox();
             this.bunifuPictureBox7 = new Bunifu.UI.WinForms.BunifuPictureBox();
             this.bunifuPictureBox6 = new Bunifu.UI.WinForms.BunifuPictureBox();
             this.bunifuPictureBox5 = new Bunifu.UI.WinForms.BunifuPictureBox();
@@ -140,14 +132,14 @@
             this.bunifuPictureBox3 = new Bunifu.UI.WinForms.BunifuPictureBox();
             this.ProfilePic = new Bunifu.UI.WinForms.BunifuPictureBox();
             this.bunifuPictureBox1 = new Bunifu.UI.WinForms.BunifuPictureBox();
+            this.bunifuPictureBox9 = new Bunifu.UI.WinForms.BunifuPictureBox();
             this.EditPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btnConfirmEdit)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnCancelEdit)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnEdit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnConfirmEdit)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnCancelEdit)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnEdit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox5)).BeginInit();
@@ -155,6 +147,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ProfilePic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox9)).BeginInit();
             this.SuspendLayout();
             // 
             // Employees
@@ -170,6 +163,8 @@
             // 
             // Namelbl
             // 
+            this.Namelbl.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.Namelbl.AutoEllipsis = false;
             this.Namelbl.BackColor = System.Drawing.Color.White;
             this.Namelbl.CursorType = null;
@@ -186,6 +181,8 @@
             // 
             // Positionlbl
             // 
+            this.Positionlbl.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.Positionlbl.AutoEllipsis = false;
             this.Positionlbl.BackColor = System.Drawing.Color.White;
             this.Positionlbl.CursorType = null;
@@ -203,6 +200,8 @@
             // 
             // worklbl
             // 
+            this.worklbl.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.worklbl.AutoEllipsis = false;
             this.worklbl.BackColor = System.Drawing.Color.White;
             this.worklbl.CursorType = null;
@@ -220,6 +219,8 @@
             // 
             // Birthdatelbl
             // 
+            this.Birthdatelbl.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.Birthdatelbl.AutoEllipsis = false;
             this.Birthdatelbl.BackColor = System.Drawing.Color.White;
             this.Birthdatelbl.CursorType = null;
@@ -237,6 +238,8 @@
             // 
             // contactlbl
             // 
+            this.contactlbl.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.contactlbl.AutoEllipsis = false;
             this.contactlbl.BackColor = System.Drawing.Color.White;
             this.contactlbl.CursorType = null;
@@ -254,6 +257,8 @@
             // 
             // emaillbl
             // 
+            this.emaillbl.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.emaillbl.AutoEllipsis = false;
             this.emaillbl.BackColor = System.Drawing.Color.White;
             this.emaillbl.CursorType = null;
@@ -271,6 +276,8 @@
             // 
             // addresslbl
             // 
+            this.addresslbl.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.addresslbl.AutoEllipsis = false;
             this.addresslbl.BackColor = System.Drawing.Color.White;
             this.addresslbl.CursorType = null;
@@ -500,6 +507,8 @@
             // 
             // EditPanel
             // 
+            this.EditPanel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.EditPanel.BackColor = System.Drawing.Color.White;
             this.EditPanel.Controls.Add(this.bunifuLabel10);
             this.EditPanel.Controls.Add(this.BirthPicker);
@@ -525,61 +534,10 @@
             this.EditPanel.Controls.Add(this.panel2);
             this.EditPanel.Enabled = false;
             this.EditPanel.Location = new System.Drawing.Point(52, 405);
-            this.EditPanel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.EditPanel.Margin = new System.Windows.Forms.Padding(4);
             this.EditPanel.Name = "EditPanel";
             this.EditPanel.Size = new System.Drawing.Size(1220, 343);
             this.EditPanel.TabIndex = 48;
-            // 
-            // btnConfirmEdit
-            // 
-            this.btnConfirmEdit.AllowFocused = false;
-            this.btnConfirmEdit.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnConfirmEdit.BorderRadius = 0;
-            this.btnConfirmEdit.Image = global::WorkHive.Properties.Resources.Confirmbtn;
-            this.btnConfirmEdit.IsCircle = false;
-            this.btnConfirmEdit.Location = new System.Drawing.Point(1115, 328);
-            this.btnConfirmEdit.Margin = new System.Windows.Forms.Padding(4);
-            this.btnConfirmEdit.Name = "btnConfirmEdit";
-            this.btnConfirmEdit.Size = new System.Drawing.Size(126, 45);
-            this.btnConfirmEdit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnConfirmEdit.TabIndex = 52;
-            this.btnConfirmEdit.TabStop = false;
-            this.btnConfirmEdit.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Custom;
-            this.btnConfirmEdit.Click += new System.EventHandler(this.btnConfirmEdit_Click);
-            // 
-            // btnCancelEdit
-            // 
-            this.btnCancelEdit.AllowFocused = false;
-            this.btnCancelEdit.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnCancelEdit.BorderRadius = 0;
-            this.btnCancelEdit.Image = global::WorkHive.Properties.Resources.Cancelbtn;
-            this.btnCancelEdit.IsCircle = false;
-            this.btnCancelEdit.Location = new System.Drawing.Point(981, 328);
-            this.btnCancelEdit.Margin = new System.Windows.Forms.Padding(4);
-            this.btnCancelEdit.Name = "btnCancelEdit";
-            this.btnCancelEdit.Size = new System.Drawing.Size(126, 45);
-            this.btnCancelEdit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnCancelEdit.TabIndex = 51;
-            this.btnCancelEdit.TabStop = false;
-            this.btnCancelEdit.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Custom;
-            this.btnCancelEdit.Click += new System.EventHandler(this.btnCancelEdit_Click);
-            // 
-            // btnEdit
-            // 
-            this.btnEdit.AllowFocused = false;
-            this.btnEdit.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnEdit.BorderRadius = 50;
-            this.btnEdit.Image = global::WorkHive.Properties.Resources.Vector__1_;
-            this.btnEdit.IsCircle = true;
-            this.btnEdit.Location = new System.Drawing.Point(1208, 118);
-            this.btnEdit.Margin = new System.Windows.Forms.Padding(4);
-            this.btnEdit.Name = "btnEdit";
-            this.btnEdit.Size = new System.Drawing.Size(29, 29);
-            this.btnEdit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnEdit.TabIndex = 49;
-            this.btnEdit.TabStop = false;
-            this.btnEdit.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Square;
-            this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
             // 
             // BirthPicker
             // 
@@ -1086,13 +1044,6 @@
             // panel2
             // 
             this.panel2.BackgroundImage = global::WorkHive.Properties.Resources.Rectangle_102;
-            this.panel2.Controls.Add(this.bunifuLabel25);
-            this.panel2.Controls.Add(this.bunifuLabel24);
-            this.panel2.Controls.Add(this.bunifuLabel23);
-            this.panel2.Controls.Add(this.bunifuLabel22);
-            this.panel2.Controls.Add(this.bunifuLabel21);
-            this.panel2.Controls.Add(this.bunifuLabel20);
-            this.panel2.Controls.Add(this.bunifuLabel19);
             this.panel2.Controls.Add(this.zipcodetxt);
             this.panel2.Controls.Add(this.bunifuLabel18);
             this.panel2.Controls.Add(this.provincetxt);
@@ -1113,111 +1064,6 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(571, 322);
             this.panel2.TabIndex = 26;
-            // 
-            // bunifuLabel25
-            // 
-            this.bunifuLabel25.AutoEllipsis = false;
-            this.bunifuLabel25.CursorType = null;
-            this.bunifuLabel25.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuLabel25.Location = new System.Drawing.Point(301, 217);
-            this.bunifuLabel25.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.bunifuLabel25.Name = "bunifuLabel25";
-            this.bunifuLabel25.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel25.Size = new System.Drawing.Size(71, 20);
-            this.bunifuLabel25.TabIndex = 65;
-            this.bunifuLabel25.Text = "Zip Code";
-            this.bunifuLabel25.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.bunifuLabel25.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
-            // 
-            // bunifuLabel24
-            // 
-            this.bunifuLabel24.AutoEllipsis = false;
-            this.bunifuLabel24.CursorType = null;
-            this.bunifuLabel24.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuLabel24.Location = new System.Drawing.Point(17, 217);
-            this.bunifuLabel24.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.bunifuLabel24.Name = "bunifuLabel24";
-            this.bunifuLabel24.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel24.Size = new System.Drawing.Size(69, 20);
-            this.bunifuLabel24.TabIndex = 64;
-            this.bunifuLabel24.Text = "Province";
-            this.bunifuLabel24.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.bunifuLabel24.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
-            // 
-            // bunifuLabel23
-            // 
-            this.bunifuLabel23.AutoEllipsis = false;
-            this.bunifuLabel23.CursorType = null;
-            this.bunifuLabel23.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuLabel23.Location = new System.Drawing.Point(301, 142);
-            this.bunifuLabel23.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.bunifuLabel23.Name = "bunifuLabel23";
-            this.bunifuLabel23.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel23.Size = new System.Drawing.Size(125, 20);
-            this.bunifuLabel23.TabIndex = 63;
-            this.bunifuLabel23.Text = "City/Municipality";
-            this.bunifuLabel23.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.bunifuLabel23.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
-            // 
-            // bunifuLabel22
-            // 
-            this.bunifuLabel22.AutoEllipsis = false;
-            this.bunifuLabel22.CursorType = null;
-            this.bunifuLabel22.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuLabel22.Location = new System.Drawing.Point(17, 142);
-            this.bunifuLabel22.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.bunifuLabel22.Name = "bunifuLabel22";
-            this.bunifuLabel22.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel22.Size = new System.Drawing.Size(73, 20);
-            this.bunifuLabel22.TabIndex = 62;
-            this.bunifuLabel22.Text = "Barangay";
-            this.bunifuLabel22.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.bunifuLabel22.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
-            // 
-            // bunifuLabel21
-            // 
-            this.bunifuLabel21.AutoEllipsis = false;
-            this.bunifuLabel21.CursorType = null;
-            this.bunifuLabel21.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuLabel21.Location = new System.Drawing.Point(301, 64);
-            this.bunifuLabel21.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.bunifuLabel21.Name = "bunifuLabel21";
-            this.bunifuLabel21.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel21.Size = new System.Drawing.Size(48, 20);
-            this.bunifuLabel21.TabIndex = 61;
-            this.bunifuLabel21.Text = "Street";
-            this.bunifuLabel21.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.bunifuLabel21.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
-            // 
-            // bunifuLabel20
-            // 
-            this.bunifuLabel20.AutoEllipsis = false;
-            this.bunifuLabel20.CursorType = null;
-            this.bunifuLabel20.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuLabel20.Location = new System.Drawing.Point(69, 18);
-            this.bunifuLabel20.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.bunifuLabel20.Name = "bunifuLabel20";
-            this.bunifuLabel20.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel20.Size = new System.Drawing.Size(219, 31);
-            this.bunifuLabel20.TabIndex = 48;
-            this.bunifuLabel20.Text = "Complete Address";
-            this.bunifuLabel20.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.bunifuLabel20.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
-            // 
-            // bunifuLabel19
-            // 
-            this.bunifuLabel19.AutoEllipsis = false;
-            this.bunifuLabel19.CursorType = null;
-            this.bunifuLabel19.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuLabel19.Location = new System.Drawing.Point(17, 64);
-            this.bunifuLabel19.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.bunifuLabel19.Name = "bunifuLabel19";
-            this.bunifuLabel19.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel19.Size = new System.Drawing.Size(116, 20);
-            this.bunifuLabel19.TabIndex = 48;
-            this.bunifuLabel19.Text = "House Number";
-            this.bunifuLabel19.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.bunifuLabel19.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
             // zipcodetxt
             // 
@@ -1789,26 +1635,65 @@
             this.bunifuLabel11.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.bunifuLabel11.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
-            // bunifuPictureBox9
+            // btnConfirmEdit
             // 
-            this.bunifuPictureBox9.AllowFocused = false;
-            this.bunifuPictureBox9.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.bunifuPictureBox9.BorderRadius = 0;
-            this.bunifuPictureBox9.Image = global::WorkHive.Properties.Resources.maki_home;
-            this.bunifuPictureBox9.IsCircle = false;
-            this.bunifuPictureBox9.Location = new System.Drawing.Point(17, 12);
-            this.bunifuPictureBox9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.bunifuPictureBox9.Name = "bunifuPictureBox9";
-            this.bunifuPictureBox9.Size = new System.Drawing.Size(45, 46);
-            this.bunifuPictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.bunifuPictureBox9.TabIndex = 48;
-            this.bunifuPictureBox9.TabStop = false;
-            this.bunifuPictureBox9.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Custom;
+            this.btnConfirmEdit.AllowFocused = false;
+            this.btnConfirmEdit.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnConfirmEdit.BorderRadius = 0;
+            this.btnConfirmEdit.Image = global::WorkHive.Properties.Resources.Confirmbtn;
+            this.btnConfirmEdit.IsCircle = false;
+            this.btnConfirmEdit.Location = new System.Drawing.Point(1115, 328);
+            this.btnConfirmEdit.Margin = new System.Windows.Forms.Padding(4);
+            this.btnConfirmEdit.Name = "btnConfirmEdit";
+            this.btnConfirmEdit.Size = new System.Drawing.Size(126, 45);
+            this.btnConfirmEdit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnConfirmEdit.TabIndex = 52;
+            this.btnConfirmEdit.TabStop = false;
+            this.btnConfirmEdit.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Custom;
+            this.btnConfirmEdit.Click += new System.EventHandler(this.btnConfirmEdit_Click);
+            // 
+            // btnCancelEdit
+            // 
+            this.btnCancelEdit.AllowFocused = false;
+            this.btnCancelEdit.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnCancelEdit.BorderRadius = 0;
+            this.btnCancelEdit.Image = global::WorkHive.Properties.Resources.Cancelbtn;
+            this.btnCancelEdit.IsCircle = false;
+            this.btnCancelEdit.Location = new System.Drawing.Point(981, 328);
+            this.btnCancelEdit.Margin = new System.Windows.Forms.Padding(4);
+            this.btnCancelEdit.Name = "btnCancelEdit";
+            this.btnCancelEdit.Size = new System.Drawing.Size(126, 45);
+            this.btnCancelEdit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnCancelEdit.TabIndex = 51;
+            this.btnCancelEdit.TabStop = false;
+            this.btnCancelEdit.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Custom;
+            this.btnCancelEdit.Click += new System.EventHandler(this.btnCancelEdit_Click);
+            // 
+            // btnEdit
+            // 
+            this.btnEdit.AllowFocused = false;
+            this.btnEdit.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnEdit.BorderRadius = 1;
+            this.btnEdit.Image = global::WorkHive.Properties.Resources.Vector__1_;
+            this.btnEdit.IsCircle = true;
+            this.btnEdit.Location = new System.Drawing.Point(1208, 118);
+            this.btnEdit.Margin = new System.Windows.Forms.Padding(4);
+            this.btnEdit.Name = "btnEdit";
+            this.btnEdit.Size = new System.Drawing.Size(29, 29);
+            this.btnEdit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnEdit.TabIndex = 49;
+            this.btnEdit.TabStop = false;
+            this.btnEdit.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Square;
+            this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
             // 
             // bunifuPictureBox7
             // 
             this.bunifuPictureBox7.AllowFocused = false;
-            this.bunifuPictureBox7.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.bunifuPictureBox7.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.bunifuPictureBox7.BorderRadius = 0;
             this.bunifuPictureBox7.Image = global::WorkHive.Properties.Resources.Group_88;
             this.bunifuPictureBox7.IsCircle = false;
@@ -1824,7 +1709,8 @@
             // bunifuPictureBox6
             // 
             this.bunifuPictureBox6.AllowFocused = false;
-            this.bunifuPictureBox6.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.bunifuPictureBox6.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.bunifuPictureBox6.BorderRadius = 0;
             this.bunifuPictureBox6.Image = global::WorkHive.Properties.Resources.Group_86;
             this.bunifuPictureBox6.IsCircle = false;
@@ -1840,7 +1726,8 @@
             // bunifuPictureBox5
             // 
             this.bunifuPictureBox5.AllowFocused = false;
-            this.bunifuPictureBox5.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.bunifuPictureBox5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.bunifuPictureBox5.BorderRadius = 0;
             this.bunifuPictureBox5.Image = global::WorkHive.Properties.Resources.Group_84;
             this.bunifuPictureBox5.IsCircle = false;
@@ -1856,7 +1743,8 @@
             // bunifuPictureBox4
             // 
             this.bunifuPictureBox4.AllowFocused = false;
-            this.bunifuPictureBox4.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.bunifuPictureBox4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.bunifuPictureBox4.BorderRadius = 0;
             this.bunifuPictureBox4.Image = global::WorkHive.Properties.Resources.Group_82;
             this.bunifuPictureBox4.IsCircle = false;
@@ -1872,7 +1760,8 @@
             // bunifuPictureBox3
             // 
             this.bunifuPictureBox3.AllowFocused = false;
-            this.bunifuPictureBox3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.bunifuPictureBox3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.bunifuPictureBox3.BorderRadius = 0;
             this.bunifuPictureBox3.Image = global::WorkHive.Properties.Resources.Group_81__1_;
             this.bunifuPictureBox3.IsCircle = false;
@@ -1888,12 +1777,13 @@
             // ProfilePic
             // 
             this.ProfilePic.AllowFocused = false;
-            this.ProfilePic.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.ProfilePic.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.ProfilePic.BackColor = System.Drawing.Color.White;
             this.ProfilePic.BorderRadius = 0;
             this.ProfilePic.Image = global::WorkHive.Properties.Resources.Vector__2_;
             this.ProfilePic.IsCircle = false;
-            this.ProfilePic.Location = new System.Drawing.Point(91, 118);
+            this.ProfilePic.Location = new System.Drawing.Point(117, 103);
             this.ProfilePic.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ProfilePic.Name = "ProfilePic";
             this.ProfilePic.Size = new System.Drawing.Size(236, 265);
@@ -1905,12 +1795,11 @@
             // bunifuPictureBox1
             // 
             this.bunifuPictureBox1.AllowFocused = false;
-            this.bunifuPictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.bunifuPictureBox1.BackgroundImage = global::WorkHive.Properties.Resources.Rectangle_9__1_1;
+            this.bunifuPictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.bunifuPictureBox1.BorderRadius = 0;
             this.bunifuPictureBox1.Image = global::WorkHive.Properties.Resources.Rectangle_9;
             this.bunifuPictureBox1.IsCircle = false;
-            this.bunifuPictureBox1.Location = new System.Drawing.Point(65, 94);
+            this.bunifuPictureBox1.Location = new System.Drawing.Point(91, 83);
             this.bunifuPictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bunifuPictureBox1.MaximumSize = new System.Drawing.Size(1195, 300);
             this.bunifuPictureBox1.Name = "bunifuPictureBox1";
@@ -1919,6 +1808,22 @@
             this.bunifuPictureBox1.TabIndex = 11;
             this.bunifuPictureBox1.TabStop = false;
             this.bunifuPictureBox1.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Custom;
+            // 
+            // bunifuPictureBox9
+            // 
+            this.bunifuPictureBox9.AllowFocused = false;
+            this.bunifuPictureBox9.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.bunifuPictureBox9.BorderRadius = 0;
+            this.bunifuPictureBox9.Image = global::WorkHive.Properties.Resources.maki_home;
+            this.bunifuPictureBox9.IsCircle = false;
+            this.bunifuPictureBox9.Location = new System.Drawing.Point(17, 12);
+            this.bunifuPictureBox9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.bunifuPictureBox9.Name = "bunifuPictureBox9";
+            this.bunifuPictureBox9.Size = new System.Drawing.Size(45, 46);
+            this.bunifuPictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.bunifuPictureBox9.TabIndex = 48;
+            this.bunifuPictureBox9.TabStop = false;
+            this.bunifuPictureBox9.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Custom;
             // 
             // ProfileEdit
             // 
@@ -1950,14 +1855,13 @@
             this.Size = new System.Drawing.Size(1328, 763);
             this.EditPanel.ResumeLayout(false);
             this.EditPanel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btnConfirmEdit)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnCancelEdit)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnEdit)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnConfirmEdit)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnCancelEdit)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnEdit)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox5)).EndInit();
@@ -1965,6 +1869,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ProfilePic)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox9)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -2010,7 +1915,6 @@
         private Bunifu.UI.WinForms.BunifuPictureBox bunifuPictureBox1;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel10;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel11;
-        private Bunifu.UI.WinForms.BunifuPictureBox bunifuPictureBox9;
         private Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox HouseNumbertxt;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel14;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel12;
@@ -2024,16 +1928,10 @@
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel15;
         private Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox Streettxt;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel13;
-        private Bunifu.UI.WinForms.BunifuLabel bunifuLabel19;
-        private Bunifu.UI.WinForms.BunifuLabel bunifuLabel20;
-        private Bunifu.UI.WinForms.BunifuLabel bunifuLabel25;
-        private Bunifu.UI.WinForms.BunifuLabel bunifuLabel24;
-        private Bunifu.UI.WinForms.BunifuLabel bunifuLabel23;
-        private Bunifu.UI.WinForms.BunifuLabel bunifuLabel22;
-        private Bunifu.UI.WinForms.BunifuLabel bunifuLabel21;
         private System.Windows.Forms.Panel EditPanel;
         private Bunifu.UI.WinForms.BunifuPictureBox btnEdit;
         private Bunifu.UI.WinForms.BunifuPictureBox btnCancelEdit;
         private Bunifu.UI.WinForms.BunifuPictureBox btnConfirmEdit;
+        private Bunifu.UI.WinForms.BunifuPictureBox bunifuPictureBox9;
     }
 }
