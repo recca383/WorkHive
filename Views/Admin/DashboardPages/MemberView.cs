@@ -20,11 +20,41 @@ namespace WorkHive.Views.Admin.DashboardPages
 {
     public partial class MemberView : UserControl
     {
+        private Size MemberViewOriginalSize;
+        private Rectangle recMembersName;
+        private Rectangle recMembersFlow;
+        private Rectangle recbunifuVScrollBar1;
         List<MemberModel> members;
         public MemberView()
         {
             InitializeComponent();
             AddMemberElements();
+            this.Resize += MemberView_Resize;
+            MemberViewOriginalSize = this.Size;
+            recMembersName = new Rectangle(MembersName.Location, MembersName.Size);
+            recMembersFlow = new Rectangle(MembersFlow.Location, MembersFlow.Size);
+            recbunifuVScrollBar1 = new Rectangle(bunifuVScrollBar1.Location, bunifuVScrollBar1.Size);
+        }
+
+        private void MemberView_Resize(object sender, EventArgs e)
+        {
+            resize_Control(MembersName, recMembersName);
+            resize_Control(MembersFlow, recMembersFlow);
+            resize_Control(bunifuVScrollBar1, recbunifuVScrollBar1);
+        }
+        private void resize_Control(Control c, Rectangle r)
+        {
+            float xRatio = (float)(this.Width) / (float)(MemberViewOriginalSize.Width);
+            float yRatio = (float)(this.Height) / (float)(MemberViewOriginalSize.Height);
+            int newX = (int)(r.X * xRatio);
+            int newY = (int)(r.Y * yRatio);
+
+            int newWidth = (int)(r.Width * xRatio);
+            int newHeight = (int)(r.Height * yRatio);
+
+            c.Location = new Point(newX, newY);
+            c.Size = new Size(newWidth, newHeight);
+
         }
 
         private void AddMemberElements()
