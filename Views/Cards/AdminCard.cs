@@ -47,6 +47,9 @@ namespace WorkHive.Views.Cards
 
         }
 
-       
+        private void bunifuLabel1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

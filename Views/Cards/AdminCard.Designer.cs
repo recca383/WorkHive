@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AdminCard));
             this.panel1 = new System.Windows.Forms.Panel();
             this.picboxProfilePic = new Bunifu.UI.WinForms.BunifuPictureBox();
@@ -36,11 +37,12 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.lblProfileName = new Bunifu.UI.WinForms.BunifuLabel();
-            this.bunifuLabel1 = new Bunifu.UI.WinForms.BunifuLabel();
             this.lblAddress = new Bunifu.UI.WinForms.BunifuLabel();
             this.lblProfileTitle = new Bunifu.UI.WinForms.BunifuLabel();
             this.lblProfileEmail = new Bunifu.UI.WinForms.BunifuLabel();
             this.lblProfilePhone = new Bunifu.UI.WinForms.BunifuLabel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picboxProfilePic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -116,16 +118,16 @@
             // 
             this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.panel3.BackColor = System.Drawing.Color.White;
+            this.panel3.Controls.Add(this.label1);
             this.panel3.Controls.Add(this.lblProfileName);
-            this.panel3.Controls.Add(this.bunifuLabel1);
             this.panel3.Controls.Add(this.lblAddress);
             this.panel3.Controls.Add(this.lblProfileTitle);
             this.panel3.Controls.Add(this.lblProfileEmail);
             this.panel3.Controls.Add(this.lblProfilePhone);
-            this.panel3.Location = new System.Drawing.Point(0, 100);
+            this.panel3.Location = new System.Drawing.Point(0, 98);
             this.panel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(451, 214);
+            this.panel3.Size = new System.Drawing.Size(451, 216);
             this.panel3.TabIndex = 2;
             // 
             // lblProfileName
@@ -143,22 +145,6 @@
             this.lblProfileName.Text = "Name";
             this.lblProfileName.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.lblProfileName.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
-            // 
-            // bunifuLabel1
-            // 
-            this.bunifuLabel1.AutoEllipsis = false;
-            this.bunifuLabel1.CursorType = null;
-            this.bunifuLabel1.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(167)))), ((int)(((byte)(167)))), ((int)(((byte)(167)))));
-            this.bunifuLabel1.Location = new System.Drawing.Point(17, 105);
-            this.bunifuLabel1.Margin = new System.Windows.Forms.Padding(4);
-            this.bunifuLabel1.Name = "bunifuLabel1";
-            this.bunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel1.Size = new System.Drawing.Size(72, 71);
-            this.bunifuLabel1.TabIndex = 9;
-            this.bunifuLabel1.Text = "Phone : \r\nEmail : \r\nAddress : ";
-            this.bunifuLabel1.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.bunifuLabel1.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
             // lblAddress
             // 
@@ -224,6 +210,22 @@
             this.lblProfilePhone.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.lblProfilePhone.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(167)))), ((int)(((byte)(167)))), ((int)(((byte)(167)))));
+            this.label1.Location = new System.Drawing.Point(18, 107);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(84, 69);
+            this.label1.TabIndex = 13;
+            this.label1.Text = "Phone : \r\nEmail : \r\nAddress : \r\n";
+            // 
+            // bunifuElipse1
+            // 
+            this.bunifuElipse1.ElipseRadius = 35;
+            this.bunifuElipse1.TargetControl = this;
+            // 
             // AdminCard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -253,11 +255,12 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel3;
         public Bunifu.UI.WinForms.BunifuLabel lblProfileName;
-        private Bunifu.UI.WinForms.BunifuLabel bunifuLabel1;
         public Bunifu.UI.WinForms.BunifuLabel lblAddress;
         public Bunifu.UI.WinForms.BunifuLabel lblProfileTitle;
         public Bunifu.UI.WinForms.BunifuLabel lblProfileEmail;
         public Bunifu.UI.WinForms.BunifuLabel lblProfilePhone;
         public Bunifu.UI.WinForms.BunifuPictureBox picboxProfilePic;
+        private System.Windows.Forms.Label label1;
+        private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
     }
 }
