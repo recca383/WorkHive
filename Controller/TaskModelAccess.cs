@@ -29,7 +29,7 @@ namespace WorkHive.Controller
                 TaskDescription = "Lorem Ipsum",
                 TaskProgress = 75,
                 TaskStart = new DateTime(2024, 4, 16),
-                Deadline = new DateTime(2024, 5, 9),
+                Deadline = new DateTime(2024, 5, 3),
                 Archived = false
             },
             new TaskModel
@@ -39,7 +39,7 @@ namespace WorkHive.Controller
                 TaskDescription = "Lorem Ipsum",
                 TaskProgress = 100,
                 TaskStart = new DateTime(2024, 4, 16),
-                Deadline = new DateTime(2024, 5, 9),
+                Deadline = new DateTime(2024, 5, 7),
                 Archived = false
             },
             new TaskModel
@@ -49,7 +49,7 @@ namespace WorkHive.Controller
                 TaskDescription = "Lorem Ipsum",
                 TaskProgress = 0,
                 TaskStart = new DateTime(2024, 4, 16),
-                Deadline = new DateTime(2024, 5, 9),
+                Deadline = new DateTime(2024, 5, 7),
                 Archived = true
             },
             new TaskModel
@@ -59,7 +59,7 @@ namespace WorkHive.Controller
                 TaskDescription = "Lorem Ipsum",
                 TaskProgress = 100,
                 TaskStart = new DateTime(2024, 4, 16),
-                Deadline = new DateTime(2024, 5, 9),
+                Deadline = new DateTime(2024, 6, 13),
                 Archived = false
             }
         };
