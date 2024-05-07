@@ -686,10 +686,10 @@
             this.RefreshButton.BorderRadius = 0;
             this.RefreshButton.Image = global::WorkHive.Properties.Resources.refresh;
             this.RefreshButton.IsCircle = false;
-            this.RefreshButton.Location = new System.Drawing.Point(1132, 53);
+            this.RefreshButton.Location = new System.Drawing.Point(1132, 11);
             this.RefreshButton.Margin = new System.Windows.Forms.Padding(4);
             this.RefreshButton.Name = "RefreshButton";
-            this.RefreshButton.Size = new System.Drawing.Size(56, 44);
+            this.RefreshButton.Size = new System.Drawing.Size(37, 44);
             this.RefreshButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.RefreshButton.TabIndex = 5;
             this.RefreshButton.TabStop = false;

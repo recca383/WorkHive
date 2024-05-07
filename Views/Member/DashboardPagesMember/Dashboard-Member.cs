@@ -3,7 +3,11 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Drawing2D;
+using System.IO;
 using System.Linq;
+using System.Reflection;
+using System.Reflection.Emit;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -13,7 +17,9 @@ using WorkHive.Views.Admin;
 using WorkHive.Views.Pages;
 using WorkHive.Model;
 using WorkHive.Views.LandingPage;
-using System.IO;
+using WorkHive.Views.Member;
+using WorkHive.Views.Member.DashboardPagesMember;
+
 
 namespace WorkHive.Views.Member.DashboardPagesMember
 {
@@ -104,6 +110,11 @@ namespace WorkHive.Views.Member.DashboardPagesMember
             {
                 profilepanel.Size = new Size(0, 0);
             }
+        }
+
+        private void ViewPanelMember_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
