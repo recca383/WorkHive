@@ -31,10 +31,10 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Dashboard_Admin));
             this.PnTitleBar = new System.Windows.Forms.Panel();
             this.profilepanel = new System.Windows.Forms.Panel();
+            this.ViewPanel = new System.Windows.Forms.Panel();
             this.Notificationbtn = new System.Windows.Forms.PictureBox();
             this.ProfilePicBox = new WorkHive.Views.CircularPictureBox();
             this.btnMenu = new System.Windows.Forms.Button();
-            this.ViewPanel = new System.Windows.Forms.Panel();
             this.sidebar = new System.Windows.Forms.Panel();
             this.btnDashBoard = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnChats = new Bunifu.Framework.UI.BunifuFlatButton();
@@ -57,13 +57,12 @@
             // 
             // PnTitleBar
             // 
-            this.PnTitleBar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.PnTitleBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(44)))), ((int)(((byte)(49)))));
             this.PnTitleBar.Controls.Add(this.profilepanel);
             this.PnTitleBar.Controls.Add(this.Notificationbtn);
             this.PnTitleBar.Controls.Add(this.ProfilePicBox);
             this.PnTitleBar.Controls.Add(this.btnMenu);
+            this.PnTitleBar.Dock = System.Windows.Forms.DockStyle.Top;
             this.PnTitleBar.Location = new System.Drawing.Point(219, 0);
             this.PnTitleBar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.PnTitleBar.Name = "PnTitleBar";
@@ -78,6 +77,17 @@
             this.profilepanel.Name = "profilepanel";
             this.profilepanel.Size = new System.Drawing.Size(0, 0);
             this.profilepanel.TabIndex = 3;
+            // 
+            // ViewPanel
+            // 
+            this.ViewPanel.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.ViewPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ViewPanel.Location = new System.Drawing.Point(219, 100);
+            this.ViewPanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.ViewPanel.Name = "ViewPanel";
+            this.ViewPanel.Size = new System.Drawing.Size(1360, 737);
+            this.ViewPanel.TabIndex = 9;
+            this.ViewPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.ViewPanel_Paint);
             // 
             // Notificationbtn
             // 
@@ -110,7 +120,7 @@
             this.btnMenu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMenu.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(44)))), ((int)(((byte)(49)))));
             this.btnMenu.Image = ((System.Drawing.Image)(resources.GetObject("btnMenu.Image")));
-            this.btnMenu.Location = new System.Drawing.Point(7, 14);
+            this.btnMenu.Location = new System.Drawing.Point(4, 11);
             this.btnMenu.Margin = new System.Windows.Forms.Padding(4);
             this.btnMenu.Name = "btnMenu";
             this.btnMenu.Size = new System.Drawing.Size(61, 78);
@@ -118,21 +128,8 @@
             this.btnMenu.UseVisualStyleBackColor = true;
             this.btnMenu.Click += new System.EventHandler(this.btnMenu_Click);
             // 
-            // ViewPanel
-            // 
-            this.ViewPanel.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.ViewPanel.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ViewPanel.Location = new System.Drawing.Point(219, 100);
-            this.ViewPanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.ViewPanel.Name = "ViewPanel";
-            this.ViewPanel.Size = new System.Drawing.Size(1360, 737);
-            this.ViewPanel.TabIndex = 9;
-            this.ViewPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.ViewPanel_Paint);
-            // 
             // sidebar
             // 
-            this.sidebar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
             this.sidebar.BackgroundImage = global::WorkHive.Properties.Resources.NEW_Sidebar_BG;
             this.sidebar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.sidebar.Controls.Add(this.btnDashBoard);
@@ -143,6 +140,7 @@
             this.sidebar.Controls.Add(this.btnMembers);
             this.sidebar.Controls.Add(this.btnCalendar);
             this.sidebar.Controls.Add(this.btnEditTasks);
+            this.sidebar.Dock = System.Windows.Forms.DockStyle.Left;
             this.sidebar.Location = new System.Drawing.Point(0, 0);
             this.sidebar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.sidebar.Name = "sidebar";
@@ -153,7 +151,6 @@
             // 
             this.btnDashBoard.Active = true;
             this.btnDashBoard.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(194)))), ((int)(((byte)(1)))));
-            this.btnDashBoard.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnDashBoard.BackColor = System.Drawing.Color.Transparent;
             this.btnDashBoard.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnDashBoard.BorderRadius = 0;
@@ -231,7 +228,6 @@
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(44)))), ((int)(((byte)(49)))));
             this.panel3.Controls.Add(this.pictureBox1);
             this.panel3.Controls.Add(this.pictureBox2);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.Location = new System.Drawing.Point(0, 0);
             this.panel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel3.Name = "panel3";
@@ -240,9 +236,10 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(64, 43);
+            this.pictureBox1.Location = new System.Drawing.Point(71, 43);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(147, 20);
@@ -252,9 +249,8 @@
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(4, 22);
+            this.pictureBox2.Location = new System.Drawing.Point(10, 22);
             this.pictureBox2.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(51, 59);
@@ -304,7 +300,7 @@
             // 
             this.btnLogout.Active = true;
             this.btnLogout.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(194)))), ((int)(((byte)(1)))));
-            this.btnLogout.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnLogout.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.btnLogout.BackColor = System.Drawing.Color.Transparent;
             this.btnLogout.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnLogout.BorderRadius = 0;
