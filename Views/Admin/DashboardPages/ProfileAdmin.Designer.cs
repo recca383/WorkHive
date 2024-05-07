@@ -103,7 +103,7 @@
             this.ProfilePictureADMIN.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.ProfilePictureADMIN.BackColor = System.Drawing.Color.Transparent;
             this.ProfilePictureADMIN.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ProfilePictureADMIN.BackgroundImage")));
-            this.ProfilePictureADMIN.BorderRadius = 0;
+            this.ProfilePictureADMIN.BorderRadius = 20;
             this.ProfilePictureADMIN.Image = ((System.Drawing.Image)(resources.GetObject("ProfilePictureADMIN.Image")));
             this.ProfilePictureADMIN.IsCircle = false;
             this.ProfilePictureADMIN.Location = new System.Drawing.Point(26, 47);
@@ -119,7 +119,7 @@
             // 
             this.btnLogout.Active = false;
             this.btnLogout.Activecolor = System.Drawing.Color.White;
-            this.btnLogout.BackColor = System.Drawing.Color.White;
+            this.btnLogout.BackColor = System.Drawing.Color.Gainsboro;
             this.btnLogout.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnLogout.BorderRadius = 5;
             this.btnLogout.ButtonText = "    Log Out";
@@ -141,9 +141,9 @@
             this.btnLogout.Location = new System.Drawing.Point(0, 386);
             this.btnLogout.Margin = new System.Windows.Forms.Padding(5);
             this.btnLogout.Name = "btnLogout";
-            this.btnLogout.Normalcolor = System.Drawing.Color.White;
+            this.btnLogout.Normalcolor = System.Drawing.Color.Gainsboro;
             this.btnLogout.OnHovercolor = System.Drawing.Color.Red;
-            this.btnLogout.OnHoverTextColor = System.Drawing.Color.Firebrick;
+            this.btnLogout.OnHoverTextColor = System.Drawing.Color.Black;
             this.btnLogout.selected = false;
             this.btnLogout.Size = new System.Drawing.Size(383, 56);
             this.btnLogout.TabIndex = 5;
@@ -157,7 +157,7 @@
             // 
             this.MessageBtn.Active = false;
             this.MessageBtn.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.MessageBtn.BackColor = System.Drawing.Color.White;
+            this.MessageBtn.BackColor = System.Drawing.Color.Gainsboro;
             this.MessageBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.MessageBtn.BorderRadius = 0;
             this.MessageBtn.ButtonText = "     Message";
@@ -179,7 +179,7 @@
             this.MessageBtn.Location = new System.Drawing.Point(0, 305);
             this.MessageBtn.Margin = new System.Windows.Forms.Padding(5);
             this.MessageBtn.Name = "MessageBtn";
-            this.MessageBtn.Normalcolor = System.Drawing.Color.White;
+            this.MessageBtn.Normalcolor = System.Drawing.Color.Gainsboro;
             this.MessageBtn.OnHovercolor = System.Drawing.Color.Gold;
             this.MessageBtn.OnHoverTextColor = System.Drawing.Color.Firebrick;
             this.MessageBtn.selected = false;
@@ -194,7 +194,7 @@
             // 
             this.ResetPassBtn.Active = false;
             this.ResetPassBtn.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.ResetPassBtn.BackColor = System.Drawing.Color.White;
+            this.ResetPassBtn.BackColor = System.Drawing.Color.Gainsboro;
             this.ResetPassBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ResetPassBtn.BorderRadius = 0;
             this.ResetPassBtn.ButtonText = "    Reset Password";
@@ -215,7 +215,7 @@
             this.ResetPassBtn.Location = new System.Drawing.Point(0, 244);
             this.ResetPassBtn.Margin = new System.Windows.Forms.Padding(5);
             this.ResetPassBtn.Name = "ResetPassBtn";
-            this.ResetPassBtn.Normalcolor = System.Drawing.Color.White;
+            this.ResetPassBtn.Normalcolor = System.Drawing.Color.Gainsboro;
             this.ResetPassBtn.OnHovercolor = System.Drawing.Color.Gold;
             this.ResetPassBtn.OnHoverTextColor = System.Drawing.Color.Firebrick;
             this.ResetPassBtn.selected = false;
@@ -231,7 +231,7 @@
             // 
             this.ProfileBtn.Active = false;
             this.ProfileBtn.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.ProfileBtn.BackColor = System.Drawing.Color.White;
+            this.ProfileBtn.BackColor = System.Drawing.Color.Gainsboro;
             this.ProfileBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ProfileBtn.BorderRadius = 0;
             this.ProfileBtn.ButtonText = "   Profile";
@@ -252,7 +252,7 @@
             this.ProfileBtn.Location = new System.Drawing.Point(0, 181);
             this.ProfileBtn.Margin = new System.Windows.Forms.Padding(5);
             this.ProfileBtn.Name = "ProfileBtn";
-            this.ProfileBtn.Normalcolor = System.Drawing.Color.White;
+            this.ProfileBtn.Normalcolor = System.Drawing.Color.Gainsboro;
             this.ProfileBtn.OnHovercolor = System.Drawing.Color.Gold;
             this.ProfileBtn.OnHoverTextColor = System.Drawing.Color.Firebrick;
             this.ProfileBtn.selected = false;
@@ -276,18 +276,17 @@
             // 
             // ProfileAdmin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.BackColor = System.Drawing.Color.White;
-            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.AutoValidate = System.Windows.Forms.AutoValidate.Disable;
+            this.BackColor = System.Drawing.Color.Gainsboro;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.Controls.Add(this.label2);
             this.Controls.Add(this.pnProfileBoxBG);
             this.Controls.Add(this.btnLogout);
             this.Controls.Add(this.MessageBtn);
             this.Controls.Add(this.ResetPassBtn);
             this.Controls.Add(this.ProfileBtn);
-            this.DoubleBuffered = true;
             this.Location = new System.Drawing.Point(950, 20);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "ProfileAdmin";

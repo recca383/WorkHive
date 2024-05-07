@@ -10,26 +10,11 @@ using System.Windows.Forms;
 
 namespace WorkHive.Views.LandingPage.LandingPagePages
 {
-    public partial class Messageboxes : UserControl
+    public partial class MessageBoxes : Form
     {
-        public Messageboxes()
+        public MessageBoxes()
         {
             InitializeComponent();
-        }
-
-        private void OkayButton_Click(object sender, EventArgs e)
-        {
-            this.Parent.Controls.Remove(this);
-        }
-
-        private void bunifuFlatButton2_Click(object sender, EventArgs e)
-        {
-            this.Parent.Controls.Remove(this);
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
         }
     }
 }
