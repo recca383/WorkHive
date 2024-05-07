@@ -40,7 +40,8 @@ namespace WorkHive.Views.Admin.DashboardPages
                 TaskDescription = EditTaskDescriptiontxt.Text
 
             }, selectedtask.TaskID);
-            
+            MessageBox.Show("Edit Task Complete!!");
+            this.Parent.Controls.Remove(this);
         }
 
         private void EditTaskExitbtn_Click(object sender, EventArgs e)

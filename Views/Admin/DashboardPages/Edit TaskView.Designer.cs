@@ -68,7 +68,7 @@
             this.EditTask.Location = new System.Drawing.Point(15, 11);
             this.EditTask.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.EditTask.Name = "EditTask";
-            this.EditTask.Size = new System.Drawing.Size(234, 51);
+            this.EditTask.Size = new System.Drawing.Size(190, 39);
             this.EditTask.TabIndex = 9;
             this.EditTask.Text = "Edit Tasks";
             // 
@@ -111,9 +111,9 @@
             this.AddTaskPanel.ForeColor = System.Drawing.Color.Transparent;
             this.AddTaskPanel.Location = new System.Drawing.Point(232, 27);
             this.AddTaskPanel.Name = "AddTaskPanel";
-            this.AddTaskPanel.Size = new System.Drawing.Size(0, 0);
+            this.AddTaskPanel.Size = new System.Drawing.Size(100, 100);
             this.AddTaskPanel.TabIndex = 17;
-
+            this.AddTaskPanel.ControlRemoved += new System.Windows.Forms.ControlEventHandler(this.AddTaskPanel_ControlRemoved);
             // 
             // btnAddtasks
             // 
@@ -139,7 +139,7 @@
             this.btnAddtasks.ImeMode = System.Windows.Forms.ImeMode.On;
             this.btnAddtasks.IsTab = false;
             this.btnAddtasks.Location = new System.Drawing.Point(874, 15);
-            this.btnAddtasks.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAddtasks.Margin = new System.Windows.Forms.Padding(4);
             this.btnAddtasks.Name = "btnAddtasks";
             this.btnAddtasks.Normalcolor = System.Drawing.Color.Transparent;
             this.btnAddtasks.OnHovercolor = System.Drawing.Color.Transparent;
@@ -172,7 +172,7 @@
             this.EditScrollBar1.DurationBeforeShrink = 2000;
             this.EditScrollBar1.LargeChange = 10;
             this.EditScrollBar1.Location = new System.Drawing.Point(914, 70);
-            this.EditScrollBar1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.EditScrollBar1.Margin = new System.Windows.Forms.Padding(4);
             this.EditScrollBar1.Maximum = 100;
             this.EditScrollBar1.Minimum = 0;
             this.EditScrollBar1.MinimumThumbLength = 18;
