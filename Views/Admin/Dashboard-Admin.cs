@@ -8,6 +8,7 @@ using System.IO;
 using System.Linq;
 using System.Reflection;
 using System.Reflection.Emit;
+using System.Security.Policy;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -17,31 +18,13 @@ using WorkHive.Views.Admin;
 using WorkHive.Views.Admin.DashboardPages;
 using WorkHive.Views.LandingPage;
 using WorkHive.Views.Pages;
+using static System.Net.WebRequestMethods;
 
 namespace WorkHive.Views
 {
 
     public partial class Dashboard_Admin : Form
     {
-
-        private Size DashBoardAdminOriginalSize;
-        private Rectangle recViewPanel;
-        private Rectangle recPnTitleBar;
-        private Rectangle recbtnMenu;
-        private Rectangle recNotificationbtn;
-        private Rectangle recProfilePicBox;
-        private Rectangle recsidebar;
-        private Rectangle recpanel3;
-        private Rectangle recpictureBox1;
-        private Rectangle recpictureBox2;
-        private Rectangle recbtnLogout;
-        private Rectangle recbtnChats;
-        private Rectangle recbtnCalendar;
-        private Rectangle recbtnEditTasks;
-        private Rectangle recbtnTasks;
-        private Rectangle recbtnMembers;
-        private Rectangle recbtnDashBoard;
-
 
         readonly MemberModel CurrentUser;
 
@@ -52,60 +35,10 @@ namespace WorkHive.Views
             InitializeComponent();
             Initialize_Controls_According_To_User();
             Initialize_Navigation_Controls();
-            this.Resize += Dashboard_Admin_Resize; 
-            DashBoardAdminOriginalSize = this.Size;
-            recViewPanel = new Rectangle(ViewPanel.Location, ViewPanel.Size);
-            recPnTitleBar = new Rectangle(PnTitleBar.Location, PnTitleBar.Size);
-            recbtnMenu = new Rectangle(btnMenu.Location, btnMenu.Size);
-            recNotificationbtn = new Rectangle(Notificationbtn.Location, Notificationbtn.Size);
-            recProfilePicBox = new Rectangle(ProfilePicBox.Location, ProfilePicBox.Size);
-            recsidebar = new Rectangle(sidebar.Location, sidebar.Size);
-            recpanel3 = new Rectangle(recpanel3.Location, panel3.Size);
-            recpictureBox1 = new Rectangle(pictureBox1.Location, pictureBox1.Size);
-            recpictureBox2 = new Rectangle(pictureBox2.Location, pictureBox2.Size);
-            recbtnLogout = new Rectangle(btnLogout.Location, btnLogout.Size);
-            recbtnChats = new Rectangle(btnChats.Location, btnChats.Size);
-            recbtnCalendar = new Rectangle(btnCalendar.Location, btnCalendar.Size);
-            recbtnEditTasks = new Rectangle(btnEditTasks.Location, btnEditTasks.Size);
-            recbtnTasks = new Rectangle(btnTasks.Location,btnTasks.Size);
-            recbtnMembers = new Rectangle(btnMembers.Location, btnMembers.Size);
-            recbtnDashBoard = new Rectangle(btnDashBoard.Location, btnDashBoard.Size);
+            
         }
 
-        private void Dashboard_Admin_Resize(object sender, EventArgs e)
-        {
-            resize_Control(ViewPanel, recViewPanel);
-            resize_Control(PnTitleBar, recPnTitleBar);
-            resize_Control(btnMenu, recbtnMenu);
-            resize_Control(Notificationbtn, recNotificationbtn);
-            resize_Control(ProfilePicBox, recProfilePicBox);
-            resize_Control(sidebar, recsidebar);
-            resize_Control(panel3, recpanel3);
-            resize_Control(pictureBox1, recpictureBox1);
-            resize_Control(pictureBox2, recpictureBox2);
-            resize_Control(btnLogout, recbtnLogout);
-            resize_Control(btnChats, recbtnChats);
-            resize_Control(btnCalendar, recbtnCalendar);
-            resize_Control(btnEditTasks, recbtnEditTasks);
-            resize_Control(btnTasks, recbtnTasks);
-            resize_Control(btnMembers, recbtnMembers);
-            resize_Control(btnDashBoard, recbtnDashBoard);
-
-        }
-        private void resize_Control(Control c, Rectangle r)
-        {
-            float xRatio = (float)(this.Width) / (float)(DashBoardAdminOriginalSize.Width);
-            float yRatio = (float)(this.Height) / (float)(DashBoardAdminOriginalSize.Height);
-            int newX = (int)(r.X * xRatio);
-            int newY = (int)(r.Y * yRatio);
-
-            int newWidth = (int)(r.Width * xRatio);
-            int newHeight = (int)(r.Height * yRatio);
-
-            c.Location = new Point(newX, newY);
-            c.Size = new Size(newWidth, newHeight);
-
-        }
+             
         private void Initialize_Controls_According_To_User()
         {
             var parent = Directory.GetParent(Directory.GetCurrentDirectory()).FullName;
@@ -189,7 +122,7 @@ namespace WorkHive.Views
                 foreach (Button menubutton in sidebar.Controls.OfType<Button>())
                 {
                     menubutton.Text = "  " + menubutton.Tag.ToString();
-                    menubutton.ImageAlign = ContentAlignment.MiddleCenter;
+                    menubutton.ImageAlign = ContentAlignment.MiddleLeft;
 
                 }
 

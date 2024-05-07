@@ -37,7 +37,7 @@ namespace WorkHive.Views.Pages
             currentUser = CurrentUser;
             InitializeComponent();
             RefreshElements();
-            this.Resize += DashboardView_Resize; 
+            this.Resize += DashboardView_Resize;
             DashBoardViewOriginalSize = this.Size;
             recDashboardlbl = new Rectangle(Dashboardlbl.Location, Dashboardlbl.Size);
             recpanel1 = new Rectangle(panel1.Location, panel1.Size);
