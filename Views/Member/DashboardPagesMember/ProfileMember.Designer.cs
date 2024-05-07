@@ -33,17 +33,14 @@
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.label1 = new System.Windows.Forms.Label();
             this.pnProfileBoxBG = new System.Windows.Forms.Panel();
-            this.bunifuLabel1 = new Bunifu.UI.WinForms.BunifuLabel();
+            this.lblProfileName = new Bunifu.UI.WinForms.BunifuLabel();
+            this.lblPosition = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuLabel2 = new Bunifu.UI.WinForms.BunifuLabel();
             this.ProfilePictureADMIN = new Bunifu.UI.WinForms.BunifuPictureBox();
-            this.Positionlbl = new Bunifu.UI.WinForms.BunifuLabel();
-            this.AdminName = new Bunifu.UI.WinForms.BunifuLabel();
             this.btnLogout = new Bunifu.Framework.UI.BunifuFlatButton();
             this.MessageBtn = new Bunifu.Framework.UI.BunifuFlatButton();
             this.ResetPassBtn = new Bunifu.Framework.UI.BunifuFlatButton();
             this.ProfileBtn = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.bunifuLabel3 = new Bunifu.UI.WinForms.BunifuLabel();
-            this.bunifuLabel4 = new Bunifu.UI.WinForms.BunifuLabel();
             this.pnProfileBoxBG.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ProfilePictureADMIN)).BeginInit();
             this.SuspendLayout();
@@ -57,9 +54,10 @@
             // 
             this.label1.BackColor = System.Drawing.Color.Orange;
             this.label1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label1.Location = new System.Drawing.Point(0, 375);
+            this.label1.Location = new System.Drawing.Point(0, 305);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(383, 4);
+            this.label1.Size = new System.Drawing.Size(287, 3);
             this.label1.TabIndex = 19;
             this.label1.Text = "                                             ";
             // 
@@ -68,38 +66,49 @@
             this.pnProfileBoxBG.BackColor = System.Drawing.Color.DarkOrange;
             this.pnProfileBoxBG.BackgroundImage = global::WorkHive.Properties.Resources.Rectangle_95__1_;
             this.pnProfileBoxBG.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.pnProfileBoxBG.Controls.Add(this.bunifuLabel3);
-            this.pnProfileBoxBG.Controls.Add(this.bunifuLabel4);
-            this.pnProfileBoxBG.Controls.Add(this.bunifuLabel1);
+            this.pnProfileBoxBG.Controls.Add(this.lblProfileName);
+            this.pnProfileBoxBG.Controls.Add(this.lblPosition);
             this.pnProfileBoxBG.Controls.Add(this.bunifuLabel2);
             this.pnProfileBoxBG.Controls.Add(this.ProfilePictureADMIN);
-            this.pnProfileBoxBG.Controls.Add(this.Positionlbl);
-            this.pnProfileBoxBG.Controls.Add(this.AdminName);
             this.pnProfileBoxBG.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnProfileBoxBG.Location = new System.Drawing.Point(0, 0);
             this.pnProfileBoxBG.Margin = new System.Windows.Forms.Padding(2);
-            this.pnProfileBoxBG.MinimumSize = new System.Drawing.Size(383, 180);
+            this.pnProfileBoxBG.MinimumSize = new System.Drawing.Size(287, 146);
             this.pnProfileBoxBG.Name = "pnProfileBoxBG";
-            this.pnProfileBoxBG.Size = new System.Drawing.Size(383, 180);
+            this.pnProfileBoxBG.Size = new System.Drawing.Size(287, 146);
             this.pnProfileBoxBG.TabIndex = 20;
             // 
-            // bunifuLabel1
+            // lblProfileName
             // 
-            this.bunifuLabel1.AutoEllipsis = false;
-            this.bunifuLabel1.AutoSize = false;
-            this.bunifuLabel1.BackColor = System.Drawing.Color.White;
-            this.bunifuLabel1.CursorType = null;
-            this.bunifuLabel1.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuLabel1.ForeColor = System.Drawing.Color.Black;
-            this.bunifuLabel1.Location = new System.Drawing.Point(168, 102);
-            this.bunifuLabel1.Margin = new System.Windows.Forms.Padding(4);
-            this.bunifuLabel1.Name = "bunifuLabel1";
-            this.bunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel1.Size = new System.Drawing.Size(77, 25);
-            this.bunifuLabel1.TabIndex = 9;
-            this.bunifuLabel1.Text = "MEMBER";
-            this.bunifuLabel1.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.bunifuLabel1.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            this.lblProfileName.AutoEllipsis = false;
+            this.lblProfileName.CursorType = null;
+            this.lblProfileName.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblProfileName.ForeColor = System.Drawing.Color.White;
+            this.lblProfileName.Location = new System.Drawing.Point(117, 52);
+            this.lblProfileName.Name = "lblProfileName";
+            this.lblProfileName.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lblProfileName.Size = new System.Drawing.Size(140, 32);
+            this.lblProfileName.TabIndex = 10;
+            this.lblProfileName.Text = "Wincel Crusit";
+            this.lblProfileName.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.lblProfileName.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            // 
+            // lblPosition
+            // 
+            this.lblPosition.AutoEllipsis = false;
+            this.lblPosition.AutoSize = false;
+            this.lblPosition.BackColor = System.Drawing.Color.White;
+            this.lblPosition.CursorType = null;
+            this.lblPosition.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPosition.ForeColor = System.Drawing.Color.Black;
+            this.lblPosition.Location = new System.Drawing.Point(126, 83);
+            this.lblPosition.Name = "lblPosition";
+            this.lblPosition.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lblPosition.Size = new System.Drawing.Size(58, 20);
+            this.lblPosition.TabIndex = 9;
+            this.lblPosition.Text = "MEMBER";
+            this.lblPosition.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.lblPosition.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
             // bunifuLabel2
             // 
@@ -107,11 +116,10 @@
             this.bunifuLabel2.CursorType = null;
             this.bunifuLabel2.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuLabel2.ForeColor = System.Drawing.Color.White;
-            this.bunifuLabel2.Location = new System.Drawing.Point(156, 64);
-            this.bunifuLabel2.Margin = new System.Windows.Forms.Padding(4);
+            this.bunifuLabel2.Location = new System.Drawing.Point(117, 52);
             this.bunifuLabel2.Name = "bunifuLabel2";
             this.bunifuLabel2.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel2.Size = new System.Drawing.Size(172, 39);
+            this.bunifuLabel2.Size = new System.Drawing.Size(140, 32);
             this.bunifuLabel2.TabIndex = 8;
             this.bunifuLabel2.Text = "Wincel Crusit";
             this.bunifuLabel2.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -126,48 +134,13 @@
             this.ProfilePictureADMIN.BorderRadius = 0;
             this.ProfilePictureADMIN.Image = ((System.Drawing.Image)(resources.GetObject("ProfilePictureADMIN.Image")));
             this.ProfilePictureADMIN.IsCircle = false;
-            this.ProfilePictureADMIN.Location = new System.Drawing.Point(26, 47);
-            this.ProfilePictureADMIN.Margin = new System.Windows.Forms.Padding(4);
+            this.ProfilePictureADMIN.Location = new System.Drawing.Point(20, 38);
             this.ProfilePictureADMIN.Name = "ProfilePictureADMIN";
-            this.ProfilePictureADMIN.Size = new System.Drawing.Size(101, 107);
+            this.ProfilePictureADMIN.Size = new System.Drawing.Size(76, 87);
             this.ProfilePictureADMIN.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.ProfilePictureADMIN.TabIndex = 1;
             this.ProfilePictureADMIN.TabStop = false;
             this.ProfilePictureADMIN.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Custom;
-            // 
-            // Positionlbl
-            // 
-            this.Positionlbl.AutoEllipsis = false;
-            this.Positionlbl.AutoSize = false;
-            this.Positionlbl.BackColor = System.Drawing.Color.White;
-            this.Positionlbl.CursorType = null;
-            this.Positionlbl.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Positionlbl.ForeColor = System.Drawing.Color.Black;
-            this.Positionlbl.Location = new System.Drawing.Point(177, 111);
-            this.Positionlbl.Margin = new System.Windows.Forms.Padding(4);
-            this.Positionlbl.Name = "Positionlbl";
-            this.Positionlbl.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.Positionlbl.Size = new System.Drawing.Size(172, 25);
-            this.Positionlbl.TabIndex = 7;
-            this.Positionlbl.Text = "Member";
-            this.Positionlbl.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.Positionlbl.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
-            // 
-            // AdminName
-            // 
-            this.AdminName.AutoEllipsis = false;
-            this.AdminName.CursorType = null;
-            this.AdminName.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AdminName.ForeColor = System.Drawing.Color.White;
-            this.AdminName.Location = new System.Drawing.Point(177, 64);
-            this.AdminName.Margin = new System.Windows.Forms.Padding(4);
-            this.AdminName.Name = "AdminName";
-            this.AdminName.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.AdminName.Size = new System.Drawing.Size(172, 39);
-            this.AdminName.TabIndex = 6;
-            this.AdminName.Text = "Wincel Crusit";
-            this.AdminName.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.AdminName.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
             // btnLogout
             // 
@@ -192,19 +165,20 @@
             this.btnLogout.IconZoom = 95D;
             this.btnLogout.ImeMode = System.Windows.Forms.ImeMode.Off;
             this.btnLogout.IsTab = false;
-            this.btnLogout.Location = new System.Drawing.Point(0, 386);
-            this.btnLogout.Margin = new System.Windows.Forms.Padding(5);
+            this.btnLogout.Location = new System.Drawing.Point(0, 314);
+            this.btnLogout.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnLogout.Name = "btnLogout";
             this.btnLogout.Normalcolor = System.Drawing.Color.White;
             this.btnLogout.OnHovercolor = System.Drawing.Color.Transparent;
             this.btnLogout.OnHoverTextColor = System.Drawing.Color.Firebrick;
             this.btnLogout.selected = false;
-            this.btnLogout.Size = new System.Drawing.Size(383, 56);
+            this.btnLogout.Size = new System.Drawing.Size(287, 46);
             this.btnLogout.TabIndex = 18;
             this.btnLogout.Text = "    Log Out";
             this.btnLogout.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnLogout.Textcolor = System.Drawing.Color.Black;
             this.btnLogout.TextFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
             // 
             // MessageBtn
             // 
@@ -229,14 +203,14 @@
             this.MessageBtn.IconZoom = 75D;
             this.MessageBtn.ImeMode = System.Windows.Forms.ImeMode.Off;
             this.MessageBtn.IsTab = false;
-            this.MessageBtn.Location = new System.Drawing.Point(0, 305);
-            this.MessageBtn.Margin = new System.Windows.Forms.Padding(5);
+            this.MessageBtn.Location = new System.Drawing.Point(0, 248);
+            this.MessageBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MessageBtn.Name = "MessageBtn";
             this.MessageBtn.Normalcolor = System.Drawing.Color.White;
             this.MessageBtn.OnHovercolor = System.Drawing.Color.Transparent;
             this.MessageBtn.OnHoverTextColor = System.Drawing.Color.Firebrick;
             this.MessageBtn.selected = false;
-            this.MessageBtn.Size = new System.Drawing.Size(383, 56);
+            this.MessageBtn.Size = new System.Drawing.Size(287, 46);
             this.MessageBtn.TabIndex = 17;
             this.MessageBtn.Text = "     Message";
             this.MessageBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -265,19 +239,20 @@
             this.ResetPassBtn.IconVisible = true;
             this.ResetPassBtn.IconZoom = 76D;
             this.ResetPassBtn.IsTab = false;
-            this.ResetPassBtn.Location = new System.Drawing.Point(0, 244);
-            this.ResetPassBtn.Margin = new System.Windows.Forms.Padding(5);
+            this.ResetPassBtn.Location = new System.Drawing.Point(0, 198);
+            this.ResetPassBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ResetPassBtn.Name = "ResetPassBtn";
             this.ResetPassBtn.Normalcolor = System.Drawing.Color.White;
             this.ResetPassBtn.OnHovercolor = System.Drawing.Color.Transparent;
             this.ResetPassBtn.OnHoverTextColor = System.Drawing.Color.Firebrick;
             this.ResetPassBtn.selected = false;
-            this.ResetPassBtn.Size = new System.Drawing.Size(383, 56);
+            this.ResetPassBtn.Size = new System.Drawing.Size(287, 46);
             this.ResetPassBtn.TabIndex = 16;
             this.ResetPassBtn.Text = "    Reset Password";
             this.ResetPassBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.ResetPassBtn.Textcolor = System.Drawing.Color.Black;
             this.ResetPassBtn.TextFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ResetPassBtn.Click += new System.EventHandler(this.ResetPassBtn_Click);
             // 
             // ProfileBtn
             // 
@@ -301,57 +276,24 @@
             this.ProfileBtn.IconVisible = true;
             this.ProfileBtn.IconZoom = 94D;
             this.ProfileBtn.IsTab = false;
-            this.ProfileBtn.Location = new System.Drawing.Point(0, 181);
-            this.ProfileBtn.Margin = new System.Windows.Forms.Padding(5);
+            this.ProfileBtn.Location = new System.Drawing.Point(0, 147);
+            this.ProfileBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ProfileBtn.Name = "ProfileBtn";
             this.ProfileBtn.Normalcolor = System.Drawing.Color.White;
             this.ProfileBtn.OnHovercolor = System.Drawing.Color.Transparent;
             this.ProfileBtn.OnHoverTextColor = System.Drawing.Color.Firebrick;
             this.ProfileBtn.selected = false;
-            this.ProfileBtn.Size = new System.Drawing.Size(383, 56);
+            this.ProfileBtn.Size = new System.Drawing.Size(287, 46);
             this.ProfileBtn.TabIndex = 15;
             this.ProfileBtn.Text = "   Profile";
             this.ProfileBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.ProfileBtn.Textcolor = System.Drawing.Color.Black;
             this.ProfileBtn.TextFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            // 
-            // bunifuLabel3
-            // 
-            this.bunifuLabel3.AutoEllipsis = false;
-            this.bunifuLabel3.AutoSize = false;
-            this.bunifuLabel3.BackColor = System.Drawing.Color.White;
-            this.bunifuLabel3.CursorType = null;
-            this.bunifuLabel3.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuLabel3.ForeColor = System.Drawing.Color.Black;
-            this.bunifuLabel3.Location = new System.Drawing.Point(168, 102);
-            this.bunifuLabel3.Margin = new System.Windows.Forms.Padding(4);
-            this.bunifuLabel3.Name = "bunifuLabel3";
-            this.bunifuLabel3.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel3.Size = new System.Drawing.Size(64, 25);
-            this.bunifuLabel3.TabIndex = 11;
-            this.bunifuLabel3.Text = "ADMIN";
-            this.bunifuLabel3.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.bunifuLabel3.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
-            // 
-            // bunifuLabel4
-            // 
-            this.bunifuLabel4.AutoEllipsis = false;
-            this.bunifuLabel4.CursorType = null;
-            this.bunifuLabel4.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuLabel4.ForeColor = System.Drawing.Color.White;
-            this.bunifuLabel4.Location = new System.Drawing.Point(156, 64);
-            this.bunifuLabel4.Margin = new System.Windows.Forms.Padding(4);
-            this.bunifuLabel4.Name = "bunifuLabel4";
-            this.bunifuLabel4.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel4.Size = new System.Drawing.Size(172, 39);
-            this.bunifuLabel4.TabIndex = 10;
-            this.bunifuLabel4.Text = "Wincel Crusit";
-            this.bunifuLabel4.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.bunifuLabel4.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            this.ProfileBtn.Click += new System.EventHandler(this.ProfileBtn_Click);
             // 
             // ProfileMember
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
@@ -362,8 +304,9 @@
             this.Controls.Add(this.ResetPassBtn);
             this.Controls.Add(this.ProfileBtn);
             this.DoubleBuffered = true;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "ProfileMember";
-            this.Size = new System.Drawing.Size(383, 465);
+            this.Size = new System.Drawing.Size(287, 378);
             this.pnProfileBoxBG.ResumeLayout(false);
             this.pnProfileBoxBG.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ProfilePictureADMIN)).EndInit();
@@ -381,11 +324,8 @@
         private Bunifu.Framework.UI.BunifuFlatButton ProfileBtn;
         private System.Windows.Forms.Panel pnProfileBoxBG;
         private Bunifu.UI.WinForms.BunifuPictureBox ProfilePictureADMIN;
-        private Bunifu.UI.WinForms.BunifuLabel Positionlbl;
-        private Bunifu.UI.WinForms.BunifuLabel AdminName;
-        private Bunifu.UI.WinForms.BunifuLabel bunifuLabel1;
+        private Bunifu.UI.WinForms.BunifuLabel lblPosition;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel2;
-        private Bunifu.UI.WinForms.BunifuLabel bunifuLabel3;
-        private Bunifu.UI.WinForms.BunifuLabel bunifuLabel4;
+        private Bunifu.UI.WinForms.BunifuLabel lblProfileName;
     }
 }

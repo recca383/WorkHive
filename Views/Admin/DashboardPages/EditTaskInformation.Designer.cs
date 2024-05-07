@@ -166,7 +166,7 @@
             this.ArchivedCheckbox.CheckedOnColor = System.Drawing.Color.Gold;
             this.ArchivedCheckbox.ForeColor = System.Drawing.Color.White;
             this.ArchivedCheckbox.Location = new System.Drawing.Point(420, 368);
-            this.ArchivedCheckbox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ArchivedCheckbox.Margin = new System.Windows.Forms.Padding(4);
             this.ArchivedCheckbox.Name = "ArchivedCheckbox";
             this.ArchivedCheckbox.Size = new System.Drawing.Size(20, 20);
             this.ArchivedCheckbox.TabIndex = 23;
@@ -196,7 +196,7 @@
             this.EditTaskSubmitbtn.IconZoom = 90D;
             this.EditTaskSubmitbtn.IsTab = false;
             this.EditTaskSubmitbtn.Location = new System.Drawing.Point(350, 550);
-            this.EditTaskSubmitbtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.EditTaskSubmitbtn.Margin = new System.Windows.Forms.Padding(4);
             this.EditTaskSubmitbtn.Name = "EditTaskSubmitbtn";
             this.EditTaskSubmitbtn.Normalcolor = System.Drawing.Color.Transparent;
             this.EditTaskSubmitbtn.OnHovercolor = System.Drawing.Color.Red;
@@ -238,7 +238,7 @@
             this.EditTaskDescriptiontxt.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.EditTaskDescriptiontxt.Lines = new string[0];
             this.EditTaskDescriptiontxt.Location = new System.Drawing.Point(52, 390);
-            this.EditTaskDescriptiontxt.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.EditTaskDescriptiontxt.Margin = new System.Windows.Forms.Padding(2);
             this.EditTaskDescriptiontxt.MaxLength = 32767;
             this.EditTaskDescriptiontxt.MinimumSize = new System.Drawing.Size(75, 28);
             this.EditTaskDescriptiontxt.Modified = false;
@@ -302,7 +302,7 @@
             this.EditDatePickerDeadline.IconColor = System.Drawing.Color.Gold;
             this.EditDatePickerDeadline.IconLocation = Bunifu.UI.WinForms.BunifuDatePicker.Indicator.Left;
             this.EditDatePickerDeadline.Location = new System.Drawing.Point(52, 305);
-            this.EditDatePickerDeadline.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.EditDatePickerDeadline.Margin = new System.Windows.Forms.Padding(2);
             this.EditDatePickerDeadline.MinimumSize = new System.Drawing.Size(229, 46);
             this.EditDatePickerDeadline.Name = "EditDatePickerDeadline";
             this.EditDatePickerDeadline.ShowCheckBox = true;
@@ -338,7 +338,7 @@
             this.EditTaskNametxt.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.EditTaskNametxt.Lines = new string[0];
             this.EditTaskNametxt.Location = new System.Drawing.Point(52, 119);
-            this.EditTaskNametxt.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.EditTaskNametxt.Margin = new System.Windows.Forms.Padding(2);
             this.EditTaskNametxt.MaxLength = 32767;
             this.EditTaskNametxt.MinimumSize = new System.Drawing.Size(75, 28);
             this.EditTaskNametxt.Modified = false;
@@ -407,7 +407,7 @@
             this.EditTaskExitbtn.IconZoom = 90D;
             this.EditTaskExitbtn.IsTab = false;
             this.EditTaskExitbtn.Location = new System.Drawing.Point(447, 17);
-            this.EditTaskExitbtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.EditTaskExitbtn.Margin = new System.Windows.Forms.Padding(4);
             this.EditTaskExitbtn.Name = "EditTaskExitbtn";
             this.EditTaskExitbtn.Normalcolor = System.Drawing.Color.Transparent;
             this.EditTaskExitbtn.OnHovercolor = System.Drawing.Color.Transparent;
@@ -419,6 +419,7 @@
             this.EditTaskExitbtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.EditTaskExitbtn.Textcolor = System.Drawing.Color.White;
             this.EditTaskExitbtn.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EditTaskExitbtn.Click += new System.EventHandler(this.EditTaskExitbtn_Click);
             // 
             // EditTaskInformation
             // 
@@ -437,7 +438,7 @@
             this.Controls.Add(this.EditDatePickerDeadline);
             this.Controls.Add(this.EditTaskNametxt);
             this.Controls.Add(this.EditTaskExitbtn);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "EditTaskInformation";
             this.Size = new System.Drawing.Size(500, 622);
             this.ResumeLayout(false);

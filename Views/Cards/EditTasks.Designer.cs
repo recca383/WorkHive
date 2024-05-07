@@ -36,13 +36,13 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.eDIT3 = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.txtID = new System.Windows.Forms.Label();
             this.EditFlatButton = new Bunifu.Framework.UI.BunifuFlatButton();
             this.eDITBox2 = new System.Windows.Forms.PictureBox();
             this.lblEditTask_Title = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.lblEditTask_Date = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.EditTaskProgress = new Bunifu.UI.Winforms.BunifuProgressBar();
             this.EditArchived = new Bunifu.Framework.UI.BunifuCheckbox();
-            this.txtID = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.EditpictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -61,7 +61,7 @@
             this.EditpictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.EditpictureBox1.Image = global::WorkHive.Properties.Resources.Tasks_Cards_P1;
             this.EditpictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.EditpictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.EditpictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.EditpictureBox1.Name = "EditpictureBox1";
             this.EditpictureBox1.Size = new System.Drawing.Size(88, 135);
             this.EditpictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -73,7 +73,7 @@
             this.panel1.Controls.Add(this.EditpictureBox1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(88, 135);
             this.panel1.TabIndex = 16;
@@ -92,7 +92,7 @@
             // 
             this.eDIT3.Image = global::WorkHive.Properties.Resources.Tasks_Cards_TOP;
             this.eDIT3.Location = new System.Drawing.Point(0, 0);
-            this.eDIT3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.eDIT3.Margin = new System.Windows.Forms.Padding(2);
             this.eDIT3.Name = "eDIT3";
             this.eDIT3.Size = new System.Drawing.Size(396, 32);
             this.eDIT3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -114,6 +114,16 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(772, 102);
             this.panel3.TabIndex = 18;
+            // 
+            // txtID
+            // 
+            this.txtID.AutoSize = true;
+            this.txtID.Location = new System.Drawing.Point(331, 43);
+            this.txtID.Name = "txtID";
+            this.txtID.Size = new System.Drawing.Size(35, 13);
+            this.txtID.TabIndex = 15;
+            this.txtID.Text = "label1";
+            this.txtID.Visible = false;
             // 
             // EditFlatButton
             // 
@@ -149,13 +159,13 @@
             this.EditFlatButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.EditFlatButton.Textcolor = System.Drawing.Color.White;
             this.EditFlatButton.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-
+            this.EditFlatButton.Click += new System.EventHandler(this.EditFlatButton_Click);
             // 
             // eDITBox2
             // 
             this.eDITBox2.Image = global::WorkHive.Properties.Resources.Tasks_Cards_P2;
             this.eDITBox2.Location = new System.Drawing.Point(668, 78);
-            this.eDITBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.eDITBox2.Margin = new System.Windows.Forms.Padding(2);
             this.eDITBox2.Name = "eDITBox2";
             this.eDITBox2.Size = new System.Drawing.Size(139, 29);
             this.eDITBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -191,7 +201,7 @@
             this.EditTaskProgress.BorderRadius = 5;
             this.EditTaskProgress.BorderThickness = 2;
             this.EditTaskProgress.Location = new System.Drawing.Point(8, 68);
-            this.EditTaskProgress.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.EditTaskProgress.Margin = new System.Windows.Forms.Padding(4);
             this.EditTaskProgress.MaximumValue = 100;
             this.EditTaskProgress.MinimumValue = 0;
             this.EditTaskProgress.Name = "EditTaskProgress";
@@ -210,20 +220,10 @@
             this.EditArchived.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
             this.EditArchived.ForeColor = System.Drawing.Color.White;
             this.EditArchived.Location = new System.Drawing.Point(604, 22);
-            this.EditArchived.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.EditArchived.Margin = new System.Windows.Forms.Padding(4);
             this.EditArchived.Name = "EditArchived";
             this.EditArchived.Size = new System.Drawing.Size(20, 20);
             this.EditArchived.TabIndex = 11;
-            // 
-            // txtID
-            // 
-            this.txtID.AutoSize = true;
-            this.txtID.Location = new System.Drawing.Point(331, 43);
-            this.txtID.Name = "txtID";
-            this.txtID.Size = new System.Drawing.Size(35, 13);
-            this.txtID.TabIndex = 15;
-            this.txtID.Text = "label1";
-            this.txtID.Visible = false;
             // 
             // EditTasks
             // 
@@ -233,7 +233,7 @@
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "EditTasks";
             this.Size = new System.Drawing.Size(860, 135);
             ((System.ComponentModel.ISupportInitialize)(this.EditpictureBox1)).EndInit();

@@ -21,13 +21,13 @@ namespace WorkHive.Views.Admin
         private int Id;
         public EditTasks(int id)
         {
-            Id = id;
-            txtID.Text = id.ToString();
             InitializeComponent();
+            txtID.Text = id.ToString();
             this.Resize += EditTasks_Resize;
             recpanel2 = new Rectangle(panel2.Location, panel2.Size);
             recpanel3 = new Rectangle(panel3.Location, panel3.Size);
             recEditpictureBox1 = new Rectangle(EditpictureBox1.Location, EditpictureBox1.Size);
+            Id = id;
         }
 
         private void EditTasks_Resize(object sender, EventArgs e)
@@ -52,5 +52,9 @@ namespace WorkHive.Views.Admin
             
         }
 
+        private void EditFlatButton_Click(object sender, EventArgs e)
+        {
+            //Edit_TaskView.btnEdittasks_Click(sender, e, Id);
+        }
     }
 }

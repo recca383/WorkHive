@@ -11,6 +11,7 @@ using System.Windows.Forms;
 using WorkHive.Controller;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.Button;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+using WorkHive.Views.Member.DashboardPagesMember;
 
 namespace WorkHive.Views.LandingPage.LandingPagePages
 {
@@ -110,7 +111,9 @@ namespace WorkHive.Views.LandingPage.LandingPagePages
             }
             else if (!CurrentUser.IsLeader)
             {
-                //member dashboard
+                Dashboard_Member dashboard = new Dashboard_Member(CurrentUser);
+                dashboard.Show();
+                this.ParentForm.Hide();
             }
         }
 

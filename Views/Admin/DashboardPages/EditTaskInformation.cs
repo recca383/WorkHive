@@ -17,6 +17,7 @@ namespace WorkHive.Views.Admin.DashboardPages
         TaskModel selectedtask;
         public EditTaskInformation(TaskModel _selectedtask)
         {
+            this.selectedtask = _selectedtask;
             InitializeComponent();
             SetDefaultValues();
             
@@ -40,6 +41,11 @@ namespace WorkHive.Views.Admin.DashboardPages
 
             }, selectedtask.TaskID);
             
+        }
+
+        private void EditTaskExitbtn_Click(object sender, EventArgs e)
+        {
+            this.Parent.Controls.Remove(this);
         }
     }
 }

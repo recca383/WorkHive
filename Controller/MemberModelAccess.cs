@@ -18,12 +18,12 @@ namespace WorkHive.Controller
         private static List<MemberModel> memberModel = new List<MemberModel>()
         {
             new MemberModel()
-            {
+            {//sirpatrick121402@gmail.com
                 ID = 0,
-                Email = "sirpatrick121402@gmail.com",
+                Email = "pat",
                 FirstName = "recca383",
                 Password = "123",
-                IsLeader = true,
+                IsLeader = false,
                 Profile_Pic = "Resources\\Default_Admin_Pics\\tatik.jpg"
 
             },

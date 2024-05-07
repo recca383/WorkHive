@@ -11,6 +11,8 @@ using System.Windows.Forms;
 using WorkHive.Controller;
 using WorkHive.Model;
 using WorkHive.Views.Cards;
+using WorkHive.Views.Member.DashboardPagesMember;
+using WorkHive.Views.Pages;
 
 namespace WorkHive.Views.Admin.DashboardPages
 {
@@ -25,13 +27,20 @@ namespace WorkHive.Views.Admin.DashboardPages
         private Rectangle recEditTasksFlow;
         private Rectangle recEditScrollBar1;
         private Rectangle recbtnAddtasks;
+
         private List<EditTasks> list = new List<EditTasks>();
         private List<TaskModel> tasks;
+        static DashboardNavigation dashboardNavigation;
+        private static int Taskid;
+        List<UserControl> List = new List<UserControl>();
+
         public Edit_TaskView()
         {
+            Taskid = 0;
             InitializeComponent();
             AddTaskElements();
             SortAllTasks();
+            Initialize_Navigation_Controls();
             this.Resize += Edit_TaskView_Resize; 
             EditTaskViewOriginalSize = this.Size;
             recEditTask = new Rectangle(EditTask.Location, EditTask.Size);
@@ -42,9 +51,15 @@ namespace WorkHive.Views.Admin.DashboardPages
             recbtnEditArchived = new Rectangle(btnEditArchived.Location, btnEditArchived.Size);
             recEditScrollBar1 = new Rectangle(EditScrollBar1.Location, EditScrollBar1.Size);
             recbtnAddtasks = new Rectangle(btnAddtasks.Location, btnAddtasks.Size);
-
+            
         }
-
+        private void Initialize_Navigation_Controls()
+        {
+                
+            List.Add(new AddTask());
+            List.Add(new EditTaskInformation(TaskModelAccess.GetTaskInfo(Taskid)));
+            dashboardNavigation = new DashboardNavigation(List, AddTaskPanel);
+        }
         private void Edit_TaskView_Resize(object sender, EventArgs e)
         {
             resize_Control(EditTask, recEditTask);
@@ -151,28 +166,16 @@ namespace WorkHive.Views.Admin.DashboardPages
 
         private void btnAddtasks_Click(object sender, EventArgs e)
         {
-            AddTask addTask = new AddTask();
-            addTask.Dock = DockStyle.Fill;
-            AddTaskPanel.Controls.Add(addTask);
+            dashboardNavigation.Display(0,AddTaskPanel);
         }
         public void btnEdittasks_Click(object sender, EventArgs e, int id)
         {
-            EditTaskInformation editTask = new EditTaskInformation(TaskModelAccess.GetTaskInfo(id));
-            editTask.Dock = DockStyle.Fill;
-            
-            AddTaskPanel.Controls.Add(editTask);
+            List.Remove(List[1]);
+            List.Add(new EditTaskInformation(TaskModelAccess.GetTaskInfo(id)));
+            dashboardNavigation.Display(1);
 
         }
 
-        private void AddTaskPanel_ControlAdded(object sender, ControlEventArgs e)
-        {
-            AddTaskPanel.Size = new System.Drawing.Size(500, 622);
-        }
-
-        private void AddTaskPanel_ControlRemoved(object sender, ControlEventArgs e)
-        {
-            AddTaskPanel.Size = new System.Drawing.Size(0, 0);
-        }
     }
  
 }
