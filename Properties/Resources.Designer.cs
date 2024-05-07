@@ -273,6 +273,26 @@ namespace WorkHive.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Group_77__3_ {
+            get {
+                object obj = ResourceManager.GetObject("Group 77 (3)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Group_77__4_ {
+            get {
+                object obj = ResourceManager.GetObject("Group 77 (4)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Group_81 {
             get {
                 object obj = ResourceManager.GetObject("Group 81", resourceCulture);
@@ -446,6 +466,46 @@ namespace WorkHive.Properties {
         internal static System.Drawing.Bitmap Message_box {
             get {
                 object obj = ResourceManager.GetObject("Message box", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap MessageBox {
+            get {
+                object obj = ResourceManager.GetObject("MessageBox", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap MessageBox1 {
+            get {
+                object obj = ResourceManager.GetObject("MessageBox1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Messagebox2 {
+            get {
+                object obj = ResourceManager.GetObject("Messagebox2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Messagebox21 {
+            get {
+                object obj = ResourceManager.GetObject("Messagebox21", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -816,6 +876,36 @@ namespace WorkHive.Properties {
         internal static System.Drawing.Bitmap Vector__3_ {
             get {
                 object obj = ResourceManager.GetObject("Vector (3)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Vector__5_ {
+            get {
+                object obj = ResourceManager.GetObject("Vector (5)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Vector__6_ {
+            get {
+                object obj = ResourceManager.GetObject("Vector (6)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Vector__7_ {
+            get {
+                object obj = ResourceManager.GetObject("Vector (7)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

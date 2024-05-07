@@ -30,7 +30,6 @@ namespace WorkHive.Views.Admin.DashboardPages
 
         private List<EditTasks> list = new List<EditTasks>();
         private List<TaskModel> tasks;
-        static DashboardNavigation dashboardNavigation;
         private static int Taskid;
         List<UserControl> List = new List<UserControl>();
 
@@ -40,7 +39,7 @@ namespace WorkHive.Views.Admin.DashboardPages
             InitializeComponent();
             AddTaskElements();
             SortAllTasks();
-            Initialize_Navigation_Controls();
+            AddTaskPanel.Size = new Size(0,0);
             this.Resize += Edit_TaskView_Resize; 
             EditTaskViewOriginalSize = this.Size;
             recEditTask = new Rectangle(EditTask.Location, EditTask.Size);
@@ -52,13 +51,6 @@ namespace WorkHive.Views.Admin.DashboardPages
             recEditScrollBar1 = new Rectangle(EditScrollBar1.Location, EditScrollBar1.Size);
             recbtnAddtasks = new Rectangle(btnAddtasks.Location, btnAddtasks.Size);
             
-        }
-        private void Initialize_Navigation_Controls()
-        {
-                
-            List.Add(new AddTask());
-            List.Add(new EditTaskInformation(TaskModelAccess.GetTaskInfo(Taskid)));
-            dashboardNavigation = new DashboardNavigation(List, AddTaskPanel);
         }
         private void Edit_TaskView_Resize(object sender, EventArgs e)
         {
@@ -166,16 +158,25 @@ namespace WorkHive.Views.Admin.DashboardPages
 
         private void btnAddtasks_Click(object sender, EventArgs e)
         {
-            dashboardNavigation.Display(0,AddTaskPanel);
+            AddTaskPanel.Controls.Clear();
+            AddTaskPanel.Controls.Add(new AddTask());
+            AddTaskPanel.Size = new Size(500, 622);
         }
         public void btnEdittasks_Click(object sender, EventArgs e, int id)
         {
-            List.Remove(List[1]);
-            List.Add(new EditTaskInformation(TaskModelAccess.GetTaskInfo(id)));
-            dashboardNavigation.Display(1);
+            AddTaskPanel.Controls.Clear();
+            AddTaskPanel.Controls.Add(new EditTaskInformation(TaskModelAccess.GetTaskInfo(id)));
+            AddTaskPanel.Size = new Size(500, 622);
 
         }
 
+        private void AddTaskPanel_ControlRemoved(object sender, ControlEventArgs e)
+        {
+            if(AddTaskPanel.Controls.Count == 0)
+            {
+                AddTaskPanel.Size = new Size(0, 0);
+            }
+        }
     }
  
 }

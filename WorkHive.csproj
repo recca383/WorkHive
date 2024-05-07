@@ -527,11 +527,11 @@
     <Compile Include="Views\LandingPage\LandingPagePages\ForgotPassword.Designer.cs">
       <DependentUpon>ForgotPassword.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\LandingPage\LandingPagePages\Messageboxes.cs">
-      <SubType>UserControl</SubType>
+    <Compile Include="Views\LandingPage\LandingPagePages\MessageBoxes.cs">
+      <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\LandingPage\LandingPagePages\Messageboxes.Designer.cs">
-      <DependentUpon>Messageboxes.cs</DependentUpon>
+    <Compile Include="Views\LandingPage\LandingPagePages\MessageBoxes.Designer.cs">
+      <DependentUpon>MessageBoxes.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\LandingPage\LandingPagePages\Sign_In.cs">
       <SubType>UserControl</SubType>
@@ -677,8 +677,8 @@
     <EmbeddedResource Include="Views\LandingPage\LandingPagePages\ForgotPassword.resx">
       <DependentUpon>ForgotPassword.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\LandingPage\LandingPagePages\Messageboxes.resx">
-      <DependentUpon>Messageboxes.cs</DependentUpon>
+    <EmbeddedResource Include="Views\LandingPage\LandingPagePages\MessageBoxes.resx">
+      <DependentUpon>MessageBoxes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\LandingPage\LandingPagePages\Sign_In.resx">
       <DependentUpon>Sign_In.cs</DependentUpon>
@@ -765,6 +765,15 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <None Include="Resources\Group 77 %284%29.png" />
+    <None Include="Resources\Group 77 %283%29.png" />
+    <None Include="Resources\Vector %287%29.png" />
+    <None Include="Resources\Vector %286%29.png" />
+    <None Include="Resources\Vector %285%29.png" />
+    <None Include="Resources\Messagebox21.png" />
+    <None Include="Resources\Messagebox2.png" />
+    <None Include="Resources\MessageBox1.png" />
+    <None Include="Resources\MessageBox.png" />
     <None Include="Resources\Rectangle 96.png" />
     <None Include="Resources\Notification1.png" />
     <None Include="Resources\Member - Sidebar.png" />

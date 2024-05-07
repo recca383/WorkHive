@@ -54,7 +54,9 @@ namespace WorkHive.Views.Admin
 
         private void EditFlatButton_Click(object sender, EventArgs e)
         {
-            //Edit_TaskView.btnEdittasks_Click(sender, e, Id);
+            Edit_TaskView editTask = (Edit_TaskView)this.Parent.Parent;
+            
+            editTask.btnEdittasks_Click(sender,e,Id);
         }
     }
 }
