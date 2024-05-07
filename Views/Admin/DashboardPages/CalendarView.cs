@@ -33,7 +33,9 @@ namespace WorkHive.Views.Admin.DashboardPages
             InitializeComponent();
             this.Resize += CalendarView_Resize;
             CalendarViewOriginalSize = this.Size;
-        
+
+            DayContainer.MinimumSize = new Size(600, 200); // Set a minimum size to avoid making it too small
+
             recDayContainer = new Rectangle(DayContainer.Location, DayContainer.Size);
             recCalendarName = new Rectangle(CalendarName.Location, CalendarName.Size);
             reclblDate = new Rectangle(lblDate.Location, lblDate.Size);
@@ -51,6 +53,7 @@ namespace WorkHive.Views.Admin.DashboardPages
 
         private void CalendarView_Resize(object sender, EventArgs e)
         {
+            ResizeCalendarCurrentDays();
             resize_Control(DayContainer, recDayContainer);
             resize_Control(CalendarName, recCalendarName);
             resize_Control(lblDate, reclblDate);
@@ -79,6 +82,47 @@ namespace WorkHive.Views.Admin.DashboardPages
 
         }
 
+        private void ResizeCalendarCurrentDays()
+        {
+            float xRatio = (float)this.Width / (float)CalendarViewOriginalSize.Width;
+            float yRatio = (float)this.Height / (float)CalendarViewOriginalSize.Height;
+
+            foreach (Control control in DayContainer.Controls)
+            {
+                if (control is CalendarDays)
+                {
+                    CalendarDays DaysControl = (CalendarDays)control;
+
+                    // Calculate new location and size based on ratios
+                    int newX = (int)(DaysControl.Location.X * xRatio);
+                    int newY = (int)(DaysControl.Location.Y * yRatio);
+                    int newWidth = (int)(DaysControl.Width * xRatio);
+                    int newHeight = (int)(DaysControl.Height * yRatio);
+
+                    // Set new location and size
+                    DaysControl.Location = new Point(newX, newY);
+                    DaysControl.Size = new Size(newWidth, newHeight);
+                }
+
+                if (control is CalendarCurrentDays)
+                {
+                    CalendarCurrentDays currentDaysControl = (CalendarCurrentDays)control;
+
+                    // Calculate new location and size based on ratios
+                    int newX = (int)(currentDaysControl.Location.X * xRatio);
+                    int newY = (int)(currentDaysControl.Location.Y * yRatio);
+                    int newWidth = (int)(currentDaysControl.Width * xRatio);
+                    int newHeight = (int)(currentDaysControl.Height * yRatio);
+
+                    // Set new location and size
+                    currentDaysControl.Location = new Point(newX, newY);
+                    currentDaysControl.Size = new Size(newWidth, newHeight);
+                }
+
+            }
+        }
+
+
         private void CalendarView_Load(object sender, EventArgs e)
         {
             displayDays();
@@ -93,7 +137,7 @@ namespace WorkHive.Views.Admin.DashboardPages
             string monthName = DateTimeFormatInfo.CurrentInfo.GetMonthName(currentMonth);
             lblDate.Text = monthName + " " + currentYear;
 
-            //LETS get the first day of the month.
+            //get the first day of the month.
 
             DateTime startofthemonth = new DateTime(currentYear, currentMonth, 1);
 

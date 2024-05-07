@@ -17,6 +17,7 @@ namespace WorkHive.Views.Admin
         List<TaskModel> tasks = TaskModelAccess.GetTaskModel();
         private int currentMonth;
         private int currentYear;
+
         public CalendarCurrentDays(int currentYear, int currentMonth )
         {
             this.currentMonth = currentMonth;
@@ -26,7 +27,6 @@ namespace WorkHive.Views.Admin
 
         private void CalendarCurrentDays_Load(object sender, EventArgs e)
         {
-
         }
 
         public void days(int numdays)
@@ -40,11 +40,11 @@ namespace WorkHive.Views.Admin
                 }
                 
                 lblTaskName.Visible = true;
-                
             }
 
-            lblDays.Text = numdays + "";
-            
+            lblDays.Text = numdays.ToString();
         }
+
+        
     }
 }
