@@ -106,10 +106,11 @@ public static TaskModel GetTaskInfo(int ID)
         }
         public static void AddTask(int ID, string taskname, string taskdescription, bool archived, DateTime deadline)
         {
+            List<MemberModel> members = MemberModelAccess.GetMemberModel();
 
             try
             {
-                Tasks.Add(new TaskModel
+                TaskModel newTask = new TaskModel
                 {
                     TaskID = ID,
                     TaskName = taskname,
@@ -119,10 +120,14 @@ public static TaskModel GetTaskInfo(int ID)
                     Deadline = deadline,
                     TaskCompleted = default,
                     Archived = !archived
-
-                });
+                };
+                Tasks.Add(newTask);
                 MessageBox.Show("Task Added");
-
+                foreach(var member in members)
+                {
+                    new MailNotif(member.Email, newTask);
+                }
+                
                 
             }
             catch (Exception e)

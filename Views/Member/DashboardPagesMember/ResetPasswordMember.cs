@@ -41,7 +41,7 @@ namespace WorkHive.Views.Member.DashboardPagesMember
 
             try
             {
-                MailNotif mail = new MailNotif(ForgotPassword._email, MailNotif.Mailfunctions.ResetPassword, code);
+                MailNotif mail = new MailNotif(ForgotPassword._email, code);
 
                 MessageBox.Show("Code Sent!");
             }

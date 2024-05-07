@@ -17,24 +17,17 @@ namespace WorkHive.Controller
     {
         private string _email;
         private string _template;
-        private string[] elements;
 
-        public enum Mailfunctions
-        {
-            ResetPassword
-
-        }
-        public MailNotif(string email, Mailfunctions function, string elements)
+        public MailNotif(string email, string elements)
         {
             _email = email;
-            switch (function)
-            {
-                case Mailfunctions.ResetPassword:
-                    _template = ResetPasswordTemplate(elements);
-                    
-                    break;
-
-            }
+            _template = ResetPasswordTemplate(elements);
+            Send(_email, _template);
+        }
+        public MailNotif(string email, TaskModel newTask)
+        {
+            _email = email;
+            _template = NewTaskAddedTemplate(newTask);
             Send(_email, _template);
         }
 
@@ -74,6 +67,17 @@ namespace WorkHive.Controller
             template.AppendLine(" - Workhive");
 
             
+
+            return template.ToString();
+        }
+        public static string NewTaskAddedTemplate(TaskModel taskModel)
+        {
+            StringBuilder template = new StringBuilder();
+            template.AppendLine("Dear @Model.FirstName,");
+            template.AppendLine("<h3> A New Task Has Been Added! </h3>");
+            template.AppendLine("<p> Come back to us to view more details </p>");
+            template.AppendLine("<h2> " + taskModel.TaskName + "</h2>");
+            template.AppendLine(" - Workhive");
 
             return template.ToString();
         }
