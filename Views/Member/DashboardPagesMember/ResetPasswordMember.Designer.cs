@@ -63,11 +63,11 @@
             this.bunifuLabel4.BackColor = System.Drawing.Color.White;
             this.bunifuLabel4.CursorType = null;
             this.bunifuLabel4.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuLabel4.Location = new System.Drawing.Point(106, 349);
-            this.bunifuLabel4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.bunifuLabel4.Location = new System.Drawing.Point(80, 284);
+            this.bunifuLabel4.Margin = new System.Windows.Forms.Padding(2);
             this.bunifuLabel4.Name = "bunifuLabel4";
             this.bunifuLabel4.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel4.Size = new System.Drawing.Size(149, 25);
+            this.bunifuLabel4.Size = new System.Drawing.Size(125, 21);
             this.bunifuLabel4.TabIndex = 29;
             this.bunifuLabel4.Text = "Confirm Password";
             this.bunifuLabel4.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -80,11 +80,11 @@
             this.bunifuLabel3.BackColor = System.Drawing.Color.White;
             this.bunifuLabel3.CursorType = null;
             this.bunifuLabel3.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuLabel3.Location = new System.Drawing.Point(106, 272);
-            this.bunifuLabel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.bunifuLabel3.Location = new System.Drawing.Point(80, 221);
+            this.bunifuLabel3.Margin = new System.Windows.Forms.Padding(2);
             this.bunifuLabel3.Name = "bunifuLabel3";
             this.bunifuLabel3.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel3.Size = new System.Drawing.Size(119, 25);
+            this.bunifuLabel3.Size = new System.Drawing.Size(101, 21);
             this.bunifuLabel3.TabIndex = 27;
             this.bunifuLabel3.Text = "New Password";
             this.bunifuLabel3.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -97,11 +97,11 @@
             this.bunifuLabel2.BackColor = System.Drawing.Color.White;
             this.bunifuLabel2.CursorType = null;
             this.bunifuLabel2.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuLabel2.Location = new System.Drawing.Point(106, 199);
-            this.bunifuLabel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.bunifuLabel2.Location = new System.Drawing.Point(80, 162);
+            this.bunifuLabel2.Margin = new System.Windows.Forms.Padding(2);
             this.bunifuLabel2.Name = "bunifuLabel2";
             this.bunifuLabel2.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel2.Size = new System.Drawing.Size(144, 25);
+            this.bunifuLabel2.Size = new System.Drawing.Size(121, 21);
             this.bunifuLabel2.TabIndex = 25;
             this.bunifuLabel2.Text = "Current Password";
             this.bunifuLabel2.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -114,11 +114,11 @@
             this.bunifuLabel1.BackColor = System.Drawing.Color.White;
             this.bunifuLabel1.CursorType = null;
             this.bunifuLabel1.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuLabel1.Location = new System.Drawing.Point(106, 153);
-            this.bunifuLabel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.bunifuLabel1.Location = new System.Drawing.Point(80, 124);
+            this.bunifuLabel1.Margin = new System.Windows.Forms.Padding(2);
             this.bunifuLabel1.Name = "bunifuLabel1";
             this.bunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel1.Size = new System.Drawing.Size(229, 39);
+            this.bunifuLabel1.Size = new System.Drawing.Size(187, 32);
             this.bunifuLabel1.TabIndex = 24;
             this.bunifuLabel1.Text = "Change Password";
             this.bunifuLabel1.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -129,10 +129,10 @@
             this.MmberResetPass.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.MmberResetPass.AutoSize = true;
             this.MmberResetPass.Font = new System.Drawing.Font("Microsoft Sans Serif", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.MmberResetPass.Location = new System.Drawing.Point(13, 20);
+            this.MmberResetPass.Location = new System.Drawing.Point(10, 16);
             this.MmberResetPass.Margin = new System.Windows.Forms.Padding(0);
             this.MmberResetPass.Name = "MmberResetPass";
-            this.MmberResetPass.Size = new System.Drawing.Size(220, 51);
+            this.MmberResetPass.Size = new System.Drawing.Size(178, 39);
             this.MmberResetPass.TabIndex = 21;
             this.MmberResetPass.Text = "Password";
             // 
@@ -161,18 +161,19 @@
             this.btnUpdatePasswordMember.IconVisible = true;
             this.btnUpdatePasswordMember.IconZoom = 90D;
             this.btnUpdatePasswordMember.IsTab = false;
-            this.btnUpdatePasswordMember.Location = new System.Drawing.Point(975, 443);
-            this.btnUpdatePasswordMember.Margin = new System.Windows.Forms.Padding(7);
+            this.btnUpdatePasswordMember.Location = new System.Drawing.Point(731, 360);
+            this.btnUpdatePasswordMember.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.btnUpdatePasswordMember.Name = "btnUpdatePasswordMember";
             this.btnUpdatePasswordMember.Normalcolor = System.Drawing.Color.Transparent;
             this.btnUpdatePasswordMember.OnHovercolor = System.Drawing.Color.Gold;
             this.btnUpdatePasswordMember.OnHoverTextColor = System.Drawing.Color.White;
             this.btnUpdatePasswordMember.selected = false;
-            this.btnUpdatePasswordMember.Size = new System.Drawing.Size(189, 46);
+            this.btnUpdatePasswordMember.Size = new System.Drawing.Size(142, 37);
             this.btnUpdatePasswordMember.TabIndex = 31;
             this.btnUpdatePasswordMember.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnUpdatePasswordMember.Textcolor = System.Drawing.Color.White;
             this.btnUpdatePasswordMember.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUpdatePasswordMember.Click += new System.EventHandler(this.btnUpdatePasswordMember_Click);
             // 
             // txtConfirmPasswordMember
             // 
@@ -202,10 +203,10 @@
             this.txtConfirmPasswordMember.IconRight = null;
             this.txtConfirmPasswordMember.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtConfirmPasswordMember.Lines = new string[0];
-            this.txtConfirmPasswordMember.Location = new System.Drawing.Point(106, 373);
-            this.txtConfirmPasswordMember.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtConfirmPasswordMember.Location = new System.Drawing.Point(80, 303);
+            this.txtConfirmPasswordMember.Margin = new System.Windows.Forms.Padding(2);
             this.txtConfirmPasswordMember.MaxLength = 32767;
-            this.txtConfirmPasswordMember.MinimumSize = new System.Drawing.Size(100, 34);
+            this.txtConfirmPasswordMember.MinimumSize = new System.Drawing.Size(75, 28);
             this.txtConfirmPasswordMember.Modified = false;
             this.txtConfirmPasswordMember.Multiline = false;
             this.txtConfirmPasswordMember.Name = "txtConfirmPasswordMember";
@@ -238,7 +239,7 @@
             this.txtConfirmPasswordMember.SelectionLength = 0;
             this.txtConfirmPasswordMember.SelectionStart = 0;
             this.txtConfirmPasswordMember.ShortcutsEnabled = true;
-            this.txtConfirmPasswordMember.Size = new System.Drawing.Size(1057, 46);
+            this.txtConfirmPasswordMember.Size = new System.Drawing.Size(793, 37);
             this.txtConfirmPasswordMember.Style = Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox._Style.Bunifu;
             this.txtConfirmPasswordMember.TabIndex = 30;
             this.txtConfirmPasswordMember.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -277,10 +278,10 @@
             this.txtNewPasswordMember.IconRight = null;
             this.txtNewPasswordMember.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtNewPasswordMember.Lines = new string[0];
-            this.txtNewPasswordMember.Location = new System.Drawing.Point(107, 298);
-            this.txtNewPasswordMember.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtNewPasswordMember.Location = new System.Drawing.Point(80, 242);
+            this.txtNewPasswordMember.Margin = new System.Windows.Forms.Padding(2);
             this.txtNewPasswordMember.MaxLength = 32767;
-            this.txtNewPasswordMember.MinimumSize = new System.Drawing.Size(100, 34);
+            this.txtNewPasswordMember.MinimumSize = new System.Drawing.Size(75, 28);
             this.txtNewPasswordMember.Modified = false;
             this.txtNewPasswordMember.Multiline = false;
             this.txtNewPasswordMember.Name = "txtNewPasswordMember";
@@ -313,7 +314,7 @@
             this.txtNewPasswordMember.SelectionLength = 0;
             this.txtNewPasswordMember.SelectionStart = 0;
             this.txtNewPasswordMember.ShortcutsEnabled = true;
-            this.txtNewPasswordMember.Size = new System.Drawing.Size(1057, 46);
+            this.txtNewPasswordMember.Size = new System.Drawing.Size(793, 37);
             this.txtNewPasswordMember.Style = Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox._Style.Bunifu;
             this.txtNewPasswordMember.TabIndex = 28;
             this.txtNewPasswordMember.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -352,10 +353,10 @@
             this.txtCurrentPasswordMember.IconRight = null;
             this.txtCurrentPasswordMember.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtCurrentPasswordMember.Lines = new string[0];
-            this.txtCurrentPasswordMember.Location = new System.Drawing.Point(107, 223);
-            this.txtCurrentPasswordMember.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtCurrentPasswordMember.Location = new System.Drawing.Point(80, 181);
+            this.txtCurrentPasswordMember.Margin = new System.Windows.Forms.Padding(2);
             this.txtCurrentPasswordMember.MaxLength = 32767;
-            this.txtCurrentPasswordMember.MinimumSize = new System.Drawing.Size(100, 34);
+            this.txtCurrentPasswordMember.MinimumSize = new System.Drawing.Size(75, 28);
             this.txtCurrentPasswordMember.Modified = false;
             this.txtCurrentPasswordMember.Multiline = false;
             this.txtCurrentPasswordMember.Name = "txtCurrentPasswordMember";
@@ -388,7 +389,7 @@
             this.txtCurrentPasswordMember.SelectionLength = 0;
             this.txtCurrentPasswordMember.SelectionStart = 0;
             this.txtCurrentPasswordMember.ShortcutsEnabled = true;
-            this.txtCurrentPasswordMember.Size = new System.Drawing.Size(1057, 46);
+            this.txtCurrentPasswordMember.Size = new System.Drawing.Size(793, 37);
             this.txtCurrentPasswordMember.Style = Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox._Style.Bunifu;
             this.txtCurrentPasswordMember.TabIndex = 26;
             this.txtCurrentPasswordMember.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -407,10 +408,10 @@
             this.bunifuPictureBox2.BorderRadius = 0;
             this.bunifuPictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("bunifuPictureBox2.Image")));
             this.bunifuPictureBox2.IsCircle = false;
-            this.bunifuPictureBox2.Location = new System.Drawing.Point(43, 144);
-            this.bunifuPictureBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.bunifuPictureBox2.Location = new System.Drawing.Point(32, 117);
+            this.bunifuPictureBox2.Margin = new System.Windows.Forms.Padding(2);
             this.bunifuPictureBox2.Name = "bunifuPictureBox2";
-            this.bunifuPictureBox2.Size = new System.Drawing.Size(47, 50);
+            this.bunifuPictureBox2.Size = new System.Drawing.Size(35, 41);
             this.bunifuPictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.bunifuPictureBox2.TabIndex = 23;
             this.bunifuPictureBox2.TabStop = false;
@@ -423,10 +424,10 @@
             this.bunifuPictureBox1.BorderRadius = 20;
             this.bunifuPictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("bunifuPictureBox1.Image")));
             this.bunifuPictureBox1.IsCircle = false;
-            this.bunifuPictureBox1.Location = new System.Drawing.Point(25, 121);
-            this.bunifuPictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.bunifuPictureBox1.Location = new System.Drawing.Point(19, 98);
+            this.bunifuPictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.bunifuPictureBox1.Name = "bunifuPictureBox1";
-            this.bunifuPictureBox1.Size = new System.Drawing.Size(1205, 389);
+            this.bunifuPictureBox1.Size = new System.Drawing.Size(904, 316);
             this.bunifuPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.bunifuPictureBox1.TabIndex = 22;
             this.bunifuPictureBox1.TabStop = false;
@@ -434,7 +435,7 @@
             // 
             // ResetPasswordMember
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.btnUpdatePasswordMember);
             this.Controls.Add(this.txtConfirmPasswordMember);
@@ -447,8 +448,9 @@
             this.Controls.Add(this.bunifuPictureBox2);
             this.Controls.Add(this.bunifuPictureBox1);
             this.Controls.Add(this.MmberResetPass);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "ResetPasswordMember";
-            this.Size = new System.Drawing.Size(1253, 763);
+            this.Size = new System.Drawing.Size(940, 620);
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox1)).EndInit();
             this.ResumeLayout(false);

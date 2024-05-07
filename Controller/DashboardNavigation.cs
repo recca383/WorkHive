@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -35,6 +36,15 @@ namespace WorkHive.Controller
             {
                 navigation_bar_items[index].BringToFront();
             }
+        }
+        public void Display(int index, Panel panel)
+        {
+            panel.Size = new System.Drawing.Size(500, 622);
+            if (index < navigation_bar_items.Count())
+            {
+                navigation_bar_items[index].BringToFront();
+            }
+
         }
     }
 }

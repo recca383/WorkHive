@@ -113,8 +113,7 @@
             this.AddTaskPanel.Name = "AddTaskPanel";
             this.AddTaskPanel.Size = new System.Drawing.Size(0, 0);
             this.AddTaskPanel.TabIndex = 17;
-            this.AddTaskPanel.ControlAdded += new System.Windows.Forms.ControlEventHandler(this.AddTaskPanel_ControlAdded);
-            this.AddTaskPanel.ControlRemoved += new System.Windows.Forms.ControlEventHandler(this.AddTaskPanel_ControlRemoved);
+
             // 
             // btnAddtasks
             // 
