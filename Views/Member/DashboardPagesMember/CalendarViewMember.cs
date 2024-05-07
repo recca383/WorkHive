@@ -115,7 +115,7 @@ namespace WorkHive.Views.Member.DashboardPagesMember
             //usercontrol for days
             for (int i = 1; i <= days; i++)
             {
-                CalendarCurrentDays calendarCDays = new CalendarCurrentDays();
+                CalendarCurrentDays calendarCDays = new CalendarCurrentDays(currentYear,currentMonth);
                 calendarCDays.days(i);
                 DayContainer.Controls.Add(calendarCDays);
             }

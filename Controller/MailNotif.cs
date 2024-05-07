@@ -77,5 +77,6 @@ namespace WorkHive.Controller
 
             return template.ToString();
         }
+
     }
 }

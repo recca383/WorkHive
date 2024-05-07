@@ -20,7 +20,7 @@ namespace WorkHive.Controller
             new MemberModel()
             {//sirpatrick121402@gmail.com
                 ID = 0,
-                Email = "pat",
+                Email = "sirpatrick121402@gmail.com",
                 FirstName = "recca383",
                 Password = "123",
                 IsLeader = false,

@@ -89,7 +89,7 @@ namespace WorkHive.Views.Member.DashboardPagesMember
         private void btnLogout_Click(object sender, EventArgs e)
         {
             Landing_Page landing_Page = new Landing_Page();
-            ParentForm.Hide();
+            this.Hide();
             landing_Page.Show();
         }
 
