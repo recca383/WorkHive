@@ -96,7 +96,7 @@ namespace WorkHive.Views.Admin
                 editedmember.ExtensionName = Extensiontxt.Text;
                 editedmember.Sex = (sex) SexDrop.SelectedIndex; 
                 editedmember.BloodType = (bloodType)bloodTypeDrop.SelectedIndex;
-            editedmember.Birthdate = BirthPicker.Value;
+                editedmember.Birthdate = BirthPicker.Value;
                 editedmember.HouseNumber = HouseNumbertxt.Text;
                 editedmember.Street = Streettxt.Text;
                 editedmember.Barangay = barangaytxt.Text;
