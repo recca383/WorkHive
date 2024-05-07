@@ -62,6 +62,7 @@
             this.ViewPanelMember.Name = "ViewPanelMember";
             this.ViewPanelMember.Size = new System.Drawing.Size(1360, 737);
             this.ViewPanelMember.TabIndex = 12;
+            this.ViewPanelMember.Paint += new System.Windows.Forms.PaintEventHandler(this.ViewPanelMember_Paint);
             // 
             // pnTitleBar
             // 
