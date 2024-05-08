@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
-using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -29,23 +28,23 @@ namespace WorkHive.Views.Member.DashboardPagesMember
             var parent = Directory.GetParent(Directory.GetCurrentDirectory()).FullName;
             if (currentUser.Profile_Pic == null)
             {
-                MemberPictureBox2.Image = Image.FromFile(Path.Combine(Path.GetDirectoryName(parent), "Resources\\Default_Pics\\Userdefault.png"));
+                MemberPictureBox.Image = Image.FromFile(Path.Combine(Path.GetDirectoryName(parent), "Resources\\Default_Pics\\Userdefault.png"));
             }
             else
             {
-                MemberPictureBox2.Image = Image.FromFile(Path.Combine(Path.GetDirectoryName(parent), currentUser.Profile_Pic));
+                MemberPictureBox.Image = Image.FromFile(Path.Combine(Path.GetDirectoryName(parent), currentUser.Profile_Pic));
             }
 
-            Namelbl.Text = currentUser.FullName;
-            Positionlbl.Text = "Member";
+            Namelbl1.Text = currentUser.FullName;
+            Positionlbl1.Text = "Member";
 
             //enum of positions
-            memberworklbl.Text = "Manager";
+            memberworklbl1.Text = "Manager";
 
-            MemberBirthdatelbl.Text = (currentUser.Birthdate.ToString("MMMM dd, yyyy"));
-            Membercontactlbl.Text = currentUser.ContactNumber.ToString();
-            Memberemaillbl.Text = currentUser.Email;
-            Memberaddresslbl.Text = currentUser.Address;
+            MemberBirthdatelbl1.Text = currentUser.Birthdate.ToString();
+            Membercontactlbl2.Text = currentUser.ContactNumber.ToString();
+            Memberemaillbl1.Text = currentUser.Email;
+            Memberaddresslbl1.Text = currentUser.Address;
 
             firstnametxt.Text = currentUser.FirstName;
             Lastnametxt.Text = currentUser.LastName;
@@ -54,10 +53,10 @@ namespace WorkHive.Views.Member.DashboardPagesMember
             Memberemailtxt.Text = currentUser.Email;
 
             SexDrop.DataSource = Enum.GetNames(typeof(sex));
-            SexDrop.SelectedIndex = ((int)currentUser.Sex);
+            SexDrop.SelectedText = currentUser.Sex.ToString();
 
             bloodTypeDrop.DataSource = Enum.GetNames(typeof(bloodType));
-            bloodTypeDrop.SelectedIndex = ((int)currentUser.BloodType);
+            bloodTypeDrop.SelectedText = currentUser.BloodType.ToString();
 
             BirthPicker.Value = currentUser.Birthdate;
 
@@ -68,15 +67,15 @@ namespace WorkHive.Views.Member.DashboardPagesMember
             provincetxt.Text = currentUser.Province;
             zipcodetxt.Text = currentUser.ZipCode.ToString();
 
-            btnConfirmEdit.Visible = false;
-            btnCancelEdit.Visible = false;
+            btnConfirmEdit1.Visible = false;
+            btnCancelEdit1.Visible = false;
         }
 
         private void btnEdit_Click(object sender, EventArgs e)
         {
             EditPanel.Enabled = true;
-            btnCancelEdit.Visible = true;
-            btnConfirmEdit.Visible = true;
+            btnCancelEdit1.Visible = true;
+            btnConfirmEdit1.Visible = true;
         }
 
         private void btnCancelEdit_Click(object sender, EventArgs e)
@@ -113,6 +112,11 @@ namespace WorkHive.Views.Member.DashboardPagesMember
             MemberModelAccess.EditMemberInfo(editedmember, currentUser.ID);
             EditPanel.Enabled = false;
             RefreshValues();
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

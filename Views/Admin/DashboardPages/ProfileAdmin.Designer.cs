@@ -287,7 +287,6 @@
             this.Controls.Add(this.MessageBtn);
             this.Controls.Add(this.ResetPassBtn);
             this.Controls.Add(this.ProfileBtn);
-            this.Location = new System.Drawing.Point(950, 20);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "ProfileAdmin";
             this.Size = new System.Drawing.Size(383, 465);
