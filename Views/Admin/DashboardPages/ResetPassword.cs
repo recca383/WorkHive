@@ -135,14 +135,41 @@ namespace WorkHive.Views.Admin
             SendCode(_code);
         }
 
-        private void bunifuLabel5_Click(object sender, EventArgs e)
-        {
 
+        private void txtCurrentPassword_TextChanged(object sender, EventArgs e)
+        {
+            if (txtCurrentPassword.Text == "")
+            {
+                txtCurrentPassword.UseSystemPasswordChar = false;
+            }
+            else
+            {
+                txtCurrentPassword.UseSystemPasswordChar = true;
+            }
         }
 
-        private void ResetPassword_Load(object sender, EventArgs e)
+        private void txtNewPassword_TextChanged(object sender, EventArgs e)
         {
+            if (txtNewPassword.Text == "")
+            {
+                txtNewPassword.UseSystemPasswordChar = false;
+            }
+            else
+            {
+                txtNewPassword.UseSystemPasswordChar = true;
+            }
+        }
 
+        private void txtConfirmPassword_TextChanged(object sender, EventArgs e)
+        {
+            if (txtConfirmPassword.Text == "")
+            {
+                txtConfirmPassword.UseSystemPasswordChar = false;
+            }
+            else
+            {
+                txtConfirmPassword.UseSystemPasswordChar = true;
+            }
         }
     }
 }

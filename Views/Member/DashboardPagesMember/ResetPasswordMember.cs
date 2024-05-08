@@ -67,5 +67,41 @@ namespace WorkHive.Views.Member.DashboardPagesMember
         {
             SendCode(_code);
         }
+
+        private void txtCurrentPasswordMember_TextChanged(object sender, EventArgs e)
+        {
+            if (txtCurrentPasswordMember.Text == "")
+            {
+                txtCurrentPasswordMember.UseSystemPasswordChar = false;
+            }
+            else
+            {
+                txtCurrentPasswordMember.UseSystemPasswordChar = true;
+            }
+        }
+
+        private void txtNewPasswordMember_TextChanged(object sender, EventArgs e)
+        {
+            if (txtNewPasswordMember.Text == "")
+            {
+                txtNewPasswordMember.UseSystemPasswordChar = false;
+            }
+            else
+            {
+                txtNewPasswordMember.UseSystemPasswordChar = true;
+            }
+        }
+
+        private void txtConfirmPasswordMember_TextChanged(object sender, EventArgs e)
+        {
+            if (txtConfirmPasswordMember.Text == "")
+            {
+                txtConfirmPasswordMember.UseSystemPasswordChar = false;
+            }
+            else
+            {
+                txtConfirmPasswordMember.UseSystemPasswordChar = true;
+            }
+        }
     }
 }
