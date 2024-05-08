@@ -65,7 +65,8 @@ namespace WorkHive.Views.LandingPage.LandingPagePages
         }
         private void btnSignIn_Click(object sender, EventArgs e)
         {
-            Landing_Page.btnSign_InEvent();
+            Landing_Page parent = this.ParentForm as Landing_Page;
+            parent.btnSign_InEvent(sender, e);
         }
 
         private void textBox1_KeyDown(object sender, KeyEventArgs e)

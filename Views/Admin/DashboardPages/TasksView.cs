@@ -24,15 +24,15 @@ namespace WorkHive.Views.Admin.DashboardPages
         private Rectangle recbtnArchived;
         private Rectangle recTasksFlow;
         private Rectangle recbunifuVScrollBar1;
-        private List<TaskModel> tasks;
-        private List<TaskCard> filteredlist = new List<TaskCard>();
+
+        private List<TaskModel> tasks = TaskModelAccess.GetTaskModel();
+
 
 
         public TasksView()
         {
             InitializeComponent();
-            AddTaskElements();
-            SortAllTasks();
+            RefreshList(tasks);
             this.Resize += TasksView_Resize;
             TaskViewOriginalSize = this.Size;
             recTasksName = new Rectangle(TasksName.Location, TasksName.Size);
@@ -69,100 +69,43 @@ namespace WorkHive.Views.Admin.DashboardPages
 
         }
 
-        private void AddTaskElements()
+        private void RefreshList(List<TaskModel> taskList)
         {
-            RefreshList();
-        }
-
-        private void RefreshList()
-        {
-            filteredlist.Clear();
+            TasksFlow.Controls.Clear();
             tasks = TaskModelAccess.GetTaskModel();
             
-            if(tasks is null)
+            foreach (TaskModel taskModel in tasks)
             {
-                MessageBox.Show("Wala pang laman, palagyan ng design to HAHAHAHA");
+                TasksFlow.Controls.Add(new TaskCard     (taskModel));
             }
-            else
-            {
-                foreach (TaskModel taskModel in tasks)
-                {
-                    TaskCard card = new TaskCard();
-                    card.lblTask_Title.Text = taskModel.TaskName;
-                    card.lblTask_Date.Text = ($"{CultureInfo.CurrentCulture.DateTimeFormat.GetMonthName(taskModel.TaskStart.Month)} {taskModel.TaskStart.Day}");
-                    card.Deadlinetxt.Text = ($"{CultureInfo.CurrentCulture.DateTimeFormat.GetMonthName(taskModel.Deadline.Month)} {taskModel.Deadline.Day}");
-                    card.TaskProgress.Value = taskModel.TaskProgress;
-                    card.Archived.Checked = !taskModel.Archived;
-                    filteredlist.Add(card);
-                }
-            }
+
             
         }
 
         private void btnAll_Click(object sender, EventArgs e)
         {
-            RefreshList();
-            SortAllTasks();
+            RefreshList(tasks);
         }
 
-        private void SortAllTasks()
-        {
-            RefreshList();
-            TasksFlow.Controls.Clear();
-            var results = filteredlist
-                .Where(p => p.Archived.Checked)
-                .OrderBy(p => p.TaskProgress.Value);
-            foreach (var result in results)
-            {
-                TasksFlow.Controls.Add(result);
-            }
-        }
+        
 
         private void btnOngoing_Click(object sender, EventArgs e)
         {
-            RefreshList();
-            TasksFlow.Controls.Clear();
-            var results = filteredlist
-                .Where(p => p.TaskProgress.Value < 100 && p.Archived.Checked)
-                .OrderBy(p => p.TaskProgress.Value);
-            foreach ( var result in results )
-            {
-                TasksFlow.Controls.Add(result);
-            }
+            var results = tasks.Where(p => p.TaskProgress < 100).ToList();
+            RefreshList(results);
         }
 
         private void btnCompleted_Click(object sender, EventArgs e)
         {
-            RefreshList();
-            TasksFlow.Controls.Clear();
-            var results = filteredlist
-                .Where(p => p.TaskProgress.Value == 100 && p.Archived.Checked)
-                .OrderBy(p => p.TaskProgress.Value);
-            foreach (var result in results)
-            {
-                TasksFlow.Controls.Add(result);
-            }
+            var results = tasks.Where(p => p.TaskProgress == 100).ToList();
+            RefreshList(results);
         }
 
         private void btnArchived_Click(object sender, EventArgs e)
         {
-            RefreshList();
-            TasksFlow.Controls.Clear();
-            var results = filteredlist.Where(p => !p.Archived.Checked);
-            foreach (var result in results)
-            {
-                TasksFlow.Controls.Add(result);
-            }
+            var results = tasks.Where(a => a.Archived).ToList();
+            RefreshList(results);
         }
 
-        private void TasksFlow_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void TasksView_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }

@@ -50,7 +50,8 @@ namespace WorkHive.Views.Member.DashboardPagesMember
         private void Initialize_Navigation_Controls()
         {
 
-            List<UserControl> list = new List<UserControl>()
+            //List<UserControl> list = new List<UserControl>()
+            UserControl[] list = 
             { new DashboardView(CurrentUser), new TaskViewMember(),new CalendarView(), new ProfileEditMember(CurrentUser), new ResetPasswordMember(CurrentUser)};
 
             dashboardNavigation = new DashboardNavigation(list, ViewPanelMember);

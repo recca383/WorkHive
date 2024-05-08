@@ -23,24 +23,25 @@ namespace WorkHive.Views.LandingPage
         }
         private void AddUserControls()
         {
-            List<UserControl> list = new List<UserControl> 
+            //List<UserControl> list = new List<UserControl>
+            UserControl[] list = 
             { new ForgotPassword(), new VerifyPassword(), new NewPassword()};
             forgotpasswordnavigation = new DashboardNavigation(list, ForgotPasswordPanel);
             forgotpasswordnavigation.Display(0);
         }
-        public static void GoBackToFirstStep()
+        public void GoBackToFirstStep()
         {
             forgotpasswordnavigation.Display(0);
         }
-        public static void GoBackToSecondStep()
+        public void GoBackToSecondStep()
         {
             forgotpasswordnavigation.Display(1);
         }
-        public static void GoToSecondStep()
+        public void GoToSecondStep()
         {
             forgotpasswordnavigation.Display(1);
         }
-        public static void GoToThirdStep()
+        public void GoToThirdStep()
         {
             forgotpasswordnavigation.Display(2);
         }

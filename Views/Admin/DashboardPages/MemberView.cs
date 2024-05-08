@@ -70,28 +70,16 @@ namespace WorkHive.Views.Admin.DashboardPages
             }
             else
             {
-                var parent = Directory.GetParent(Directory.GetCurrentDirectory()).FullName;
                 foreach (MemberModel member in members)
                 {
                     if (member.IsLeader)
                     {
-                        AdminCard adminCard = new AdminCard();
-                        adminCard.lblProfileName.Text = member.FullName;
-                        adminCard.lblProfileTitle.Text = "Leader";
-                        adminCard.lblProfilePhone.Text = member.ContactNumber.ToString();
-                        adminCard.lblProfileEmail.Text = member.Email;
-                        adminCard.picboxProfilePic.Image = Image.FromFile(Path.Combine(Path.GetDirectoryName(parent), member.Profile_Pic));
-                        users.Add(adminCard);
+                        users.Add(new AdminCard(member));
                     }
                     else
                     {
-                        ProfileCard memberCard = new ProfileCard();
-                        memberCard.lblProfileName.Text = member.FullName;
-                        memberCard.lblProfileTitle.Text = "Member";
-                        memberCard.lblProfilePhone.Text = member.ContactNumber.ToString();
-                        memberCard.lblProfileEmail.Text = member.Email;
-                        memberCard.picboxProfilePic.Image = Image.FromFile(Path.Combine(Path.GetDirectoryName(parent), member.Profile_Pic));
-                        users.Add(memberCard);
+
+                        users.Add(new ProfileCard(member));
                     }
                         
                 }

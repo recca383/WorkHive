@@ -10,10 +10,11 @@ namespace WorkHive.Controller
 {
     public class DashboardNavigation
     {
-        List<UserControl> navigation_bar_items = new List<UserControl>();
+        UserControl[] navigation_bar_items;
+        //List<UserControl> navigation_bar_items = new List<UserControl>();
         Panel panel;
 
-        public DashboardNavigation(List<UserControl> navigation_bar, Panel panel)
+        public DashboardNavigation(UserControl[] navigation_bar, Panel panel)
         {
             this.navigation_bar_items = navigation_bar;
             this.panel = panel;
@@ -36,15 +37,6 @@ namespace WorkHive.Controller
             {
                 navigation_bar_items[index].BringToFront();
             }
-        }
-        public void Display(int index, Panel panel)
-        {
-            panel.Size = new System.Drawing.Size(500, 622);
-            if (index < navigation_bar_items.Count())
-            {
-                navigation_bar_items[index].BringToFront();
-            }
-
         }
     }
 }

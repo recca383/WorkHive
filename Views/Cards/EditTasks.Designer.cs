@@ -256,10 +256,10 @@
         private System.Windows.Forms.PictureBox eDIT3;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.PictureBox eDITBox2;
-        public Bunifu.Framework.UI.BunifuCustomLabel lblEditTask_Title;
-        public Bunifu.Framework.UI.BunifuCustomLabel lblEditTask_Date;
-        public Bunifu.UI.Winforms.BunifuProgressBar EditTaskProgress;
-        public Bunifu.Framework.UI.BunifuCheckbox EditArchived;
+        private Bunifu.Framework.UI.BunifuCustomLabel lblEditTask_Title;
+        private Bunifu.Framework.UI.BunifuCustomLabel lblEditTask_Date;
+        private Bunifu.UI.Winforms.BunifuProgressBar EditTaskProgress;
+        private Bunifu.Framework.UI.BunifuCheckbox EditArchived;
         private Bunifu.Framework.UI.BunifuFlatButton EditFlatButton;
         private System.Windows.Forms.Label txtID;
     }

@@ -22,11 +22,13 @@ namespace WorkHive.Views.LandingPage
         private Rectangle recpanel1;
         private Rectangle recpictureBox1;
         private Rectangle recLandingPageViewPanel;
-        static DashboardNavigation dashboardNavigation;
+
         public Landing_Page()
         {
             InitializeComponent();
             Initialize_Navigation_Controls();
+            LandingPageViewPanel.Controls.Clear();
+            LandingPageViewPanel.Controls.Add(new Sign_In());
             this.Resize += Landing_Page_Resize; 
             LandingPageOriginalSize = this.Size;
             recpanel1 = new Rectangle(panel1.Location, panel1.Size);
@@ -57,25 +59,22 @@ namespace WorkHive.Views.LandingPage
 
         private void Initialize_Navigation_Controls()
         {
-            List<UserControl> list = new List<UserControl>()
+            //List<UserControl> list = new List<UserControl>()
+            UserControl[] list = 
             { new Sign_In(), new Sign_Up() };
 
-            dashboardNavigation = new DashboardNavigation(list, LandingPageViewPanel);
-            dashboardNavigation.Display(0);
         }
-        public static void btnSign_InEvent()
+        public void btnSign_InEvent(object sender, EventArgs e)
         {
-            dashboardNavigation.Display(0);
+            LandingPageViewPanel.Controls.Clear();
+            LandingPageViewPanel.Controls.Add(new Sign_In());
             //MailNotif.Send();
         }
-        public static void btnSign_UpEvent()
+        public void btnSign_UpEvent(object sender, EventArgs e)
         {
-            dashboardNavigation.Display(1);
+            LandingPageViewPanel.Controls.Clear();
+            LandingPageViewPanel.Controls.Add(new Sign_Up());
         }
 
-        private void LandingPageViewPanel_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
     }
 }

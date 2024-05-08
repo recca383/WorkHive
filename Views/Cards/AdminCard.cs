@@ -3,10 +3,13 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WorkHive.Model;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.TextBox;
 
 namespace WorkHive.Views.Cards
 {
@@ -16,7 +19,11 @@ namespace WorkHive.Views.Cards
         private Rectangle recpanel1;
         private Rectangle recpanel2;
         private Rectangle recpanel3;
-        public AdminCard()
+
+        
+
+
+        public AdminCard(MemberModel member)
         {
             InitializeComponent();
             this.Resize += AdminCard_Resize;
@@ -24,6 +31,17 @@ namespace WorkHive.Views.Cards
             recpanel1 = new Rectangle(panel1.Location, panel1.Size);
             recpanel2 = new Rectangle(panel2.Location, panel2.Size);
             recpanel3 = new Rectangle(panel3.Location, panel3.Size);
+            InitializeElements(member);
+        }
+
+        private void InitializeElements(MemberModel member)
+        {
+            lblProfileName.Text = member.FullName;
+            lblProfileTitle.Text = "Leader";
+            lblProfilePhone.Text = member.ContactNumber.ToString();
+            lblProfileEmail.Text = member.Email;
+            lblAddress.Text = member.Address;
+            picboxProfilePic.Image = Image.FromFile(Path.Combine(Path.GetDirectoryName(Directory.GetParent(Directory.GetCurrentDirectory()).FullName), member.Profile_Pic));
         }
 
         private void AdminCard_Resize(object sender, EventArgs e)
@@ -47,9 +65,5 @@ namespace WorkHive.Views.Cards
 
         }
 
-        private void bunifuLabel1_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

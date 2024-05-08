@@ -3,10 +3,12 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WorkHive.Model;
 using WorkHive.Views.Admin.DashboardPages;
 
 namespace WorkHive.Views.Admin
@@ -19,7 +21,7 @@ namespace WorkHive.Views.Admin
         private Rectangle recEditpictureBox1;
 
         private int Id;
-        public EditTasks(int id)
+        public EditTasks(int id, TaskModel task)
         {
             InitializeComponent();
             txtID.Text = id.ToString();
@@ -27,7 +29,16 @@ namespace WorkHive.Views.Admin
             recpanel2 = new Rectangle(panel2.Location, panel2.Size);
             recpanel3 = new Rectangle(panel3.Location, panel3.Size);
             recEditpictureBox1 = new Rectangle(EditpictureBox1.Location, EditpictureBox1.Size);
+            InitializeElements(task);
             Id = id;
+        }
+
+        private void InitializeElements(TaskModel task)
+        {
+            lblEditTask_Title.Text = task.TaskName;
+            lblEditTask_Date.Text = ($"{CultureInfo.CurrentCulture.DateTimeFormat.GetMonthName(task.TaskStart.Month)} {task.TaskStart.Day}");
+            EditTaskProgress.Value = task.TaskProgress;
+            EditArchived.Checked = !task.Archived;
         }
 
         private void EditTasks_Resize(object sender, EventArgs e)

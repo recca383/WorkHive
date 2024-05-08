@@ -108,15 +108,7 @@ namespace WorkHive.Controller
         {
             return memberModel.FirstOrDefault(i => i.ID == ID);
         }
-        public static int GetMemberCount()
-        {
-            return memberModel.Count;
-        }
-        public static void AssignTask(int ID, int taskID)
-        {
-            MemberModel selectedMember = GetMemberInfo(ID);
-            selectedMember.TaskID = taskID;
-        }
+
         public static void EditMemberInfo (MemberModel editedmember, int id)
         {
             MemberModel currentMember = GetMemberInfo(id);
@@ -168,7 +160,6 @@ namespace WorkHive.Controller
                 Birthdate = newbirthdate,
                 Password = currentMember.Password,
                 IsLeader = currentMember.IsLeader,
-                TaskID = currentMember.TaskID,
                 Profile_Pic = currentMember.Profile_Pic,
                 HouseNumber = newhousenumber,
                 Street = newstreet,

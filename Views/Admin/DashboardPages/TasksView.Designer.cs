@@ -60,7 +60,7 @@
             this.TasksFlow.Size = new System.Drawing.Size(1181, 631);
             this.TasksFlow.TabIndex = 3;
             this.TasksFlow.WrapContents = false;
-            this.TasksFlow.Paint += new System.Windows.Forms.PaintEventHandler(this.TasksFlow_Paint);
+
             // 
             // btnAll
             // 
@@ -164,7 +164,6 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "TasksView";
             this.Size = new System.Drawing.Size(1243, 720);
-            this.Load += new System.EventHandler(this.TasksView_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

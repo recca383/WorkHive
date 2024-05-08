@@ -29,7 +29,6 @@ namespace WorkHive
             int taskID = TaskModelAccess.GetTaskCount();
             MemberModel selectedMember = members.FirstOrDefault(i => i.FirstName == SelectedName);
             TaskModelAccess.AddTask(taskID,TaskNametxt.Text, TaskDescriptiontxt.Text, ArchivedCheckbox.Checked, DatePickerDeadline.Value);
-            MemberModelAccess.AssignTask(selectedMember.ID, taskID);
         }
         private void AddMembersToDropdown()
         {

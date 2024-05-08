@@ -64,7 +64,7 @@ namespace WorkHive.Controller
             }
         };
 
-public static TaskModel GetTaskInfo(int ID)
+        public static TaskModel GetTaskInfo(int ID)
         {
             return Tasks.FirstOrDefault(i => i.TaskID == ID);
         }

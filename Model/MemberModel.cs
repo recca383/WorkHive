@@ -52,7 +52,6 @@ namespace WorkHive.Model
         public DateTime Birthdate { get; set; } =  DateTime.Now;
         public string Password { get; set; }
         public bool IsLeader { get; set; }
-        public int TaskID {  get; set; }
         public string Profile_Pic { get; set; } = " ";
         public string HouseNumber { get; set; } = " ";
         public string Street { get; set; } = " ";

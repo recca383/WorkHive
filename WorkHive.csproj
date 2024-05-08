@@ -557,24 +557,6 @@
     <Compile Include="Views\LandingPage\LandingPagePages\VerifyPassword.Designer.cs">
       <DependentUpon>VerifyPassword.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\Member\DashboardPagesMember\CalendarCurrentDaysMember.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Views\Member\DashboardPagesMember\CalendarCurrentDaysMember.Designer.cs">
-      <DependentUpon>CalendarCurrentDaysMember.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Views\Member\DashboardPagesMember\CalendarDaysMember.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Views\Member\DashboardPagesMember\CalendarDaysMember.Designer.cs">
-      <DependentUpon>CalendarDaysMember.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Views\Member\DashboardPagesMember\CalendarViewMember.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Views\Member\DashboardPagesMember\CalendarViewMember.Designer.cs">
-      <DependentUpon>CalendarViewMember.cs</DependentUpon>
-    </Compile>
     <Compile Include="Views\Member\DashboardPagesMember\Dashboard-Member.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -691,15 +673,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Views\LandingPage\LandingPagePages\VerifyPassword.resx">
       <DependentUpon>VerifyPassword.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Views\Member\DashboardPagesMember\CalendarCurrentDaysMember.resx">
-      <DependentUpon>CalendarCurrentDaysMember.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Views\Member\DashboardPagesMember\CalendarDaysMember.resx">
-      <DependentUpon>CalendarDaysMember.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Views\Member\DashboardPagesMember\CalendarViewMember.resx">
-      <DependentUpon>CalendarViewMember.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\Member\DashboardPagesMember\Dashboard-Member.resx">
       <DependentUpon>Dashboard-Member.cs</DependentUpon>

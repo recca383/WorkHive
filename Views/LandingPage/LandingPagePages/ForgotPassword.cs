@@ -31,9 +31,11 @@ namespace WorkHive.Views.LandingPage.LandingPagePages
             var emailVerification = memberModels.Any(m => m.Email == txtEmailAddress.Text);
             _email = txtEmailAddress.Text;
 
+            ForgotPasswordPage parent = this.ParentForm as ForgotPasswordPage;
+
             if (emailVerification)
             {
-                ForgotPasswordPage.GoToSecondStep();
+                parent.GoBackToSecondStep();
             }
             else
             {

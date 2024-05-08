@@ -36,33 +36,32 @@
             // 
             this.lblDays.AutoSize = true;
             this.lblDays.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDays.Location = new System.Drawing.Point(11, 11);
+            this.lblDays.Location = new System.Drawing.Point(8, 9);
+            this.lblDays.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblDays.Name = "lblDays";
-            this.lblDays.Size = new System.Drawing.Size(29, 20);
+            this.lblDays.Size = new System.Drawing.Size(26, 17);
             this.lblDays.TabIndex = 0;
             this.lblDays.Text = "00";
             // 
             // lblTaskName
             // 
             this.lblTaskName.AutoSize = true;
-            this.lblTaskName.Location = new System.Drawing.Point(11, 43);
-            this.lblTaskName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblTaskName.Location = new System.Drawing.Point(8, 35);
             this.lblTaskName.Name = "lblTaskName";
-            this.lblTaskName.Size = new System.Drawing.Size(44, 16);
+            this.lblTaskName.Size = new System.Drawing.Size(0, 13);
             this.lblTaskName.TabIndex = 1;
-            this.lblTaskName.Text = "label1";
             this.lblTaskName.Visible = false;
             // 
             // CalendarCurrentDays
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.lblTaskName);
             this.Controls.Add(this.lblDays);
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "CalendarCurrentDays";
-            this.Size = new System.Drawing.Size(163, 100);
+            this.Size = new System.Drawing.Size(122, 81);
             this.Load += new System.EventHandler(this.CalendarCurrentDays_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

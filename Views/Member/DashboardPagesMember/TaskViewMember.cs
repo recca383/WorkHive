@@ -17,85 +17,40 @@ namespace WorkHive.Views.Member.DashboardPagesMember
 {
     public partial class TaskViewMember : UserControl
     {
-        private List<TaskModel> tasks;
-        private List<TaskCard> filteredlist = new List<TaskCard>();
+        private List<TaskModel> tasks = TaskModelAccess.GetTaskModel();
+
         public TaskViewMember()
         {
             InitializeComponent();
-            AddTaskElements();
-        }
-        private void AddTaskElements()
-        {
-            RefreshList();
+            RefreshList(tasks);
         }
 
-        private void RefreshList()
+        private void RefreshList(List<TaskModel> tasks)
         {
-            filteredlist.Clear();
+            TasksFlow.Controls.Clear();
             tasks = TaskModelAccess.GetTaskModel();
 
-            if (tasks is null)
+            foreach (TaskModel taskModel in tasks)
             {
-                MessageBox.Show("Wala pang laman, palagyan ng design to HAHAHAHA");
+                TasksFlow.Controls.Add(new TaskCard(taskModel));
             }
-            else
-            {
-                foreach (TaskModel taskModel in tasks)
-                {
-                    TaskCard card = new TaskCard();
-                    card.lblTask_Title.Text = taskModel.TaskName;
-                    card.lblTask_Date.Text = ($"{CultureInfo.CurrentCulture.DateTimeFormat.GetMonthName(taskModel.TaskStart.Month)} {taskModel.TaskStart.Day}");
-                    card.Deadlinetxt.Text = ($"{CultureInfo.CurrentCulture.DateTimeFormat.GetMonthName(taskModel.Deadline.Month)} {taskModel.Deadline.Day}");
-                    card.TaskProgress.Value = taskModel.TaskProgress;
-                    card.Archived.Checked = !taskModel.Archived;
-                    filteredlist.Add(card);
-                }
-            }
-
         }
+        
         private void btnAll_Click(object sender, EventArgs e)
         {
-            RefreshList();
-            SortAllTasks();
-        }
-
-        private void SortAllTasks()
-        {
-            RefreshList();
-            TasksFlow.Controls.Clear();
-            var results = filteredlist
-                .Where(p => p.Archived.Checked)
-                .OrderBy(p => p.TaskProgress.Value);
-            foreach (var result in results)
-            {
-                TasksFlow.Controls.Add(result);
-            }
+            RefreshList(tasks);
         }
 
         private void btnOngoing_Click(object sender, EventArgs e)
         {
-            RefreshList();
-            TasksFlow.Controls.Clear();
-            var results = filteredlist
-                .Where(p => p.TaskProgress.Value < 100 && p.Archived.Checked)
-                .OrderBy(p => p.TaskProgress.Value);
-            foreach (var result in results)
-            {
-                TasksFlow.Controls.Add(result);
-            }
+            var results = tasks.Where(p => p.TaskProgress < 100).ToList();
+            RefreshList(results);
         }
 
         private void btnCompleted_Click(object sender, EventArgs e)
         {
-            RefreshList();
-            TasksFlow.Controls.Clear();
-            var results = filteredlist
-                .Where(p => p.TaskProgress.Value == 100 && p.Archived.Checked)
-                .OrderBy(p => p.TaskProgress.Value);
-            foreach (var result in results)
-            {
-                TasksFlow.Controls.Add(result);
-            }
+            var results = tasks.Where(p => p.TaskProgress == 100).ToList();
+            RefreshList(results);
         }
 
     }

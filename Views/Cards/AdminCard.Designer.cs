@@ -254,12 +254,12 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel3;
-        public Bunifu.UI.WinForms.BunifuLabel lblProfileName;
-        public Bunifu.UI.WinForms.BunifuLabel lblAddress;
-        public Bunifu.UI.WinForms.BunifuLabel lblProfileTitle;
-        public Bunifu.UI.WinForms.BunifuLabel lblProfileEmail;
-        public Bunifu.UI.WinForms.BunifuLabel lblProfilePhone;
-        public Bunifu.UI.WinForms.BunifuPictureBox picboxProfilePic;
+        private Bunifu.UI.WinForms.BunifuLabel lblProfileName;
+        private Bunifu.UI.WinForms.BunifuLabel lblAddress;
+        private Bunifu.UI.WinForms.BunifuLabel lblProfileTitle;
+        private Bunifu.UI.WinForms.BunifuLabel lblProfileEmail;
+        private Bunifu.UI.WinForms.BunifuLabel lblProfilePhone;
+        private Bunifu.UI.WinForms.BunifuPictureBox picboxProfilePic;
         private System.Windows.Forms.Label label1;
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
     }

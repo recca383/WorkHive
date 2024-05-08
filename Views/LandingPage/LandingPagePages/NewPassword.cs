@@ -23,7 +23,8 @@ namespace WorkHive.Views.LandingPage.LandingPagePages
 
         private void bunifuImageButton1_Click(object sender, EventArgs e)
         {
-            ForgotPasswordPage.GoBackToSecondStep();
+            ForgotPasswordPage parent = this.ParentForm as ForgotPasswordPage;
+            parent.GoBackToSecondStep();
         }
 
         private void btnSave_Click(object sender, EventArgs e)

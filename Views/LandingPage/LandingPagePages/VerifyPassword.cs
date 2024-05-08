@@ -24,13 +24,15 @@ namespace WorkHive.Views.LandingPage.LandingPagePages
 
         private void btnGoBackToFirstStep_Click(object sender, EventArgs e)
         {
-            ForgotPasswordPage.GoBackToFirstStep();
+            ForgotPasswordPage parent = this.ParentForm as ForgotPasswordPage;
+            parent.GoBackToFirstStep();
         }
 
         private void btnVerify_Click(object sender, EventArgs e)
         {
+            ForgotPasswordPage parent = this.ParentForm as ForgotPasswordPage;
 
-            if (_code == txtCode.Text) ForgotPasswordPage.GoToThirdStep();
+            if (_code == txtCode.Text) parent.GoToThirdStep();
             else MessageBox.Show("Code doesn't match");
 
         }

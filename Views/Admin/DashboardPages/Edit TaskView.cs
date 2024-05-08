@@ -28,16 +28,11 @@ namespace WorkHive.Views.Admin.DashboardPages
         private Rectangle recEditScrollBar1;
         private Rectangle recbtnAddtasks;
 
-        private List<EditTasks> list = new List<EditTasks>();
-        private List<TaskModel> tasks;
-        private static int Taskid;
-        List<UserControl> List = new List<UserControl>();
+        private List<TaskModel> tasks = TaskModelAccess.GetTaskModel();
 
         public Edit_TaskView()
         {
-            Taskid = 0;
             InitializeComponent();
-            AddTaskElements();
             SortAllTasks();
             AddTaskPanel.Size = new Size(0,0);
             this.Resize += Edit_TaskView_Resize; 
@@ -78,82 +73,41 @@ namespace WorkHive.Views.Admin.DashboardPages
 
         }
 
-        private void AddTaskElements()
+        private void RefreshList(List<TaskModel> taskList)
         {
-            RefreshList();
-
-        }
-
-        private void RefreshList()
-        {
-            list.Clear();
-            for (int i = 0; i < TaskModelAccess.GetTaskCount(); i++)
+            EditTasksFlow.Controls.Clear();
+            foreach(var task in taskList)
             {
-                TaskModel taskModel = TaskModelAccess.GetTaskInfo(i);
-                EditTasks card = new EditTasks(i);
-                card.lblEditTask_Title.Text = taskModel.TaskName;
-                card.lblEditTask_Date.Text = ($"{CultureInfo.CurrentCulture.DateTimeFormat.GetMonthName(taskModel.TaskStart.Month)} {taskModel.TaskStart.Day}");
-                card.EditTaskProgress.Value = taskModel.TaskProgress;
-                card.EditArchived.Checked = !taskModel.Archived;
-                list.Add(card);
-
+                EditTasksFlow.Controls.Add(new EditTasks(task.TaskID,task));
             }
-        }
-
-        private void btnAll_Click(object sender, EventArgs e)
-        {
-            RefreshList();
-            SortAllTasks();
         }
 
         private void SortAllTasks()
         {
-            RefreshList();
-            EditTasksFlow.Controls.Clear();
-            var results = list
-                .Where(p => p.EditArchived.Checked)
-                .OrderBy(p => p.EditTaskProgress.Value);
-            foreach (var result in results)
-            {
-                EditTasksFlow.Controls.Add(result);
-            }
+            RefreshList(tasks);
+        }
+
+        private void btnAll_Click(object sender, EventArgs e)
+        {
+            RefreshList(tasks);
         }
 
         private void btnOngoing_Click(object sender, EventArgs e)
         {
-            RefreshList();
-            EditTasksFlow.Controls.Clear();
-            var results = list
-                .Where(p => p.EditTaskProgress.Value < 100 && p.EditArchived.Checked)
-                .OrderBy(p => p.EditTaskProgress.Value);
-            foreach (var result in results)
-            {
-                EditTasksFlow.Controls.Add(result);
-            }
+            var results = tasks.Where(p => p.TaskProgress < 100).ToList();
+            RefreshList(results);
         }
 
         private void btnCompleted_Click(object sender, EventArgs e)
         {
-            RefreshList();
-            EditTasksFlow.Controls.Clear();
-            var results = list
-                .Where(p => p.EditTaskProgress.Value == 100 && p.EditArchived.Checked)
-                .OrderBy(p => p.EditTaskProgress.Value);
-            foreach (var result in results)
-            {
-                EditTasksFlow.Controls.Add(result);
-            }
+            var results = tasks.Where(p => p.TaskProgress == 100).ToList();
+            RefreshList(results);
         }
 
         private void btnArchived_Click(object sender, EventArgs e)
         {
-            RefreshList();
-            EditTasksFlow.Controls.Clear();
-            var results = list.Where(p => !p.EditArchived.Checked);
-            foreach (var result in results)
-            {
-                EditTasksFlow.Controls.Add(result);
-            }
+            var results = tasks.Where(a => a.Archived).ToList();
+            RefreshList(results);
         }
 
         private void btnAddtasks_Click(object sender, EventArgs e)

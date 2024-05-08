@@ -231,10 +231,10 @@
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse2;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.PictureBox pictureBox3;
-        public Bunifu.Framework.UI.BunifuCustomLabel lblTask_Title;
-        public Bunifu.Framework.UI.BunifuCustomLabel lblTask_Date;
-        public Bunifu.UI.Winforms.BunifuProgressBar TaskProgress;
-        public Bunifu.Framework.UI.BunifuCheckbox Archived;
-        public Bunifu.Framework.UI.BunifuCustomLabel Deadlinetxt;
+        private Bunifu.Framework.UI.BunifuCustomLabel lblTask_Title;
+        private Bunifu.Framework.UI.BunifuCustomLabel lblTask_Date;
+        private Bunifu.UI.Winforms.BunifuProgressBar TaskProgress;
+        private Bunifu.Framework.UI.BunifuCheckbox Archived;
+        private Bunifu.Framework.UI.BunifuCustomLabel Deadlinetxt;
     }
 }

@@ -82,7 +82,6 @@
             this.LandingPageViewPanel.Name = "LandingPageViewPanel";
             this.LandingPageViewPanel.Size = new System.Drawing.Size(657, 809);
             this.LandingPageViewPanel.TabIndex = 1;
-            this.LandingPageViewPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.LandingPageViewPanel_Paint);
             // 
             // Landing_Page
             // 
@@ -109,7 +108,7 @@
 
         #endregion
         private System.Windows.Forms.Label label2;
-        public System.Windows.Forms.Panel LandingPageViewPanel;
+        private System.Windows.Forms.Panel LandingPageViewPanel;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pictureBox1;
     }

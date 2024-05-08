@@ -17,6 +17,7 @@ namespace WorkHive.Views.LandingPage.LandingPagePages
 {
     public partial class Sign_In : UserControl
     {
+
         private Size SigninOriginalSize;
         private Rectangle reclabel3;
         private Rectangle rectxtEmail;
@@ -65,7 +66,9 @@ namespace WorkHive.Views.LandingPage.LandingPagePages
 
         private void btnSignUp_Click(object sender, EventArgs e)
         {
-            Landing_Page.btnSign_UpEvent();
+            Landing_Page parent = this.ParentForm as Landing_Page;
+            parent.btnSign_UpEvent(sender, e);
+
         }
 
         private void btnSignIn_Click(object sender, EventArgs e)
@@ -123,5 +126,7 @@ namespace WorkHive.Views.LandingPage.LandingPagePages
             forgotPassword.Show();
            // ParentForm.Enabled = false;
         }
+
+        
     }
 }
