@@ -20,12 +20,12 @@ namespace WorkHive.Controller
             new MemberModel()
             {//sirpatrick121402@gmail.com
                 ID = 0,
-                Email = "sirpatrick121402@gmail.com",
+                Email = "pat",
                 FirstName = "recca383",
                 Password = "123",
                 IsLeader = false,
-                Profile_Pic = "Resources\\Default_Admin_Pics\\tatik.jpg"
-
+                Profile_Pic = "Resources\\Default_Admin_Pics\\tatik.jpg",
+                Sex = sex.None
             },
             {
             new MemberModel()

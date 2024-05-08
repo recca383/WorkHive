@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -41,7 +42,7 @@ namespace WorkHive.Views.Member.DashboardPagesMember
             //enum of positions
             memberworklbl.Text = "Manager";
 
-            MemberBirthdatelbl.Text = currentUser.Birthdate.ToString();
+            MemberBirthdatelbl.Text = (currentUser.Birthdate.ToString("MMMM dd, yyyy"));
             Membercontactlbl.Text = currentUser.ContactNumber.ToString();
             Memberemaillbl.Text = currentUser.Email;
             Memberaddresslbl.Text = currentUser.Address;
@@ -53,10 +54,10 @@ namespace WorkHive.Views.Member.DashboardPagesMember
             Memberemailtxt.Text = currentUser.Email;
 
             SexDrop.DataSource = Enum.GetNames(typeof(sex));
-            SexDrop.SelectedText = currentUser.Sex.ToString();
+            SexDrop.SelectedIndex = ((int)currentUser.Sex);
 
             bloodTypeDrop.DataSource = Enum.GetNames(typeof(bloodType));
-            bloodTypeDrop.SelectedText = currentUser.BloodType.ToString();
+            bloodTypeDrop.SelectedIndex = ((int)currentUser.BloodType);
 
             BirthPicker.Value = currentUser.Birthdate;
 

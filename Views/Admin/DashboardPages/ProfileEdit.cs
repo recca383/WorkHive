@@ -44,7 +44,7 @@ namespace WorkHive.Views.Admin
             //enum of positions
             worklbl.Text = "Manager";
             
-            Birthdatelbl.Text = currentUser.Birthdate.ToString();
+            Birthdatelbl.Text = (currentUser.Birthdate.ToString("MMMM dd, yyyy"));
             contactlbl.Text = currentUser.ContactNumber.ToString();
             emaillbl.Text = currentUser.Email;
             addresslbl.Text = currentUser.Address;
@@ -56,10 +56,10 @@ namespace WorkHive.Views.Admin
             emailtxt.Text = currentUser.Email;
 
             SexDrop.DataSource = Enum.GetNames(typeof(sex)) ;
-            SexDrop.SelectedText = currentUser.Sex.ToString();
+            SexDrop.SelectedIndex = ((int)currentUser.Sex);
 
             bloodTypeDrop.DataSource = Enum.GetNames(typeof(bloodType));
-            bloodTypeDrop.SelectedText = currentUser.BloodType.ToString();
+            bloodTypeDrop.SelectedIndex = ((int)currentUser.BloodType);
 
             BirthPicker.Value = currentUser.Birthdate;
 
@@ -94,7 +94,7 @@ namespace WorkHive.Views.Admin
                 editedmember.LastName = Lastnametxt.Text;
                 editedmember.MiddleName = Middlenametxt.Text;
                 editedmember.ExtensionName = Extensiontxt.Text;
-                editedmember.Sex = (sex) SexDrop.SelectedIndex; 
+                editedmember.Sex = (sex)SexDrop.SelectedIndex;
                 editedmember.BloodType = (bloodType)bloodTypeDrop.SelectedIndex;
                 editedmember.Birthdate = BirthPicker.Value;
                 editedmember.HouseNumber = HouseNumbertxt.Text;

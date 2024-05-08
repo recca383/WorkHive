@@ -37,5 +37,29 @@ namespace WorkHive.Views.LandingPage.LandingPagePages
             
 
         }
+
+        private void txtNewPassword_OnValueChanged(object sender, EventArgs e)
+        {
+            if (txtNewPassword.Text == "")
+            {
+                txtNewPassword.isPassword = false;
+            }
+            else
+            {
+                txtNewPassword.isPassword = true;
+            }
+        }
+
+        private void txtConfirmPassword_OnValueChanged(object sender, EventArgs e)
+        {
+            if (txtConfirmPassword.Text == "")
+            {
+                txtConfirmPassword.isPassword = false;
+            }
+            else
+            {
+                txtConfirmPassword.isPassword = true;
+            }
+        }
     }
 }
