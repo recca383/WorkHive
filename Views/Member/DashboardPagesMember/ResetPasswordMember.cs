@@ -43,11 +43,11 @@ namespace WorkHive.Views.Member.DashboardPagesMember
             {
                 MailNotif mail = new MailNotif(ForgotPassword._email, code);
 
-                MessageBox.Show("Code Sent!");
+                new MessageBoxes("Code Sent!");
             }
             catch (Exception e)
             {
-                MessageBox.Show(e.Message);
+                new MessageBoxes(e.Message);
             }
 
         }

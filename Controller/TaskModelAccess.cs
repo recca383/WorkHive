@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using WorkHive.Model;
+using WorkHive.Views.LandingPage.LandingPagePages;
 
 namespace WorkHive.Controller
 {
@@ -122,7 +123,7 @@ namespace WorkHive.Controller
                     Archived = !archived
                 };
                 Tasks.Add(newTask);
-                MessageBox.Show("Task Added");
+                new MessageBoxes("Task Added");
                 foreach(var member in members)
                 {
                     new MailNotif(member.Email, newTask);
@@ -133,7 +134,7 @@ namespace WorkHive.Controller
             catch (Exception e)
             {
 
-                MessageBox.Show(e.Message);
+                new MessageBoxes(e.Message);
             }
         }
     }

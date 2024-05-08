@@ -39,7 +39,7 @@ namespace WorkHive.Views.LandingPage.LandingPagePages
             }
             else
             {
-                MessageBox.Show("Email Does Not Exist");
+                new MessageBoxes("Email Does Not Exist");
             }
         }
     }

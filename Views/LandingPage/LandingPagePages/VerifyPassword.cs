@@ -33,7 +33,7 @@ namespace WorkHive.Views.LandingPage.LandingPagePages
             ForgotPasswordPage parent = this.ParentForm as ForgotPasswordPage;
 
             if (_code == txtCode.Text) parent.GoToThirdStep();
-            else MessageBox.Show("Code doesn't match");
+            else new MessageBoxes("Code doesn't match");
 
         }
         private async Task SendCode(string code)
@@ -43,11 +43,11 @@ namespace WorkHive.Views.LandingPage.LandingPagePages
             {
                 MailNotif mail = new MailNotif(ForgotPassword._email, code);
 
-                MessageBox.Show("Code Sent!");
+                new MessageBoxes("Code Sent!");
             }
             catch (Exception e)
             {
-                MessageBox.Show(e.Message);
+                new MessageBoxes(e.Message);
             }
 
         }

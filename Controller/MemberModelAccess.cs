@@ -7,14 +7,17 @@ using System.Threading.Tasks;
 using System.Web.UI.Design.WebControls;
 using System.Windows.Forms;
 using WorkHive.Model;
+using WorkHive.Views.LandingPage.LandingPagePages;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.TrackBar;
 
 namespace WorkHive.Controller
 {
+    
     internal class MemberModelAccess
     {
+        
         private static List<MemberModel> memberModel = new List<MemberModel>()
         {
             new MemberModel()
@@ -63,44 +66,46 @@ namespace WorkHive.Controller
         }
         public static bool ChangePassword (MemberModel member, string currentPassword, string newPassword, string newPasswordConfirm)
         {
+            MessageBoxes messagebox;
             bool loop = true;
             if (!(member.Password == currentPassword))
             {
-                MessageBox.Show("Wrong Password");
+                messagebox = new MessageBoxes("Wrong Password");
             }
             else if (!(newPasswordConfirm == newPassword))
             {
-                MessageBox.Show("Password Doesn't Match");
+                messagebox = new MessageBoxes("Password Doesn't Match");
             }
             else if(member.Password == newPassword)
             {
-                MessageBox.Show("You can't use your old password");
+                messagebox = new MessageBoxes("You can't use your old password");
             }
             else
             {
                 member.Password = newPassword;
                 loop = false;
-                MessageBox.Show("Change Password Successful");
+                messagebox = new MessageBoxes("Change Password Successful");
                 
             }
             return loop;
         }
         public static bool ChangePassword(MemberModel member,string newPassword, string newPasswordConfirm)
         {
+            MessageBoxes messagebox;
             bool loop = true;
             if (!(newPasswordConfirm == newPassword))
             {
-                MessageBox.Show("Password Doesn't Match");
+                messagebox = new MessageBoxes("Password Doesn't Match");
             }
             else if (member.Password == newPassword)
             {
-                MessageBox.Show("You can't use your old password");
+                messagebox = new MessageBoxes("You can't use your old password");
             }
             else
             {
                 member.Password = newPassword;
                 loop = false;
-                MessageBox.Show("Change Password Successful");
+                messagebox = new MessageBoxes("Change Password Successful");
             }
             return loop;
         }

@@ -13,6 +13,7 @@ using System.Windows.Forms;
 using WorkHive.Controller;
 using WorkHive.Model;
 using WorkHive.Views.Cards;
+using WorkHive.Views.LandingPage.LandingPagePages;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.TextBox;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.TrackBar;
 
@@ -66,7 +67,7 @@ namespace WorkHive.Views.Admin.DashboardPages
 
             if (members is null)
             {
-                MessageBox.Show("Wala pang laman, palagyan ng design to HAHAHAHA");
+                new MessageBoxes("Wala pang laman, palagyan ng design to HAHAHAHA");
             }
             else
             {

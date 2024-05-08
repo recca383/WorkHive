@@ -97,9 +97,9 @@ namespace WorkHive.Views.LandingPage.LandingPagePages
         private void btnSignUp_Click(object sender, EventArgs e)
         {
             List<MemberModel> model = MemberModelAccess.GetMemberModel();
-            if (model.Any(n => n.FirstName == txtName.Text)) MessageBox.Show("Username Taken");
-            else if (model.Any(m => m.Email == txtEmail.Text)) MessageBox.Show("Email Already Used");
-            else if (!(txtPassword.Text == txtConfirmPassword.Text)) MessageBox.Show("Password Does Not Match");
+            if (model.Any(n => n.FirstName == txtName.Text)) new MessageBoxes("Username Taken");
+            else if (model.Any(m => m.Email == txtEmail.Text)) new MessageBoxes("Email Already Used");
+            else if (!(txtPassword.Text == txtConfirmPassword.Text)) new MessageBoxes("Password Does Not Match");
             else
             {
                 MemberModelAccess.AddMember(new MemberModel()
@@ -112,7 +112,7 @@ namespace WorkHive.Views.LandingPage.LandingPagePages
 
                 }) ;
 
-                MessageBox.Show("Sign Up Complete!", "Complete", MessageBoxButtons.OK); 
+                new MessageBoxes("Sign Up Complete!"); 
                 txtName.Text = default;
                 txtEmail.Text = default;
                 txtPassword.Text = default;

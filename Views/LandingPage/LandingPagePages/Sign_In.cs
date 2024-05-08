@@ -101,7 +101,7 @@ namespace WorkHive.Views.LandingPage.LandingPagePages
 
             if (CurrentUser == null)
             {
-                MessageBox.Show("Wrong Credentials!");
+                new MessageBoxes("Wrong Credentials!");
                /*Messageboxes Wrong = new Messageboxes();
                Wrong.Show();*/
             }
