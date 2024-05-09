@@ -25,7 +25,7 @@ namespace WorkHive.Views.Member.DashboardPagesMember
         private void InitializeElements()
         {
             var parent = Directory.GetParent(Directory.GetCurrentDirectory()).FullName;
-            if (currentMember.Profile_Pic == null)
+            if (currentMember.Profile_Pic == " ")
             {
                 ProfilePictureADMIN.Image = Image.FromFile(Path.Combine(Path.GetDirectoryName(parent), "Resources\\Default_Pics\\Userdefault.png"));
             }

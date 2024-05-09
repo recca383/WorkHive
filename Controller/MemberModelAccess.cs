@@ -46,8 +46,8 @@ namespace WorkHive.Controller
             new MemberModel()
             {
                 ID = 2,
-                Email = "Wincel",
-                FirstName = "Wincel",
+                Email = "aljohn.villareal@lspu.edu.ph",
+                FirstName = "Al John",
                 Password = "123",
                 IsLeader = true,
                 Profile_Pic = "Resources\\Default_Admin_Pics\\wincel.jpg",

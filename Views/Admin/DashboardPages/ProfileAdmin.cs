@@ -27,7 +27,7 @@ namespace WorkHive.Views.Admin
         private void SetElememts()
         {
             var parent = Directory.GetParent(Directory.GetCurrentDirectory()).FullName;
-            if (CurrentUser.Profile_Pic == null)
+            if (CurrentUser.Profile_Pic == " ")
             {
                 ProfilePictureADMIN.Image = Image.FromFile(Path.Combine(Path.GetDirectoryName(parent), "Resources\\Default_Pics\\Userdefault.png"));
             }

@@ -26,7 +26,7 @@ namespace WorkHive.Views.Member.DashboardPagesMember
         {
             currentUser = MemberModelAccess.GetMemberInfo(currentUser.ID);
             var parent = Directory.GetParent(Directory.GetCurrentDirectory()).FullName;
-            if (currentUser.Profile_Pic == null)
+            if (currentUser.Profile_Pic == " ")
             {
                 MemberPictureBox.Image = Image.FromFile(Path.Combine(Path.GetDirectoryName(parent), "Resources\\Default_Pics\\Userdefault.png"));
             }

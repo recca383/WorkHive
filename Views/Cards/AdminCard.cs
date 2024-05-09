@@ -36,12 +36,20 @@ namespace WorkHive.Views.Cards
 
         private void InitializeElements(MemberModel member)
         {
+            var parent = Directory.GetParent(Directory.GetCurrentDirectory()).FullName;
             lblProfileName.Text = member.FullName;
             lblProfileTitle.Text = "Leader";
             lblProfilePhone.Text = member.ContactNumber.ToString();
             lblProfileEmail.Text = member.Email;
             lblAddress.Text = member.Address;
-            picboxProfilePic.Image = Image.FromFile(Path.Combine(Path.GetDirectoryName(Directory.GetParent(Directory.GetCurrentDirectory()).FullName), member.Profile_Pic));
+            if (member.Profile_Pic == " ")
+            {
+                picboxProfilePic.Image = Image.FromFile(Path.Combine(Path.GetDirectoryName(parent), "Resources\\Default_Pics\\Userdefault.png"));
+            }
+            else
+            {
+                picboxProfilePic.Image = Image.FromFile(Path.Combine(Path.GetDirectoryName(parent), member.Profile_Pic));
+            }
         }
 
         private void AdminCard_Resize(object sender, EventArgs e)

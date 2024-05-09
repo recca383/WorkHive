@@ -43,7 +43,7 @@ namespace WorkHive.Views
         private void Initialize_Controls_According_To_User()
         {
             var parent = Directory.GetParent(Directory.GetCurrentDirectory()).FullName;
-            if (CurrentUser.Profile_Pic == null)
+            if (CurrentUser.Profile_Pic == " ")
             {
                 ProfilePicBox.Image = Image.FromFile(Path.Combine(Path.GetDirectoryName(parent), "Resources\\Default_Pics\\Userdefault.png"));
             }

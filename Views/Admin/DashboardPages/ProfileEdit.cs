@@ -29,7 +29,7 @@ namespace WorkHive.Views.Admin
         {
             currentUser = MemberModelAccess.GetMemberInfo(currentUserID);
             var parent = Directory.GetParent(Directory.GetCurrentDirectory()).FullName;
-            if (currentUser.Profile_Pic == null)
+            if (currentUser.Profile_Pic == " ")
             {
                 ProfilePic.Image = Image.FromFile(Path.Combine(Path.GetDirectoryName(parent), "Resources\\Default_Pics\\Userdefault.png"));
             }

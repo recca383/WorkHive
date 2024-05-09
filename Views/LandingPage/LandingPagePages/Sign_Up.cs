@@ -108,7 +108,7 @@ namespace WorkHive.Views.LandingPage.LandingPagePages
                     FirstName = txtName.Text,
                     Email = txtEmail.Text,
                     Password = txtPassword.Text,
-                    IsLeader = true // change to false for creating member as default
+                    IsLeader = false // change to false for creating member as default
 
                 }) ;
 
