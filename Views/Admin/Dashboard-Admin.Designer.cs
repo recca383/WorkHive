@@ -221,7 +221,6 @@
             this.btnChats.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnChats.Textcolor = System.Drawing.Color.White;
             this.btnChats.TextFont = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnChats.Click += new System.EventHandler(this.btnChats_Click);
             // 
             // panel3
             // 

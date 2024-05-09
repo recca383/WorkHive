@@ -22,13 +22,13 @@ namespace WorkHive.Views.Member.DashboardPagesMember
         public TaskViewMember()
         {
             InitializeComponent();
-            RefreshList(tasks);
+            var results = tasks.Where(p => !p.Archived).ToList();
+            RefreshList(results);
         }
 
         private void RefreshList(List<TaskModel> tasks)
         {
             TasksFlow.Controls.Clear();
-            tasks = TaskModelAccess.GetTaskModel();
 
             foreach (TaskModel taskModel in tasks)
             {
@@ -38,7 +38,8 @@ namespace WorkHive.Views.Member.DashboardPagesMember
         
         private void btnAll_Click(object sender, EventArgs e)
         {
-            RefreshList(tasks);
+            var results = tasks.Where(p => !p.Archived).ToList();
+            RefreshList(results);
         }
 
         private void btnOngoing_Click(object sender, EventArgs e)

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.CodeAnalysis.Text;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,13 +13,16 @@ namespace WorkHive.Views.LandingPage.LandingPagePages
 {
     public partial class MessageBoxes : Form
     {
+
         public MessageBoxes(string message)
         {
             InitializeComponent();
             TextLabel.Text = message;
             this.Show();
+          
         }
 
+      
         private void OkayButton_Click(object sender, EventArgs e)
         {
             this.Hide();

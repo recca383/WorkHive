@@ -45,17 +45,20 @@
             // 
             // label3
             // 
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft YaHei UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(34, 132);
+            this.label3.Location = new System.Drawing.Point(45, 162);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(179, 42);
+            this.label3.Size = new System.Drawing.Size(223, 52);
             this.label3.TabIndex = 7;
             this.label3.Text = "Welcome!";
             // 
             // txtPassword
             // 
             this.txtPassword.AllowDrop = true;
+            this.txtPassword.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtPassword.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
             this.txtPassword.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
             this.txtPassword.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
@@ -69,11 +72,11 @@
             this.txtPassword.LineIdleColor = System.Drawing.Color.Gold;
             this.txtPassword.LineMouseHoverColor = System.Drawing.Color.Crimson;
             this.txtPassword.LineThickness = 3;
-            this.txtPassword.Location = new System.Drawing.Point(42, 272);
-            this.txtPassword.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtPassword.Location = new System.Drawing.Point(56, 335);
+            this.txtPassword.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.txtPassword.MaxLength = 32767;
             this.txtPassword.Name = "txtPassword";
-            this.txtPassword.Size = new System.Drawing.Size(398, 37);
+            this.txtPassword.Size = new System.Drawing.Size(531, 46);
             this.txtPassword.TabIndex = 2;
             this.txtPassword.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.txtPassword.OnValueChanged += new System.EventHandler(this.txtPassword_OnValueChanged);
@@ -81,6 +84,7 @@
             // 
             // txtEmail
             // 
+            this.txtEmail.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtEmail.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
             this.txtEmail.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
             this.txtEmail.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
@@ -94,17 +98,18 @@
             this.txtEmail.LineIdleColor = System.Drawing.Color.Gold;
             this.txtEmail.LineMouseHoverColor = System.Drawing.Color.Crimson;
             this.txtEmail.LineThickness = 3;
-            this.txtEmail.Location = new System.Drawing.Point(41, 208);
-            this.txtEmail.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtEmail.Location = new System.Drawing.Point(55, 256);
+            this.txtEmail.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.txtEmail.MaxLength = 32767;
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(398, 37);
+            this.txtEmail.Size = new System.Drawing.Size(531, 46);
             this.txtEmail.TabIndex = 1;
             this.txtEmail.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // btnForgotPass
             // 
             this.btnForgotPass.AllowToggling = false;
+            this.btnForgotPass.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnForgotPass.AnimationSpeed = 200;
             this.btnForgotPass.AutoGenerateColors = false;
             this.btnForgotPass.BackColor = System.Drawing.Color.Transparent;
@@ -139,8 +144,8 @@
             this.btnForgotPass.IdleIconLeftImage = null;
             this.btnForgotPass.IdleIconRightImage = null;
             this.btnForgotPass.IndicateFocus = false;
-            this.btnForgotPass.Location = new System.Drawing.Point(41, 403);
-            this.btnForgotPass.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnForgotPass.Location = new System.Drawing.Point(55, 496);
+            this.btnForgotPass.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnForgotPass.Name = "btnForgotPass";
             stateProperties1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
             stateProperties1.BorderRadius = 3;
@@ -160,7 +165,7 @@
             stateProperties2.IconLeftImage = null;
             stateProperties2.IconRightImage = null;
             this.btnForgotPass.OnPressedState = stateProperties2;
-            this.btnForgotPass.Size = new System.Drawing.Size(146, 26);
+            this.btnForgotPass.Size = new System.Drawing.Size(195, 32);
             this.btnForgotPass.TabIndex = 15;
             this.btnForgotPass.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnForgotPass.TextMarginLeft = 0;
@@ -170,6 +175,7 @@
             // btnSignUp
             // 
             this.btnSignUp.AllowToggling = false;
+            this.btnSignUp.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnSignUp.AnimationSpeed = 200;
             this.btnSignUp.AutoGenerateColors = false;
             this.btnSignUp.BackColor = System.Drawing.Color.Transparent;
@@ -204,8 +210,8 @@
             this.btnSignUp.IdleIconLeftImage = null;
             this.btnSignUp.IdleIconRightImage = null;
             this.btnSignUp.IndicateFocus = false;
-            this.btnSignUp.Location = new System.Drawing.Point(302, 403);
-            this.btnSignUp.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnSignUp.Location = new System.Drawing.Point(403, 496);
+            this.btnSignUp.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSignUp.Name = "btnSignUp";
             stateProperties3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
             stateProperties3.BorderRadius = 3;
@@ -225,7 +231,7 @@
             stateProperties4.IconLeftImage = null;
             stateProperties4.IconRightImage = null;
             this.btnSignUp.OnPressedState = stateProperties4;
-            this.btnSignUp.Size = new System.Drawing.Size(138, 26);
+            this.btnSignUp.Size = new System.Drawing.Size(184, 32);
             this.btnSignUp.TabIndex = 14;
             this.btnSignUp.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnSignUp.TextMarginLeft = 0;
@@ -236,6 +242,7 @@
             // 
             this.btnSignIn.Active = false;
             this.btnSignIn.Activecolor = System.Drawing.Color.Transparent;
+            this.btnSignIn.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnSignIn.BackColor = System.Drawing.Color.Transparent;
             this.btnSignIn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSignIn.BackgroundImage")));
             this.btnSignIn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
@@ -255,14 +262,14 @@
             this.btnSignIn.IconVisible = true;
             this.btnSignIn.IconZoom = 90D;
             this.btnSignIn.IsTab = false;
-            this.btnSignIn.Location = new System.Drawing.Point(41, 345);
-            this.btnSignIn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnSignIn.Location = new System.Drawing.Point(55, 425);
+            this.btnSignIn.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.btnSignIn.Name = "btnSignIn";
             this.btnSignIn.Normalcolor = System.Drawing.Color.Transparent;
             this.btnSignIn.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.btnSignIn.OnHoverTextColor = System.Drawing.Color.Black;
             this.btnSignIn.selected = false;
-            this.btnSignIn.Size = new System.Drawing.Size(398, 45);
+            this.btnSignIn.Size = new System.Drawing.Size(531, 55);
             this.btnSignIn.TabIndex = 3;
             this.btnSignIn.Text = "SIGN IN";
             this.btnSignIn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -272,16 +279,18 @@
             // 
             // Sign_In
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
             this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.btnForgotPass);
             this.Controls.Add(this.btnSignUp);
             this.Controls.Add(this.btnSignIn);
             this.Controls.Add(this.label3);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Sign_In";
-            this.Size = new System.Drawing.Size(495, 657);
+            this.Size = new System.Drawing.Size(660, 809);
             this.ResumeLayout(false);
             this.PerformLayout();
 

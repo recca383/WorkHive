@@ -168,5 +168,6 @@ namespace WorkHive.Views.Member.DashboardPagesMember
                 txtConfirmPasswordMember.UseSystemPasswordChar = true;
             }
         }
+        
     }
 }

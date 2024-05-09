@@ -18,6 +18,7 @@ using WorkHive.Views.Admin;
 using WorkHive.Views.Admin.DashboardPages;
 using WorkHive.Views.LandingPage;
 using WorkHive.Views.Pages;
+//using System.Diagnostics
 using static System.Net.WebRequestMethods;
 
 namespace WorkHive.Views
@@ -137,10 +138,10 @@ namespace WorkHive.Views
             landingpage.Show();
         }
 
-        private void btnChats_Click(object sender, EventArgs e)
+        /*private void btnChats_Click(object sender, EventArgs e)
         {
-
-        }
+            System.Diagnostics.Process.Start();
+        }*/
 
         
 

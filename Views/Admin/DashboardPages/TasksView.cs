@@ -32,7 +32,8 @@ namespace WorkHive.Views.Admin.DashboardPages
         public TasksView()
         {
             InitializeComponent();
-            RefreshList(tasks);
+            var results = tasks.Where(a => !a.Archived).ToList();
+            RefreshList(results);
             this.Resize += TasksView_Resize;
             TaskViewOriginalSize = this.Size;
             recTasksName = new Rectangle(TasksName.Location, TasksName.Size);
@@ -72,11 +73,10 @@ namespace WorkHive.Views.Admin.DashboardPages
         private void RefreshList(List<TaskModel> taskList)
         {
             TasksFlow.Controls.Clear();
-            tasks = TaskModelAccess.GetTaskModel();
             
-            foreach (TaskModel taskModel in tasks)
+            foreach (TaskModel taskModel in taskList)
             {
-                TasksFlow.Controls.Add(new TaskCard     (taskModel));
+                TasksFlow.Controls.Add(new TaskCard(taskModel));
             }
 
             
@@ -84,20 +84,19 @@ namespace WorkHive.Views.Admin.DashboardPages
 
         private void btnAll_Click(object sender, EventArgs e)
         {
-            RefreshList(tasks);
+            var results = tasks.Where(a => !a.Archived).ToList();
+            RefreshList(results);
         }
-
-        
 
         private void btnOngoing_Click(object sender, EventArgs e)
         {
-            var results = tasks.Where(p => p.TaskProgress < 100).ToList();
+            var results = tasks.Where(p => p.TaskProgress < 100 && !p.Archived).ToList();
             RefreshList(results);
         }
 
         private void btnCompleted_Click(object sender, EventArgs e)
         {
-            var results = tasks.Where(p => p.TaskProgress == 100).ToList();
+            var results = tasks.Where(p => p.TaskProgress == 100 && !p.Archived).ToList();
             RefreshList(results);
         }
 
