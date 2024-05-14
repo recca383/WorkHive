@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.CodeAnalysis.CSharp.Syntax;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -9,6 +10,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using WorkHive.Controller;
 using WorkHive.Model;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace WorkHive.Views.LandingPage.LandingPagePages
 {
@@ -97,31 +99,70 @@ namespace WorkHive.Views.LandingPage.LandingPagePages
         private void btnSignUp_Click(object sender, EventArgs e)
         {
             List<MemberModel> model = MemberModelAccess.GetMemberModel();
-            if (model.Any(n => n.FirstName == txtName.Text)) new MessageBoxes("Username Taken");
-            else if (model.Any(m => m.Email == txtEmail.Text)) new MessageBoxes("Email Already Used");
-            else if (!(txtPassword.Text == txtConfirmPassword.Text)) new MessageBoxes("Password Does Not Match");
+            if (txtName.Text == "" || txtEmail.Text == "" || txtPassword.Text == "" || txtConfirmPassword.Text == "") new MessageBoxes("Empty Text Box\nFill up all Text Boxed");
             else
             {
-                MemberModelAccess.AddMember(new MemberModel()
+                if (IsPasswordHasNumber(txtPassword.Text) && HasCapitalLetter(txtPassword.Text))
+                if (model.Any(n => n.FirstName == txtName.Text)) new MessageBoxes("Username Taken");
+                else if (model.Any(m => m.Email == txtEmail.Text)) new MessageBoxes("Email Already Used");
+                else if (!(txtPassword.Text == txtConfirmPassword.Text)) new MessageBoxes("Password Does Not Match");
+                else
                 {
-                    ID = model.Count,
-                    FirstName = txtName.Text,
-                    Email = txtEmail.Text,
-                    Password = txtPassword.Text,
-                    IsLeader = false // change to false for creating member as default
+                    MemberModelAccess.AddMember(new MemberModel()
+                    {
+                        ID = model.Count,
+                        FirstName = txtName.Text,
+                        Email = txtEmail.Text,
+                        Password = txtPassword.Text,
+                        IsLeader = false // change to false for creating member as default
 
-                }) ;
+                    });
 
-                new MessageBoxes("Sign Up Complete!"); 
-                txtName.Text = default;
-                txtEmail.Text = default;
-                txtPassword.Text = default;
-                txtConfirmPassword.Text = default;
+                    new MessageBoxes("Sign Up Complete!");
+                    txtName.Text = default;
+                    txtEmail.Text = default;
+                    txtPassword.Text = default;
+                    txtConfirmPassword.Text = default;
 
 
+                }
             }
+            
         }
 
+        private bool IsPasswordHasNumber(string text)
+        {
+            foreach(char c in text)
+            {
+
+                int p;
+                if (int.TryParse(c.ToString(), out p))
+                {
+                    return true;
+                    
+                }
+
+            }
+            new MessageBoxes("Must Have atleast 1 number");
+            return false;
+
+
+        }
+        private bool HasCapitalLetter(string text)
+        {
+            foreach (char c in text)
+            {
+                int C = (int) c;
+                if (!(c >= 65 || c <= 92))
+                {
+                    new MessageBoxes("Must Have atleast 1 Capital Letter");
+                    return false;
+                }
+
+            }
+            return true;
+
+        }
         /* private void textBox4_KeyDown(object sender, KeyEventArgs e)
          {
              if (e.KeyCode == Keys.Enter)

@@ -60,14 +60,14 @@
             this.OkayButton.IconVisible = true;
             this.OkayButton.IconZoom = 90D;
             this.OkayButton.IsTab = false;
-            this.OkayButton.Location = new System.Drawing.Point(211, 158);
-            this.OkayButton.Margin = new System.Windows.Forms.Padding(5);
+            this.OkayButton.Location = new System.Drawing.Point(158, 128);
+            this.OkayButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.OkayButton.Name = "OkayButton";
             this.OkayButton.Normalcolor = System.Drawing.Color.White;
             this.OkayButton.OnHovercolor = System.Drawing.Color.Gold;
             this.OkayButton.OnHoverTextColor = System.Drawing.SystemColors.WindowText;
             this.OkayButton.selected = false;
-            this.OkayButton.Size = new System.Drawing.Size(91, 30);
+            this.OkayButton.Size = new System.Drawing.Size(68, 24);
             this.OkayButton.TabIndex = 7;
             this.OkayButton.Text = "Okay";
             this.OkayButton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -79,28 +79,29 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.Controls.Add(this.TextLabel);
-            this.panel1.Location = new System.Drawing.Point(0, 52);
-            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel1.Location = new System.Drawing.Point(0, 42);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(316, 98);
+            this.panel1.Size = new System.Drawing.Size(237, 80);
             this.panel1.TabIndex = 6;
             // 
             // TextLabel
             // 
             this.TextLabel.AutoEllipsis = true;
             this.TextLabel.AutoSize = false;
+            this.TextLabel.AutoSizeHeightOnly = true;
             this.TextLabel.BackColor = System.Drawing.Color.White;
             this.TextLabel.CursorType = null;
-            this.TextLabel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.TextLabel.Dock = System.Windows.Forms.DockStyle.Top;
             this.TextLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TextLabel.ForeColor = System.Drawing.Color.Black;
             this.TextLabel.Location = new System.Drawing.Point(0, 0);
-            this.TextLabel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.TextLabel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.TextLabel.Name = "TextLabel";
             this.TextLabel.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.TextLabel.Size = new System.Drawing.Size(316, 98);
+            this.TextLabel.Size = new System.Drawing.Size(237, 42);
             this.TextLabel.TabIndex = 0;
-            this.TextLabel.Text = "Sample Text";
+            this.TextLabel.Text = "Sample Text 51651";
             this.TextLabel.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
             this.TextLabel.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
@@ -111,14 +112,14 @@
             // 
             // MessageBoxes
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::WorkHive.Properties.Resources.Messagebox21;
-            this.ClientSize = new System.Drawing.Size(316, 194);
+            this.ClientSize = new System.Drawing.Size(237, 158);
             this.Controls.Add(this.OkayButton);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "MessageBoxes";
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
