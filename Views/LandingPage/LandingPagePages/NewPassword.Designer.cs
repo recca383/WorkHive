@@ -40,8 +40,12 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.ShowPassword2 = new WorkHive.Views.CircularPictureBox();
+            this.ShowPassword = new WorkHive.Views.CircularPictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ShowPassword2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ShowPassword)).BeginInit();
             this.SuspendLayout();
             // 
             // bunifuElipse1
@@ -79,7 +83,6 @@
             this.txtConfirmPassword.Name = "txtConfirmPassword";
             this.txtConfirmPassword.Size = new System.Drawing.Size(242, 27);
             this.txtConfirmPassword.TabIndex = 41;
-            this.txtConfirmPassword.Text = "********";
             this.txtConfirmPassword.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.txtConfirmPassword.OnValueChanged += new System.EventHandler(this.txtConfirmPassword_OnValueChanged);
             // 
@@ -121,7 +124,7 @@
             this.bunifuImageButton1.Image = global::WorkHive.Properties.Resources.BackButton;
             this.bunifuImageButton1.ImageActive = null;
             this.bunifuImageButton1.Location = new System.Drawing.Point(46, 55);
-            this.bunifuImageButton1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.bunifuImageButton1.Margin = new System.Windows.Forms.Padding(2);
             this.bunifuImageButton1.Name = "bunifuImageButton1";
             this.bunifuImageButton1.Size = new System.Drawing.Size(21, 21);
             this.bunifuImageButton1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -173,7 +176,7 @@
             // 
             this.pictureBox1.Image = global::WorkHive.Properties.Resources.NewPassword;
             this.pictureBox1.Location = new System.Drawing.Point(99, 89);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(190, 187);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -200,11 +203,33 @@
             this.label3.Text = "Create New Password";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // ShowPassword2
+            // 
+            this.ShowPassword2.Image = global::WorkHive.Properties.Resources.Userdefault;
+            this.ShowPassword2.Location = new System.Drawing.Point(292, 466);
+            this.ShowPassword2.Name = "ShowPassword2";
+            this.ShowPassword2.Size = new System.Drawing.Size(27, 37);
+            this.ShowPassword2.TabIndex = 44;
+            this.ShowPassword2.TabStop = false;
+            this.ShowPassword2.Click += new System.EventHandler(this.ShowPassword2_Click);
+            // 
+            // ShowPassword
+            // 
+            this.ShowPassword.Image = global::WorkHive.Properties.Resources.Userdefault;
+            this.ShowPassword.Location = new System.Drawing.Point(292, 404);
+            this.ShowPassword.Name = "ShowPassword";
+            this.ShowPassword.Size = new System.Drawing.Size(27, 37);
+            this.ShowPassword.TabIndex = 43;
+            this.ShowPassword.TabStop = false;
+            this.ShowPassword.Click += new System.EventHandler(this.ShowPassword_Click);
+            // 
             // NewPassword
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.ShowPassword2);
+            this.Controls.Add(this.ShowPassword);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.txtConfirmPassword);
             this.Controls.Add(this.label2);
@@ -218,6 +243,8 @@
             this.Size = new System.Drawing.Size(401, 621);
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ShowPassword2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ShowPassword)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -235,5 +262,7 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
+        private CircularPictureBox ShowPassword2;
+        private CircularPictureBox ShowPassword;
     }
 }

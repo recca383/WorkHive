@@ -411,7 +411,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controller\ProjectModelAccess.cs" />
     <Compile Include="Controller\Utilities.cs" />
+    <Compile Include="Model\ProjectModel.cs" />
     <Compile Include="Views\Admin\DashboardPages\CalendarCurrentDays.cs">
       <SubType>UserControl</SubType>
     </Compile>

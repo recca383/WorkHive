@@ -37,7 +37,6 @@ namespace WorkHive.Views.Admin
         {
             lblEditTask_Title.Text = task.TaskName;
             lblEditTask_Date.Text = ($"{CultureInfo.CurrentCulture.DateTimeFormat.GetMonthName(task.TaskStart.Month)} {task.TaskStart.Day}");
-            EditTaskProgress.Value = task.TaskProgress;
             EditArchived.Checked = !task.Archived;
         }
 

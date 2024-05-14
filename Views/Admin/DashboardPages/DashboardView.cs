@@ -29,7 +29,9 @@ namespace WorkHive.Views.Pages
 
         List<TaskModel> tasks;
         List<MemberModel> members;
+        List<ProjectModel> projects;
         MemberModel currentUser;
+
 
 
         public DashboardView(MemberModel CurrentUser)
@@ -82,33 +84,37 @@ namespace WorkHive.Views.Pages
         private void RefreshElements()
         {
             TasksSummary.Controls.Clear();
+            projects = ProjectModelAccess.GetProjects();
             tasks = TaskModelAccess.GetTaskModel();
             members = MemberModelAccess.GetMemberModel();
-
-            //Tasks
-            float totalprogress = 0;
             
-            foreach (var task in tasks)
+            int totalprogress = 0;
+            
+            
+            foreach (var project in projects)
             {
-                totalprogress += task.TaskProgress;
-                TasksSummary.Controls.Add(new TaskSummaryCard(task.TaskName,task.Deadline,task.TaskID));
+                totalprogress += ProjectModelAccess.GetProjectProgress(project.Id);
+                foreach (var task in project.Tasks)
+                {
+                    TasksSummary.Controls.Add(new TaskSummaryCard(task.TaskName, task.Deadline, task.TaskID));
+                }
+                
             }
-            float averageprogress = totalprogress / tasks.Count();
-            AverageProgress.Value = (int)averageprogress;
+            int averageprogress = totalprogress / projects.Count();
+
+            AverageProgress.Value = averageprogress;
 
             lblTotalMembers.Text = members
                 .Count()
                 .ToString();
             lblActiveTasks.Text = tasks
-                .Where(t => !t.Archived && t.TaskProgress != 100)
+                .Where(t => !t.Archived && !t.TaskFinished)
                 .Count()
                 .ToString();
             lblFinishedTasks.Text = tasks
-                .Where(t => t.TaskProgress == 100)
+                .Where(t => !t.Archived && t.TaskFinished)
                 .Count()
                 .ToString();
-
-
 
         }
 

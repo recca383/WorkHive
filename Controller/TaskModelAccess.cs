@@ -18,7 +18,7 @@ namespace WorkHive.Controller
                 TaskID = 0,
                 TaskName = "Kalahati",
                 TaskDescription = "Lorem Ipsum",
-                TaskProgress = 50,
+                TaskFinished = false,
                 TaskStart = new DateTime(2024, 4, 16),
                 Deadline = new DateTime(2024, 5, 9),
                 Archived = false
@@ -28,7 +28,7 @@ namespace WorkHive.Controller
                 TaskID = 1,
                 TaskName = "75 percent",
                 TaskDescription = "Lorem Ipsum",
-                TaskProgress = 75,
+                TaskFinished = false,
                 TaskStart = new DateTime(2024, 4, 16),
                 Deadline = new DateTime(2024, 5, 3),
                 Archived = false
@@ -38,7 +38,7 @@ namespace WorkHive.Controller
                 TaskID = 2,
                 TaskName = "Tapos na",
                 TaskDescription = "Lorem Ipsum",
-                TaskProgress = 100,
+                TaskFinished = true,
                 TaskStart = new DateTime(2024, 4, 16),
                 Deadline = new DateTime(2024, 5, 7),
                 Archived = false
@@ -48,7 +48,7 @@ namespace WorkHive.Controller
                 TaskID = 3,
                 TaskName = "Archived",
                 TaskDescription = "Lorem Ipsum",
-                TaskProgress = 0,
+                TaskFinished = false,
                 TaskStart = new DateTime(2024, 4, 16),
                 Deadline = new DateTime(2024, 5, 7),
                 Archived = true
@@ -58,7 +58,7 @@ namespace WorkHive.Controller
                 TaskID = 4,
                 TaskName = "Tapos na din",
                 TaskDescription = "Lorem Ipsum",
-                TaskProgress = 100,
+                TaskFinished = true,
                 TaskStart = new DateTime(2024, 4, 16),
                 Deadline = new DateTime(2024, 6, 13),
                 Archived = false
@@ -79,12 +79,12 @@ namespace WorkHive.Controller
             //Default valuess
             var newTaskName = taskModel.TaskName;
             var newTaskDescription = taskModel.TaskDescription;
-            var newTaskProgress = taskModel.TaskProgress;
+            var newTaskProgress = taskModel.TaskFinished;
             var newArchived = edittaskModel.Archived;
 
             if (edittaskModel.TaskName != default) newTaskName = edittaskModel.TaskName;
             if (edittaskModel.TaskDescription != default) newTaskDescription = edittaskModel.TaskDescription;
-            if (edittaskModel.TaskProgress != default) newTaskProgress = edittaskModel.TaskProgress;
+            if (edittaskModel.TaskFinished != default) newTaskProgress = edittaskModel.TaskFinished;
             
 
 
@@ -94,7 +94,7 @@ namespace WorkHive.Controller
                 TaskID = id,
                 TaskName = newTaskName,
                 TaskDescription = newTaskDescription,
-                TaskProgress = newTaskProgress,
+                TaskFinished = newTaskProgress,
                 Archived = newArchived
             }
             );
@@ -117,7 +117,7 @@ namespace WorkHive.Controller
                     TaskName = taskname,
                     TaskDescription = taskdescription,
                     TaskStart = DateTime.Now,
-                    TaskProgress = 0,
+                    TaskFinished = false,
                     Deadline = deadline,
                     TaskCompleted = default,
                     Archived = !archived

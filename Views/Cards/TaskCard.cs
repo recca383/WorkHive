@@ -1,9 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.ComponentModel.Design;
 using System.Data;
 using System.Drawing;
 using System.Globalization;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -29,23 +31,33 @@ namespace WorkHive.Views.Cards
             this.Resize += TaskCard_Resize;
             recpanel2 = new Rectangle(panel2.Location, panel2.Size);
             recpanel3 = new Rectangle(panel3.Location, panel3.Size);
-            recpictureBox1 = new Rectangle(pictureBox1.Location, pictureBox1.Size);
+            recpictureBox1 = new Rectangle(pictureboxFinished.Location, pictureboxFinished.Size);
         }
 
         private void InitializeElements(TaskModel task)
         {
-           lblTask_Title.Text = task.TaskName;
+            List<ProjectModel> projectModels = ProjectModelAccess.GetProjects();
+            ProjectModel currentproject = projectModels.FirstOrDefault(t => t.Tasks.Contains(task));
+            lblTask_Title.Text = task.TaskName;
             lblTask_Date.Text = ($"{CultureInfo.CurrentCulture.DateTimeFormat.GetMonthName(task.TaskStart.Month)} {task.TaskStart.Day}");
             Deadlinetxt.Text = ($"{CultureInfo.CurrentCulture.DateTimeFormat.GetMonthName(task.Deadline.Month)} {task.Deadline.Day}");
-            TaskProgress.Value = task.TaskProgress;
             Archived.Checked = !task.Archived;
+            if (currentproject is null) lblProjectName.Text = "No Project";
+            else lblProjectName.Text = currentproject.Name;
+            var parent = Directory.GetParent(Directory.GetCurrentDirectory()).Parent.FullName;
+            if (task.TaskFinished)
+            {
+                // Eto yung papalitan ng check na picture
+                pictureboxFinished.Image = Image.FromFile(parent + "\\Resources\\Button - Bullet.png");
+            }
+            
         }
 
         private void TaskCard_Resize(object sender, EventArgs e)
         {
             resize_Control(panel2, recpanel2);
             resize_Control(panel3, recpanel3);
-            resize_Control(pictureBox1, recpictureBox1);
+            resize_Control(pictureboxFinished, recpictureBox1);
         }
         private void resize_Control(Control c, Rectangle r)
         {

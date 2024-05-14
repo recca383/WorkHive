@@ -34,32 +34,27 @@ namespace WorkHive.Views.LandingPage.LandingPagePages
             {
                 ParentForm.Hide();
             }
-            
 
         }
 
         private void txtNewPassword_OnValueChanged(object sender, EventArgs e)
         {
-            if (txtNewPassword.Text == "")
-            {
-                txtNewPassword.isPassword = false;
-            }
-            else
-            {
-                txtNewPassword.isPassword = true;
-            }
+            Controller.Utilities.PasswordInitialVisibility(txtNewPassword);
         }
 
         private void txtConfirmPassword_OnValueChanged(object sender, EventArgs e)
         {
-            if (txtConfirmPassword.Text == "")
-            {
-                txtConfirmPassword.isPassword = false;
-            }
-            else
-            {
-                txtConfirmPassword.isPassword = true;
-            }
+            Controller.Utilities.PasswordInitialVisibility(txtConfirmPassword);
+        }
+
+        private void ShowPassword_Click(object sender, EventArgs e)
+        {
+            Controller.Utilities.ShowPasswordFunction(txtNewPassword, ShowPassword);
+        }
+
+        private void ShowPassword2_Click(object sender, EventArgs e)
+        {
+            Controller.Utilities.ShowPasswordFunction(txtConfirmPassword, ShowPassword2);
         }
     }
 }

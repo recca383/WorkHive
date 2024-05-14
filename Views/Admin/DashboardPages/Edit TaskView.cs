@@ -94,13 +94,13 @@ namespace WorkHive.Views.Admin.DashboardPages
 
         private void btnOngoing_Click(object sender, EventArgs e)
         {
-            var results = tasks.Where(p => p.TaskProgress < 100).ToList();
+            var results = tasks.Where(p => !p.TaskFinished && !p.Archived).ToList();
             RefreshList(results);
         }
 
         private void btnCompleted_Click(object sender, EventArgs e)
         {
-            var results = tasks.Where(p => p.TaskProgress == 100).ToList();
+            var results = tasks.Where(p => p.TaskFinished && !p.Archived).ToList();
             RefreshList(results);
         }
 
