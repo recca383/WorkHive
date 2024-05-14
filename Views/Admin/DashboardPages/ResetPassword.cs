@@ -138,38 +138,32 @@ namespace WorkHive.Views.Admin
 
         private void txtCurrentPassword_TextChanged(object sender, EventArgs e)
         {
-            if (txtCurrentPassword.Text == "")
-            {
-                txtCurrentPassword.UseSystemPasswordChar = false;
-            }
-            else
-            {
-                txtCurrentPassword.UseSystemPasswordChar = true;
-            }
+            Controller.Utilities.PasswordInitialVisibility(txtCurrentPassword);
         }
 
         private void txtNewPassword_TextChanged(object sender, EventArgs e)
         {
-            if (txtNewPassword.Text == "")
-            {
-                txtNewPassword.UseSystemPasswordChar = false;
-            }
-            else
-            {
-                txtNewPassword.UseSystemPasswordChar = true;
-            }
+            Controller.Utilities.PasswordInitialVisibility(txtNewPassword);
         }
 
         private void txtConfirmPassword_TextChanged(object sender, EventArgs e)
         {
-            if (txtConfirmPassword.Text == "")
-            {
-                txtConfirmPassword.UseSystemPasswordChar = false;
-            }
-            else
-            {
-                txtConfirmPassword.UseSystemPasswordChar = true;
-            }
+            Controller.Utilities.PasswordInitialVisibility(txtConfirmPassword);
+        }
+
+        private void ShowPassword_Click(object sender, EventArgs e)
+        {
+            Controller.Utilities.ShowPasswordFunction(txtCurrentPassword, ShowPassword);
+        }
+
+        private void ShowPassword2_Click(object sender, EventArgs e)
+        {
+            Controller.Utilities.ShowPasswordFunction(txtNewPassword, ShowPassword2);
+        }
+
+        private void ShowPassword3_Click(object sender, EventArgs e)
+        {
+            Controller.Utilities.ShowPasswordFunction(txtConfirmPassword, ShowPassword3);
         }
     }
 }

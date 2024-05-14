@@ -1,4 +1,5 @@
-﻿using Microsoft.CodeAnalysis.CSharp.Syntax;
+﻿using Bunifu.Framework.UI;
+using Microsoft.CodeAnalysis.CSharp.Syntax;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -152,23 +153,37 @@ namespace WorkHive.Views.LandingPage.LandingPagePages
         {
             foreach (char c in text)
             {
-                int C = (int) c;
-                if (!(c >= 65 || c <= 92))
+                if (c >= 65 || c <= 92)
                 {
-                    new MessageBoxes("Must Have atleast 1 Capital Letter");
-                    return false;
+                    return true;
                 }
 
             }
-            return true;
+            new MessageBoxes("Must Have atleast 1 Capital Letter");
+            return false;
+            
 
         }
-        /* private void textBox4_KeyDown(object sender, KeyEventArgs e)
-         {
-             if (e.KeyCode == Keys.Enter)
-             {
-                 button1.PeformClick();
-             }
-         }*/
+
+        private void txtPassword_OnValueChanged(object sender, EventArgs e)
+        {
+            Controller.Utilities.PasswordInitialVisibility(txtPassword);
+        }
+
+        private void txtConfirmPassword_OnValueChanged(object sender, EventArgs e)
+        {
+            Controller.Utilities.PasswordInitialVisibility(txtConfirmPassword);
+        }
+        
+        private void ShowPassword_Click(object sender, EventArgs e)
+        {
+            Controller.Utilities.ShowPasswordFunction(txtPassword, ShowPassword);
+        }
+
+        private void ShowPassword2_Click(object sender, EventArgs e)
+        {
+            Controller.Utilities.ShowPasswordFunction(txtConfirmPassword, ShowPassword2);
+        }
+
     }
 }

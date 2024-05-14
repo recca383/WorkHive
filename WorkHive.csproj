@@ -411,6 +411,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controller\Utilities.cs" />
     <Compile Include="Views\Admin\DashboardPages\CalendarCurrentDays.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -586,10 +587,10 @@
     <Compile Include="Views\LandingPage\LandingPagePages\VerifyPassword.Designer.cs">
       <DependentUpon>VerifyPassword.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\Member\DashboardPagesMember\Dashboard-Member.cs">
+    <Compile Include="Views\Member\Dashboard-Member.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\Member\DashboardPagesMember\Dashboard-Member.Designer.cs">
+    <Compile Include="Views\Member\Dashboard-Member.Designer.cs">
       <DependentUpon>Dashboard-Member.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\Member\DashboardPagesMember\ProfileEditMember.cs">
@@ -703,7 +704,7 @@
     <EmbeddedResource Include="Views\LandingPage\LandingPagePages\VerifyPassword.resx">
       <DependentUpon>VerifyPassword.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\Member\DashboardPagesMember\Dashboard-Member.resx">
+    <EmbeddedResource Include="Views\Member\Dashboard-Member.resx">
       <DependentUpon>Dashboard-Member.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\Member\DashboardPagesMember\ProfileEditMember.resx">

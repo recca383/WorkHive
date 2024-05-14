@@ -133,41 +133,35 @@ namespace WorkHive.Views.Member.DashboardPagesMember
             SendCode(_code);
         }
 
-        private void txtCurrentPasswordMember_TextChanged(object sender, EventArgs e)
+        private void txtCurrentPassword_TextChanged(object sender, EventArgs e)
         {
-            if (txtCurrentPasswordMember.Text == "")
-            {
-                txtCurrentPasswordMember.UseSystemPasswordChar = false;
-            }
-            else
-            {
-                txtCurrentPasswordMember.UseSystemPasswordChar = true;
-            }
+            Controller.Utilities.PasswordInitialVisibility(txtCurrentPasswordMember);
         }
 
-        private void txtNewPasswordMember_TextChanged(object sender, EventArgs e)
+        private void txtNewPassword_TextChanged(object sender, EventArgs e)
         {
-            if (txtNewPasswordMember.Text == "")
-            {
-                txtNewPasswordMember.UseSystemPasswordChar = false;
-            }
-            else
-            {
-                txtNewPasswordMember.UseSystemPasswordChar = true;
-            }
+            Controller.Utilities.PasswordInitialVisibility(txtNewPasswordMember);
         }
 
-        private void txtConfirmPasswordMember_TextChanged(object sender, EventArgs e)
+        private void txtConfirmPassword_TextChanged(object sender, EventArgs e)
         {
-            if (txtConfirmPasswordMember.Text == "")
-            {
-                txtConfirmPasswordMember.UseSystemPasswordChar = false;
-            }
-            else
-            {
-                txtConfirmPasswordMember.UseSystemPasswordChar = true;
-            }
+            Controller.Utilities.PasswordInitialVisibility(txtConfirmPasswordMember);
         }
-        
+
+        private void ShowPassword_Click(object sender, EventArgs e)
+        {
+            Controller.Utilities.ShowPasswordFunction(txtCurrentPasswordMember, ShowPassword);
+        }
+
+        private void ShowPassword2_Click(object sender, EventArgs e)
+        {
+            Controller.Utilities.ShowPasswordFunction(txtNewPasswordMember, ShowPassword2);
+        }
+
+        private void ShowPassword3_Click(object sender, EventArgs e)
+        {
+            Controller.Utilities.ShowPasswordFunction(txtConfirmPasswordMember, ShowPassword3);
+        }
+
     }
 }

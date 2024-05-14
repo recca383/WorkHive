@@ -74,20 +74,7 @@ namespace WorkHive.Views.LandingPage.LandingPagePages
         private void btnSignIn_Click(object sender, EventArgs e)
         {
             SignIn();
-        }
-
-        private void txtPassword_OnValueChanged(object sender, EventArgs e)
-        {
-            if(txtPassword.Text == "")
-            {
-                txtPassword.isPassword = false;
-            }
-            else
-            {
-                txtPassword.isPassword = true;
-            }
-            
-        }
+        }       
 
         private void txtPassword_KeyDown(object sender, KeyEventArgs e)
         {
@@ -126,7 +113,14 @@ namespace WorkHive.Views.LandingPage.LandingPagePages
             forgotPassword.Show();
            // ParentForm.Enabled = false;
         }
+        private void txtPassword_OnValueChanged(object sender, EventArgs e)
+        {
+            Controller.Utilities.PasswordInitialVisibility(txtPassword);
+        }
 
-        
+        private void ShowPassword_Click(object sender, EventArgs e)
+        {
+            Controller.Utilities.ShowPasswordFunction(txtPassword, ShowPassword);
+        }
     }
 }
