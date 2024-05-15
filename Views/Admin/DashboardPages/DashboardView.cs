@@ -89,18 +89,20 @@ namespace WorkHive.Views.Pages
             members = MemberModelAccess.GetMemberModel();
             
             int totalprogress = 0;
-            
+            int averageprogress = 0;
             
             foreach (var project in projects)
             {
-                totalprogress += ProjectModelAccess.GetProjectProgress(project.Id);
-                foreach (var task in project.Tasks)
+                if (project.Tasks != null)
                 {
-                    TasksSummary.Controls.Add(new TaskSummaryCard(task.TaskName, task.Deadline, task.TaskID));
+                    totalprogress += ProjectModelAccess.GetProjectProgress(project.Id);
+                    foreach (var task in project.Tasks)
+                    {
+                        TasksSummary.Controls.Add(new TaskSummaryCard(task.TaskName, task.Deadline, task.TaskID));
+                    }
                 }
-                
             }
-            int averageprogress = totalprogress / projects.Count();
+            averageprogress = totalprogress / projects.Count();
 
             AverageProgress.Value = averageprogress;
 

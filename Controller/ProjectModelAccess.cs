@@ -20,13 +20,6 @@ namespace WorkHive.Controller
                 Name = "Sample Project",
                 StartDate = DateTime.Now,
                 DeadLine = DateTime.Now,
-                Tasks = new List<TaskModel>
-                {
-                    TaskModelAccess.GetTaskInfo(0),
-                    TaskModelAccess.GetTaskInfo(1),
-                    TaskModelAccess.GetTaskInfo(2),
-                    TaskModelAccess.GetTaskInfo(3)
-                },
                 Archived = false
             }
         };
@@ -38,14 +31,18 @@ namespace WorkHive.Controller
         public static int GetProjectProgress(int id)
         {
             ProjectModel currentproject = GetProjectDetails (id);
+            
+            if(!(currentproject.Tasks is null))
+            {
+                int totaltasks = currentproject.Tasks.Count();
+                int finishedtasks = currentproject.Tasks.Count(t => t.TaskFinished = true);
 
-            int totaltasks = currentproject.Tasks.Count;
-            int finishedtasks = currentproject.Tasks.Count(t => t.TaskFinished = true);
+                int averageprogress = finishedtasks / totaltasks;
+                currentproject.Progress = averageprogress;
 
-            int averageprogress = finishedtasks / totaltasks;
-            currentproject.Progress = averageprogress;
-
-            return averageprogress;
+                return averageprogress;
+            }
+            return 0;
         }
         public static List<ProjectModel> GetProjects () 
         {  
@@ -64,15 +61,15 @@ namespace WorkHive.Controller
                 Archived = project.Archived,
             });
         }
-        public static void AssignTaskToProject(TaskModel task, int projectId)
+        public static void AssignTaskToProject(TaskModel task)
         {
-            ProjectModel CurrentProject = GetProjectDetails (projectId);
-            if (CurrentProject == null)
-            {
-                new MessageBoxes("Project Unavailable");
-            }
+            ProjectModel CurrentProject = task.ProjectAssigned;
+            var pastProject = _projects.FirstOrDefault(p => p.Tasks.Contains(task));
+
+            if (CurrentProject == null) new MessageBoxes("Project Unavailable");
             else
             {
+                if (pastProject != null) pastProject.Tasks.Remove(task);
                 CurrentProject.Tasks.Add(task);
             }
         }

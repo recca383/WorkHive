@@ -79,14 +79,15 @@ namespace WorkHive.Controller
             //Default valuess
             var newTaskName = taskModel.TaskName;
             var newTaskDescription = taskModel.TaskDescription;
-            var newTaskProgress = taskModel.TaskFinished;
-            var newArchived = edittaskModel.Archived;
-
-            if (edittaskModel.TaskName != default) newTaskName = edittaskModel.TaskName;
-            if (edittaskModel.TaskDescription != default) newTaskDescription = edittaskModel.TaskDescription;
-            if (edittaskModel.TaskFinished != default) newTaskProgress = edittaskModel.TaskFinished;
+            var newTaskDeadLine = taskModel.Deadline;
+            var newArchived = taskModel.Archived;
+            var newProjectAssigned = taskModel.ProjectAssigned;
             
-
+            if (edittaskModel.TaskName != "") newTaskName = edittaskModel.TaskName;
+            if (edittaskModel.TaskDescription != "") newTaskDescription = edittaskModel.TaskDescription;
+            if (edittaskModel.Deadline != default) newTaskDeadLine = edittaskModel.Deadline;
+            if (edittaskModel.ProjectAssigned != null) newProjectAssigned = edittaskModel.ProjectAssigned;
+            var newTaskProgress = edittaskModel.TaskFinished;
 
             Tasks.Remove(GetTaskInfo(taskModel.TaskID));
             Tasks.Add(new TaskModel
@@ -94,7 +95,10 @@ namespace WorkHive.Controller
                 TaskID = id,
                 TaskName = newTaskName,
                 TaskDescription = newTaskDescription,
+                TaskStart = taskModel.TaskStart,
                 TaskFinished = newTaskProgress,
+                Deadline = newTaskDeadLine,
+                ProjectAssigned = newProjectAssigned,
                 Archived = newArchived
             }
             );
@@ -105,31 +109,18 @@ namespace WorkHive.Controller
         {
             return Tasks;
         }
-        public static void AddTask(int ID, string taskname, string taskdescription, bool archived, DateTime deadline)
+        public static void AddTask(TaskModel newTask)
         {
             List<MemberModel> members = MemberModelAccess.GetMemberModel();
-
             try
             {
-                TaskModel newTask = new TaskModel
-                {
-                    TaskID = ID,
-                    TaskName = taskname,
-                    TaskDescription = taskdescription,
-                    TaskStart = DateTime.Now,
-                    TaskFinished = false,
-                    Deadline = deadline,
-                    TaskCompleted = default,
-                    Archived = !archived
-                };
                 Tasks.Add(newTask);
                 new MessageBoxes("Task Added");
+                ProjectModelAccess.AssignTaskToProject(newTask);
                 foreach(var member in members)
                 {
                     new MailNotif(member.Email, newTask);
                 }
-                
-                
             }
             catch (Exception e)
             {

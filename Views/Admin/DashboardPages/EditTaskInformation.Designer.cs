@@ -44,7 +44,7 @@
             this.DeadlineTask = new System.Windows.Forms.Label();
             this.AssignTask = new System.Windows.Forms.Label();
             this.TaskName = new System.Windows.Forms.Label();
-            this.EditDropdownassigntask = new Bunifu.UI.WinForms.BunifuDropdown();
+            this.EditDropdownAssignProject = new Bunifu.UI.WinForms.BunifuDropdown();
             this.ArchivedCheckbox = new Bunifu.Framework.UI.BunifuCheckbox();
             this.EditTaskSubmitbtn = new Bunifu.Framework.UI.BunifuFlatButton();
             this.EditTaskDescriptiontxt = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox();
@@ -106,9 +106,9 @@
             this.AssignTask.Location = new System.Drawing.Point(46, 187);
             this.AssignTask.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.AssignTask.Name = "AssignTask";
-            this.AssignTask.Size = new System.Drawing.Size(132, 30);
+            this.AssignTask.Size = new System.Drawing.Size(213, 30);
             this.AssignTask.TabIndex = 26;
-            this.AssignTask.Text = "Assign Task";
+            this.AssignTask.Text = "Reassign To Project";
             // 
             // TaskName
             // 
@@ -123,40 +123,40 @@
             this.TaskName.TabIndex = 25;
             this.TaskName.Text = "Task Name";
             // 
-            // EditDropdownassigntask
+            // EditDropdownAssignProject
             // 
-            this.EditDropdownassigntask.BackColor = System.Drawing.SystemColors.Control;
-            this.EditDropdownassigntask.BorderRadius = 13;
-            this.EditDropdownassigntask.Color = System.Drawing.Color.DarkGray;
-            this.EditDropdownassigntask.Direction = Bunifu.UI.WinForms.BunifuDropdown.Directions.Down;
-            this.EditDropdownassigntask.DisabledColor = System.Drawing.Color.Gray;
-            this.EditDropdownassigntask.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.EditDropdownassigntask.DropdownBorderThickness = Bunifu.UI.WinForms.BunifuDropdown.BorderThickness.Thick;
-            this.EditDropdownassigntask.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.EditDropdownassigntask.DropDownTextAlign = Bunifu.UI.WinForms.BunifuDropdown.TextAlign.Left;
-            this.EditDropdownassigntask.FillDropDown = false;
-            this.EditDropdownassigntask.FillIndicator = false;
-            this.EditDropdownassigntask.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.EditDropdownassigntask.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EditDropdownassigntask.ForeColor = System.Drawing.Color.Black;
-            this.EditDropdownassigntask.FormattingEnabled = true;
-            this.EditDropdownassigntask.Icon = null;
-            this.EditDropdownassigntask.IndicatorColor = System.Drawing.Color.Black;
-            this.EditDropdownassigntask.IndicatorLocation = Bunifu.UI.WinForms.BunifuDropdown.Indicator.Right;
-            this.EditDropdownassigntask.ItemBackColor = System.Drawing.Color.White;
-            this.EditDropdownassigntask.ItemBorderColor = System.Drawing.Color.White;
-            this.EditDropdownassigntask.ItemForeColor = System.Drawing.Color.Black;
-            this.EditDropdownassigntask.ItemHeight = 40;
-            this.EditDropdownassigntask.ItemHighLightColor = System.Drawing.Color.Gold;
-            this.EditDropdownassigntask.Items.AddRange(new object[] {
+            this.EditDropdownAssignProject.BackColor = System.Drawing.SystemColors.Control;
+            this.EditDropdownAssignProject.BorderRadius = 13;
+            this.EditDropdownAssignProject.Color = System.Drawing.Color.DarkGray;
+            this.EditDropdownAssignProject.Direction = Bunifu.UI.WinForms.BunifuDropdown.Directions.Down;
+            this.EditDropdownAssignProject.DisabledColor = System.Drawing.Color.Gray;
+            this.EditDropdownAssignProject.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.EditDropdownAssignProject.DropdownBorderThickness = Bunifu.UI.WinForms.BunifuDropdown.BorderThickness.Thick;
+            this.EditDropdownAssignProject.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.EditDropdownAssignProject.DropDownTextAlign = Bunifu.UI.WinForms.BunifuDropdown.TextAlign.Left;
+            this.EditDropdownAssignProject.FillDropDown = false;
+            this.EditDropdownAssignProject.FillIndicator = false;
+            this.EditDropdownAssignProject.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.EditDropdownAssignProject.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EditDropdownAssignProject.ForeColor = System.Drawing.Color.Black;
+            this.EditDropdownAssignProject.FormattingEnabled = true;
+            this.EditDropdownAssignProject.Icon = null;
+            this.EditDropdownAssignProject.IndicatorColor = System.Drawing.Color.Black;
+            this.EditDropdownAssignProject.IndicatorLocation = Bunifu.UI.WinForms.BunifuDropdown.Indicator.Right;
+            this.EditDropdownAssignProject.ItemBackColor = System.Drawing.Color.White;
+            this.EditDropdownAssignProject.ItemBorderColor = System.Drawing.Color.White;
+            this.EditDropdownAssignProject.ItemForeColor = System.Drawing.Color.Black;
+            this.EditDropdownAssignProject.ItemHeight = 40;
+            this.EditDropdownAssignProject.ItemHighLightColor = System.Drawing.Color.Gold;
+            this.EditDropdownAssignProject.Items.AddRange(new object[] {
             "Sample"});
-            this.EditDropdownassigntask.Location = new System.Drawing.Point(52, 221);
-            this.EditDropdownassigntask.MaximumSize = new System.Drawing.Size(391, 0);
-            this.EditDropdownassigntask.MinimumSize = new System.Drawing.Size(391, 0);
-            this.EditDropdownassigntask.Name = "EditDropdownassigntask";
-            this.EditDropdownassigntask.Size = new System.Drawing.Size(391, 46);
-            this.EditDropdownassigntask.TabIndex = 24;
-            this.EditDropdownassigntask.Text = "Reselect Member";
+            this.EditDropdownAssignProject.Location = new System.Drawing.Point(52, 221);
+            this.EditDropdownAssignProject.MaximumSize = new System.Drawing.Size(391, 0);
+            this.EditDropdownAssignProject.MinimumSize = new System.Drawing.Size(391, 0);
+            this.EditDropdownAssignProject.Name = "EditDropdownAssignProject";
+            this.EditDropdownAssignProject.Size = new System.Drawing.Size(391, 46);
+            this.EditDropdownAssignProject.TabIndex = 24;
+            this.EditDropdownAssignProject.Text = "Select Project";
             // 
             // ArchivedCheckbox
             // 
@@ -431,7 +431,7 @@
             this.Controls.Add(this.DeadlineTask);
             this.Controls.Add(this.AssignTask);
             this.Controls.Add(this.TaskName);
-            this.Controls.Add(this.EditDropdownassigntask);
+            this.Controls.Add(this.EditDropdownAssignProject);
             this.Controls.Add(this.ArchivedCheckbox);
             this.Controls.Add(this.EditTaskSubmitbtn);
             this.Controls.Add(this.EditTaskDescriptiontxt);
@@ -454,7 +454,7 @@
         private System.Windows.Forms.Label DeadlineTask;
         private System.Windows.Forms.Label AssignTask;
         private System.Windows.Forms.Label TaskName;
-        private Bunifu.UI.WinForms.BunifuDropdown EditDropdownassigntask;
+        private Bunifu.UI.WinForms.BunifuDropdown EditDropdownAssignProject;
         private Bunifu.Framework.UI.BunifuCheckbox ArchivedCheckbox;
         private Bunifu.Framework.UI.BunifuFlatButton EditTaskSubmitbtn;
         private Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox EditTaskDescriptiontxt;

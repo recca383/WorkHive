@@ -36,14 +36,12 @@ namespace WorkHive.Views.Cards
 
         private void InitializeElements(TaskModel task)
         {
-            List<ProjectModel> projectModels = ProjectModelAccess.GetProjects();
-            ProjectModel currentproject = projectModels.FirstOrDefault(t => t.Tasks.Contains(task));
             lblTask_Title.Text = task.TaskName;
             lblTask_Date.Text = ($"{CultureInfo.CurrentCulture.DateTimeFormat.GetMonthName(task.TaskStart.Month)} {task.TaskStart.Day}");
             Deadlinetxt.Text = ($"{CultureInfo.CurrentCulture.DateTimeFormat.GetMonthName(task.Deadline.Month)} {task.Deadline.Day}");
             Archived.Checked = !task.Archived;
-            if (currentproject is null) lblProjectName.Text = "No Project";
-            else lblProjectName.Text = currentproject.Name;
+            if (task.ProjectAssigned is null) lblProjectName.Text = "No Project";
+            else lblProjectName.Text = task.ProjectAssigned.Name;
             var parent = Directory.GetParent(Directory.GetCurrentDirectory()).Parent.FullName;
             if (task.TaskFinished)
             {

@@ -16,7 +16,7 @@ namespace WorkHive
 {
     public partial class AddTask : UserControl
     {
-        private static List<MemberModel> members = MemberModelAccess.GetMemberModel();
+        List<ProjectModel > projects = ProjectModelAccess.GetProjects();
         private string SelectedName;
         public AddTask()
         {
@@ -24,28 +24,31 @@ namespace WorkHive
             AddMembersToDropdown();
         }
 
-        private void btnAddTaskSubmit_Click(object sender, EventArgs e)
-        {
-            int taskID = TaskModelAccess.GetTaskCount();
-            MemberModel selectedMember = members.FirstOrDefault(i => i.FirstName == SelectedName);
-            TaskModelAccess.AddTask(taskID,TaskNametxt.Text, TaskDescriptiontxt.Text, ArchivedCheckbox.Checked, DatePickerDeadline.Value);
-        }
+
         private void AddMembersToDropdown()
         {
-            var name = members.Select(n => n.FirstName).ToArray();
-            Dropdownassigntask.DataSource = name; 
+            Dropdownassignproject.DataSource = projects.Select(n => n.Name); 
         }
 
         private void btnAddTaskExit_Click(object sender, EventArgs e)
         {
             this.Parent.Controls.Remove(this);
         }
-
-        private void Dropdownassigntask_onItemSelected(object sender, EventArgs e)
+        private void btnAddTaskSubmit_Click(object sender, EventArgs e)
         {
-            SelectedName = Dropdownassigntask.SelectedItem.ToString();
+            int taskID = TaskModelAccess.GetTaskCount();
+            TaskModelAccess.AddTask( new TaskModel
+            {
+                TaskID = taskID, 
+                TaskName = TaskNametxt.Text, 
+                TaskDescription = TaskDescriptiontxt.Text, 
+                Archived = ArchivedCheckbox.Checked,
+                ProjectAssigned = (ProjectModel)Dropdownassignproject.SelectedItem,
+                Deadline = DatePickerDeadline.Value
+            }
+
+            );
         }
 
-       
     }
 }
