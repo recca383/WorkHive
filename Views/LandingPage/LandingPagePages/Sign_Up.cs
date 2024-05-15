@@ -184,6 +184,5 @@ namespace WorkHive.Views.LandingPage.LandingPagePages
         {
             Controller.Utilities.ShowPasswordFunction(txtConfirmPassword, ShowPassword2);
         }
-
     }
 }

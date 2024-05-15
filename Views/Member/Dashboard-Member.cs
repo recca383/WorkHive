@@ -117,5 +117,39 @@ namespace WorkHive.Views.Member.DashboardPagesMember
         {
 
         }
+
+        private void btnMenuMember_Click(object sender, EventArgs e)
+        {
+            CollapseMenu();
+        }
+
+        private void CollapseMenu()
+        {
+            if (this.sidebarmember.Width > 150)
+            {
+                sidebarmember.Width = 54;
+                pictureBox1.Visible = false;
+                btnMenuMember.Dock = DockStyle.Left;
+                foreach (Button menubutton in sidebarmember.Controls.OfType<Button>())
+                {
+                    menubutton.Text = "";
+                    menubutton.ImageAlign = ContentAlignment.MiddleCenter;
+
+                }
+            }
+            else
+            {
+                sidebarmember.Width = 180;
+                pictureBox1.Visible = true;
+                btnMenuMember.Dock = DockStyle.None;
+                foreach (Button menubutton in sidebarmember.Controls.OfType<Button>())
+                {
+                    menubutton.Text = "  " + menubutton.Tag.ToString();
+                    menubutton.ImageAlign = ContentAlignment.MiddleLeft;
+
+                }
+
+            }
+        }
     }
 }

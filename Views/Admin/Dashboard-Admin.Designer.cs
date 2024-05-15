@@ -31,10 +31,10 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Dashboard_Admin));
             this.PnTitleBar = new System.Windows.Forms.Panel();
             this.profilepanel = new System.Windows.Forms.Panel();
-            this.ViewPanel = new System.Windows.Forms.Panel();
             this.Notificationbtn = new System.Windows.Forms.PictureBox();
             this.ProfilePicBox = new WorkHive.Views.CircularPictureBox();
             this.btnMenu = new System.Windows.Forms.Button();
+            this.ViewPanel = new System.Windows.Forms.Panel();
             this.sidebar = new System.Windows.Forms.Panel();
             this.btnDashBoard = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnChats = new Bunifu.Framework.UI.BunifuFlatButton();
@@ -78,17 +78,6 @@
             this.profilepanel.Size = new System.Drawing.Size(0, 0);
             this.profilepanel.TabIndex = 3;
             // 
-            // ViewPanel
-            // 
-            this.ViewPanel.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ViewPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ViewPanel.Location = new System.Drawing.Point(219, 100);
-            this.ViewPanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.ViewPanel.Name = "ViewPanel";
-            this.ViewPanel.Size = new System.Drawing.Size(1360, 737);
-            this.ViewPanel.TabIndex = 9;
-            this.ViewPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.ViewPanel_Paint);
-            // 
             // Notificationbtn
             // 
             this.Notificationbtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -127,6 +116,17 @@
             this.btnMenu.TabIndex = 0;
             this.btnMenu.UseVisualStyleBackColor = true;
             this.btnMenu.Click += new System.EventHandler(this.btnMenu_Click);
+            // 
+            // ViewPanel
+            // 
+            this.ViewPanel.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.ViewPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ViewPanel.Location = new System.Drawing.Point(219, 100);
+            this.ViewPanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.ViewPanel.Name = "ViewPanel";
+            this.ViewPanel.Size = new System.Drawing.Size(1360, 737);
+            this.ViewPanel.TabIndex = 9;
+            this.ViewPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.ViewPanel_Paint);
             // 
             // sidebar
             // 

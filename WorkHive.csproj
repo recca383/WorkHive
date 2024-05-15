@@ -791,6 +791,7 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\eye open.png" />
     <None Include="Resources\Message Cumming soon %281%29.png" />
     <None Include="Resources\Group 77 %284%29.png" />
     <None Include="Resources\Group 77 %283%29.png" />
