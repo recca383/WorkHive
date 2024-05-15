@@ -35,7 +35,6 @@
             this.pictureboxFinished = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.bunifuElipse2 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.panel3 = new System.Windows.Forms.Panel();
             this.TaskId = new System.Windows.Forms.Label();
             this.EditFlatButton = new Bunifu.Framework.UI.BunifuFlatButton();
@@ -103,11 +102,6 @@
             this.pictureBox2.TabIndex = 13;
             this.pictureBox2.TabStop = false;
             // 
-            // bunifuElipse2
-            // 
-            this.bunifuElipse2.ElipseRadius = 5;
-            this.bunifuElipse2.TargetControl = this;
-            // 
             // panel3
             // 
             this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
@@ -160,7 +154,7 @@
             this.EditFlatButton.IconZoom = 75D;
             this.EditFlatButton.IsTab = false;
             this.EditFlatButton.Location = new System.Drawing.Point(879, 14);
-            this.EditFlatButton.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.EditFlatButton.Margin = new System.Windows.Forms.Padding(5);
             this.EditFlatButton.Name = "EditFlatButton";
             this.EditFlatButton.Normalcolor = System.Drawing.Color.Transparent;
             this.EditFlatButton.OnHovercolor = System.Drawing.Color.Red;
@@ -238,7 +232,7 @@
             this.Archived.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
             this.Archived.ForeColor = System.Drawing.Color.White;
             this.Archived.Location = new System.Drawing.Point(979, 33);
-            this.Archived.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Archived.Margin = new System.Windows.Forms.Padding(5);
             this.Archived.Name = "Archived";
             this.Archived.Size = new System.Drawing.Size(20, 20);
             this.Archived.TabIndex = 11;
@@ -252,7 +246,7 @@
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "TaskCard";
             this.Size = new System.Drawing.Size(1147, 166);
             this.panel1.ResumeLayout(false);
@@ -273,7 +267,6 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pictureboxFinished;
         private System.Windows.Forms.Panel panel2;
-        private Bunifu.Framework.UI.BunifuElipse bunifuElipse2;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.PictureBox pictureBox3;
         private Bunifu.Framework.UI.BunifuCustomLabel lblTask_Title;
