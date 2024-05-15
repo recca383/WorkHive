@@ -493,6 +493,12 @@
     <Compile Include="Views\Admin\DashboardPages\DashboardView.Designer.cs">
       <DependentUpon>DashboardView.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\Admin\MessageView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Admin\MessageView.Designer.cs">
+      <DependentUpon>MessageView.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\Cards\EditTasks.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -657,6 +663,9 @@
     <EmbeddedResource Include="Views\Admin\DashboardPages\DashboardView.resx">
       <DependentUpon>DashboardView.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Views\Admin\MessageView.resx">
+      <DependentUpon>MessageView.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\Cards\EditTasks.resx">
       <DependentUpon>EditTasks.cs</DependentUpon>
     </EmbeddedResource>
@@ -782,6 +791,7 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\Message Cumming soon %281%29.png" />
     <None Include="Resources\Group 77 %284%29.png" />
     <None Include="Resources\Group 77 %283%29.png" />
     <None Include="Resources\Vector %287%29.png" />
