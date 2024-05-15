@@ -29,7 +29,8 @@ namespace WorkHive.Views.Member.DashboardPagesMember
         private void RefreshList(List<TaskModel> tasks)
         {
             TasksFlow.Controls.Clear();
-
+            //Closer deadlines on Top
+            tasks = tasks.OrderBy(t => t.Deadline).ToList();
             foreach (TaskModel taskModel in tasks)
             {
                 TasksFlow.Controls.Add(new TaskCard(taskModel));

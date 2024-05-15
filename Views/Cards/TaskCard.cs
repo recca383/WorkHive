@@ -12,6 +12,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using WorkHive.Controller;
 using WorkHive.Model;
+using WorkHive.Views.Admin.DashboardPages;
 using WorkHive.Views.LandingPage.LandingPagePages;
 
 namespace WorkHive.Views.Cards
@@ -22,10 +23,12 @@ namespace WorkHive.Views.Cards
         private Rectangle recpanel2;
         private Rectangle recpanel3;
         private Rectangle recpictureBox1;
-        
+
+        int Id;
         
         public TaskCard(TaskModel task)
         {
+            Id = task.TaskID;
             InitializeComponent();
             InitializeElements(task);
             this.Resize += TaskCard_Resize;
@@ -70,6 +73,17 @@ namespace WorkHive.Views.Cards
             c.Location = new Point(newX, newY);
             c.Size = new Size(newWidth, newHeight);
 
+        }
+        private void EditFlatButton_Click(object sender, EventArgs e)
+        {
+            TasksView editTask = (TasksView)this.Parent.Parent;
+
+            editTask.btnEdittasks_Click(sender, e, Id);
+        }
+        public void TurnEditButtonVisible(EventArgs e)
+        {
+            if (EditFlatButton.Visible) EditFlatButton.Visible = false;
+            else EditFlatButton.Visible = true;
         }
     }
 }

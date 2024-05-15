@@ -27,7 +27,7 @@ namespace WorkHive
 
         private void AddMembersToDropdown()
         {
-            Dropdownassignproject.DataSource = projects.Select(n => n.Name); 
+            Dropdownassignproject.DataSource = projects.Select(n => n.Name).ToArray(); 
         }
 
         private void btnAddTaskExit_Click(object sender, EventArgs e)

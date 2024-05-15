@@ -109,7 +109,7 @@
             this.bunifuVScrollBar1.DurationBeforeShrink = 2000;
             this.bunifuVScrollBar1.LargeChange = 10;
             this.bunifuVScrollBar1.Location = new System.Drawing.Point(914, 72);
-            this.bunifuVScrollBar1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bunifuVScrollBar1.Margin = new System.Windows.Forms.Padding(4);
             this.bunifuVScrollBar1.Maximum = 100;
             this.bunifuVScrollBar1.Minimum = 0;
             this.bunifuVScrollBar1.MinimumThumbLength = 18;
@@ -139,7 +139,7 @@
             this.Controls.Add(this.btnAll);
             this.Controls.Add(this.TasksFlow);
             this.Controls.Add(this.TasksName);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "TaskViewMember";
             this.Size = new System.Drawing.Size(932, 585);
             this.ResumeLayout(false);

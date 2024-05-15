@@ -37,12 +37,14 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.bunifuElipse2 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.panel3 = new System.Windows.Forms.Panel();
+            this.lblProjectName = new System.Windows.Forms.Label();
             this.Deadlinetxt = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.lblTask_Title = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.lblTask_Date = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.Archived = new Bunifu.Framework.UI.BunifuCheckbox();
-            this.lblProjectName = new System.Windows.Forms.Label();
+            this.EditFlatButton = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.TaskId = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureboxFinished)).BeginInit();
             this.panel2.SuspendLayout();
@@ -109,6 +111,8 @@
             // 
             this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.panel3.BackColor = System.Drawing.Color.Transparent;
+            this.panel3.Controls.Add(this.TaskId);
+            this.panel3.Controls.Add(this.EditFlatButton);
             this.panel3.Controls.Add(this.lblProjectName);
             this.panel3.Controls.Add(this.Deadlinetxt);
             this.panel3.Controls.Add(this.pictureBox3);
@@ -120,6 +124,16 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(772, 102);
             this.panel3.TabIndex = 13;
+            // 
+            // lblProjectName
+            // 
+            this.lblProjectName.AutoSize = true;
+            this.lblProjectName.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblProjectName.Location = new System.Drawing.Point(7, 57);
+            this.lblProjectName.Name = "lblProjectName";
+            this.lblProjectName.Size = new System.Drawing.Size(154, 29);
+            this.lblProjectName.TabIndex = 14;
+            this.lblProjectName.Text = "ProjectName";
             // 
             // Deadlinetxt
             // 
@@ -169,21 +183,58 @@
             this.Archived.Checked = true;
             this.Archived.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
             this.Archived.ForeColor = System.Drawing.Color.White;
-            this.Archived.Location = new System.Drawing.Point(604, 22);
+            this.Archived.Location = new System.Drawing.Point(734, 27);
             this.Archived.Margin = new System.Windows.Forms.Padding(4);
             this.Archived.Name = "Archived";
             this.Archived.Size = new System.Drawing.Size(20, 20);
             this.Archived.TabIndex = 11;
             // 
-            // lblProjectName
+            // EditFlatButton
             // 
-            this.lblProjectName.AutoSize = true;
-            this.lblProjectName.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblProjectName.Location = new System.Drawing.Point(7, 57);
-            this.lblProjectName.Name = "lblProjectName";
-            this.lblProjectName.Size = new System.Drawing.Size(154, 29);
-            this.lblProjectName.TabIndex = 14;
-            this.lblProjectName.Text = "ProjectName";
+            this.EditFlatButton.Active = false;
+            this.EditFlatButton.Activecolor = System.Drawing.Color.Transparent;
+            this.EditFlatButton.BackColor = System.Drawing.Color.Transparent;
+            this.EditFlatButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.EditFlatButton.BorderRadius = 0;
+            this.EditFlatButton.ButtonText = "bunifuFlatButton1";
+            this.EditFlatButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.EditFlatButton.DisabledColor = System.Drawing.Color.Gray;
+            this.EditFlatButton.Iconcolor = System.Drawing.Color.Transparent;
+            this.EditFlatButton.Iconimage = ((System.Drawing.Image)(resources.GetObject("EditFlatButton.Iconimage")));
+            this.EditFlatButton.Iconimage_right = null;
+            this.EditFlatButton.Iconimage_right_Selected = null;
+            this.EditFlatButton.Iconimage_Selected = null;
+            this.EditFlatButton.IconMarginLeft = 0;
+            this.EditFlatButton.IconMarginRight = 0;
+            this.EditFlatButton.IconRightVisible = true;
+            this.EditFlatButton.IconRightZoom = 0D;
+            this.EditFlatButton.IconVisible = true;
+            this.EditFlatButton.IconZoom = 75D;
+            this.EditFlatButton.IsTab = false;
+            this.EditFlatButton.Location = new System.Drawing.Point(659, 11);
+            this.EditFlatButton.Name = "EditFlatButton";
+            this.EditFlatButton.Normalcolor = System.Drawing.Color.Transparent;
+            this.EditFlatButton.OnHovercolor = System.Drawing.Color.Red;
+            this.EditFlatButton.OnHoverTextColor = System.Drawing.Color.Transparent;
+            this.EditFlatButton.selected = false;
+            this.EditFlatButton.Size = new System.Drawing.Size(53, 56);
+            this.EditFlatButton.TabIndex = 16;
+            this.EditFlatButton.Text = "bunifuFlatButton1";
+            this.EditFlatButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.EditFlatButton.Textcolor = System.Drawing.Color.White;
+            this.EditFlatButton.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EditFlatButton.Visible = false;
+            this.EditFlatButton.Click += new System.EventHandler(this.EditFlatButton_Click);
+            // 
+            // TaskId
+            // 
+            this.TaskId.AutoSize = true;
+            this.TaskId.Location = new System.Drawing.Point(356, 69);
+            this.TaskId.Name = "TaskId";
+            this.TaskId.Size = new System.Drawing.Size(40, 13);
+            this.TaskId.TabIndex = 17;
+            this.TaskId.Text = "TaskId";
+            this.TaskId.Visible = false;
             // 
             // TaskCard
             // 
@@ -222,5 +273,7 @@
         private Bunifu.Framework.UI.BunifuCheckbox Archived;
         private Bunifu.Framework.UI.BunifuCustomLabel Deadlinetxt;
         private System.Windows.Forms.Label lblProjectName;
+        private Bunifu.Framework.UI.BunifuFlatButton EditFlatButton;
+        private System.Windows.Forms.Label TaskId;
     }
 }

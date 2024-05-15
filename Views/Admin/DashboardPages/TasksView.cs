@@ -34,6 +34,7 @@ namespace WorkHive.Views.Admin.DashboardPages
             InitializeComponent();
             var results = tasks.Where(a => !a.Archived).ToList();
             RefreshList(results);
+            AddTaskPanel.Size = new Size(0, 0);
             this.Resize += TasksView_Resize;
             TaskViewOriginalSize = this.Size;
             recTasksName = new Rectangle(TasksName.Location, TasksName.Size);
@@ -73,7 +74,7 @@ namespace WorkHive.Views.Admin.DashboardPages
         private void RefreshList(List<TaskModel> taskList)
         {
             TasksFlow.Controls.Clear();
-            
+            taskList = taskList.OrderBy(t => t.Deadline).ToList();
             foreach (TaskModel taskModel in taskList)
             {
                 TasksFlow.Controls.Add(new TaskCard(taskModel));
@@ -105,6 +106,34 @@ namespace WorkHive.Views.Admin.DashboardPages
             var results = tasks.Where(a => a.Archived).ToList();
             RefreshList(results);
         }
+        private void btnAddtasks_Click(object sender, EventArgs e)
+        {
+            AddTaskPanel.Controls.Clear();
+            AddTaskPanel.Controls.Add(new AddTask());
+            AddTaskPanel.Size = new Size(500, 622);
+        }
+        public void btnEdittasks_Click(object sender, EventArgs e, int id)
+        {
+            AddTaskPanel.Controls.Clear();
+            AddTaskPanel.Controls.Add(new EditTaskInformation(TaskModelAccess.GetTaskInfo(id)));
+            AddTaskPanel.Size = new Size(500, 622);
 
+        }
+        private void AddTaskPanel_ControlRemoved(object sender, ControlEventArgs e)
+        {
+            if (AddTaskPanel.Controls.Count == 0)
+            {
+                AddTaskPanel.Size = new Size(0, 0);
+            }
+        }
+
+        private void EditFlatButton_Click(object sender, EventArgs e)
+        {
+            foreach(TaskCard taskCard in TasksFlow.Controls)
+            {
+                taskCard.TurnEditButtonVisible(e);
+            }
+            
+        }
     }
 }
