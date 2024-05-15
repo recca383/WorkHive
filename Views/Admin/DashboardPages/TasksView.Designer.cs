@@ -36,10 +36,10 @@
             this.btnCompleted = new System.Windows.Forms.Label();
             this.btnArchived = new System.Windows.Forms.Label();
             this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
-            this.bunifuVScrollBar1 = new Bunifu.UI.WinForms.BunifuVScrollBar();
-            this.EditFlatButton = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.btnAddtasks = new Bunifu.Framework.UI.BunifuFlatButton();
             this.AddTaskPanel = new System.Windows.Forms.Panel();
+            this.btnAddtasks = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.EditFlatButton = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.bunifuVScrollBar1 = new Bunifu.UI.WinForms.BunifuVScrollBar();
             this.SuspendLayout();
             // 
             // TasksName
@@ -58,7 +58,7 @@
             this.TasksFlow.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.TasksFlow.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
             this.TasksFlow.Location = new System.Drawing.Point(36, 86);
-            this.TasksFlow.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TasksFlow.Margin = new System.Windows.Forms.Padding(4);
             this.TasksFlow.Name = "TasksFlow";
             this.TasksFlow.Size = new System.Drawing.Size(1181, 631);
             this.TasksFlow.TabIndex = 3;
@@ -112,82 +112,16 @@
             this.btnArchived.Text = "Archived";
             this.btnArchived.Click += new System.EventHandler(this.btnArchived_Click);
             // 
-            // bunifuVScrollBar1
+            // AddTaskPanel
             // 
-            this.bunifuVScrollBar1.AllowCursorChanges = true;
-            this.bunifuVScrollBar1.AllowHomeEndKeysDetection = false;
-            this.bunifuVScrollBar1.AllowIncrementalClickMoves = true;
-            this.bunifuVScrollBar1.AllowMouseDownEffects = true;
-            this.bunifuVScrollBar1.AllowMouseHoverEffects = true;
-            this.bunifuVScrollBar1.AllowScrollingAnimations = true;
-            this.bunifuVScrollBar1.AllowScrollKeysDetection = true;
-            this.bunifuVScrollBar1.AllowScrollOptionsMenu = true;
-            this.bunifuVScrollBar1.AllowShrinkingOnFocusLost = false;
-            this.bunifuVScrollBar1.BackgroundColor = System.Drawing.Color.Silver;
-            this.bunifuVScrollBar1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuVScrollBar1.BackgroundImage")));
-            this.bunifuVScrollBar1.BindingContainer = this.TasksFlow;
-            this.bunifuVScrollBar1.BorderColor = System.Drawing.Color.Silver;
-            this.bunifuVScrollBar1.BorderRadius = 14;
-            this.bunifuVScrollBar1.BorderThickness = 1;
-            this.bunifuVScrollBar1.DurationBeforeShrink = 2000;
-            this.bunifuVScrollBar1.LargeChange = 10;
-            this.bunifuVScrollBar1.Location = new System.Drawing.Point(1219, 86);
-            this.bunifuVScrollBar1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
-            this.bunifuVScrollBar1.Maximum = 100;
-            this.bunifuVScrollBar1.Minimum = 0;
-            this.bunifuVScrollBar1.MinimumThumbLength = 18;
-            this.bunifuVScrollBar1.Name = "bunifuVScrollBar1";
-            this.bunifuVScrollBar1.OnDisable.ScrollBarBorderColor = System.Drawing.Color.Silver;
-            this.bunifuVScrollBar1.OnDisable.ScrollBarColor = System.Drawing.Color.Transparent;
-            this.bunifuVScrollBar1.OnDisable.ThumbColor = System.Drawing.Color.Silver;
-            this.bunifuVScrollBar1.ScrollBarBorderColor = System.Drawing.Color.Silver;
-            this.bunifuVScrollBar1.ScrollBarColor = System.Drawing.Color.Silver;
-            this.bunifuVScrollBar1.ShrinkSizeLimit = 3;
-            this.bunifuVScrollBar1.Size = new System.Drawing.Size(24, 626);
-            this.bunifuVScrollBar1.SmallChange = 1;
-            this.bunifuVScrollBar1.TabIndex = 8;
-            this.bunifuVScrollBar1.ThumbColor = System.Drawing.Color.Gray;
-            this.bunifuVScrollBar1.ThumbLength = 61;
-            this.bunifuVScrollBar1.ThumbMargin = 1;
-            this.bunifuVScrollBar1.ThumbStyle = Bunifu.UI.WinForms.BunifuVScrollBar.ThumbStyles.Inset;
-            this.bunifuVScrollBar1.Value = 0;
-            // 
-            // EditFlatButton
-            // 
-            this.EditFlatButton.Active = false;
-            this.EditFlatButton.Activecolor = System.Drawing.Color.Transparent;
-            this.EditFlatButton.BackColor = System.Drawing.Color.Transparent;
-            this.EditFlatButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.EditFlatButton.BorderRadius = 0;
-            this.EditFlatButton.ButtonText = "bunifuFlatButton1";
-            this.EditFlatButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.EditFlatButton.DisabledColor = System.Drawing.Color.Gray;
-            this.EditFlatButton.Iconcolor = System.Drawing.Color.Transparent;
-            this.EditFlatButton.Iconimage = ((System.Drawing.Image)(resources.GetObject("EditFlatButton.Iconimage")));
-            this.EditFlatButton.Iconimage_right = null;
-            this.EditFlatButton.Iconimage_right_Selected = null;
-            this.EditFlatButton.Iconimage_Selected = null;
-            this.EditFlatButton.IconMarginLeft = 0;
-            this.EditFlatButton.IconMarginRight = 0;
-            this.EditFlatButton.IconRightVisible = true;
-            this.EditFlatButton.IconRightZoom = 0D;
-            this.EditFlatButton.IconVisible = true;
-            this.EditFlatButton.IconZoom = 75D;
-            this.EditFlatButton.IsTab = false;
-            this.EditFlatButton.Location = new System.Drawing.Point(1057, 11);
-            this.EditFlatButton.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
-            this.EditFlatButton.Name = "EditFlatButton";
-            this.EditFlatButton.Normalcolor = System.Drawing.Color.Transparent;
-            this.EditFlatButton.OnHovercolor = System.Drawing.Color.Red;
-            this.EditFlatButton.OnHoverTextColor = System.Drawing.Color.Transparent;
-            this.EditFlatButton.selected = false;
-            this.EditFlatButton.Size = new System.Drawing.Size(71, 69);
-            this.EditFlatButton.TabIndex = 15;
-            this.EditFlatButton.Text = "bunifuFlatButton1";
-            this.EditFlatButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.EditFlatButton.Textcolor = System.Drawing.Color.White;
-            this.EditFlatButton.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EditFlatButton.Click += new System.EventHandler(this.EditFlatButton_Click);
+            this.AddTaskPanel.BackColor = System.Drawing.Color.Transparent;
+            this.AddTaskPanel.ForeColor = System.Drawing.Color.Transparent;
+            this.AddTaskPanel.Location = new System.Drawing.Point(354, 4);
+            this.AddTaskPanel.Margin = new System.Windows.Forms.Padding(4);
+            this.AddTaskPanel.Name = "AddTaskPanel";
+            this.AddTaskPanel.Size = new System.Drawing.Size(159, 150);
+            this.AddTaskPanel.TabIndex = 18;
+            this.AddTaskPanel.ControlRemoved += new System.Windows.Forms.ControlEventHandler(this.AddTaskPanel_ControlRemoved);
             // 
             // btnAddtasks
             // 
@@ -209,33 +143,99 @@
             this.btnAddtasks.IconRightVisible = true;
             this.btnAddtasks.IconRightZoom = 0D;
             this.btnAddtasks.IconVisible = true;
-            this.btnAddtasks.IconZoom = 100D;
+            this.btnAddtasks.IconZoom = 40D;
             this.btnAddtasks.ImeMode = System.Windows.Forms.ImeMode.On;
             this.btnAddtasks.IsTab = false;
-            this.btnAddtasks.Location = new System.Drawing.Point(1137, 11);
-            this.btnAddtasks.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.btnAddtasks.Location = new System.Drawing.Point(1171, 20);
+            this.btnAddtasks.Margin = new System.Windows.Forms.Padding(5);
             this.btnAddtasks.Name = "btnAddtasks";
             this.btnAddtasks.Normalcolor = System.Drawing.Color.Transparent;
             this.btnAddtasks.OnHovercolor = System.Drawing.Color.Transparent;
             this.btnAddtasks.OnHoverTextColor = System.Drawing.Color.White;
             this.btnAddtasks.selected = false;
-            this.btnAddtasks.Size = new System.Drawing.Size(80, 69);
+            this.btnAddtasks.Size = new System.Drawing.Size(46, 47);
             this.btnAddtasks.TabIndex = 17;
             this.btnAddtasks.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnAddtasks.Textcolor = System.Drawing.Color.White;
             this.btnAddtasks.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAddtasks.Click += new System.EventHandler(this.btnAddtasks_Click);
             // 
-            // AddTaskPanel
+            // EditFlatButton
             // 
-            this.AddTaskPanel.BackColor = System.Drawing.Color.Transparent;
-            this.AddTaskPanel.ForeColor = System.Drawing.Color.Transparent;
-            this.AddTaskPanel.Location = new System.Drawing.Point(354, 0);
-            this.AddTaskPanel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.AddTaskPanel.Name = "AddTaskPanel";
-            this.AddTaskPanel.Size = new System.Drawing.Size(159, 150);
-            this.AddTaskPanel.TabIndex = 18;
-            this.AddTaskPanel.ControlRemoved += new System.Windows.Forms.ControlEventHandler(this.AddTaskPanel_ControlRemoved);
+            this.EditFlatButton.Active = false;
+            this.EditFlatButton.Activecolor = System.Drawing.Color.Transparent;
+            this.EditFlatButton.BackColor = System.Drawing.Color.Transparent;
+            this.EditFlatButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.EditFlatButton.BorderRadius = 0;
+            this.EditFlatButton.ButtonText = "bunifuFlatButton1";
+            this.EditFlatButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.EditFlatButton.DisabledColor = System.Drawing.Color.Gray;
+            this.EditFlatButton.Iconcolor = System.Drawing.Color.Transparent;
+            this.EditFlatButton.Iconimage = ((System.Drawing.Image)(resources.GetObject("EditFlatButton.Iconimage")));
+            this.EditFlatButton.Iconimage_right = null;
+            this.EditFlatButton.Iconimage_right_Selected = null;
+            this.EditFlatButton.Iconimage_Selected = null;
+            this.EditFlatButton.IconMarginLeft = 0;
+            this.EditFlatButton.IconMarginRight = 0;
+            this.EditFlatButton.IconRightVisible = true;
+            this.EditFlatButton.IconRightZoom = 0D;
+            this.EditFlatButton.IconVisible = true;
+            this.EditFlatButton.IconZoom = 50D;
+            this.EditFlatButton.IsTab = false;
+            this.EditFlatButton.Location = new System.Drawing.Point(1115, 20);
+            this.EditFlatButton.Margin = new System.Windows.Forms.Padding(5);
+            this.EditFlatButton.Name = "EditFlatButton";
+            this.EditFlatButton.Normalcolor = System.Drawing.Color.Transparent;
+            this.EditFlatButton.OnHovercolor = System.Drawing.Color.Red;
+            this.EditFlatButton.OnHoverTextColor = System.Drawing.Color.Transparent;
+            this.EditFlatButton.selected = false;
+            this.EditFlatButton.Size = new System.Drawing.Size(46, 47);
+            this.EditFlatButton.TabIndex = 15;
+            this.EditFlatButton.Text = "bunifuFlatButton1";
+            this.EditFlatButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.EditFlatButton.Textcolor = System.Drawing.Color.White;
+            this.EditFlatButton.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EditFlatButton.Click += new System.EventHandler(this.EditFlatButton_Click);
+            // 
+            // bunifuVScrollBar1
+            // 
+            this.bunifuVScrollBar1.AllowCursorChanges = true;
+            this.bunifuVScrollBar1.AllowHomeEndKeysDetection = false;
+            this.bunifuVScrollBar1.AllowIncrementalClickMoves = true;
+            this.bunifuVScrollBar1.AllowMouseDownEffects = true;
+            this.bunifuVScrollBar1.AllowMouseHoverEffects = true;
+            this.bunifuVScrollBar1.AllowScrollingAnimations = true;
+            this.bunifuVScrollBar1.AllowScrollKeysDetection = true;
+            this.bunifuVScrollBar1.AllowScrollOptionsMenu = true;
+            this.bunifuVScrollBar1.AllowShrinkingOnFocusLost = false;
+            this.bunifuVScrollBar1.BackgroundColor = System.Drawing.Color.Silver;
+            this.bunifuVScrollBar1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuVScrollBar1.BackgroundImage")));
+            this.bunifuVScrollBar1.BindingContainer = this.TasksFlow;
+            this.bunifuVScrollBar1.BorderColor = System.Drawing.Color.Silver;
+            this.bunifuVScrollBar1.BorderRadius = 14;
+            this.bunifuVScrollBar1.BorderThickness = 1;
+            this.bunifuVScrollBar1.DurationBeforeShrink = 2000;
+            this.bunifuVScrollBar1.LargeChange = 10;
+            this.bunifuVScrollBar1.Location = new System.Drawing.Point(1219, 86);
+            this.bunifuVScrollBar1.Margin = new System.Windows.Forms.Padding(5);
+            this.bunifuVScrollBar1.Maximum = 100;
+            this.bunifuVScrollBar1.Minimum = 0;
+            this.bunifuVScrollBar1.MinimumThumbLength = 18;
+            this.bunifuVScrollBar1.Name = "bunifuVScrollBar1";
+            this.bunifuVScrollBar1.OnDisable.ScrollBarBorderColor = System.Drawing.Color.Silver;
+            this.bunifuVScrollBar1.OnDisable.ScrollBarColor = System.Drawing.Color.Transparent;
+            this.bunifuVScrollBar1.OnDisable.ThumbColor = System.Drawing.Color.Silver;
+            this.bunifuVScrollBar1.ScrollBarBorderColor = System.Drawing.Color.Silver;
+            this.bunifuVScrollBar1.ScrollBarColor = System.Drawing.Color.Silver;
+            this.bunifuVScrollBar1.ShrinkSizeLimit = 3;
+            this.bunifuVScrollBar1.Size = new System.Drawing.Size(24, 626);
+            this.bunifuVScrollBar1.SmallChange = 1;
+            this.bunifuVScrollBar1.TabIndex = 8;
+            this.bunifuVScrollBar1.ThumbColor = System.Drawing.Color.Gray;
+            this.bunifuVScrollBar1.ThumbLength = 61;
+            this.bunifuVScrollBar1.ThumbMargin = 1;
+            this.bunifuVScrollBar1.ThumbStyle = Bunifu.UI.WinForms.BunifuVScrollBar.ThumbStyles.Inset;
+            this.bunifuVScrollBar1.Value = 0;
             // 
             // TasksView
             // 
@@ -251,7 +251,7 @@
             this.Controls.Add(this.btnAll);
             this.Controls.Add(this.TasksFlow);
             this.Controls.Add(this.TasksName);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "TasksView";
             this.Size = new System.Drawing.Size(1243, 720);
             this.ResumeLayout(false);

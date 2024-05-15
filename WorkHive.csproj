@@ -479,6 +479,24 @@
     <Compile Include="Views\Admin\DashboardPages\MemberView.Designer.cs">
       <DependentUpon>MemberView.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\Admin\DashboardPages\ProjectSummary.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Admin\DashboardPages\ProjectSummary.Designer.cs">
+      <DependentUpon>ProjectSummary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Admin\DashboardPages\ProjectTasks.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Admin\DashboardPages\ProjectTasks.Designer.cs">
+      <DependentUpon>ProjectTasks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Admin\DashboardPages\ProjectView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Admin\DashboardPages\ProjectView.Designer.cs">
+      <DependentUpon>ProjectView.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\Admin\DashboardPages\TasksView.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -534,6 +552,12 @@
     </Compile>
     <Compile Include="Views\Cards\ProfileCard.Designer.cs">
       <DependentUpon>ProfileCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Cards\ProjectCard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Cards\ProjectCard.Designer.cs">
+      <DependentUpon>ProjectCard.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\Cards\TaskCard.cs">
       <SubType>UserControl</SubType>
@@ -652,6 +676,15 @@
     <EmbeddedResource Include="Views\Admin\DashboardPages\MemberView.resx">
       <DependentUpon>MemberView.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Views\Admin\DashboardPages\ProjectSummary.resx">
+      <DependentUpon>ProjectSummary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Admin\DashboardPages\ProjectTasks.resx">
+      <DependentUpon>ProjectTasks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Admin\DashboardPages\ProjectView.resx">
+      <DependentUpon>ProjectView.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\Admin\DashboardPages\TasksView.resx">
       <DependentUpon>TasksView.cs</DependentUpon>
     </EmbeddedResource>
@@ -683,6 +716,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Views\Cards\ProfileCard.resx">
       <DependentUpon>ProfileCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Cards\ProjectCard.resx">
+      <DependentUpon>ProjectCard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\Cards\TaskCard.resx">
       <DependentUpon>TaskCard.cs</DependentUpon>
@@ -791,6 +827,9 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\SummaryBG.png" />
+    <None Include="Resources\EKIS.png" />
+    <None Include="Resources\ProjectBG.png" />
     <None Include="Resources\eye open.png" />
     <None Include="Resources\Message Cumming soon %281%29.png" />
     <None Include="Resources\Group 77 %284%29.png" />
@@ -860,6 +899,7 @@
     <None Include="Resources\arrowright.png" />
     <None Include="Resources\Confirmbtn.png" />
     <None Include="Resources\Cancelbtn.png" />
+    <None Include="Resources\Button - Project.png" />
     <Content Include="Resources\Default_Pics\Userdefault.png" />
     <None Include="Resources\logo1.png" />
     <None Include="Resources\logo name1.png" />

@@ -36,6 +36,7 @@
             this.btnMenu = new System.Windows.Forms.Button();
             this.ViewPanel = new System.Windows.Forms.Panel();
             this.sidebar = new System.Windows.Forms.Panel();
+            this.btnProjects = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnDashBoard = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnChats = new Bunifu.Framework.UI.BunifuFlatButton();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -132,6 +133,7 @@
             // 
             this.sidebar.BackgroundImage = global::WorkHive.Properties.Resources.NEW_Sidebar_BG;
             this.sidebar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.sidebar.Controls.Add(this.btnProjects);
             this.sidebar.Controls.Add(this.btnDashBoard);
             this.sidebar.Controls.Add(this.btnChats);
             this.sidebar.Controls.Add(this.panel3);
@@ -146,6 +148,44 @@
             this.sidebar.Name = "sidebar";
             this.sidebar.Size = new System.Drawing.Size(219, 837);
             this.sidebar.TabIndex = 7;
+            // 
+            // btnProjects
+            // 
+            this.btnProjects.Active = true;
+            this.btnProjects.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(194)))), ((int)(((byte)(1)))));
+            this.btnProjects.BackColor = System.Drawing.Color.Transparent;
+            this.btnProjects.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnProjects.BorderRadius = 0;
+            this.btnProjects.ButtonText = "   Projects";
+            this.btnProjects.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnProjects.DisabledColor = System.Drawing.Color.Gray;
+            this.btnProjects.Iconcolor = System.Drawing.Color.Transparent;
+            this.btnProjects.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnProjects.Iconimage")));
+            this.btnProjects.Iconimage_right = null;
+            this.btnProjects.Iconimage_right_Selected = null;
+            this.btnProjects.Iconimage_Selected = null;
+            this.btnProjects.IconMarginLeft = 20;
+            this.btnProjects.IconMarginRight = 0;
+            this.btnProjects.IconRightVisible = true;
+            this.btnProjects.IconRightZoom = 0D;
+            this.btnProjects.IconVisible = true;
+            this.btnProjects.IconZoom = 40D;
+            this.btnProjects.IsTab = false;
+            this.btnProjects.Location = new System.Drawing.Point(0, 251);
+            this.btnProjects.Margin = new System.Windows.Forms.Padding(0);
+            this.btnProjects.Name = "btnProjects";
+            this.btnProjects.Normalcolor = System.Drawing.Color.Transparent;
+            this.btnProjects.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(194)))), ((int)(((byte)(1)))));
+            this.btnProjects.OnHoverTextColor = System.Drawing.Color.White;
+            this.btnProjects.selected = true;
+            this.btnProjects.Size = new System.Drawing.Size(251, 50);
+            this.btnProjects.TabIndex = 9;
+            this.btnProjects.Tag = "Projects";
+            this.btnProjects.Text = "   Projects";
+            this.btnProjects.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnProjects.Textcolor = System.Drawing.Color.White;
+            this.btnProjects.TextFont = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnProjects.Click += new System.EventHandler(this.btnProjects_Click);
             // 
             // btnDashBoard
             // 
@@ -207,7 +247,7 @@
             this.btnChats.IconVisible = true;
             this.btnChats.IconZoom = 40D;
             this.btnChats.IsTab = false;
-            this.btnChats.Location = new System.Drawing.Point(0, 351);
+            this.btnChats.Location = new System.Drawing.Point(0, 401);
             this.btnChats.Margin = new System.Windows.Forms.Padding(0);
             this.btnChats.Name = "btnChats";
             this.btnChats.Normalcolor = System.Drawing.Color.Transparent;
@@ -394,7 +434,7 @@
             this.btnCalendar.IconVisible = true;
             this.btnCalendar.IconZoom = 40D;
             this.btnCalendar.IsTab = false;
-            this.btnCalendar.Location = new System.Drawing.Point(0, 301);
+            this.btnCalendar.Location = new System.Drawing.Point(0, 351);
             this.btnCalendar.Margin = new System.Windows.Forms.Padding(0);
             this.btnCalendar.Name = "btnCalendar";
             this.btnCalendar.Normalcolor = System.Drawing.Color.Transparent;
@@ -432,7 +472,7 @@
             this.btnEditTasks.IconVisible = true;
             this.btnEditTasks.IconZoom = 40D;
             this.btnEditTasks.IsTab = false;
-            this.btnEditTasks.Location = new System.Drawing.Point(0, 251);
+            this.btnEditTasks.Location = new System.Drawing.Point(0, 301);
             this.btnEditTasks.Margin = new System.Windows.Forms.Padding(0);
             this.btnEditTasks.Name = "btnEditTasks";
             this.btnEditTasks.Normalcolor = System.Drawing.Color.Transparent;
@@ -493,5 +533,6 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel ViewPanel;
         private System.Windows.Forms.Panel profilepanel;
+        private Bunifu.Framework.UI.BunifuFlatButton btnProjects;
     }
 }

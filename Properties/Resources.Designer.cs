@@ -223,6 +223,16 @@ namespace WorkHive.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Button___Project {
+            get {
+                object obj = ResourceManager.GetObject("Button - Project", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Button___Tasks {
             get {
                 object obj = ResourceManager.GetObject("Button - Tasks", resourceCulture);
@@ -256,6 +266,16 @@ namespace WorkHive.Properties {
         internal static System.Drawing.Bitmap Confirmbtn {
             get {
                 object obj = ResourceManager.GetObject("Confirmbtn", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap EKIS {
+            get {
+                object obj = ResourceManager.GetObject("EKIS", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -613,6 +633,16 @@ namespace WorkHive.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap ProjectBG {
+            get {
+                object obj = ResourceManager.GetObject("ProjectBG", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Rectangle_10 {
             get {
                 object obj = ResourceManager.GetObject("Rectangle 10", resourceCulture);
@@ -766,6 +796,16 @@ namespace WorkHive.Properties {
         internal static System.Drawing.Bitmap Sidebar_BG {
             get {
                 object obj = ResourceManager.GetObject("Sidebar BG", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap SummaryBG {
+            get {
+                object obj = ResourceManager.GetObject("SummaryBG", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
