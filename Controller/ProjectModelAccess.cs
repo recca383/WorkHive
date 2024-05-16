@@ -19,6 +19,7 @@ namespace WorkHive.Controller
                 Id = 0,
                 Name = "Sample Project",
                 StartDate = DateTime.Now,
+                Tasks = new List<TaskModel>(),
                 DeadLine = DateTime.Now,
                 Archived = false
             }
@@ -32,10 +33,10 @@ namespace WorkHive.Controller
         {
             ProjectModel currentproject = GetProjectDetails (id);
             
-            if(!(currentproject.Tasks is null))
+            if(currentproject.Tasks.Count > 0)
             {
                 int totaltasks = currentproject.Tasks.Count();
-                int finishedtasks = currentproject.Tasks.Count(t => t.TaskFinished = true);
+                int finishedtasks = currentproject.Tasks.Count(t => t.TaskFinished);
 
                 int averageprogress = finishedtasks / totaltasks;
                 currentproject.Progress = averageprogress;
@@ -61,17 +62,20 @@ namespace WorkHive.Controller
                 Archived = project.Archived,
             });
         }
-        public static void AssignTaskToProject(TaskModel task)
+        public static void AssignTaskToProject(TaskModel task, ProjectModel pastprojectassigned)
         {
             ProjectModel CurrentProject = task.ProjectAssigned;
-            var pastProject = _projects.FirstOrDefault(p => p.Tasks.Contains(task));
-
             if (CurrentProject == null) new MessageBoxes("Project Unavailable");
-            else
+            if (pastprojectassigned != null)
             {
-                if (pastProject != null) pastProject.Tasks.Remove(task);
+                TaskModel oldtask = pastprojectassigned.Tasks.FirstOrDefault(t => t.TaskID == task.TaskID);
+                pastprojectassigned.Tasks.Remove(oldtask);
+            }
+            if(!CurrentProject.Tasks.Contains(task))
+            {
                 CurrentProject.Tasks.Add(task);
             }
+            
         }
         public static void DeleteProject(int projectId)
         {

@@ -34,7 +34,7 @@ namespace WorkHive.Controller
             new MemberModel()
             {
                 ID = 1,
-                Email = "jokocomia05@gmail.com",
+                Email = "joko",
                 FirstName = "joko",
                 Password = "123",
                 IsLeader = true,
@@ -46,7 +46,7 @@ namespace WorkHive.Controller
             new MemberModel()
             {
                 ID = 2,
-                Email = "aljohn.villareal@lspu.edu.ph",
+                Email = "Wincel",
                 FirstName = "Al John",
                 Password = "123",
                 IsLeader = true,

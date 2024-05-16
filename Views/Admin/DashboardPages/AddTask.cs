@@ -36,14 +36,15 @@ namespace WorkHive
         }
         private void btnAddTaskSubmit_Click(object sender, EventArgs e)
         {
+
             int taskID = TaskModelAccess.GetTaskCount();
             TaskModelAccess.AddTask( new TaskModel
             {
                 TaskID = taskID, 
                 TaskName = TaskNametxt.Text, 
                 TaskDescription = TaskDescriptiontxt.Text, 
-                Archived = ArchivedCheckbox.Checked,
-                ProjectAssigned = (ProjectModel)Dropdownassignproject.SelectedItem,
+                Archived = !ArchivedCheckbox.Checked,
+                ProjectAssigned = projects.FirstOrDefault(n => n.Name == Dropdownassignproject.SelectedItem.ToString()),
                 Deadline = DatePickerDeadline.Value
             }
 

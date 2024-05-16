@@ -517,12 +517,6 @@
     <Compile Include="Views\Admin\MessageView.Designer.cs">
       <DependentUpon>MessageView.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\Cards\EditTasks.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Views\Cards\EditTasks.Designer.cs">
-      <DependentUpon>EditTasks.cs</DependentUpon>
-    </Compile>
     <Compile Include="Views\Admin\DashboardPages\ProfileAdmin.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -698,9 +692,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Views\Admin\MessageView.resx">
       <DependentUpon>MessageView.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Views\Cards\EditTasks.resx">
-      <DependentUpon>EditTasks.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\Admin\DashboardPages\ProfileAdmin.resx">
       <DependentUpon>ProfileAdmin.cs</DependentUpon>

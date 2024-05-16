@@ -42,16 +42,17 @@ namespace WorkHive.Views.Admin.DashboardPages
                 ProjectModel selectedproject = projectModels.FirstOrDefault(n => n.Name == EditDropdownAssignProject.SelectedItem.ToString());
                 if (selectedproject != null) projectAssign = selectedproject;
             }
-            
-            
+
+
             TaskModelAccess.EditTask(new TaskModel
             {
                 TaskName = EditTaskNametxt.Text,
                 Deadline = EditDatePickerDeadline.Value,
+                Archived = ArchivedCheckbox.Checked,
                 TaskDescription = EditTaskDescriptiontxt.Text,
                 ProjectAssigned = projectAssign
 
-            }, selectedtask.TaskID);
+            }, selectedtask.TaskID) ;
             new MessageBoxes("Edit Task Complete!!");
             this.Parent.Controls.Remove(this);
         }
