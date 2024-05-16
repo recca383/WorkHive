@@ -455,12 +455,6 @@
     <Compile Include="Views\Admin\DashboardPages\CalendarView.Designer.cs">
       <DependentUpon>CalendarView.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\Admin\DashboardPages\Edit TaskView.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Views\Admin\DashboardPages\Edit TaskView.Designer.cs">
-      <DependentUpon>Edit TaskView.cs</DependentUpon>
-    </Compile>
     <Compile Include="Views\Admin\DashboardPages\EditTaskInformation.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -657,9 +651,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Views\Admin\DashboardPages\CalendarView.resx">
       <DependentUpon>CalendarView.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Views\Admin\DashboardPages\Edit TaskView.resx">
-      <DependentUpon>Edit TaskView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\Admin\DashboardPages\EditTaskInformation.resx">
       <DependentUpon>EditTaskInformation.cs</DependentUpon>
