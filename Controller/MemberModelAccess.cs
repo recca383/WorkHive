@@ -32,7 +32,7 @@ namespace WorkHive.Controller
             },
             {
             new MemberModel()
-            {
+            { //jokocomia05@gmail.com
                 ID = 1,
                 Email = "joko",
                 FirstName = "joko",

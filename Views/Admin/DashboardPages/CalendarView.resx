@@ -117,22 +117,4 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="CalendarScroll.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABgAAAKCCAYAAADLFRn0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAKBSURBVHhe7dChbhRRFIDhlUgkEskjIJE8BoYEg0cikCgE
-        L0FSh91tFUH1DVCgSlIKoSQg4CwsSVk2fIRuUP9Nvs7OnTvnb2axvVar1bXxYDw/PDw8GV/hZM4ux8Nx
-        YzNm95oDd+eFt0dHR1+2hvyts5nxeDPu17X+L+bAu60X/sWH8XLmXdmM/j78/my+v3DoUpbL5ae5Pvk5
-        /PrcnF48sCenM/vmOvBobv71m8uzn99+18NLm9mv1oHzXQ/3ZbFrc58KUAEqQAWoABWgAlSAClABKkAF
-        qAAVoAJUgApQASpABagAFaACVIAKUAEqQAWoABWgAlSAClABKkAFqAAVoAJUgApQASpABagAFaACVIAK
-        UAEqQAWoABWgAlSAClABKkAFqAAVoAJUgApQASpABagAFaACVIAKUAEqQAWoABWgAlSAClABKkAFqAAV
-        oAJUgApQASpABagAFaACVIAKUAEqQAWoABWgAlSAClABKkAFqAAVoAJUgApQASpABagAFaACVIAKUAEq
-        QAWoABWgAlSAClABKkAFqAAVoAJUgApQASpABagAFaACVIAKUAEqQAWoABWgAlSAClABKkAFqAAVoAJU
-        gApQASpABagAFaACVIAKUAEqQAWoABWgAlSAClABKkAFqAAVoAJUgApQASpABagAFaACVIAKUAEqQAWo
-        ABWgAlSAClABKkAFqAAVoAJUgP5L4Mv25j6tA8fbm3t0sg483drcm9VqtVzMn1tzc7r9cA8+zOw7i/Wa
-        Hwfj845Dl3H8ffh6zfAr480eI69n1rXN+B9rNq6Og3l4mc/1cRz/Nvzimoe359CLuZ5dePGP5uz5XNeD
-        723GbNZi8Q328OWaPWB+rwAAAABJRU5ErkJggg==
-</value>
-  </data>
 </root>

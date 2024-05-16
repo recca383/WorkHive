@@ -18,6 +18,8 @@ namespace WorkHive.Views.Admin
         private int currentMonth;
         private int currentYear;
 
+        public int AspectRatio { get; internal set; }
+
         public CalendarCurrentDays(int currentYear, int currentMonth )
         {
             this.currentMonth = currentMonth;
