@@ -36,13 +36,32 @@ namespace WorkHive.Controller
         }
         public static void ShowPasswordFunction(BunifuMaterialTextbox textbox, CircularPictureBox circularPictureBox)
         {
-            if (textbox.isPassword) textbox.isPassword = false;
-            else textbox.isPassword = true;
+            if (textbox.isPassword)
+            {
+                //set circularPictureBox = nakapikit
+                textbox.isPassword = false;
+            }
+
+            else
+            {
+                //set circularPictureBox = nakamulat
+                textbox.isPassword = true;
+            }
+
         }
         public static void ShowPasswordFunction(BunifuTextBox textbox, CircularPictureBox circularPictureBox)
         {
-            if (textbox.UseSystemPasswordChar) textbox.UseSystemPasswordChar = false;
-            else textbox.UseSystemPasswordChar = true;
+            if (textbox.UseSystemPasswordChar)
+            {
+                //set circularPictureBox = nakapikit
+                textbox.UseSystemPasswordChar = false;
+            }
+            else
+            {
+                //set circularPictureBox = nakamulat
+                textbox.UseSystemPasswordChar = true;
+
+            }
         }
     }
 }
