@@ -36,7 +36,7 @@ namespace WorkHive.Controller
             if(currentproject.Tasks.Count > 0)
             {
                 int totaltasks = currentproject.Tasks.Count();
-                int finishedtasks = currentproject.Tasks.Count(t => t.TaskFinished);
+                int finishedtasks = currentproject.Tasks.Count(t => t.TaskStatus == Status.Finished);
 
                 int averageprogress = finishedtasks / totaltasks;
                 currentproject.Progress = averageprogress;
@@ -66,14 +66,16 @@ namespace WorkHive.Controller
         {
             ProjectModel CurrentProject = task.ProjectAssigned;
             if (CurrentProject == null) new MessageBoxes("Project Unavailable");
-            if (pastprojectassigned != null)
             {
-                TaskModel oldtask = pastprojectassigned.Tasks.FirstOrDefault(t => t.TaskID == task.TaskID);
-                pastprojectassigned.Tasks.Remove(oldtask);
-            }
-            if(!CurrentProject.Tasks.Contains(task))
-            {
-                CurrentProject.Tasks.Add(task);
+                if (pastprojectassigned != null)
+                {
+                    TaskModel oldtask = pastprojectassigned.Tasks.FirstOrDefault(t => t.TaskID == task.TaskID);
+                    pastprojectassigned.Tasks.Remove(oldtask);
+                }
+                if (!CurrentProject.Tasks.Contains(task))
+                {
+                    CurrentProject.Tasks.Add(task);
+                }
             }
             
         }

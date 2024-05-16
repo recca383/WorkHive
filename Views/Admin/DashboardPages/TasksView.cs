@@ -32,7 +32,7 @@ namespace WorkHive.Views.Admin.DashboardPages
         public TasksView()
         {
             InitializeComponent();
-            var results = tasks.Where(a => !a.Archived).ToList();
+            var results = tasks.Where(a => a.TaskStatus != Status.Archived).ToList();
             RefreshList(results);
             AddTaskPanel.Size = new Size(0, 0);
             this.Resize += TasksView_Resize;
@@ -85,25 +85,25 @@ namespace WorkHive.Views.Admin.DashboardPages
 
         private void btnAll_Click(object sender, EventArgs e)
         {
-            var results = tasks.Where(a => !a.Archived).ToList();
+            var results = tasks.Where(a => a.TaskStatus != Status.Archived).ToList();
             RefreshList(results);
         }
 
         private void btnOngoing_Click(object sender, EventArgs e)
         {
-            var results = tasks.Where(p => !p.TaskFinished && !p.Archived).ToList();
+            var results = tasks.Where(p => p.TaskStatus == Status.Ongoing).ToList();
             RefreshList(results);
         }
 
         private void btnCompleted_Click(object sender, EventArgs e)
         {
-            var results = tasks.Where(p => p.TaskFinished && !p.Archived).ToList();
+            var results = tasks.Where(p => p.TaskStatus == Status.Finished).ToList();
             RefreshList(results);
         }
 
         private void btnArchived_Click(object sender, EventArgs e)
         {
-            var results = tasks.Where(a => a.Archived).ToList();
+            var results = tasks.Where(a => a.TaskStatus == Status.Archived).ToList();
             RefreshList(results);
         }
         private void btnAddtasks_Click(object sender, EventArgs e)

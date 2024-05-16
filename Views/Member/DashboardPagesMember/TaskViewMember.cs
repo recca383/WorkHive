@@ -22,7 +22,7 @@ namespace WorkHive.Views.Member.DashboardPagesMember
         public TaskViewMember()
         {
             InitializeComponent();
-            var results = tasks.Where(p => !p.Archived).ToList();
+            var results = tasks.Where(p => p.TaskStatus != Status.Archived).ToList();
             RefreshList(results);
         }
 
@@ -39,19 +39,19 @@ namespace WorkHive.Views.Member.DashboardPagesMember
         
         private void btnAll_Click(object sender, EventArgs e)
         {
-            var results = tasks.Where(p => !p.Archived).ToList();
+            var results = tasks.Where(p => p.TaskStatus != Status.Archived).ToList();
             RefreshList(results);
         }
 
         private void btnOngoing_Click(object sender, EventArgs e)
         {
-            var results = tasks.Where(p => !p.TaskFinished && !p.Archived).ToList();
+            var results = tasks.Where(p => p.TaskStatus == Status.Ongoing).ToList();
             RefreshList(results);
         }
 
         private void btnCompleted_Click(object sender, EventArgs e)
         {
-            var results = tasks.Where(p => p.TaskFinished && !p.Archived).ToList();
+            var results = tasks.Where(p => p.TaskStatus == Status.Finished).ToList();
             RefreshList(results);
         }
 

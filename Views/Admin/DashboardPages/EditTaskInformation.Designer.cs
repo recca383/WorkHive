@@ -45,12 +45,12 @@
             this.AssignTask = new System.Windows.Forms.Label();
             this.TaskName = new System.Windows.Forms.Label();
             this.EditDropdownAssignProject = new Bunifu.UI.WinForms.BunifuDropdown();
-            this.ArchivedCheckbox = new Bunifu.Framework.UI.BunifuCheckbox();
             this.EditTaskSubmitbtn = new Bunifu.Framework.UI.BunifuFlatButton();
             this.EditTaskDescriptiontxt = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox();
             this.EditDatePickerDeadline = new Bunifu.UI.WinForms.BunifuDatePicker();
             this.EditTaskNametxt = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox();
             this.EditTaskExitbtn = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.dropdownStatus = new Bunifu.UI.WinForms.BunifuDropdown();
             this.SuspendLayout();
             // 
             // bunifuElipse1
@@ -157,19 +157,6 @@
             this.EditDropdownAssignProject.Size = new System.Drawing.Size(391, 46);
             this.EditDropdownAssignProject.TabIndex = 24;
             this.EditDropdownAssignProject.Text = "Select Project";
-            // 
-            // ArchivedCheckbox
-            // 
-            this.ArchivedCheckbox.BackColor = System.Drawing.Color.Gold;
-            this.ArchivedCheckbox.ChechedOffColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
-            this.ArchivedCheckbox.Checked = true;
-            this.ArchivedCheckbox.CheckedOnColor = System.Drawing.Color.Gold;
-            this.ArchivedCheckbox.ForeColor = System.Drawing.Color.White;
-            this.ArchivedCheckbox.Location = new System.Drawing.Point(420, 368);
-            this.ArchivedCheckbox.Margin = new System.Windows.Forms.Padding(4);
-            this.ArchivedCheckbox.Name = "ArchivedCheckbox";
-            this.ArchivedCheckbox.Size = new System.Drawing.Size(20, 20);
-            this.ArchivedCheckbox.TabIndex = 23;
             // 
             // EditTaskSubmitbtn
             // 
@@ -421,18 +408,46 @@
             this.EditTaskExitbtn.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.EditTaskExitbtn.Click += new System.EventHandler(this.EditTaskExitbtn_Click);
             // 
+            // dropdownStatus
+            // 
+            this.dropdownStatus.BackColor = System.Drawing.SystemColors.Control;
+            this.dropdownStatus.BorderRadius = 1;
+            this.dropdownStatus.Direction = Bunifu.UI.WinForms.BunifuDropdown.Directions.Down;
+            this.dropdownStatus.DisabledColor = System.Drawing.Color.Gray;
+            this.dropdownStatus.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.dropdownStatus.DropdownBorderThickness = Bunifu.UI.WinForms.BunifuDropdown.BorderThickness.Thick;
+            this.dropdownStatus.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.dropdownStatus.DropDownTextAlign = Bunifu.UI.WinForms.BunifuDropdown.TextAlign.Left;
+            this.dropdownStatus.FillDropDown = false;
+            this.dropdownStatus.FillIndicator = false;
+            this.dropdownStatus.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.dropdownStatus.ForeColor = System.Drawing.Color.Purple;
+            this.dropdownStatus.FormattingEnabled = true;
+            this.dropdownStatus.Icon = null;
+            this.dropdownStatus.IndicatorColor = System.Drawing.Color.Purple;
+            this.dropdownStatus.IndicatorLocation = Bunifu.UI.WinForms.BunifuDropdown.Indicator.Right;
+            this.dropdownStatus.ItemBackColor = System.Drawing.Color.White;
+            this.dropdownStatus.ItemBorderColor = System.Drawing.Color.White;
+            this.dropdownStatus.ItemForeColor = System.Drawing.Color.Purple;
+            this.dropdownStatus.ItemHeight = 26;
+            this.dropdownStatus.ItemHighLightColor = System.Drawing.Color.Thistle;
+            this.dropdownStatus.Location = new System.Drawing.Point(302, 312);
+            this.dropdownStatus.Name = "dropdownStatus";
+            this.dropdownStatus.Size = new System.Drawing.Size(179, 32);
+            this.dropdownStatus.TabIndex = 30;
+            // 
             // EditTaskInformation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::WorkHive.Properties.Resources.Group_77__2_;
+            this.Controls.Add(this.dropdownStatus);
             this.Controls.Add(this.AddNewTask);
             this.Controls.Add(this.TaskDescription);
             this.Controls.Add(this.DeadlineTask);
             this.Controls.Add(this.AssignTask);
             this.Controls.Add(this.TaskName);
             this.Controls.Add(this.EditDropdownAssignProject);
-            this.Controls.Add(this.ArchivedCheckbox);
             this.Controls.Add(this.EditTaskSubmitbtn);
             this.Controls.Add(this.EditTaskDescriptiontxt);
             this.Controls.Add(this.EditDatePickerDeadline);
@@ -455,11 +470,11 @@
         private System.Windows.Forms.Label AssignTask;
         private System.Windows.Forms.Label TaskName;
         private Bunifu.UI.WinForms.BunifuDropdown EditDropdownAssignProject;
-        private Bunifu.Framework.UI.BunifuCheckbox ArchivedCheckbox;
         private Bunifu.Framework.UI.BunifuFlatButton EditTaskSubmitbtn;
         private Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox EditTaskDescriptiontxt;
         private Bunifu.UI.WinForms.BunifuDatePicker EditDatePickerDeadline;
         private Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox EditTaskNametxt;
         private Bunifu.Framework.UI.BunifuFlatButton EditTaskExitbtn;
+        private Bunifu.UI.WinForms.BunifuDropdown dropdownStatus;
     }
 }

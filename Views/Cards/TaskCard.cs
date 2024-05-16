@@ -42,15 +42,11 @@ namespace WorkHive.Views.Cards
             lblTask_Title.Text = task.TaskName;
             lblTask_Date.Text = ($"{CultureInfo.CurrentCulture.DateTimeFormat.GetMonthName(task.TaskStart.Month)} {task.TaskStart.Day}");
             Deadlinetxt.Text = ($"{CultureInfo.CurrentCulture.DateTimeFormat.GetMonthName(task.Deadline.Month)} {task.Deadline.Day}");
-            Archived.Checked = !task.Archived;
             if (task.ProjectAssigned is null) lblProjectName.Text = "No Project";
             else lblProjectName.Text = task.ProjectAssigned.Name;
             var parent = Directory.GetParent(Directory.GetCurrentDirectory()).Parent.FullName;
-            if (task.TaskFinished)
-            {
-                // Eto yung papalitan ng check na picture
-                pictureboxFinished.Image = Image.FromFile(parent + "\\Resources\\Button - Bullet.png");
-            }
+                pictureboxFinished.Image = task.TaskImage;
+
             
         }
 

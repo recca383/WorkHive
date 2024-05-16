@@ -35,9 +35,9 @@ namespace WorkHive.Views.Admin.DashboardPages
             if(taskModel != null)
             {
                 lblTotalTasks.Text = taskModel.Count.ToString();
-                lblActiveTasks.Text = taskModel.Where(t => !t.TaskFinished && !t.Archived).Count().ToString();
-                lblFinishedTasks.Text = taskModel.Where(t => t.TaskFinished).Count().ToString();
-                lblArchivedTasks.Text = taskModel.Where(t => t.Archived).Count().ToString();
+                lblActiveTasks.Text = taskModel.Where(t => t.TaskStatus == Status.Ongoing).Count().ToString();
+                lblFinishedTasks.Text = taskModel.Where(t => t.TaskStatus == Status.Finished).Count().ToString();
+                lblArchivedTasks.Text = taskModel.Where(t => t.TaskStatus == Status.Archived).Count().ToString();
                 AverageProgress.Value = ProjectModelAccess.GetProjectProgress(projectModel.Id);
             }
                 

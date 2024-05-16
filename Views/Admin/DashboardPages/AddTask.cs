@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Globalization;
 using System.Linq;
+using System.Net.NetworkInformation;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -43,7 +44,7 @@ namespace WorkHive
                 TaskID = taskID, 
                 TaskName = TaskNametxt.Text, 
                 TaskDescription = TaskDescriptiontxt.Text, 
-                Archived = !ArchivedCheckbox.Checked,
+                TaskStatus = Status.Ongoing,
                 ProjectAssigned = projects.FirstOrDefault(n => n.Name == Dropdownassignproject.SelectedItem.ToString()),
                 Deadline = DatePickerDeadline.Value
             }

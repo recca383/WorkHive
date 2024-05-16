@@ -27,6 +27,9 @@ namespace WorkHive.Views.Admin.DashboardPages
 
         private void SetDefaultValues()
         {
+            dropdownStatus.DataSource = Enum.GetNames(typeof(Status));
+            dropdownStatus.SelectedIndex = (int)selectedtask.TaskStatus;
+
             EditTaskNametxt.PlaceholderText = selectedtask.TaskName;
             EditDatePickerDeadline.Value = selectedtask.Deadline; // masyado daw maliit
             EditTaskDescriptiontxt.PlaceholderText = selectedtask.TaskDescription;
@@ -48,8 +51,8 @@ namespace WorkHive.Views.Admin.DashboardPages
             {
                 TaskName = EditTaskNametxt.Text,
                 Deadline = EditDatePickerDeadline.Value,
-                Archived = ArchivedCheckbox.Checked,
                 TaskDescription = EditTaskDescriptiontxt.Text,
+                TaskStatus = (Status)dropdownStatus.SelectedIndex,
                 ProjectAssigned = projectAssign
 
             }, selectedtask.TaskID) ;

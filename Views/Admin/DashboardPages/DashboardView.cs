@@ -110,11 +110,11 @@ namespace WorkHive.Views.Pages
                 .Count()
                 .ToString();
             lblActiveTasks.Text = tasks
-                .Where(t => !t.Archived && !t.TaskFinished)
+                .Where(t => t.TaskStatus == Status.Ongoing)
                 .Count()
                 .ToString();
             lblFinishedTasks.Text = tasks
-                .Where(t => !t.Archived && t.TaskFinished)
+                .Where(t => t.TaskStatus == Status.Finished)
                 .Count()
                 .ToString();
 

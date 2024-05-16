@@ -153,10 +153,9 @@
             // 
             this.Employees.AutoSize = true;
             this.Employees.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Employees.Location = new System.Drawing.Point(24, 32);
-            this.Employees.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.Employees.Location = new System.Drawing.Point(18, 26);
             this.Employees.Name = "Employees";
-            this.Employees.Size = new System.Drawing.Size(259, 54);
+            this.Employees.Size = new System.Drawing.Size(216, 44);
             this.Employees.TabIndex = 10;
             this.Employees.Text = "Profile Edit";
             // 
@@ -166,11 +165,11 @@
             this.Namelbl.BackColor = System.Drawing.Color.White;
             this.Namelbl.CursorType = null;
             this.Namelbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Namelbl.Location = new System.Drawing.Point(271, 12);
-            this.Namelbl.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Namelbl.Location = new System.Drawing.Point(203, 10);
+            this.Namelbl.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Namelbl.Name = "Namelbl";
             this.Namelbl.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.Namelbl.Size = new System.Drawing.Size(261, 38);
+            this.Namelbl.Size = new System.Drawing.Size(215, 31);
             this.Namelbl.TabIndex = 13;
             this.Namelbl.Text = "Name of the Ewan";
             this.Namelbl.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -183,11 +182,11 @@
             this.Positionlbl.CursorType = null;
             this.Positionlbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Positionlbl.ForeColor = System.Drawing.Color.DarkGray;
-            this.Positionlbl.Location = new System.Drawing.Point(283, 45);
-            this.Positionlbl.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Positionlbl.Location = new System.Drawing.Point(212, 37);
+            this.Positionlbl.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Positionlbl.Name = "Positionlbl";
             this.Positionlbl.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.Positionlbl.Size = new System.Drawing.Size(72, 27);
+            this.Positionlbl.Size = new System.Drawing.Size(60, 22);
             this.Positionlbl.TabIndex = 14;
             this.Positionlbl.Text = "ADMIN";
             this.Positionlbl.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -201,11 +200,11 @@
             this.worklbl.CursorType = null;
             this.worklbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.worklbl.ForeColor = System.Drawing.Color.Black;
-            this.worklbl.Location = new System.Drawing.Point(342, 90);
-            this.worklbl.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.worklbl.Location = new System.Drawing.Point(256, 73);
+            this.worklbl.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.worklbl.Name = "worklbl";
             this.worklbl.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.worklbl.Size = new System.Drawing.Size(88, 27);
+            this.worklbl.Size = new System.Drawing.Size(73, 22);
             this.worklbl.TabIndex = 15;
             this.worklbl.Text = "Manager";
             this.worklbl.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -219,11 +218,11 @@
             this.Birthdatelbl.CursorType = null;
             this.Birthdatelbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Birthdatelbl.ForeColor = System.Drawing.Color.Black;
-            this.Birthdatelbl.Location = new System.Drawing.Point(339, 130);
-            this.Birthdatelbl.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Birthdatelbl.Location = new System.Drawing.Point(254, 106);
+            this.Birthdatelbl.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Birthdatelbl.Name = "Birthdatelbl";
             this.Birthdatelbl.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.Birthdatelbl.Size = new System.Drawing.Size(98, 27);
+            this.Birthdatelbl.Size = new System.Drawing.Size(85, 22);
             this.Birthdatelbl.TabIndex = 16;
             this.Birthdatelbl.Text = "Birth Date";
             this.Birthdatelbl.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -237,11 +236,11 @@
             this.contactlbl.CursorType = null;
             this.contactlbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.contactlbl.ForeColor = System.Drawing.Color.Black;
-            this.contactlbl.Location = new System.Drawing.Point(339, 167);
-            this.contactlbl.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.contactlbl.Location = new System.Drawing.Point(254, 136);
+            this.contactlbl.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.contactlbl.Name = "contactlbl";
             this.contactlbl.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.contactlbl.Size = new System.Drawing.Size(159, 27);
+            this.contactlbl.Size = new System.Drawing.Size(133, 22);
             this.contactlbl.TabIndex = 17;
             this.contactlbl.Text = "Contact Number";
             this.contactlbl.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -255,11 +254,11 @@
             this.emaillbl.CursorType = null;
             this.emaillbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.emaillbl.ForeColor = System.Drawing.Color.Black;
-            this.emaillbl.Location = new System.Drawing.Point(339, 205);
-            this.emaillbl.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.emaillbl.Location = new System.Drawing.Point(254, 167);
+            this.emaillbl.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.emaillbl.Name = "emaillbl";
             this.emaillbl.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.emaillbl.Size = new System.Drawing.Size(142, 27);
+            this.emaillbl.Size = new System.Drawing.Size(118, 22);
             this.emaillbl.TabIndex = 18;
             this.emaillbl.Text = "Email Address";
             this.emaillbl.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -289,10 +288,10 @@
             this.SexDrop.ItemForeColor = System.Drawing.Color.Black;
             this.SexDrop.ItemHeight = 29;
             this.SexDrop.ItemHighLightColor = System.Drawing.Color.Gold;
-            this.SexDrop.Location = new System.Drawing.Point(413, 226);
-            this.SexDrop.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.SexDrop.Location = new System.Drawing.Point(310, 184);
+            this.SexDrop.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.SexDrop.Name = "SexDrop";
-            this.SexDrop.Size = new System.Drawing.Size(159, 35);
+            this.SexDrop.Size = new System.Drawing.Size(120, 35);
             this.SexDrop.TabIndex = 42;
             this.SexDrop.Text = null;
             // 
@@ -320,10 +319,10 @@
             this.bloodTypeDrop.ItemForeColor = System.Drawing.Color.Black;
             this.bloodTypeDrop.ItemHeight = 29;
             this.bloodTypeDrop.ItemHighLightColor = System.Drawing.Color.Gold;
-            this.bloodTypeDrop.Location = new System.Drawing.Point(51, 288);
-            this.bloodTypeDrop.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.bloodTypeDrop.Location = new System.Drawing.Point(38, 234);
+            this.bloodTypeDrop.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.bloodTypeDrop.Name = "bloodTypeDrop";
-            this.bloodTypeDrop.Size = new System.Drawing.Size(159, 35);
+            this.bloodTypeDrop.Size = new System.Drawing.Size(120, 35);
             this.bloodTypeDrop.TabIndex = 44;
             this.bloodTypeDrop.Text = null;
             // 
@@ -335,10 +334,9 @@
             this.EditPanel.Controls.Add(this.EditPanel2);
             this.EditPanel.Controls.Add(this.panel2);
             this.EditPanel.Enabled = false;
-            this.EditPanel.Location = new System.Drawing.Point(75, 406);
-            this.EditPanel.Margin = new System.Windows.Forms.Padding(4);
+            this.EditPanel.Location = new System.Drawing.Point(56, 330);
             this.EditPanel.Name = "EditPanel";
-            this.EditPanel.Size = new System.Drawing.Size(1239, 346);
+            this.EditPanel.Size = new System.Drawing.Size(929, 281);
             this.EditPanel.TabIndex = 48;
             // 
             // EditPanel2
@@ -367,17 +365,19 @@
             this.EditPanel2.Controls.Add(this.emailtxt);
             this.EditPanel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.EditPanel2.Location = new System.Drawing.Point(0, 0);
+            this.EditPanel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.EditPanel2.Name = "EditPanel2";
-            this.EditPanel2.Size = new System.Drawing.Size(587, 346);
+            this.EditPanel2.Size = new System.Drawing.Size(440, 281);
             this.EditPanel2.TabIndex = 54;
             // 
             // label11
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(229, 266);
+            this.label11.Location = new System.Drawing.Point(172, 216);
+            this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(96, 20);
+            this.label11.Size = new System.Drawing.Size(81, 17);
             this.label11.TabIndex = 63;
             this.label11.Text = "Birth Date";
             // 
@@ -385,9 +385,10 @@
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(47, 140);
+            this.label10.Location = new System.Drawing.Point(35, 114);
+            this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(145, 20);
+            this.label10.Size = new System.Drawing.Size(124, 17);
             this.label10.TabIndex = 62;
             this.label10.Text = "Extension Name";
             // 
@@ -395,9 +396,10 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(409, 204);
+            this.label9.Location = new System.Drawing.Point(307, 166);
+            this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(40, 20);
+            this.label9.Size = new System.Drawing.Size(34, 17);
             this.label9.TabIndex = 61;
             this.label9.Text = "Sex";
             // 
@@ -405,9 +407,10 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(409, 75);
+            this.label8.Location = new System.Drawing.Point(307, 61);
+            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(118, 20);
+            this.label8.Size = new System.Drawing.Size(101, 17);
             this.label8.TabIndex = 60;
             this.label8.Text = "Middle Name";
             // 
@@ -415,9 +418,10 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(232, 75);
+            this.label7.Location = new System.Drawing.Point(174, 61);
+            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(100, 20);
+            this.label7.Size = new System.Drawing.Size(85, 17);
             this.label7.TabIndex = 59;
             this.label7.Text = "Last Name";
             // 
@@ -425,9 +429,10 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(232, 204);
+            this.label6.Location = new System.Drawing.Point(174, 166);
+            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(56, 20);
+            this.label6.Size = new System.Drawing.Size(47, 17);
             this.label6.TabIndex = 58;
             this.label6.Text = "Email";
             // 
@@ -435,9 +440,10 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(47, 266);
+            this.label5.Location = new System.Drawing.Point(35, 216);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(103, 20);
+            this.label5.Size = new System.Drawing.Size(90, 17);
             this.label5.TabIndex = 57;
             this.label5.Text = "Blood Type";
             // 
@@ -445,9 +451,10 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(47, 204);
+            this.label4.Location = new System.Drawing.Point(35, 166);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(145, 20);
+            this.label4.Size = new System.Drawing.Size(124, 17);
             this.label4.TabIndex = 56;
             this.label4.Text = "Contact Number";
             // 
@@ -455,9 +462,10 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(47, 75);
+            this.label3.Location = new System.Drawing.Point(35, 61);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(102, 20);
+            this.label3.Size = new System.Drawing.Size(86, 17);
             this.label3.TabIndex = 55;
             this.label3.Text = "First Name";
             // 
@@ -465,9 +473,10 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(77, 24);
+            this.label1.Location = new System.Drawing.Point(58, 20);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(254, 29);
+            this.label1.Size = new System.Drawing.Size(201, 24);
             this.label1.TabIndex = 54;
             this.label1.Text = "Personal Information";
             // 
@@ -499,10 +508,10 @@
             this.Middlenametxt.IconRight = null;
             this.Middlenametxt.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.Middlenametxt.Lines = new string[0];
-            this.Middlenametxt.Location = new System.Drawing.Point(413, 97);
-            this.Middlenametxt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Middlenametxt.Location = new System.Drawing.Point(310, 79);
+            this.Middlenametxt.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Middlenametxt.MaxLength = 32767;
-            this.Middlenametxt.MinimumSize = new System.Drawing.Size(100, 34);
+            this.Middlenametxt.MinimumSize = new System.Drawing.Size(75, 28);
             this.Middlenametxt.Modified = false;
             this.Middlenametxt.Multiline = false;
             this.Middlenametxt.Name = "Middlenametxt";
@@ -535,7 +544,7 @@
             this.Middlenametxt.SelectionLength = 0;
             this.Middlenametxt.SelectionStart = 0;
             this.Middlenametxt.ShortcutsEnabled = true;
-            this.Middlenametxt.Size = new System.Drawing.Size(159, 36);
+            this.Middlenametxt.Size = new System.Drawing.Size(119, 29);
             this.Middlenametxt.Style = Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox._Style.Bunifu;
             this.Middlenametxt.TabIndex = 35;
             this.Middlenametxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -564,11 +573,11 @@
             this.BirthPicker.Icon = ((System.Drawing.Image)(resources.GetObject("BirthPicker.Icon")));
             this.BirthPicker.IconColor = System.Drawing.Color.White;
             this.BirthPicker.IconLocation = Bunifu.UI.WinForms.BunifuDatePicker.Indicator.Right;
-            this.BirthPicker.Location = new System.Drawing.Point(233, 288);
-            this.BirthPicker.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.BirthPicker.MinimumSize = new System.Drawing.Size(159, 32);
+            this.BirthPicker.Location = new System.Drawing.Point(175, 234);
+            this.BirthPicker.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BirthPicker.MinimumSize = new System.Drawing.Size(120, 32);
             this.BirthPicker.Name = "BirthPicker";
-            this.BirthPicker.Size = new System.Drawing.Size(159, 32);
+            this.BirthPicker.Size = new System.Drawing.Size(120, 32);
             this.BirthPicker.TabIndex = 46;
             // 
             // Extensiontxt
@@ -599,10 +608,10 @@
             this.Extensiontxt.IconRight = null;
             this.Extensiontxt.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.Extensiontxt.Lines = new string[0];
-            this.Extensiontxt.Location = new System.Drawing.Point(51, 162);
-            this.Extensiontxt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Extensiontxt.Location = new System.Drawing.Point(38, 132);
+            this.Extensiontxt.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Extensiontxt.MaxLength = 32767;
-            this.Extensiontxt.MinimumSize = new System.Drawing.Size(100, 34);
+            this.Extensiontxt.MinimumSize = new System.Drawing.Size(75, 28);
             this.Extensiontxt.Modified = false;
             this.Extensiontxt.Multiline = false;
             this.Extensiontxt.Name = "Extensiontxt";
@@ -635,7 +644,7 @@
             this.Extensiontxt.SelectionLength = 0;
             this.Extensiontxt.SelectionStart = 0;
             this.Extensiontxt.ShortcutsEnabled = true;
-            this.Extensiontxt.Size = new System.Drawing.Size(159, 36);
+            this.Extensiontxt.Size = new System.Drawing.Size(119, 29);
             this.Extensiontxt.Style = Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox._Style.Bunifu;
             this.Extensiontxt.TabIndex = 37;
             this.Extensiontxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -674,10 +683,10 @@
             this.Lastnametxt.IconRight = null;
             this.Lastnametxt.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.Lastnametxt.Lines = new string[0];
-            this.Lastnametxt.Location = new System.Drawing.Point(233, 97);
-            this.Lastnametxt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Lastnametxt.Location = new System.Drawing.Point(175, 79);
+            this.Lastnametxt.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Lastnametxt.MaxLength = 32767;
-            this.Lastnametxt.MinimumSize = new System.Drawing.Size(100, 34);
+            this.Lastnametxt.MinimumSize = new System.Drawing.Size(75, 28);
             this.Lastnametxt.Modified = false;
             this.Lastnametxt.Multiline = false;
             this.Lastnametxt.Name = "Lastnametxt";
@@ -710,7 +719,7 @@
             this.Lastnametxt.SelectionLength = 0;
             this.Lastnametxt.SelectionStart = 0;
             this.Lastnametxt.ShortcutsEnabled = true;
-            this.Lastnametxt.Size = new System.Drawing.Size(159, 36);
+            this.Lastnametxt.Size = new System.Drawing.Size(119, 29);
             this.Lastnametxt.Style = Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox._Style.Bunifu;
             this.Lastnametxt.TabIndex = 33;
             this.Lastnametxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -749,10 +758,10 @@
             this.contacttxt.IconRight = null;
             this.contacttxt.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.contacttxt.Lines = new string[0];
-            this.contacttxt.Location = new System.Drawing.Point(51, 226);
-            this.contacttxt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.contacttxt.Location = new System.Drawing.Point(38, 184);
+            this.contacttxt.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.contacttxt.MaxLength = 32767;
-            this.contacttxt.MinimumSize = new System.Drawing.Size(100, 34);
+            this.contacttxt.MinimumSize = new System.Drawing.Size(75, 28);
             this.contacttxt.Modified = false;
             this.contacttxt.Multiline = false;
             this.contacttxt.Name = "contacttxt";
@@ -785,7 +794,7 @@
             this.contacttxt.SelectionLength = 0;
             this.contacttxt.SelectionStart = 0;
             this.contacttxt.ShortcutsEnabled = true;
-            this.contacttxt.Size = new System.Drawing.Size(159, 36);
+            this.contacttxt.Size = new System.Drawing.Size(119, 29);
             this.contacttxt.Style = Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox._Style.Bunifu;
             this.contacttxt.TabIndex = 39;
             this.contacttxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -803,10 +812,10 @@
             this.bunifuPictureBox8.BorderRadius = 0;
             this.bunifuPictureBox8.Image = global::WorkHive.Properties.Resources.tdesign_personal_information;
             this.bunifuPictureBox8.IsCircle = false;
-            this.bunifuPictureBox8.Location = new System.Drawing.Point(14, 14);
-            this.bunifuPictureBox8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.bunifuPictureBox8.Location = new System.Drawing.Point(10, 11);
+            this.bunifuPictureBox8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.bunifuPictureBox8.Name = "bunifuPictureBox8";
-            this.bunifuPictureBox8.Size = new System.Drawing.Size(45, 46);
+            this.bunifuPictureBox8.Size = new System.Drawing.Size(34, 37);
             this.bunifuPictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.bunifuPictureBox8.TabIndex = 28;
             this.bunifuPictureBox8.TabStop = false;
@@ -840,10 +849,10 @@
             this.firstnametxt.IconRight = null;
             this.firstnametxt.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.firstnametxt.Lines = new string[0];
-            this.firstnametxt.Location = new System.Drawing.Point(51, 97);
-            this.firstnametxt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.firstnametxt.Location = new System.Drawing.Point(38, 79);
+            this.firstnametxt.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.firstnametxt.MaxLength = 32767;
-            this.firstnametxt.MinimumSize = new System.Drawing.Size(100, 34);
+            this.firstnametxt.MinimumSize = new System.Drawing.Size(75, 28);
             this.firstnametxt.Modified = false;
             this.firstnametxt.Multiline = false;
             this.firstnametxt.Name = "firstnametxt";
@@ -876,7 +885,7 @@
             this.firstnametxt.SelectionLength = 0;
             this.firstnametxt.SelectionStart = 0;
             this.firstnametxt.ShortcutsEnabled = true;
-            this.firstnametxt.Size = new System.Drawing.Size(159, 36);
+            this.firstnametxt.Size = new System.Drawing.Size(119, 29);
             this.firstnametxt.Style = Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox._Style.Bunifu;
             this.firstnametxt.TabIndex = 31;
             this.firstnametxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -915,10 +924,10 @@
             this.emailtxt.IconRight = null;
             this.emailtxt.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.emailtxt.Lines = new string[0];
-            this.emailtxt.Location = new System.Drawing.Point(233, 226);
-            this.emailtxt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.emailtxt.Location = new System.Drawing.Point(175, 184);
+            this.emailtxt.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.emailtxt.MaxLength = 32767;
-            this.emailtxt.MinimumSize = new System.Drawing.Size(100, 34);
+            this.emailtxt.MinimumSize = new System.Drawing.Size(75, 28);
             this.emailtxt.Modified = false;
             this.emailtxt.Multiline = false;
             this.emailtxt.Name = "emailtxt";
@@ -951,7 +960,7 @@
             this.emailtxt.SelectionLength = 0;
             this.emailtxt.SelectionStart = 0;
             this.emailtxt.ShortcutsEnabled = true;
-            this.emailtxt.Size = new System.Drawing.Size(159, 36);
+            this.emailtxt.Size = new System.Drawing.Size(119, 29);
             this.emailtxt.Style = Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox._Style.Bunifu;
             this.emailtxt.TabIndex = 41;
             this.emailtxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -981,19 +990,20 @@
             this.panel2.Controls.Add(this.HouseNumbertxt);
             this.panel2.Controls.Add(this.bunifuPictureBox9);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel2.Location = new System.Drawing.Point(656, 0);
-            this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel2.Location = new System.Drawing.Point(492, 0);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(583, 346);
+            this.panel2.Size = new System.Drawing.Size(437, 281);
             this.panel2.TabIndex = 26;
             // 
             // label17
             // 
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(297, 220);
+            this.label17.Location = new System.Drawing.Point(223, 179);
+            this.label17.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(83, 20);
+            this.label17.Size = new System.Drawing.Size(73, 17);
             this.label17.TabIndex = 69;
             this.label17.Text = "Zip Code";
             // 
@@ -1001,9 +1011,10 @@
             // 
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(13, 220);
+            this.label16.Location = new System.Drawing.Point(10, 179);
+            this.label16.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(82, 20);
+            this.label16.Size = new System.Drawing.Size(71, 17);
             this.label16.TabIndex = 68;
             this.label16.Text = "Province";
             // 
@@ -1011,9 +1022,10 @@
             // 
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(297, 145);
+            this.label15.Location = new System.Drawing.Point(223, 118);
+            this.label15.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(148, 20);
+            this.label15.Size = new System.Drawing.Size(125, 17);
             this.label15.TabIndex = 67;
             this.label15.Text = "City/Municipality";
             // 
@@ -1021,9 +1033,10 @@
             // 
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(13, 145);
+            this.label14.Location = new System.Drawing.Point(10, 118);
+            this.label14.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(88, 20);
+            this.label14.Size = new System.Drawing.Size(77, 17);
             this.label14.TabIndex = 66;
             this.label14.Text = "Barangay";
             // 
@@ -1031,9 +1044,10 @@
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(297, 68);
+            this.label13.Location = new System.Drawing.Point(223, 55);
+            this.label13.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(60, 20);
+            this.label13.Size = new System.Drawing.Size(52, 17);
             this.label13.TabIndex = 65;
             this.label13.Text = "Street";
             // 
@@ -1041,9 +1055,10 @@
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(13, 68);
+            this.label12.Location = new System.Drawing.Point(10, 55);
+            this.label12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(134, 20);
+            this.label12.Size = new System.Drawing.Size(115, 17);
             this.label12.TabIndex = 64;
             this.label12.Text = "House Number";
             // 
@@ -1051,9 +1066,10 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(90, 24);
+            this.label2.Location = new System.Drawing.Point(68, 20);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(229, 29);
+            this.label2.Size = new System.Drawing.Size(182, 24);
             this.label2.TabIndex = 55;
             this.label2.Text = "Complete Address";
             // 
@@ -1085,10 +1101,10 @@
             this.zipcodetxt.IconRight = null;
             this.zipcodetxt.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.zipcodetxt.Lines = new string[0];
-            this.zipcodetxt.Location = new System.Drawing.Point(301, 242);
-            this.zipcodetxt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.zipcodetxt.Location = new System.Drawing.Point(226, 197);
+            this.zipcodetxt.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.zipcodetxt.MaxLength = 32767;
-            this.zipcodetxt.MinimumSize = new System.Drawing.Size(100, 34);
+            this.zipcodetxt.MinimumSize = new System.Drawing.Size(75, 28);
             this.zipcodetxt.Modified = false;
             this.zipcodetxt.Multiline = false;
             this.zipcodetxt.Name = "zipcodetxt";
@@ -1121,7 +1137,7 @@
             this.zipcodetxt.SelectionLength = 0;
             this.zipcodetxt.SelectionStart = 0;
             this.zipcodetxt.ShortcutsEnabled = true;
-            this.zipcodetxt.Size = new System.Drawing.Size(256, 36);
+            this.zipcodetxt.Size = new System.Drawing.Size(192, 29);
             this.zipcodetxt.Style = Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox._Style.Bunifu;
             this.zipcodetxt.TabIndex = 60;
             this.zipcodetxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -1160,10 +1176,10 @@
             this.provincetxt.IconRight = null;
             this.provincetxt.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.provincetxt.Lines = new string[0];
-            this.provincetxt.Location = new System.Drawing.Point(17, 242);
-            this.provincetxt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.provincetxt.Location = new System.Drawing.Point(13, 197);
+            this.provincetxt.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.provincetxt.MaxLength = 32767;
-            this.provincetxt.MinimumSize = new System.Drawing.Size(100, 34);
+            this.provincetxt.MinimumSize = new System.Drawing.Size(75, 28);
             this.provincetxt.Modified = false;
             this.provincetxt.Multiline = false;
             this.provincetxt.Name = "provincetxt";
@@ -1196,7 +1212,7 @@
             this.provincetxt.SelectionLength = 0;
             this.provincetxt.SelectionStart = 0;
             this.provincetxt.ShortcutsEnabled = true;
-            this.provincetxt.Size = new System.Drawing.Size(256, 36);
+            this.provincetxt.Size = new System.Drawing.Size(192, 29);
             this.provincetxt.Style = Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox._Style.Bunifu;
             this.provincetxt.TabIndex = 58;
             this.provincetxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -1235,10 +1251,10 @@
             this.citymunicipaltxt.IconRight = null;
             this.citymunicipaltxt.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.citymunicipaltxt.Lines = new string[0];
-            this.citymunicipaltxt.Location = new System.Drawing.Point(301, 167);
-            this.citymunicipaltxt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.citymunicipaltxt.Location = new System.Drawing.Point(226, 136);
+            this.citymunicipaltxt.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.citymunicipaltxt.MaxLength = 32767;
-            this.citymunicipaltxt.MinimumSize = new System.Drawing.Size(100, 34);
+            this.citymunicipaltxt.MinimumSize = new System.Drawing.Size(75, 28);
             this.citymunicipaltxt.Modified = false;
             this.citymunicipaltxt.Multiline = false;
             this.citymunicipaltxt.Name = "citymunicipaltxt";
@@ -1271,7 +1287,7 @@
             this.citymunicipaltxt.SelectionLength = 0;
             this.citymunicipaltxt.SelectionStart = 0;
             this.citymunicipaltxt.ShortcutsEnabled = true;
-            this.citymunicipaltxt.Size = new System.Drawing.Size(256, 36);
+            this.citymunicipaltxt.Size = new System.Drawing.Size(192, 29);
             this.citymunicipaltxt.Style = Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox._Style.Bunifu;
             this.citymunicipaltxt.TabIndex = 56;
             this.citymunicipaltxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -1310,10 +1326,10 @@
             this.barangaytxt.IconRight = null;
             this.barangaytxt.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.barangaytxt.Lines = new string[0];
-            this.barangaytxt.Location = new System.Drawing.Point(17, 167);
-            this.barangaytxt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.barangaytxt.Location = new System.Drawing.Point(13, 136);
+            this.barangaytxt.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.barangaytxt.MaxLength = 32767;
-            this.barangaytxt.MinimumSize = new System.Drawing.Size(100, 34);
+            this.barangaytxt.MinimumSize = new System.Drawing.Size(75, 28);
             this.barangaytxt.Modified = false;
             this.barangaytxt.Multiline = false;
             this.barangaytxt.Name = "barangaytxt";
@@ -1346,7 +1362,7 @@
             this.barangaytxt.SelectionLength = 0;
             this.barangaytxt.SelectionStart = 0;
             this.barangaytxt.ShortcutsEnabled = true;
-            this.barangaytxt.Size = new System.Drawing.Size(256, 36);
+            this.barangaytxt.Size = new System.Drawing.Size(192, 29);
             this.barangaytxt.Style = Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox._Style.Bunifu;
             this.barangaytxt.TabIndex = 54;
             this.barangaytxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -1385,10 +1401,10 @@
             this.Streettxt.IconRight = null;
             this.Streettxt.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.Streettxt.Lines = new string[0];
-            this.Streettxt.Location = new System.Drawing.Point(301, 90);
-            this.Streettxt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Streettxt.Location = new System.Drawing.Point(226, 73);
+            this.Streettxt.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Streettxt.MaxLength = 32767;
-            this.Streettxt.MinimumSize = new System.Drawing.Size(100, 34);
+            this.Streettxt.MinimumSize = new System.Drawing.Size(75, 28);
             this.Streettxt.Modified = false;
             this.Streettxt.Multiline = false;
             this.Streettxt.Name = "Streettxt";
@@ -1421,7 +1437,7 @@
             this.Streettxt.SelectionLength = 0;
             this.Streettxt.SelectionStart = 0;
             this.Streettxt.ShortcutsEnabled = true;
-            this.Streettxt.Size = new System.Drawing.Size(256, 36);
+            this.Streettxt.Size = new System.Drawing.Size(192, 29);
             this.Streettxt.Style = Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox._Style.Bunifu;
             this.Streettxt.TabIndex = 52;
             this.Streettxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -1460,10 +1476,10 @@
             this.HouseNumbertxt.IconRight = null;
             this.HouseNumbertxt.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.HouseNumbertxt.Lines = new string[0];
-            this.HouseNumbertxt.Location = new System.Drawing.Point(17, 90);
-            this.HouseNumbertxt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.HouseNumbertxt.Location = new System.Drawing.Point(13, 73);
+            this.HouseNumbertxt.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.HouseNumbertxt.MaxLength = 32767;
-            this.HouseNumbertxt.MinimumSize = new System.Drawing.Size(100, 34);
+            this.HouseNumbertxt.MinimumSize = new System.Drawing.Size(75, 28);
             this.HouseNumbertxt.Modified = false;
             this.HouseNumbertxt.Multiline = false;
             this.HouseNumbertxt.Name = "HouseNumbertxt";
@@ -1496,7 +1512,7 @@
             this.HouseNumbertxt.SelectionLength = 0;
             this.HouseNumbertxt.SelectionStart = 0;
             this.HouseNumbertxt.ShortcutsEnabled = true;
-            this.HouseNumbertxt.Size = new System.Drawing.Size(256, 36);
+            this.HouseNumbertxt.Size = new System.Drawing.Size(192, 29);
             this.HouseNumbertxt.Style = Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox._Style.Bunifu;
             this.HouseNumbertxt.TabIndex = 50;
             this.HouseNumbertxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -1514,10 +1530,10 @@
             this.bunifuPictureBox9.BorderRadius = 0;
             this.bunifuPictureBox9.Image = global::WorkHive.Properties.Resources.maki_home;
             this.bunifuPictureBox9.IsCircle = false;
-            this.bunifuPictureBox9.Location = new System.Drawing.Point(22, 12);
-            this.bunifuPictureBox9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.bunifuPictureBox9.Location = new System.Drawing.Point(16, 10);
+            this.bunifuPictureBox9.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.bunifuPictureBox9.Name = "bunifuPictureBox9";
-            this.bunifuPictureBox9.Size = new System.Drawing.Size(45, 46);
+            this.bunifuPictureBox9.Size = new System.Drawing.Size(34, 37);
             this.bunifuPictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.bunifuPictureBox9.TabIndex = 48;
             this.bunifuPictureBox9.TabStop = false;
@@ -1530,10 +1546,9 @@
             this.btnConfirmEdit.BorderRadius = 0;
             this.btnConfirmEdit.Image = global::WorkHive.Properties.Resources.Confirmbtn;
             this.btnConfirmEdit.IsCircle = false;
-            this.btnConfirmEdit.Location = new System.Drawing.Point(1036, 233);
-            this.btnConfirmEdit.Margin = new System.Windows.Forms.Padding(4);
+            this.btnConfirmEdit.Location = new System.Drawing.Point(813, 189);
             this.btnConfirmEdit.Name = "btnConfirmEdit";
-            this.btnConfirmEdit.Size = new System.Drawing.Size(125, 46);
+            this.btnConfirmEdit.Size = new System.Drawing.Size(94, 37);
             this.btnConfirmEdit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnConfirmEdit.TabIndex = 52;
             this.btnConfirmEdit.TabStop = false;
@@ -1547,10 +1562,9 @@
             this.btnCancelEdit.BorderRadius = 0;
             this.btnCancelEdit.Image = global::WorkHive.Properties.Resources.Cancelbtn;
             this.btnCancelEdit.IsCircle = false;
-            this.btnCancelEdit.Location = new System.Drawing.Point(901, 233);
-            this.btnCancelEdit.Margin = new System.Windows.Forms.Padding(4);
+            this.btnCancelEdit.Location = new System.Drawing.Point(713, 189);
             this.btnCancelEdit.Name = "btnCancelEdit";
-            this.btnCancelEdit.Size = new System.Drawing.Size(125, 46);
+            this.btnCancelEdit.Size = new System.Drawing.Size(94, 37);
             this.btnCancelEdit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnCancelEdit.TabIndex = 51;
             this.btnCancelEdit.TabStop = false;
@@ -1565,10 +1579,9 @@
             this.btnEdit.BorderRadius = 0;
             this.btnEdit.Image = global::WorkHive.Properties.Resources.Vector__1_;
             this.btnEdit.IsCircle = false;
-            this.btnEdit.Location = new System.Drawing.Point(1128, 22);
-            this.btnEdit.Margin = new System.Windows.Forms.Padding(4);
+            this.btnEdit.Location = new System.Drawing.Point(885, 17);
             this.btnEdit.Name = "btnEdit";
-            this.btnEdit.Size = new System.Drawing.Size(29, 30);
+            this.btnEdit.Size = new System.Drawing.Size(22, 24);
             this.btnEdit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnEdit.TabIndex = 49;
             this.btnEdit.TabStop = false;
@@ -1582,10 +1595,10 @@
             this.bunifuPictureBox7.BorderRadius = 0;
             this.bunifuPictureBox7.Image = global::WorkHive.Properties.Resources.Group_88;
             this.bunifuPictureBox7.IsCircle = false;
-            this.bunifuPictureBox7.Location = new System.Drawing.Point(294, 87);
-            this.bunifuPictureBox7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.bunifuPictureBox7.Location = new System.Drawing.Point(220, 71);
+            this.bunifuPictureBox7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.bunifuPictureBox7.Name = "bunifuPictureBox7";
-            this.bunifuPictureBox7.Size = new System.Drawing.Size(37, 36);
+            this.bunifuPictureBox7.Size = new System.Drawing.Size(28, 29);
             this.bunifuPictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.bunifuPictureBox7.TabIndex = 24;
             this.bunifuPictureBox7.TabStop = false;
@@ -1598,10 +1611,10 @@
             this.bunifuPictureBox6.BorderRadius = 0;
             this.bunifuPictureBox6.Image = global::WorkHive.Properties.Resources.Group_86;
             this.bunifuPictureBox6.IsCircle = false;
-            this.bunifuPictureBox6.Location = new System.Drawing.Point(294, 125);
-            this.bunifuPictureBox6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.bunifuPictureBox6.Location = new System.Drawing.Point(220, 102);
+            this.bunifuPictureBox6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.bunifuPictureBox6.Name = "bunifuPictureBox6";
-            this.bunifuPictureBox6.Size = new System.Drawing.Size(37, 36);
+            this.bunifuPictureBox6.Size = new System.Drawing.Size(28, 29);
             this.bunifuPictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.bunifuPictureBox6.TabIndex = 23;
             this.bunifuPictureBox6.TabStop = false;
@@ -1614,10 +1627,10 @@
             this.bunifuPictureBox5.BorderRadius = 0;
             this.bunifuPictureBox5.Image = global::WorkHive.Properties.Resources.Group_84;
             this.bunifuPictureBox5.IsCircle = false;
-            this.bunifuPictureBox5.Location = new System.Drawing.Point(295, 164);
-            this.bunifuPictureBox5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.bunifuPictureBox5.Location = new System.Drawing.Point(221, 133);
+            this.bunifuPictureBox5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.bunifuPictureBox5.Name = "bunifuPictureBox5";
-            this.bunifuPictureBox5.Size = new System.Drawing.Size(37, 36);
+            this.bunifuPictureBox5.Size = new System.Drawing.Size(28, 29);
             this.bunifuPictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.bunifuPictureBox5.TabIndex = 22;
             this.bunifuPictureBox5.TabStop = false;
@@ -1630,10 +1643,10 @@
             this.bunifuPictureBox4.BorderRadius = 0;
             this.bunifuPictureBox4.Image = global::WorkHive.Properties.Resources.Group_82;
             this.bunifuPictureBox4.IsCircle = false;
-            this.bunifuPictureBox4.Location = new System.Drawing.Point(295, 202);
-            this.bunifuPictureBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.bunifuPictureBox4.Location = new System.Drawing.Point(221, 164);
+            this.bunifuPictureBox4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.bunifuPictureBox4.Name = "bunifuPictureBox4";
-            this.bunifuPictureBox4.Size = new System.Drawing.Size(37, 36);
+            this.bunifuPictureBox4.Size = new System.Drawing.Size(28, 29);
             this.bunifuPictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.bunifuPictureBox4.TabIndex = 21;
             this.bunifuPictureBox4.TabStop = false;
@@ -1646,10 +1659,10 @@
             this.bunifuPictureBox3.BorderRadius = 0;
             this.bunifuPictureBox3.Image = global::WorkHive.Properties.Resources.Group_81__1_;
             this.bunifuPictureBox3.IsCircle = false;
-            this.bunifuPictureBox3.Location = new System.Drawing.Point(295, 241);
-            this.bunifuPictureBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.bunifuPictureBox3.Location = new System.Drawing.Point(221, 196);
+            this.bunifuPictureBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.bunifuPictureBox3.Name = "bunifuPictureBox3";
-            this.bunifuPictureBox3.Size = new System.Drawing.Size(37, 36);
+            this.bunifuPictureBox3.Size = new System.Drawing.Size(28, 29);
             this.bunifuPictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.bunifuPictureBox3.TabIndex = 20;
             this.bunifuPictureBox3.TabStop = false;
@@ -1663,10 +1676,10 @@
             this.ProfilePic.BorderRadius = 0;
             this.ProfilePic.Image = global::WorkHive.Properties.Resources.Vector__2_;
             this.ProfilePic.IsCircle = false;
-            this.ProfilePic.Location = new System.Drawing.Point(15, 7);
-            this.ProfilePic.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.ProfilePic.Location = new System.Drawing.Point(11, 6);
+            this.ProfilePic.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.ProfilePic.Name = "ProfilePic";
-            this.ProfilePic.Size = new System.Drawing.Size(236, 265);
+            this.ProfilePic.Size = new System.Drawing.Size(177, 215);
             this.ProfilePic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.ProfilePic.TabIndex = 12;
             this.ProfilePic.TabStop = false;
@@ -1694,32 +1707,34 @@
             this.panel1.Controls.Add(this.bunifuPictureBox5);
             this.panel1.Controls.Add(this.bunifuPictureBox4);
             this.panel1.Controls.Add(this.bunifuPictureBox3);
-            this.panel1.Location = new System.Drawing.Point(75, 98);
+            this.panel1.Location = new System.Drawing.Point(56, 80);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1224, 282);
+            this.panel1.Size = new System.Drawing.Size(929, 229);
             this.panel1.TabIndex = 53;
             // 
             // addresslbl
             // 
             this.addresslbl.AutoSize = true;
             this.addresslbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.addresslbl.Location = new System.Drawing.Point(334, 247);
+            this.addresslbl.Location = new System.Drawing.Point(250, 201);
+            this.addresslbl.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.addresslbl.Name = "addresslbl";
-            this.addresslbl.Size = new System.Drawing.Size(170, 25);
+            this.addresslbl.Size = new System.Drawing.Size(140, 20);
             this.addresslbl.TabIndex = 53;
             this.addresslbl.Text = "Current Address";
             // 
             // ProfileEdit
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.EditPanel);
             this.Controls.Add(this.Employees);
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "ProfileEdit";
-            this.Size = new System.Drawing.Size(1360, 763);
+            this.Size = new System.Drawing.Size(1020, 620);
             this.EditPanel.ResumeLayout(false);
             this.EditPanel2.ResumeLayout(false);
             this.EditPanel2.PerformLayout();
