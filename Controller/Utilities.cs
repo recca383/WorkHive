@@ -38,13 +38,13 @@ namespace WorkHive.Controller
         {
             if (textbox.isPassword)
             {
-                //set circularPictureBox = nakapikit
+                circularPictureBox.Image = Properties.Resources.eye_closed;
                 textbox.isPassword = false;
             }
 
             else
             {
-                //set circularPictureBox = nakamulat
+                circularPictureBox.Image = Properties.Resources.eye_open;
                 textbox.isPassword = true;
             }
 
@@ -53,12 +53,12 @@ namespace WorkHive.Controller
         {
             if (textbox.UseSystemPasswordChar)
             {
-                //set circularPictureBox = nakapikit
+                circularPictureBox.Image = Properties.Resources.eye_closed;
                 textbox.UseSystemPasswordChar = false;
             }
             else
             {
-                //set circularPictureBox = nakamulat
+                circularPictureBox.Image = Properties.Resources.eye_open;
                 textbox.UseSystemPasswordChar = true;
 
             }

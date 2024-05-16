@@ -809,6 +809,9 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\Tasks - CHECKED.png" />
+    <None Include="Resources\Tasks - LOCK.png" />
+    <None Include="Resources\eye closed.png" />
     <None Include="Resources\SummaryBG.png" />
     <None Include="Resources\EKIS.png" />
     <None Include="Resources\ProjectBG.png" />

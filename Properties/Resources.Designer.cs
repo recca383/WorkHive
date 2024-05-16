@@ -283,6 +283,16 @@ namespace WorkHive.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap eye_closed {
+            get {
+                object obj = ResourceManager.GetObject("eye closed", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap eye_open {
             get {
                 object obj = ResourceManager.GetObject("eye open", resourceCulture);
@@ -806,6 +816,26 @@ namespace WorkHive.Properties {
         internal static System.Drawing.Bitmap SummaryBG {
             get {
                 object obj = ResourceManager.GetObject("SummaryBG", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Tasks___CHECKED {
+            get {
+                object obj = ResourceManager.GetObject("Tasks - CHECKED", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Tasks___LOCK {
+            get {
+                object obj = ResourceManager.GetObject("Tasks - LOCK", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
