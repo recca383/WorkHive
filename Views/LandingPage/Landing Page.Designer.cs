@@ -76,11 +76,12 @@
             // LandingPageViewPanel
             // 
             this.LandingPageViewPanel.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.LandingPageViewPanel.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.LandingPageViewPanel.Location = new System.Drawing.Point(846, 0);
+            this.LandingPageViewPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.LandingPageViewPanel.Cursor = System.Windows.Forms.Cursors.Default;
+            this.LandingPageViewPanel.Location = new System.Drawing.Point(848, 0);
             this.LandingPageViewPanel.Margin = new System.Windows.Forms.Padding(5);
             this.LandingPageViewPanel.Name = "LandingPageViewPanel";
-            this.LandingPageViewPanel.Size = new System.Drawing.Size(657, 809);
+            this.LandingPageViewPanel.Size = new System.Drawing.Size(655, 809);
             this.LandingPageViewPanel.TabIndex = 1;
             // 
             // Landing_Page
@@ -95,7 +96,6 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.ImeMode = System.Windows.Forms.ImeMode.Off;
             this.Margin = new System.Windows.Forms.Padding(5);
-            this.MinimumSize = new System.Drawing.Size(1521, 856);
             this.Name = "Landing_Page";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Landing_Page";

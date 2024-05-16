@@ -24,6 +24,9 @@ namespace WorkHive.Views.Admin.DashboardPages
         private Rectangle recbtnArchived;
         private Rectangle recTasksFlow;
         private Rectangle recbunifuVScrollBar1;
+        private Rectangle recRefreshButton;
+        private Rectangle recEditFlatButton;
+        private Rectangle recbtnAddtasks;
 
         private List<TaskModel> tasks = TaskModelAccess.GetTaskModel();
 
@@ -44,6 +47,9 @@ namespace WorkHive.Views.Admin.DashboardPages
             recbtnCompleted = new Rectangle(btnCompleted.Location, btnCompleted.Size);
             recbtnArchived = new Rectangle(btnArchived.Location, btnArchived.Size);
             recbunifuVScrollBar1 = new Rectangle(bunifuVScrollBar1.Location, bunifuVScrollBar1.Size);
+            recRefreshButton = new Rectangle(RefreshButton.Location, RefreshButton.Size);
+            recEditFlatButton = new Rectangle(EditFlatButton.Location, EditFlatButton.Size);
+            recbtnAddtasks = new Rectangle(btnAddtasks.Location, btnAddtasks.Size);
         }
 
         private void TasksView_Resize(object sender, EventArgs e)
@@ -55,6 +61,10 @@ namespace WorkHive.Views.Admin.DashboardPages
             resize_Control(btnCompleted, recbtnCompleted);
             resize_Control(btnArchived, recbtnArchived);
             resize_Control(bunifuVScrollBar1, recbunifuVScrollBar1);
+            resize_Control(RefreshButton, recRefreshButton);
+            resize_Control(EditFlatButton, recEditFlatButton);
+            resize_Control(btnAddtasks, recbtnAddtasks);
+
         }
         private void resize_Control(Control c, Rectangle r)
         {

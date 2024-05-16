@@ -189,6 +189,7 @@
             this.MessageBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.MessageBtn.Textcolor = System.Drawing.Color.Black;
             this.MessageBtn.TextFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MessageBtn.Click += new System.EventHandler(this.MessageBtn_Click);
             // 
             // ResetPassBtn
             // 

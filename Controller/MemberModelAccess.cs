@@ -23,8 +23,8 @@ namespace WorkHive.Controller
             new MemberModel()
             {//sirpatrick121402@gmail.com
                 ID = 0,
-                Email = "tatik",
-                FirstName = "recca383",
+                Email = "Member",
+                FirstName = "Member1",
                 Password = "123",
                 IsLeader = false,
                 Profile_Pic = "Resources\\Default_Admin_Pics\\tatik.jpg",
@@ -44,10 +44,10 @@ namespace WorkHive.Controller
             },
             {
             new MemberModel()
-            {
+            { //crusitwincel@gmail.com
                 ID = 2,
                 Email = "Wincel",
-                FirstName = "Al John",
+                FirstName = "Wincel",
                 Password = "123",
                 IsLeader = true,
                 Profile_Pic = "Resources\\Default_Admin_Pics\\wincel.jpg",

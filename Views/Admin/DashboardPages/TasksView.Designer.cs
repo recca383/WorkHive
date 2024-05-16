@@ -40,6 +40,8 @@
             this.btnAddtasks = new Bunifu.Framework.UI.BunifuFlatButton();
             this.EditFlatButton = new Bunifu.Framework.UI.BunifuFlatButton();
             this.bunifuVScrollBar1 = new Bunifu.UI.WinForms.BunifuVScrollBar();
+            this.RefreshButton = new Bunifu.UI.WinForms.BunifuPictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.RefreshButton)).BeginInit();
             this.SuspendLayout();
             // 
             // TasksName
@@ -143,17 +145,17 @@
             this.btnAddtasks.IconRightVisible = true;
             this.btnAddtasks.IconRightZoom = 0D;
             this.btnAddtasks.IconVisible = true;
-            this.btnAddtasks.IconZoom = 40D;
+            this.btnAddtasks.IconZoom = 60D;
             this.btnAddtasks.ImeMode = System.Windows.Forms.ImeMode.On;
             this.btnAddtasks.IsTab = false;
-            this.btnAddtasks.Location = new System.Drawing.Point(1171, 20);
+            this.btnAddtasks.Location = new System.Drawing.Point(1169, 30);
             this.btnAddtasks.Margin = new System.Windows.Forms.Padding(5);
             this.btnAddtasks.Name = "btnAddtasks";
             this.btnAddtasks.Normalcolor = System.Drawing.Color.Transparent;
             this.btnAddtasks.OnHovercolor = System.Drawing.Color.Transparent;
             this.btnAddtasks.OnHoverTextColor = System.Drawing.Color.White;
             this.btnAddtasks.selected = false;
-            this.btnAddtasks.Size = new System.Drawing.Size(46, 47);
+            this.btnAddtasks.Size = new System.Drawing.Size(35, 34);
             this.btnAddtasks.TabIndex = 17;
             this.btnAddtasks.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnAddtasks.Textcolor = System.Drawing.Color.White;
@@ -182,7 +184,7 @@
             this.EditFlatButton.IconVisible = true;
             this.EditFlatButton.IconZoom = 50D;
             this.EditFlatButton.IsTab = false;
-            this.EditFlatButton.Location = new System.Drawing.Point(1115, 20);
+            this.EditFlatButton.Location = new System.Drawing.Point(1103, 22);
             this.EditFlatButton.Margin = new System.Windows.Forms.Padding(5);
             this.EditFlatButton.Name = "EditFlatButton";
             this.EditFlatButton.Normalcolor = System.Drawing.Color.Transparent;
@@ -237,10 +239,28 @@
             this.bunifuVScrollBar1.ThumbStyle = Bunifu.UI.WinForms.BunifuVScrollBar.ThumbStyles.Inset;
             this.bunifuVScrollBar1.Value = 0;
             // 
+            // RefreshButton
+            // 
+            this.RefreshButton.AllowFocused = false;
+            this.RefreshButton.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.RefreshButton.BackColor = System.Drawing.Color.Transparent;
+            this.RefreshButton.BorderRadius = 0;
+            this.RefreshButton.Image = global::WorkHive.Properties.Resources.refresh;
+            this.RefreshButton.IsCircle = false;
+            this.RefreshButton.Location = new System.Drawing.Point(946, 30);
+            this.RefreshButton.Margin = new System.Windows.Forms.Padding(4);
+            this.RefreshButton.Name = "RefreshButton";
+            this.RefreshButton.Size = new System.Drawing.Size(37, 32);
+            this.RefreshButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.RefreshButton.TabIndex = 19;
+            this.RefreshButton.TabStop = false;
+            this.RefreshButton.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Custom;
+            // 
             // TasksView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.RefreshButton);
             this.Controls.Add(this.AddTaskPanel);
             this.Controls.Add(this.btnAddtasks);
             this.Controls.Add(this.EditFlatButton);
@@ -254,6 +274,7 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "TasksView";
             this.Size = new System.Drawing.Size(1243, 720);
+            ((System.ComponentModel.ISupportInitialize)(this.RefreshButton)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -272,5 +293,6 @@
         private Bunifu.Framework.UI.BunifuFlatButton EditFlatButton;
         private Bunifu.Framework.UI.BunifuFlatButton btnAddtasks;
         private System.Windows.Forms.Panel AddTaskPanel;
+        private Bunifu.UI.WinForms.BunifuPictureBox RefreshButton;
     }
 }

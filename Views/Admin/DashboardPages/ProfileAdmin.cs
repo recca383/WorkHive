@@ -59,5 +59,10 @@ namespace WorkHive.Views.Admin
         {
             Dashboard_Admin.btnProfileEdit_Click();
         }
+
+        private void MessageBtn_Click(object sender, EventArgs e)
+        {
+            /*Dashboard_Admin.btnChats_Click();*/
+        }
     }
 }

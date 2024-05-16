@@ -72,6 +72,7 @@
             this.pnTitleBar.Controls.Add(this.ProfilePicBoxMember);
             this.pnTitleBar.Controls.Add(this.btnMenuMember);
             this.pnTitleBar.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnTitleBar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(147)))), ((int)(((byte)(47)))));
             this.pnTitleBar.Location = new System.Drawing.Point(219, 0);
             this.pnTitleBar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnTitleBar.Name = "pnTitleBar";
@@ -82,7 +83,7 @@
             // 
             this.profilepanel.BackColor = System.Drawing.Color.Transparent;
             this.profilepanel.Location = new System.Drawing.Point(844, 43);
-            this.profilepanel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.profilepanel.Margin = new System.Windows.Forms.Padding(4);
             this.profilepanel.Name = "profilepanel";
             this.profilepanel.Size = new System.Drawing.Size(0, 0);
             this.profilepanel.TabIndex = 3;
@@ -116,14 +117,14 @@
             // btnMenuMember
             // 
             this.btnMenuMember.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMenuMember.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(44)))), ((int)(((byte)(49)))));
+            this.btnMenuMember.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(147)))), ((int)(((byte)(47)))));
             this.btnMenuMember.Image = ((System.Drawing.Image)(resources.GetObject("btnMenuMember.Image")));
             this.btnMenuMember.Location = new System.Drawing.Point(4, 11);
-            this.btnMenuMember.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnMenuMember.Margin = new System.Windows.Forms.Padding(4);
             this.btnMenuMember.Name = "btnMenuMember";
             this.btnMenuMember.Size = new System.Drawing.Size(61, 78);
             this.btnMenuMember.TabIndex = 0;
-            this.btnMenuMember.UseVisualStyleBackColor = true;
+            this.btnMenuMember.UseVisualStyleBackColor = false;
             this.btnMenuMember.Click += new System.EventHandler(this.btnMenuMember_Click);
             // 
             // sidebarmember
@@ -336,7 +337,7 @@
             // 
             // panel3
             // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(147)))), ((int)(((byte)(47)))));
+            this.panel3.BackColor = System.Drawing.Color.Transparent;
             this.panel3.Controls.Add(this.pictureBox1);
             this.panel3.Controls.Add(this.pictureBox2);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;

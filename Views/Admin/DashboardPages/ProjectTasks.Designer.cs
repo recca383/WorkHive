@@ -45,9 +45,10 @@
             // 
             this.btnArchived.AutoSize = true;
             this.btnArchived.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnArchived.Location = new System.Drawing.Point(634, 26);
+            this.btnArchived.Location = new System.Drawing.Point(845, 32);
+            this.btnArchived.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.btnArchived.Name = "btnArchived";
-            this.btnArchived.Size = new System.Drawing.Size(78, 20);
+            this.btnArchived.Size = new System.Drawing.Size(97, 25);
             this.btnArchived.TabIndex = 11;
             this.btnArchived.Text = "Archived";
             // 
@@ -55,9 +56,10 @@
             // 
             this.btnCompleted.AutoSize = true;
             this.btnCompleted.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCompleted.Location = new System.Drawing.Point(466, 26);
+            this.btnCompleted.Location = new System.Drawing.Point(621, 32);
+            this.btnCompleted.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.btnCompleted.Name = "btnCompleted";
-            this.btnCompleted.Size = new System.Drawing.Size(95, 20);
+            this.btnCompleted.Size = new System.Drawing.Size(116, 25);
             this.btnCompleted.TabIndex = 10;
             this.btnCompleted.Text = "Completed";
             // 
@@ -65,9 +67,10 @@
             // 
             this.btnOngoing.AutoSize = true;
             this.btnOngoing.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnOngoing.Location = new System.Drawing.Point(316, 26);
+            this.btnOngoing.Location = new System.Drawing.Point(421, 32);
+            this.btnOngoing.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.btnOngoing.Name = "btnOngoing";
-            this.btnOngoing.Size = new System.Drawing.Size(76, 20);
+            this.btnOngoing.Size = new System.Drawing.Size(94, 25);
             this.btnOngoing.TabIndex = 9;
             this.btnOngoing.Text = "Ongoing";
             // 
@@ -75,9 +78,10 @@
             // 
             this.btnAll.AutoSize = true;
             this.btnAll.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAll.Location = new System.Drawing.Point(210, 26);
+            this.btnAll.Location = new System.Drawing.Point(280, 32);
+            this.btnAll.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.btnAll.Name = "btnAll";
-            this.btnAll.Size = new System.Drawing.Size(29, 20);
+            this.btnAll.Size = new System.Drawing.Size(37, 25);
             this.btnAll.TabIndex = 8;
             this.btnAll.Text = "All";
             // 
@@ -85,19 +89,20 @@
             // 
             this.TasksName.AutoSize = true;
             this.TasksName.Font = new System.Drawing.Font("Microsoft Sans Serif", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TasksName.Location = new System.Drawing.Point(11, 9);
+            this.TasksName.Location = new System.Drawing.Point(15, 11);
+            this.TasksName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.TasksName.Name = "TasksName";
-            this.TasksName.Size = new System.Drawing.Size(116, 39);
+            this.TasksName.Size = new System.Drawing.Size(143, 51);
             this.TasksName.TabIndex = 12;
             this.TasksName.Text = "Tasks";
             // 
             // pictureBox5
             // 
             this.pictureBox5.Image = global::WorkHive.Properties.Resources.EKIS;
-            this.pictureBox5.Location = new System.Drawing.Point(893, 10);
-            this.pictureBox5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox5.Location = new System.Drawing.Point(1191, 12);
+            this.pictureBox5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(30, 28);
+            this.pictureBox5.Size = new System.Drawing.Size(40, 34);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox5.TabIndex = 13;
             this.pictureBox5.TabStop = false;
@@ -106,9 +111,10 @@
             // 
             this.Project_Panel.BackColor = System.Drawing.Color.Transparent;
             this.Project_Panel.ForeColor = System.Drawing.Color.Transparent;
-            this.Project_Panel.Location = new System.Drawing.Point(214, 49);
+            this.Project_Panel.Location = new System.Drawing.Point(285, 60);
+            this.Project_Panel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Project_Panel.Name = "Project_Panel";
-            this.Project_Panel.Size = new System.Drawing.Size(119, 122);
+            this.Project_Panel.Size = new System.Drawing.Size(159, 150);
             this.Project_Panel.TabIndex = 19;
             // 
             // bunifuVScrollBar1
@@ -130,8 +136,8 @@
             this.bunifuVScrollBar1.BorderThickness = 1;
             this.bunifuVScrollBar1.DurationBeforeShrink = 2000;
             this.bunifuVScrollBar1.LargeChange = 10;
-            this.bunifuVScrollBar1.Location = new System.Drawing.Point(905, 73);
-            this.bunifuVScrollBar1.Margin = new System.Windows.Forms.Padding(4);
+            this.bunifuVScrollBar1.Location = new System.Drawing.Point(1207, 90);
+            this.bunifuVScrollBar1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.bunifuVScrollBar1.Maximum = 100;
             this.bunifuVScrollBar1.Minimum = 0;
             this.bunifuVScrollBar1.MinimumThumbLength = 18;
@@ -142,11 +148,11 @@
             this.bunifuVScrollBar1.ScrollBarBorderColor = System.Drawing.Color.Silver;
             this.bunifuVScrollBar1.ScrollBarColor = System.Drawing.Color.Silver;
             this.bunifuVScrollBar1.ShrinkSizeLimit = 3;
-            this.bunifuVScrollBar1.Size = new System.Drawing.Size(18, 509);
+            this.bunifuVScrollBar1.Size = new System.Drawing.Size(24, 626);
             this.bunifuVScrollBar1.SmallChange = 1;
             this.bunifuVScrollBar1.TabIndex = 21;
             this.bunifuVScrollBar1.ThumbColor = System.Drawing.Color.Gray;
-            this.bunifuVScrollBar1.ThumbLength = 50;
+            this.bunifuVScrollBar1.ThumbLength = 61;
             this.bunifuVScrollBar1.ThumbMargin = 1;
             this.bunifuVScrollBar1.ThumbStyle = Bunifu.UI.WinForms.BunifuVScrollBar.ThumbStyles.Inset;
             this.bunifuVScrollBar1.Value = 0;
@@ -155,15 +161,16 @@
             // 
             this.TasksFlow.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.TasksFlow.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-            this.TasksFlow.Location = new System.Drawing.Point(18, 73);
+            this.TasksFlow.Location = new System.Drawing.Point(24, 90);
+            this.TasksFlow.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.TasksFlow.Name = "TasksFlow";
-            this.TasksFlow.Size = new System.Drawing.Size(886, 513);
+            this.TasksFlow.Size = new System.Drawing.Size(1181, 631);
             this.TasksFlow.TabIndex = 20;
             this.TasksFlow.WrapContents = false;
             // 
             // ProjectTasks
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.Project_Panel);
             this.Controls.Add(this.bunifuVScrollBar1);
@@ -174,9 +181,9 @@
             this.Controls.Add(this.btnCompleted);
             this.Controls.Add(this.btnOngoing);
             this.Controls.Add(this.btnAll);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "ProjectTasks";
-            this.Size = new System.Drawing.Size(932, 586);
+            this.Size = new System.Drawing.Size(1243, 721);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
