@@ -8,14 +8,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.TrackBar;
+using WorkHive.Controller;
+using WorkHive.Views.Cards;
 
 namespace WorkHive.Views.Admin.DashboardPages
 {
-   
+
     public partial class CalendarView : UserControl
     {
         private Size CalendarViewOriginalSize;
-     
+
         private Rectangle recDayContainer;
         private Rectangle recCalendarName;
         private Rectangle reclblDate;
@@ -23,7 +26,7 @@ namespace WorkHive.Views.Admin.DashboardPages
         private Rectangle recbtnNext;
         private Rectangle recSunday;
         private Rectangle recMonday;
-        private Rectangle recTuesday;   
+        private Rectangle recTuesday;
         private Rectangle recWednesday;
         private Rectangle recThursday;
         private Rectangle recFriday;
@@ -32,9 +35,9 @@ namespace WorkHive.Views.Admin.DashboardPages
         {
             InitializeComponent();
             this.Resize += CalendarView_Resize;
-            CalendarViewOriginalSize = this.Size;
+            //CalendarViewOriginalSize = this.Size;
 
-            DayContainer.MinimumSize = new Size(600, 200); // Set a minimum size to avoid making it too small
+            //DayContainer.MinimumSize = new Size(600, 200); // Set a minimum size to avoid making it too small
 
             recDayContainer = new Rectangle(DayContainer.Location, DayContainer.Size);
             recCalendarName = new Rectangle(CalendarName.Location, CalendarName.Size);
@@ -53,6 +56,7 @@ namespace WorkHive.Views.Admin.DashboardPages
 
         private void CalendarView_Resize(object sender, EventArgs e)
         {
+            CalendarViewOriginalSize = this.Size;
             ResizeCalendarCurrentDays();
             resize_Control(DayContainer, recDayContainer);
             resize_Control(CalendarName, recCalendarName);
@@ -132,7 +136,7 @@ namespace WorkHive.Views.Admin.DashboardPages
         static int currentYear = currentDT.Year;
         static int currentMonth = currentDT.Month;
 
-        private void displayDays() 
+        private void displayDays()
         {
             string monthName = DateTimeFormatInfo.CurrentInfo.GetMonthName(currentMonth);
             lblDate.Text = monthName + " " + currentYear;
@@ -168,7 +172,7 @@ namespace WorkHive.Views.Admin.DashboardPages
 
         private void btnNext_Click(object sender, EventArgs e)
         {
-            DayContainer.Controls.Clear();        
+            DayContainer.Controls.Clear();
             currentMonth += 1;
 
             // updates the year
@@ -176,9 +180,9 @@ namespace WorkHive.Views.Admin.DashboardPages
             {
                 currentMonth = 1;
                 currentYear++;
-            }            
-            displayDays();
-            
+            }
+            displayDays();         
+
         }
 
         private void btnPrevious_Click(object sender, EventArgs e)
@@ -192,7 +196,7 @@ namespace WorkHive.Views.Admin.DashboardPages
                 currentMonth = 12;
                 currentYear--;
             }
-            displayDays();
-        }
+            displayDays();           
+        }        
     }
 }

@@ -12,7 +12,8 @@ namespace WorkHive.Views.Admin
 {
     public partial class CalendarDays : UserControl
     {
-        
+        public int AspectRatio { get; internal set; }
+
         public CalendarDays()
         {
             InitializeComponent();
