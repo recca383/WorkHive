@@ -11,6 +11,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using WorkHive.Controller;
 using WorkHive.Model;
+using WorkHive.Views.Admin.DashboardPages;
 using WorkHive.Views.Cards;
 
 namespace WorkHive
@@ -18,7 +19,6 @@ namespace WorkHive
     public partial class AddTask : UserControl
     {
         List<ProjectModel > projects = ProjectModelAccess.GetProjects();
-        private string SelectedName;
         public AddTask()
         {
             InitializeComponent();
@@ -33,7 +33,10 @@ namespace WorkHive
 
         private void btnAddTaskExit_Click(object sender, EventArgs e)
         {
+            TasksView taskview = (TasksView)Parent.Parent;
+            taskview.btnAll_Click(sender, e);
             this.Parent.Controls.Remove(this);
+            
         }
         private void btnAddTaskSubmit_Click(object sender, EventArgs e)
         {
@@ -48,8 +51,10 @@ namespace WorkHive
                 ProjectAssigned = projects.FirstOrDefault(n => n.Name == Dropdownassignproject.SelectedItem.ToString()),
                 Deadline = DatePickerDeadline.Value
             }
-
             );
+            TasksView taskview = (TasksView)Parent.Parent;
+            taskview.btnAll_Click(sender, e);
+            this.Parent.Controls.Remove(this);
         }
 
     }

@@ -140,9 +140,11 @@ namespace WorkHive.Views
 
         private void btnLogout_Click(object sender, EventArgs e)
         {
+            
             Landing_Page landingpage = new Landing_Page();
-            this.Hide();
             landingpage.Show();
+            this.Hide();
+
         }
 
         /*private void btnChats_Click(object sender, EventArgs e)
@@ -150,12 +152,6 @@ namespace WorkHive.Views
             System.Diagnostics.Process.Start();
         }*/
 
-        
-
-        private void ViewPanel_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
 
         private void ProfilePicBox_Click(object sender, EventArgs e)
         {

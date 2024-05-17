@@ -39,22 +39,22 @@ namespace WorkHive.Views.LandingPage.LandingPagePages
 
         private void txtNewPassword_OnValueChanged(object sender, EventArgs e)
         {
-            Controller.Utilities.PasswordInitialVisibility(txtNewPassword);
+            Controller.Utility.PasswordInitialVisibility(txtNewPassword);
         }
 
         private void txtConfirmPassword_OnValueChanged(object sender, EventArgs e)
         {
-            Controller.Utilities.PasswordInitialVisibility(txtConfirmPassword);
+            Controller.Utility.PasswordInitialVisibility(txtConfirmPassword);
         }
 
         private void ShowPassword_Click(object sender, EventArgs e)
         {
-            Controller.Utilities.ShowPasswordFunction(txtNewPassword, ShowPassword);
+            Controller.Utility.ShowPasswordFunction(txtNewPassword, ShowPassword);
         }
 
         private void ShowPassword2_Click(object sender, EventArgs e)
         {
-            Controller.Utilities.ShowPasswordFunction(txtConfirmPassword, ShowPassword2);
+            Controller.Utility.ShowPasswordFunction(txtConfirmPassword, ShowPassword2);
         }
     }
 }

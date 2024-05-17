@@ -57,12 +57,11 @@
             // 
             this.ViewPanelMember.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ViewPanelMember.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ViewPanelMember.Location = new System.Drawing.Point(219, 100);
-            this.ViewPanelMember.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.ViewPanelMember.Location = new System.Drawing.Point(164, 81);
+            this.ViewPanelMember.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.ViewPanelMember.Name = "ViewPanelMember";
-            this.ViewPanelMember.Size = new System.Drawing.Size(1360, 737);
+            this.ViewPanelMember.Size = new System.Drawing.Size(1020, 599);
             this.ViewPanelMember.TabIndex = 12;
-            this.ViewPanelMember.Paint += new System.Windows.Forms.PaintEventHandler(this.ViewPanelMember_Paint);
             // 
             // pnTitleBar
             // 
@@ -73,17 +72,16 @@
             this.pnTitleBar.Controls.Add(this.btnMenuMember);
             this.pnTitleBar.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnTitleBar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(147)))), ((int)(((byte)(47)))));
-            this.pnTitleBar.Location = new System.Drawing.Point(219, 0);
-            this.pnTitleBar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pnTitleBar.Location = new System.Drawing.Point(164, 0);
+            this.pnTitleBar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pnTitleBar.Name = "pnTitleBar";
-            this.pnTitleBar.Size = new System.Drawing.Size(1360, 100);
+            this.pnTitleBar.Size = new System.Drawing.Size(1020, 81);
             this.pnTitleBar.TabIndex = 11;
             // 
             // profilepanel
             // 
             this.profilepanel.BackColor = System.Drawing.Color.Transparent;
-            this.profilepanel.Location = new System.Drawing.Point(844, 43);
-            this.profilepanel.Margin = new System.Windows.Forms.Padding(4);
+            this.profilepanel.Location = new System.Drawing.Point(633, 35);
             this.profilepanel.Name = "profilepanel";
             this.profilepanel.Size = new System.Drawing.Size(0, 0);
             this.profilepanel.TabIndex = 3;
@@ -93,8 +91,8 @@
             this.pictureBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox3.Image = global::WorkHive.Properties.Resources.Notification1;
-            this.pictureBox3.Location = new System.Drawing.Point(1227, 41);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.pictureBox3.Location = new System.Drawing.Point(920, 33);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(23, 22);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -105,10 +103,10 @@
             // 
             this.ProfilePicBoxMember.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.ProfilePicBoxMember.Image = ((System.Drawing.Image)(resources.GetObject("ProfilePicBoxMember.Image")));
-            this.ProfilePicBoxMember.Location = new System.Drawing.Point(1283, 28);
-            this.ProfilePicBoxMember.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.ProfilePicBoxMember.Location = new System.Drawing.Point(962, 23);
+            this.ProfilePicBoxMember.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.ProfilePicBoxMember.Name = "ProfilePicBoxMember";
-            this.ProfilePicBoxMember.Size = new System.Drawing.Size(48, 46);
+            this.ProfilePicBoxMember.Size = new System.Drawing.Size(36, 37);
             this.ProfilePicBoxMember.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.ProfilePicBoxMember.TabIndex = 0;
             this.ProfilePicBoxMember.TabStop = false;
@@ -119,10 +117,9 @@
             this.btnMenuMember.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMenuMember.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(147)))), ((int)(((byte)(47)))));
             this.btnMenuMember.Image = ((System.Drawing.Image)(resources.GetObject("btnMenuMember.Image")));
-            this.btnMenuMember.Location = new System.Drawing.Point(4, 11);
-            this.btnMenuMember.Margin = new System.Windows.Forms.Padding(4);
+            this.btnMenuMember.Location = new System.Drawing.Point(3, 9);
             this.btnMenuMember.Name = "btnMenuMember";
-            this.btnMenuMember.Size = new System.Drawing.Size(61, 78);
+            this.btnMenuMember.Size = new System.Drawing.Size(46, 63);
             this.btnMenuMember.TabIndex = 0;
             this.btnMenuMember.UseVisualStyleBackColor = false;
             this.btnMenuMember.Click += new System.EventHandler(this.btnMenuMember_Click);
@@ -139,9 +136,9 @@
             this.sidebarmember.Controls.Add(this.panel3);
             this.sidebarmember.Dock = System.Windows.Forms.DockStyle.Left;
             this.sidebarmember.Location = new System.Drawing.Point(0, 0);
-            this.sidebarmember.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.sidebarmember.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.sidebarmember.Name = "sidebarmember";
-            this.sidebarmember.Size = new System.Drawing.Size(219, 837);
+            this.sidebarmember.Size = new System.Drawing.Size(164, 680);
             this.sidebarmember.TabIndex = 10;
             // 
             // btnDashBoardMember
@@ -166,14 +163,14 @@
             this.btnDashBoardMember.IconVisible = true;
             this.btnDashBoardMember.IconZoom = 40D;
             this.btnDashBoardMember.IsTab = false;
-            this.btnDashBoardMember.Location = new System.Drawing.Point(0, 101);
+            this.btnDashBoardMember.Location = new System.Drawing.Point(0, 82);
             this.btnDashBoardMember.Margin = new System.Windows.Forms.Padding(0);
             this.btnDashBoardMember.Name = "btnDashBoardMember";
             this.btnDashBoardMember.Normalcolor = System.Drawing.Color.Transparent;
             this.btnDashBoardMember.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(194)))), ((int)(((byte)(1)))));
             this.btnDashBoardMember.OnHoverTextColor = System.Drawing.Color.White;
             this.btnDashBoardMember.selected = true;
-            this.btnDashBoardMember.Size = new System.Drawing.Size(251, 50);
+            this.btnDashBoardMember.Size = new System.Drawing.Size(188, 41);
             this.btnDashBoardMember.TabIndex = 1;
             this.btnDashBoardMember.Tag = "Dashboard";
             this.btnDashBoardMember.Text = "   Dashboard";
@@ -204,14 +201,14 @@
             this.btnChatsMember.IconVisible = true;
             this.btnChatsMember.IconZoom = 40D;
             this.btnChatsMember.IsTab = false;
-            this.btnChatsMember.Location = new System.Drawing.Point(4, 251);
+            this.btnChatsMember.Location = new System.Drawing.Point(3, 204);
             this.btnChatsMember.Margin = new System.Windows.Forms.Padding(0);
             this.btnChatsMember.Name = "btnChatsMember";
             this.btnChatsMember.Normalcolor = System.Drawing.Color.Transparent;
             this.btnChatsMember.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(194)))), ((int)(((byte)(1)))));
             this.btnChatsMember.OnHoverTextColor = System.Drawing.Color.White;
             this.btnChatsMember.selected = true;
-            this.btnChatsMember.Size = new System.Drawing.Size(251, 50);
+            this.btnChatsMember.Size = new System.Drawing.Size(188, 41);
             this.btnChatsMember.TabIndex = 6;
             this.btnChatsMember.Tag = "Chats";
             this.btnChatsMember.Text = "   Chats";
@@ -242,14 +239,14 @@
             this.btnTasksMember.IconVisible = true;
             this.btnTasksMember.IconZoom = 40D;
             this.btnTasksMember.IsTab = false;
-            this.btnTasksMember.Location = new System.Drawing.Point(0, 151);
+            this.btnTasksMember.Location = new System.Drawing.Point(0, 123);
             this.btnTasksMember.Margin = new System.Windows.Forms.Padding(0);
             this.btnTasksMember.Name = "btnTasksMember";
             this.btnTasksMember.Normalcolor = System.Drawing.Color.Transparent;
             this.btnTasksMember.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(194)))), ((int)(((byte)(1)))));
             this.btnTasksMember.OnHoverTextColor = System.Drawing.Color.White;
             this.btnTasksMember.selected = true;
-            this.btnTasksMember.Size = new System.Drawing.Size(251, 50);
+            this.btnTasksMember.Size = new System.Drawing.Size(188, 41);
             this.btnTasksMember.TabIndex = 3;
             this.btnTasksMember.Tag = "Tasks";
             this.btnTasksMember.Text = "   Tasks";
@@ -281,14 +278,14 @@
             this.btnLogout.IconVisible = true;
             this.btnLogout.IconZoom = 35D;
             this.btnLogout.IsTab = false;
-            this.btnLogout.Location = new System.Drawing.Point(0, 786);
+            this.btnLogout.Location = new System.Drawing.Point(0, 639);
             this.btnLogout.Margin = new System.Windows.Forms.Padding(0);
             this.btnLogout.Name = "btnLogout";
             this.btnLogout.Normalcolor = System.Drawing.Color.Transparent;
             this.btnLogout.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(194)))), ((int)(((byte)(1)))));
             this.btnLogout.OnHoverTextColor = System.Drawing.Color.White;
             this.btnLogout.selected = true;
-            this.btnLogout.Size = new System.Drawing.Size(228, 50);
+            this.btnLogout.Size = new System.Drawing.Size(171, 41);
             this.btnLogout.TabIndex = 8;
             this.btnLogout.Tag = "Log Out";
             this.btnLogout.Text = "     Log Out";
@@ -319,14 +316,14 @@
             this.btnCalendarMember.IconVisible = true;
             this.btnCalendarMember.IconZoom = 40D;
             this.btnCalendarMember.IsTab = false;
-            this.btnCalendarMember.Location = new System.Drawing.Point(0, 201);
+            this.btnCalendarMember.Location = new System.Drawing.Point(0, 163);
             this.btnCalendarMember.Margin = new System.Windows.Forms.Padding(0);
             this.btnCalendarMember.Name = "btnCalendarMember";
             this.btnCalendarMember.Normalcolor = System.Drawing.Color.Transparent;
             this.btnCalendarMember.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(194)))), ((int)(((byte)(1)))));
             this.btnCalendarMember.OnHoverTextColor = System.Drawing.Color.White;
             this.btnCalendarMember.selected = true;
-            this.btnCalendarMember.Size = new System.Drawing.Size(251, 50);
+            this.btnCalendarMember.Size = new System.Drawing.Size(188, 41);
             this.btnCalendarMember.TabIndex = 5;
             this.btnCalendarMember.Tag = "Calendar";
             this.btnCalendarMember.Text = "   Calendar";
@@ -342,9 +339,9 @@
             this.panel3.Controls.Add(this.pictureBox2);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.Location = new System.Drawing.Point(0, 0);
-            this.panel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(219, 100);
+            this.panel3.Size = new System.Drawing.Size(164, 81);
             this.panel3.TabIndex = 3;
             // 
             // pictureBox1
@@ -352,10 +349,10 @@
             this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(71, 43);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.pictureBox1.Location = new System.Drawing.Point(53, 35);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(147, 20);
+            this.pictureBox1.Size = new System.Drawing.Size(110, 16);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
@@ -363,24 +360,24 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(10, 22);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.pictureBox2.Location = new System.Drawing.Point(8, 18);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(51, 59);
+            this.pictureBox2.Size = new System.Drawing.Size(38, 48);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 3;
             this.pictureBox2.TabStop = false;
             // 
             // Dashboard_Member
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1579, 837);
+            this.ClientSize = new System.Drawing.Size(1184, 680);
             this.Controls.Add(this.ViewPanelMember);
             this.Controls.Add(this.pnTitleBar);
             this.Controls.Add(this.sidebarmember);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Dashboard_Member";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Dashboard_Member";

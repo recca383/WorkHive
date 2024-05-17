@@ -7,10 +7,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using WorkHive.Views;
+using WorkHive.Views.LandingPage.LandingPagePages;
 
 namespace WorkHive.Controller
 {
-    public static class Utilities
+    public static class Utility
     {
         public static void PasswordInitialVisibility(BunifuMaterialTextbox textbox)
         {
@@ -62,6 +63,19 @@ namespace WorkHive.Controller
                 textbox.UseSystemPasswordChar = true;
 
             }
+        }
+        public static bool IsEmailValid(string email)
+        {
+            string[] validpostfixes = { "@gmail.com", "@yahoo.com", "@lspu.edu.ph", "@outlook.com" };
+
+            foreach (string s in validpostfixes)
+            {
+                if (email.Contains(s)) return true;
+            }
+
+            new MessageBoxes("Please Input Valid Email");
+            return false;
+            
         }
     }
 }

@@ -103,7 +103,7 @@ namespace WorkHive.Views.LandingPage.LandingPagePages
             if (txtName.Text == "" || txtEmail.Text == "" || txtPassword.Text == "" || txtConfirmPassword.Text == "") new MessageBoxes("Empty Text Box\nFill up all Text Boxed");
             else
             {
-                if (IsPasswordHasNumber(txtPassword.Text) && HasCapitalLetter(txtPassword.Text))
+                if (IsPasswordHasNumber(txtPassword.Text) && HasCapitalLetter(txtPassword.Text) && Utility.IsEmailValid(txtEmail.Text))
                 if (model.Any(n => n.FirstName == txtName.Text)) new MessageBoxes("Username Taken");
                 else if (model.Any(m => m.Email == txtEmail.Text)) new MessageBoxes("Email Already Used");
                 else if (!(txtPassword.Text == txtConfirmPassword.Text)) new MessageBoxes("Password Does Not Match");
@@ -153,7 +153,7 @@ namespace WorkHive.Views.LandingPage.LandingPagePages
         {
             foreach (char c in text)
             {
-                if (c >= 65 || c <= 92)
+                if (c >= 65 && c <= 90)
                 {
                     return true;
                 }
@@ -167,22 +167,22 @@ namespace WorkHive.Views.LandingPage.LandingPagePages
 
         private void txtPassword_OnValueChanged(object sender, EventArgs e)
         {
-            Controller.Utilities.PasswordInitialVisibility(txtPassword);
+            Controller.Utility.PasswordInitialVisibility(txtPassword);
         }
 
         private void txtConfirmPassword_OnValueChanged(object sender, EventArgs e)
         {
-            Controller.Utilities.PasswordInitialVisibility(txtConfirmPassword);
+            Controller.Utility.PasswordInitialVisibility(txtConfirmPassword);
         }
         
         private void ShowPassword_Click(object sender, EventArgs e)
         {
-            Controller.Utilities.ShowPasswordFunction(txtPassword, ShowPassword);
+            Controller.Utility.ShowPasswordFunction(txtPassword, ShowPassword);
         }
 
         private void ShowPassword2_Click(object sender, EventArgs e)
         {
-            Controller.Utilities.ShowPasswordFunction(txtConfirmPassword, ShowPassword2);
+            Controller.Utility.ShowPasswordFunction(txtConfirmPassword, ShowPassword2);
         }
     }
 }

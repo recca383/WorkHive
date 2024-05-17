@@ -97,8 +97,8 @@ namespace WorkHive.Views.Member.DashboardPagesMember
 
         private void btnLogout_Click(object sender, EventArgs e)
         {
-            Landing_Page landing_Page = new Landing_Page();
             this.Hide();
+            Landing_Page landing_Page = new Landing_Page();
             landing_Page.Show();
         }
 
@@ -119,11 +119,6 @@ namespace WorkHive.Views.Member.DashboardPagesMember
             {
                 profilepanel.Size = new Size(0, 0);
             }
-        }
-
-        private void ViewPanelMember_Paint(object sender, PaintEventArgs e)
-        {
-
         }
 
         private void btnMenuMember_Click(object sender, EventArgs e)

@@ -94,7 +94,6 @@ namespace WorkHive.Views.Admin
             var editedmember = new MemberModel();
 
                 editedmember.ID = currentUser.ID;
-                editedmember.Email = emailtxt.Text;
                 editedmember.FirstName = firstnametxt.Text;
                 editedmember.LastName = Lastnametxt.Text;
                 editedmember.MiddleName = Middlenametxt.Text;
@@ -109,7 +108,7 @@ namespace WorkHive.Views.Admin
                 editedmember.Province = provincetxt.Text;
                 editedmember.Profile_Pic = newPicture;
 
-            
+            if (Utility.IsEmailValid(emailtxt.Text)) editedmember.Email = emailtxt.Text;
             if (int.TryParse(contacttxt.Text, out contactresult))editedmember.ContactNumber = contactresult;
             if (int.TryParse(zipcodetxt.Text, out zipcoderesult)) editedmember.ZipCode = zipcoderesult;
 

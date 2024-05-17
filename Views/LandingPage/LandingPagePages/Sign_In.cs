@@ -25,7 +25,6 @@ namespace WorkHive.Views.LandingPage.LandingPagePages
         private Rectangle recbtnSignIn;
         private Rectangle recbtnForgotPass;
         private Rectangle recbtnSignUp;
-        private Rectangle recShowPassword;
         public Sign_In()
         {
              
@@ -38,7 +37,6 @@ namespace WorkHive.Views.LandingPage.LandingPagePages
             recbtnSignIn = new Rectangle(btnSignIn.Location, btnSignIn.Size);
             recbtnForgotPass = new Rectangle(btnForgotPass.Location, btnForgotPass.Size);
             recbtnSignUp = new Rectangle(btnSignUp.Location, btnSignUp.Size);
-            recShowPassword = new Rectangle(ShowPassword.Location, ShowPassword.Size);
         }
 
         private void Sign_In_Resize1(object sender, EventArgs e)
@@ -49,8 +47,6 @@ namespace WorkHive.Views.LandingPage.LandingPagePages
             resize_Control(btnSignIn, recbtnSignIn);
             resize_Control(btnForgotPass, recbtnForgotPass);
             resize_Control(btnSignUp, recbtnSignUp);
-            resize_Control(ShowPassword, recShowPassword);
-
         }
 
         private void resize_Control(Control c, Rectangle r)
@@ -93,6 +89,8 @@ namespace WorkHive.Views.LandingPage.LandingPagePages
             if (CurrentUser == null)
             {
                 new MessageBoxes("Wrong Credentials!");
+               /*Messageboxes Wrong = new Messageboxes();
+               Wrong.Show();*/
             }
             else if (CurrentUser.IsLeader)
             {
@@ -117,12 +115,12 @@ namespace WorkHive.Views.LandingPage.LandingPagePages
         }
         private void txtPassword_OnValueChanged(object sender, EventArgs e)
         {
-            Controller.Utilities.PasswordInitialVisibility(txtPassword);
+            Controller.Utility.PasswordInitialVisibility(txtPassword);
         }
 
         private void ShowPassword_Click(object sender, EventArgs e)
         {
-            Controller.Utilities.ShowPasswordFunction(txtPassword, ShowPassword);
+            Controller.Utility.ShowPasswordFunction(txtPassword, ShowPassword);
         }
     }
 }

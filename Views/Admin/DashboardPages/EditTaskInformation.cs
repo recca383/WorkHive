@@ -17,6 +17,7 @@ namespace WorkHive.Views.Admin.DashboardPages
     {
         TaskModel selectedtask;
         List<ProjectModel> projectModels = ProjectModelAccess.GetProjects();
+        
         public EditTaskInformation(TaskModel _selectedtask)
         {
             this.selectedtask = _selectedtask;
@@ -57,11 +58,17 @@ namespace WorkHive.Views.Admin.DashboardPages
 
             }, selectedtask.TaskID) ;
             new MessageBoxes("Edit Task Complete!!");
+            TasksView taskview = (TasksView)Parent.Parent;
+            taskview.btnAll_Click(sender, e);
             this.Parent.Controls.Remove(this);
+
+            
         }
 
         private void EditTaskExitbtn_Click(object sender, EventArgs e)
         {
+            TasksView taskview = (TasksView)Parent.Parent;
+            taskview.btnAll_Click(sender, e);
             this.Parent.Controls.Remove(this);
         }
     }

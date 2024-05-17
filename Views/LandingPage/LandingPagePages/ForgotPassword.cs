@@ -22,7 +22,8 @@ namespace WorkHive.Views.LandingPage.LandingPagePages
 
         private void btnExitForgotPassword_Click(object sender, EventArgs e)
         {
-            ParentForm.Close();
+            ParentForm.Dispose();
+            GC.Collect();
         }
 
         private void btnSend_Click(object sender, EventArgs e)

@@ -135,32 +135,32 @@ namespace WorkHive.Views.Member.DashboardPagesMember
 
         private void txtCurrentPassword_TextChanged(object sender, EventArgs e)
         {
-            Controller.Utilities.PasswordInitialVisibility(txtCurrentPasswordMember);
+            Controller.Utility.PasswordInitialVisibility(txtCurrentPasswordMember);
         }
 
         private void txtNewPassword_TextChanged(object sender, EventArgs e)
         {
-            Controller.Utilities.PasswordInitialVisibility(txtNewPasswordMember);
+            Controller.Utility.PasswordInitialVisibility(txtNewPasswordMember);
         }
 
         private void txtConfirmPassword_TextChanged(object sender, EventArgs e)
         {
-            Controller.Utilities.PasswordInitialVisibility(txtConfirmPasswordMember);
+            Controller.Utility.PasswordInitialVisibility(txtConfirmPasswordMember);
         }
 
         private void ShowPassword_Click(object sender, EventArgs e)
         {
-            Controller.Utilities.ShowPasswordFunction(txtCurrentPasswordMember, ShowPassword);
+            Controller.Utility.ShowPasswordFunction(txtCurrentPasswordMember, ShowPassword);
         }
 
         private void ShowPassword2_Click(object sender, EventArgs e)
         {
-            Controller.Utilities.ShowPasswordFunction(txtNewPasswordMember, ShowPassword2);
+            Controller.Utility.ShowPasswordFunction(txtNewPasswordMember, ShowPassword2);
         }
 
         private void ShowPassword3_Click(object sender, EventArgs e)
         {
-            Controller.Utilities.ShowPasswordFunction(txtConfirmPasswordMember, ShowPassword3);
+            Controller.Utility.ShowPasswordFunction(txtConfirmPasswordMember, ShowPassword3);
         }
 
     }

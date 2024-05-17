@@ -31,9 +31,6 @@ namespace WorkHive.Views.Admin
         private Rectangle rectxtConfirmPassword;
         private Rectangle rectxtCode;
         private Rectangle recbtnUpdatePassword;
-        private Rectangle recShowPassword;
-        private Rectangle recShowPassword2;
-        private Rectangle recShowPassword3;
 
         private string _code;
         MemberModel CurrentUser;
@@ -58,10 +55,6 @@ namespace WorkHive.Views.Admin
             rectxtConfirmPassword = new Rectangle(txtConfirmPassword.Location, txtConfirmPassword.Size);
             rectxtCode = new Rectangle(txtCode.Location, txtCode.Size);
             recbtnUpdatePassword = new Rectangle(btnUpdatePassword.Location, btnUpdatePassword.Size);
-            recShowPassword = new Rectangle(ShowPassword.Location, ShowPassword.Size);
-            recShowPassword2 = new Rectangle(ShowPassword2.Location, ShowPassword2.Size);
-            recShowPassword3 = new Rectangle(ShowPassword3.Location, ShowPassword3.Size);
-
         }
 
         private void ResetPassword_Resize(object sender, EventArgs e)
@@ -80,9 +73,6 @@ namespace WorkHive.Views.Admin
             resize_Control(txtConfirmPassword, rectxtConfirmPassword);
             resize_Control(txtCode, rectxtCode);
             resize_Control(btnUpdatePassword, recbtnUpdatePassword);
-            resize_Control(ShowPassword, recShowPassword);
-            resize_Control(ShowPassword2, recShowPassword2);
-            resize_Control(ShowPassword3, recShowPassword3);
         }
         private void resize_Control(Control c, Rectangle r)
         {
@@ -148,34 +138,32 @@ namespace WorkHive.Views.Admin
 
         private void txtCurrentPassword_TextChanged(object sender, EventArgs e)
         {
-            Controller.Utilities.PasswordInitialVisibility(txtCurrentPassword);
+            Controller.Utility.PasswordInitialVisibility(txtCurrentPassword);
         }
 
         private void txtNewPassword_TextChanged(object sender, EventArgs e)
         {
-            Controller.Utilities.PasswordInitialVisibility(txtNewPassword);
+            Controller.Utility.PasswordInitialVisibility(txtNewPassword);
         }
 
         private void txtConfirmPassword_TextChanged(object sender, EventArgs e)
         {
-            Controller.Utilities.PasswordInitialVisibility(txtConfirmPassword);
+            Controller.Utility.PasswordInitialVisibility(txtConfirmPassword);
         }
 
         private void ShowPassword_Click(object sender, EventArgs e)
         {
-            Controller.Utilities.ShowPasswordFunction(txtCurrentPassword, ShowPassword);
+            Controller.Utility.ShowPasswordFunction(txtCurrentPassword, ShowPassword);
         }
 
         private void ShowPassword2_Click(object sender, EventArgs e)
         {
-            Controller.Utilities.ShowPasswordFunction(txtNewPassword, ShowPassword2);
+            Controller.Utility.ShowPasswordFunction(txtNewPassword, ShowPassword2);
         }
 
         private void ShowPassword3_Click(object sender, EventArgs e)
         {
-            Controller.Utilities.ShowPasswordFunction(txtConfirmPassword, ShowPassword3);
+            Controller.Utility.ShowPasswordFunction(txtConfirmPassword, ShowPassword3);
         }
-
-       
     }
 }

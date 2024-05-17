@@ -56,6 +56,7 @@
             this.Name = "ForgotPasswordPage";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ForgotPasswordPage";
+            this.TopMost = true;
             this.ResumeLayout(false);
 
         }

@@ -93,7 +93,7 @@ namespace WorkHive.Views.Admin.DashboardPages
             
         }
 
-        private void btnAll_Click(object sender, EventArgs e)
+        public void btnAll_Click(object sender, EventArgs e)
         {
             var results = tasks.Where(a => a.TaskStatus != Status.Archived).ToList();
             RefreshList(results);
