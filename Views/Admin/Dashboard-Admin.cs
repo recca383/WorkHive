@@ -27,21 +27,24 @@ namespace WorkHive.Views
     public partial class Dashboard_Admin : Form
     {
 
-        readonly MemberModel CurrentUser;
+        MemberModel CurrentUser;
+        int ID;
 
         static DashboardNavigation dashboardNavigation;
         public Dashboard_Admin(MemberModel CurrentUser)
         {
+            this.ID = CurrentUser.ID;
             this.CurrentUser = CurrentUser;
             InitializeComponent();
-            Initialize_Controls_According_To_User();
+            RefreshPicture();
             Initialize_Navigation_Controls();
             
         }
 
              
-        private void Initialize_Controls_According_To_User()
+        public void RefreshPicture()
         {
+            CurrentUser = MemberModelAccess.GetMemberInfo(ID);
             var parent = Directory.GetParent(Directory.GetCurrentDirectory()).FullName;
             if (CurrentUser.Profile_Pic == " ")
             {

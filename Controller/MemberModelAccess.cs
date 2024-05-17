@@ -23,8 +23,8 @@ namespace WorkHive.Controller
             new MemberModel()
             {//sirpatrick121402@gmail.com
                 ID = 0,
-                Email = "Member",
-                FirstName = "Member1",
+                Email = "tatik",
+                FirstName = "tatik",
                 Password = "123",
                 IsLeader = false,
                 Profile_Pic = "Resources\\Default_Admin_Pics\\tatik.jpg",
@@ -133,6 +133,7 @@ namespace WorkHive.Controller
             var newcity = currentMember.City_Municipality;
             var newprovince = currentMember.Province;
             var newzipcode = currentMember.ZipCode;
+            var newpicture = currentMember.Profile_Pic;
 
             if(editedmember.Email != null) newEmail = editedmember.Email;
             if (editedmember.FirstName != null) newFirstName = editedmember.FirstName;
@@ -141,6 +142,7 @@ namespace WorkHive.Controller
             if (editedmember.ExtensionName != null) newExtensionName = editedmember.ExtensionName;
             if (editedmember.ContactNumber != 0) newContactNumber = editedmember.ContactNumber;
             if (editedmember.Sex != sex.None) newSex = editedmember.Sex;
+            if (editedmember.Profile_Pic != default) newpicture = editedmember.Profile_Pic;
             if (editedmember.BloodType != bloodType.None) newbloodType = editedmember.BloodType;
             if (editedmember.Birthdate != DateTime.Now) newbirthdate = editedmember.Birthdate;
             if (editedmember.HouseNumber != null) newhousenumber = editedmember.HouseNumber;
@@ -149,6 +151,7 @@ namespace WorkHive.Controller
             if (editedmember.City_Municipality != null) newcity = editedmember.City_Municipality;
             if (editedmember.Province != null) newprovince = editedmember.Province;
             if (editedmember.ZipCode != 0) newzipcode = editedmember.ZipCode;
+            
 
             memberModel.Remove(GetMemberInfo(id));
             memberModel.Add(new MemberModel
@@ -165,7 +168,7 @@ namespace WorkHive.Controller
                 Birthdate = newbirthdate,
                 Password = currentMember.Password,
                 IsLeader = currentMember.IsLeader,
-                Profile_Pic = currentMember.Profile_Pic,
+                Profile_Pic = newpicture,
                 HouseNumber = newhousenumber,
                 Street = newstreet,
                 Barangay = newbarangay,

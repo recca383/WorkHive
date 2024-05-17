@@ -16,6 +16,7 @@ namespace WorkHive.Views.Member.DashboardPagesMember
     public partial class ProfileEditMember : UserControl
     {
         MemberModel currentUser;
+        private string newPicture = "";
         public ProfileEditMember(MemberModel currentModel)
         {
             this.currentUser = currentModel;
@@ -26,6 +27,11 @@ namespace WorkHive.Views.Member.DashboardPagesMember
         {
             currentUser = MemberModelAccess.GetMemberInfo(currentUser.ID);
             var parent = Directory.GetParent(Directory.GetCurrentDirectory()).FullName;
+            
+            if (currentUser.Profile_Pic.Contains("C:\\") || currentUser.Profile_Pic.Contains("D:\\"))
+            {
+                MemberPictureBox.Image = Image.FromFile(currentUser.Profile_Pic);
+            }
             if (currentUser.Profile_Pic == " ")
             {
                 MemberPictureBox.Image = Image.FromFile(Path.Combine(Path.GetDirectoryName(parent), "Resources\\Default_Pics\\Userdefault.png"));
@@ -76,6 +82,7 @@ namespace WorkHive.Views.Member.DashboardPagesMember
             EditPanel.Enabled = true;
             btnCancelEdit1.Visible = true;
             btnConfirmEdit1.Visible = true;
+            Editpicture.Visible = true;
         }
 
         private void btnCancelEdit_Click(object sender, EventArgs e)
@@ -104,6 +111,7 @@ namespace WorkHive.Views.Member.DashboardPagesMember
             editedmember.Barangay = barangaytxt.Text;
             editedmember.City_Municipality = citymunicipaltxt.Text;
             editedmember.Province = provincetxt.Text;
+            editedmember.Profile_Pic = newPicture;
 
 
             if (int.TryParse(Membercontacttxt.Text, out contactresult)) editedmember.ContactNumber = contactresult;
@@ -112,11 +120,26 @@ namespace WorkHive.Views.Member.DashboardPagesMember
             MemberModelAccess.EditMemberInfo(editedmember, currentUser.ID);
             EditPanel.Enabled = false;
             RefreshValues();
+            Dashboard_Member dashboard = (Dashboard_Member)Parent.Parent;
+            dashboard.RefreshImage();
         }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
+        private void Editpicture_Click(object sender, EventArgs e)
         {
+            using (OpenFileDialog openFileDialog = new OpenFileDialog())
+            {
+                openFileDialog.InitialDirectory = "C:\\";
+                openFileDialog.Filter = "Image Files|*.jpg;*.jpeg;*.png;*.gif;*.tif;| All files (*.*)|*.*";
+                openFileDialog.Title = "Select Profile Picture";
 
+                if (openFileDialog.ShowDialog() == DialogResult.OK)
+                {
+                    //Get the path of specified file
+                    newPicture = openFileDialog.FileName;
+
+                }
+                MemberPictureBox.Image = Image.FromFile(newPicture);
+            }
+            
         }
     }
 }

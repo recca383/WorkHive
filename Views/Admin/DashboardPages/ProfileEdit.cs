@@ -17,6 +17,7 @@ namespace WorkHive.Views.Admin
     {
         int currentUserID;
         MemberModel currentUser;
+        string newPicture = "";
         
         public ProfileEdit(MemberModel _Currentuser)
         {
@@ -29,7 +30,11 @@ namespace WorkHive.Views.Admin
         {
             currentUser = MemberModelAccess.GetMemberInfo(currentUserID);
             var parent = Directory.GetParent(Directory.GetCurrentDirectory()).FullName;
-            if (currentUser.Profile_Pic == " ")
+            if (currentUser.Profile_Pic.Contains("C:\\") || currentUser.Profile_Pic.Contains("D:\\"))
+            {
+                ProfilePic.Image = Image.FromFile(currentUser.Profile_Pic);
+            }
+            else if (currentUser.Profile_Pic == " ")
             {
                 ProfilePic.Image = Image.FromFile(Path.Combine(Path.GetDirectoryName(parent), "Resources\\Default_Pics\\Userdefault.png"));
             }
@@ -102,6 +107,7 @@ namespace WorkHive.Views.Admin
                 editedmember.Barangay = barangaytxt.Text;
                 editedmember.City_Municipality = citymunicipaltxt.Text;
                 editedmember.Province = provincetxt.Text;
+                editedmember.Profile_Pic = newPicture;
 
             
             if (int.TryParse(contacttxt.Text, out contactresult))editedmember.ContactNumber = contactresult;
@@ -110,6 +116,9 @@ namespace WorkHive.Views.Admin
             MemberModelAccess.EditMemberInfo(editedmember, currentUser.ID);
             EditPanel.Enabled = false;
             RefreshValues();
+            Dashboard_Admin dashboard = (Dashboard_Admin) Parent.Parent;
+            dashboard.RefreshPicture();
+
         }
 
         private void btnEdit_Click(object sender, EventArgs e)
@@ -117,6 +126,25 @@ namespace WorkHive.Views.Admin
             EditPanel.Enabled = true;
             btnCancelEdit.Visible = true;
             btnConfirmEdit.Visible = true;
+            Editpicture.Visible = true;
+        }
+        private void Editpicture_Click(object sender, EventArgs e)
+        {
+            using (OpenFileDialog openFileDialog = new OpenFileDialog())
+            {
+                openFileDialog.InitialDirectory = "C:\\";
+                openFileDialog.Filter = "Image Files|*.jpg;*.jpeg;*.png;*.gif;*.tif;| All files (*.*)|*.*";
+                openFileDialog.Title = "Select Profile Picture";
+
+                if (openFileDialog.ShowDialog() == DialogResult.OK)
+                {
+                    //Get the path of specified file
+                    newPicture = openFileDialog.FileName;
+
+                }
+                ProfilePic.Image = Image.FromFile(newPicture);
+            }
+
         }
     }
 }

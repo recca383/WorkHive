@@ -25,19 +25,27 @@ namespace WorkHive.Views.Member.DashboardPagesMember
 {
     public partial class Dashboard_Member : Form
     {
+        int ID;
         MemberModel CurrentUser;
+        
         private static DashboardNavigation dashboardNavigation;
         public Dashboard_Member(MemberModel CurrentUser)
         {
-            this.CurrentUser = CurrentUser;
+            this.ID = CurrentUser.ID;
             InitializeComponent();
+            RefreshImage();
             Initialize_Navigation_Controls();
-            Initialize_Controls_According_To_User();
+            
         }
-        private void Initialize_Controls_According_To_User()
+        public void RefreshImage()
         {
+            CurrentUser = MemberModelAccess.GetMemberInfo(ID);
             var parent = Directory.GetParent(Directory.GetCurrentDirectory()).FullName;
-            if (CurrentUser.Profile_Pic == " ")
+            if (CurrentUser.Profile_Pic.Contains("C:\\") || CurrentUser.Profile_Pic.Contains("D:\\"))
+            {
+                ProfilePicBoxMember.Image = Image.FromFile(CurrentUser.Profile_Pic);
+            }
+            else if (CurrentUser.Profile_Pic == " ")
             {
                 ProfilePicBoxMember.Image = Image.FromFile(Path.Combine(Path.GetDirectoryName(parent), "Resources\\Default_Pics\\Userdefault.png"));
             }
