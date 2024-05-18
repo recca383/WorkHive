@@ -547,6 +547,12 @@
     <Compile Include="Views\Cards\AdminCard.Designer.cs">
       <DependentUpon>AdminCard.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\Cards\MemberTaskCard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Cards\MemberTaskCard.Designer.cs">
+      <DependentUpon>MemberTaskCard.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\Cards\ProfileCard.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -713,6 +719,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Views\Cards\AdminCard.resx">
       <DependentUpon>AdminCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Cards\MemberTaskCard.resx">
+      <DependentUpon>MemberTaskCard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\Cards\ProfileCard.resx">
       <DependentUpon>ProfileCard.cs</DependentUpon>
@@ -909,6 +918,7 @@
     <None Include="Resources\Cancelbtn.png" />
     <None Include="Resources\Button - Project.png" />
     <None Include="Resources\BirthdayCard.png" />
+    <None Include="Resources\Card - Tasks2.png" />
     <Content Include="Resources\Default_Pics\Userdefault.png" />
     <None Include="Resources\logo1.png" />
     <None Include="Resources\logo name1.png" />
