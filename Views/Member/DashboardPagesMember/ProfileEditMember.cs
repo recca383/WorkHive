@@ -42,10 +42,10 @@ namespace WorkHive.Views.Member.DashboardPagesMember
             }
 
             Namelbl1.Text = currentUser.FullName;
-            Positionlbl1.Text = "Member";
+            Positionlbl1.Text = "MEMBER";
 
             //enum of positions
-            memberworklbl1.Text = "Manager";
+            //memberworklbl1.Text = "Manager";
 
             MemberBirthdatelbl1.Text = currentUser.Birthdate.ToString();
             Membercontactlbl2.Text = currentUser.ContactNumber.ToString();

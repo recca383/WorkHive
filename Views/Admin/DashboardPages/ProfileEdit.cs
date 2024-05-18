@@ -44,10 +44,10 @@ namespace WorkHive.Views.Admin
             }
 
             Namelbl.Text = currentUser.FullName;
-            Positionlbl.Text = "Leader";
+            Positionlbl.Text = "ADMIN";
 
             //enum of positions
-            worklbl.Text = "Manager";
+           // worklbl.Text = "Manager";
             
             Birthdatelbl.Text = (currentUser.Birthdate.ToString("MMMM dd, yyyy"));
             contactlbl.Text = currentUser.ContactNumber.ToString();

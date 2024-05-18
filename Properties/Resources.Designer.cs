@@ -63,6 +63,16 @@ namespace WorkHive.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap AddTask {
+            get {
+                object obj = ResourceManager.GetObject("AddTask", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap AdminCard_RIGHT {
             get {
                 object obj = ResourceManager.GetObject("AdminCard RIGHT", resourceCulture);
