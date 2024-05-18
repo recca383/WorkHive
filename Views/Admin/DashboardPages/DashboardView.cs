@@ -107,7 +107,7 @@ namespace WorkHive.Views.Pages
             lblFinishedTasks.Text = finishedtasks
                 .ToString();
 
-            AverageProgress.Value = (int)Math.Floor(((decimal)finishedtasks / totaltasks * 100));
+           // AverageProgress.Value = (int)Math.Floor(((decimal)finishedtasks / totaltasks * 100));
         }
 
         private void RefreshButton_Click(object sender, EventArgs e)
