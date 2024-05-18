@@ -37,7 +37,7 @@ namespace WorkHive.Views.Admin
             }
 
             AdminName.Text = CurrentUser.FullName;
-            Positionlbl.Text = "Leader";
+            Positionlbl.Text = "ADMIN";
 
             
         }

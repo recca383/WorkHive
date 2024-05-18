@@ -79,7 +79,7 @@
             this.ClientSize = new System.Drawing.Size(1503, 809);
             this.Controls.Add(this.LandingPageViewPanel);
             this.Controls.Add(this.panel1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.ImeMode = System.Windows.Forms.ImeMode.Off;
             this.Margin = new System.Windows.Forms.Padding(5);
