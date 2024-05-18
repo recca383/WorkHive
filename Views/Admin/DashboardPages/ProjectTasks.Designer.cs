@@ -111,8 +111,8 @@
             // 
             this.Project_Panel.BackColor = System.Drawing.Color.Transparent;
             this.Project_Panel.ForeColor = System.Drawing.Color.Transparent;
-            this.Project_Panel.Location = new System.Drawing.Point(285, 60);
-            this.Project_Panel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Project_Panel.Location = new System.Drawing.Point(285, 4);
+            this.Project_Panel.Margin = new System.Windows.Forms.Padding(4);
             this.Project_Panel.Name = "Project_Panel";
             this.Project_Panel.Size = new System.Drawing.Size(159, 150);
             this.Project_Panel.TabIndex = 19;
@@ -137,7 +137,7 @@
             this.bunifuVScrollBar1.DurationBeforeShrink = 2000;
             this.bunifuVScrollBar1.LargeChange = 10;
             this.bunifuVScrollBar1.Location = new System.Drawing.Point(1207, 90);
-            this.bunifuVScrollBar1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.bunifuVScrollBar1.Margin = new System.Windows.Forms.Padding(5);
             this.bunifuVScrollBar1.Maximum = 100;
             this.bunifuVScrollBar1.Minimum = 0;
             this.bunifuVScrollBar1.MinimumThumbLength = 18;
@@ -162,7 +162,7 @@
             this.TasksFlow.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.TasksFlow.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
             this.TasksFlow.Location = new System.Drawing.Point(24, 90);
-            this.TasksFlow.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TasksFlow.Margin = new System.Windows.Forms.Padding(4);
             this.TasksFlow.Name = "TasksFlow";
             this.TasksFlow.Size = new System.Drawing.Size(1181, 631);
             this.TasksFlow.TabIndex = 20;

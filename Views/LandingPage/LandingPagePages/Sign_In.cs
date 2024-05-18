@@ -20,19 +20,19 @@ namespace WorkHive.Views.LandingPage.LandingPagePages
 
         private Size SigninOriginalSize;
         private Rectangle reclabel3;
-        private Rectangle rectxtEmail;
+        //private Rectangle rectxtEmail;
         private Rectangle rectxtPassword;
         private Rectangle recbtnSignIn;
         private Rectangle recbtnForgotPass;
         private Rectangle recbtnSignUp;
+
         public Sign_In()
-        {
-             
+        {        
             InitializeComponent();
             this.Resize += Sign_In_Resize1;
             SigninOriginalSize = this.Size;
             reclabel3 = new Rectangle(label3.Location, label3.Size);
-            rectxtEmail = new Rectangle(txtEmail.Location, txtEmail.Size);
+            //rectxtEmail = new Rectangle(txtEmail.Location, txtEmail.Size);
             rectxtPassword = new Rectangle(txtPassword.Location, txtPassword.Size);
             recbtnSignIn = new Rectangle(btnSignIn.Location, btnSignIn.Size);
             recbtnForgotPass = new Rectangle(btnForgotPass.Location, btnForgotPass.Size);
@@ -41,8 +41,9 @@ namespace WorkHive.Views.LandingPage.LandingPagePages
 
         private void Sign_In_Resize1(object sender, EventArgs e)
         {
+           // SigninOriginalSize = this.Size;
             resize_Control(label3, reclabel3);
-            resize_Control(txtEmail, rectxtEmail);
+            //resize_Control(txtEmail, rectxtEmail);
             resize_Control(txtPassword, rectxtPassword);
             resize_Control(btnSignIn, recbtnSignIn);
             resize_Control(btnForgotPass, recbtnForgotPass);

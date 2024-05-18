@@ -809,6 +809,11 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\LandingPage.png" />
+    <None Include="Resources\Tasks - DONE SOLO.png" />
+    <None Include="Resources\Tasks - PENDING SOLO.png" />
+    <None Include="Resources\Tasks - LOCK SOLO.png" />
+    <None Include="Resources\Tasks - BG.png" />
     <None Include="Resources\Tasks - CHECKED.png" />
     <None Include="Resources\Tasks - LOCK.png" />
     <None Include="Resources\eye closed.png" />

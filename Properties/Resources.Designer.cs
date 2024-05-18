@@ -453,6 +453,16 @@ namespace WorkHive.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap LandingPage {
+            get {
+                object obj = ResourceManager.GetObject("LandingPage", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap logo {
             get {
                 object obj = ResourceManager.GetObject("logo", resourceCulture);
@@ -823,6 +833,16 @@ namespace WorkHive.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Tasks___BG {
+            get {
+                object obj = ResourceManager.GetObject("Tasks - BG", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Tasks___CHECKED {
             get {
                 object obj = ResourceManager.GetObject("Tasks - CHECKED", resourceCulture);
@@ -833,9 +853,39 @@ namespace WorkHive.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Tasks___DONE_SOLO {
+            get {
+                object obj = ResourceManager.GetObject("Tasks - DONE SOLO", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Tasks___LOCK {
             get {
                 object obj = ResourceManager.GetObject("Tasks - LOCK", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Tasks___LOCK_SOLO {
+            get {
+                object obj = ResourceManager.GetObject("Tasks - LOCK SOLO", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Tasks___PENDING_SOLO {
+            get {
+                object obj = ResourceManager.GetObject("Tasks - PENDING SOLO", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
