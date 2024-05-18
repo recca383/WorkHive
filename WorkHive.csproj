@@ -414,6 +414,12 @@
     <Compile Include="Controller\ProjectModelAccess.cs" />
     <Compile Include="Controller\Utility.cs" />
     <Compile Include="Model\ProjectModel.cs" />
+    <Compile Include="Views\Admin\DashboardPages\BirthdayCard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Admin\DashboardPages\BirthdayCard.Designer.cs">
+      <DependentUpon>BirthdayCard.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\Admin\DashboardPages\CalendarCurrentDays.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -472,6 +478,12 @@
     </Compile>
     <Compile Include="Views\Admin\DashboardPages\MemberView.Designer.cs">
       <DependentUpon>MemberView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Admin\DashboardPages\ProjectProgress.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Admin\DashboardPages\ProjectProgress.Designer.cs">
+      <DependentUpon>ProjectProgress.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\Admin\DashboardPages\ProjectSummary.cs">
       <SubType>UserControl</SubType>
@@ -637,6 +649,9 @@
     <Compile Include="Views\Member\DashboardPagesMember\TaskViewMember.Designer.cs">
       <DependentUpon>TaskViewMember.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Views\Admin\DashboardPages\BirthdayCard.resx">
+      <DependentUpon>BirthdayCard.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\Admin\DashboardPages\CalendarCurrentDays.resx">
       <DependentUpon>CalendarCurrentDays.cs</DependentUpon>
     </EmbeddedResource>
@@ -660,6 +675,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Views\Admin\DashboardPages\MemberView.resx">
       <DependentUpon>MemberView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Admin\DashboardPages\ProjectProgress.resx">
+      <DependentUpon>ProjectProgress.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\Admin\DashboardPages\ProjectSummary.resx">
       <DependentUpon>ProjectSummary.cs</DependentUpon>
@@ -890,6 +908,7 @@
     <None Include="Resources\Confirmbtn.png" />
     <None Include="Resources\Cancelbtn.png" />
     <None Include="Resources\Button - Project.png" />
+    <None Include="Resources\BirthdayCard.png" />
     <Content Include="Resources\Default_Pics\Userdefault.png" />
     <None Include="Resources\logo1.png" />
     <None Include="Resources\logo name1.png" />
