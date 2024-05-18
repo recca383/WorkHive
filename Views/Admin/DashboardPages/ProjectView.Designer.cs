@@ -40,19 +40,21 @@
             this.Dashboardlbl.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Dashboardlbl.AutoSize = true;
             this.Dashboardlbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Dashboardlbl.Location = new System.Drawing.Point(11, 9);
+            this.Dashboardlbl.Location = new System.Drawing.Point(15, 11);
+            this.Dashboardlbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Dashboardlbl.Name = "Dashboardlbl";
-            this.Dashboardlbl.Size = new System.Drawing.Size(195, 39);
+            this.Dashboardlbl.Size = new System.Drawing.Size(187, 51);
             this.Dashboardlbl.TabIndex = 1;
-            this.Dashboardlbl.Text = "Dashboard";
+            this.Dashboardlbl.Text = "Projects";
             // 
             // ProjectsFlow
             // 
             this.ProjectsFlow.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.ProjectsFlow.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-            this.ProjectsFlow.Location = new System.Drawing.Point(18, 73);
+            this.ProjectsFlow.Location = new System.Drawing.Point(24, 90);
+            this.ProjectsFlow.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ProjectsFlow.Name = "ProjectsFlow";
-            this.ProjectsFlow.Size = new System.Drawing.Size(886, 513);
+            this.ProjectsFlow.Size = new System.Drawing.Size(1181, 631);
             this.ProjectsFlow.TabIndex = 21;
             this.ProjectsFlow.WrapContents = false;
             // 
@@ -75,8 +77,8 @@
             this.bunifuVScrollBar1.BorderThickness = 1;
             this.bunifuVScrollBar1.DurationBeforeShrink = 2000;
             this.bunifuVScrollBar1.LargeChange = 10;
-            this.bunifuVScrollBar1.Location = new System.Drawing.Point(910, 73);
-            this.bunifuVScrollBar1.Margin = new System.Windows.Forms.Padding(4);
+            this.bunifuVScrollBar1.Location = new System.Drawing.Point(1213, 90);
+            this.bunifuVScrollBar1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.bunifuVScrollBar1.Maximum = 100;
             this.bunifuVScrollBar1.Minimum = 0;
             this.bunifuVScrollBar1.MinimumThumbLength = 18;
@@ -87,11 +89,11 @@
             this.bunifuVScrollBar1.ScrollBarBorderColor = System.Drawing.Color.Silver;
             this.bunifuVScrollBar1.ScrollBarColor = System.Drawing.Color.Silver;
             this.bunifuVScrollBar1.ShrinkSizeLimit = 3;
-            this.bunifuVScrollBar1.Size = new System.Drawing.Size(18, 509);
+            this.bunifuVScrollBar1.Size = new System.Drawing.Size(24, 626);
             this.bunifuVScrollBar1.SmallChange = 1;
             this.bunifuVScrollBar1.TabIndex = 22;
             this.bunifuVScrollBar1.ThumbColor = System.Drawing.Color.Gray;
-            this.bunifuVScrollBar1.ThumbLength = 50;
+            this.bunifuVScrollBar1.ThumbLength = 61;
             this.bunifuVScrollBar1.ThumbMargin = 1;
             this.bunifuVScrollBar1.ThumbStyle = Bunifu.UI.WinForms.BunifuVScrollBar.ThumbStyles.Inset;
             this.bunifuVScrollBar1.Value = 0;
@@ -100,23 +102,24 @@
             // 
             this.ProjectSummary.BackColor = System.Drawing.Color.Transparent;
             this.ProjectSummary.ForeColor = System.Drawing.Color.Transparent;
-            this.ProjectSummary.Location = new System.Drawing.Point(167, 51);
+            this.ProjectSummary.Location = new System.Drawing.Point(223, 63);
+            this.ProjectSummary.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ProjectSummary.Name = "ProjectSummary";
-            this.ProjectSummary.Size = new System.Drawing.Size(640, 301);
+            this.ProjectSummary.Size = new System.Drawing.Size(853, 370);
             this.ProjectSummary.TabIndex = 19;
             this.ProjectSummary.ControlRemoved += new System.Windows.Forms.ControlEventHandler(this.AddTaskPanel_ControlRemoved);
             // 
             // ProjectView
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.ProjectSummary);
             this.Controls.Add(this.bunifuVScrollBar1);
             this.Controls.Add(this.ProjectsFlow);
             this.Controls.Add(this.Dashboardlbl);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "ProjectView";
-            this.Size = new System.Drawing.Size(932, 586);
+            this.Size = new System.Drawing.Size(1243, 721);
             this.ResumeLayout(false);
             this.PerformLayout();
 

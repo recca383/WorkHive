@@ -104,7 +104,7 @@ namespace WorkHive.Views.Pages
             }
             averageprogress = totalprogress / projects.Count();
 
-            AverageProgress.Value = averageprogress;
+           // AverageProgress.Value = averageprogress;
 
             lblTotalMembers.Text = members
                 .Count()

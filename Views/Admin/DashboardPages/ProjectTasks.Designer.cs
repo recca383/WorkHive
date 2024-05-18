@@ -92,9 +92,9 @@
             this.TasksName.Location = new System.Drawing.Point(15, 11);
             this.TasksName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.TasksName.Name = "TasksName";
-            this.TasksName.Size = new System.Drawing.Size(143, 51);
+            this.TasksName.Size = new System.Drawing.Size(207, 51);
             this.TasksName.TabIndex = 12;
-            this.TasksName.Text = "Tasks";
+            this.TasksName.Text = "All Tasks";
             // 
             // pictureBox5
             // 

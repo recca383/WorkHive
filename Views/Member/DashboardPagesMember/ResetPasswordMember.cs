@@ -32,6 +32,9 @@ namespace WorkHive.Views.Member.DashboardPagesMember
         private Rectangle rectxtConfirmPasswordMember;
         private Rectangle rectxtCode;
         private Rectangle recbtnUpdatePassword;
+        private Rectangle recShowPassword;
+        private Rectangle recShowPassword2;
+        private Rectangle recShowPassword3;
 
         MemberModel CurrentUser;
         private string _code;
@@ -56,6 +59,9 @@ namespace WorkHive.Views.Member.DashboardPagesMember
             rectxtConfirmPasswordMember = new Rectangle(txtConfirmPasswordMember.Location, txtConfirmPasswordMember.Size);
             rectxtCode = new Rectangle(txtCode.Location, txtCode.Size);
             recbtnUpdatePassword = new Rectangle(btnUpdatePassword.Location, btnUpdatePassword.Size);
+            recShowPassword = new Rectangle(ShowPassword.Location, ShowPassword.Size);
+            recShowPassword2 = new Rectangle(ShowPassword2.Location, ShowPassword2.Size);
+            recShowPassword3 = new Rectangle(ShowPassword3.Location, ShowPassword3.Size);
         }
         private void ResetPasswordMember_Resize(object sender, EventArgs e)
         {
@@ -73,6 +79,9 @@ namespace WorkHive.Views.Member.DashboardPagesMember
             resize_Control(txtConfirmPasswordMember, rectxtConfirmPasswordMember);
             resize_Control(txtCode, rectxtCode);
             resize_Control(btnUpdatePassword, recbtnUpdatePassword);
+            resize_Control(ShowPassword, recShowPassword);
+            resize_Control(ShowPassword2, recShowPassword2);
+            resize_Control(ShowPassword3, recShowPassword3);
         }
 
         private void resize_Control(Control c, Rectangle r)
