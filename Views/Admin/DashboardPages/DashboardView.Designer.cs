@@ -740,7 +740,6 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "DashboardView";
             this.Size = new System.Drawing.Size(1243, 721);
-            this.Load += new System.EventHandler(this.DashboardView_Load);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);

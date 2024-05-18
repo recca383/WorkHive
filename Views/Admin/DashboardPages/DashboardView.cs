@@ -51,6 +51,8 @@ namespace WorkHive.Views.Pages
             recpanel5 = new Rectangle(panel5.Location, panel5.Size);
             recpanel2 = new Rectangle(panel2.Location, panel2.Size);
             recpanel3 = new Rectangle(panel3.Location, panel3.Size);
+
+            Dashboard_Admin.OnAdmin += RefreshElements;
         }
 
         private void DashboardView_Resize(object sender, EventArgs e)
@@ -81,43 +83,31 @@ namespace WorkHive.Views.Pages
             c.Size = new Size(newWidth, newHeight);
 
         }
-        private void RefreshElements()
+        public void RefreshElements()
         {
             TasksSummary.Controls.Clear();
             projects = ProjectModelAccess.GetProjects();
             tasks = TaskModelAccess.GetTaskModel();
             members = MemberModelAccess.GetMemberModel();
-            
-            int totalprogress = 0;
-            int averageprogress = 0;
-            
-            foreach (var project in projects)
-            {
-                if (project.Tasks != null)
-                {
-                    totalprogress += ProjectModelAccess.GetProjectProgress(project.Id);
-                    foreach (var task in project.Tasks)
-                    {
-                        TasksSummary.Controls.Add(new TaskSummaryCard(task.TaskName, task.Deadline, task.TaskID));
-                    }
-                }
-            }
-            averageprogress = totalprogress / projects.Count();
 
-            AverageProgress.Value = averageprogress;
+            
+            int finishedtasks = tasks
+                .Where(t => t.TaskStatus == Status.Finished)
+                .Count();
+            int activetasks = tasks
+                .Where(t => t.TaskStatus == Status.Ongoing)
+                .Count();
+            int totaltasks = activetasks + finishedtasks;
 
             lblTotalMembers.Text = members
                 .Count()
                 .ToString();
-            lblActiveTasks.Text = tasks
-                .Where(t => t.TaskStatus == Status.Ongoing)
-                .Count()
+            lblActiveTasks.Text = activetasks
                 .ToString();
-            lblFinishedTasks.Text = tasks
-                .Where(t => t.TaskStatus == Status.Finished)
-                .Count()
+            lblFinishedTasks.Text = finishedtasks
                 .ToString();
 
+            AverageProgress.Value = (int)Math.Floor(((decimal)finishedtasks / totaltasks * 100));
         }
 
         private void RefreshButton_Click(object sender, EventArgs e)
@@ -125,9 +115,5 @@ namespace WorkHive.Views.Pages
             RefreshElements();
         }
 
-        private void DashboardView_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }

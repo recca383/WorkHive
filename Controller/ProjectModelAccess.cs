@@ -38,7 +38,7 @@ namespace WorkHive.Controller
                 int totaltasks = currentproject.Tasks.Count();
                 int finishedtasks = currentproject.Tasks.Count(t => t.TaskStatus == Status.Finished);
 
-                int averageprogress = finishedtasks / totaltasks;
+                int averageprogress = (int)((float)finishedtasks / totaltasks)*100;
                 currentproject.Progress = averageprogress;
 
                 return averageprogress;
