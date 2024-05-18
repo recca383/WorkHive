@@ -118,6 +118,21 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="label6.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAe0AAAAyCAYAAABxq4O1AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAB3SURBVHhe7cExAQAAAMKg9U9tCj8gAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA4qgGBaQABrIDeHQAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="btnSignIn.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAQwAAAAgCAYAAADnlUZqAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAA4SURBVHhe7cGBAAAAAMOg+VNf4AhVAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAHDWGIAABW4btpAAAAABJRU5ErkJggg==
+</value>
+  </data>
   <data name="btnSignUp.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAcoAAAAlCAYAAADC+ak/AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
@@ -448,25 +463,10 @@
         193PfMCp099x552JwPHvttv+P2BZJKB939k8AAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="btnSignIn.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAAQwAAAAgCAYAAADnlUZqAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAA4SURBVHhe7cGBAAAAAMOg+VNf4AhVAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAHDWGIAABW4btpAAAAABJRU5ErkJggg==
-</value>
-  </data>
-  <data name="label6.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAAe0AAAAyCAYAAABxq4O1AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAB3SURBVHhe7cExAQAAAMKg9U9tCj8gAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA4qgGBaQABrIDeHQAAAABJRU5ErkJggg==
-</value>
-  </data>
-  <data name="ShowPassword.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="ShowPassword2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAADMAAAA4CAYAAABQZsDpAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EQAACxEBf2RfkQAAA0NJREFUaEPtmO1x2zAMhjNCRvDPnC06kCfoCN2gGSEbNBtEG8QbpBvUG7gbJBt4
+        DAAACwwBP0AiyAAAA0NJREFUaEPtmO1x2zAMhjNCRvDPnC06kCfoCN2gGSEbNBtEG8QbpBvUG7gbJBt4
         hPYFBKcSCZKiLbu9HJ87XFoThEjigx83lUqlUqlUKpXPy2JBt8slkXP0sF7R47qhp6Pwb01DX1hH1f8/
         eHA8cNfQz3XTHiC/80L7ZkkdT07N/Ft4IDoBY7AFsmrf3JIe1Ox1kTDKTOK+ad/xd4eBbiE/+N/47ddQ
         J5BrTwre+G4OxHF4bTqCt4jSOUFYjPUa+eTaN8uWW9HL3R0tVH1+2DhWbh98HAMiR19VrRiePOzsArvs
@@ -483,10 +483,10 @@
         UqlUPh03N38Ad/kdi2vGTpEAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="ShowPassword2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="ShowPassword.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAADMAAAA4CAYAAABQZsDpAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EAAACxABrSO9dQAAA0NJREFUaEPtmO1x2zAMhjNCRvDPnC06kCfoCN2gGSEbNBtEG8QbpBvUG7gbJBt4
+        DAAACwwBP0AiyAAAA0NJREFUaEPtmO1x2zAMhjNCRvDPnC06kCfoCN2gGSEbNBtEG8QbpBvUG7gbJBt4
         hPYFBKcSCZKiLbu9HJ87XFoThEjigx83lUqlUqlUKpXPy2JBt8slkXP0sF7R47qhp6Pwb01DX1hH1f8/
         eHA8cNfQz3XTHiC/80L7ZkkdT07N/Ft4IDoBY7AFsmrf3JIe1Ox1kTDKTOK+ad/xd4eBbiE/+N/47ddQ
         J5BrTwre+G4OxHF4bTqCt4jSOUFYjPUa+eTaN8uWW9HL3R0tVH1+2DhWbh98HAMiR19VrRiePOzsArvs

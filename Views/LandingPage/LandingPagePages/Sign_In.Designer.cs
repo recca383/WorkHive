@@ -29,29 +29,29 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Sign_In));
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges15 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties29 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties30 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges16 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties31 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties32 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties3 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties4 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
             this.label3 = new System.Windows.Forms.Label();
             this.txtPassword = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.txtEmail = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.ShowPassword = new WorkHive.Views.CircularPictureBox();
             this.btnForgotPass = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.btnSignUp = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.btnSignIn = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.ShowPassword = new WorkHive.Views.CircularPictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.ShowPassword)).BeginInit();
             this.SuspendLayout();
             // 
             // label3
             // 
             this.label3.Font = new System.Drawing.Font("Microsoft YaHei UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(46, 120);
+            this.label3.Location = new System.Drawing.Point(60, 126);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(223, 52);
+            this.label3.Size = new System.Drawing.Size(264, 52);
             this.label3.TabIndex = 7;
             this.label3.Text = "Welcome!";
             // 
@@ -73,11 +73,11 @@
             this.txtPassword.LineIdleColor = System.Drawing.Color.Gold;
             this.txtPassword.LineMouseHoverColor = System.Drawing.Color.Crimson;
             this.txtPassword.LineThickness = 3;
-            this.txtPassword.Location = new System.Drawing.Point(56, 335);
+            this.txtPassword.Location = new System.Drawing.Point(69, 348);
             this.txtPassword.Margin = new System.Windows.Forms.Padding(5);
             this.txtPassword.MaxLength = 32767;
             this.txtPassword.Name = "txtPassword";
-            this.txtPassword.Size = new System.Drawing.Size(538, 34);
+            this.txtPassword.Size = new System.Drawing.Size(500, 46);
             this.txtPassword.TabIndex = 2;
             this.txtPassword.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.txtPassword.OnValueChanged += new System.EventHandler(this.txtPassword_OnValueChanged);
@@ -98,26 +98,13 @@
             this.txtEmail.LineIdleColor = System.Drawing.Color.Gold;
             this.txtEmail.LineMouseHoverColor = System.Drawing.Color.Crimson;
             this.txtEmail.LineThickness = 3;
-            this.txtEmail.Location = new System.Drawing.Point(56, 273);
+            this.txtEmail.Location = new System.Drawing.Point(69, 279);
             this.txtEmail.Margin = new System.Windows.Forms.Padding(5);
             this.txtEmail.MaxLength = 32767;
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(538, 35);
+            this.txtEmail.Size = new System.Drawing.Size(500, 46);
             this.txtEmail.TabIndex = 1;
             this.txtEmail.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            // 
-            // ShowPassword
-            // 
-            this.ShowPassword.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.ShowPassword.Image = global::WorkHive.Properties.Resources.eye_open;
-            this.ShowPassword.Location = new System.Drawing.Point(558, 335);
-            this.ShowPassword.Margin = new System.Windows.Forms.Padding(4);
-            this.ShowPassword.Name = "ShowPassword";
-            this.ShowPassword.Size = new System.Drawing.Size(36, 27);
-            this.ShowPassword.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.ShowPassword.TabIndex = 31;
-            this.ShowPassword.TabStop = false;
-            this.ShowPassword.Click += new System.EventHandler(this.ShowPassword_Click);
             // 
             // btnForgotPass
             // 
@@ -133,11 +120,11 @@
             this.btnForgotPass.ColorContrastOnClick = 45;
             this.btnForgotPass.ColorContrastOnHover = 45;
             this.btnForgotPass.Cursor = System.Windows.Forms.Cursors.Hand;
-            borderEdges15.BottomLeft = true;
-            borderEdges15.BottomRight = true;
-            borderEdges15.TopLeft = true;
-            borderEdges15.TopRight = true;
-            this.btnForgotPass.CustomizableEdges = borderEdges15;
+            borderEdges1.BottomLeft = true;
+            borderEdges1.BottomRight = true;
+            borderEdges1.TopLeft = true;
+            borderEdges1.TopRight = true;
+            this.btnForgotPass.CustomizableEdges = borderEdges1;
             this.btnForgotPass.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnForgotPass.DisabledBorderColor = System.Drawing.Color.Empty;
             this.btnForgotPass.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -156,27 +143,27 @@
             this.btnForgotPass.IdleIconLeftImage = null;
             this.btnForgotPass.IdleIconRightImage = null;
             this.btnForgotPass.IndicateFocus = false;
-            this.btnForgotPass.Location = new System.Drawing.Point(55, 496);
+            this.btnForgotPass.Location = new System.Drawing.Point(69, 525);
             this.btnForgotPass.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnForgotPass.Name = "btnForgotPass";
-            stateProperties29.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            stateProperties29.BorderRadius = 3;
-            stateProperties29.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            stateProperties29.BorderThickness = 1;
-            stateProperties29.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            stateProperties29.ForeColor = System.Drawing.Color.White;
-            stateProperties29.IconLeftImage = null;
-            stateProperties29.IconRightImage = null;
-            this.btnForgotPass.onHoverState = stateProperties29;
-            stateProperties30.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            stateProperties30.BorderRadius = 3;
-            stateProperties30.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            stateProperties30.BorderThickness = 1;
-            stateProperties30.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            stateProperties30.ForeColor = System.Drawing.Color.White;
-            stateProperties30.IconLeftImage = null;
-            stateProperties30.IconRightImage = null;
-            this.btnForgotPass.OnPressedState = stateProperties30;
+            stateProperties1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            stateProperties1.BorderRadius = 3;
+            stateProperties1.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            stateProperties1.BorderThickness = 1;
+            stateProperties1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            stateProperties1.ForeColor = System.Drawing.Color.White;
+            stateProperties1.IconLeftImage = null;
+            stateProperties1.IconRightImage = null;
+            this.btnForgotPass.onHoverState = stateProperties1;
+            stateProperties2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            stateProperties2.BorderRadius = 3;
+            stateProperties2.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            stateProperties2.BorderThickness = 1;
+            stateProperties2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            stateProperties2.ForeColor = System.Drawing.Color.White;
+            stateProperties2.IconLeftImage = null;
+            stateProperties2.IconRightImage = null;
+            this.btnForgotPass.OnPressedState = stateProperties2;
             this.btnForgotPass.Size = new System.Drawing.Size(186, 33);
             this.btnForgotPass.TabIndex = 15;
             this.btnForgotPass.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -199,11 +186,11 @@
             this.btnSignUp.ColorContrastOnClick = 45;
             this.btnSignUp.ColorContrastOnHover = 45;
             this.btnSignUp.Cursor = System.Windows.Forms.Cursors.Hand;
-            borderEdges16.BottomLeft = true;
-            borderEdges16.BottomRight = true;
-            borderEdges16.TopLeft = true;
-            borderEdges16.TopRight = true;
-            this.btnSignUp.CustomizableEdges = borderEdges16;
+            borderEdges2.BottomLeft = true;
+            borderEdges2.BottomRight = true;
+            borderEdges2.TopLeft = true;
+            borderEdges2.TopRight = true;
+            this.btnSignUp.CustomizableEdges = borderEdges2;
             this.btnSignUp.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnSignUp.DisabledBorderColor = System.Drawing.Color.Empty;
             this.btnSignUp.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -222,27 +209,27 @@
             this.btnSignUp.IdleIconLeftImage = null;
             this.btnSignUp.IdleIconRightImage = null;
             this.btnSignUp.IndicateFocus = false;
-            this.btnSignUp.Location = new System.Drawing.Point(400, 496);
+            this.btnSignUp.Location = new System.Drawing.Point(414, 525);
             this.btnSignUp.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSignUp.Name = "btnSignUp";
-            stateProperties31.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            stateProperties31.BorderRadius = 3;
-            stateProperties31.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            stateProperties31.BorderThickness = 1;
-            stateProperties31.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            stateProperties31.ForeColor = System.Drawing.Color.White;
-            stateProperties31.IconLeftImage = null;
-            stateProperties31.IconRightImage = null;
-            this.btnSignUp.onHoverState = stateProperties31;
-            stateProperties32.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            stateProperties32.BorderRadius = 3;
-            stateProperties32.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            stateProperties32.BorderThickness = 1;
-            stateProperties32.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            stateProperties32.ForeColor = System.Drawing.Color.White;
-            stateProperties32.IconLeftImage = null;
-            stateProperties32.IconRightImage = null;
-            this.btnSignUp.OnPressedState = stateProperties32;
+            stateProperties3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            stateProperties3.BorderRadius = 3;
+            stateProperties3.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            stateProperties3.BorderThickness = 1;
+            stateProperties3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            stateProperties3.ForeColor = System.Drawing.Color.White;
+            stateProperties3.IconLeftImage = null;
+            stateProperties3.IconRightImage = null;
+            this.btnSignUp.onHoverState = stateProperties3;
+            stateProperties4.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            stateProperties4.BorderRadius = 3;
+            stateProperties4.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            stateProperties4.BorderThickness = 1;
+            stateProperties4.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            stateProperties4.ForeColor = System.Drawing.Color.White;
+            stateProperties4.IconLeftImage = null;
+            stateProperties4.IconRightImage = null;
+            this.btnSignUp.OnPressedState = stateProperties4;
             this.btnSignUp.Size = new System.Drawing.Size(159, 33);
             this.btnSignUp.TabIndex = 14;
             this.btnSignUp.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -275,14 +262,14 @@
             this.btnSignIn.IconVisible = true;
             this.btnSignIn.IconZoom = 90D;
             this.btnSignIn.IsTab = false;
-            this.btnSignIn.Location = new System.Drawing.Point(55, 425);
+            this.btnSignIn.Location = new System.Drawing.Point(69, 454);
             this.btnSignIn.Margin = new System.Windows.Forms.Padding(5);
             this.btnSignIn.Name = "btnSignIn";
             this.btnSignIn.Normalcolor = System.Drawing.Color.Transparent;
             this.btnSignIn.OnHovercolor = System.Drawing.Color.White;
             this.btnSignIn.OnHoverTextColor = System.Drawing.Color.Black;
             this.btnSignIn.selected = false;
-            this.btnSignIn.Size = new System.Drawing.Size(539, 55);
+            this.btnSignIn.Size = new System.Drawing.Size(504, 55);
             this.btnSignIn.TabIndex = 3;
             this.btnSignIn.Text = "SIGN IN";
             this.btnSignIn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -290,10 +277,23 @@
             this.btnSignIn.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSignIn.Click += new System.EventHandler(this.btnSignIn_Click);
             // 
+            // ShowPassword
+            // 
+            this.ShowPassword.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.ShowPassword.Image = global::WorkHive.Properties.Resources.eye_open;
+            this.ShowPassword.Location = new System.Drawing.Point(533, 348);
+            this.ShowPassword.Margin = new System.Windows.Forms.Padding(4);
+            this.ShowPassword.Name = "ShowPassword";
+            this.ShowPassword.Size = new System.Drawing.Size(36, 27);
+            this.ShowPassword.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.ShowPassword.TabIndex = 31;
+            this.ShowPassword.TabStop = false;
+            this.ShowPassword.Click += new System.EventHandler(this.ShowPassword_Click);
+            // 
             // Sign_In
             // 
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoValidate = System.Windows.Forms.AutoValidate.EnablePreventFocusChange;
             this.Controls.Add(this.ShowPassword);
             this.Controls.Add(this.txtEmail);
