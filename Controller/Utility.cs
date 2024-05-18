@@ -39,13 +39,13 @@ namespace WorkHive.Controller
         {
             if (textbox.isPassword)
             {
-                circularPictureBox.Image = Properties.Resources.eye_closed;
+                circularPictureBox.Image = Properties.Resources.eye_open;
                 textbox.isPassword = false;
             }
 
             else
             {
-                circularPictureBox.Image = Properties.Resources.eye_open;
+                circularPictureBox.Image = Properties.Resources.eye_closed;
                 textbox.isPassword = true;
             }
 
@@ -54,12 +54,12 @@ namespace WorkHive.Controller
         {
             if (textbox.UseSystemPasswordChar)
             {
-                circularPictureBox.Image = Properties.Resources.eye_closed;
+                circularPictureBox.Image = Properties.Resources.eye_open;
                 textbox.UseSystemPasswordChar = false;
             }
             else
             {
-                circularPictureBox.Image = Properties.Resources.eye_open;
+                circularPictureBox.Image = Properties.Resources.eye_closed;
                 textbox.UseSystemPasswordChar = true;
 
             }

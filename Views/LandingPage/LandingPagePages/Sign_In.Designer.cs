@@ -280,7 +280,7 @@
             // ShowPassword
             // 
             this.ShowPassword.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.ShowPassword.Image = global::WorkHive.Properties.Resources.eye_open;
+            this.ShowPassword.Image = global::WorkHive.Properties.Resources.eye_closed;
             this.ShowPassword.Location = new System.Drawing.Point(533, 348);
             this.ShowPassword.Margin = new System.Windows.Forms.Padding(4);
             this.ShowPassword.Name = "ShowPassword";

@@ -328,7 +328,7 @@
             // 
             // ShowPassword2
             // 
-            this.ShowPassword2.Image = ((System.Drawing.Image)(resources.GetObject("ShowPassword2.Image")));
+            this.ShowPassword2.Image = global::WorkHive.Properties.Resources.eye_closed;
             this.ShowPassword2.Location = new System.Drawing.Point(533, 468);
             this.ShowPassword2.Margin = new System.Windows.Forms.Padding(4);
             this.ShowPassword2.Name = "ShowPassword2";
@@ -340,7 +340,7 @@
             // 
             // ShowPassword
             // 
-            this.ShowPassword.Image = ((System.Drawing.Image)(resources.GetObject("ShowPassword.Image")));
+            this.ShowPassword.Image = global::WorkHive.Properties.Resources.eye_closed;
             this.ShowPassword.Location = new System.Drawing.Point(533, 383);
             this.ShowPassword.Margin = new System.Windows.Forms.Padding(4);
             this.ShowPassword.Name = "ShowPassword";
