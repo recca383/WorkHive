@@ -87,7 +87,7 @@ namespace WorkHive.Views.Admin.DashboardPages
             taskList = taskList.OrderBy(t => t.Deadline).ToList();
             foreach (TaskModel taskModel in taskList)
             {
-                TasksFlow.Controls.Add(new TaskCard(taskModel));
+                TasksFlow.Controls.Add(new TaskCardMember(taskModel));
             }
 
             
@@ -139,7 +139,7 @@ namespace WorkHive.Views.Admin.DashboardPages
 
         private void EditFlatButton_Click(object sender, EventArgs e)
         {
-            foreach(TaskCard taskCard in TasksFlow.Controls)
+            foreach(TaskCardMember taskCard in TasksFlow.Controls)
             {
                 taskCard.TurnEditButtonVisible(e);
             }

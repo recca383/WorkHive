@@ -559,11 +559,11 @@
     <Compile Include="Views\Cards\ProjectCard.Designer.cs">
       <DependentUpon>ProjectCard.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\Cards\TaskCard.cs">
+    <Compile Include="Views\Cards\TaskCardMember.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Views\Cards\TaskCard.Designer.cs">
-      <DependentUpon>TaskCard.cs</DependentUpon>
+    <Compile Include="Views\Cards\TaskCardMember.Designer.cs">
+      <DependentUpon>TaskCardMember.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\Cards\TaskSummaryCard.cs">
       <SubType>UserControl</SubType>
@@ -720,8 +720,8 @@
     <EmbeddedResource Include="Views\Cards\ProjectCard.resx">
       <DependentUpon>ProjectCard.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\Cards\TaskCard.resx">
-      <DependentUpon>TaskCard.cs</DependentUpon>
+    <EmbeddedResource Include="Views\Cards\TaskCardMember.resx">
+      <DependentUpon>TaskCardMember.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\Cards\TaskSummaryCard.resx">
       <DependentUpon>TaskSummaryCard.cs</DependentUpon>

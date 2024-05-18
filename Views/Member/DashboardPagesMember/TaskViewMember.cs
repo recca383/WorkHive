@@ -33,7 +33,7 @@ namespace WorkHive.Views.Member.DashboardPagesMember
             tasks = tasks.OrderBy(t => t.Deadline).ToList();
             foreach (TaskModel taskModel in tasks)
             {
-                TasksFlow.Controls.Add(new TaskCard(taskModel));
+                TasksFlow.Controls.Add(new TaskCardMember(taskModel));
             }
         }
         
