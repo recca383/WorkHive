@@ -19,6 +19,7 @@ namespace WorkHive
     public partial class AddTask : UserControl
     {
         List<ProjectModel > projects = ProjectModelAccess.GetProjects();
+        public static event Action OnUpdate;
         public AddTask()
         {
             InitializeComponent();
@@ -55,6 +56,7 @@ namespace WorkHive
             TasksView taskview = (TasksView)Parent.Parent;
             taskview.btnAll_Click(sender, e);
             this.Parent.Controls.Remove(this);
+            OnUpdate();
         }
 
     }

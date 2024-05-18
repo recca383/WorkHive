@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using WorkHive.Controller;
 using WorkHive.Model;
 using WorkHive.Views.LandingPage.LandingPagePages;
+using WorkHive.Views.Pages;
 
 namespace WorkHive.Views.Admin.DashboardPages
 {
@@ -17,13 +18,15 @@ namespace WorkHive.Views.Admin.DashboardPages
     {
         TaskModel selectedtask;
         List<ProjectModel> projectModels = ProjectModelAccess.GetProjects();
-        
+
+        public static event Action OnUpdate;
+
         public EditTaskInformation(TaskModel _selectedtask)
         {
+            
             this.selectedtask = _selectedtask;
             InitializeComponent();
             SetDefaultValues();
-            
         }
 
         private void SetDefaultValues()
@@ -61,7 +64,7 @@ namespace WorkHive.Views.Admin.DashboardPages
             TasksView taskview = (TasksView)Parent.Parent;
             taskview.btnAll_Click(sender, e);
             this.Parent.Controls.Remove(this);
-
+            OnUpdate();
             
         }
 

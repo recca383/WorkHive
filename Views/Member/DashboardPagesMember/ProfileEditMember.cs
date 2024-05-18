@@ -17,6 +17,7 @@ namespace WorkHive.Views.Member.DashboardPagesMember
     {
         MemberModel currentUser;
         private string newPicture = "";
+        public static event Action OnUpdate;
         public ProfileEditMember(MemberModel currentModel)
         {
             this.currentUser = currentModel;
@@ -32,7 +33,7 @@ namespace WorkHive.Views.Member.DashboardPagesMember
             {
                 MemberPictureBox.Image = Image.FromFile(currentUser.Profile_Pic);
             }
-            if (currentUser.Profile_Pic == " ")
+            if (currentUser.Profile_Pic == "")
             {
                 MemberPictureBox.Image = Image.FromFile(Path.Combine(Path.GetDirectoryName(parent), "Resources\\Default_Pics\\Userdefault.png"));
             }
@@ -111,15 +112,18 @@ namespace WorkHive.Views.Member.DashboardPagesMember
             editedmember.Barangay = barangaytxt.Text;
             editedmember.City_Municipality = citymunicipaltxt.Text;
             editedmember.Province = provincetxt.Text;
-            editedmember.Profile_Pic = newPicture;
+            if(newPicture == "") editedmember.Profile_Pic = currentUser.Profile_Pic;
+            else editedmember.Profile_Pic = newPicture;
 
 
+            if (Utility.IsEmailValid(Memberemailtxt.Text)) editedmember.Email = Memberemailtxt.Text;
             if (int.TryParse(Membercontacttxt.Text, out contactresult)) editedmember.ContactNumber = contactresult;
             if (int.TryParse(zipcodetxt.Text, out zipcoderesult)) editedmember.ZipCode = zipcoderesult;
 
             MemberModelAccess.EditMemberInfo(editedmember, currentUser.ID);
             EditPanel.Enabled = false;
             RefreshValues();
+            OnUpdate();
             Dashboard_Member dashboard = (Dashboard_Member)Parent.Parent;
             dashboard.RefreshImage();
         }

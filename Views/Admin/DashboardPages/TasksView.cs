@@ -48,7 +48,6 @@ namespace WorkHive.Views.Admin.DashboardPages
             recbtnArchived = new Rectangle(btnArchived.Location, btnArchived.Size);
             recbunifuVScrollBar1 = new Rectangle(bunifuVScrollBar1.Location, bunifuVScrollBar1.Size);
             recRefreshButton = new Rectangle(RefreshButton.Location, RefreshButton.Size);
-            recEditFlatButton = new Rectangle(EditFlatButton.Location, EditFlatButton.Size);
             recbtnAddtasks = new Rectangle(btnAddtasks.Location, btnAddtasks.Size);
         }
 
@@ -62,7 +61,6 @@ namespace WorkHive.Views.Admin.DashboardPages
             resize_Control(btnArchived, recbtnArchived);
             resize_Control(bunifuVScrollBar1, recbunifuVScrollBar1);
             resize_Control(RefreshButton, recRefreshButton);
-            resize_Control(EditFlatButton, recEditFlatButton);
             resize_Control(btnAddtasks, recbtnAddtasks);
 
         }
@@ -87,7 +85,7 @@ namespace WorkHive.Views.Admin.DashboardPages
             taskList = taskList.OrderBy(t => t.Deadline).ToList();
             foreach (TaskModel taskModel in taskList)
             {
-                TasksFlow.Controls.Add(new TaskCardMember(taskModel));
+                TasksFlow.Controls.Add(new AdminTaskCard(taskModel));
             }
 
             
@@ -137,13 +135,5 @@ namespace WorkHive.Views.Admin.DashboardPages
             }
         }
 
-        private void EditFlatButton_Click(object sender, EventArgs e)
-        {
-            foreach(TaskCardMember taskCard in TasksFlow.Controls)
-            {
-                taskCard.TurnEditButtonVisible(e);
-            }
-            
-        }
     }
 }

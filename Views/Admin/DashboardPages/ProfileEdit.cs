@@ -13,8 +13,10 @@ using WorkHive.Model;
 
 namespace WorkHive.Views.Admin
 {
+    
     public partial class ProfileEdit : UserControl
     {
+        public static event Action OnUpdate;
         int currentUserID;
         MemberModel currentUser;
         string newPicture = "";
@@ -34,7 +36,7 @@ namespace WorkHive.Views.Admin
             {
                 ProfilePic.Image = Image.FromFile(currentUser.Profile_Pic);
             }
-            else if (currentUser.Profile_Pic == " ")
+            else if (currentUser.Profile_Pic == "")
             {
                 ProfilePic.Image = Image.FromFile(Path.Combine(Path.GetDirectoryName(parent), "Resources\\Default_Pics\\Userdefault.png"));
             }
@@ -77,6 +79,7 @@ namespace WorkHive.Views.Admin
 
             btnConfirmEdit.Visible = false;
             btnCancelEdit.Visible = false;
+            Editpicture.Visible = false;
 
         }
 
@@ -84,6 +87,7 @@ namespace WorkHive.Views.Admin
         {
             RefreshValues();
             EditPanel.Enabled = false;
+            Editpicture.Visible = false;
 
         }
 
@@ -106,7 +110,8 @@ namespace WorkHive.Views.Admin
                 editedmember.Barangay = barangaytxt.Text;
                 editedmember.City_Municipality = citymunicipaltxt.Text;
                 editedmember.Province = provincetxt.Text;
-                editedmember.Profile_Pic = newPicture;
+                if(newPicture == "") editedmember.Profile_Pic = currentUser.Profile_Pic;
+                else editedmember.Profile_Pic = newPicture;
 
             if (Utility.IsEmailValid(emailtxt.Text)) editedmember.Email = emailtxt.Text;
             if (int.TryParse(contacttxt.Text, out contactresult))editedmember.ContactNumber = contactresult;
@@ -114,10 +119,11 @@ namespace WorkHive.Views.Admin
 
             MemberModelAccess.EditMemberInfo(editedmember, currentUser.ID);
             EditPanel.Enabled = false;
+            Editpicture.Visible = false;
             RefreshValues();
             Dashboard_Admin dashboard = (Dashboard_Admin) Parent.Parent;
             dashboard.RefreshPicture();
-
+            OnUpdate();
         }
 
         private void btnEdit_Click(object sender, EventArgs e)

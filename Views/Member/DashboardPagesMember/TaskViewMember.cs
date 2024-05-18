@@ -15,6 +15,7 @@ using WorkHive.Views.Cards;
 
 namespace WorkHive.Views.Member.DashboardPagesMember
 {
+    
     public partial class TaskViewMember : UserControl
     {
         private List<TaskModel> tasks = TaskModelAccess.GetTaskModel();
@@ -33,7 +34,7 @@ namespace WorkHive.Views.Member.DashboardPagesMember
             tasks = tasks.OrderBy(t => t.Deadline).ToList();
             foreach (TaskModel taskModel in tasks)
             {
-                TasksFlow.Controls.Add(new TaskCardMember(taskModel));
+                TasksFlow.Controls.Add(new MemberTaskCard(taskModel));
             }
         }
         

@@ -17,27 +17,28 @@ using WorkHive.Views.LandingPage.LandingPagePages;
 
 namespace WorkHive.Views.Cards
 {
-    public partial class TaskCardMember : UserControl
+    public partial class AdminTaskCard : UserControl
     {
         private Size TaskCardOriginalSize;
         private Rectangle recpanel2;
         private Rectangle recpanel3;
         private Rectangle recpictureBox1;
 
-        int Id;
-        
-        public TaskCardMember(TaskModel task)
+        TaskModel task;
+
+
+        public AdminTaskCard(TaskModel task)
         {
-            Id = task.TaskID;
+            this.task = task; 
             InitializeComponent();
-            InitializeElements(task);
+            InitializeElements();
             this.Resize += TaskCard_Resize;
             recpanel2 = new Rectangle(panel2.Location, panel2.Size);
             recpanel3 = new Rectangle(panel3.Location, panel3.Size);
             recpictureBox1 = new Rectangle(pictureboxFinished.Location, pictureboxFinished.Size);
         }
 
-        private void InitializeElements(TaskModel task)
+        private void InitializeElements()
         {
             lblTask_Title.Text = task.TaskName;
             lblTask_Date.Text = ($"{CultureInfo.CurrentCulture.DateTimeFormat.GetMonthName(task.TaskStart.Month)} {task.TaskStart.Day}");
@@ -74,12 +75,7 @@ namespace WorkHive.Views.Cards
         {
             TasksView editTask = (TasksView)this.Parent.Parent;
 
-            editTask.btnEdittasks_Click(sender, e, Id);
-        }
-        public void TurnEditButtonVisible(EventArgs e)
-        {
-            if (EditFlatButton.Visible) EditFlatButton.Visible = false;
-            else EditFlatButton.Visible = true;
+            editTask.btnEdittasks_Click(sender, e, task.TaskID);
         }
     }
 }

@@ -65,8 +65,8 @@ namespace WorkHive.Controller
             var newTaskDeadLine = taskModel.Deadline;
             var newProjectAssigned = taskModel.ProjectAssigned;
             
-            if (edittaskModel.TaskName != "") newTaskName = edittaskModel.TaskName;
-            if (edittaskModel.TaskDescription != "") newTaskDescription = edittaskModel.TaskDescription;
+            if (edittaskModel.TaskName != "" && edittaskModel.TaskName != null) newTaskName = edittaskModel.TaskName;
+            if (edittaskModel.TaskDescription != "" && edittaskModel.TaskDescription != null) newTaskDescription = edittaskModel.TaskDescription;
             if (edittaskModel.Deadline != default) newTaskDeadLine = edittaskModel.Deadline;
             if (edittaskModel.ProjectAssigned != null) newProjectAssigned = edittaskModel.ProjectAssigned;
             var newTaskStatus = edittaskModel.TaskStatus;

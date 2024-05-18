@@ -9,7 +9,10 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using WorkHive.Controller;
 using WorkHive.Model;
+using WorkHive.Views.Admin;
+using WorkHive.Views.Admin.DashboardPages;
 using WorkHive.Views.Cards;
+using WorkHive.Views.Member.DashboardPagesMember;
 
 namespace WorkHive.Views.Pages
 {
@@ -32,13 +35,21 @@ namespace WorkHive.Views.Pages
         List<ProjectModel> projects;
         MemberModel currentUser;
 
-
+        
 
         public DashboardView(MemberModel CurrentUser)
         {
             currentUser = CurrentUser;
             InitializeComponent();
             RefreshElements();
+
+            EditTaskInformation.OnUpdate  += RefreshElements;
+            AddTask.OnUpdate += RefreshElements;
+            MemberTaskCard.OnUpdate += RefreshElements;
+            ProfileEditMember.OnUpdate += RefreshElements;
+            ProfileEdit.OnUpdate += RefreshElements;
+
+
             this.Resize += DashboardView_Resize;
             DashBoardViewOriginalSize = this.Size;
             recDashboardlbl = new Rectangle(Dashboardlbl.Location, Dashboardlbl.Size);
@@ -52,7 +63,7 @@ namespace WorkHive.Views.Pages
             recpanel2 = new Rectangle(panel2.Location, panel2.Size);
             recpanel3 = new Rectangle(panel3.Location, panel3.Size);
 
-            Dashboard_Admin.OnAdmin += RefreshElements;
+            
         }
 
         private void DashboardView_Resize(object sender, EventArgs e)
@@ -86,10 +97,21 @@ namespace WorkHive.Views.Pages
         public void RefreshElements()
         {
             TasksSummary.Controls.Clear();
+            EventsPanel.Controls.Clear();
             projects = ProjectModelAccess.GetProjects();
             tasks = TaskModelAccess.GetTaskModel();
             members = MemberModelAccess.GetMemberModel();
 
+            var dateofmembers = members
+                .Where(d => d.Birthday.Month <= DateTime.Now.Month +2)
+                .OrderBy(d => d.Birthday);
+            
+
+            foreach(MemberModel member in dateofmembers)
+            {
+                EventsPanel.Controls.Add(new BirthdayCard(member));
+
+            }
             
             int finishedtasks = tasks
                 .Where(t => t.TaskStatus == Status.Finished)

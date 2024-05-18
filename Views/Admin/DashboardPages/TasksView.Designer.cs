@@ -38,7 +38,6 @@
             this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
             this.AddTaskPanel = new System.Windows.Forms.Panel();
             this.btnAddtasks = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.EditFlatButton = new Bunifu.Framework.UI.BunifuFlatButton();
             this.bunifuVScrollBar1 = new Bunifu.UI.WinForms.BunifuVScrollBar();
             this.RefreshButton = new Bunifu.UI.WinForms.BunifuPictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.RefreshButton)).BeginInit();
@@ -142,7 +141,7 @@
             this.btnAddtasks.ImeMode = System.Windows.Forms.ImeMode.On;
             this.btnAddtasks.IsTab = false;
             this.btnAddtasks.Location = new System.Drawing.Point(877, 24);
-            this.btnAddtasks.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAddtasks.Margin = new System.Windows.Forms.Padding(4);
             this.btnAddtasks.Name = "btnAddtasks";
             this.btnAddtasks.Normalcolor = System.Drawing.Color.Transparent;
             this.btnAddtasks.OnHovercolor = System.Drawing.Color.Transparent;
@@ -154,43 +153,6 @@
             this.btnAddtasks.Textcolor = System.Drawing.Color.White;
             this.btnAddtasks.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAddtasks.Click += new System.EventHandler(this.btnAddtasks_Click);
-            // 
-            // EditFlatButton
-            // 
-            this.EditFlatButton.Active = false;
-            this.EditFlatButton.Activecolor = System.Drawing.Color.Transparent;
-            this.EditFlatButton.BackColor = System.Drawing.Color.Transparent;
-            this.EditFlatButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.EditFlatButton.BorderRadius = 0;
-            this.EditFlatButton.ButtonText = "bunifuFlatButton1";
-            this.EditFlatButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.EditFlatButton.DisabledColor = System.Drawing.Color.Gray;
-            this.EditFlatButton.Iconcolor = System.Drawing.Color.Transparent;
-            this.EditFlatButton.Iconimage = ((System.Drawing.Image)(resources.GetObject("EditFlatButton.Iconimage")));
-            this.EditFlatButton.Iconimage_right = null;
-            this.EditFlatButton.Iconimage_right_Selected = null;
-            this.EditFlatButton.Iconimage_Selected = null;
-            this.EditFlatButton.IconMarginLeft = 0;
-            this.EditFlatButton.IconMarginRight = 0;
-            this.EditFlatButton.IconRightVisible = true;
-            this.EditFlatButton.IconRightZoom = 0D;
-            this.EditFlatButton.IconVisible = true;
-            this.EditFlatButton.IconZoom = 50D;
-            this.EditFlatButton.IsTab = false;
-            this.EditFlatButton.Location = new System.Drawing.Point(827, 18);
-            this.EditFlatButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.EditFlatButton.Name = "EditFlatButton";
-            this.EditFlatButton.Normalcolor = System.Drawing.Color.Transparent;
-            this.EditFlatButton.OnHovercolor = System.Drawing.Color.Red;
-            this.EditFlatButton.OnHoverTextColor = System.Drawing.Color.Transparent;
-            this.EditFlatButton.selected = false;
-            this.EditFlatButton.Size = new System.Drawing.Size(34, 38);
-            this.EditFlatButton.TabIndex = 15;
-            this.EditFlatButton.Text = "bunifuFlatButton1";
-            this.EditFlatButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.EditFlatButton.Textcolor = System.Drawing.Color.White;
-            this.EditFlatButton.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EditFlatButton.Click += new System.EventHandler(this.EditFlatButton_Click);
             // 
             // bunifuVScrollBar1
             // 
@@ -212,7 +174,7 @@
             this.bunifuVScrollBar1.DurationBeforeShrink = 2000;
             this.bunifuVScrollBar1.LargeChange = 10;
             this.bunifuVScrollBar1.Location = new System.Drawing.Point(914, 70);
-            this.bunifuVScrollBar1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bunifuVScrollBar1.Margin = new System.Windows.Forms.Padding(4);
             this.bunifuVScrollBar1.Maximum = 100;
             this.bunifuVScrollBar1.Minimum = 0;
             this.bunifuVScrollBar1.MinimumThumbLength = 18;
@@ -240,7 +202,7 @@
             this.RefreshButton.BorderRadius = 0;
             this.RefreshButton.Image = global::WorkHive.Properties.Resources.refresh;
             this.RefreshButton.IsCircle = false;
-            this.RefreshButton.Location = new System.Drawing.Point(710, 24);
+            this.RefreshButton.Location = new System.Drawing.Point(833, 24);
             this.RefreshButton.Name = "RefreshButton";
             this.RefreshButton.Size = new System.Drawing.Size(28, 26);
             this.RefreshButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -256,7 +218,6 @@
             this.Controls.Add(this.RefreshButton);
             this.Controls.Add(this.AddTaskPanel);
             this.Controls.Add(this.btnAddtasks);
-            this.Controls.Add(this.EditFlatButton);
             this.Controls.Add(this.bunifuVScrollBar1);
             this.Controls.Add(this.btnArchived);
             this.Controls.Add(this.btnCompleted);
@@ -282,7 +243,6 @@
         private System.Windows.Forms.Label btnArchived;
         private Bunifu.UI.WinForms.BunifuVScrollBar bunifuVScrollBar1;
         private System.Windows.Forms.FolderBrowserDialog folderBrowserDialog1;
-        private Bunifu.Framework.UI.BunifuFlatButton EditFlatButton;
         private Bunifu.Framework.UI.BunifuFlatButton btnAddtasks;
         private System.Windows.Forms.Panel AddTaskPanel;
         private Bunifu.UI.WinForms.BunifuPictureBox RefreshButton;

@@ -26,7 +26,7 @@ namespace WorkHive.Views
 
     public partial class Dashboard_Admin : Form
     {
-        public static event Action OnAdmin;
+        
         MemberModel CurrentUser;
         int ID;
 
@@ -71,7 +71,6 @@ namespace WorkHive.Views
         public void btnDashBoard_Click(object sender, EventArgs e)
         {
             dashboardNavigation.Display(0);
-            OnAdmin();
         }
 
         private void btnEmployees_Click(object sender, EventArgs e)

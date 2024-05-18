@@ -50,6 +50,17 @@ namespace WorkHive.Model
         public sex Sex { get; set;} = sex.None;
         public bloodType BloodType { get; set; }
         public DateTime Birthdate { get; set; } =  DateTime.Now;
+        public DateTime Birthday { get
+            {
+                if(DateTime.Now.Month > Birthdate.Month && DateTime.Now.Day > Birthdate.Day)
+                {
+                    return new DateTime(2001, Birthdate.Month, Birthdate.Day);
+                }
+                else
+                {
+                    return new DateTime(2000, Birthdate.Month, Birthdate.Day);
+                }
+            } }
         public string Password { get; set; }
         public bool IsLeader { get; set; }
         public string Profile_Pic { get; set; } = " ";
