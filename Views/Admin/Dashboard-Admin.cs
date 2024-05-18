@@ -159,7 +159,7 @@ namespace WorkHive.Views
         {
             ProfileAdmin profile = new ProfileAdmin(CurrentUser);
             profilepanel.Controls.Add(profile);
-            profile.Dock = DockStyle.Fill;
+            profile.Anchor = AnchorStyles.Right;
             profile.Show();
             profilepanel.Parent = ViewPanel;
             profilepanel.BringToFront();
