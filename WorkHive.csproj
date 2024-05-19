@@ -411,6 +411,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddProject.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AddProject.Designer.cs">
+      <DependentUpon>AddProject.cs</DependentUpon>
+    </Compile>
     <Compile Include="Controller\ProjectModelAccess.cs" />
     <Compile Include="Controller\Utility.cs" />
     <Compile Include="Model\ProjectModel.cs" />
@@ -661,6 +667,9 @@
     <Compile Include="Views\Member\DashboardPagesMember\TaskViewMember.Designer.cs">
       <DependentUpon>TaskViewMember.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AddProject.resx">
+      <DependentUpon>AddProject.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\Admin\DashboardPages\BirthdayCard.resx">
       <DependentUpon>BirthdayCard.cs</DependentUpon>
     </EmbeddedResource>
@@ -845,6 +854,8 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\Poceedbtn.png" />
+    <None Include="Resources\LandingPagee.png" />
     <None Include="Resources\LandingPage.png" />
     <None Include="Resources\Tasks - DONE SOLO.png" />
     <None Include="Resources\Tasks - PENDING SOLO.png" />
