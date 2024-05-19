@@ -54,7 +54,7 @@ namespace WorkHive
             }
             );
             TasksView taskview = (TasksView)Parent.Parent;
-            taskview.btnAll_Click(sender, e);
+            taskview.OnProjectTasksOnclick(projects.FirstOrDefault(n => n.Name == Dropdownassignproject.SelectedItem.ToString()));
             this.Parent.Controls.Remove(this);
             OnUpdate();
         }

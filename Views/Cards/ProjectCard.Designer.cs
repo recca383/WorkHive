@@ -43,10 +43,9 @@
             this.lblProject_Title.BackColor = System.Drawing.Color.Transparent;
             this.lblProject_Title.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblProject_Title.ForeColor = System.Drawing.Color.White;
-            this.lblProject_Title.Location = new System.Drawing.Point(15, 18);
-            this.lblProject_Title.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblProject_Title.Location = new System.Drawing.Point(11, 15);
             this.lblProject_Title.Name = "lblProject_Title";
-            this.lblProject_Title.Size = new System.Drawing.Size(189, 38);
+            this.lblProject_Title.Size = new System.Drawing.Size(148, 30);
             this.lblProject_Title.TabIndex = 10;
             this.lblProject_Title.Text = "Lorem Ipsum";
             // 
@@ -56,10 +55,9 @@
             this.lblName.BackColor = System.Drawing.Color.Transparent;
             this.lblName.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblName.ForeColor = System.Drawing.Color.White;
-            this.lblName.Location = new System.Drawing.Point(19, 65);
-            this.lblName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblName.Location = new System.Drawing.Point(14, 53);
             this.lblName.Name = "lblName";
-            this.lblName.Size = new System.Drawing.Size(131, 23);
+            this.lblName.Size = new System.Drawing.Size(108, 19);
             this.lblName.TabIndex = 11;
             this.lblName.Text = "Sir Johnny Sins";
             // 
@@ -86,14 +84,14 @@
             this.btnSummary.IconVisible = true;
             this.btnSummary.IconZoom = 90D;
             this.btnSummary.IsTab = false;
-            this.btnSummary.Location = new System.Drawing.Point(619, 65);
-            this.btnSummary.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.btnSummary.Location = new System.Drawing.Point(464, 53);
+            this.btnSummary.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnSummary.Name = "btnSummary";
             this.btnSummary.Normalcolor = System.Drawing.Color.White;
             this.btnSummary.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btnSummary.OnHoverTextColor = System.Drawing.Color.White;
             this.btnSummary.selected = false;
-            this.btnSummary.Size = new System.Drawing.Size(227, 34);
+            this.btnSummary.Size = new System.Drawing.Size(170, 28);
             this.btnSummary.TabIndex = 12;
             this.btnSummary.Text = "Summary";
             this.btnSummary.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -124,19 +122,20 @@
             this.btnTasks.IconVisible = true;
             this.btnTasks.IconZoom = 90D;
             this.btnTasks.IsTab = false;
-            this.btnTasks.Location = new System.Drawing.Point(879, 65);
-            this.btnTasks.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.btnTasks.Location = new System.Drawing.Point(659, 53);
+            this.btnTasks.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnTasks.Name = "btnTasks";
             this.btnTasks.Normalcolor = System.Drawing.Color.White;
             this.btnTasks.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btnTasks.OnHoverTextColor = System.Drawing.Color.White;
             this.btnTasks.selected = false;
-            this.btnTasks.Size = new System.Drawing.Size(227, 34);
+            this.btnTasks.Size = new System.Drawing.Size(170, 28);
             this.btnTasks.TabIndex = 13;
             this.btnTasks.Text = "Tasks";
             this.btnTasks.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnTasks.Textcolor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
             this.btnTasks.TextFont = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTasks.Click += new System.EventHandler(this.btnTasks_Click);
             // 
             // bunifuElipse1
             // 
@@ -146,17 +145,16 @@
             // ProjectId
             // 
             this.ProjectId.AutoSize = true;
-            this.ProjectId.Location = new System.Drawing.Point(441, 84);
-            this.ProjectId.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.ProjectId.Location = new System.Drawing.Point(331, 68);
             this.ProjectId.Name = "ProjectId";
-            this.ProjectId.Size = new System.Drawing.Size(44, 16);
+            this.ProjectId.Size = new System.Drawing.Size(35, 13);
             this.ProjectId.TabIndex = 14;
             this.ProjectId.Text = "label1";
             this.ProjectId.Visible = false;
             // 
             // ProjectCard
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImage = global::WorkHive.Properties.Resources.ProjectBG;
@@ -167,9 +165,9 @@
             this.Controls.Add(this.lblProject_Title);
             this.Controls.Add(this.lblName);
             this.DoubleBuffered = true;
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "ProjectCard";
-            this.Size = new System.Drawing.Size(1136, 113);
+            this.Size = new System.Drawing.Size(852, 92);
             this.ResumeLayout(false);
             this.PerformLayout();
 

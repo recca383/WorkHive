@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using WorkHive.Controller;
 using WorkHive.Model;
+using WorkHive.Views.Cards;
 using WorkHive.Views.LandingPage.LandingPagePages;
 using WorkHive.Views.Pages;
 
@@ -62,7 +63,7 @@ namespace WorkHive.Views.Admin.DashboardPages
             }, selectedtask.TaskID) ;
             new MessageBoxes("Edit Task Complete!!");
             TasksView taskview = (TasksView)Parent.Parent;
-            taskview.btnAll_Click(sender, e);
+            taskview.OnProjectTasksOnclick(projectAssign);
             this.Parent.Controls.Remove(this);
             OnUpdate();
             

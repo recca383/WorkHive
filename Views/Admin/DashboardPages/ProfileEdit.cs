@@ -62,7 +62,7 @@ namespace WorkHive.Views.Admin
             contacttxt.Text = currentUser.ContactNumber.ToString();
             emailtxt.Text = currentUser.Email;
 
-            SexDrop.DataSource = Enum.GetNames(typeof(sex)) ;
+            SexDrop.DataSource = Enum.GetNames(typeof(sex));
             SexDrop.SelectedIndex = ((int)currentUser.Sex);
 
             bloodTypeDrop.DataSource = Enum.GetNames(typeof(bloodType));

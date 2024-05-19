@@ -15,7 +15,10 @@ namespace WorkHive.Views.Cards
 {
     public partial class ProjectCard : UserControl
     {
-        ProjectModel projectModel;
+        public static event Action<object, EventArgs> OnProjectTasksClick;
+        public static event Action<ProjectModel> OnProjectModelClick;
+        private ProjectModel projectModel;
+
         public ProjectCard(ProjectModel projectModel)
         {
             this.projectModel = projectModel;
@@ -29,6 +32,12 @@ namespace WorkHive.Views.Cards
         {
             ProjectView parent = (ProjectView)this.Parent.Parent;
             parent.btnEdittasks_Click(sender, e, projectModel);
+        }
+
+        private void btnTasks_Click(object sender, EventArgs e)
+        {
+            OnProjectTasksClick(sender, e);
+            OnProjectModelClick(projectModel);
         }
     }
 }

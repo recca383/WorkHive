@@ -16,6 +16,7 @@ using WorkHive.Controller;
 using WorkHive.Model;
 using WorkHive.Views.Admin;
 using WorkHive.Views.Admin.DashboardPages;
+using WorkHive.Views.Cards;
 using WorkHive.Views.LandingPage;
 using WorkHive.Views.Pages;
 //using System.Diagnostics
@@ -39,7 +40,7 @@ namespace WorkHive.Views
             InitializeComponent();
             RefreshPicture();
             Initialize_Navigation_Controls();
-            
+            ProjectCard.OnProjectTasksClick += btnTasks_Click;
         }
 
              
@@ -66,6 +67,7 @@ namespace WorkHive.Views
 
             dashboardNavigation = new DashboardNavigation(list, ViewPanel);
             dashboardNavigation.Display(0);
+
         }
 
         public void btnDashBoard_Click(object sender, EventArgs e)
