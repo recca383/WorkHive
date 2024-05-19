@@ -493,6 +493,16 @@ namespace WorkHive.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap LandingPagee {
+            get {
+                object obj = ResourceManager.GetObject("LandingPagee", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap logo {
             get {
                 object obj = ResourceManager.GetObject("logo", resourceCulture);
@@ -646,6 +656,16 @@ namespace WorkHive.Properties {
         internal static System.Drawing.Bitmap octicon_x_12__1_ {
             get {
                 object obj = ResourceManager.GetObject("octicon_x-12 (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Poceedbtn {
+            get {
+                object obj = ResourceManager.GetObject("Poceedbtn", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
