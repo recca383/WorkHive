@@ -18,19 +18,14 @@ namespace WorkHive.Views.Admin.DashboardPages
     {
         private Size TaskViewOriginalSize;
         private Rectangle recTasksName;
-        private Rectangle recbtnAll;
-        private Rectangle recbtnOngoing;
-        private Rectangle recbtnCompleted;
-        private Rectangle recbtnArchived;
         private Rectangle recTasksFlow;
         private Rectangle recbunifuVScrollBar1;
         private Rectangle recRefreshButton;
-        private Rectangle recEditFlatButton;
         private Rectangle recbtnAddtasks;
 
         private List<TaskModel> tasks = TaskModelAccess.GetTaskModel();
         private List<ProjectModel> projects = ProjectModelAccess.GetProjects();
-
+       
 
         public TasksView()
         {
@@ -45,17 +40,26 @@ namespace WorkHive.Views.Admin.DashboardPages
 
             AddTaskPanel.Size = new Size(0, 0);
 
+            TaskDetails.Visible = false;
 
             this.Resize += TasksView_Resize;
             TaskViewOriginalSize = this.Size;
             recTasksName = new Rectangle(TasksName.Location, TasksName.Size);
             recTasksFlow = new Rectangle(TasksFlow.Location, TasksFlow.Size);
-            recbtnAll = new Rectangle(btnAll.Location, btnAll.Size);
             recbunifuVScrollBar1 = new Rectangle(bunifuVScrollBar1.Location, bunifuVScrollBar1.Size);
             recRefreshButton = new Rectangle(RefreshButton.Location, RefreshButton.Size);
             recbtnAddtasks = new Rectangle(btnAddtasks.Location, btnAddtasks.Size);
         }
 
+        public void btnDetails_Click(object sender, EventArgs e, TaskModel task)
+        {
+            TaskDetails.Controls.Clear();
+            TaskDetails.Location = new Point(0, 255);
+            TaskDetails.Size = new Size(383, 465);
+            TaskDetails.Controls.Add(new TaskDetailsCard(task));
+            TaskDetails.Visible = true;
+
+        }
         private void RefreshDataSources()
         {
             StatusFilter.DataSource = Enum.GetNames(typeof(Status));
@@ -66,7 +70,6 @@ namespace WorkHive.Views.Admin.DashboardPages
         {
             resize_Control(TasksName, recTasksName);
             resize_Control(TasksFlow, recTasksFlow);
-            resize_Control(btnAll, recbtnAll);
             resize_Control(bunifuVScrollBar1, recbunifuVScrollBar1);
             resize_Control(RefreshButton, recRefreshButton);
             resize_Control(btnAddtasks, recbtnAddtasks);

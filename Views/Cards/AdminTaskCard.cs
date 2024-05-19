@@ -14,6 +14,7 @@ using WorkHive.Controller;
 using WorkHive.Model;
 using WorkHive.Views.Admin.DashboardPages;
 using WorkHive.Views.LandingPage.LandingPagePages;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
 
 namespace WorkHive.Views.Cards
 {
@@ -32,11 +33,15 @@ namespace WorkHive.Views.Cards
             this.task = task; 
             InitializeComponent();
             InitializeElements();
+          
             this.Resize += TaskCard_Resize;
             recpanel2 = new Rectangle(panel2.Location, panel2.Size);
             recpanel3 = new Rectangle(panel3.Location, panel3.Size);
             recpictureBox1 = new Rectangle(pictureboxFinished.Location, pictureboxFinished.Size);
         }
+
+
+       
 
         private void InitializeElements()
         {
@@ -76,6 +81,15 @@ namespace WorkHive.Views.Cards
             TasksView editTask = (TasksView)this.Parent.Parent;
 
             editTask.btnEdittasks_Click(sender, e, task.TaskID);
+        }
+
+       
+
+        private void btnDetails_Click(object sender, EventArgs e)
+        {
+            TasksView parent = (TasksView)this.Parent.Parent;
+            parent.btnDetails_Click(sender, e, task);
+
         }
 
     }

@@ -30,5 +30,10 @@ namespace WorkHive.Views.Admin.DashboardPages
             lblDescription.Text = task.TaskDescription;
             lblStatus.Text = task.TaskStatus.ToString();
         }
+
+        private void Exit_Click(object sender, EventArgs e)
+        {
+            this.Parent.Controls.Remove(this);
+        }
     }
 }
