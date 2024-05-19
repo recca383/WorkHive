@@ -31,17 +31,17 @@
             this.components = new System.ComponentModel.Container();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label12 = new System.Windows.Forms.Label();
+            this.lblStatus = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.label9 = new System.Windows.Forms.Label();
+            this.lblDescription = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
+            this.lblDeadline = new System.Windows.Forms.Label();
+            this.lblDateStarted = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.lblTaskName = new System.Windows.Forms.Label();
+            this.lblProjectName = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.TaskNamelbl = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
@@ -57,61 +57,61 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.Controls.Add(this.label12);
+            this.panel1.Controls.Add(this.lblStatus);
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Controls.Add(this.label11);
-            this.panel1.Controls.Add(this.label8);
-            this.panel1.Controls.Add(this.label7);
+            this.panel1.Controls.Add(this.lblDeadline);
+            this.panel1.Controls.Add(this.lblDateStarted);
             this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.label4);
-            this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.lblTaskName);
+            this.panel1.Controls.Add(this.lblProjectName);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.TaskNamelbl);
             this.panel1.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.panel1.Location = new System.Drawing.Point(0, 51);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(287, 277);
             this.panel1.TabIndex = 0;
             // 
-            // label12
+            // lblStatus
             // 
-            this.label12.AutoSize = true;
-            this.label12.BackColor = System.Drawing.Color.Transparent;
-            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label12.Location = new System.Drawing.Point(212, 257);
-            this.label12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(69, 17);
-            this.label12.TabIndex = 11;
-            this.label12.Text = "Ongoing";
+            this.lblStatus.AutoSize = true;
+            this.lblStatus.BackColor = System.Drawing.Color.Transparent;
+            this.lblStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblStatus.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.lblStatus.Location = new System.Drawing.Point(212, 257);
+            this.lblStatus.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblStatus.Name = "lblStatus";
+            this.lblStatus.Size = new System.Drawing.Size(69, 17);
+            this.lblStatus.TabIndex = 11;
+            this.lblStatus.Text = "Ongoing";
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.label9);
+            this.panel2.Controls.Add(this.lblDescription);
             this.panel2.Location = new System.Drawing.Point(16, 165);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(255, 79);
             this.panel2.TabIndex = 9;
             // 
-            // label9
+            // lblDescription
             // 
-            this.label9.AllowDrop = true;
-            this.label9.AutoEllipsis = true;
-            this.label9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(0, 0);
-            this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(255, 79);
-            this.label9.TabIndex = 10;
-            this.label9.Text = "abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabc" +
+            this.lblDescription.AllowDrop = true;
+            this.lblDescription.AutoEllipsis = true;
+            this.lblDescription.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblDescription.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDescription.Location = new System.Drawing.Point(0, 0);
+            this.lblDescription.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblDescription.Name = "lblDescription";
+            this.lblDescription.Size = new System.Drawing.Size(255, 79);
+            this.lblDescription.TabIndex = 10;
+            this.lblDescription.Text = "abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabc" +
     "defghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz";
-            this.label9.UseCompatibleTextRendering = true;
+            this.lblDescription.UseCompatibleTextRendering = true;
             // 
             // label11
             // 
@@ -126,27 +126,27 @@
             this.label11.TabIndex = 10;
             this.label11.Text = "Status:  ";
             // 
-            // label8
+            // lblDeadline
             // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(86, 109);
-            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(76, 17);
-            this.label8.TabIndex = 8;
-            this.label8.Text = "Due Date";
+            this.lblDeadline.AutoSize = true;
+            this.lblDeadline.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDeadline.Location = new System.Drawing.Point(86, 109);
+            this.lblDeadline.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblDeadline.Name = "lblDeadline";
+            this.lblDeadline.Size = new System.Drawing.Size(76, 17);
+            this.lblDeadline.TabIndex = 8;
+            this.lblDeadline.Text = "Due Date";
             // 
-            // label7
+            // lblDateStarted
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(106, 80);
-            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(100, 17);
-            this.label7.TabIndex = 7;
-            this.label7.Text = "Date Started";
+            this.lblDateStarted.AutoSize = true;
+            this.lblDateStarted.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDateStarted.Location = new System.Drawing.Point(106, 80);
+            this.lblDateStarted.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblDateStarted.Name = "lblDateStarted";
+            this.lblDateStarted.Size = new System.Drawing.Size(100, 17);
+            this.lblDateStarted.TabIndex = 7;
+            this.lblDateStarted.Text = "Date Started";
             // 
             // label6
             // 
@@ -181,27 +181,27 @@
             this.label4.TabIndex = 4;
             this.label4.Text = "Date Started:";
             // 
-            // label3
+            // lblTaskName
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(96, 50);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(89, 17);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "Task Name";
+            this.lblTaskName.AutoSize = true;
+            this.lblTaskName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTaskName.Location = new System.Drawing.Point(96, 50);
+            this.lblTaskName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblTaskName.Name = "lblTaskName";
+            this.lblTaskName.Size = new System.Drawing.Size(89, 17);
+            this.lblTaskName.TabIndex = 3;
+            this.lblTaskName.Text = "Task Name";
             // 
-            // label2
+            // lblProjectName
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(134, 15);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(116, 20);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Project Name";
+            this.lblProjectName.AutoSize = true;
+            this.lblProjectName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblProjectName.Location = new System.Drawing.Point(134, 15);
+            this.lblProjectName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblProjectName.Name = "lblProjectName";
+            this.lblProjectName.Size = new System.Drawing.Size(116, 20);
+            this.lblProjectName.TabIndex = 2;
+            this.lblProjectName.Text = "Project Name";
             // 
             // label1
             // 
@@ -245,7 +245,7 @@
             this.BackgroundImage = global::WorkHive.Properties.Resources.AddTask;
             this.Controls.Add(this.label10);
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "TaskDetailsCard";
             this.Size = new System.Drawing.Size(287, 378);
             this.panel1.ResumeLayout(false);
@@ -261,18 +261,18 @@
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lblTaskName;
+        private System.Windows.Forms.Label lblProjectName;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label TaskNamelbl;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label lblDescription;
+        private System.Windows.Forms.Label lblDeadline;
+        private System.Windows.Forms.Label lblDateStarted;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label lblStatus;
         private System.Windows.Forms.Label label11;
     }
 }

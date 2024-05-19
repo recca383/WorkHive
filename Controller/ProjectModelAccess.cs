@@ -22,6 +22,15 @@ namespace WorkHive.Controller
                 Tasks = new List<TaskModel>(),
                 DeadLine = DateTime.Now,
                 Archived = false
+            },
+            new ProjectModel
+            {
+                Id = 1,
+                Name = "Sample Project 2",
+                StartDate = DateTime.Now,
+                Tasks = new List<TaskModel>(),
+                DeadLine = DateTime.Now,
+                Archived = false
             }
         };
 
@@ -38,7 +47,8 @@ namespace WorkHive.Controller
                 int totaltasks = currentproject.Tasks.Count();
                 int finishedtasks = currentproject.Tasks.Count(t => t.TaskStatus == Status.Finished);
 
-                int averageprogress = (int)((float)finishedtasks / totaltasks)*100;
+                float average = (float)finishedtasks / totaltasks * 100;
+                int averageprogress = (int) average;
                 currentproject.Progress = averageprogress;
 
                 return averageprogress;

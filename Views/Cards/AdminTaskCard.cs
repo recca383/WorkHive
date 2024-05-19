@@ -77,5 +77,6 @@ namespace WorkHive.Views.Cards
 
             editTask.btnEdittasks_Click(sender, e, task.TaskID);
         }
+
     }
 }

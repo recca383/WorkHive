@@ -34,8 +34,9 @@ namespace WorkHive.Views.Pages
         List<MemberModel> members;
         List<ProjectModel> projects;
         MemberModel currentUser;
+        int projectID = 0;
 
-        
+
 
         public DashboardView(MemberModel CurrentUser)
         {
@@ -98,9 +99,14 @@ namespace WorkHive.Views.Pages
         {
             TasksSummary.Controls.Clear();
             EventsPanel.Controls.Clear();
+            ProjectProgressPanel.Controls.Clear();
+
             projects = ProjectModelAccess.GetProjects();
             tasks = TaskModelAccess.GetTaskModel();
             members = MemberModelAccess.GetMemberModel();
+
+            ProjectProgressPanel.Controls.Add(new ProjectProgress(projectID));
+            ProjectProgressPanel.Dock = DockStyle.Fill;
 
             var dateofmembers = members
                 .Where(d => d.Birthday.Month <= DateTime.Now.Month +2)
@@ -137,5 +143,18 @@ namespace WorkHive.Views.Pages
             RefreshElements();
         }
 
+        private void Next_Click(object sender, EventArgs e)
+        {
+            if (projectID == projects.Count() - 1) projectID = 0;
+            else projectID++;
+            RefreshElements();
+        }
+
+        private void Previous_Click(object sender, EventArgs e)
+        {
+            if (projectID == 0) projectID = projects.Count() - 1 ;
+            else projectID--;
+            RefreshElements();
+        }
     }
 }
