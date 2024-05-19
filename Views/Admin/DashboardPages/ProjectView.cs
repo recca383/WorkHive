@@ -32,9 +32,11 @@ namespace WorkHive.Views.Admin.DashboardPages
             }
         }
 
-        public void btnEdittasks_Click(object sender, EventArgs e, ProjectModel projectModel)
+        public void Summary_Click(object sender, EventArgs e, ProjectModel projectModel)
         {
             ProjectSummary.Controls.Clear();
+            ProjectSummary.Location = new Point(148, 158);
+            ProjectSummary.Size = new Size(640, 301);
             ProjectSummary.Controls.Add(new ProjectSummary(projectModel));
             ProjectSummary.Visible = true;
 
@@ -44,6 +46,13 @@ namespace WorkHive.Views.Admin.DashboardPages
             ProjectSummary.Visible = false;
         }
 
-
+        private void btnAddProject_Click(object sender, EventArgs e)
+        {
+            ProjectSummary.Controls.Clear();
+            ProjectSummary.Location = new Point(276, 46);
+            ProjectSummary.Size = new Size(446, 523);
+            ProjectSummary.Controls.Add(new AddProject());
+            ProjectSummary.Visible = true;
+        }
     }
 }

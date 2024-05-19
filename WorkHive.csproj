@@ -411,10 +411,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AddProject.cs">
+    <Compile Include="Views\Admin\DashboardPages\AddProject.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="AddProject.Designer.cs">
+    <Compile Include="Views\Admin\DashboardPages\AddProject.Designer.cs">
       <DependentUpon>AddProject.cs</DependentUpon>
     </Compile>
     <Compile Include="Controller\ProjectModelAccess.cs" />
@@ -667,7 +667,7 @@
     <Compile Include="Views\Member\DashboardPagesMember\TaskViewMember.Designer.cs">
       <DependentUpon>TaskViewMember.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="AddProject.resx">
+    <EmbeddedResource Include="Views\Admin\DashboardPages\AddProject.resx">
       <DependentUpon>AddProject.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\Admin\DashboardPages\BirthdayCard.resx">

@@ -30,20 +30,19 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddProject));
-            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties1 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties2 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties3 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties4 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties5 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties6 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties7 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties8 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties9 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties10 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties11 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties12 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties13 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties14 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties15 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties16 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.AddNewProject = new System.Windows.Forms.Label();
             this.ProjectDescription = new System.Windows.Forms.Label();
             this.ProjectDeadlineTask = new System.Windows.Forms.Label();
             this.ProjectName = new System.Windows.Forms.Label();
-            this.ArchivedCheckbox = new Bunifu.Framework.UI.BunifuCheckbox();
             this.btnAddProjectProceed = new Bunifu.Framework.UI.BunifuFlatButton();
             this.ProjectDescriptiontxt = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox();
             this.ProjectDatePickerDeadline = new Bunifu.UI.WinForms.BunifuDatePicker();
@@ -62,9 +61,10 @@
             this.AddNewProject.BackColor = System.Drawing.Color.Transparent;
             this.AddNewProject.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AddNewProject.ForeColor = System.Drawing.Color.Black;
-            this.AddNewProject.Location = new System.Drawing.Point(143, 27);
+            this.AddNewProject.Location = new System.Drawing.Point(107, 22);
+            this.AddNewProject.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.AddNewProject.Name = "AddNewProject";
-            this.AddNewProject.Size = new System.Drawing.Size(280, 45);
+            this.AddNewProject.Size = new System.Drawing.Size(234, 37);
             this.AddNewProject.TabIndex = 29;
             this.AddNewProject.Text = "Add New Project";
             // 
@@ -74,9 +74,10 @@
             this.ProjectDescription.BackColor = System.Drawing.Color.Transparent;
             this.ProjectDescription.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ProjectDescription.ForeColor = System.Drawing.Color.Black;
-            this.ProjectDescription.Location = new System.Drawing.Point(29, 319);
+            this.ProjectDescription.Location = new System.Drawing.Point(22, 259);
+            this.ProjectDescription.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.ProjectDescription.Name = "ProjectDescription";
-            this.ProjectDescription.Size = new System.Drawing.Size(267, 38);
+            this.ProjectDescription.Size = new System.Drawing.Size(212, 30);
             this.ProjectDescription.TabIndex = 28;
             this.ProjectDescription.Text = "Project Description";
             // 
@@ -86,9 +87,10 @@
             this.ProjectDeadlineTask.BackColor = System.Drawing.Color.Transparent;
             this.ProjectDeadlineTask.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ProjectDeadlineTask.ForeColor = System.Drawing.Color.Black;
-            this.ProjectDeadlineTask.Location = new System.Drawing.Point(29, 213);
+            this.ProjectDeadlineTask.Location = new System.Drawing.Point(22, 173);
+            this.ProjectDeadlineTask.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.ProjectDeadlineTask.Name = "ProjectDeadlineTask";
-            this.ProjectDeadlineTask.Size = new System.Drawing.Size(269, 38);
+            this.ProjectDeadlineTask.Size = new System.Drawing.Size(211, 30);
             this.ProjectDeadlineTask.TabIndex = 27;
             this.ProjectDeadlineTask.Text = "Deadline of Project";
             // 
@@ -98,24 +100,12 @@
             this.ProjectName.BackColor = System.Drawing.Color.Transparent;
             this.ProjectName.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ProjectName.ForeColor = System.Drawing.Color.Black;
-            this.ProjectName.Location = new System.Drawing.Point(30, 110);
+            this.ProjectName.Location = new System.Drawing.Point(22, 89);
+            this.ProjectName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.ProjectName.Name = "ProjectName";
-            this.ProjectName.Size = new System.Drawing.Size(195, 38);
+            this.ProjectName.Size = new System.Drawing.Size(154, 30);
             this.ProjectName.TabIndex = 25;
             this.ProjectName.Text = "Project Name";
-            // 
-            // ArchivedCheckbox
-            // 
-            this.ArchivedCheckbox.BackColor = System.Drawing.Color.Gold;
-            this.ArchivedCheckbox.ChechedOffColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
-            this.ArchivedCheckbox.Checked = true;
-            this.ArchivedCheckbox.CheckedOnColor = System.Drawing.Color.Gold;
-            this.ArchivedCheckbox.ForeColor = System.Drawing.Color.White;
-            this.ArchivedCheckbox.Location = new System.Drawing.Point(528, 331);
-            this.ArchivedCheckbox.Margin = new System.Windows.Forms.Padding(5);
-            this.ArchivedCheckbox.Name = "ArchivedCheckbox";
-            this.ArchivedCheckbox.Size = new System.Drawing.Size(20, 20);
-            this.ArchivedCheckbox.TabIndex = 23;
             // 
             // btnAddProjectProceed
             // 
@@ -141,18 +131,19 @@
             this.btnAddProjectProceed.IconVisible = true;
             this.btnAddProjectProceed.IconZoom = 90D;
             this.btnAddProjectProceed.IsTab = false;
-            this.btnAddProjectProceed.Location = new System.Drawing.Point(435, 555);
-            this.btnAddProjectProceed.Margin = new System.Windows.Forms.Padding(5);
+            this.btnAddProjectProceed.Location = new System.Drawing.Point(326, 451);
+            this.btnAddProjectProceed.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnAddProjectProceed.Name = "btnAddProjectProceed";
             this.btnAddProjectProceed.Normalcolor = System.Drawing.Color.Transparent;
             this.btnAddProjectProceed.OnHovercolor = System.Drawing.Color.Red;
             this.btnAddProjectProceed.OnHoverTextColor = System.Drawing.Color.White;
             this.btnAddProjectProceed.selected = false;
-            this.btnAddProjectProceed.Size = new System.Drawing.Size(123, 46);
+            this.btnAddProjectProceed.Size = new System.Drawing.Size(92, 37);
             this.btnAddProjectProceed.TabIndex = 22;
             this.btnAddProjectProceed.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnAddProjectProceed.Textcolor = System.Drawing.Color.White;
             this.btnAddProjectProceed.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddProjectProceed.Click += new System.EventHandler(this.btnAddProjectProceed_Click);
             // 
             // ProjectDescriptiontxt
             // 
@@ -182,33 +173,33 @@
             this.ProjectDescriptiontxt.IconRight = null;
             this.ProjectDescriptiontxt.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.ProjectDescriptiontxt.Lines = new string[0];
-            this.ProjectDescriptiontxt.Location = new System.Drawing.Point(37, 358);
-            this.ProjectDescriptiontxt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.ProjectDescriptiontxt.Location = new System.Drawing.Point(28, 291);
+            this.ProjectDescriptiontxt.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.ProjectDescriptiontxt.MaxLength = 32767;
-            this.ProjectDescriptiontxt.MinimumSize = new System.Drawing.Size(100, 34);
+            this.ProjectDescriptiontxt.MinimumSize = new System.Drawing.Size(75, 28);
             this.ProjectDescriptiontxt.Modified = false;
             this.ProjectDescriptiontxt.Multiline = false;
             this.ProjectDescriptiontxt.Name = "ProjectDescriptiontxt";
-            stateProperties1.BorderColor = System.Drawing.Color.Transparent;
-            stateProperties1.FillColor = System.Drawing.Color.Empty;
-            stateProperties1.ForeColor = System.Drawing.Color.Empty;
-            stateProperties1.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.ProjectDescriptiontxt.OnActiveState = stateProperties1;
-            stateProperties2.BorderColor = System.Drawing.Color.Transparent;
-            stateProperties2.FillColor = System.Drawing.Color.White;
-            stateProperties2.ForeColor = System.Drawing.Color.Empty;
-            stateProperties2.PlaceholderForeColor = System.Drawing.Color.Silver;
-            this.ProjectDescriptiontxt.OnDisabledState = stateProperties2;
-            stateProperties3.BorderColor = System.Drawing.Color.Red;
-            stateProperties3.FillColor = System.Drawing.Color.Empty;
-            stateProperties3.ForeColor = System.Drawing.Color.Empty;
-            stateProperties3.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.ProjectDescriptiontxt.OnHoverState = stateProperties3;
-            stateProperties4.BorderColor = System.Drawing.Color.DarkGray;
-            stateProperties4.FillColor = System.Drawing.Color.White;
-            stateProperties4.ForeColor = System.Drawing.Color.Black;
-            stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.ProjectDescriptiontxt.OnIdleState = stateProperties4;
+            stateProperties9.BorderColor = System.Drawing.Color.Transparent;
+            stateProperties9.FillColor = System.Drawing.Color.Empty;
+            stateProperties9.ForeColor = System.Drawing.Color.Empty;
+            stateProperties9.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.ProjectDescriptiontxt.OnActiveState = stateProperties9;
+            stateProperties10.BorderColor = System.Drawing.Color.Transparent;
+            stateProperties10.FillColor = System.Drawing.Color.White;
+            stateProperties10.ForeColor = System.Drawing.Color.Empty;
+            stateProperties10.PlaceholderForeColor = System.Drawing.Color.Silver;
+            this.ProjectDescriptiontxt.OnDisabledState = stateProperties10;
+            stateProperties11.BorderColor = System.Drawing.Color.Red;
+            stateProperties11.FillColor = System.Drawing.Color.Empty;
+            stateProperties11.ForeColor = System.Drawing.Color.Empty;
+            stateProperties11.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.ProjectDescriptiontxt.OnHoverState = stateProperties11;
+            stateProperties12.BorderColor = System.Drawing.Color.DarkGray;
+            stateProperties12.FillColor = System.Drawing.Color.White;
+            stateProperties12.ForeColor = System.Drawing.Color.Black;
+            stateProperties12.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.ProjectDescriptiontxt.OnIdleState = stateProperties12;
             this.ProjectDescriptiontxt.PasswordChar = '\0';
             this.ProjectDescriptiontxt.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.ProjectDescriptiontxt.PlaceholderText = "Enter Project Description...";
@@ -218,7 +209,7 @@
             this.ProjectDescriptiontxt.SelectionLength = 0;
             this.ProjectDescriptiontxt.SelectionStart = 0;
             this.ProjectDescriptiontxt.ShortcutsEnabled = true;
-            this.ProjectDescriptiontxt.Size = new System.Drawing.Size(520, 167);
+            this.ProjectDescriptiontxt.Size = new System.Drawing.Size(390, 136);
             this.ProjectDescriptiontxt.Style = Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox._Style.Bunifu;
             this.ProjectDescriptiontxt.TabIndex = 21;
             this.ProjectDescriptiontxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -246,12 +237,12 @@
             this.ProjectDatePickerDeadline.Icon = ((System.Drawing.Image)(resources.GetObject("ProjectDatePickerDeadline.Icon")));
             this.ProjectDatePickerDeadline.IconColor = System.Drawing.Color.Gold;
             this.ProjectDatePickerDeadline.IconLocation = Bunifu.UI.WinForms.BunifuDatePicker.Indicator.Left;
-            this.ProjectDatePickerDeadline.Location = new System.Drawing.Point(37, 253);
-            this.ProjectDatePickerDeadline.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.ProjectDatePickerDeadline.MinimumSize = new System.Drawing.Size(304, 46);
+            this.ProjectDatePickerDeadline.Location = new System.Drawing.Point(28, 206);
+            this.ProjectDatePickerDeadline.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ProjectDatePickerDeadline.MinimumSize = new System.Drawing.Size(229, 46);
             this.ProjectDatePickerDeadline.Name = "ProjectDatePickerDeadline";
             this.ProjectDatePickerDeadline.ShowCheckBox = true;
-            this.ProjectDatePickerDeadline.Size = new System.Drawing.Size(304, 46);
+            this.ProjectDatePickerDeadline.Size = new System.Drawing.Size(229, 46);
             this.ProjectDatePickerDeadline.TabIndex = 20;
             // 
             // ProjectTaskNametxt
@@ -282,33 +273,33 @@
             this.ProjectTaskNametxt.IconRight = null;
             this.ProjectTaskNametxt.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.ProjectTaskNametxt.Lines = new string[0];
-            this.ProjectTaskNametxt.Location = new System.Drawing.Point(38, 150);
-            this.ProjectTaskNametxt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.ProjectTaskNametxt.Location = new System.Drawing.Point(28, 122);
+            this.ProjectTaskNametxt.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.ProjectTaskNametxt.MaxLength = 32767;
-            this.ProjectTaskNametxt.MinimumSize = new System.Drawing.Size(100, 34);
+            this.ProjectTaskNametxt.MinimumSize = new System.Drawing.Size(75, 28);
             this.ProjectTaskNametxt.Modified = false;
             this.ProjectTaskNametxt.Multiline = false;
             this.ProjectTaskNametxt.Name = "ProjectTaskNametxt";
-            stateProperties5.BorderColor = System.Drawing.Color.Transparent;
-            stateProperties5.FillColor = System.Drawing.Color.Empty;
-            stateProperties5.ForeColor = System.Drawing.Color.Empty;
-            stateProperties5.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.ProjectTaskNametxt.OnActiveState = stateProperties5;
-            stateProperties6.BorderColor = System.Drawing.Color.Transparent;
-            stateProperties6.FillColor = System.Drawing.Color.White;
-            stateProperties6.ForeColor = System.Drawing.Color.Empty;
-            stateProperties6.PlaceholderForeColor = System.Drawing.Color.Silver;
-            this.ProjectTaskNametxt.OnDisabledState = stateProperties6;
-            stateProperties7.BorderColor = System.Drawing.Color.Red;
-            stateProperties7.FillColor = System.Drawing.Color.Empty;
-            stateProperties7.ForeColor = System.Drawing.Color.Empty;
-            stateProperties7.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.ProjectTaskNametxt.OnHoverState = stateProperties7;
-            stateProperties8.BorderColor = System.Drawing.Color.DarkGray;
-            stateProperties8.FillColor = System.Drawing.Color.White;
-            stateProperties8.ForeColor = System.Drawing.Color.Black;
-            stateProperties8.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.ProjectTaskNametxt.OnIdleState = stateProperties8;
+            stateProperties13.BorderColor = System.Drawing.Color.Transparent;
+            stateProperties13.FillColor = System.Drawing.Color.Empty;
+            stateProperties13.ForeColor = System.Drawing.Color.Empty;
+            stateProperties13.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.ProjectTaskNametxt.OnActiveState = stateProperties13;
+            stateProperties14.BorderColor = System.Drawing.Color.Transparent;
+            stateProperties14.FillColor = System.Drawing.Color.White;
+            stateProperties14.ForeColor = System.Drawing.Color.Empty;
+            stateProperties14.PlaceholderForeColor = System.Drawing.Color.Silver;
+            this.ProjectTaskNametxt.OnDisabledState = stateProperties14;
+            stateProperties15.BorderColor = System.Drawing.Color.Red;
+            stateProperties15.FillColor = System.Drawing.Color.Empty;
+            stateProperties15.ForeColor = System.Drawing.Color.Empty;
+            stateProperties15.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.ProjectTaskNametxt.OnHoverState = stateProperties15;
+            stateProperties16.BorderColor = System.Drawing.Color.DarkGray;
+            stateProperties16.FillColor = System.Drawing.Color.White;
+            stateProperties16.ForeColor = System.Drawing.Color.Black;
+            stateProperties16.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.ProjectTaskNametxt.OnIdleState = stateProperties16;
             this.ProjectTaskNametxt.PasswordChar = '\0';
             this.ProjectTaskNametxt.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.ProjectTaskNametxt.PlaceholderText = "Enter Task Name";
@@ -318,7 +309,7 @@
             this.ProjectTaskNametxt.SelectionLength = 0;
             this.ProjectTaskNametxt.SelectionStart = 0;
             this.ProjectTaskNametxt.ShortcutsEnabled = true;
-            this.ProjectTaskNametxt.Size = new System.Drawing.Size(520, 42);
+            this.ProjectTaskNametxt.Size = new System.Drawing.Size(390, 34);
             this.ProjectTaskNametxt.Style = Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox._Style.Bunifu;
             this.ProjectTaskNametxt.TabIndex = 19;
             this.ProjectTaskNametxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -351,23 +342,24 @@
             this.btnAddProjectExit.IconVisible = true;
             this.btnAddProjectExit.IconZoom = 90D;
             this.btnAddProjectExit.IsTab = false;
-            this.btnAddProjectExit.Location = new System.Drawing.Point(511, 27);
-            this.btnAddProjectExit.Margin = new System.Windows.Forms.Padding(5);
+            this.btnAddProjectExit.Location = new System.Drawing.Point(383, 22);
+            this.btnAddProjectExit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnAddProjectExit.Name = "btnAddProjectExit";
             this.btnAddProjectExit.Normalcolor = System.Drawing.Color.Transparent;
             this.btnAddProjectExit.OnHovercolor = System.Drawing.Color.Transparent;
             this.btnAddProjectExit.OnHoverTextColor = System.Drawing.Color.Transparent;
             this.btnAddProjectExit.selected = false;
-            this.btnAddProjectExit.Size = new System.Drawing.Size(47, 49);
+            this.btnAddProjectExit.Size = new System.Drawing.Size(35, 40);
             this.btnAddProjectExit.TabIndex = 18;
             this.btnAddProjectExit.Text = "bunifuFlatButton1";
             this.btnAddProjectExit.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnAddProjectExit.Textcolor = System.Drawing.Color.White;
             this.btnAddProjectExit.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddProjectExit.Click += new System.EventHandler(this.btnAddProjectExit_Click);
             // 
             // AddProject
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::WorkHive.Properties.Resources.Group_77__2_;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
@@ -375,15 +367,15 @@
             this.Controls.Add(this.ProjectDescription);
             this.Controls.Add(this.ProjectDeadlineTask);
             this.Controls.Add(this.ProjectName);
-            this.Controls.Add(this.ArchivedCheckbox);
             this.Controls.Add(this.btnAddProjectProceed);
             this.Controls.Add(this.ProjectDescriptiontxt);
             this.Controls.Add(this.ProjectDatePickerDeadline);
             this.Controls.Add(this.ProjectTaskNametxt);
             this.Controls.Add(this.btnAddProjectExit);
             this.DoubleBuffered = true;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "AddProject";
-            this.Size = new System.Drawing.Size(595, 644);
+            this.Size = new System.Drawing.Size(446, 523);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -396,7 +388,6 @@
         private System.Windows.Forms.Label ProjectDescription;
         private System.Windows.Forms.Label ProjectDeadlineTask;
         private System.Windows.Forms.Label ProjectName;
-        private Bunifu.Framework.UI.BunifuCheckbox ArchivedCheckbox;
         private Bunifu.Framework.UI.BunifuFlatButton btnAddProjectProceed;
         private Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox ProjectDescriptiontxt;
         private Bunifu.UI.WinForms.BunifuDatePicker ProjectDatePickerDeadline;

@@ -46,8 +46,6 @@ namespace WorkHive.Views.Cards
                     break;
             }
 
-            var parent = Directory.GetParent(Directory.GetCurrentDirectory()).Parent.FullName;
-
             pictureboxFinished.Image = task.TaskImage;
 
 

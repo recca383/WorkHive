@@ -35,14 +35,14 @@ namespace WorkHive.Views.Admin.DashboardPages
         public TasksView()
         {
             InitializeComponent();
-            StatusFilter.DataSource = Enum.GetNames(typeof(Status));
-            ProjectFilter.DataSource = projects.Select(s => s.Name).ToList();
+            RefreshDataSources();
             ProjectFilter.SelectedItem = null;
             StatusFilter.SelectedItem = null;
             var results = tasks.Where(a => a.TaskStatus != Status.Archived).ToList();
+            AddProject.OnProjectAdded2 += OnProjectTasksOnclick;
             ProjectCard.OnProjectModelClick += OnProjectTasksOnclick;
             RefreshList(results);
-            
+
             AddTaskPanel.Size = new Size(0, 0);
 
 
@@ -54,6 +54,12 @@ namespace WorkHive.Views.Admin.DashboardPages
             recbunifuVScrollBar1 = new Rectangle(bunifuVScrollBar1.Location, bunifuVScrollBar1.Size);
             recRefreshButton = new Rectangle(RefreshButton.Location, RefreshButton.Size);
             recbtnAddtasks = new Rectangle(btnAddtasks.Location, btnAddtasks.Size);
+        }
+
+        private void RefreshDataSources()
+        {
+            StatusFilter.DataSource = Enum.GetNames(typeof(Status));
+            ProjectFilter.DataSource = projects.Select(s => s.Name).ToList();
         }
 
         private void TasksView_Resize(object sender, EventArgs e)
@@ -124,6 +130,7 @@ namespace WorkHive.Views.Admin.DashboardPages
 
         public void OnProjectTasksOnclick(ProjectModel model)
         {
+            RefreshDataSources();
             ProjectFilter.SelectedIndex = model.Id;
 
         }

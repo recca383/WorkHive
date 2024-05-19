@@ -41,6 +41,8 @@ namespace WorkHive.Views
             RefreshPicture();
             Initialize_Navigation_Controls();
             ProjectCard.OnProjectTasksClick += btnTasks_Click;
+            AddProject.OnProjectAdded1 += btnTasks_Click;
+            
         }
 
              

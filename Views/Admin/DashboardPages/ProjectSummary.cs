@@ -44,7 +44,6 @@ namespace WorkHive.Views.Admin.DashboardPages
         }
         private void Exit_Click(object sender, EventArgs e)
         {
-            Refresh();
             this.Parent.Controls.Remove(this);
         }
     }

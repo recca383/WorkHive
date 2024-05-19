@@ -46,9 +46,9 @@ namespace WorkHive.Views.Cards
             if (task.ProjectAssigned is null) lblProjectName.Text = "No Project";
             else lblProjectName.Text = task.ProjectAssigned.Name;
             var parent = Directory.GetParent(Directory.GetCurrentDirectory()).Parent.FullName;
-                pictureboxFinished.Image = task.TaskImage;
+            pictureboxFinished.Image = task.TaskImage;
 
-            
+
         }
 
         private void TaskCard_Resize(object sender, EventArgs e)

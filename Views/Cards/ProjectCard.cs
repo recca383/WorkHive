@@ -31,7 +31,7 @@ namespace WorkHive.Views.Cards
         private void btnSummary_Click(object sender, EventArgs e)
         {
             ProjectView parent = (ProjectView)this.Parent.Parent;
-            parent.btnEdittasks_Click(sender, e, projectModel);
+            parent.Summary_Click(sender, e, projectModel);
         }
 
         private void btnTasks_Click(object sender, EventArgs e)
