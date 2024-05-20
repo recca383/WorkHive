@@ -43,9 +43,10 @@
             this.Dashboardlbl.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Dashboardlbl.AutoSize = true;
             this.Dashboardlbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Dashboardlbl.Location = new System.Drawing.Point(11, 9);
+            this.Dashboardlbl.Location = new System.Drawing.Point(15, 11);
+            this.Dashboardlbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Dashboardlbl.Name = "Dashboardlbl";
-            this.Dashboardlbl.Size = new System.Drawing.Size(152, 39);
+            this.Dashboardlbl.Size = new System.Drawing.Size(187, 51);
             this.Dashboardlbl.TabIndex = 1;
             this.Dashboardlbl.Text = "Projects";
             // 
@@ -55,9 +56,10 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.ProjectsFlow.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-            this.ProjectsFlow.Location = new System.Drawing.Point(18, 73);
+            this.ProjectsFlow.Location = new System.Drawing.Point(24, 90);
+            this.ProjectsFlow.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ProjectsFlow.Name = "ProjectsFlow";
-            this.ProjectsFlow.Size = new System.Drawing.Size(886, 513);
+            this.ProjectsFlow.Size = new System.Drawing.Size(1181, 631);
             this.ProjectsFlow.TabIndex = 21;
             this.ProjectsFlow.WrapContents = false;
             // 
@@ -65,9 +67,10 @@
             // 
             this.ProjectSummary.BackColor = System.Drawing.Color.Transparent;
             this.ProjectSummary.ForeColor = System.Drawing.Color.Transparent;
-            this.ProjectSummary.Location = new System.Drawing.Point(276, 46);
+            this.ProjectSummary.Location = new System.Drawing.Point(368, 57);
+            this.ProjectSummary.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ProjectSummary.Name = "ProjectSummary";
-            this.ProjectSummary.Size = new System.Drawing.Size(446, 523);
+            this.ProjectSummary.Size = new System.Drawing.Size(595, 644);
             this.ProjectSummary.TabIndex = 19;
             this.ProjectSummary.ControlRemoved += new System.Windows.Forms.ControlEventHandler(this.AddTaskPanel_ControlRemoved);
             // 
@@ -79,9 +82,10 @@
             this.RefreshButton.BorderRadius = 0;
             this.RefreshButton.Image = global::WorkHive.Properties.Resources.refresh;
             this.RefreshButton.IsCircle = false;
-            this.RefreshButton.Location = new System.Drawing.Point(843, 24);
+            this.RefreshButton.Location = new System.Drawing.Point(1124, 30);
+            this.RefreshButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.RefreshButton.Name = "RefreshButton";
-            this.RefreshButton.Size = new System.Drawing.Size(28, 26);
+            this.RefreshButton.Size = new System.Drawing.Size(37, 32);
             this.RefreshButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.RefreshButton.TabIndex = 24;
             this.RefreshButton.TabStop = false;
@@ -89,7 +93,7 @@
             // 
             // btnAddProject
             // 
-            this.btnAddProject.Active = false;
+            this.btnAddProject.Active = true;
             this.btnAddProject.Activecolor = System.Drawing.Color.Transparent;
             this.btnAddProject.BackColor = System.Drawing.Color.Transparent;
             this.btnAddProject.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
@@ -110,14 +114,14 @@
             this.btnAddProject.IconZoom = 60D;
             this.btnAddProject.ImeMode = System.Windows.Forms.ImeMode.On;
             this.btnAddProject.IsTab = false;
-            this.btnAddProject.Location = new System.Drawing.Point(886, 23);
-            this.btnAddProject.Margin = new System.Windows.Forms.Padding(4);
+            this.btnAddProject.Location = new System.Drawing.Point(1181, 28);
+            this.btnAddProject.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.btnAddProject.Name = "btnAddProject";
             this.btnAddProject.Normalcolor = System.Drawing.Color.Transparent;
             this.btnAddProject.OnHovercolor = System.Drawing.Color.Transparent;
             this.btnAddProject.OnHoverTextColor = System.Drawing.Color.White;
-            this.btnAddProject.selected = false;
-            this.btnAddProject.Size = new System.Drawing.Size(26, 28);
+            this.btnAddProject.selected = true;
+            this.btnAddProject.Size = new System.Drawing.Size(35, 34);
             this.btnAddProject.TabIndex = 23;
             this.btnAddProject.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnAddProject.Textcolor = System.Drawing.Color.White;
@@ -144,8 +148,8 @@
             this.bunifuVScrollBar1.BorderThickness = 1;
             this.bunifuVScrollBar1.DurationBeforeShrink = 2000;
             this.bunifuVScrollBar1.LargeChange = 10;
-            this.bunifuVScrollBar1.Location = new System.Drawing.Point(910, 73);
-            this.bunifuVScrollBar1.Margin = new System.Windows.Forms.Padding(4);
+            this.bunifuVScrollBar1.Location = new System.Drawing.Point(1213, 90);
+            this.bunifuVScrollBar1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.bunifuVScrollBar1.Maximum = 100;
             this.bunifuVScrollBar1.Minimum = 0;
             this.bunifuVScrollBar1.MinimumThumbLength = 18;
@@ -156,18 +160,18 @@
             this.bunifuVScrollBar1.ScrollBarBorderColor = System.Drawing.Color.Silver;
             this.bunifuVScrollBar1.ScrollBarColor = System.Drawing.Color.Silver;
             this.bunifuVScrollBar1.ShrinkSizeLimit = 3;
-            this.bunifuVScrollBar1.Size = new System.Drawing.Size(18, 509);
+            this.bunifuVScrollBar1.Size = new System.Drawing.Size(24, 626);
             this.bunifuVScrollBar1.SmallChange = 1;
             this.bunifuVScrollBar1.TabIndex = 22;
             this.bunifuVScrollBar1.ThumbColor = System.Drawing.Color.Gray;
-            this.bunifuVScrollBar1.ThumbLength = 50;
+            this.bunifuVScrollBar1.ThumbLength = 61;
             this.bunifuVScrollBar1.ThumbMargin = 1;
             this.bunifuVScrollBar1.ThumbStyle = Bunifu.UI.WinForms.BunifuVScrollBar.ThumbStyles.Inset;
             this.bunifuVScrollBar1.Value = 0;
             // 
             // ProjectView
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.ProjectSummary);
             this.Controls.Add(this.RefreshButton);
@@ -175,9 +179,9 @@
             this.Controls.Add(this.bunifuVScrollBar1);
             this.Controls.Add(this.ProjectsFlow);
             this.Controls.Add(this.Dashboardlbl);
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "ProjectView";
-            this.Size = new System.Drawing.Size(932, 586);
+            this.Size = new System.Drawing.Size(1243, 721);
             ((System.ComponentModel.ISupportInitialize)(this.RefreshButton)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

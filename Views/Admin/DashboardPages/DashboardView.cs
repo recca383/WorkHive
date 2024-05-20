@@ -29,6 +29,11 @@ namespace WorkHive.Views.Pages
         private Rectangle recpanel5;
         private Rectangle recpanel2;
         private Rectangle recpanel3;
+        private Rectangle recEventsPanel;
+        private Rectangle recProjectProgressPanel;
+        private Rectangle recTasksSummary;
+        private Rectangle recNext;
+        private Rectangle recPrevious;
 
         List<TaskModel> tasks;
         List<MemberModel> members;
@@ -64,7 +69,14 @@ namespace WorkHive.Views.Pages
             recpanel2 = new Rectangle(panel2.Location, panel2.Size);
             recpanel3 = new Rectangle(panel3.Location, panel3.Size);
 
-            
+            recEventsPanel = new Rectangle(EventsPanel.Location, EventsPanel.Size);
+            recProjectProgressPanel = new Rectangle(ProjectProgressPanel.Location, ProjectProgressPanel.Size);
+            recTasksSummary = new Rectangle(TasksSummary.Location, TasksSummary.Size);
+            recNext = new Rectangle(Next.Location, Next.Size);
+            recPrevious = new Rectangle(Previous.Location, Previous.Size);
+
+
+
         }
 
         private void DashboardView_Resize(object sender, EventArgs e)
@@ -79,6 +91,12 @@ namespace WorkHive.Views.Pages
             resize_Control(panel5, recpanel5);
             resize_Control(panel2, recpanel2);
             resize_Control(panel3, recpanel3);
+
+            resize_Control(EventsPanel, recEventsPanel);
+            resize_Control(ProjectProgressPanel, recProjectProgressPanel);
+            resize_Control(TasksSummary, recTasksSummary);
+            resize_Control(Next, recNext);
+            resize_Control(Previous, recPrevious);
         }
 
         private void resize_Control(Control c, Rectangle r)

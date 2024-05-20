@@ -183,7 +183,6 @@
             this.btnDetails.Textcolor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
             this.btnDetails.TextFont = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDetails.Click += new System.EventHandler(this.btnDetails_Click);
-            this.btnDetails.DoubleClick += new System.EventHandler(this.btnDetails_DoubleClick);
             // 
             // pictureBox2
             // 

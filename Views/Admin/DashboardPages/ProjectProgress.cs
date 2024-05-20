@@ -14,12 +14,14 @@ namespace WorkHive.Views.Admin.DashboardPages
 {
     public partial class ProjectProgress : UserControl
     {
-        
+      
         public ProjectProgress(int projectID)
         {
             InitializeComponent();
             InitializeElements(projectID);
         }
+
+
 
         private void InitializeElements(int projectID)
         {

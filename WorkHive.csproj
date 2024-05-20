@@ -485,6 +485,18 @@
     <Compile Include="Views\Admin\DashboardPages\MemberView.Designer.cs">
       <DependentUpon>MemberView.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\Admin\DashboardPages\NotificationCard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Admin\DashboardPages\NotificationCard.Designer.cs">
+      <DependentUpon>NotificationCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Admin\DashboardPages\NotificationDetails.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Admin\DashboardPages\NotificationDetails.Designer.cs">
+      <DependentUpon>NotificationDetails.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\Admin\DashboardPages\ProjectProgress.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -552,6 +564,12 @@
     </Compile>
     <Compile Include="Views\Admin\DashboardPages\ResetPassword.Designer.cs">
       <DependentUpon>ResetPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Admin\Notification.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Admin\Notification.Designer.cs">
+      <DependentUpon>Notification.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\Cards\AdminCard.cs">
       <SubType>UserControl</SubType>
@@ -697,6 +715,12 @@
     <EmbeddedResource Include="Views\Admin\DashboardPages\MemberView.resx">
       <DependentUpon>MemberView.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Views\Admin\DashboardPages\NotificationCard.resx">
+      <DependentUpon>NotificationCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Admin\DashboardPages\NotificationDetails.resx">
+      <DependentUpon>NotificationDetails.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\Admin\DashboardPages\ProjectProgress.resx">
       <DependentUpon>ProjectProgress.cs</DependentUpon>
     </EmbeddedResource>
@@ -734,6 +758,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Views\Admin\DashboardPages\ResetPassword.resx">
       <DependentUpon>ResetPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Admin\Notification.resx">
+      <DependentUpon>Notification.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\Cards\AdminCard.resx">
       <DependentUpon>AdminCard.cs</DependentUpon>
@@ -854,6 +881,12 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\notif %282%29.png" />
+    <None Include="Resources\notif %281%29.png" />
+    <None Include="Resources\notif1.png" />
+    <None Include="Resources\notif.png" />
+    <None Include="Resources\Next.png" />
+    <None Include="Resources\Previous.png" />
     <None Include="Resources\Poceedbtn.png" />
     <None Include="Resources\LandingPagee.png" />
     <None Include="Resources\LandingPage.png" />
