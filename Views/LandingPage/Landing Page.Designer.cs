@@ -86,7 +86,7 @@
             this.MaximizeBox = false;
             this.Name = "Landing_Page";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "WORKHIVE";
+            this.Text = "WorkHive";
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

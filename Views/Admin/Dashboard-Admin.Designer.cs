@@ -63,16 +63,17 @@
             this.PnTitleBar.Controls.Add(this.ProfilePicBox);
             this.PnTitleBar.Controls.Add(this.btnMenu);
             this.PnTitleBar.Dock = System.Windows.Forms.DockStyle.Top;
-            this.PnTitleBar.Location = new System.Drawing.Point(164, 0);
-            this.PnTitleBar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.PnTitleBar.Location = new System.Drawing.Point(219, 0);
+            this.PnTitleBar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.PnTitleBar.Name = "PnTitleBar";
-            this.PnTitleBar.Size = new System.Drawing.Size(1020, 81);
+            this.PnTitleBar.Size = new System.Drawing.Size(1360, 100);
             this.PnTitleBar.TabIndex = 8;
             // 
             // profilepanel
             // 
             this.profilepanel.BackColor = System.Drawing.Color.Transparent;
-            this.profilepanel.Location = new System.Drawing.Point(633, 35);
+            this.profilepanel.Location = new System.Drawing.Point(844, 43);
+            this.profilepanel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.profilepanel.Name = "profilepanel";
             this.profilepanel.Size = new System.Drawing.Size(0, 0);
             this.profilepanel.TabIndex = 3;
@@ -82,8 +83,8 @@
             this.Notificationbtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.Notificationbtn.BackColor = System.Drawing.Color.Transparent;
             this.Notificationbtn.Image = ((System.Drawing.Image)(resources.GetObject("Notificationbtn.Image")));
-            this.Notificationbtn.Location = new System.Drawing.Point(920, 33);
-            this.Notificationbtn.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Notificationbtn.Location = new System.Drawing.Point(1227, 41);
+            this.Notificationbtn.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.Notificationbtn.Name = "Notificationbtn";
             this.Notificationbtn.Size = new System.Drawing.Size(23, 22);
             this.Notificationbtn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -94,10 +95,10 @@
             // 
             this.ProfilePicBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.ProfilePicBox.Image = ((System.Drawing.Image)(resources.GetObject("ProfilePicBox.Image")));
-            this.ProfilePicBox.Location = new System.Drawing.Point(962, 23);
-            this.ProfilePicBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ProfilePicBox.Location = new System.Drawing.Point(1283, 28);
+            this.ProfilePicBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ProfilePicBox.Name = "ProfilePicBox";
-            this.ProfilePicBox.Size = new System.Drawing.Size(36, 37);
+            this.ProfilePicBox.Size = new System.Drawing.Size(48, 46);
             this.ProfilePicBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.ProfilePicBox.TabIndex = 0;
             this.ProfilePicBox.TabStop = false;
@@ -108,9 +109,10 @@
             this.btnMenu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMenu.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(44)))), ((int)(((byte)(49)))));
             this.btnMenu.Image = ((System.Drawing.Image)(resources.GetObject("btnMenu.Image")));
-            this.btnMenu.Location = new System.Drawing.Point(3, 9);
+            this.btnMenu.Location = new System.Drawing.Point(4, 11);
+            this.btnMenu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnMenu.Name = "btnMenu";
-            this.btnMenu.Size = new System.Drawing.Size(46, 63);
+            this.btnMenu.Size = new System.Drawing.Size(61, 78);
             this.btnMenu.TabIndex = 0;
             this.btnMenu.UseVisualStyleBackColor = true;
             this.btnMenu.Click += new System.EventHandler(this.btnMenu_Click);
@@ -119,10 +121,10 @@
             // 
             this.ViewPanel.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ViewPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ViewPanel.Location = new System.Drawing.Point(164, 81);
-            this.ViewPanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ViewPanel.Location = new System.Drawing.Point(219, 100);
+            this.ViewPanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ViewPanel.Name = "ViewPanel";
-            this.ViewPanel.Size = new System.Drawing.Size(1020, 599);
+            this.ViewPanel.Size = new System.Drawing.Size(1360, 737);
             this.ViewPanel.TabIndex = 9;
             // 
             // sidebar
@@ -139,9 +141,9 @@
             this.sidebar.Controls.Add(this.btnCalendar);
             this.sidebar.Dock = System.Windows.Forms.DockStyle.Left;
             this.sidebar.Location = new System.Drawing.Point(0, 0);
-            this.sidebar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.sidebar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.sidebar.Name = "sidebar";
-            this.sidebar.Size = new System.Drawing.Size(164, 680);
+            this.sidebar.Size = new System.Drawing.Size(219, 837);
             this.sidebar.TabIndex = 7;
             // 
             // btnProjects
@@ -166,14 +168,14 @@
             this.btnProjects.IconVisible = true;
             this.btnProjects.IconZoom = 40D;
             this.btnProjects.IsTab = false;
-            this.btnProjects.Location = new System.Drawing.Point(0, 164);
+            this.btnProjects.Location = new System.Drawing.Point(0, 202);
             this.btnProjects.Margin = new System.Windows.Forms.Padding(0);
             this.btnProjects.Name = "btnProjects";
             this.btnProjects.Normalcolor = System.Drawing.Color.Transparent;
             this.btnProjects.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(194)))), ((int)(((byte)(1)))));
             this.btnProjects.OnHoverTextColor = System.Drawing.Color.White;
             this.btnProjects.selected = true;
-            this.btnProjects.Size = new System.Drawing.Size(188, 41);
+            this.btnProjects.Size = new System.Drawing.Size(251, 50);
             this.btnProjects.TabIndex = 9;
             this.btnProjects.Tag = "Projects";
             this.btnProjects.Text = "   Projects";
@@ -204,14 +206,14 @@
             this.btnDashBoard.IconVisible = true;
             this.btnDashBoard.IconZoom = 40D;
             this.btnDashBoard.IsTab = false;
-            this.btnDashBoard.Location = new System.Drawing.Point(0, 82);
+            this.btnDashBoard.Location = new System.Drawing.Point(0, 101);
             this.btnDashBoard.Margin = new System.Windows.Forms.Padding(0);
             this.btnDashBoard.Name = "btnDashBoard";
             this.btnDashBoard.Normalcolor = System.Drawing.Color.Transparent;
             this.btnDashBoard.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(194)))), ((int)(((byte)(1)))));
             this.btnDashBoard.OnHoverTextColor = System.Drawing.Color.White;
             this.btnDashBoard.selected = true;
-            this.btnDashBoard.Size = new System.Drawing.Size(188, 41);
+            this.btnDashBoard.Size = new System.Drawing.Size(251, 50);
             this.btnDashBoard.TabIndex = 1;
             this.btnDashBoard.Tag = "Dashboard";
             this.btnDashBoard.Text = "   Dashboard";
@@ -242,14 +244,14 @@
             this.btnChats.IconVisible = true;
             this.btnChats.IconZoom = 40D;
             this.btnChats.IsTab = false;
-            this.btnChats.Location = new System.Drawing.Point(0, 286);
+            this.btnChats.Location = new System.Drawing.Point(0, 352);
             this.btnChats.Margin = new System.Windows.Forms.Padding(0);
             this.btnChats.Name = "btnChats";
             this.btnChats.Normalcolor = System.Drawing.Color.Transparent;
             this.btnChats.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(194)))), ((int)(((byte)(1)))));
             this.btnChats.OnHoverTextColor = System.Drawing.Color.White;
             this.btnChats.selected = true;
-            this.btnChats.Size = new System.Drawing.Size(188, 41);
+            this.btnChats.Size = new System.Drawing.Size(251, 50);
             this.btnChats.TabIndex = 6;
             this.btnChats.Tag = "Chats";
             this.btnChats.Text = "   Chats";
@@ -264,9 +266,9 @@
             this.panel3.Controls.Add(this.pictureBox1);
             this.panel3.Controls.Add(this.pictureBox2);
             this.panel3.Location = new System.Drawing.Point(0, 0);
-            this.panel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(164, 81);
+            this.panel3.Size = new System.Drawing.Size(219, 100);
             this.panel3.TabIndex = 3;
             // 
             // pictureBox1
@@ -274,10 +276,10 @@
             this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(53, 35);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.pictureBox1.Location = new System.Drawing.Point(71, 43);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(110, 16);
+            this.pictureBox1.Size = new System.Drawing.Size(147, 20);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
@@ -285,10 +287,10 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(8, 18);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.pictureBox2.Location = new System.Drawing.Point(11, 22);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(38, 48);
+            this.pictureBox2.Size = new System.Drawing.Size(51, 59);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 1;
             this.pictureBox2.TabStop = false;
@@ -315,14 +317,14 @@
             this.btnTasks.IconVisible = true;
             this.btnTasks.IconZoom = 40D;
             this.btnTasks.IsTab = false;
-            this.btnTasks.Location = new System.Drawing.Point(0, 205);
+            this.btnTasks.Location = new System.Drawing.Point(0, 252);
             this.btnTasks.Margin = new System.Windows.Forms.Padding(0);
             this.btnTasks.Name = "btnTasks";
             this.btnTasks.Normalcolor = System.Drawing.Color.Transparent;
             this.btnTasks.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(194)))), ((int)(((byte)(1)))));
             this.btnTasks.OnHoverTextColor = System.Drawing.Color.White;
             this.btnTasks.selected = true;
-            this.btnTasks.Size = new System.Drawing.Size(188, 41);
+            this.btnTasks.Size = new System.Drawing.Size(251, 50);
             this.btnTasks.TabIndex = 3;
             this.btnTasks.Tag = "Tasks";
             this.btnTasks.Text = "   Tasks";
@@ -354,14 +356,14 @@
             this.btnLogout.IconVisible = true;
             this.btnLogout.IconZoom = 35D;
             this.btnLogout.IsTab = false;
-            this.btnLogout.Location = new System.Drawing.Point(0, 639);
+            this.btnLogout.Location = new System.Drawing.Point(0, 786);
             this.btnLogout.Margin = new System.Windows.Forms.Padding(0);
             this.btnLogout.Name = "btnLogout";
             this.btnLogout.Normalcolor = System.Drawing.Color.Transparent;
             this.btnLogout.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(194)))), ((int)(((byte)(1)))));
             this.btnLogout.OnHoverTextColor = System.Drawing.Color.White;
             this.btnLogout.selected = true;
-            this.btnLogout.Size = new System.Drawing.Size(171, 41);
+            this.btnLogout.Size = new System.Drawing.Size(228, 50);
             this.btnLogout.TabIndex = 8;
             this.btnLogout.Tag = "Log Out";
             this.btnLogout.Text = "     Log Out";
@@ -392,14 +394,14 @@
             this.btnMembers.IconVisible = true;
             this.btnMembers.IconZoom = 40D;
             this.btnMembers.IsTab = false;
-            this.btnMembers.Location = new System.Drawing.Point(0, 123);
+            this.btnMembers.Location = new System.Drawing.Point(0, 151);
             this.btnMembers.Margin = new System.Windows.Forms.Padding(0);
             this.btnMembers.Name = "btnMembers";
             this.btnMembers.Normalcolor = System.Drawing.Color.Transparent;
             this.btnMembers.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(194)))), ((int)(((byte)(1)))));
             this.btnMembers.OnHoverTextColor = System.Drawing.Color.White;
             this.btnMembers.selected = true;
-            this.btnMembers.Size = new System.Drawing.Size(188, 41);
+            this.btnMembers.Size = new System.Drawing.Size(251, 50);
             this.btnMembers.TabIndex = 2;
             this.btnMembers.Tag = "Members";
             this.btnMembers.Text = "   Members";
@@ -430,14 +432,14 @@
             this.btnCalendar.IconVisible = true;
             this.btnCalendar.IconZoom = 40D;
             this.btnCalendar.IsTab = false;
-            this.btnCalendar.Location = new System.Drawing.Point(0, 245);
+            this.btnCalendar.Location = new System.Drawing.Point(0, 302);
             this.btnCalendar.Margin = new System.Windows.Forms.Padding(0);
             this.btnCalendar.Name = "btnCalendar";
             this.btnCalendar.Normalcolor = System.Drawing.Color.Transparent;
             this.btnCalendar.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(194)))), ((int)(((byte)(1)))));
             this.btnCalendar.OnHoverTextColor = System.Drawing.Color.White;
             this.btnCalendar.selected = true;
-            this.btnCalendar.Size = new System.Drawing.Size(188, 41);
+            this.btnCalendar.Size = new System.Drawing.Size(251, 50);
             this.btnCalendar.TabIndex = 5;
             this.btnCalendar.Tag = "Calendar";
             this.btnCalendar.Text = "   Calendar";
@@ -448,17 +450,19 @@
             // 
             // Dashboard_Admin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(1184, 680);
+            this.ClientSize = new System.Drawing.Size(1579, 837);
             this.Controls.Add(this.ViewPanel);
             this.Controls.Add(this.PnTitleBar);
             this.Controls.Add(this.sidebar);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Dashboard_Admin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Dashboard_Admin";
+            this.Text = "WorkHive";
             this.PnTitleBar.ResumeLayout(false);
             this.PnTitleBar.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Notificationbtn)).EndInit();
