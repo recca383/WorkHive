@@ -577,6 +577,12 @@
     <Compile Include="Views\Cards\AdminCard.Designer.cs">
       <DependentUpon>AdminCard.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\Cards\EditProject.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Cards\EditProject.Designer.cs">
+      <DependentUpon>EditProject.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\Cards\MemberTaskCard.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -764,6 +770,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Views\Cards\AdminCard.resx">
       <DependentUpon>AdminCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Cards\EditProject.resx">
+      <DependentUpon>EditProject.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\Cards\MemberTaskCard.resx">
       <DependentUpon>MemberTaskCard.cs</DependentUpon>

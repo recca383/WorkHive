@@ -120,11 +120,8 @@
   <metadata name="bunifuElipse1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
-  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>75</value>
-  </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="EditTaskSubmitbtn.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="EditProjectSubmitbtn.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAHsAAAAuCAYAAAAIhGY7AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
         DAAACwwBP0AiyAAAIAdJREFUeF6FnHm011XVxlmrNwdQwXkEnDAHnHFAzDkHtETTRBskK03NvLZWWe9b
@@ -267,34 +264,33 @@
         MwAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="EditTaskDescriptiontxt.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="ProjectDescriptiontxt.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAAhEAAACnCAYAAACvkg5TAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAATUSURBVHhe7dyxSxxpAMbhLVNeeeWVKa9MmTKl5ZUp8yek
-        THd/wpVbLTOugiwI2wgiCIKNILJBsE+zEKwWRG5uvvXbxI2bYF64Jvs88CLM7Gzrj5nRAQDA/+Lg4OC3
-        pmle7+7ufjAzM7Ot2Jv+d/8fNQV+znA4fNF/wd9t237qf3ZmZma2fes74HP/sxmPx7/XRPix/oJX/QUf
-        H3/J8fFxd3Fx0V1dXZmZmdkvvMvLy+Xv/f39/W9j4k1Nhc1qQCwvmE6n3Xw+7wCA7XR7e9sdHR19iYmm
-        ad7WZFhXH2Es70Ccnp52d3d39SsAgG1W7lDUkFhsfFeibdt/ygfKHYj7+/t6GQBA152cnKxC4qymw1f1
-        eYdHGADAE4vF4st7EmsvWo5Go5fl4GQyqR8FAFi3uhvRtu1OTYjlXYidcrCcBADYpPzlRumFpmne14QY
-        DPoD5R9LLE8CAGwym81W70V8qAnxNSLK25cAAJs8+isNEQEAPJ+IAAAiIgIAiIgIACAiIgCAiIgAACIi
-        AgCIiAgAICIiAICIiAAAIiICAIiICAAgIiIAgIiIAAAiIgIAiIgIACAiIgCAiIgAACIiAgCIiAgAICIi
-        AICIiAAAIiICAIiICAAgIiIAgIiIAAAiIgIAiIgIACAiIgCAiIgAACIiAgCIiAgAICIiAICIiAAAIiIC
-        AIiICAAgIiIAgIiIAAAiIgIAiIgIACAiIgCAiIgAACIiAgCIiAgAICIiAICIiAAAIiICAIiICAAgIiIA
-        gIiIAAAiIgIAiIgIACAiIgCAiIgAACIiAgCIiAgAICIiAICIiAAAIiICAIiICAAgIiIAgIiIAAAiIgIA
-        iIgIACAiIgCAiIgAACIiAgCIiAgAICIiAICIiAAAIiICAIiICAAgIiIAgIiIAAAiIgIAiIgIACAiIgCA
-        iIgAACIiAgCIiAgAICIiAICIiAAAIiICAIiICAAgIiIAgIiIAAAiIgIAiIgIACAiIgCAiIgAACIiAgCI
-        iAgAICIiAICIiAAAIiICAIiICAAgIiIAgIiIAAAiIgIAiIgIACAiIgCAiIgAACIiAgCIiAgAICIiAICI
-        iAAAIiICAIiICAAgIiIAgIiIAAAiIgIAiIgIACAiIgCAiIgAACIiAgCIiAgAICIiAICIiAAAIiICAIiI
-        CAAgIiIAgIiIAAAiIgIAiIgIACAiIgCAiIgAACIiAgCIiAgAICIiAICIiAAAIiICAIiICAAgIiIAgIiI
-        AAAiIgIAiIgIACAiIgCAiIgAACIiAgCIiAgAICIiAICIiAAAIiICAIiICAAgIiIAgMj3IuJdOXh6elo/
-        BgCwbjabPY2I8Xj8Zzk4nU7rxwAA1pWbDaUX2rb9qybEYDAcDl/0BxflxGKxqB8FAHhwf3/fHR4eLiOi
-        3HyoCfGgP3hcTnikAQB8a/U+RNu2n8rNh5oPD0aj0cv+5PJuxM3NTb0EANh28/m829vb+7dGxE5Nh3X9
-        yeULlmXn5+fd3d1dvRwA2EblZcpVQPQb1mTYrGma96uQmEwm3dnZ2fILym0MMzMz+/V3fX29vJlQ/uBi
-        1QQlIJ48xtikbdtX/Yc/PrrQzMzMtnB9E3z+7iOMHykx0TTN2/5Lyj+jMjMzs+3Zu74BXj/r7gMAwPMN
-        Bv8BYQyHFphLzjsAAAAASUVORK5CYII=
+        iVBORw0KGgoAAAANSUhEUgAAAggAAACnCAYAAAB0KaRxAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAASxSURBVHhe7dwxaxtZAIVRlSm33DJlyi1TpkzpcsuU+Qkp
+        0+1P2FKVmLFsMAKDGoMxCAxuDMYoGNynEQRXAiGinSc/JXauEzalpXPgYhhp1M7HaOQeAMBvOzo6+qNp
+        mjf7+/sfzczM7NnvbXddf1kv87+n3++/6D7gn7ZtP3d/V2ZmZrZd667xX7q/zXA4/LNe/n+tO+F1d8Kn
+        hx9yenq6ury8XF1fX5uZmdkz3dXV1fqafnh4+GMovK0Z8LQaB+sTxuPxajabrQCA7XN3d7c6OTn5FgpN
+        07yrOfBY/VphfedgMpmsFotF/QgAYFuVOws1EuZPPpvQtu2/5Q3lzsFyuaynAQDb7uzsbBMJ5zULvqvf
+        QfhaAQB2zHw+//ZcwqOHFgeDwatycDQa1bcCALtkcxehbdu9mgfruwd75WB5EQDYPeUXDqUFmqb5UPOg
+        1+sOlH+csH4RANg90+l08xzCx5oH3wOhPMkIAOyeB79mEAgAwD2BAAAEgQAABIEAAASBAAAEgQAABIEA
+        AASBAAAEgQAABIEAAASBAAAEgQAABIEAAASBAAAEgQAABIEAAASBAAAEgQAABIEAAASBAAAEgQAABIEA
+        AASBAAAEgQAABIEAAASBAAAEgQAABIEAAASBAAAEgQAABIEAAASBAAAEgQAABIEAAASBAAAEgQAABIEA
+        AASBAAAEgQAABIEAAASBAAAEgQAABIEAAASBAAAEgQAABIEAAASBAAAEgQAABIEAAASBAAAEgQAABIEA
+        AASBAAAEgQAABIEAAASBAAAEgQAABIEAAASBAAAEgQAABIEAAASBAAAEgQAABIEAAASBAAAEgQAABIEA
+        AASBAAAEgQAABIEAAASBAAAEgQAABIEAAASBAAAEgQAABIEAAASBAAAEgQAABIEAAASBAAAEgQAABIEA
+        AASBAAAEgQAABIEAAASBAAAEgQAABIEAAASBAAAEgQAABIEAAASBAAAEgQAABIEAAASBAAAEgQAABIEA
+        AASBAAAEgQAABIEAAASBAAAEgQAABIEAAASBAAAEgQAABIEAAASBAAAEgQAABIEAAASBAAAEgQAABIEA
+        AASBAAAEgQAABIEAAASBAAAEgQAABIEAAASBAAAEgQAABIEAAASBAAAEgQAABIEAAASBAAAEgQAABIEA
+        AASBAAAEgQAABIEAAASBAAAEgQAABIEAAASBAAAEgQAABIEAAASBAAAEgQAABIEAAASBAAAEgQAABIEA
+        AASBAAAEgQAABIEAAISfBcL7cnAymdS3AQC7ZDqdZiAMh8O/ysHxeFzfBgDsknKToLRA27Z/1zzo9fr9
+        /ovu4Ly8MJ/P61sBgF2wXC5Xx8fH60AoNw1qHtzrDp6WF3zNAAC7ZfP8Qdu2n8tNg5oG9waDwavuxfVd
+        hNvb23oKALDNZrPZ6uDg4GsNhL2aBY91L64fViy7uLhYLRaLejoAsG3Kg4mbOOjWrznwtKZpPmwiYTQa
+        rc7Pz9cfUG4/mJmZ2fPezc3N+iZA+WHC5npf4iC+WnhK27avuzd/enCimZmZbdm66/2Xn36t8CslFJqm
+        edd9SPlHSmZmZrYde99d39/8r7sGAAD3er3/AN9BnzlTFAjCAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="EditDatePickerDeadline.Icon" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="ProjectDatePickerDeadline.Icon" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACcAAAAlCAYAAADBa/A+AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
         YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAM7SURBVFhH7ZjvSxNhAMf3bpGFFsUgM0cRRCUblimU3EMh
@@ -314,7 +310,7 @@
         zdT1TYyuk6Y1LSqT6Q8t4yR6WM3X0gAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="EditTaskNametxt.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="EditProjectNametxt.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAggAAAAqCAYAAADWB6N3AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
         YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAKvSURBVHhe7dw9SyNBAAbglJZXXnml5ZWWlpaWV1r6E660
@@ -332,7 +328,7 @@
         xrEAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="EditTaskExitbtn.Iconimage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnAddProjectExit.Iconimage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAC8AAAAtCAYAAAA+7zKnAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
         DAAACwwBP0AiyAAABI1JREFUaEPtmOFLW1cYxv20CgoNuKrgNi/T4sAOMxxM6EDZHAoqDWvG0nXDMLe1
