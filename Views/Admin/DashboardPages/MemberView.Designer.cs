@@ -41,14 +41,14 @@
             this.MembersName.Location = new System.Drawing.Point(15, 11);
             this.MembersName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.MembersName.Name = "MembersName";
-            this.MembersName.Size = new System.Drawing.Size(243, 61);
+            this.MembersName.Size = new System.Drawing.Size(237, 60);
             this.MembersName.TabIndex = 1;
             this.MembersName.Text = "Members";
             // 
             // MembersFlow
             // 
             this.MembersFlow.Location = new System.Drawing.Point(36, 86);
-            this.MembersFlow.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.MembersFlow.Margin = new System.Windows.Forms.Padding(4);
             this.MembersFlow.Name = "MembersFlow";
             this.MembersFlow.Size = new System.Drawing.Size(1181, 631);
             this.MembersFlow.TabIndex = 2;
@@ -64,6 +64,7 @@
             this.bunifuVScrollBar1.AllowScrollKeysDetection = true;
             this.bunifuVScrollBar1.AllowScrollOptionsMenu = true;
             this.bunifuVScrollBar1.AllowShrinkingOnFocusLost = false;
+            this.bunifuVScrollBar1.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.bunifuVScrollBar1.BackgroundColor = System.Drawing.Color.Silver;
             this.bunifuVScrollBar1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuVScrollBar1.BackgroundImage")));
             this.bunifuVScrollBar1.BindingContainer = this.MembersFlow;
@@ -73,7 +74,7 @@
             this.bunifuVScrollBar1.DurationBeforeShrink = 2000;
             this.bunifuVScrollBar1.LargeChange = 10;
             this.bunifuVScrollBar1.Location = new System.Drawing.Point(1219, 86);
-            this.bunifuVScrollBar1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.bunifuVScrollBar1.Margin = new System.Windows.Forms.Padding(5);
             this.bunifuVScrollBar1.Maximum = 100;
             this.bunifuVScrollBar1.Minimum = 0;
             this.bunifuVScrollBar1.MinimumThumbLength = 18;
@@ -100,7 +101,7 @@
             this.Controls.Add(this.bunifuVScrollBar1);
             this.Controls.Add(this.MembersFlow);
             this.Controls.Add(this.MembersName);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "MemberView";
             this.Size = new System.Drawing.Size(1243, 721);
             this.ResumeLayout(false);

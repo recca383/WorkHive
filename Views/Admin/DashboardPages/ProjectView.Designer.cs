@@ -57,7 +57,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.ProjectsFlow.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
             this.ProjectsFlow.Location = new System.Drawing.Point(24, 90);
-            this.ProjectsFlow.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ProjectsFlow.Margin = new System.Windows.Forms.Padding(4);
             this.ProjectsFlow.Name = "ProjectsFlow";
             this.ProjectsFlow.Size = new System.Drawing.Size(1181, 631);
             this.ProjectsFlow.TabIndex = 21;
@@ -68,7 +68,7 @@
             this.ProjectSummary.BackColor = System.Drawing.Color.Transparent;
             this.ProjectSummary.ForeColor = System.Drawing.Color.Transparent;
             this.ProjectSummary.Location = new System.Drawing.Point(368, 57);
-            this.ProjectSummary.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ProjectSummary.Margin = new System.Windows.Forms.Padding(4);
             this.ProjectSummary.Name = "ProjectSummary";
             this.ProjectSummary.Size = new System.Drawing.Size(595, 644);
             this.ProjectSummary.TabIndex = 19;
@@ -77,13 +77,13 @@
             // RefreshButton
             // 
             this.RefreshButton.AllowFocused = false;
-            this.RefreshButton.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.RefreshButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.RefreshButton.BackColor = System.Drawing.Color.Transparent;
             this.RefreshButton.BorderRadius = 0;
             this.RefreshButton.Image = global::WorkHive.Properties.Resources.refresh;
             this.RefreshButton.IsCircle = false;
             this.RefreshButton.Location = new System.Drawing.Point(1124, 30);
-            this.RefreshButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.RefreshButton.Margin = new System.Windows.Forms.Padding(4);
             this.RefreshButton.Name = "RefreshButton";
             this.RefreshButton.Size = new System.Drawing.Size(37, 32);
             this.RefreshButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -95,6 +95,7 @@
             // 
             this.btnAddProject.Active = true;
             this.btnAddProject.Activecolor = System.Drawing.Color.Transparent;
+            this.btnAddProject.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnAddProject.BackColor = System.Drawing.Color.Transparent;
             this.btnAddProject.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btnAddProject.BorderRadius = 0;
@@ -115,7 +116,7 @@
             this.btnAddProject.ImeMode = System.Windows.Forms.ImeMode.On;
             this.btnAddProject.IsTab = false;
             this.btnAddProject.Location = new System.Drawing.Point(1181, 28);
-            this.btnAddProject.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.btnAddProject.Margin = new System.Windows.Forms.Padding(5);
             this.btnAddProject.Name = "btnAddProject";
             this.btnAddProject.Normalcolor = System.Drawing.Color.Transparent;
             this.btnAddProject.OnHovercolor = System.Drawing.Color.Transparent;
@@ -149,7 +150,7 @@
             this.bunifuVScrollBar1.DurationBeforeShrink = 2000;
             this.bunifuVScrollBar1.LargeChange = 10;
             this.bunifuVScrollBar1.Location = new System.Drawing.Point(1213, 90);
-            this.bunifuVScrollBar1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.bunifuVScrollBar1.Margin = new System.Windows.Forms.Padding(5);
             this.bunifuVScrollBar1.Maximum = 100;
             this.bunifuVScrollBar1.Minimum = 0;
             this.bunifuVScrollBar1.MinimumThumbLength = 18;

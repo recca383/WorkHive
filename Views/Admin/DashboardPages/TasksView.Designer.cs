@@ -57,7 +57,6 @@
             // 
             // TasksFlow
             // 
-            this.TasksFlow.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.TasksFlow.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
             this.TasksFlow.Location = new System.Drawing.Point(23, 86);
             this.TasksFlow.Margin = new System.Windows.Forms.Padding(4);
@@ -81,6 +80,7 @@
             // 
             this.btnAddtasks.Active = false;
             this.btnAddtasks.Activecolor = System.Drawing.Color.Transparent;
+            this.btnAddtasks.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnAddtasks.BackColor = System.Drawing.Color.Transparent;
             this.btnAddtasks.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btnAddtasks.BorderRadius = 0;
@@ -125,6 +125,7 @@
             this.bunifuVScrollBar1.AllowScrollKeysDetection = true;
             this.bunifuVScrollBar1.AllowScrollOptionsMenu = true;
             this.bunifuVScrollBar1.AllowShrinkingOnFocusLost = false;
+            this.bunifuVScrollBar1.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.bunifuVScrollBar1.BackgroundColor = System.Drawing.Color.Silver;
             this.bunifuVScrollBar1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuVScrollBar1.BackgroundImage")));
             this.bunifuVScrollBar1.BindingContainer = this.TasksFlow;
@@ -157,7 +158,7 @@
             // RefreshButton
             // 
             this.RefreshButton.AllowFocused = false;
-            this.RefreshButton.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.RefreshButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.RefreshButton.BackColor = System.Drawing.Color.Transparent;
             this.RefreshButton.BorderRadius = 0;
             this.RefreshButton.Image = global::WorkHive.Properties.Resources.refresh;
@@ -258,10 +259,12 @@
             // 
             // TaskDetails
             // 
-            this.TaskDetails.Location = new System.Drawing.Point(0, 370);
+            this.TaskDetails.BackColor = System.Drawing.Color.Transparent;
+            this.TaskDetails.ForeColor = System.Drawing.Color.Transparent;
+            this.TaskDetails.Location = new System.Drawing.Point(12, 121);
             this.TaskDetails.Name = "TaskDetails";
-            this.TaskDetails.Size = new System.Drawing.Size(158, 132);
-            this.TaskDetails.TabIndex = 0;
+            this.TaskDetails.Size = new System.Drawing.Size(65, 59);
+            this.TaskDetails.TabIndex = 24;
             // 
             // TasksView
             // 

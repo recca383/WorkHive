@@ -36,12 +36,12 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
             this.lblProfileName = new Bunifu.UI.WinForms.BunifuLabel();
             this.lblAddress = new Bunifu.UI.WinForms.BunifuLabel();
             this.lblProfileTitle = new Bunifu.UI.WinForms.BunifuLabel();
             this.lblProfileEmail = new Bunifu.UI.WinForms.BunifuLabel();
             this.lblProfilePhone = new Bunifu.UI.WinForms.BunifuLabel();
-            this.label1 = new System.Windows.Forms.Label();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picboxProfilePic)).BeginInit();
@@ -130,6 +130,17 @@
             this.panel3.Size = new System.Drawing.Size(451, 216);
             this.panel3.TabIndex = 2;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(167)))), ((int)(((byte)(167)))), ((int)(((byte)(167)))));
+            this.label1.Location = new System.Drawing.Point(18, 107);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(84, 69);
+            this.label1.TabIndex = 13;
+            this.label1.Text = "Phone : \r\nEmail : \r\nAddress : \r\n";
+            // 
             // lblProfileName
             // 
             this.lblProfileName.AutoEllipsis = false;
@@ -209,17 +220,6 @@
             this.lblProfilePhone.Text = "09xxxxxxxx";
             this.lblProfilePhone.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.lblProfilePhone.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(167)))), ((int)(((byte)(167)))), ((int)(((byte)(167)))));
-            this.label1.Location = new System.Drawing.Point(18, 107);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(84, 69);
-            this.label1.TabIndex = 13;
-            this.label1.Text = "Phone : \r\nEmail : \r\nAddress : \r\n";
             // 
             // bunifuElipse1
             // 

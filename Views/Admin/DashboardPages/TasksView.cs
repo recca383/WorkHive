@@ -16,13 +16,6 @@ namespace WorkHive.Views.Admin.DashboardPages
 {
     public partial class TasksView : UserControl
     {
-        private Size TaskViewOriginalSize;
-        private Rectangle recTasksName;
-        private Rectangle recTasksFlow;
-        private Rectangle recbunifuVScrollBar1;
-        private Rectangle recRefreshButton;
-        private Rectangle recbtnAddtasks;
-
         private List<TaskModel> tasks = TaskModelAccess.GetTaskModel();
         private List<ProjectModel> projects = ProjectModelAccess.GetProjects();
        
@@ -39,56 +32,23 @@ namespace WorkHive.Views.Admin.DashboardPages
             RefreshList(results);
 
             AddTaskPanel.Size = new Size(0, 0);
-
             TaskDetails.Visible = false;
-
-            this.Resize += TasksView_Resize;
-            TaskViewOriginalSize = this.Size;
-            recTasksName = new Rectangle(TasksName.Location, TasksName.Size);
-            recTasksFlow = new Rectangle(TasksFlow.Location, TasksFlow.Size);
-            recbunifuVScrollBar1 = new Rectangle(bunifuVScrollBar1.Location, bunifuVScrollBar1.Size);
-            recRefreshButton = new Rectangle(RefreshButton.Location, RefreshButton.Size);
-            recbtnAddtasks = new Rectangle(btnAddtasks.Location, btnAddtasks.Size);
         }
 
         public void btnDetails_Click(object sender, EventArgs e, TaskModel task)
         {
             TaskDetails.Controls.Clear();
-            TaskDetails.Location = new Point(0, 255);
-            TaskDetails.Size = new Size(383, 465);
+            TaskDetails.Size = new Size(285, 385);
             TaskDetails.Controls.Add(new TaskDetailsCard(task));
             TaskDetails.Visible = true;
-
         }
+
         private void RefreshDataSources()
         {
             StatusFilter.DataSource = Enum.GetNames(typeof(Status));
             ProjectFilter.DataSource = projects.Select(s => s.Name).ToList();
         }
 
-        private void TasksView_Resize(object sender, EventArgs e)
-        {
-            resize_Control(TasksName, recTasksName);
-            resize_Control(TasksFlow, recTasksFlow);
-            resize_Control(bunifuVScrollBar1, recbunifuVScrollBar1);
-            resize_Control(RefreshButton, recRefreshButton);
-            resize_Control(btnAddtasks, recbtnAddtasks);
-
-        }
-        private void resize_Control(Control c, Rectangle r)
-        {
-            float xRatio = (float)(this.Width) / (float)(TaskViewOriginalSize.Width);
-            float yRatio = (float)(this.Height) / (float)(TaskViewOriginalSize.Height);
-            int newX = (int)(r.X * xRatio);
-            int newY = (int)(r.Y * yRatio);
-
-            int newWidth = (int)(r.Width * xRatio);
-            int newHeight = (int)(r.Height * yRatio);
-
-            c.Location = new Point(newX, newY);
-            c.Size = new Size(newWidth, newHeight);
-
-        }
 
         private void RefreshList(List<TaskModel> taskList)
         {
@@ -108,7 +68,6 @@ namespace WorkHive.Views.Admin.DashboardPages
             var results = tasks.Where(a => a.TaskStatus != Status.Archived).ToList();
             RefreshList(results);
         }
-
 
         private void btnAddtasks_Click(object sender, EventArgs e)
         {
