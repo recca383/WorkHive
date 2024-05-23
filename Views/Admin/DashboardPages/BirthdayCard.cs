@@ -25,7 +25,7 @@ namespace WorkHive.Views.Admin.DashboardPages
 
         private void InitializeElements()
         {
-            MemberBirthday.Text = member.Birthdate.ToString("MMMM dd");
+            MemberBirthday.Text = member.Birthdate.ToString("MMMM dd yyyy");
             MemberName.Text = member.FirstName + "'s Birthday";
 
         }

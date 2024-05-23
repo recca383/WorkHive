@@ -11,6 +11,7 @@ using System.Windows.Forms;
 using WorkHive.Controller;
 using WorkHive.Model;
 using WorkHive.Views.Cards;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.TextBox;
 
 namespace WorkHive.Views.Admin.DashboardPages
 {
@@ -32,15 +33,15 @@ namespace WorkHive.Views.Admin.DashboardPages
             RefreshList(results);
 
             AddTaskPanel.Size = new Size(0, 0);
-            TaskDetails.Visible = false;
+            TaskDetails.Size = new Size(0, 0);
         }
 
         public void btnDetails_Click(object sender, EventArgs e, TaskModel task)
         {
             TaskDetails.Controls.Clear();
-            TaskDetails.Size = new Size(285, 385);
             TaskDetails.Controls.Add(new TaskDetailsCard(task));
-            TaskDetails.Visible = true;
+            TaskDetails.Size = new Size(285, 385);
+            
         }
 
         private void RefreshDataSources()

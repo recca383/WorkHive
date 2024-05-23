@@ -62,10 +62,11 @@
             this.lblProfileName.CursorType = null;
             this.lblProfileName.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblProfileName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(44)))), ((int)(((byte)(49)))));
-            this.lblProfileName.Location = new System.Drawing.Point(13, 11);
+            this.lblProfileName.Location = new System.Drawing.Point(17, 14);
+            this.lblProfileName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.lblProfileName.Name = "lblProfileName";
             this.lblProfileName.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.lblProfileName.Size = new System.Drawing.Size(76, 38);
+            this.lblProfileName.Size = new System.Drawing.Size(95, 47);
             this.lblProfileName.TabIndex = 1;
             this.lblProfileName.Text = "Name";
             this.lblProfileName.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -77,10 +78,11 @@
             this.lblProfileTitle.CursorType = null;
             this.lblProfileTitle.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblProfileTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(147)))), ((int)(((byte)(28)))));
-            this.lblProfileTitle.Location = new System.Drawing.Point(13, 51);
+            this.lblProfileTitle.Location = new System.Drawing.Point(17, 63);
+            this.lblProfileTitle.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.lblProfileTitle.Name = "lblProfileTitle";
             this.lblProfileTitle.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.lblProfileTitle.Size = new System.Drawing.Size(41, 27);
+            this.lblProfileTitle.Size = new System.Drawing.Size(51, 33);
             this.lblProfileTitle.TabIndex = 2;
             this.lblProfileTitle.Text = "Title";
             this.lblProfileTitle.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -92,10 +94,11 @@
             this.bunifuLabel1.CursorType = null;
             this.bunifuLabel1.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(167)))), ((int)(((byte)(167)))), ((int)(((byte)(167)))));
-            this.bunifuLabel1.Location = new System.Drawing.Point(13, 85);
+            this.bunifuLabel1.Location = new System.Drawing.Point(17, 105);
+            this.bunifuLabel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.bunifuLabel1.Name = "bunifuLabel1";
             this.bunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel1.Size = new System.Drawing.Size(59, 59);
+            this.bunifuLabel1.Size = new System.Drawing.Size(72, 71);
             this.bunifuLabel1.TabIndex = 3;
             this.bunifuLabel1.Text = "Phone : \r\nEmail : \r\nAddress : ";
             this.bunifuLabel1.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -107,10 +110,11 @@
             this.lblProfilePhone.CursorType = null;
             this.lblProfilePhone.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblProfilePhone.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(167)))), ((int)(((byte)(167)))), ((int)(((byte)(167)))));
-            this.lblProfilePhone.Location = new System.Drawing.Point(82, 82);
+            this.lblProfilePhone.Location = new System.Drawing.Point(109, 101);
+            this.lblProfilePhone.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.lblProfilePhone.Name = "lblProfilePhone";
             this.lblProfilePhone.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.lblProfilePhone.Size = new System.Drawing.Size(67, 21);
+            this.lblProfilePhone.Size = new System.Drawing.Size(85, 25);
             this.lblProfilePhone.TabIndex = 4;
             this.lblProfilePhone.Text = "09xxxxxxxx";
             this.lblProfilePhone.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -122,10 +126,11 @@
             this.lblProfileEmail.CursorType = null;
             this.lblProfileEmail.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblProfileEmail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(167)))), ((int)(((byte)(167)))), ((int)(((byte)(167)))));
-            this.lblProfileEmail.Location = new System.Drawing.Point(82, 102);
+            this.lblProfileEmail.Location = new System.Drawing.Point(109, 126);
+            this.lblProfileEmail.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.lblProfileEmail.Name = "lblProfileEmail";
             this.lblProfileEmail.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.lblProfileEmail.Size = new System.Drawing.Size(132, 21);
+            this.lblProfileEmail.Size = new System.Drawing.Size(166, 25);
             this.lblProfileEmail.TabIndex = 5;
             this.lblProfileEmail.Text = "Sample@sample.com";
             this.lblProfileEmail.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -137,10 +142,11 @@
             this.lblAddress.CursorType = null;
             this.lblAddress.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAddress.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(167)))), ((int)(((byte)(167)))), ((int)(((byte)(167)))));
-            this.lblAddress.Location = new System.Drawing.Point(82, 123);
+            this.lblAddress.Location = new System.Drawing.Point(109, 151);
+            this.lblAddress.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.lblAddress.Name = "lblAddress";
             this.lblAddress.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.lblAddress.Size = new System.Drawing.Size(129, 21);
+            this.lblAddress.Size = new System.Drawing.Size(158, 25);
             this.lblAddress.TabIndex = 6;
             this.lblAddress.Text = "#9 Purok 9 San Juan ";
             this.lblAddress.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -152,18 +158,19 @@
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(488, 81);
+            this.panel1.Size = new System.Drawing.Size(651, 100);
             this.panel1.TabIndex = 7;
             // 
             // pictureBox1
             // 
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Right;
             this.pictureBox1.Image = global::WorkHive.Properties.Resources.MemberCard;
-            this.pictureBox1.Location = new System.Drawing.Point(0, -9);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox1.Location = new System.Drawing.Point(-32, 0);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(512, 110);
+            this.pictureBox1.Size = new System.Drawing.Size(683, 100);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -175,9 +182,10 @@
             this.picboxProfilePic.BorderRadius = 50;
             this.picboxProfilePic.Image = global::WorkHive.Properties.Resources.Profile;
             this.picboxProfilePic.IsCircle = true;
-            this.picboxProfilePic.Location = new System.Drawing.Point(358, 6);
+            this.picboxProfilePic.Location = new System.Drawing.Point(477, 7);
+            this.picboxProfilePic.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.picboxProfilePic.Name = "picboxProfilePic";
-            this.picboxProfilePic.Size = new System.Drawing.Size(100, 100);
+            this.picboxProfilePic.Size = new System.Drawing.Size(133, 133);
             this.picboxProfilePic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picboxProfilePic.TabIndex = 0;
             this.picboxProfilePic.TabStop = false;
@@ -257,20 +265,21 @@
             this.panel2.Controls.Add(this.lblProfileEmail);
             this.panel2.Controls.Add(this.lblProfilePhone);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(0, 81);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2);
+            this.panel2.Location = new System.Drawing.Point(0, 100);
+            this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(488, 174);
+            this.panel2.Size = new System.Drawing.Size(651, 214);
             this.panel2.TabIndex = 8;
             // 
             // ProfileCard
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "ProfileCard";
-            this.Size = new System.Drawing.Size(488, 255);
+            this.Size = new System.Drawing.Size(651, 314);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picboxProfilePic)).EndInit();
