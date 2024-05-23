@@ -73,6 +73,7 @@ namespace WorkHive.Controller
                 DeadLine = project.DeadLine,
                 Progress = 0,
                 Archived = project.Archived,
+                Instructor = project.Instructor,
             });
         }
         public static void AssignTaskToProject(TaskModel task, ProjectModel pastprojectassigned)
@@ -105,15 +106,15 @@ namespace WorkHive.Controller
             var newProjectTasks = CurrentprojectModel.Tasks;
             var newProjectDeadline = CurrentprojectModel.DeadLine;
             var newArchived = CurrentprojectModel.Archived;
-            
+            var newInstructor = CurrentprojectModel.Instructor;
+
 
             if (NewprojectModel.Name != default) newProjectName = NewprojectModel.Name;
             if (NewprojectModel.Description != default) newProjectDescription = NewprojectModel.Description;
             if (NewprojectModel.Tasks != default) newProjectTasks = NewprojectModel.Tasks;
             if (NewprojectModel.DeadLine != default) newProjectDeadline = NewprojectModel.DeadLine;
-            if (NewprojectModel.Archived != default)
-                newArchived = NewprojectModel.Archived;
-
+            if (NewprojectModel.Archived != default) newArchived = NewprojectModel.Archived;
+            if (NewprojectModel.Instructor != default) newInstructor = NewprojectModel.Instructor;
 
             _projects.Remove(GetProjectDetails(projectId));
             _projects.Add(new ProjectModel
@@ -124,6 +125,7 @@ namespace WorkHive.Controller
                 Tasks = newProjectTasks,
                 DeadLine = newProjectDeadline,
                 Archived = newArchived,
+                Instructor = newInstructor,
             }
             );
 

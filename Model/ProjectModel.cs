@@ -16,5 +16,6 @@ namespace WorkHive.Model
         public DateTime DeadLine { get; set; }
         public int Progress { get; set; }
         public bool Archived { get; set; }
+        public string Instructor { get; set; }
     }
 }
