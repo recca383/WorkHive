@@ -28,13 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ProjectView));
             this.Dashboardlbl = new System.Windows.Forms.Label();
             this.ProjectsFlow = new System.Windows.Forms.FlowLayoutPanel();
-            this.ProjectSummary = new System.Windows.Forms.Panel();
             this.RefreshButton = new Bunifu.UI.WinForms.BunifuPictureBox();
             this.btnAddProject = new Bunifu.Framework.UI.BunifuFlatButton();
             this.bunifuVScrollBar1 = new Bunifu.UI.WinForms.BunifuVScrollBar();
+            this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.ProjectSummary = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.RefreshButton)).BeginInit();
             this.SuspendLayout();
             // 
@@ -63,17 +65,6 @@
             this.ProjectsFlow.TabIndex = 21;
             this.ProjectsFlow.WrapContents = false;
             // 
-            // ProjectSummary
-            // 
-            this.ProjectSummary.BackColor = System.Drawing.Color.Transparent;
-            this.ProjectSummary.ForeColor = System.Drawing.Color.Transparent;
-            this.ProjectSummary.Location = new System.Drawing.Point(368, 57);
-            this.ProjectSummary.Margin = new System.Windows.Forms.Padding(4);
-            this.ProjectSummary.Name = "ProjectSummary";
-            this.ProjectSummary.Size = new System.Drawing.Size(595, 644);
-            this.ProjectSummary.TabIndex = 19;
-            this.ProjectSummary.ControlRemoved += new System.Windows.Forms.ControlEventHandler(this.AddTaskPanel_ControlRemoved);
-            // 
             // RefreshButton
             // 
             this.RefreshButton.AllowFocused = false;
@@ -90,6 +81,7 @@
             this.RefreshButton.TabIndex = 24;
             this.RefreshButton.TabStop = false;
             this.RefreshButton.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Custom;
+            this.RefreshButton.Click += new System.EventHandler(this.RefreshButton_Click);
             // 
             // btnAddProject
             // 
@@ -170,6 +162,22 @@
             this.bunifuVScrollBar1.ThumbStyle = Bunifu.UI.WinForms.BunifuVScrollBar.ThumbStyles.Inset;
             this.bunifuVScrollBar1.Value = 0;
             // 
+            // bunifuElipse1
+            // 
+            this.bunifuElipse1.ElipseRadius = 38;
+            this.bunifuElipse1.TargetControl = this;
+            // 
+            // ProjectSummary
+            // 
+            this.ProjectSummary.BackColor = System.Drawing.Color.Transparent;
+            this.ProjectSummary.ForeColor = System.Drawing.Color.Transparent;
+            this.ProjectSummary.Location = new System.Drawing.Point(368, 57);
+            this.ProjectSummary.Margin = new System.Windows.Forms.Padding(4);
+            this.ProjectSummary.Name = "ProjectSummary";
+            this.ProjectSummary.Size = new System.Drawing.Size(595, 644);
+            this.ProjectSummary.TabIndex = 19;
+            this.ProjectSummary.ControlRemoved += new System.Windows.Forms.ControlEventHandler(this.AddTaskPanel_ControlRemoved);
+            // 
             // ProjectView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -194,8 +202,9 @@
         private System.Windows.Forms.Label Dashboardlbl;
         private System.Windows.Forms.FlowLayoutPanel ProjectsFlow;
         private Bunifu.UI.WinForms.BunifuVScrollBar bunifuVScrollBar1;
-        private System.Windows.Forms.Panel ProjectSummary;
         private Bunifu.Framework.UI.BunifuFlatButton btnAddProject;
         private Bunifu.UI.WinForms.BunifuPictureBox RefreshButton;
+        private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
+        private System.Windows.Forms.Panel ProjectSummary;
     }
 }

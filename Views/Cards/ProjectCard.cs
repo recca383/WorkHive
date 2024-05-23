@@ -24,7 +24,7 @@ namespace WorkHive.Views.Cards
             this.projectModel = projectModel;
             InitializeComponent();
             lblProject_Title.Text = projectModel.Name;
-            lblName.Text = ($"{CultureInfo.CurrentCulture.DateTimeFormat.GetMonthName(projectModel.StartDate.Month)} {projectModel.StartDate.Day}");
+            lblName.Text = projectModel.Instructor;
 
         }
 

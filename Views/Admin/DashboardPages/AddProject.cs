@@ -34,8 +34,7 @@ namespace WorkHive
             {
                 Id = projects.Count(),
                 Name = ProjectTaskNametxt.Text,
-                Description = ProjectDescriptiontxt.Text,
-                DeadLine = ProjectDatePickerDeadline.Value,
+                Instructor = Instructortxt.Text,
             };
 
             ProjectModelAccess.AddProject(project);
