@@ -35,18 +35,19 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label6 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.panel11 = new System.Windows.Forms.Panel();
+            this.label23 = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
             this.bunifuVScrollBar1 = new Bunifu.UI.WinForms.BunifuVScrollBar();
             this.TasksSummary = new System.Windows.Forms.FlowLayoutPanel();
             this.pictureBox11 = new System.Windows.Forms.PictureBox();
-            this.label23 = new System.Windows.Forms.Label();
-            this.label22 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.Next = new System.Windows.Forms.PictureBox();
             this.ProjectProgressPanel = new System.Windows.Forms.Panel();
             this.panel10 = new System.Windows.Forms.Panel();
             this.Previous = new System.Windows.Forms.PictureBox();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.Next = new System.Windows.Forms.PictureBox();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.label5 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
@@ -55,6 +56,7 @@
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.bunifuVScrollBar2 = new Bunifu.UI.WinForms.BunifuVScrollBar();
             this.EventsPanel = new System.Windows.Forms.FlowLayoutPanel();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -74,12 +76,13 @@
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
+            this.panel11.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
             this.panel3.SuspendLayout();
-            this.panel10.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Previous)).BeginInit();
             this.panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Next)).BeginInit();
+            this.panel10.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Previous)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             this.panel4.SuspendLayout();
             this.panel14.SuspendLayout();
@@ -100,7 +103,7 @@
             this.Dashboardlbl.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Dashboardlbl.AutoSize = true;
             this.Dashboardlbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Dashboardlbl.Location = new System.Drawing.Point(15, 11);
+            this.Dashboardlbl.Location = new System.Drawing.Point(30, 30);
             this.Dashboardlbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Dashboardlbl.Name = "Dashboardlbl";
             this.Dashboardlbl.Size = new System.Drawing.Size(242, 51);
@@ -114,10 +117,10 @@
             this.panel1.Controls.Add(this.lblTotalMembers);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.label6);
-            this.panel1.Location = new System.Drawing.Point(85, 105);
+            this.panel1.Location = new System.Drawing.Point(98, 108);
             this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(208, 111);
+            this.panel1.Size = new System.Drawing.Size(227, 111);
             this.panel1.TabIndex = 1;
             // 
             // lblTotalMembers
@@ -129,7 +132,7 @@
             this.lblTotalMembers.Location = new System.Drawing.Point(0, 9);
             this.lblTotalMembers.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTotalMembers.Name = "lblTotalMembers";
-            this.lblTotalMembers.Size = new System.Drawing.Size(208, 46);
+            this.lblTotalMembers.Size = new System.Drawing.Size(227, 46);
             this.lblTotalMembers.TabIndex = 4;
             this.lblTotalMembers.Text = "0";
             this.lblTotalMembers.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -142,7 +145,7 @@
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(208, 80);
+            this.pictureBox1.Size = new System.Drawing.Size(227, 80);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
@@ -151,7 +154,7 @@
             // 
             this.label6.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(25, 81);
+            this.label6.Location = new System.Drawing.Point(34, 81);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(156, 25);
@@ -163,17 +166,51 @@
             // 
             this.panel2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel2.BackColor = System.Drawing.Color.White;
+            this.panel2.Controls.Add(this.panel11);
             this.panel2.Controls.Add(this.bunifuVScrollBar1);
             this.panel2.Controls.Add(this.TasksSummary);
             this.panel2.Controls.Add(this.pictureBox11);
-            this.panel2.Controls.Add(this.label23);
-            this.panel2.Controls.Add(this.label22);
             this.panel2.Controls.Add(this.label2);
-            this.panel2.Location = new System.Drawing.Point(85, 386);
+            this.panel2.Location = new System.Drawing.Point(98, 396);
             this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(796, 322);
+            this.panel2.Size = new System.Drawing.Size(815, 322);
             this.panel2.TabIndex = 2;
+            // 
+            // panel11
+            // 
+            this.panel11.Controls.Add(this.label23);
+            this.panel11.Controls.Add(this.label22);
+            this.panel11.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel11.Location = new System.Drawing.Point(0, 34);
+            this.panel11.Name = "panel11";
+            this.panel11.Size = new System.Drawing.Size(800, 30);
+            this.panel11.TabIndex = 16;
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Dock = System.Windows.Forms.DockStyle.Right;
+            this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label23.Location = new System.Drawing.Point(720, 0);
+            this.label23.Name = "label23";
+            this.label23.Padding = new System.Windows.Forms.Padding(0, 10, 10, 0);
+            this.label23.Size = new System.Drawing.Size(80, 26);
+            this.label23.TabIndex = 10;
+            this.label23.Text = "Deadline";
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Dock = System.Windows.Forms.DockStyle.Left;
+            this.label22.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label22.Location = new System.Drawing.Point(0, 0);
+            this.label22.Name = "label22";
+            this.label22.Padding = new System.Windows.Forms.Padding(0, 10, 0, 0);
+            this.label22.Size = new System.Drawing.Size(121, 26);
+            this.label22.TabIndex = 7;
+            this.label22.Text = "     Project Name";
             // 
             // bunifuVScrollBar1
             // 
@@ -195,7 +232,7 @@
             this.bunifuVScrollBar1.Dock = System.Windows.Forms.DockStyle.Right;
             this.bunifuVScrollBar1.DurationBeforeShrink = 2000;
             this.bunifuVScrollBar1.LargeChange = 10;
-            this.bunifuVScrollBar1.Location = new System.Drawing.Point(781, 34);
+            this.bunifuVScrollBar1.Location = new System.Drawing.Point(800, 34);
             this.bunifuVScrollBar1.Margin = new System.Windows.Forms.Padding(5);
             this.bunifuVScrollBar1.Maximum = 100;
             this.bunifuVScrollBar1.Minimum = 0;
@@ -218,47 +255,25 @@
             // 
             // TasksSummary
             // 
-            this.TasksSummary.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.TasksSummary.Dock = System.Windows.Forms.DockStyle.Fill;
             this.TasksSummary.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-            this.TasksSummary.Location = new System.Drawing.Point(21, 85);
+            this.TasksSummary.Location = new System.Drawing.Point(0, 34);
             this.TasksSummary.Margin = new System.Windows.Forms.Padding(4);
             this.TasksSummary.Name = "TasksSummary";
-            this.TasksSummary.Size = new System.Drawing.Size(752, 219);
+            this.TasksSummary.Size = new System.Drawing.Size(815, 288);
             this.TasksSummary.TabIndex = 14;
             // 
             // pictureBox11
             // 
             this.pictureBox11.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox11.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox11.Image")));
-            this.pictureBox11.Location = new System.Drawing.Point(739, 0);
+            this.pictureBox11.Location = new System.Drawing.Point(758, 0);
             this.pictureBox11.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox11.Name = "pictureBox11";
             this.pictureBox11.Size = new System.Drawing.Size(37, 36);
             this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox11.TabIndex = 13;
             this.pictureBox11.TabStop = false;
-            // 
-            // label23
-            // 
-            this.label23.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label23.AutoSize = true;
-            this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label23.Location = new System.Drawing.Point(669, 46);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(70, 16);
-            this.label23.TabIndex = 10;
-            this.label23.Text = "Deadline";
-            // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.Location = new System.Drawing.Point(27, 46);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(101, 16);
-            this.label22.TabIndex = 7;
-            this.label22.Text = "Project Name";
             // 
             // label2
             // 
@@ -268,7 +283,7 @@
             this.label2.Location = new System.Drawing.Point(0, 0);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(796, 34);
+            this.label2.Size = new System.Drawing.Size(815, 34);
             this.label2.TabIndex = 0;
             this.label2.Text = "Project Summary";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -282,11 +297,34 @@
             this.panel3.Controls.Add(this.panel10);
             this.panel3.Controls.Add(this.pictureBox10);
             this.panel3.Controls.Add(this.label5);
-            this.panel3.Location = new System.Drawing.Point(905, 386);
+            this.panel3.Location = new System.Drawing.Point(949, 396);
             this.panel3.Margin = new System.Windows.Forms.Padding(4);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(283, 322);
+            this.panel3.Size = new System.Drawing.Size(331, 322);
             this.panel3.TabIndex = 2;
+            // 
+            // panel6
+            // 
+            this.panel6.Controls.Add(this.Next);
+            this.panel6.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel6.Location = new System.Drawing.Point(309, 34);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(22, 288);
+            this.panel6.TabIndex = 2;
+            // 
+            // Next
+            // 
+            this.Next.BackColor = System.Drawing.Color.White;
+            this.Next.Dock = System.Windows.Forms.DockStyle.Top;
+            this.Next.Image = global::WorkHive.Properties.Resources.Next;
+            this.Next.Location = new System.Drawing.Point(0, 0);
+            this.Next.Margin = new System.Windows.Forms.Padding(4);
+            this.Next.Name = "Next";
+            this.Next.Size = new System.Drawing.Size(22, 20);
+            this.Next.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Next.TabIndex = 0;
+            this.Next.TabStop = false;
+            this.Next.Click += new System.EventHandler(this.Next_Click);
             // 
             // ProjectProgressPanel
             // 
@@ -294,7 +332,7 @@
             this.ProjectProgressPanel.Location = new System.Drawing.Point(22, 34);
             this.ProjectProgressPanel.Margin = new System.Windows.Forms.Padding(4);
             this.ProjectProgressPanel.Name = "ProjectProgressPanel";
-            this.ProjectProgressPanel.Size = new System.Drawing.Size(261, 288);
+            this.ProjectProgressPanel.Size = new System.Drawing.Size(309, 288);
             this.ProjectProgressPanel.TabIndex = 13;
             // 
             // panel10
@@ -320,34 +358,11 @@
             this.Previous.TabStop = false;
             this.Previous.Click += new System.EventHandler(this.Previous_Click);
             // 
-            // panel6
-            // 
-            this.panel6.Controls.Add(this.Next);
-            this.panel6.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel6.Location = new System.Drawing.Point(261, 34);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(22, 288);
-            this.panel6.TabIndex = 2;
-            // 
-            // Next
-            // 
-            this.Next.BackColor = System.Drawing.Color.White;
-            this.Next.Dock = System.Windows.Forms.DockStyle.Top;
-            this.Next.Image = global::WorkHive.Properties.Resources.Next;
-            this.Next.Location = new System.Drawing.Point(0, 0);
-            this.Next.Margin = new System.Windows.Forms.Padding(4);
-            this.Next.Name = "Next";
-            this.Next.Size = new System.Drawing.Size(22, 20);
-            this.Next.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.Next.TabIndex = 0;
-            this.Next.TabStop = false;
-            this.Next.Click += new System.EventHandler(this.Next_Click);
-            // 
             // pictureBox10
             // 
             this.pictureBox10.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox10.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox10.Image")));
-            this.pictureBox10.Location = new System.Drawing.Point(227, 0);
+            this.pictureBox10.Location = new System.Drawing.Point(275, 0);
             this.pictureBox10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox10.Name = "pictureBox10";
             this.pictureBox10.Size = new System.Drawing.Size(37, 36);
@@ -363,7 +378,7 @@
             this.label5.Location = new System.Drawing.Point(0, 0);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(283, 34);
+            this.label5.Size = new System.Drawing.Size(331, 34);
             this.label5.TabIndex = 4;
             this.label5.Text = "Project Progress";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -374,18 +389,17 @@
             this.panel4.BackColor = System.Drawing.Color.White;
             this.panel4.Controls.Add(this.monthCalendar1);
             this.panel4.Controls.Add(this.panel14);
-            this.panel4.Location = new System.Drawing.Point(572, 105);
+            this.panel4.Location = new System.Drawing.Point(582, 111);
             this.panel4.Margin = new System.Windows.Forms.Padding(4);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(309, 255);
+            this.panel4.Size = new System.Drawing.Size(331, 250);
             this.panel4.TabIndex = 3;
             // 
             // monthCalendar1
             // 
             this.monthCalendar1.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.monthCalendar1.Location = new System.Drawing.Point(0, 36);
+            this.monthCalendar1.Location = new System.Drawing.Point(16, 36);
             this.monthCalendar1.Name = "monthCalendar1";
-            this.monthCalendar1.ShowWeekNumbers = true;
             this.monthCalendar1.TabIndex = 11;
             this.monthCalendar1.TitleBackColor = System.Drawing.Color.Gold;
             // 
@@ -398,14 +412,14 @@
             this.panel14.Location = new System.Drawing.Point(0, 0);
             this.panel14.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel14.Name = "panel14";
-            this.panel14.Size = new System.Drawing.Size(309, 36);
+            this.panel14.Size = new System.Drawing.Size(331, 36);
             this.panel14.TabIndex = 10;
             // 
             // pictureBox8
             // 
             this.pictureBox8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
-            this.pictureBox8.Location = new System.Drawing.Point(252, 0);
+            this.pictureBox8.Location = new System.Drawing.Point(274, 0);
             this.pictureBox8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox8.Name = "pictureBox8";
             this.pictureBox8.Size = new System.Drawing.Size(37, 36);
@@ -421,7 +435,7 @@
             this.label4.Location = new System.Drawing.Point(0, 0);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(309, 34);
+            this.label4.Size = new System.Drawing.Size(331, 34);
             this.label4.TabIndex = 3;
             this.label4.Text = "Calendar";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -430,14 +444,56 @@
             // 
             this.panel5.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel5.BackColor = System.Drawing.Color.White;
+            this.panel5.Controls.Add(this.bunifuVScrollBar2);
             this.panel5.Controls.Add(this.EventsPanel);
             this.panel5.Controls.Add(this.pictureBox9);
             this.panel5.Controls.Add(this.label3);
-            this.panel5.Location = new System.Drawing.Point(905, 105);
+            this.panel5.Location = new System.Drawing.Point(952, 108);
             this.panel5.Margin = new System.Windows.Forms.Padding(4);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(283, 255);
+            this.panel5.Size = new System.Drawing.Size(320, 250);
             this.panel5.TabIndex = 4;
+            // 
+            // bunifuVScrollBar2
+            // 
+            this.bunifuVScrollBar2.AllowCursorChanges = true;
+            this.bunifuVScrollBar2.AllowHomeEndKeysDetection = false;
+            this.bunifuVScrollBar2.AllowIncrementalClickMoves = true;
+            this.bunifuVScrollBar2.AllowMouseDownEffects = true;
+            this.bunifuVScrollBar2.AllowMouseHoverEffects = true;
+            this.bunifuVScrollBar2.AllowScrollingAnimations = true;
+            this.bunifuVScrollBar2.AllowScrollKeysDetection = true;
+            this.bunifuVScrollBar2.AllowScrollOptionsMenu = true;
+            this.bunifuVScrollBar2.AllowShrinkingOnFocusLost = false;
+            this.bunifuVScrollBar2.BackgroundColor = System.Drawing.Color.Silver;
+            this.bunifuVScrollBar2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuVScrollBar2.BackgroundImage")));
+            this.bunifuVScrollBar2.BindingContainer = this.EventsPanel;
+            this.bunifuVScrollBar2.BorderColor = System.Drawing.Color.Silver;
+            this.bunifuVScrollBar2.BorderRadius = 14;
+            this.bunifuVScrollBar2.BorderThickness = 1;
+            this.bunifuVScrollBar2.Dock = System.Windows.Forms.DockStyle.Right;
+            this.bunifuVScrollBar2.DurationBeforeShrink = 2000;
+            this.bunifuVScrollBar2.LargeChange = 10;
+            this.bunifuVScrollBar2.Location = new System.Drawing.Point(303, 34);
+            this.bunifuVScrollBar2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bunifuVScrollBar2.Maximum = 100;
+            this.bunifuVScrollBar2.Minimum = 0;
+            this.bunifuVScrollBar2.MinimumThumbLength = 18;
+            this.bunifuVScrollBar2.Name = "bunifuVScrollBar2";
+            this.bunifuVScrollBar2.OnDisable.ScrollBarBorderColor = System.Drawing.Color.Silver;
+            this.bunifuVScrollBar2.OnDisable.ScrollBarColor = System.Drawing.Color.Transparent;
+            this.bunifuVScrollBar2.OnDisable.ThumbColor = System.Drawing.Color.Silver;
+            this.bunifuVScrollBar2.ScrollBarBorderColor = System.Drawing.Color.Silver;
+            this.bunifuVScrollBar2.ScrollBarColor = System.Drawing.Color.Silver;
+            this.bunifuVScrollBar2.ShrinkSizeLimit = 3;
+            this.bunifuVScrollBar2.Size = new System.Drawing.Size(17, 216);
+            this.bunifuVScrollBar2.SmallChange = 1;
+            this.bunifuVScrollBar2.TabIndex = 12;
+            this.bunifuVScrollBar2.ThumbColor = System.Drawing.Color.Gray;
+            this.bunifuVScrollBar2.ThumbLength = 21;
+            this.bunifuVScrollBar2.ThumbMargin = 1;
+            this.bunifuVScrollBar2.ThumbStyle = Bunifu.UI.WinForms.BunifuVScrollBar.ThumbStyles.Inset;
+            this.bunifuVScrollBar2.Value = 0;
             // 
             // EventsPanel
             // 
@@ -445,14 +501,14 @@
             this.EventsPanel.Location = new System.Drawing.Point(0, 34);
             this.EventsPanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.EventsPanel.Name = "EventsPanel";
-            this.EventsPanel.Size = new System.Drawing.Size(283, 221);
+            this.EventsPanel.Size = new System.Drawing.Size(320, 216);
             this.EventsPanel.TabIndex = 11;
             // 
             // pictureBox9
             // 
             this.pictureBox9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox9.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox9.Image")));
-            this.pictureBox9.Location = new System.Drawing.Point(227, 0);
+            this.pictureBox9.Location = new System.Drawing.Point(264, 0);
             this.pictureBox9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox9.Name = "pictureBox9";
             this.pictureBox9.Size = new System.Drawing.Size(37, 36);
@@ -468,7 +524,7 @@
             this.label3.Location = new System.Drawing.Point(0, 0);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(283, 34);
+            this.label3.Size = new System.Drawing.Size(320, 34);
             this.label3.TabIndex = 2;
             this.label3.Text = "Events";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -480,10 +536,10 @@
             this.panel7.Controls.Add(this.label12);
             this.panel7.Controls.Add(this.label8);
             this.panel7.Controls.Add(this.pictureBox3);
-            this.panel7.Location = new System.Drawing.Point(85, 249);
+            this.panel7.Location = new System.Drawing.Point(98, 247);
             this.panel7.Margin = new System.Windows.Forms.Padding(4);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(208, 111);
+            this.panel7.Size = new System.Drawing.Size(227, 111);
             this.panel7.TabIndex = 3;
             // 
             // label12
@@ -495,7 +551,7 @@
             this.label12.Location = new System.Drawing.Point(0, 10);
             this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(208, 46);
+            this.label12.Size = new System.Drawing.Size(227, 46);
             this.label12.TabIndex = 6;
             this.label12.Text = "0";
             this.label12.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -504,7 +560,7 @@
             // 
             this.label8.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(0, 81);
+            this.label8.Location = new System.Drawing.Point(9, 81);
             this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(208, 25);
@@ -520,7 +576,7 @@
             this.pictureBox3.Location = new System.Drawing.Point(0, 0);
             this.pictureBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(208, 80);
+            this.pictureBox3.Size = new System.Drawing.Size(227, 80);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 5;
             this.pictureBox3.TabStop = false;
@@ -532,10 +588,10 @@
             this.panel8.Controls.Add(this.lblFinishedTasks);
             this.panel8.Controls.Add(this.label9);
             this.panel8.Controls.Add(this.pictureBox4);
-            this.panel8.Location = new System.Drawing.Point(327, 249);
+            this.panel8.Location = new System.Drawing.Point(340, 247);
             this.panel8.Margin = new System.Windows.Forms.Padding(4);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(208, 111);
+            this.panel8.Size = new System.Drawing.Size(227, 111);
             this.panel8.TabIndex = 4;
             // 
             // lblFinishedTasks
@@ -547,7 +603,7 @@
             this.lblFinishedTasks.Location = new System.Drawing.Point(0, 10);
             this.lblFinishedTasks.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblFinishedTasks.Name = "lblFinishedTasks";
-            this.lblFinishedTasks.Size = new System.Drawing.Size(204, 46);
+            this.lblFinishedTasks.Size = new System.Drawing.Size(223, 46);
             this.lblFinishedTasks.TabIndex = 8;
             this.lblFinishedTasks.Text = "0";
             this.lblFinishedTasks.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -556,7 +612,7 @@
             // 
             this.label9.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(0, 82);
+            this.label9.Location = new System.Drawing.Point(9, 82);
             this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(208, 25);
@@ -572,7 +628,7 @@
             this.pictureBox4.Location = new System.Drawing.Point(0, 0);
             this.pictureBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(208, 80);
+            this.pictureBox4.Size = new System.Drawing.Size(227, 80);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox4.TabIndex = 7;
             this.pictureBox4.TabStop = false;
@@ -584,10 +640,10 @@
             this.panel9.Controls.Add(this.lblActiveTasks);
             this.panel9.Controls.Add(this.label10);
             this.panel9.Controls.Add(this.pictureBox2);
-            this.panel9.Location = new System.Drawing.Point(327, 105);
+            this.panel9.Location = new System.Drawing.Point(340, 108);
             this.panel9.Margin = new System.Windows.Forms.Padding(4);
             this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(208, 111);
+            this.panel9.Size = new System.Drawing.Size(227, 111);
             this.panel9.TabIndex = 4;
             // 
             // lblActiveTasks
@@ -599,7 +655,7 @@
             this.lblActiveTasks.Location = new System.Drawing.Point(0, 9);
             this.lblActiveTasks.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblActiveTasks.Name = "lblActiveTasks";
-            this.lblActiveTasks.Size = new System.Drawing.Size(208, 46);
+            this.lblActiveTasks.Size = new System.Drawing.Size(227, 46);
             this.lblActiveTasks.TabIndex = 6;
             this.lblActiveTasks.Text = "0";
             this.lblActiveTasks.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -608,7 +664,7 @@
             // 
             this.label10.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(0, 86);
+            this.label10.Location = new System.Drawing.Point(9, 86);
             this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(208, 25);
@@ -624,7 +680,7 @@
             this.pictureBox2.Location = new System.Drawing.Point(0, 0);
             this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(208, 80);
+            this.pictureBox2.Size = new System.Drawing.Size(227, 80);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 5;
             this.pictureBox2.TabStop = false;
@@ -637,7 +693,7 @@
             this.RefreshButton.BorderRadius = 0;
             this.RefreshButton.Image = global::WorkHive.Properties.Resources.refresh;
             this.RefreshButton.IsCircle = false;
-            this.RefreshButton.Location = new System.Drawing.Point(1177, 20);
+            this.RefreshButton.Location = new System.Drawing.Point(1258, 30);
             this.RefreshButton.Margin = new System.Windows.Forms.Padding(4);
             this.RefreshButton.Name = "RefreshButton";
             this.RefreshButton.Size = new System.Drawing.Size(37, 32);
@@ -661,19 +717,21 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.Dashboardlbl);
-            this.Margin = new System.Windows.Forms.Padding(4);
+            this.Margin = new System.Windows.Forms.Padding(0);
             this.Name = "DashboardView";
-            this.Size = new System.Drawing.Size(1243, 721);
+            this.Size = new System.Drawing.Size(1360, 740);
+            this.Load += new System.EventHandler(this.DashboardView_Load);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
+            this.panel11.ResumeLayout(false);
+            this.panel11.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
             this.panel3.ResumeLayout(false);
-            this.panel10.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.Previous)).EndInit();
             this.panel6.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.Next)).EndInit();
+            this.panel10.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.Previous)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel14.ResumeLayout(false);
@@ -736,5 +794,7 @@
         private System.Windows.Forms.Panel panel10;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.PictureBox Next;
+        private Bunifu.UI.WinForms.BunifuVScrollBar bunifuVScrollBar2;
+        private System.Windows.Forms.Panel panel11;
     }
 }

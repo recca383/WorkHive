@@ -548,12 +548,6 @@
     <Compile Include="Views\Admin\DashboardPages\ProjectSummary.Designer.cs">
       <DependentUpon>ProjectSummary.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\Admin\DashboardPages\ProjectTasks.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Views\Admin\DashboardPages\ProjectTasks.Designer.cs">
-      <DependentUpon>ProjectTasks.cs</DependentUpon>
-    </Compile>
     <Compile Include="Views\Admin\DashboardPages\ProjectView.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -771,9 +765,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Views\Admin\DashboardPages\ProjectSummary.resx">
       <DependentUpon>ProjectSummary.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Views\Admin\DashboardPages\ProjectTasks.resx">
-      <DependentUpon>ProjectTasks.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\Admin\DashboardPages\ProjectView.resx">
       <DependentUpon>ProjectView.cs</DependentUpon>
@@ -1021,6 +1012,8 @@
     <None Include="Resources\BirthdayCard.png" />
     <None Include="Resources\AddTask.png" />
     <None Include="Resources\Card - Tasks2.png" />
+    <None Include="Resources\BirthdayCard1.png" />
+    <None Include="Resources\BirthdayCard2.png" />
     <Content Include="Resources\Default_Pics\Userdefault.png" />
     <None Include="Resources\logo1.png" />
     <None Include="Resources\logo name1.png" />

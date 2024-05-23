@@ -117,6 +117,12 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <metadata name="Dashboardlbl.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="panel1.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="pictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -133,6 +139,9 @@
         gg==
 </value>
   </data>
+  <metadata name="panel2.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <data name="bunifuVScrollBar1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAA8AAAEgCAYAAABrWykdAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
@@ -160,6 +169,15 @@
         gg==
 </value>
   </data>
+  <metadata name="panel3.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="panel6.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="panel6.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <data name="pictureBox10.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAALUAAABJCAYAAAB7A2fLAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
@@ -175,6 +193,9 @@
         gg==
 </value>
   </data>
+  <metadata name="panel4.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <data name="pictureBox8.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAALUAAABJCAYAAAB7A2fLAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
@@ -188,6 +209,21 @@
         Jxureb3dpnb8ETcH0bcZi/pw0pgfzjruWb3vn7LBNw0Dei+X85q0fvZ/5nzM+R34vD57HMiO1kPvYhQh
         PzeXy3pztah3q0817f/QejWf1Q/Bh+r3tun3uW9N1/e9LXLH+dJXdQf4ioK78VWoGgAAAABJRU5ErkJg
         gg==
+</value>
+  </data>
+  <metadata name="panel5.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="bunifuVScrollBar2.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABEAAADYCAYAAAANigiGAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAFlSURBVGhD7dutTsRAGIXhypXIlUguAYnkMjAkGDwSgUQh
+        uAmSddj+KILqHaBYtSTLsgESEHCmTJPSd6AUHDmTPGnazvdutn6y/iqKYipHclmW5ULewlX3uRzLVtya
+        Xtqwr4G7qqpe43DKSvtO48jnFX5JG+57A19Zy7VmJnG8CRzq4UNn06A8z591PWsDm7pZdjeMsNT8doic
+        6Oa7bzDkov0WqZc/ovmbEHlKvRwjSz0cyxFyhBwhR8gRcoQcIUfIEXKEHCFHyBFyhBwhR8gRcoQcIUfI
+        EXKEHCFHyBFyhBwhR8gRcoQcIUfIEXKEHCFHyBFyhBwhR8gRcoQcIUfIEXKEHCFHyBH6h5G/HFlrhEjd
+        fzjSIkTOew9HCWfnwtm3Hd389ijfWvN77ZnAmbwkNg2pm0BYCkxkPjJ0q/3TmPhYerAhM70c+muPUiPQ
+        XXq5q01Xuq46g+EDhnODYfggbo0ry94BdBsMxgv73mMAAAAASUVORK5CYII=
 </value>
   </data>
   <data name="pictureBox9.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
@@ -205,6 +241,9 @@
         gg==
 </value>
   </data>
+  <metadata name="panel7.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <data name="pictureBox3.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAALUAAABJCAYAAAB7A2fLAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
@@ -220,6 +259,9 @@
         gg==
 </value>
   </data>
+  <metadata name="panel8.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <data name="pictureBox4.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAALUAAABJCAYAAAB7A2fLAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
@@ -235,6 +277,9 @@
         gg==
 </value>
   </data>
+  <metadata name="panel9.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <data name="pictureBox2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAALUAAABJCAYAAAB7A2fLAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
@@ -250,4 +295,10 @@
         gg==
 </value>
   </data>
+  <metadata name="RefreshButton.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="$this.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
 </root>

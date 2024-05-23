@@ -58,10 +58,10 @@
             // TasksFlow
             // 
             this.TasksFlow.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-            this.TasksFlow.Location = new System.Drawing.Point(23, 86);
+            this.TasksFlow.Location = new System.Drawing.Point(47, 86);
             this.TasksFlow.Margin = new System.Windows.Forms.Padding(4);
             this.TasksFlow.Name = "TasksFlow";
-            this.TasksFlow.Size = new System.Drawing.Size(1181, 631);
+            this.TasksFlow.Size = new System.Drawing.Size(1157, 631);
             this.TasksFlow.TabIndex = 3;
             this.TasksFlow.WrapContents = false;
             // 
@@ -263,7 +263,7 @@
             this.TaskDetails.ForeColor = System.Drawing.Color.Transparent;
             this.TaskDetails.Location = new System.Drawing.Point(12, 121);
             this.TaskDetails.Name = "TaskDetails";
-            this.TaskDetails.Size = new System.Drawing.Size(65, 59);
+            this.TaskDetails.Size = new System.Drawing.Size(28, 42);
             this.TaskDetails.TabIndex = 24;
             // 
             // TasksView

@@ -99,5 +99,10 @@ namespace WorkHive.Views.Pages
             else projectID--;
             RefreshElements();
         }
+
+        private void DashboardView_Load(object sender, EventArgs e)
+        {
+            //
+        }
     }
 }

@@ -12,6 +12,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using WorkHive.Controller;
 using WorkHive.Model;
+using WorkHive.Views.Admin;
 using WorkHive.Views.Admin.DashboardPages;
 using WorkHive.Views.LandingPage.LandingPagePages;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
@@ -20,10 +21,7 @@ namespace WorkHive.Views.Cards
 {
     public partial class AdminTaskCard : UserControl
     {
-        private Size TaskCardOriginalSize;
-        private Rectangle recpanel2;
-        private Rectangle recpanel3;
-        private Rectangle recpictureBox1;
+   
 
         TaskModel task;
 
@@ -34,10 +32,7 @@ namespace WorkHive.Views.Cards
             InitializeComponent();
             InitializeElements();
           
-            this.Resize += TaskCard_Resize;
-            recpanel2 = new Rectangle(panel2.Location, panel2.Size);
-            recpanel3 = new Rectangle(panel3.Location, panel3.Size);
-            recpictureBox1 = new Rectangle(pictureboxFinished.Location, pictureboxFinished.Size);
+           
         }
 
 
@@ -56,26 +51,6 @@ namespace WorkHive.Views.Cards
 
         }
 
-        private void TaskCard_Resize(object sender, EventArgs e)
-        {
-            resize_Control(panel2, recpanel2);
-            resize_Control(panel3, recpanel3);
-            resize_Control(pictureboxFinished, recpictureBox1);
-        }
-        private void resize_Control(Control c, Rectangle r)
-        {
-            float xRatio = (float)(this.Width) / (float)(TaskCardOriginalSize.Width);
-            float yRatio = (float)(this.Height) / (float)(TaskCardOriginalSize.Height);
-            int newX = (int)(r.X * xRatio);
-            int newY = (int)(r.Y * yRatio);
-
-            int newWidth = (int)(r.Width * xRatio);
-            int newHeight = (int)(r.Height * yRatio);
-
-            c.Location = new Point(newX, newY);
-            c.Size = new Size(newWidth, newHeight);
-
-        }
         private void EditFlatButton_Click(object sender, EventArgs e)
         {
             TasksView editTask = (TasksView)this.Parent.Parent;
@@ -89,7 +64,7 @@ namespace WorkHive.Views.Cards
         {
             TasksView parent = (TasksView)this.Parent.Parent;
             parent.btnDetails_Click(sender, e, task);
-
+            
         }
 
     }

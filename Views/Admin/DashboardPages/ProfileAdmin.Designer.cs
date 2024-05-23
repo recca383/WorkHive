@@ -63,7 +63,6 @@
             // Positionlbl
             // 
             this.Positionlbl.AutoEllipsis = false;
-            this.Positionlbl.AutoSize = false;
             this.Positionlbl.BackColor = System.Drawing.Color.White;
             this.Positionlbl.CursorType = null;
             this.Positionlbl.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -72,7 +71,7 @@
             this.Positionlbl.Margin = new System.Windows.Forms.Padding(4);
             this.Positionlbl.Name = "Positionlbl";
             this.Positionlbl.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.Positionlbl.Size = new System.Drawing.Size(64, 25);
+            this.Positionlbl.Size = new System.Drawing.Size(62, 25);
             this.Positionlbl.TabIndex = 7;
             this.Positionlbl.Text = "ADMIN";
             this.Positionlbl.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -277,7 +276,8 @@
             // 
             // ProfileAdmin
             // 
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.AutoValidate = System.Windows.Forms.AutoValidate.Disable;
             this.BackColor = System.Drawing.Color.Gainsboro;
