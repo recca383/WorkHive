@@ -23,7 +23,7 @@ namespace WorkHive.Views.Admin.DashboardPages
         {
             InitializeComponent();
             InitializeElements();
-            DashboardPages.ProjectSummary.Visible = false;
+            ProjectSummary.Visible = false;
 
         }
 
@@ -38,25 +38,25 @@ namespace WorkHive.Views.Admin.DashboardPages
 
         public void Summary_Click(object sender, EventArgs e, ProjectModel projectModel)
         {
-            DashboardPages.ProjectSummary.Controls.Clear();
-            DashboardPages.ProjectSummary.Location = new Point(148, 158);
-            DashboardPages.ProjectSummary.Size = new Size(640, 301);
-            DashboardPages.ProjectSummary.Controls.Add(new ProjectSummary(projectModel));
-            DashboardPages.ProjectSummary.Visible = true;
+            ProjectSummary.Controls.Clear();
+            ProjectSummary.Location = new Point(148, 158);
+            ProjectSummary.Size = new Size(640, 301);
+            ProjectSummary.Controls.Add(new ProjectSummary(projectModel));
+            ProjectSummary.Visible = true;
 
         }
         private void AddTaskPanel_ControlRemoved(object sender, ControlEventArgs e)
         {
-            DashboardPages.ProjectSummary.Visible = false;
+            ProjectSummary.Visible = false;
         }
 
         private void btnAddProject_Click(object sender, EventArgs e)
         {
-            DashboardPages.ProjectSummary.Controls.Clear();
-            DashboardPages.ProjectSummary.Location = new Point(276, 46);
-            DashboardPages.ProjectSummary.Size = new Size(446, 523);
-            DashboardPages.ProjectSummary.Controls.Add(new AddProject());
-            DashboardPages.ProjectSummary.Visible = true;
+            ProjectSummary.Controls.Clear();
+            ProjectSummary.Location = new Point(276, 46);
+            ProjectSummary.Size = new Size(446, 523);
+            ProjectSummary.Controls.Add(new AddProject());
+            ProjectSummary.Visible = true;
         }
 
         private void RefreshList(List<ProjectModel> projectList)

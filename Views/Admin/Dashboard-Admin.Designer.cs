@@ -35,6 +35,7 @@
             this.btnMenu = new System.Windows.Forms.Button();
             this.ViewPanel = new System.Windows.Forms.Panel();
             this.sidebar = new System.Windows.Forms.Panel();
+            this.AboutUsBtn = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnProjects = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnDashBoard = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnChats = new Bunifu.Framework.UI.BunifuFlatButton();
@@ -118,6 +119,7 @@
             // 
             this.sidebar.BackgroundImage = global::WorkHive.Properties.Resources.NEW_Sidebar_BG;
             this.sidebar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.sidebar.Controls.Add(this.AboutUsBtn);
             this.sidebar.Controls.Add(this.btnProjects);
             this.sidebar.Controls.Add(this.btnDashBoard);
             this.sidebar.Controls.Add(this.btnChats);
@@ -133,6 +135,43 @@
             this.sidebar.Size = new System.Drawing.Size(219, 853);
             this.sidebar.TabIndex = 7;
             // 
+            // AboutUsBtn
+            // 
+            this.AboutUsBtn.Active = true;
+            this.AboutUsBtn.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(194)))), ((int)(((byte)(1)))));
+            this.AboutUsBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(194)))), ((int)(((byte)(1)))));
+            this.AboutUsBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.AboutUsBtn.BorderRadius = 0;
+            this.AboutUsBtn.ButtonText = "   About us";
+            this.AboutUsBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.AboutUsBtn.DisabledColor = System.Drawing.Color.Gray;
+            this.AboutUsBtn.Iconcolor = System.Drawing.Color.Transparent;
+            this.AboutUsBtn.Iconimage = global::WorkHive.Properties.Resources.aBOUT;
+            this.AboutUsBtn.Iconimage_right = null;
+            this.AboutUsBtn.Iconimage_right_Selected = null;
+            this.AboutUsBtn.Iconimage_Selected = null;
+            this.AboutUsBtn.IconMarginLeft = 16;
+            this.AboutUsBtn.IconMarginRight = 0;
+            this.AboutUsBtn.IconRightVisible = true;
+            this.AboutUsBtn.IconRightZoom = 0D;
+            this.AboutUsBtn.IconVisible = true;
+            this.AboutUsBtn.IconZoom = 50D;
+            this.AboutUsBtn.IsTab = false;
+            this.AboutUsBtn.Location = new System.Drawing.Point(0, 402);
+            this.AboutUsBtn.Margin = new System.Windows.Forms.Padding(0);
+            this.AboutUsBtn.Name = "AboutUsBtn";
+            this.AboutUsBtn.Normalcolor = System.Drawing.Color.Transparent;
+            this.AboutUsBtn.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(194)))), ((int)(((byte)(1)))));
+            this.AboutUsBtn.OnHoverTextColor = System.Drawing.Color.White;
+            this.AboutUsBtn.selected = true;
+            this.AboutUsBtn.Size = new System.Drawing.Size(251, 50);
+            this.AboutUsBtn.TabIndex = 10;
+            this.AboutUsBtn.Tag = "Chats";
+            this.AboutUsBtn.Text = "   About us";
+            this.AboutUsBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.AboutUsBtn.Textcolor = System.Drawing.Color.White;
+            this.AboutUsBtn.TextFont = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            // 
             // btnProjects
             // 
             this.btnProjects.Active = true;
@@ -144,7 +183,7 @@
             this.btnProjects.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnProjects.DisabledColor = System.Drawing.Color.Gray;
             this.btnProjects.Iconcolor = System.Drawing.Color.Transparent;
-            this.btnProjects.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnProjects.Iconimage")));
+            this.btnProjects.Iconimage = global::WorkHive.Properties.Resources.Proj__1_;
             this.btnProjects.Iconimage_right = null;
             this.btnProjects.Iconimage_right_Selected = null;
             this.btnProjects.Iconimage_Selected = null;
@@ -216,7 +255,7 @@
             this.btnChats.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(194)))), ((int)(((byte)(1)))));
             this.btnChats.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnChats.BorderRadius = 0;
-            this.btnChats.ButtonText = "   Chats";
+            this.btnChats.ButtonText = "   Message";
             this.btnChats.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnChats.DisabledColor = System.Drawing.Color.Gray;
             this.btnChats.Iconcolor = System.Drawing.Color.Transparent;
@@ -241,7 +280,7 @@
             this.btnChats.Size = new System.Drawing.Size(251, 50);
             this.btnChats.TabIndex = 6;
             this.btnChats.Tag = "Chats";
-            this.btnChats.Text = "   Chats";
+            this.btnChats.Text = "   Message";
             this.btnChats.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnChats.Textcolor = System.Drawing.Color.White;
             this.btnChats.TextFont = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -493,5 +532,6 @@
         private System.Windows.Forms.Panel ViewPanel;
         private System.Windows.Forms.Panel profilepanel;
         private Bunifu.Framework.UI.BunifuFlatButton btnProjects;
+        private Bunifu.Framework.UI.BunifuFlatButton AboutUsBtn;
     }
 }
