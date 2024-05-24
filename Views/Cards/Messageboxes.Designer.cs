@@ -31,8 +31,8 @@
             this.components = new System.ComponentModel.Container();
             this.OkayButton = new Bunifu.Framework.UI.BunifuFlatButton();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.TextLabel = new System.Windows.Forms.Label();
+            this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -85,11 +85,6 @@
             this.panel1.Size = new System.Drawing.Size(316, 103);
             this.panel1.TabIndex = 6;
             // 
-            // bunifuElipse1
-            // 
-            this.bunifuElipse1.ElipseRadius = 39;
-            this.bunifuElipse1.TargetControl = this;
-            // 
             // TextLabel
             // 
             this.TextLabel.AutoEllipsis = true;
@@ -102,6 +97,11 @@
             this.TextLabel.TabIndex = 0;
             this.TextLabel.Text = "Sample Text";
             this.TextLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // bunifuElipse1
+            // 
+            this.bunifuElipse1.ElipseRadius = 39;
+            this.bunifuElipse1.TargetControl = this;
             // 
             // MessageBoxes
             // 
@@ -118,6 +118,7 @@
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MessageBoxes";
+            this.TopMost = true;
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();

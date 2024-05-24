@@ -18,6 +18,7 @@ namespace WorkHive
 {
     public partial class AddTask : UserControl
     {
+        public static event Action<object, EventArgs> OnTasksAdded1;
         List<ProjectModel > projects = ProjectModelAccess.GetProjects();
         public static event Action OnUpdate;
         public AddTask()
@@ -50,13 +51,15 @@ namespace WorkHive
                 TaskDescription = TaskDescriptiontxt.Text, 
                 TaskStatus = Status.Ongoing,
                 ProjectAssigned = projects.FirstOrDefault(n => n.Name == Dropdownassignproject.SelectedItem.ToString()),
-                Deadline = DatePickerDeadline.Value
+                Deadline = DatePickerDeadline.Value,
+                TaskStart = DateTime.Now
             }
             );
             TasksView taskview = (TasksView)Parent.Parent;
             taskview.OnProjectTasksOnclick(projects.FirstOrDefault(n => n.Name == Dropdownassignproject.SelectedItem.ToString()));
             this.Parent.Controls.Remove(this);
             OnUpdate();
+            OnTasksAdded1(sender,e);
         }
 
     }
