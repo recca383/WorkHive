@@ -40,7 +40,6 @@
             this.ProjectFilter = new Bunifu.UI.WinForms.BunifuDropdown();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.TaskDetails = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.RefreshButton)).BeginInit();
             this.SuspendLayout();
             // 
@@ -257,20 +256,10 @@
             this.label2.TabIndex = 23;
             this.label2.Text = "Project Name : ";
             // 
-            // TaskDetails
-            // 
-            this.TaskDetails.BackColor = System.Drawing.Color.Transparent;
-            this.TaskDetails.ForeColor = System.Drawing.Color.Transparent;
-            this.TaskDetails.Location = new System.Drawing.Point(12, 121);
-            this.TaskDetails.Name = "TaskDetails";
-            this.TaskDetails.Size = new System.Drawing.Size(28, 42);
-            this.TaskDetails.TabIndex = 24;
-            // 
             // TasksView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.TaskDetails);
             this.Controls.Add(this.AddTaskPanel);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.ProjectFilter);
@@ -303,6 +292,5 @@
         private Bunifu.UI.WinForms.BunifuDropdown ProjectFilter;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Panel TaskDetails;
     }
 }
