@@ -45,7 +45,7 @@
             this.panel11.Location = new System.Drawing.Point(0, 0);
             this.panel11.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(732, 42);
+            this.panel11.Size = new System.Drawing.Size(786, 42);
             this.panel11.TabIndex = 16;
             // 
             // TaskId
@@ -73,7 +73,7 @@
             // 
             this.TaskDeadline.AutoSize = true;
             this.TaskDeadline.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TaskDeadline.Location = new System.Drawing.Point(617, 7);
+            this.TaskDeadline.Location = new System.Drawing.Point(668, 7);
             this.TaskDeadline.Name = "TaskDeadline";
             this.TaskDeadline.Size = new System.Drawing.Size(106, 23);
             this.TaskDeadline.TabIndex = 13;
@@ -84,9 +84,9 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.panel11);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "TaskSummaryCard";
-            this.Size = new System.Drawing.Size(732, 42);
+            this.Size = new System.Drawing.Size(786, 42);
             this.panel11.ResumeLayout(false);
             this.panel11.PerformLayout();
             this.ResumeLayout(false);

@@ -31,8 +31,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MemberView));
             this.MembersName = new System.Windows.Forms.Label();
             this.bunifuVScrollBar1 = new Bunifu.UI.WinForms.BunifuVScrollBar();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.MembersFlow = new System.Windows.Forms.FlowLayoutPanel();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -87,6 +87,17 @@
             this.bunifuVScrollBar1.ThumbStyle = Bunifu.UI.WinForms.BunifuVScrollBar.ThumbStyles.Inset;
             this.bunifuVScrollBar1.Value = 0;
             // 
+            // MembersFlow
+            // 
+            this.MembersFlow.AutoScroll = true;
+            this.MembersFlow.AutoSize = true;
+            this.MembersFlow.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
+            this.MembersFlow.Location = new System.Drawing.Point(4, 107);
+            this.MembersFlow.Margin = new System.Windows.Forms.Padding(4);
+            this.MembersFlow.Name = "MembersFlow";
+            this.MembersFlow.Size = new System.Drawing.Size(1119, 642);
+            this.MembersFlow.TabIndex = 2;
+            // 
             // panel2
             // 
             this.panel2.Controls.Add(this.MembersName);
@@ -95,16 +106,6 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1156, 100);
             this.panel2.TabIndex = 5;
-            // 
-            // MembersFlow
-            // 
-            this.MembersFlow.AutoSize = true;
-            this.MembersFlow.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-            this.MembersFlow.Location = new System.Drawing.Point(4, 107);
-            this.MembersFlow.Margin = new System.Windows.Forms.Padding(4);
-            this.MembersFlow.Name = "MembersFlow";
-            this.MembersFlow.Size = new System.Drawing.Size(1119, 642);
-            this.MembersFlow.TabIndex = 2;
             // 
             // MemberView
             // 

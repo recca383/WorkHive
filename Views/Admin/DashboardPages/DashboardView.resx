@@ -144,14 +144,14 @@
   </metadata>
   <data name="bunifuVScrollBar1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAAA8AAAEgCAYAAABrWykdAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAFrSURBVHhe7dwvTgNBHEfxykpkJZIjIJEcA0OCwSMRSBSC
-        S5DUYftHEVRvgAIFSSkNkICA75RtUjZb2Af2TfLJZmd+r81eYDr1NRwOe3EUl6PRaJLnII5jqxppXhnY
-        T/AwHo/f8/yomeX8tBr9vso/ZOCxFtTN4zqz3SpbhIfZfFoZWmswGLzmebYMN/MyXR1oYZpuu8QneWn6
-        xt9cLL+16fBH6W5K/NJ02EanabMtY8gYMoaMIWPIGDKGjCFjyBgyhowhY8gYMoaMIWPIGDKGjCFjyBgy
-        howhY8gYMoaMIWPIGDKGjCFjyBgyhowhY8gYMoaMIWPIGDKGjCFjyBgyhowhY8gYMoaMIWPIGPp3/Jcr
-        GBZKPKlvtnRf4vPaZivl7odyh8NOXujVE/N0e8u7K/rx1jC0zmQRlpWwG3ctf+A2c70q/VrZ2Ih+Dtd9
-        wnOUW0O+h6srh7sZuspzVqI8y70WJTqoRqrV6XwCCuhErpQo5MYAAAAASUVORK5CYII=
+        iVBORw0KGgoAAAANSUhEUgAAAA8AAAECCAYAAAAhP40gAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAFgSURBVGhD7dstTgNBHIbxlZXISiRHQCI5BoYEg0cikCgE
+        lyCpw+6HIqi9AYoqSEppgAQEvLPMJu1kFvYB+07yy2Zn/k+bPcAU6aqqaioncl3XdatnKaeyE0fySwOH
+        Ch6bpvnQ8zOx1Pl5HN1c4R808JQEqZXcanYSsy481ubz2tCgsizf9Lzow229LNYHRlio2w3xmV5y3/ib
+        q/5bc4c/UncX4tfc4RhFbnMsx5BjyDHkGHIMOYYcQ44hx5BjyDHkGHIMOYYcQ44hx5BjyDHkGHIMOYYc
+        Q44hx5BjyDHkGHIMOYYcQ44hx5BjyDHkGHIMOYYcQ44hx5BjyDHkGHIMOYYcQ46hf8d/uVzaCXGbbo70
+        EOLLZHOUcKs13E7d0wu9VLtSd9Dfyp3Je2ZoSNuFYSmcyHzkD9xrbhrT76WNLZnpcOgTXiTch94M15cO
+        9zV0o+cyRHqGG7shOoojcRXFF8ZXj5Zh3VVIAAAAAElFTkSuQmCC
 </value>
   </data>
   <data name="pictureBox11.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
@@ -170,6 +170,9 @@
 </value>
   </data>
   <metadata name="panel3.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="panel6.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <metadata name="panel6.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">

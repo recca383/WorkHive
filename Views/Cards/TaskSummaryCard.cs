@@ -16,7 +16,7 @@ namespace WorkHive.Views.Cards
         {
             InitializeComponent();
             TaskName.Text = name;
-            TaskDeadline.Text = deadline.ToString();
+            TaskDeadline.Text = deadline.ToString("d");
             TaskId.Text = id.ToString();
         }
     }

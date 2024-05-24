@@ -62,7 +62,10 @@ namespace WorkHive.Views.Pages
                 EventsPanel.Controls.Add(new BirthdayCard(member));
 
             }
-            
+            foreach(TaskModel task in tasks)
+            {
+                TasksSummary.Controls.Add(new TaskSummaryCard(task.TaskName, task.Deadline, task.TaskID));
+            }
             int finishedtasks = tasks
                 .Where(t => t.TaskStatus == Status.Finished)
                 .Count();
@@ -104,6 +107,11 @@ namespace WorkHive.Views.Pages
         private void DashboardView_Load(object sender, EventArgs e)
         {
             //
+        }
+
+        private void label23_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
