@@ -33,14 +33,13 @@ namespace WorkHive.Views.Admin.DashboardPages
             RefreshList(results);
 
             AddTaskPanel.Size = new Size(0, 0);
-            TaskDetails.Size = new Size(0, 0);
         }
 
         public void btnDetails_Click(object sender, EventArgs e, TaskModel task)
         {
-            TaskDetails.Controls.Clear();
-            TaskDetails.Controls.Add(new TaskDetailsCard(task));
-            TaskDetails.Size = new Size(285, 385);
+            AddTaskPanel.Controls.Clear();
+            AddTaskPanel.Controls.Add(new TaskDetailsCard(task));
+            AddTaskPanel.Size = new Size(285, 385);
             
         }
 
@@ -99,11 +98,29 @@ namespace WorkHive.Views.Admin.DashboardPages
         }
         private void StatusFilter_SelectedIndexChanged(object sender, EventArgs e)
         {
-            var results = tasks
-                .Where(a => a.ProjectAssigned.Id == ProjectFilter.SelectedIndex)
-                .Where(a => a.TaskStatus == (Status)StatusFilter.SelectedIndex)
-                .ToList();
-            RefreshList(results);
+            if (ProjectFilter.SelectedItem is null)
+            {
+                var results = tasks
+                    
+                    .Where(a => a.TaskStatus == (Status)StatusFilter.SelectedIndex)
+                    .ToList();
+                RefreshList(results);
+            }
+            else if (StatusFilter.SelectedItem is null)
+            {
+                var results = tasks
+                    .Where(a => a.ProjectAssigned.Id == ProjectFilter.SelectedIndex && a.TaskStatus != (Status)2)
+                    .ToList();
+                RefreshList(results);
+            }
+            else
+            {
+                var results = tasks
+                    .Where(a => a.ProjectAssigned.Id == ProjectFilter.SelectedIndex)
+                    .Where(a => a.TaskStatus == (Status)StatusFilter.SelectedIndex)
+                    .ToList();
+                RefreshList(results);
+            }
         }
     }
 }
