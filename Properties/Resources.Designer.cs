@@ -63,6 +63,16 @@ namespace WorkHive.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap aBOUT {
+            get {
+                object obj = ResourceManager.GetObject("aBOUT", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap AddTask {
             get {
                 object obj = ResourceManager.GetObject("AddTask", resourceCulture);
@@ -776,6 +786,26 @@ namespace WorkHive.Properties {
         internal static System.Drawing.Bitmap Profile_Box__2_ {
             get {
                 object obj = ResourceManager.GetObject("Profile Box (2)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Proj {
+            get {
+                object obj = ResourceManager.GetObject("Proj", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Proj__1_ {
+            get {
+                object obj = ResourceManager.GetObject("Proj (1)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

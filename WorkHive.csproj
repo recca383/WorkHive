@@ -449,6 +449,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Views\Admin\AboutUs.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Admin\AboutUs.Designer.cs">
+      <DependentUpon>AboutUs.cs</DependentUpon>
+    </Compile>
     <Compile Include="Data\SQLConnect.cs" />
     <Compile Include="Views\Admin\DashboardPages\AddProject.cs">
       <SubType>UserControl</SubType>
@@ -724,6 +730,9 @@
     <Compile Include="Views\Member\DashboardPagesMember\TaskViewMember.Designer.cs">
       <DependentUpon>TaskViewMember.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Views\Admin\AboutUs.resx">
+      <DependentUpon>AboutUs.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\Admin\DashboardPages\AddProject.resx">
       <DependentUpon>AddProject.cs</DependentUpon>
     </EmbeddedResource>
@@ -920,6 +929,8 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\Proj %281%29.png" />
+    <None Include="Resources\Proj.png" />
     <None Include="Resources\notif %282%29.png" />
     <None Include="Resources\notif %281%29.png" />
     <None Include="Resources\notif1.png" />
@@ -1014,6 +1025,7 @@
     <None Include="Resources\Card - Tasks2.png" />
     <None Include="Resources\BirthdayCard1.png" />
     <None Include="Resources\BirthdayCard2.png" />
+    <None Include="Resources\aBOUT.png" />
     <Content Include="Resources\Default_Pics\Userdefault.png" />
     <None Include="Resources\logo1.png" />
     <None Include="Resources\logo name1.png" />
