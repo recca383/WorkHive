@@ -24,7 +24,7 @@ namespace WorkHive.Views.Admin.DashboardPages
             InitializeComponent();
             InitializeElements();
             ProjectSummary.Visible = false;
-
+            AddProject.OnProjectAdded1 += RefreshButton_Click;
         }
 
         private void InitializeElements()

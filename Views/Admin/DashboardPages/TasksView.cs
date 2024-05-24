@@ -31,6 +31,7 @@ namespace WorkHive.Views.Admin.DashboardPages
             AddProject.OnProjectAdded2 += OnProjectTasksOnclick;
             ProjectCard.OnProjectModelClick += OnProjectTasksOnclick;
             RefreshList(results);
+            AddTask.OnTasksAdded1 += btnAll_Click;
 
             AddTaskPanel.Size = new Size(0, 0);
         }

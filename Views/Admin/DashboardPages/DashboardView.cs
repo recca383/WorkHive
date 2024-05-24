@@ -43,6 +43,7 @@ namespace WorkHive.Views.Pages
             TasksSummary.Controls.Clear();
             EventsPanel.Controls.Clear();
             ProjectProgressPanel.Controls.Clear();
+            
 
             projects = ProjectModelAccess.GetProjects();
             tasks = TaskModelAccess.GetTaskModel();
