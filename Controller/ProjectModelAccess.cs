@@ -74,6 +74,8 @@ namespace WorkHive.Controller
                 Progress = 0,
                 Archived = project.Archived,
                 Instructor = project.Instructor,
+                ColorStatus = project.ColorStatus,
+                Tasks = new List<TaskModel>()
             });
         }
         public static void AssignTaskToProject(TaskModel task, ProjectModel pastprojectassigned)

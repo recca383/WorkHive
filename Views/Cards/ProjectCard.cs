@@ -25,7 +25,7 @@ namespace WorkHive.Views.Cards
             InitializeComponent();
             lblProject_Title.Text = projectModel.Name;
             lblName.Text = projectModel.Instructor;
-
+            this.BackgroundImage = projectModel.ColorImage;
         }
 
         private void btnSummary_Click(object sender, EventArgs e)

@@ -163,6 +163,16 @@ namespace WorkHive.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap BlueOcean {
+            get {
+                object obj = ResourceManager.GetObject("BlueOcean", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Button____Calendar {
             get {
                 object obj = ResourceManager.GetObject("Button -  Calendar", resourceCulture);
@@ -326,6 +336,16 @@ namespace WorkHive.Properties {
         internal static System.Drawing.Bitmap Confirmbtn {
             get {
                 object obj = ResourceManager.GetObject("Confirmbtn", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap CyanSky {
+            get {
+                object obj = ResourceManager.GetObject("CyanSky", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -743,6 +763,16 @@ namespace WorkHive.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap PinkPassion {
+            get {
+                object obj = ResourceManager.GetObject("PinkPassion", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Poceedbtn {
             get {
                 object obj = ResourceManager.GetObject("Poceedbtn", resourceCulture);
@@ -806,16 +836,6 @@ namespace WorkHive.Properties {
         internal static System.Drawing.Bitmap Proj__1_ {
             get {
                 object obj = ResourceManager.GetObject("Proj (1)", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap ProjectBG {
-            get {
-                object obj = ResourceManager.GetObject("ProjectBG", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -936,6 +956,16 @@ namespace WorkHive.Properties {
         internal static System.Drawing.Bitmap Rectangle_96 {
             get {
                 object obj = ResourceManager.GetObject("Rectangle 96", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap RedAutumn {
+            get {
+                object obj = ResourceManager.GetObject("RedAutumn", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1216,6 +1246,16 @@ namespace WorkHive.Properties {
         internal static System.Drawing.Bitmap VerifyCode {
             get {
                 object obj = ResourceManager.GetObject("VerifyCode", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap YellowBee {
+            get {
+                object obj = ResourceManager.GetObject("YellowBee", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
