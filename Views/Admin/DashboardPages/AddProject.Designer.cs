@@ -46,6 +46,8 @@
             this.ProjectTaskNametxt = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox();
             this.btnAddProjectExit = new Bunifu.Framework.UI.BunifuFlatButton();
             this.Instructortxt = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox();
+            this.DesignFilter = new Bunifu.UI.WinForms.BunifuDropdown();
+            this.DesignTemplate = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // bunifuElipse1
@@ -113,8 +115,8 @@
             this.btnAddProjectProceed.IconVisible = true;
             this.btnAddProjectProceed.IconZoom = 90D;
             this.btnAddProjectProceed.IsTab = false;
-            this.btnAddProjectProceed.Location = new System.Drawing.Point(431, 379);
-            this.btnAddProjectProceed.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.btnAddProjectProceed.Location = new System.Drawing.Point(435, 465);
+            this.btnAddProjectProceed.Margin = new System.Windows.Forms.Padding(5);
             this.btnAddProjectProceed.Name = "btnAddProjectProceed";
             this.btnAddProjectProceed.Normalcolor = System.Drawing.Color.Transparent;
             this.btnAddProjectProceed.OnHovercolor = System.Drawing.Color.Red;
@@ -225,7 +227,7 @@
             this.btnAddProjectExit.IconZoom = 90D;
             this.btnAddProjectExit.IsTab = false;
             this.btnAddProjectExit.Location = new System.Drawing.Point(511, 27);
-            this.btnAddProjectExit.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.btnAddProjectExit.Margin = new System.Windows.Forms.Padding(5);
             this.btnAddProjectExit.Name = "btnAddProjectExit";
             this.btnAddProjectExit.Normalcolor = System.Drawing.Color.Transparent;
             this.btnAddProjectExit.OnHovercolor = System.Drawing.Color.Transparent;
@@ -314,12 +316,57 @@
             this.Instructortxt.UseSystemPasswordChar = false;
             this.Instructortxt.WordWrap = true;
             // 
+            // DesignFilter
+            // 
+            this.DesignFilter.BackColor = System.Drawing.SystemColors.Control;
+            this.DesignFilter.BorderRadius = 1;
+            this.DesignFilter.Color = System.Drawing.Color.Gold;
+            this.DesignFilter.Direction = Bunifu.UI.WinForms.BunifuDropdown.Directions.Down;
+            this.DesignFilter.DisabledColor = System.Drawing.Color.Gray;
+            this.DesignFilter.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.DesignFilter.DropdownBorderThickness = Bunifu.UI.WinForms.BunifuDropdown.BorderThickness.Thick;
+            this.DesignFilter.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.DesignFilter.DropDownTextAlign = Bunifu.UI.WinForms.BunifuDropdown.TextAlign.Left;
+            this.DesignFilter.FillDropDown = false;
+            this.DesignFilter.FillIndicator = false;
+            this.DesignFilter.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.DesignFilter.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.DesignFilter.FormattingEnabled = true;
+            this.DesignFilter.Icon = null;
+            this.DesignFilter.IndicatorColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.DesignFilter.IndicatorLocation = Bunifu.UI.WinForms.BunifuDropdown.Indicator.Right;
+            this.DesignFilter.ItemBackColor = System.Drawing.Color.White;
+            this.DesignFilter.ItemBorderColor = System.Drawing.Color.White;
+            this.DesignFilter.ItemForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.DesignFilter.ItemHeight = 26;
+            this.DesignFilter.ItemHighLightColor = System.Drawing.Color.Gold;
+            this.DesignFilter.Location = new System.Drawing.Point(43, 398);
+            this.DesignFilter.Margin = new System.Windows.Forms.Padding(4);
+            this.DesignFilter.Name = "DesignFilter";
+            this.DesignFilter.Size = new System.Drawing.Size(288, 32);
+            this.DesignFilter.TabIndex = 31;
+            this.DesignFilter.Text = null;
+            // 
+            // DesignTemplate
+            // 
+            this.DesignTemplate.AutoSize = true;
+            this.DesignTemplate.BackColor = System.Drawing.Color.Transparent;
+            this.DesignTemplate.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DesignTemplate.ForeColor = System.Drawing.Color.Black;
+            this.DesignTemplate.Location = new System.Drawing.Point(36, 356);
+            this.DesignTemplate.Name = "DesignTemplate";
+            this.DesignTemplate.Size = new System.Drawing.Size(235, 38);
+            this.DesignTemplate.TabIndex = 32;
+            this.DesignTemplate.Text = "Design Template";
+            // 
             // AddProject
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::WorkHive.Properties.Resources.Group_77__2_;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.Controls.Add(this.DesignTemplate);
+            this.Controls.Add(this.DesignFilter);
             this.Controls.Add(this.Instructortxt);
             this.Controls.Add(this.AddNewProject);
             this.Controls.Add(this.ProjectDeadlineTask);
@@ -330,7 +377,7 @@
             this.DoubleBuffered = true;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "AddProject";
-            this.Size = new System.Drawing.Size(595, 452);
+            this.Size = new System.Drawing.Size(595, 534);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -346,5 +393,7 @@
         private Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox ProjectTaskNametxt;
         private Bunifu.Framework.UI.BunifuFlatButton btnAddProjectExit;
         private Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox Instructortxt;
+        private Bunifu.UI.WinForms.BunifuDropdown DesignFilter;
+        private System.Windows.Forms.Label DesignTemplate;
     }
 }

@@ -10,6 +10,8 @@ using System.Windows.Forms;
 using WorkHive.Controller;
 using WorkHive.Model;
 using WorkHive.Views.Cards;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.TrackBar;
+using Color = WorkHive.Model.Color;
 
 namespace WorkHive
 {
@@ -21,6 +23,7 @@ namespace WorkHive
         public AddProject()
         {
             InitializeComponent();
+            DesignFilter.DataSource = Enum.GetNames(typeof(Color));
         }
 
         private void btnAddProjectExit_Click(object sender, EventArgs e)
@@ -35,6 +38,7 @@ namespace WorkHive
                 Id = projects.Count(),
                 Name = ProjectTaskNametxt.Text,
                 Instructor = Instructortxt.Text,
+                ColorStatus = (Color)DesignFilter.SelectedIndex
             };
 
             ProjectModelAccess.AddProject(project);
