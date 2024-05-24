@@ -65,7 +65,7 @@ namespace WorkHive.Views
 
             //List <UserControl> list = new List<UserControl>()
             UserControl[] list = 
-            { new DashboardView(CurrentUser), new MemberView(), new TasksView(), new ProjectView(), new CalendarView(), new MessageView(), new ProfileEdit(CurrentUser), new ResetPassword(CurrentUser)};
+            { new DashboardView(CurrentUser), new MemberView(), new TasksView(), new ProjectView(), new CalendarView(), new MessageView(), new ProfileEdit(CurrentUser), new ResetPassword(CurrentUser), new AboutUs()};
 
             dashboardNavigation = new DashboardNavigation(list, ViewPanel);
             dashboardNavigation.Display(0);
@@ -107,7 +107,10 @@ namespace WorkHive.Views
             dashboardNavigation.Display(7);
         }
 
-        
+        private void AboutUsBtn_Click(object sender, EventArgs e)
+        {
+            dashboardNavigation.Display(8);
+        }
 
         private void btnMenu_Click(object sender, EventArgs e)
         {
@@ -177,7 +180,7 @@ namespace WorkHive.Views
             }
         }
 
-      
+       
     }
 
     public class CircularPictureBox : PictureBox

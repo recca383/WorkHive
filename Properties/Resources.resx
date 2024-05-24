@@ -136,23 +136,17 @@
   <data name="Rectangle 14" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Rectangle 14.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="BackButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\BackButton.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Team" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Team.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Button - Chat1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Button - Chat1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="BirthdayCard" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\BirthdayCard.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Group 77 (3)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Group 77 (3).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="arrowleft" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\arrowleft.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Button -  Menu" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Button -  Menu.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="MemberCard" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\MemberCard1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="BirthdayCard" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BirthdayCard.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Profile Box (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Profile Box (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -169,11 +163,11 @@
   <data name="NEW Sidebar BG" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\NEW Sidebar BG.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="MessageBox" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MessageBox.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Tasks Cards TOP" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Tasks Cards TOP2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Rectangle 9 (1)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Rectangle 9 (1)1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Group 81" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Group 81.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -187,14 +181,14 @@
   <data name="Group 88" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Group 88.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Button - Notification" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Button - Notification.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="refresh" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\refresh.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Button - Edit Tasks" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Button - Edit Tasks.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Tasks - PENDING SOLO" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Tasks - PENDING SOLO.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Member - Sidebar" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Member - Sidebar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -205,8 +199,11 @@
   <data name="UserProfile" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\UserProfile1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Notification" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Notification.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Previous" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Previous.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LandingPagee" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LandingPagee.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Rectangle 9 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Rectangle 9 (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -244,9 +241,6 @@
   <data name="Rectangle 26" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Rectangle 26.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Rectangle 95 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Rectangle 95 (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Next" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Next.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -255,6 +249,9 @@
   </data>
   <data name="Group 84" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Group 84.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Reset Password" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Reset Password.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Group 89 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Group 89 (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -277,8 +274,8 @@
   <data name="tdesign_personal-information" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\tdesign_personal-information.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="MessageBox" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\MessageBox.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="MemberCard" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MemberCard1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Group 89" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Group 89.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -292,11 +289,11 @@
   <data name="YellowBee" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\YellowBee.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Poceedbtn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Poceedbtn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Messagebox21" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Messagebox21.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="eye open" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\eye open.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="maki_home" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\maki_home.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -319,8 +316,14 @@
   <data name="Tasks Cards P1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Tasks Cards P1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Group 77 (4)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Group 77 (4).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Card - Tasks2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Card - Tasks2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Vector (6)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Vector (6).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Tasks - CHECKED" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Tasks - CHECKED.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -331,8 +334,8 @@
   <data name="Button - Project" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Button - Project.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Reset Password" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Reset Password.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="BackButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BackButton.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="EKIS" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\EKIS.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -340,20 +343,23 @@
   <data name="ResetPassword" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ResetPassword.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Group 81 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Group 81 (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="notif (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\notif (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="BirthdayCard1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\BirthdayCard1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Vector (6)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Vector (6).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="eye open" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\eye open.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Button - Notification" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Button - Notification.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="ProjectBG" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ProjectBG.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Group 77 (4)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Group 77 (4).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Rectangle 95 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Rectangle 95 (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="notif" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\notif.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -418,8 +424,8 @@
   <data name="Landing page" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Landing page1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Group 77 (3)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Group 77 (3).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Rectangle 9 (1)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Rectangle 9 (1)1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Button - User Profile" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Button - User Profile.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -430,11 +436,8 @@
   <data name="octicon_x-12 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\octicon_x-12 (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="LandingPagee" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\LandingPagee.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="AdminCard RIGHT" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\AdminCard RIGHT1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Button - Chat1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Button - Chat1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="notif (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\notif (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -442,8 +445,8 @@
   <data name="Vector (3)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Vector (3).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Previous" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Previous.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Tasks - PENDING SOLO" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Tasks - PENDING SOLO.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Group 88 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Member\Group 88 (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -451,11 +454,14 @@
   <data name="SummaryBG" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\SummaryBG.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Cancelbtn" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Cancelbtn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="WORKhIVE" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\WORKhIVE.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="AddTask" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\AddTask.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Button -  Menu" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Button -  Menu.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Tasks - DONE SOLO" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Tasks - DONE SOLO.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -463,19 +469,24 @@
   <data name="Rectangle 101" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Rectangle 101.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Group 81 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Group 81 (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Notification" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Notification.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Messagebox2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Messagebox2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Cancelbtn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Cancelbtn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Rectangle 102" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Rectangle 102.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Poceedbtn" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Poceedbtn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="AdminCard RIGHT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AdminCard RIGHT1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="BlueOcean" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\BlueOcean.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="ABOUT US" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ABOUT US.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

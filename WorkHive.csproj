@@ -890,6 +890,8 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\Team.png" />
+    <None Include="Resources\WORKhIVE.gif" />
     <None Include="Resources\YellowBee.png" />
     <None Include="Resources\PinkPassion.png" />
     <None Include="Resources\Proj %281%29.png" />
@@ -989,8 +991,7 @@
     <None Include="Resources\BirthdayCard1.png" />
     <None Include="Resources\BirthdayCard2.png" />
     <None Include="Resources\aBOUT.png" />
-    <None Include="Resources\CyanSky.png" />
-    <None Include="Resources\BlueOcean.png" />
+    <None Include="Resources\ABOUT US.png" />
     <Content Include="Resources\Default_Pics\Userdefault.png" />
     <None Include="Resources\logo1.png" />
     <None Include="Resources\logo name1.png" />

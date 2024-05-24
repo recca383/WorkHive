@@ -31,9 +31,10 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Dashboard_Admin));
             this.PnTitleBar = new System.Windows.Forms.Panel();
             this.profilepanel = new System.Windows.Forms.Panel();
-            this.Notificationbtn = new System.Windows.Forms.PictureBox();
-            this.btnMenu = new System.Windows.Forms.Button();
             this.ViewPanel = new System.Windows.Forms.Panel();
+            this.Notificationbtn = new System.Windows.Forms.PictureBox();
+            this.ProfilePicBox = new WorkHive.Views.CircularPictureBox();
+            this.btnMenu = new System.Windows.Forms.Button();
             this.sidebar = new System.Windows.Forms.Panel();
             this.AboutUsBtn = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnProjects = new Bunifu.Framework.UI.BunifuFlatButton();
@@ -46,14 +47,13 @@
             this.btnLogout = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnMembers = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnCalendar = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.ProfilePicBox = new WorkHive.Views.CircularPictureBox();
             this.PnTitleBar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Notificationbtn)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ProfilePicBox)).BeginInit();
             this.sidebar.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ProfilePicBox)).BeginInit();
             this.SuspendLayout();
             // 
             // PnTitleBar
@@ -79,6 +79,16 @@
             this.profilepanel.Size = new System.Drawing.Size(0, 0);
             this.profilepanel.TabIndex = 3;
             // 
+            // ViewPanel
+            // 
+            this.ViewPanel.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.ViewPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ViewPanel.Location = new System.Drawing.Point(219, 100);
+            this.ViewPanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.ViewPanel.Name = "ViewPanel";
+            this.ViewPanel.Size = new System.Drawing.Size(1463, 753);
+            this.ViewPanel.TabIndex = 9;
+            // 
             // Notificationbtn
             // 
             this.Notificationbtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -91,6 +101,19 @@
             this.Notificationbtn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.Notificationbtn.TabIndex = 2;
             this.Notificationbtn.TabStop = false;
+            // 
+            // ProfilePicBox
+            // 
+            this.ProfilePicBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.ProfilePicBox.Image = ((System.Drawing.Image)(resources.GetObject("ProfilePicBox.Image")));
+            this.ProfilePicBox.Location = new System.Drawing.Point(1386, 28);
+            this.ProfilePicBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.ProfilePicBox.Name = "ProfilePicBox";
+            this.ProfilePicBox.Size = new System.Drawing.Size(48, 46);
+            this.ProfilePicBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.ProfilePicBox.TabIndex = 0;
+            this.ProfilePicBox.TabStop = false;
+            this.ProfilePicBox.Click += new System.EventHandler(this.ProfilePicBox_Click);
             // 
             // btnMenu
             // 
@@ -105,19 +128,9 @@
             this.btnMenu.UseVisualStyleBackColor = true;
             this.btnMenu.Click += new System.EventHandler(this.btnMenu_Click);
             // 
-            // ViewPanel
-            // 
-            this.ViewPanel.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ViewPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ViewPanel.Location = new System.Drawing.Point(219, 100);
-            this.ViewPanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.ViewPanel.Name = "ViewPanel";
-            this.ViewPanel.Size = new System.Drawing.Size(1463, 753);
-            this.ViewPanel.TabIndex = 9;
-            // 
             // sidebar
             // 
-            this.sidebar.BackgroundImage = global::WorkHive.Properties.Resources.NEW_Sidebar_BG;
+            this.sidebar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("sidebar.BackgroundImage")));
             this.sidebar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.sidebar.Controls.Add(this.AboutUsBtn);
             this.sidebar.Controls.Add(this.btnProjects);
@@ -139,14 +152,14 @@
             // 
             this.AboutUsBtn.Active = true;
             this.AboutUsBtn.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(194)))), ((int)(((byte)(1)))));
-            this.AboutUsBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(194)))), ((int)(((byte)(1)))));
+            this.AboutUsBtn.BackColor = System.Drawing.Color.Transparent;
             this.AboutUsBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.AboutUsBtn.BorderRadius = 0;
             this.AboutUsBtn.ButtonText = "   About us";
             this.AboutUsBtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.AboutUsBtn.DisabledColor = System.Drawing.Color.Gray;
             this.AboutUsBtn.Iconcolor = System.Drawing.Color.Transparent;
-            this.AboutUsBtn.Iconimage = global::WorkHive.Properties.Resources.aBOUT;
+            this.AboutUsBtn.Iconimage = ((System.Drawing.Image)(resources.GetObject("AboutUsBtn.Iconimage")));
             this.AboutUsBtn.Iconimage_right = null;
             this.AboutUsBtn.Iconimage_right_Selected = null;
             this.AboutUsBtn.Iconimage_Selected = null;
@@ -171,19 +184,20 @@
             this.AboutUsBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.AboutUsBtn.Textcolor = System.Drawing.Color.White;
             this.AboutUsBtn.TextFont = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AboutUsBtn.Click += new System.EventHandler(this.AboutUsBtn_Click);
             // 
             // btnProjects
             // 
             this.btnProjects.Active = true;
             this.btnProjects.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(194)))), ((int)(((byte)(1)))));
-            this.btnProjects.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(194)))), ((int)(((byte)(1)))));
+            this.btnProjects.BackColor = System.Drawing.Color.Transparent;
             this.btnProjects.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnProjects.BorderRadius = 0;
             this.btnProjects.ButtonText = "   Projects";
             this.btnProjects.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnProjects.DisabledColor = System.Drawing.Color.Gray;
             this.btnProjects.Iconcolor = System.Drawing.Color.Transparent;
-            this.btnProjects.Iconimage = global::WorkHive.Properties.Resources.Proj__1_;
+            this.btnProjects.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnProjects.Iconimage")));
             this.btnProjects.Iconimage_right = null;
             this.btnProjects.Iconimage_right_Selected = null;
             this.btnProjects.Iconimage_Selected = null;
@@ -214,7 +228,7 @@
             // 
             this.btnDashBoard.Active = true;
             this.btnDashBoard.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(194)))), ((int)(((byte)(1)))));
-            this.btnDashBoard.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(194)))), ((int)(((byte)(1)))));
+            this.btnDashBoard.BackColor = System.Drawing.Color.Transparent;
             this.btnDashBoard.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnDashBoard.BorderRadius = 0;
             this.btnDashBoard.ButtonText = "   Dashboard";
@@ -252,7 +266,7 @@
             // 
             this.btnChats.Active = true;
             this.btnChats.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(194)))), ((int)(((byte)(1)))));
-            this.btnChats.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(194)))), ((int)(((byte)(1)))));
+            this.btnChats.BackColor = System.Drawing.Color.Transparent;
             this.btnChats.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnChats.BorderRadius = 0;
             this.btnChats.ButtonText = "   Message";
@@ -325,7 +339,7 @@
             // 
             this.btnTasks.Active = true;
             this.btnTasks.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(194)))), ((int)(((byte)(1)))));
-            this.btnTasks.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(194)))), ((int)(((byte)(1)))));
+            this.btnTasks.BackColor = System.Drawing.Color.Transparent;
             this.btnTasks.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnTasks.BorderRadius = 0;
             this.btnTasks.ButtonText = "   Tasks";
@@ -364,7 +378,7 @@
             this.btnLogout.Active = true;
             this.btnLogout.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(194)))), ((int)(((byte)(1)))));
             this.btnLogout.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.btnLogout.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(194)))), ((int)(((byte)(1)))));
+            this.btnLogout.BackColor = System.Drawing.Color.Transparent;
             this.btnLogout.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnLogout.BorderRadius = 0;
             this.btnLogout.ButtonText = "     Log Out";
@@ -402,7 +416,7 @@
             // 
             this.btnMembers.Active = true;
             this.btnMembers.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(194)))), ((int)(((byte)(1)))));
-            this.btnMembers.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(194)))), ((int)(((byte)(1)))));
+            this.btnMembers.BackColor = System.Drawing.Color.Transparent;
             this.btnMembers.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnMembers.BorderRadius = 0;
             this.btnMembers.ButtonText = "   Members";
@@ -440,7 +454,7 @@
             // 
             this.btnCalendar.Active = true;
             this.btnCalendar.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(194)))), ((int)(((byte)(1)))));
-            this.btnCalendar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(194)))), ((int)(((byte)(1)))));
+            this.btnCalendar.BackColor = System.Drawing.Color.Transparent;
             this.btnCalendar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnCalendar.BorderRadius = 0;
             this.btnCalendar.ButtonText = "   Calendar";
@@ -474,19 +488,6 @@
             this.btnCalendar.TextFont = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCalendar.Click += new System.EventHandler(this.btnCalendar_Click);
             // 
-            // ProfilePicBox
-            // 
-            this.ProfilePicBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.ProfilePicBox.Image = ((System.Drawing.Image)(resources.GetObject("ProfilePicBox.Image")));
-            this.ProfilePicBox.Location = new System.Drawing.Point(1386, 28);
-            this.ProfilePicBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.ProfilePicBox.Name = "ProfilePicBox";
-            this.ProfilePicBox.Size = new System.Drawing.Size(48, 46);
-            this.ProfilePicBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.ProfilePicBox.TabIndex = 0;
-            this.ProfilePicBox.TabStop = false;
-            this.ProfilePicBox.Click += new System.EventHandler(this.ProfilePicBox_Click);
-            // 
             // Dashboard_Admin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -505,11 +506,11 @@
             this.PnTitleBar.ResumeLayout(false);
             this.PnTitleBar.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Notificationbtn)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ProfilePicBox)).EndInit();
             this.sidebar.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ProfilePicBox)).EndInit();
             this.ResumeLayout(false);
 
         }
