@@ -73,6 +73,16 @@ namespace WorkHive.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap ABOUT_US {
+            get {
+                object obj = ResourceManager.GetObject("ABOUT US", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap AddTask {
             get {
                 object obj = ResourceManager.GetObject("AddTask", resourceCulture);
@@ -1123,6 +1133,16 @@ namespace WorkHive.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Team {
+            get {
+                object obj = ResourceManager.GetObject("Team", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Update_Password {
             get {
                 object obj = ResourceManager.GetObject("Update Password", resourceCulture);
@@ -1253,9 +1273,9 @@ namespace WorkHive.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap YellowBee {
+        internal static System.Drawing.Bitmap WORKhIVE {
             get {
-                object obj = ResourceManager.GetObject("YellowBee", resourceCulture);
+                object obj = ResourceManager.GetObject("WORKhIVE", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
