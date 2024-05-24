@@ -139,7 +139,7 @@
             this.ProfilePictureADMIN.Location = new System.Drawing.Point(27, 47);
             this.ProfilePictureADMIN.Margin = new System.Windows.Forms.Padding(4);
             this.ProfilePictureADMIN.Name = "ProfilePictureADMIN";
-            this.ProfilePictureADMIN.Size = new System.Drawing.Size(101, 107);
+            this.ProfilePictureADMIN.Size = new System.Drawing.Size(101, 95);
             this.ProfilePictureADMIN.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.ProfilePictureADMIN.TabIndex = 1;
             this.ProfilePictureADMIN.TabStop = false;

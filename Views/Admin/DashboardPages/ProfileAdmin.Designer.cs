@@ -67,7 +67,7 @@
             this.Positionlbl.CursorType = null;
             this.Positionlbl.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Positionlbl.ForeColor = System.Drawing.Color.Black;
-            this.Positionlbl.Location = new System.Drawing.Point(168, 102);
+            this.Positionlbl.Location = new System.Drawing.Point(156, 102);
             this.Positionlbl.Margin = new System.Windows.Forms.Padding(4);
             this.Positionlbl.Name = "Positionlbl";
             this.Positionlbl.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -108,7 +108,7 @@
             this.ProfilePictureADMIN.Location = new System.Drawing.Point(26, 47);
             this.ProfilePictureADMIN.Margin = new System.Windows.Forms.Padding(4);
             this.ProfilePictureADMIN.Name = "ProfilePictureADMIN";
-            this.ProfilePictureADMIN.Size = new System.Drawing.Size(101, 107);
+            this.ProfilePictureADMIN.Size = new System.Drawing.Size(101, 95);
             this.ProfilePictureADMIN.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.ProfilePictureADMIN.TabIndex = 1;
             this.ProfilePictureADMIN.TabStop = false;

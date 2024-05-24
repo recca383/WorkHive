@@ -166,8 +166,8 @@
             // 
             this.panel2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel2.BackColor = System.Drawing.Color.White;
-            this.panel2.Controls.Add(this.panel11);
             this.panel2.Controls.Add(this.bunifuVScrollBar1);
+            this.panel2.Controls.Add(this.panel11);
             this.panel2.Controls.Add(this.TasksSummary);
             this.panel2.Controls.Add(this.pictureBox11);
             this.panel2.Controls.Add(this.label2);
@@ -184,28 +184,27 @@
             this.panel11.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel11.Location = new System.Drawing.Point(0, 34);
             this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(800, 30);
+            this.panel11.Size = new System.Drawing.Size(815, 30);
             this.panel11.TabIndex = 16;
             // 
             // label23
             // 
             this.label23.AutoSize = true;
-            this.label23.Dock = System.Windows.Forms.DockStyle.Right;
             this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label23.Location = new System.Drawing.Point(720, 0);
+            this.label23.Location = new System.Drawing.Point(682, 0);
             this.label23.Name = "label23";
             this.label23.Padding = new System.Windows.Forms.Padding(0, 10, 10, 0);
             this.label23.Size = new System.Drawing.Size(80, 26);
             this.label23.TabIndex = 10;
             this.label23.Text = "Deadline";
+            this.label23.Click += new System.EventHandler(this.label23_Click);
             // 
             // label22
             // 
             this.label22.AutoSize = true;
-            this.label22.Dock = System.Windows.Forms.DockStyle.Left;
             this.label22.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.Location = new System.Drawing.Point(0, 0);
+            this.label22.Location = new System.Drawing.Point(21, 0);
             this.label22.Name = "label22";
             this.label22.Padding = new System.Windows.Forms.Padding(0, 10, 0, 0);
             this.label22.Size = new System.Drawing.Size(121, 26);
@@ -232,7 +231,7 @@
             this.bunifuVScrollBar1.Dock = System.Windows.Forms.DockStyle.Right;
             this.bunifuVScrollBar1.DurationBeforeShrink = 2000;
             this.bunifuVScrollBar1.LargeChange = 10;
-            this.bunifuVScrollBar1.Location = new System.Drawing.Point(800, 34);
+            this.bunifuVScrollBar1.Location = new System.Drawing.Point(800, 64);
             this.bunifuVScrollBar1.Margin = new System.Windows.Forms.Padding(5);
             this.bunifuVScrollBar1.Maximum = 100;
             this.bunifuVScrollBar1.Minimum = 0;
@@ -244,23 +243,22 @@
             this.bunifuVScrollBar1.ScrollBarBorderColor = System.Drawing.Color.Silver;
             this.bunifuVScrollBar1.ScrollBarColor = System.Drawing.Color.Silver;
             this.bunifuVScrollBar1.ShrinkSizeLimit = 3;
-            this.bunifuVScrollBar1.Size = new System.Drawing.Size(15, 288);
+            this.bunifuVScrollBar1.Size = new System.Drawing.Size(15, 258);
             this.bunifuVScrollBar1.SmallChange = 1;
             this.bunifuVScrollBar1.TabIndex = 15;
             this.bunifuVScrollBar1.ThumbColor = System.Drawing.Color.Gray;
-            this.bunifuVScrollBar1.ThumbLength = 28;
+            this.bunifuVScrollBar1.ThumbLength = 25;
             this.bunifuVScrollBar1.ThumbMargin = 1;
             this.bunifuVScrollBar1.ThumbStyle = Bunifu.UI.WinForms.BunifuVScrollBar.ThumbStyles.Inset;
             this.bunifuVScrollBar1.Value = 0;
             // 
             // TasksSummary
             // 
-            this.TasksSummary.Dock = System.Windows.Forms.DockStyle.Fill;
             this.TasksSummary.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-            this.TasksSummary.Location = new System.Drawing.Point(0, 34);
+            this.TasksSummary.Location = new System.Drawing.Point(0, 64);
             this.TasksSummary.Margin = new System.Windows.Forms.Padding(4);
             this.TasksSummary.Name = "TasksSummary";
-            this.TasksSummary.Size = new System.Drawing.Size(815, 288);
+            this.TasksSummary.Size = new System.Drawing.Size(795, 258);
             this.TasksSummary.TabIndex = 14;
             // 
             // pictureBox11
