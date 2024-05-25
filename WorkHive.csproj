@@ -449,6 +449,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Views\Admin\AboutUs.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -495,11 +500,6 @@
     <Compile Include="Controller\TaskModelAccess.cs" />
     <Compile Include="Model\MemberModel.cs" />
     <Compile Include="Model\TaskModel.cs" />
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
     <Compile Include="Views\Admin\Dashboard-Admin.cs">
       <SubType>Form</SubType>
     </Compile>
