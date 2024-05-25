@@ -189,7 +189,7 @@
             this.StatusFilter.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.StatusFilter.FormattingEnabled = true;
             this.StatusFilter.Icon = null;
-            this.StatusFilter.IndicatorColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.StatusFilter.IndicatorColor = System.Drawing.Color.Black;
             this.StatusFilter.IndicatorLocation = Bunifu.UI.WinForms.BunifuDropdown.Indicator.Right;
             this.StatusFilter.ItemBackColor = System.Drawing.Color.White;
             this.StatusFilter.ItemBorderColor = System.Drawing.Color.White;

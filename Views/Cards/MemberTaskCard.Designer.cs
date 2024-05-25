@@ -142,7 +142,7 @@
             this.btnMarkAsDone.IconZoom = 90D;
             this.btnMarkAsDone.IsTab = false;
             this.btnMarkAsDone.Location = new System.Drawing.Point(780, 5);
-            this.btnMarkAsDone.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.btnMarkAsDone.Margin = new System.Windows.Forms.Padding(5);
             this.btnMarkAsDone.Name = "btnMarkAsDone";
             this.btnMarkAsDone.Normalcolor = System.Drawing.Color.White;
             this.btnMarkAsDone.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(194)))), ((int)(((byte)(1)))));
@@ -180,7 +180,7 @@
             this.btnDetails.IconZoom = 90D;
             this.btnDetails.IsTab = false;
             this.btnDetails.Location = new System.Drawing.Point(532, 5);
-            this.btnDetails.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.btnDetails.Margin = new System.Windows.Forms.Padding(5);
             this.btnDetails.Name = "btnDetails";
             this.btnDetails.Normalcolor = System.Drawing.Color.White;
             this.btnDetails.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(194)))), ((int)(((byte)(1)))));
@@ -192,6 +192,7 @@
             this.btnDetails.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnDetails.Textcolor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
             this.btnDetails.TextFont = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDetails.Click += new System.EventHandler(this.btnDetails_Click);
             // 
             // pictureBox2
             // 

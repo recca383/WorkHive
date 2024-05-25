@@ -718,6 +718,12 @@
     <Compile Include="Views\Member\DashboardPagesMember\ProfileMember.Designer.cs">
       <DependentUpon>ProfileMember.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\Member\DashboardPagesMember\ProjectViewMember.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Member\DashboardPagesMember\ProjectViewMember.Designer.cs">
+      <DependentUpon>ProjectViewMember.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\Member\DashboardPagesMember\ResetPasswordMember.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -861,6 +867,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Views\Member\DashboardPagesMember\ProfileMember.resx">
       <DependentUpon>ProfileMember.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Member\DashboardPagesMember\ProjectViewMember.resx">
+      <DependentUpon>ProjectViewMember.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\Member\DashboardPagesMember\ResetPasswordMember.resx">
       <DependentUpon>ResetPasswordMember.cs</DependentUpon>
