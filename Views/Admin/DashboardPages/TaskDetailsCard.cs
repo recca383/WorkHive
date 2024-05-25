@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using WorkHive.Model;
+using WorkHive.Views.Member.DashboardPagesMember;
 
 namespace WorkHive.Views.Admin.DashboardPages
 {
@@ -37,6 +38,10 @@ namespace WorkHive.Views.Admin.DashboardPages
             taskview.btnAll_Click(sender, e);
             this.Parent.Controls.Remove(this);
             this.Visible = false;
+           /* TaskViewMember taskview1 = (TaskViewMember)Parent.Parent;
+            taskview1.btnAll_Click(sender, e);
+            this.Parent.Controls.Remove(this);
+            this.Visible = false;*/
         }
     }
 }

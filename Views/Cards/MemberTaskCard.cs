@@ -11,6 +11,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using WorkHive.Controller;
 using WorkHive.Model;
+using WorkHive.Views.Admin.DashboardPages;
+using WorkHive.Views.Member.DashboardPagesMember;
 
 namespace WorkHive.Views.Cards
 {
@@ -67,6 +69,12 @@ namespace WorkHive.Views.Cards
 
             OnUpdate();
 
+        }
+
+        private void btnDetails_Click(object sender, EventArgs e)
+        {
+            TaskViewMember parent = (TaskViewMember)this.Parent.Parent;
+            parent.btnDetails_Click(sender, e, task);
         }
     }
 }

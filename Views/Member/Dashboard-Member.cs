@@ -60,7 +60,7 @@ namespace WorkHive.Views.Member.DashboardPagesMember
 
             //List<UserControl> list = new List<UserControl>()
             UserControl[] list = 
-            { new DashboardView(CurrentUser), new TaskViewMember(),new CalendarView(), new ProfileEditMember(CurrentUser), new ResetPasswordMember(CurrentUser)};
+            { new DashboardView(CurrentUser),new ProjectViewMember(), new TaskViewMember(),new CalendarView(), new MessageView(), new AboutUs(), new ProfileEditMember(CurrentUser), new ResetPasswordMember(CurrentUser)};
 
             dashboardNavigation = new DashboardNavigation(list, ViewPanelMember);
             dashboardNavigation.Display(0);
@@ -71,28 +71,35 @@ namespace WorkHive.Views.Member.DashboardPagesMember
         {
             dashboardNavigation.Display(0);
         }
-
-        private void btnTasksMember_Click(object sender, EventArgs e)
+        private void btnProjectsMember_Click(object sender, EventArgs e)
         {
             dashboardNavigation.Display(1);
         }
-
-        private void btnCalendarMember_Click(object sender, EventArgs e)
+        private void btnTasksMember_Click(object sender, EventArgs e)
         {
             dashboardNavigation.Display(2);
         }
 
-        private void btnChatsMember_Click(object sender, EventArgs e)
-        {
-            //soon
-        }
-        public static void btnProfileEdit_Click()
+        private void btnCalendarMember_Click(object sender, EventArgs e)
         {
             dashboardNavigation.Display(3);
         }
-        public static void btnResetPassword_Click()
+
+        private void btnChatsMember_Click(object sender, EventArgs e)
         {
             dashboardNavigation.Display(4);
+        }
+        private void AboutUsBtn_Click(object sender, EventArgs e)
+        {
+            dashboardNavigation.Display(5);
+        }
+        public static void btnProfileEdit_Click()
+        {
+            dashboardNavigation.Display(6);
+        }
+        public static void btnResetPassword_Click()
+        {
+            dashboardNavigation.Display(7);
         }
 
         private void btnLogout_Click(object sender, EventArgs e)
@@ -101,6 +108,7 @@ namespace WorkHive.Views.Member.DashboardPagesMember
             Landing_Page landing_Page = new Landing_Page();
             landing_Page.Show();
         }
+       
 
         private void ProfilePicBoxMember_Click(object sender, EventArgs e)
         {
@@ -154,5 +162,7 @@ namespace WorkHive.Views.Member.DashboardPagesMember
 
             }
         }
+
+       
     }
 }

@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using WorkHive.Model;
 using WorkHive.Views.Admin.DashboardPages;
+using WorkHive.Views.Member.DashboardPagesMember;
 
 namespace WorkHive.Views.Cards
 {
@@ -32,7 +33,10 @@ namespace WorkHive.Views.Cards
         {
             ProjectView parent = (ProjectView)this.Parent.Parent;
             parent.Summary_Click(sender, e, projectModel);
+           /* ProjectViewMember parent1 = (ProjectViewMember)parent.Parent;
+            parent1.Summary_Click(sender, e, projectModel);*/
         }
+        
 
         private void btnTasks_Click(object sender, EventArgs e)
         {
