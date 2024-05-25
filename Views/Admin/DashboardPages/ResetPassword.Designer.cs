@@ -172,7 +172,7 @@
             this.btnSend.Margin = new System.Windows.Forms.Padding(4);
             this.btnSend.Name = "btnSend";
             this.btnSend.Size = new System.Drawing.Size(100, 28);
-            this.btnSend.TabIndex = 23;
+            this.btnSend.TabIndex = 4;
             this.btnSend.Text = "Send Code";
             this.btnSend.UseVisualStyleBackColor = true;
             this.btnSend.Click += new System.EventHandler(this.btnSend_Click);
@@ -180,7 +180,7 @@
             // txtCode
             // 
             this.txtCode.AcceptsReturn = false;
-            this.txtCode.AcceptsTab = false;
+            this.txtCode.AcceptsTab = true;
             this.txtCode.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.txtCode.AnimationSpeed = 200;
             this.txtCode.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
@@ -243,7 +243,7 @@
             this.txtCode.ShortcutsEnabled = true;
             this.txtCode.Size = new System.Drawing.Size(187, 41);
             this.txtCode.Style = Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox._Style.Bunifu;
-            this.txtCode.TabIndex = 21;
+            this.txtCode.TabIndex = 5;
             this.txtCode.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.txtCode.TextMarginBottom = 0;
             this.txtCode.TextMarginLeft = 5;
@@ -254,7 +254,7 @@
             // 
             // btnUpdatePassword
             // 
-            this.btnUpdatePassword.Active = false;
+            this.btnUpdatePassword.Active = true;
             this.btnUpdatePassword.Activecolor = System.Drawing.Color.Transparent;
             this.btnUpdatePassword.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.btnUpdatePassword.BackColor = System.Drawing.Color.Transparent;
@@ -283,9 +283,9 @@
             this.btnUpdatePassword.Normalcolor = System.Drawing.Color.Transparent;
             this.btnUpdatePassword.OnHovercolor = System.Drawing.Color.Gold;
             this.btnUpdatePassword.OnHoverTextColor = System.Drawing.Color.White;
-            this.btnUpdatePassword.selected = false;
+            this.btnUpdatePassword.selected = true;
             this.btnUpdatePassword.Size = new System.Drawing.Size(189, 46);
-            this.btnUpdatePassword.TabIndex = 20;
+            this.btnUpdatePassword.TabIndex = 6;
             this.btnUpdatePassword.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnUpdatePassword.Textcolor = System.Drawing.Color.White;
             this.btnUpdatePassword.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -294,7 +294,7 @@
             // txtConfirmPassword
             // 
             this.txtConfirmPassword.AcceptsReturn = false;
-            this.txtConfirmPassword.AcceptsTab = false;
+            this.txtConfirmPassword.AcceptsTab = true;
             this.txtConfirmPassword.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.txtConfirmPassword.AnimationSpeed = 200;
             this.txtConfirmPassword.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
@@ -357,7 +357,7 @@
             this.txtConfirmPassword.ShortcutsEnabled = true;
             this.txtConfirmPassword.Size = new System.Drawing.Size(1045, 46);
             this.txtConfirmPassword.Style = Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox._Style.Bunifu;
-            this.txtConfirmPassword.TabIndex = 19;
+            this.txtConfirmPassword.TabIndex = 3;
             this.txtConfirmPassword.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.txtConfirmPassword.TextMarginBottom = 0;
             this.txtConfirmPassword.TextMarginLeft = 5;
@@ -370,7 +370,7 @@
             // txtNewPassword
             // 
             this.txtNewPassword.AcceptsReturn = false;
-            this.txtNewPassword.AcceptsTab = false;
+            this.txtNewPassword.AcceptsTab = true;
             this.txtNewPassword.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.txtNewPassword.AnimationSpeed = 200;
             this.txtNewPassword.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
@@ -433,7 +433,7 @@
             this.txtNewPassword.ShortcutsEnabled = true;
             this.txtNewPassword.Size = new System.Drawing.Size(1045, 46);
             this.txtNewPassword.Style = Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox._Style.Bunifu;
-            this.txtNewPassword.TabIndex = 17;
+            this.txtNewPassword.TabIndex = 2;
             this.txtNewPassword.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.txtNewPassword.TextMarginBottom = 0;
             this.txtNewPassword.TextMarginLeft = 5;
@@ -446,7 +446,7 @@
             // txtCurrentPassword
             // 
             this.txtCurrentPassword.AcceptsReturn = false;
-            this.txtCurrentPassword.AcceptsTab = false;
+            this.txtCurrentPassword.AcceptsTab = true;
             this.txtCurrentPassword.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.txtCurrentPassword.AnimationSpeed = 200;
             this.txtCurrentPassword.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
@@ -509,7 +509,7 @@
             this.txtCurrentPassword.ShortcutsEnabled = true;
             this.txtCurrentPassword.Size = new System.Drawing.Size(1045, 46);
             this.txtCurrentPassword.Style = Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox._Style.Bunifu;
-            this.txtCurrentPassword.TabIndex = 15;
+            this.txtCurrentPassword.TabIndex = 1;
             this.txtCurrentPassword.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.txtCurrentPassword.TextMarginBottom = 0;
             this.txtCurrentPassword.TextMarginLeft = 5;

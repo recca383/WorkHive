@@ -200,7 +200,7 @@
             this.StatusFilter.Margin = new System.Windows.Forms.Padding(4);
             this.StatusFilter.Name = "StatusFilter";
             this.StatusFilter.Size = new System.Drawing.Size(288, 32);
-            this.StatusFilter.TabIndex = 20;
+            this.StatusFilter.TabIndex = 2;
             this.StatusFilter.Text = null;
             this.StatusFilter.SelectedIndexChanged += new System.EventHandler(this.StatusFilter_SelectedIndexChanged);
             // 
@@ -232,7 +232,7 @@
             this.ProjectFilter.Margin = new System.Windows.Forms.Padding(4);
             this.ProjectFilter.Name = "ProjectFilter";
             this.ProjectFilter.Size = new System.Drawing.Size(288, 32);
-            this.ProjectFilter.TabIndex = 21;
+            this.ProjectFilter.TabIndex = 1;
             this.ProjectFilter.Text = null;
             this.ProjectFilter.SelectedIndexChanged += new System.EventHandler(this.StatusFilter_SelectedIndexChanged);
             // 

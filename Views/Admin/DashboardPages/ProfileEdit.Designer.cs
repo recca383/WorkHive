@@ -274,7 +274,7 @@
             this.SexDrop.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.SexDrop.Name = "SexDrop";
             this.SexDrop.Size = new System.Drawing.Size(159, 35);
-            this.SexDrop.TabIndex = 42;
+            this.SexDrop.TabIndex = 7;
             this.SexDrop.Text = null;
             // 
             // bloodTypeDrop
@@ -305,7 +305,7 @@
             this.bloodTypeDrop.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bloodTypeDrop.Name = "bloodTypeDrop";
             this.bloodTypeDrop.Size = new System.Drawing.Size(159, 35);
-            this.bloodTypeDrop.TabIndex = 44;
+            this.bloodTypeDrop.TabIndex = 8;
             this.bloodTypeDrop.Text = null;
             // 
             // EditPanel
@@ -317,7 +317,7 @@
             this.EditPanel.Controls.Add(this.panel2);
             this.EditPanel.Enabled = false;
             this.EditPanel.Location = new System.Drawing.Point(75, 406);
-            this.EditPanel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.EditPanel.Margin = new System.Windows.Forms.Padding(4);
             this.EditPanel.Name = "EditPanel";
             this.EditPanel.Size = new System.Drawing.Size(1239, 346);
             this.EditPanel.TabIndex = 48;
@@ -519,7 +519,7 @@
             this.Middlenametxt.ShortcutsEnabled = true;
             this.Middlenametxt.Size = new System.Drawing.Size(159, 36);
             this.Middlenametxt.Style = Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox._Style.Bunifu;
-            this.Middlenametxt.TabIndex = 35;
+            this.Middlenametxt.TabIndex = 3;
             this.Middlenametxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.Middlenametxt.TextMarginBottom = 0;
             this.Middlenametxt.TextMarginLeft = 5;
@@ -551,7 +551,7 @@
             this.BirthPicker.MinimumSize = new System.Drawing.Size(159, 32);
             this.BirthPicker.Name = "BirthPicker";
             this.BirthPicker.Size = new System.Drawing.Size(159, 32);
-            this.BirthPicker.TabIndex = 46;
+            this.BirthPicker.TabIndex = 9;
             // 
             // Extensiontxt
             // 
@@ -619,7 +619,7 @@
             this.Extensiontxt.ShortcutsEnabled = true;
             this.Extensiontxt.Size = new System.Drawing.Size(159, 36);
             this.Extensiontxt.Style = Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox._Style.Bunifu;
-            this.Extensiontxt.TabIndex = 37;
+            this.Extensiontxt.TabIndex = 4;
             this.Extensiontxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.Extensiontxt.TextMarginBottom = 0;
             this.Extensiontxt.TextMarginLeft = 5;
@@ -694,7 +694,7 @@
             this.Lastnametxt.ShortcutsEnabled = true;
             this.Lastnametxt.Size = new System.Drawing.Size(159, 36);
             this.Lastnametxt.Style = Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox._Style.Bunifu;
-            this.Lastnametxt.TabIndex = 33;
+            this.Lastnametxt.TabIndex = 2;
             this.Lastnametxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.Lastnametxt.TextMarginBottom = 0;
             this.Lastnametxt.TextMarginLeft = 5;
@@ -769,7 +769,7 @@
             this.contacttxt.ShortcutsEnabled = true;
             this.contacttxt.Size = new System.Drawing.Size(159, 36);
             this.contacttxt.Style = Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox._Style.Bunifu;
-            this.contacttxt.TabIndex = 39;
+            this.contacttxt.TabIndex = 5;
             this.contacttxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.contacttxt.TextMarginBottom = 0;
             this.contacttxt.TextMarginLeft = 5;
@@ -860,7 +860,7 @@
             this.firstnametxt.ShortcutsEnabled = true;
             this.firstnametxt.Size = new System.Drawing.Size(159, 36);
             this.firstnametxt.Style = Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox._Style.Bunifu;
-            this.firstnametxt.TabIndex = 31;
+            this.firstnametxt.TabIndex = 1;
             this.firstnametxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.firstnametxt.TextMarginBottom = 0;
             this.firstnametxt.TextMarginLeft = 5;
@@ -935,7 +935,7 @@
             this.emailtxt.ShortcutsEnabled = true;
             this.emailtxt.Size = new System.Drawing.Size(159, 36);
             this.emailtxt.Style = Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox._Style.Bunifu;
-            this.emailtxt.TabIndex = 41;
+            this.emailtxt.TabIndex = 6;
             this.emailtxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.emailtxt.TextMarginBottom = 0;
             this.emailtxt.TextMarginLeft = 5;
@@ -1105,7 +1105,7 @@
             this.zipcodetxt.ShortcutsEnabled = true;
             this.zipcodetxt.Size = new System.Drawing.Size(256, 36);
             this.zipcodetxt.Style = Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox._Style.Bunifu;
-            this.zipcodetxt.TabIndex = 60;
+            this.zipcodetxt.TabIndex = 15;
             this.zipcodetxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.zipcodetxt.TextMarginBottom = 0;
             this.zipcodetxt.TextMarginLeft = 5;
@@ -1180,7 +1180,7 @@
             this.provincetxt.ShortcutsEnabled = true;
             this.provincetxt.Size = new System.Drawing.Size(256, 36);
             this.provincetxt.Style = Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox._Style.Bunifu;
-            this.provincetxt.TabIndex = 58;
+            this.provincetxt.TabIndex = 14;
             this.provincetxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.provincetxt.TextMarginBottom = 0;
             this.provincetxt.TextMarginLeft = 5;
@@ -1255,7 +1255,7 @@
             this.citymunicipaltxt.ShortcutsEnabled = true;
             this.citymunicipaltxt.Size = new System.Drawing.Size(256, 36);
             this.citymunicipaltxt.Style = Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox._Style.Bunifu;
-            this.citymunicipaltxt.TabIndex = 56;
+            this.citymunicipaltxt.TabIndex = 13;
             this.citymunicipaltxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.citymunicipaltxt.TextMarginBottom = 0;
             this.citymunicipaltxt.TextMarginLeft = 5;
@@ -1330,7 +1330,7 @@
             this.barangaytxt.ShortcutsEnabled = true;
             this.barangaytxt.Size = new System.Drawing.Size(256, 36);
             this.barangaytxt.Style = Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox._Style.Bunifu;
-            this.barangaytxt.TabIndex = 54;
+            this.barangaytxt.TabIndex = 12;
             this.barangaytxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.barangaytxt.TextMarginBottom = 0;
             this.barangaytxt.TextMarginLeft = 5;
@@ -1405,7 +1405,7 @@
             this.Streettxt.ShortcutsEnabled = true;
             this.Streettxt.Size = new System.Drawing.Size(256, 36);
             this.Streettxt.Style = Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox._Style.Bunifu;
-            this.Streettxt.TabIndex = 52;
+            this.Streettxt.TabIndex = 11;
             this.Streettxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.Streettxt.TextMarginBottom = 0;
             this.Streettxt.TextMarginLeft = 5;
@@ -1480,7 +1480,7 @@
             this.HouseNumbertxt.ShortcutsEnabled = true;
             this.HouseNumbertxt.Size = new System.Drawing.Size(256, 36);
             this.HouseNumbertxt.Style = Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox._Style.Bunifu;
-            this.HouseNumbertxt.TabIndex = 50;
+            this.HouseNumbertxt.TabIndex = 10;
             this.HouseNumbertxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.HouseNumbertxt.TextMarginBottom = 0;
             this.HouseNumbertxt.TextMarginLeft = 5;
@@ -1513,7 +1513,7 @@
             this.btnConfirmEdit.Image = global::WorkHive.Properties.Resources.Confirmbtn;
             this.btnConfirmEdit.IsCircle = false;
             this.btnConfirmEdit.Location = new System.Drawing.Point(1084, 233);
-            this.btnConfirmEdit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnConfirmEdit.Margin = new System.Windows.Forms.Padding(4);
             this.btnConfirmEdit.Name = "btnConfirmEdit";
             this.btnConfirmEdit.Size = new System.Drawing.Size(125, 46);
             this.btnConfirmEdit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -1530,7 +1530,7 @@
             this.btnCancelEdit.Image = global::WorkHive.Properties.Resources.Cancelbtn;
             this.btnCancelEdit.IsCircle = false;
             this.btnCancelEdit.Location = new System.Drawing.Point(951, 233);
-            this.btnCancelEdit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnCancelEdit.Margin = new System.Windows.Forms.Padding(4);
             this.btnCancelEdit.Name = "btnCancelEdit";
             this.btnCancelEdit.Size = new System.Drawing.Size(125, 46);
             this.btnCancelEdit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -1548,7 +1548,7 @@
             this.btnEdit.Image = global::WorkHive.Properties.Resources.Vector__1_;
             this.btnEdit.IsCircle = false;
             this.btnEdit.Location = new System.Drawing.Point(1180, 21);
-            this.btnEdit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnEdit.Margin = new System.Windows.Forms.Padding(4);
             this.btnEdit.Name = "btnEdit";
             this.btnEdit.Size = new System.Drawing.Size(29, 30);
             this.btnEdit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -1670,7 +1670,7 @@
             this.Editpicture.BackColor = System.Drawing.Color.Transparent;
             this.Editpicture.Image = global::WorkHive.Properties.Resources.Vector__3_;
             this.Editpicture.Location = new System.Drawing.Point(221, 7);
-            this.Editpicture.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Editpicture.Margin = new System.Windows.Forms.Padding(4);
             this.Editpicture.Name = "Editpicture";
             this.Editpicture.Size = new System.Drawing.Size(30, 29);
             this.Editpicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
