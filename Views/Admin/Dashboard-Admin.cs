@@ -171,7 +171,7 @@ namespace WorkHive.Views
             profilepanel.BringToFront();
             if (profilepanel.Size == new Size(0, 0))
             {
-                profilepanel.Size = new Size(283, 365);
+                profilepanel.Size = new Size(283, 370);
                 
             }
             else
