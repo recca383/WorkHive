@@ -94,7 +94,7 @@ namespace WorkHive.Views
         {
             dashboardNavigation.Display(4);
         }
-        private void btnChats_Click_1(object sender, EventArgs e)
+        public void btnChats_Click_1(object sender, EventArgs e)
         {
             dashboardNavigation.Display(5);
         }

@@ -123,7 +123,7 @@
             this.btnAddProjectProceed.OnHoverTextColor = System.Drawing.Color.White;
             this.btnAddProjectProceed.selected = false;
             this.btnAddProjectProceed.Size = new System.Drawing.Size(123, 46);
-            this.btnAddProjectProceed.TabIndex = 22;
+            this.btnAddProjectProceed.TabIndex = 4;
             this.btnAddProjectProceed.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnAddProjectProceed.Textcolor = System.Drawing.Color.White;
             this.btnAddProjectProceed.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -195,7 +195,7 @@
             this.ProjectTaskNametxt.ShortcutsEnabled = true;
             this.ProjectTaskNametxt.Size = new System.Drawing.Size(520, 42);
             this.ProjectTaskNametxt.Style = Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox._Style.Bunifu;
-            this.ProjectTaskNametxt.TabIndex = 19;
+            this.ProjectTaskNametxt.TabIndex = 1;
             this.ProjectTaskNametxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.ProjectTaskNametxt.TextMarginBottom = 0;
             this.ProjectTaskNametxt.TextMarginLeft = 5;
@@ -307,7 +307,7 @@
             this.Instructortxt.ShortcutsEnabled = true;
             this.Instructortxt.Size = new System.Drawing.Size(520, 42);
             this.Instructortxt.Style = Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox._Style.Bunifu;
-            this.Instructortxt.TabIndex = 30;
+            this.Instructortxt.TabIndex = 2;
             this.Instructortxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.Instructortxt.TextMarginBottom = 0;
             this.Instructortxt.TextMarginLeft = 5;
@@ -344,7 +344,7 @@
             this.DesignFilter.Margin = new System.Windows.Forms.Padding(4);
             this.DesignFilter.Name = "DesignFilter";
             this.DesignFilter.Size = new System.Drawing.Size(288, 32);
-            this.DesignFilter.TabIndex = 31;
+            this.DesignFilter.TabIndex = 3;
             this.DesignFilter.Text = null;
             // 
             // DesignTemplate

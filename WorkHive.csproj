@@ -929,6 +929,8 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\Message Cumming soon %282%29.gif" />
+    <None Include="Resources\Message Cumming soon %281%29.gif" />
     <None Include="Resources\Team.png" />
     <None Include="Resources\WORKhIVE.gif" />
     <None Include="Resources\YellowBee.png" />

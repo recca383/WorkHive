@@ -94,7 +94,7 @@
             this.AverageProgress.AutoSize = true;
             this.AverageProgress.BackColor = System.Drawing.Color.White;
             this.AverageProgress.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("AverageProgress.BackgroundImage")));
-            this.AverageProgress.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AverageProgress.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AverageProgress.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(40)))), ((int)(((byte)(33)))));
             this.AverageProgress.LabelVisible = true;
             this.AverageProgress.LineProgressThickness = 8;
@@ -103,7 +103,7 @@
             this.AverageProgress.Margin = new System.Windows.Forms.Padding(11, 9, 11, 9);
             this.AverageProgress.MaxValue = 100;
             this.AverageProgress.Name = "AverageProgress";
-            this.AverageProgress.ProgressBackColor = System.Drawing.Color.Gainsboro;
+            this.AverageProgress.ProgressBackColor = System.Drawing.Color.Black;
             this.AverageProgress.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(170)))), ((int)(((byte)(0)))));
             this.AverageProgress.Size = new System.Drawing.Size(220, 220);
             this.AverageProgress.TabIndex = 14;

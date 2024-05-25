@@ -76,7 +76,7 @@
             this.btnAddTaskExit.IconZoom = 90D;
             this.btnAddTaskExit.IsTab = false;
             this.btnAddTaskExit.Location = new System.Drawing.Point(596, 21);
-            this.btnAddTaskExit.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.btnAddTaskExit.Margin = new System.Windows.Forms.Padding(5);
             this.btnAddTaskExit.Name = "btnAddTaskExit";
             this.btnAddTaskExit.Normalcolor = System.Drawing.Color.Transparent;
             this.btnAddTaskExit.OnHovercolor = System.Drawing.Color.Transparent;
@@ -290,14 +290,14 @@
             this.btnAddTaskSubmit.IconZoom = 90D;
             this.btnAddTaskSubmit.IsTab = false;
             this.btnAddTaskSubmit.Location = new System.Drawing.Point(467, 677);
-            this.btnAddTaskSubmit.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.btnAddTaskSubmit.Margin = new System.Windows.Forms.Padding(5);
             this.btnAddTaskSubmit.Name = "btnAddTaskSubmit";
             this.btnAddTaskSubmit.Normalcolor = System.Drawing.Color.Transparent;
             this.btnAddTaskSubmit.OnHovercolor = System.Drawing.Color.Red;
             this.btnAddTaskSubmit.OnHoverTextColor = System.Drawing.Color.White;
             this.btnAddTaskSubmit.selected = false;
             this.btnAddTaskSubmit.Size = new System.Drawing.Size(123, 46);
-            this.btnAddTaskSubmit.TabIndex = 9;
+            this.btnAddTaskSubmit.TabIndex = 7;
             this.btnAddTaskSubmit.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnAddTaskSubmit.Textcolor = System.Drawing.Color.White;
             this.btnAddTaskSubmit.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -311,10 +311,10 @@
             this.ArchivedCheckbox.CheckedOnColor = System.Drawing.Color.Gold;
             this.ArchivedCheckbox.ForeColor = System.Drawing.Color.White;
             this.ArchivedCheckbox.Location = new System.Drawing.Point(560, 453);
-            this.ArchivedCheckbox.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.ArchivedCheckbox.Margin = new System.Windows.Forms.Padding(5);
             this.ArchivedCheckbox.Name = "ArchivedCheckbox";
             this.ArchivedCheckbox.Size = new System.Drawing.Size(20, 20);
-            this.ArchivedCheckbox.TabIndex = 10;
+            this.ArchivedCheckbox.TabIndex = 6;
             // 
             // Dropdownassignproject
             // 
@@ -344,12 +344,12 @@
             this.Dropdownassignproject.Items.AddRange(new object[] {
             "Sample"});
             this.Dropdownassignproject.Location = new System.Drawing.Point(69, 272);
-            this.Dropdownassignproject.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Dropdownassignproject.Margin = new System.Windows.Forms.Padding(4);
             this.Dropdownassignproject.MaximumSize = new System.Drawing.Size(520, 0);
             this.Dropdownassignproject.MinimumSize = new System.Drawing.Size(520, 0);
             this.Dropdownassignproject.Name = "Dropdownassignproject";
             this.Dropdownassignproject.Size = new System.Drawing.Size(520, 46);
-            this.Dropdownassignproject.TabIndex = 11;
+            this.Dropdownassignproject.TabIndex = 3;
             this.Dropdownassignproject.Text = "Select Project";
             // 
             // TaskName

@@ -152,7 +152,7 @@
             this.EditDropdownAssignProject.MinimumSize = new System.Drawing.Size(520, 0);
             this.EditDropdownAssignProject.Name = "EditDropdownAssignProject";
             this.EditDropdownAssignProject.Size = new System.Drawing.Size(520, 46);
-            this.EditDropdownAssignProject.TabIndex = 24;
+            this.EditDropdownAssignProject.TabIndex = 3;
             this.EditDropdownAssignProject.Text = "Select Project";
             // 
             // EditTaskSubmitbtn
@@ -187,7 +187,7 @@
             this.EditTaskSubmitbtn.OnHoverTextColor = System.Drawing.Color.White;
             this.EditTaskSubmitbtn.selected = false;
             this.EditTaskSubmitbtn.Size = new System.Drawing.Size(123, 46);
-            this.EditTaskSubmitbtn.TabIndex = 22;
+            this.EditTaskSubmitbtn.TabIndex = 7;
             this.EditTaskSubmitbtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.EditTaskSubmitbtn.Textcolor = System.Drawing.Color.White;
             this.EditTaskSubmitbtn.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -259,7 +259,7 @@
             this.EditTaskDescriptiontxt.ShortcutsEnabled = true;
             this.EditTaskDescriptiontxt.Size = new System.Drawing.Size(529, 167);
             this.EditTaskDescriptiontxt.Style = Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox._Style.Bunifu;
-            this.EditTaskDescriptiontxt.TabIndex = 21;
+            this.EditTaskDescriptiontxt.TabIndex = 6;
             this.EditTaskDescriptiontxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.EditTaskDescriptiontxt.TextMarginBottom = 0;
             this.EditTaskDescriptiontxt.TextMarginLeft = 5;
@@ -291,7 +291,7 @@
             this.EditDatePickerDeadline.Name = "EditDatePickerDeadline";
             this.EditDatePickerDeadline.ShowCheckBox = true;
             this.EditDatePickerDeadline.Size = new System.Drawing.Size(304, 46);
-            this.EditDatePickerDeadline.TabIndex = 20;
+            this.EditDatePickerDeadline.TabIndex = 4;
             // 
             // EditTaskNametxt
             // 
@@ -359,7 +359,7 @@
             this.EditTaskNametxt.ShortcutsEnabled = true;
             this.EditTaskNametxt.Size = new System.Drawing.Size(520, 42);
             this.EditTaskNametxt.Style = Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox._Style.Bunifu;
-            this.EditTaskNametxt.TabIndex = 19;
+            this.EditTaskNametxt.TabIndex = 2;
             this.EditTaskNametxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.EditTaskNametxt.TextMarginBottom = 0;
             this.EditTaskNametxt.TextMarginLeft = 5;
@@ -398,7 +398,7 @@
             this.EditTaskExitbtn.OnHoverTextColor = System.Drawing.Color.Transparent;
             this.EditTaskExitbtn.selected = false;
             this.EditTaskExitbtn.Size = new System.Drawing.Size(47, 49);
-            this.EditTaskExitbtn.TabIndex = 18;
+            this.EditTaskExitbtn.TabIndex = 1;
             this.EditTaskExitbtn.Text = "bunifuFlatButton1";
             this.EditTaskExitbtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.EditTaskExitbtn.Textcolor = System.Drawing.Color.White;
@@ -433,7 +433,7 @@
             this.dropdownStatus.Margin = new System.Windows.Forms.Padding(4);
             this.dropdownStatus.Name = "dropdownStatus";
             this.dropdownStatus.Size = new System.Drawing.Size(237, 32);
-            this.dropdownStatus.TabIndex = 30;
+            this.dropdownStatus.TabIndex = 5;
             this.dropdownStatus.Text = null;
             // 
             // label1

@@ -139,7 +139,7 @@
             this.btnMarkAsDone.OnHoverTextColor = System.Drawing.Color.White;
             this.btnMarkAsDone.selected = false;
             this.btnMarkAsDone.Size = new System.Drawing.Size(195, 33);
-            this.btnMarkAsDone.TabIndex = 19;
+            this.btnMarkAsDone.TabIndex = 2;
             this.btnMarkAsDone.Text = "Edit Task";
             this.btnMarkAsDone.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnMarkAsDone.Textcolor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
@@ -177,7 +177,7 @@
             this.btnDetails.OnHoverTextColor = System.Drawing.Color.White;
             this.btnDetails.selected = false;
             this.btnDetails.Size = new System.Drawing.Size(195, 33);
-            this.btnDetails.TabIndex = 18;
+            this.btnDetails.TabIndex = 1;
             this.btnDetails.Text = "Details";
             this.btnDetails.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnDetails.Textcolor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));

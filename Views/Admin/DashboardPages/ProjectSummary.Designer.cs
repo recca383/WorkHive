@@ -54,6 +54,8 @@
             this.label5 = new System.Windows.Forms.Label();
             this.AverageProgress = new Bunifu.Framework.UI.BunifuCircleProgressbar();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.panel9.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel8.SuspendLayout();
@@ -75,7 +77,7 @@
             this.panel9.Controls.Add(this.label10);
             this.panel9.Controls.Add(this.pictureBox2);
             this.panel9.Location = new System.Drawing.Point(611, 71);
-            this.panel9.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel9.Margin = new System.Windows.Forms.Padding(4);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(208, 111);
             this.panel9.TabIndex = 7;
@@ -127,7 +129,7 @@
             this.panel8.Controls.Add(this.label9);
             this.panel8.Controls.Add(this.pictureBox4);
             this.panel8.Location = new System.Drawing.Point(611, 217);
-            this.panel8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel8.Margin = new System.Windows.Forms.Padding(4);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(208, 111);
             this.panel8.TabIndex = 8;
@@ -179,7 +181,7 @@
             this.panel7.Controls.Add(this.label8);
             this.panel7.Controls.Add(this.pictureBox3);
             this.panel7.Location = new System.Drawing.Point(369, 217);
-            this.panel7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel7.Margin = new System.Windows.Forms.Padding(4);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(208, 111);
             this.panel7.TabIndex = 6;
@@ -231,7 +233,7 @@
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.label6);
             this.panel1.Location = new System.Drawing.Point(369, 71);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(208, 111);
             this.panel1.TabIndex = 5;
@@ -291,13 +293,15 @@
             // 
             this.panel3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel3.BackColor = System.Drawing.Color.White;
+            this.panel3.Controls.Add(this.label1);
+            this.panel3.Controls.Add(this.label2);
             this.panel3.Controls.Add(this.pictureBox10);
             this.panel3.Controls.Add(this.label21);
             this.panel3.Controls.Add(this.label20);
             this.panel3.Controls.Add(this.label5);
             this.panel3.Controls.Add(this.AverageProgress);
             this.panel3.Location = new System.Drawing.Point(37, 48);
-            this.panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(283, 288);
             this.panel3.TabIndex = 10;
@@ -319,7 +323,7 @@
             this.label21.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label21.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(171)))), ((int)(((byte)(0)))));
             this.label21.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.Location = new System.Drawing.Point(104, 256);
+            this.label21.Location = new System.Drawing.Point(145, 255);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(16, 17);
             this.label21.TabIndex = 6;
@@ -330,7 +334,7 @@
             this.label20.AutoSize = true;
             this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label20.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label20.Location = new System.Drawing.Point(125, 255);
+            this.label20.Location = new System.Drawing.Point(167, 256);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(66, 16);
             this.label20.TabIndex = 5;
@@ -355,9 +359,10 @@
             this.AverageProgress.animated = false;
             this.AverageProgress.animationIterval = 5;
             this.AverageProgress.animationSpeed = 300;
+            this.AverageProgress.AutoSize = true;
             this.AverageProgress.BackColor = System.Drawing.Color.White;
             this.AverageProgress.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("AverageProgress.BackgroundImage")));
-            this.AverageProgress.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AverageProgress.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AverageProgress.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(40)))), ((int)(((byte)(33)))));
             this.AverageProgress.LabelVisible = true;
             this.AverageProgress.LineProgressThickness = 8;
@@ -366,7 +371,7 @@
             this.AverageProgress.Margin = new System.Windows.Forms.Padding(11, 9, 11, 9);
             this.AverageProgress.MaxValue = 100;
             this.AverageProgress.Name = "AverageProgress";
-            this.AverageProgress.ProgressBackColor = System.Drawing.Color.Gainsboro;
+            this.AverageProgress.ProgressBackColor = System.Drawing.Color.Black;
             this.AverageProgress.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(170)))), ((int)(((byte)(0)))));
             this.AverageProgress.Size = new System.Drawing.Size(201, 201);
             this.AverageProgress.TabIndex = 0;
@@ -376,6 +381,28 @@
             // 
             this.bunifuElipse1.ElipseRadius = 36;
             this.bunifuElipse1.TargetControl = this;
+            // 
+            // label1
+            // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label1.BackColor = System.Drawing.Color.Black;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(51, 254);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(16, 17);
+            this.label1.TabIndex = 14;
+            // 
+            // label2
+            // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label2.Location = new System.Drawing.Point(73, 255);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(65, 16);
+            this.label2.TabIndex = 13;
+            this.label2.Text = "Ongoing";
             // 
             // ProjectSummary
             // 
@@ -436,5 +463,7 @@
         private System.Windows.Forms.Label label5;
         private Bunifu.Framework.UI.BunifuCircleProgressbar AverageProgress;
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
     }
 }
