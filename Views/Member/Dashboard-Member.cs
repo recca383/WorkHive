@@ -106,14 +106,14 @@ namespace WorkHive.Views.Member.DashboardPagesMember
         {
             ProfileMember profile = new ProfileMember(CurrentUser);
             profilepanel.Controls.Add(profile);
-            profile.Dock = DockStyle.Fill;
+            profile.Anchor = AnchorStyles.Right;
             profile.Show();
             profilepanel.Parent = ViewPanelMember;
             profilepanel.BringToFront();
             if (profilepanel.Size == new Size(0, 0))
             {
-                profilepanel.Size = new Size(383, 465);
-
+                profilepanel.Size = new Size(293, 375);
+                
             }
             else
             {

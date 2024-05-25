@@ -79,7 +79,7 @@
             // 
             // bunifuElipse1
             // 
-            this.bunifuElipse1.ElipseRadius = 95;
+            this.bunifuElipse1.ElipseRadius = 50;
             this.bunifuElipse1.TargetControl = this;
             // 
             // pnProfileBoxBG
@@ -117,8 +117,8 @@
             // btnLogout
             // 
             this.btnLogout.Active = false;
-            this.btnLogout.Activecolor = System.Drawing.Color.White;
-            this.btnLogout.BackColor = System.Drawing.Color.Gainsboro;
+            this.btnLogout.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(44)))), ((int)(((byte)(49)))));
+            this.btnLogout.BackColor = System.Drawing.Color.White;
             this.btnLogout.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnLogout.BorderRadius = 5;
             this.btnLogout.ButtonText = "    Log Out";
@@ -129,20 +129,20 @@
             this.btnLogout.Iconimage_right = null;
             this.btnLogout.Iconimage_right_Selected = null;
             this.btnLogout.Iconimage_Selected = null;
-            this.btnLogout.IconMarginLeft = 5;
+            this.btnLogout.IconMarginLeft = 20;
             this.btnLogout.IconMarginRight = 0;
             this.btnLogout.IconRightVisible = true;
             this.btnLogout.IconRightZoom = 0D;
             this.btnLogout.IconVisible = true;
-            this.btnLogout.IconZoom = 95D;
+            this.btnLogout.IconZoom = 75D;
             this.btnLogout.ImeMode = System.Windows.Forms.ImeMode.Off;
             this.btnLogout.IsTab = false;
             this.btnLogout.Location = new System.Drawing.Point(0, 386);
             this.btnLogout.Margin = new System.Windows.Forms.Padding(5);
             this.btnLogout.Name = "btnLogout";
-            this.btnLogout.Normalcolor = System.Drawing.Color.Gainsboro;
-            this.btnLogout.OnHovercolor = System.Drawing.Color.Red;
-            this.btnLogout.OnHoverTextColor = System.Drawing.Color.Black;
+            this.btnLogout.Normalcolor = System.Drawing.Color.White;
+            this.btnLogout.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(44)))), ((int)(((byte)(49)))));
+            this.btnLogout.OnHoverTextColor = System.Drawing.Color.White;
             this.btnLogout.selected = false;
             this.btnLogout.Size = new System.Drawing.Size(383, 56);
             this.btnLogout.TabIndex = 5;
@@ -155,8 +155,8 @@
             // MessageBtn
             // 
             this.MessageBtn.Active = false;
-            this.MessageBtn.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.MessageBtn.BackColor = System.Drawing.Color.Gainsboro;
+            this.MessageBtn.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(44)))), ((int)(((byte)(49)))));
+            this.MessageBtn.BackColor = System.Drawing.Color.White;
             this.MessageBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.MessageBtn.BorderRadius = 0;
             this.MessageBtn.ButtonText = "     Message";
@@ -167,20 +167,20 @@
             this.MessageBtn.Iconimage_right = null;
             this.MessageBtn.Iconimage_right_Selected = null;
             this.MessageBtn.Iconimage_Selected = null;
-            this.MessageBtn.IconMarginLeft = 15;
+            this.MessageBtn.IconMarginLeft = 25;
             this.MessageBtn.IconMarginRight = 0;
             this.MessageBtn.IconRightVisible = true;
             this.MessageBtn.IconRightZoom = 0D;
             this.MessageBtn.IconVisible = true;
-            this.MessageBtn.IconZoom = 75D;
+            this.MessageBtn.IconZoom = 60D;
             this.MessageBtn.ImeMode = System.Windows.Forms.ImeMode.Off;
             this.MessageBtn.IsTab = false;
-            this.MessageBtn.Location = new System.Drawing.Point(0, 305);
+            this.MessageBtn.Location = new System.Drawing.Point(0, 311);
             this.MessageBtn.Margin = new System.Windows.Forms.Padding(5);
             this.MessageBtn.Name = "MessageBtn";
-            this.MessageBtn.Normalcolor = System.Drawing.Color.Gainsboro;
-            this.MessageBtn.OnHovercolor = System.Drawing.Color.Gold;
-            this.MessageBtn.OnHoverTextColor = System.Drawing.Color.Firebrick;
+            this.MessageBtn.Normalcolor = System.Drawing.Color.White;
+            this.MessageBtn.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(44)))), ((int)(((byte)(49)))));
+            this.MessageBtn.OnHoverTextColor = System.Drawing.Color.White;
             this.MessageBtn.selected = false;
             this.MessageBtn.Size = new System.Drawing.Size(379, 56);
             this.MessageBtn.TabIndex = 4;
@@ -193,8 +193,8 @@
             // ResetPassBtn
             // 
             this.ResetPassBtn.Active = false;
-            this.ResetPassBtn.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.ResetPassBtn.BackColor = System.Drawing.Color.Gainsboro;
+            this.ResetPassBtn.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(44)))), ((int)(((byte)(49)))));
+            this.ResetPassBtn.BackColor = System.Drawing.Color.White;
             this.ResetPassBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ResetPassBtn.BorderRadius = 0;
             this.ResetPassBtn.ButtonText = "    Reset Password";
@@ -205,19 +205,19 @@
             this.ResetPassBtn.Iconimage_right = null;
             this.ResetPassBtn.Iconimage_right_Selected = null;
             this.ResetPassBtn.Iconimage_Selected = null;
-            this.ResetPassBtn.IconMarginLeft = 15;
+            this.ResetPassBtn.IconMarginLeft = 25;
             this.ResetPassBtn.IconMarginRight = 0;
             this.ResetPassBtn.IconRightVisible = true;
             this.ResetPassBtn.IconRightZoom = 0D;
             this.ResetPassBtn.IconVisible = true;
-            this.ResetPassBtn.IconZoom = 76D;
+            this.ResetPassBtn.IconZoom = 65D;
             this.ResetPassBtn.IsTab = false;
-            this.ResetPassBtn.Location = new System.Drawing.Point(0, 244);
+            this.ResetPassBtn.Location = new System.Drawing.Point(0, 250);
             this.ResetPassBtn.Margin = new System.Windows.Forms.Padding(5);
             this.ResetPassBtn.Name = "ResetPassBtn";
-            this.ResetPassBtn.Normalcolor = System.Drawing.Color.Gainsboro;
-            this.ResetPassBtn.OnHovercolor = System.Drawing.Color.Gold;
-            this.ResetPassBtn.OnHoverTextColor = System.Drawing.Color.Firebrick;
+            this.ResetPassBtn.Normalcolor = System.Drawing.Color.White;
+            this.ResetPassBtn.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(44)))), ((int)(((byte)(49)))));
+            this.ResetPassBtn.OnHoverTextColor = System.Drawing.Color.White;
             this.ResetPassBtn.selected = false;
             this.ResetPassBtn.Size = new System.Drawing.Size(383, 56);
             this.ResetPassBtn.TabIndex = 3;
@@ -230,8 +230,8 @@
             // ProfileBtn
             // 
             this.ProfileBtn.Active = false;
-            this.ProfileBtn.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.ProfileBtn.BackColor = System.Drawing.Color.Gainsboro;
+            this.ProfileBtn.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(44)))), ((int)(((byte)(49)))));
+            this.ProfileBtn.BackColor = System.Drawing.Color.White;
             this.ProfileBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ProfileBtn.BorderRadius = 0;
             this.ProfileBtn.ButtonText = "   Profile";
@@ -242,19 +242,19 @@
             this.ProfileBtn.Iconimage_right = null;
             this.ProfileBtn.Iconimage_right_Selected = null;
             this.ProfileBtn.Iconimage_Selected = null;
-            this.ProfileBtn.IconMarginLeft = 15;
+            this.ProfileBtn.IconMarginLeft = 25;
             this.ProfileBtn.IconMarginRight = 0;
             this.ProfileBtn.IconRightVisible = true;
             this.ProfileBtn.IconRightZoom = 0D;
             this.ProfileBtn.IconVisible = true;
-            this.ProfileBtn.IconZoom = 94D;
+            this.ProfileBtn.IconZoom = 70D;
             this.ProfileBtn.IsTab = false;
-            this.ProfileBtn.Location = new System.Drawing.Point(0, 181);
+            this.ProfileBtn.Location = new System.Drawing.Point(0, 187);
             this.ProfileBtn.Margin = new System.Windows.Forms.Padding(5);
             this.ProfileBtn.Name = "ProfileBtn";
-            this.ProfileBtn.Normalcolor = System.Drawing.Color.Gainsboro;
-            this.ProfileBtn.OnHovercolor = System.Drawing.Color.Gold;
-            this.ProfileBtn.OnHoverTextColor = System.Drawing.Color.Firebrick;
+            this.ProfileBtn.Normalcolor = System.Drawing.Color.White;
+            this.ProfileBtn.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(44)))), ((int)(((byte)(49)))));
+            this.ProfileBtn.OnHoverTextColor = System.Drawing.Color.White;
             this.ProfileBtn.selected = false;
             this.ProfileBtn.Size = new System.Drawing.Size(383, 56);
             this.ProfileBtn.TabIndex = 2;
@@ -278,9 +278,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.AutoValidate = System.Windows.Forms.AutoValidate.Disable;
-            this.BackColor = System.Drawing.Color.Gainsboro;
+            this.BackColor = System.Drawing.Color.White;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.Controls.Add(this.label2);
             this.Controls.Add(this.pnProfileBoxBG);

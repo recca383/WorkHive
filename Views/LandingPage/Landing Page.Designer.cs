@@ -65,6 +65,7 @@
             // 
             this.LandingPageViewPanel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.LandingPageViewPanel.BackColor = System.Drawing.Color.White;
             this.LandingPageViewPanel.Location = new System.Drawing.Point(813, 0);
             this.LandingPageViewPanel.Name = "LandingPageViewPanel";
             this.LandingPageViewPanel.Size = new System.Drawing.Size(660, 809);
@@ -75,6 +76,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
+            this.BackColor = System.Drawing.Color.White;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(1503, 809);
             this.Controls.Add(this.LandingPageViewPanel);

@@ -31,7 +31,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Dashboard_Member));
             this.ViewPanelMember = new System.Windows.Forms.Panel();
             this.pnTitleBar = new System.Windows.Forms.Panel();
-            this.profilepanel = new System.Windows.Forms.Panel();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.ProfilePicBoxMember = new WorkHive.Views.CircularPictureBox();
             this.btnMenuMember = new System.Windows.Forms.Button();
@@ -44,6 +43,7 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.profilepanel = new System.Windows.Forms.Panel();
             this.pnTitleBar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ProfilePicBoxMember)).BeginInit();
@@ -60,7 +60,7 @@
             this.ViewPanelMember.Location = new System.Drawing.Point(219, 100);
             this.ViewPanelMember.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ViewPanelMember.Name = "ViewPanelMember";
-            this.ViewPanelMember.Size = new System.Drawing.Size(1360, 737);
+            this.ViewPanelMember.Size = new System.Drawing.Size(1463, 753);
             this.ViewPanelMember.TabIndex = 12;
             // 
             // pnTitleBar
@@ -75,24 +75,15 @@
             this.pnTitleBar.Location = new System.Drawing.Point(219, 0);
             this.pnTitleBar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnTitleBar.Name = "pnTitleBar";
-            this.pnTitleBar.Size = new System.Drawing.Size(1360, 100);
+            this.pnTitleBar.Size = new System.Drawing.Size(1463, 100);
             this.pnTitleBar.TabIndex = 11;
-            // 
-            // profilepanel
-            // 
-            this.profilepanel.BackColor = System.Drawing.Color.Transparent;
-            this.profilepanel.Location = new System.Drawing.Point(844, 43);
-            this.profilepanel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.profilepanel.Name = "profilepanel";
-            this.profilepanel.Size = new System.Drawing.Size(0, 0);
-            this.profilepanel.TabIndex = 3;
             // 
             // pictureBox3
             // 
             this.pictureBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox3.Image = global::WorkHive.Properties.Resources.Notification1;
-            this.pictureBox3.Location = new System.Drawing.Point(1227, 41);
+            this.pictureBox3.Location = new System.Drawing.Point(1330, 41);
             this.pictureBox3.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(23, 22);
@@ -104,7 +95,7 @@
             // 
             this.ProfilePicBoxMember.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.ProfilePicBoxMember.Image = ((System.Drawing.Image)(resources.GetObject("ProfilePicBoxMember.Image")));
-            this.ProfilePicBoxMember.Location = new System.Drawing.Point(1283, 28);
+            this.ProfilePicBoxMember.Location = new System.Drawing.Point(1386, 28);
             this.ProfilePicBoxMember.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ProfilePicBoxMember.Name = "ProfilePicBoxMember";
             this.ProfilePicBoxMember.Size = new System.Drawing.Size(48, 46);
@@ -119,7 +110,7 @@
             this.btnMenuMember.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(147)))), ((int)(((byte)(47)))));
             this.btnMenuMember.Image = ((System.Drawing.Image)(resources.GetObject("btnMenuMember.Image")));
             this.btnMenuMember.Location = new System.Drawing.Point(4, 11);
-            this.btnMenuMember.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnMenuMember.Margin = new System.Windows.Forms.Padding(4);
             this.btnMenuMember.Name = "btnMenuMember";
             this.btnMenuMember.Size = new System.Drawing.Size(61, 78);
             this.btnMenuMember.TabIndex = 0;
@@ -140,7 +131,7 @@
             this.sidebarmember.Location = new System.Drawing.Point(0, 0);
             this.sidebarmember.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.sidebarmember.Name = "sidebarmember";
-            this.sidebarmember.Size = new System.Drawing.Size(219, 837);
+            this.sidebarmember.Size = new System.Drawing.Size(219, 853);
             this.sidebarmember.TabIndex = 10;
             // 
             // btnDashBoardMember
@@ -280,7 +271,7 @@
             this.btnLogout.IconVisible = true;
             this.btnLogout.IconZoom = 35D;
             this.btnLogout.IsTab = false;
-            this.btnLogout.Location = new System.Drawing.Point(0, 786);
+            this.btnLogout.Location = new System.Drawing.Point(0, 802);
             this.btnLogout.Margin = new System.Windows.Forms.Padding(0);
             this.btnLogout.Name = "btnLogout";
             this.btnLogout.Normalcolor = System.Drawing.Color.Transparent;
@@ -370,11 +361,18 @@
             this.pictureBox2.TabIndex = 3;
             this.pictureBox2.TabStop = false;
             // 
+            // profilepanel
+            // 
+            this.profilepanel.Location = new System.Drawing.Point(834, 43);
+            this.profilepanel.Name = "profilepanel";
+            this.profilepanel.Size = new System.Drawing.Size(0, 0);
+            this.profilepanel.TabIndex = 3;
+            // 
             // Dashboard_Member
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1579, 837);
+            this.ClientSize = new System.Drawing.Size(1682, 853);
             this.Controls.Add(this.ViewPanelMember);
             this.Controls.Add(this.pnTitleBar);
             this.Controls.Add(this.sidebarmember);
@@ -400,7 +398,6 @@
 
         private System.Windows.Forms.Panel ViewPanelMember;
         private System.Windows.Forms.Panel pnTitleBar;
-        private System.Windows.Forms.Panel profilepanel;
         private System.Windows.Forms.PictureBox pictureBox3;
         private CircularPictureBox ProfilePicBoxMember;
         private System.Windows.Forms.Button btnMenuMember;
@@ -413,5 +410,6 @@
         private Bunifu.Framework.UI.BunifuFlatButton btnCalendarMember;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Panel profilepanel;
     }
 }

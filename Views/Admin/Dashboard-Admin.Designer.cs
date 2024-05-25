@@ -30,11 +30,10 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Dashboard_Admin));
             this.PnTitleBar = new System.Windows.Forms.Panel();
-            this.profilepanel = new System.Windows.Forms.Panel();
-            this.ViewPanel = new System.Windows.Forms.Panel();
             this.Notificationbtn = new System.Windows.Forms.PictureBox();
             this.ProfilePicBox = new WorkHive.Views.CircularPictureBox();
             this.btnMenu = new System.Windows.Forms.Button();
+            this.ViewPanel = new System.Windows.Forms.Panel();
             this.sidebar = new System.Windows.Forms.Panel();
             this.AboutUsBtn = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnProjects = new Bunifu.Framework.UI.BunifuFlatButton();
@@ -47,6 +46,7 @@
             this.btnLogout = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnMembers = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnCalendar = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.profilepanel = new System.Windows.Forms.Panel();
             this.PnTitleBar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Notificationbtn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ProfilePicBox)).BeginInit();
@@ -70,31 +70,12 @@
             this.PnTitleBar.Size = new System.Drawing.Size(1463, 100);
             this.PnTitleBar.TabIndex = 8;
             // 
-            // profilepanel
-            // 
-            this.profilepanel.BackColor = System.Drawing.Color.Transparent;
-            this.profilepanel.Location = new System.Drawing.Point(844, 43);
-            this.profilepanel.Margin = new System.Windows.Forms.Padding(4);
-            this.profilepanel.Name = "profilepanel";
-            this.profilepanel.Size = new System.Drawing.Size(0, 0);
-            this.profilepanel.TabIndex = 3;
-            // 
-            // ViewPanel
-            // 
-            this.ViewPanel.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ViewPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ViewPanel.Location = new System.Drawing.Point(219, 100);
-            this.ViewPanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.ViewPanel.Name = "ViewPanel";
-            this.ViewPanel.Size = new System.Drawing.Size(1463, 753);
-            this.ViewPanel.TabIndex = 9;
-            // 
             // Notificationbtn
             // 
             this.Notificationbtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.Notificationbtn.BackColor = System.Drawing.Color.Transparent;
             this.Notificationbtn.Image = ((System.Drawing.Image)(resources.GetObject("Notificationbtn.Image")));
-            this.Notificationbtn.Location = new System.Drawing.Point(1330, 41);
+            this.Notificationbtn.Location = new System.Drawing.Point(1332, 41);
             this.Notificationbtn.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.Notificationbtn.Name = "Notificationbtn";
             this.Notificationbtn.Size = new System.Drawing.Size(23, 22);
@@ -106,7 +87,7 @@
             // 
             this.ProfilePicBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.ProfilePicBox.Image = ((System.Drawing.Image)(resources.GetObject("ProfilePicBox.Image")));
-            this.ProfilePicBox.Location = new System.Drawing.Point(1386, 28);
+            this.ProfilePicBox.Location = new System.Drawing.Point(1388, 28);
             this.ProfilePicBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ProfilePicBox.Name = "ProfilePicBox";
             this.ProfilePicBox.Size = new System.Drawing.Size(48, 46);
@@ -127,6 +108,16 @@
             this.btnMenu.TabIndex = 0;
             this.btnMenu.UseVisualStyleBackColor = true;
             this.btnMenu.Click += new System.EventHandler(this.btnMenu_Click);
+            // 
+            // ViewPanel
+            // 
+            this.ViewPanel.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.ViewPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ViewPanel.Location = new System.Drawing.Point(219, 100);
+            this.ViewPanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.ViewPanel.Name = "ViewPanel";
+            this.ViewPanel.Size = new System.Drawing.Size(1463, 753);
+            this.ViewPanel.TabIndex = 9;
             // 
             // sidebar
             // 
@@ -488,6 +479,13 @@
             this.btnCalendar.TextFont = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCalendar.Click += new System.EventHandler(this.btnCalendar_Click);
             // 
+            // profilepanel
+            // 
+            this.profilepanel.Location = new System.Drawing.Point(834, 43);
+            this.profilepanel.Name = "profilepanel";
+            this.profilepanel.Size = new System.Drawing.Size(0, 0);
+            this.profilepanel.TabIndex = 4;
+            // 
             // Dashboard_Admin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -531,8 +529,8 @@
         private System.Windows.Forms.Panel PnTitleBar;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel ViewPanel;
-        private System.Windows.Forms.Panel profilepanel;
         private Bunifu.Framework.UI.BunifuFlatButton btnProjects;
         private Bunifu.Framework.UI.BunifuFlatButton AboutUsBtn;
+        private System.Windows.Forms.Panel profilepanel;
     }
 }
