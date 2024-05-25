@@ -34,14 +34,20 @@ namespace WorkHive.Views.Admin.DashboardPages
 
         private void Exit_Click(object sender, EventArgs e)
         {
-            TasksView taskview = (TasksView)Parent.Parent;
-            taskview.btnAll_Click(sender, e);
-            this.Parent.Controls.Remove(this);
-            this.Visible = false;
-           /* TaskViewMember taskview1 = (TaskViewMember)Parent.Parent;
-            taskview1.btnAll_Click(sender, e);
-            this.Parent.Controls.Remove(this);
-            this.Visible = false;*/
+            if (this.Parent.Parent is TasksView)
+            {
+                TasksView taskview = (TasksView)Parent.Parent;
+                taskview.btnAll_Click(sender, e);
+                this.Parent.Controls.Remove(this);
+                this.Visible = false;
+            }
+            else {
+                TaskViewMember taskview1 = (TaskViewMember)Parent.Parent;
+                taskview1.btnAll_Click(sender, e);
+                this.Parent.Controls.Remove(this);
+                this.Visible = false;
+            }
+            
         }
     }
 }
