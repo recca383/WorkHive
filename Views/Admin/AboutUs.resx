@@ -117,6 +117,16 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="label1.Text" xml:space="preserve">
+    <value>Welcome to WorkHive, your go-to app for managing your team. Our mission is to help students, business owners, and leaders efficiently manage their teams by assigning tasks in a collaborative working environment, enabling their members to be productive.
+We're a group of college friends who are passionate about task management and technology. After countless all-nighters and study sessions, we decided to create an app that combines the best management tools with a supportive community.
+
+What makes WorkHive special? We offer personalized projects, an interactive dashboard, and an application where you can connect with your boss, leaders, and admin. Plus, our app is totally free because we believe that everyone deserves a chance to be productive.
+
+We love hearing from our users! Got suggestions or feedback? Drop us a message at workhive@google.com.
+
+Thanks for choosing WORKHIVE. Let's BEE efficient together!</value>
+  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="pictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -16845,15 +16855,5 @@
         AU29EHC8hLLMHTjtKZ2CUy2gkXFF0zYA0GCsuqxnz8bd3d4X/d1EncyQUd2/xb/gfd7ond7qvSb9HBAA
         Ow==
 </value>
-  </data>
-  <data name="label1.Text" xml:space="preserve">
-    <value>Welcome to WorkHive, your go-to app for managing your team. Our mission is to help students, business owners, and leaders efficiently manage their teams by assigning tasks in a collaborative working environment, enabling their members to be productive.
-We're a group of college friends who are passionate about task management and technology. After countless all-nighters and study sessions, we decided to create an app that combines the best management tools with a supportive community.
-
-What makes WorkHive special? We offer personalized projects, an interactive dashboard, and an application where you can connect with your boss, leaders, and admin. Plus, our app is totally free because we believe that everyone deserves a chance to be productive.
-
-We love hearing from our users! Got suggestions or feedback? Drop us a message at workhive@google.com.
-
-Thanks for choosing WORKHIVE. Let's BEE efficient together!</value>
   </data>
 </root>
