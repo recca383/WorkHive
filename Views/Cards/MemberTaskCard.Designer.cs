@@ -66,28 +66,28 @@
             this.panel1.Controls.Add(this.pictureboxFinished);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(88, 135);
+            this.panel1.Size = new System.Drawing.Size(117, 166);
             this.panel1.TabIndex = 0;
             // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.Transparent;
-            this.panel3.Location = new System.Drawing.Point(88, 41);
-            this.panel3.Margin = new System.Windows.Forms.Padding(2);
+            this.panel3.Location = new System.Drawing.Point(117, 50);
+            this.panel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(772, 93);
+            this.panel3.Size = new System.Drawing.Size(1029, 114);
             this.panel3.TabIndex = 2;
             // 
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(44)))), ((int)(((byte)(49)))));
             this.pictureBox1.Image = global::WorkHive.Properties.Resources.Tasks___PENDING_SOLO;
-            this.pictureBox1.Location = new System.Drawing.Point(27, 41);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox1.Location = new System.Drawing.Point(36, 50);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(42, 53);
+            this.pictureBox1.Size = new System.Drawing.Size(56, 65);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 15;
             this.pictureBox1.TabStop = false;
@@ -98,9 +98,9 @@
             this.pictureboxFinished.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureboxFinished.Image = global::WorkHive.Properties.Resources.Tasks___BG;
             this.pictureboxFinished.Location = new System.Drawing.Point(0, 0);
-            this.pictureboxFinished.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureboxFinished.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureboxFinished.Name = "pictureboxFinished";
-            this.pictureboxFinished.Size = new System.Drawing.Size(88, 135);
+            this.pictureboxFinished.Size = new System.Drawing.Size(117, 166);
             this.pictureboxFinished.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureboxFinished.TabIndex = 14;
             this.pictureboxFinished.TabStop = false;
@@ -112,10 +112,10 @@
             this.panel2.Controls.Add(this.btnDetails);
             this.panel2.Controls.Add(this.pictureBox2);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(88, 0);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2);
+            this.panel2.Location = new System.Drawing.Point(117, 0);
+            this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(772, 33);
+            this.panel2.Size = new System.Drawing.Size(1030, 41);
             this.panel2.TabIndex = 1;
             // 
             // btnMarkAsDone
@@ -141,14 +141,14 @@
             this.btnMarkAsDone.IconVisible = true;
             this.btnMarkAsDone.IconZoom = 90D;
             this.btnMarkAsDone.IsTab = false;
-            this.btnMarkAsDone.Location = new System.Drawing.Point(585, 4);
-            this.btnMarkAsDone.Margin = new System.Windows.Forms.Padding(4);
+            this.btnMarkAsDone.Location = new System.Drawing.Point(780, 5);
+            this.btnMarkAsDone.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.btnMarkAsDone.Name = "btnMarkAsDone";
             this.btnMarkAsDone.Normalcolor = System.Drawing.Color.White;
             this.btnMarkAsDone.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(194)))), ((int)(((byte)(1)))));
             this.btnMarkAsDone.OnHoverTextColor = System.Drawing.Color.White;
             this.btnMarkAsDone.selected = false;
-            this.btnMarkAsDone.Size = new System.Drawing.Size(146, 27);
+            this.btnMarkAsDone.Size = new System.Drawing.Size(195, 33);
             this.btnMarkAsDone.TabIndex = 22;
             this.btnMarkAsDone.Text = "Mark As Done";
             this.btnMarkAsDone.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -179,14 +179,14 @@
             this.btnDetails.IconVisible = true;
             this.btnDetails.IconZoom = 90D;
             this.btnDetails.IsTab = false;
-            this.btnDetails.Location = new System.Drawing.Point(399, 4);
-            this.btnDetails.Margin = new System.Windows.Forms.Padding(4);
+            this.btnDetails.Location = new System.Drawing.Point(532, 5);
+            this.btnDetails.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.btnDetails.Name = "btnDetails";
             this.btnDetails.Normalcolor = System.Drawing.Color.White;
             this.btnDetails.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(194)))), ((int)(((byte)(1)))));
             this.btnDetails.OnHoverTextColor = System.Drawing.Color.White;
             this.btnDetails.selected = false;
-            this.btnDetails.Size = new System.Drawing.Size(146, 27);
+            this.btnDetails.Size = new System.Drawing.Size(195, 33);
             this.btnDetails.TabIndex = 21;
             this.btnDetails.Text = "Details";
             this.btnDetails.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -198,9 +198,9 @@
             this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Left;
             this.pictureBox2.Image = global::WorkHive.Properties.Resources.Tasks_Cards_TOP;
             this.pictureBox2.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(396, 33);
+            this.pictureBox2.Size = new System.Drawing.Size(528, 41);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 20;
             this.pictureBox2.TabStop = false;
@@ -209,18 +209,20 @@
             // 
             this.lblTask_Title.AutoSize = true;
             this.lblTask_Title.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTask_Title.Location = new System.Drawing.Point(5, 7);
+            this.lblTask_Title.Location = new System.Drawing.Point(7, 9);
+            this.lblTask_Title.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTask_Title.Name = "lblTask_Title";
-            this.lblTask_Title.Size = new System.Drawing.Size(148, 30);
+            this.lblTask_Title.Size = new System.Drawing.Size(189, 38);
             this.lblTask_Title.TabIndex = 9;
             this.lblTask_Title.Text = "Lorem Ipsum";
             // 
             // TaskId
             // 
             this.TaskId.AutoSize = true;
-            this.TaskId.Location = new System.Drawing.Point(359, 82);
+            this.TaskId.Location = new System.Drawing.Point(479, 101);
+            this.TaskId.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.TaskId.Name = "TaskId";
-            this.TaskId.Size = new System.Drawing.Size(40, 13);
+            this.TaskId.Size = new System.Drawing.Size(49, 16);
             this.TaskId.TabIndex = 23;
             this.TaskId.Text = "TaskId";
             this.TaskId.Visible = false;
@@ -229,27 +231,29 @@
             // 
             this.lblProjectName.AutoSize = true;
             this.lblProjectName.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblProjectName.Location = new System.Drawing.Point(7, 38);
+            this.lblProjectName.Location = new System.Drawing.Point(9, 47);
+            this.lblProjectName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblProjectName.Name = "lblProjectName";
-            this.lblProjectName.Size = new System.Drawing.Size(100, 21);
+            this.lblProjectName.Size = new System.Drawing.Size(125, 28);
             this.lblProjectName.TabIndex = 21;
             this.lblProjectName.Text = "ProjectName";
             // 
             // Deadlinetxt
             // 
             this.Deadlinetxt.AutoSize = true;
-            this.Deadlinetxt.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Deadlinetxt.Location = new System.Drawing.Point(591, 78);
+            this.Deadlinetxt.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Deadlinetxt.Location = new System.Drawing.Point(787, 84);
+            this.Deadlinetxt.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Deadlinetxt.Name = "Deadlinetxt";
-            this.Deadlinetxt.Size = new System.Drawing.Size(49, 19);
+            this.Deadlinetxt.Size = new System.Drawing.Size(65, 23);
             this.Deadlinetxt.TabIndex = 20;
             this.Deadlinetxt.Text = "April 5";
             // 
             // pictureBox3
             // 
             this.pictureBox3.Image = global::WorkHive.Properties.Resources.Tasks_Cards_P2;
-            this.pictureBox3.Location = new System.Drawing.Point(668, 78);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox3.Location = new System.Drawing.Point(891, 96);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(139, 29);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -259,10 +263,11 @@
             // lblTask_Date
             // 
             this.lblTask_Date.AutoSize = true;
-            this.lblTask_Date.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTask_Date.Location = new System.Drawing.Point(8, 78);
+            this.lblTask_Date.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTask_Date.Location = new System.Drawing.Point(10, 84);
+            this.lblTask_Date.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTask_Date.Name = "lblTask_Date";
-            this.lblTask_Date.Size = new System.Drawing.Size(49, 19);
+            this.lblTask_Date.Size = new System.Drawing.Size(65, 23);
             this.lblTask_Date.TabIndex = 18;
             this.lblTask_Date.Text = "April 5";
             // 
@@ -276,15 +281,15 @@
             this.panel4.Controls.Add(this.pictureBox3);
             this.panel4.Controls.Add(this.lblProjectName);
             this.panel4.Controls.Add(this.Deadlinetxt);
-            this.panel4.Location = new System.Drawing.Point(88, 33);
-            this.panel4.Margin = new System.Windows.Forms.Padding(2);
+            this.panel4.Location = new System.Drawing.Point(117, 41);
+            this.panel4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(772, 102);
+            this.panel4.Size = new System.Drawing.Size(1029, 126);
             this.panel4.TabIndex = 24;
             // 
             // MemberTaskCard
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImage = global::WorkHive.Properties.Resources.Card___Tasks2;
@@ -293,9 +298,9 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.DoubleBuffered = true;
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "MemberTaskCard";
-            this.Size = new System.Drawing.Size(860, 135);
+            this.Size = new System.Drawing.Size(1147, 166);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureboxFinished)).EndInit();
