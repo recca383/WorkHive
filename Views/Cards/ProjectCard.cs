@@ -31,10 +31,16 @@ namespace WorkHive.Views.Cards
 
         private void btnSummary_Click(object sender, EventArgs e)
         {
-            ProjectView parent = (ProjectView)this.Parent.Parent;
-            parent.Summary_Click(sender, e, projectModel);
-           /* ProjectViewMember parent1 = (ProjectViewMember)parent.Parent;
-            parent1.Summary_Click(sender, e, projectModel);*/
+            if (this.Parent.Parent is ProjectView)
+            {
+                ProjectView parent = (ProjectView)this.Parent.Parent;
+                parent.Summary_Click(sender, e, projectModel);
+            }
+            else
+            {
+                ProjectViewMember parent1 = (ProjectViewMember)Parent.Parent;
+                parent1.Summary_Click(sender, e, projectModel);
+            }
         }
         
 
