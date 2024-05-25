@@ -40,6 +40,7 @@
             this.ResetPassBtn = new Bunifu.Framework.UI.BunifuFlatButton();
             this.ProfileBtn = new Bunifu.Framework.UI.BunifuFlatButton();
             this.label2 = new System.Windows.Forms.Label();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.pnProfileBoxBG.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ProfilePictureADMIN)).BeginInit();
             this.SuspendLayout();
@@ -184,10 +185,12 @@
             this.MessageBtn.selected = false;
             this.MessageBtn.Size = new System.Drawing.Size(379, 56);
             this.MessageBtn.TabIndex = 4;
+            this.MessageBtn.Tag = "Click";
             this.MessageBtn.Text = "     Message";
             this.MessageBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.MessageBtn.Textcolor = System.Drawing.Color.Black;
             this.MessageBtn.TextFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.toolTip1.SetToolTip(this.MessageBtn, "Upcoming Soon");
             this.MessageBtn.Click += new System.EventHandler(this.MessageBtn_Click);
             // 
             // ResetPassBtn
@@ -274,6 +277,14 @@
             this.label2.TabIndex = 20;
             this.label2.Text = "                                             ";
             // 
+            // toolTip1
+            // 
+            this.toolTip1.AutomaticDelay = 100;
+            this.toolTip1.IsBalloon = true;
+            this.toolTip1.Tag = "Click";
+            this.toolTip1.ToolTipIcon = System.Windows.Forms.ToolTipIcon.Warning;
+            this.toolTip1.ToolTipTitle = "Upcoming Soon";
+            // 
             // ProfileAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -308,5 +319,6 @@
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
         private System.Windows.Forms.Panel pnProfileBoxBG;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.ToolTip toolTip1;
     }
 }

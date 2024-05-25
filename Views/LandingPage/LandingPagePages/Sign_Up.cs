@@ -17,57 +17,15 @@ namespace WorkHive.Views.LandingPage.LandingPagePages
 {
     public partial class Sign_Up : UserControl
     {
-        MemberModelAccess memberModelAccess = new MemberModelAccess();
-
-        private Size SignUpOriginalSize;
-        private Rectangle reclabel3;
-        private Rectangle reclabel6;
-        private Rectangle rectxtName;
-        private Rectangle rectxtEmail;
-        private Rectangle rectxtPassword;
-        private Rectangle rectxtConfirmPassword;
-        private Rectangle recbtnSignUp;
-        private Rectangle recbtnSignIn;
+       
         public Sign_Up()
         {
             InitializeComponent();
-            this.Resize += Sign_Up_Resize;
-            SignUpOriginalSize = this.Size;
-            reclabel3 = new Rectangle(label3.Location, label3.Size);
-            reclabel6 = new Rectangle(label6.Location, label6.Size);
-            rectxtName = new Rectangle(txtName.Location, txtName.Size);
-            rectxtEmail = new Rectangle(txtEmail.Location, txtEmail.Size);
-            rectxtPassword = new Rectangle(txtPassword.Location, txtPassword.Size);
-            rectxtConfirmPassword = new Rectangle(txtConfirmPassword.Location, txtConfirmPassword.Size);
-            recbtnSignIn = new Rectangle(btnSignIn.Location, btnSignIn.Size);
-            recbtnSignUp = new Rectangle(btnSignUp.Location, btnSignUp.Size);
+           
         }
 
-        private void Sign_Up_Resize(object sender, EventArgs e)
-        {
-            resize_Control(label3, reclabel3);
-            resize_Control(label6, reclabel6);
-            resize_Control(txtEmail, rectxtEmail);
-            resize_Control(txtName, rectxtName);
-            resize_Control(txtPassword, rectxtPassword);
-            resize_Control(txtConfirmPassword, rectxtConfirmPassword);
-            resize_Control(btnSignIn, recbtnSignIn);
-            resize_Control(btnSignUp, recbtnSignUp);
-        }
-        private void resize_Control(Control c, Rectangle r)
-        {
-            float xRatio = (float)(this.Width) / (float)(SignUpOriginalSize.Width);
-            float yRatio = (float)(this.Height) / (float)(SignUpOriginalSize.Height);
-            int newX = (int)(r.X * xRatio);
-            int newY = (int)(r.Y * yRatio);
-
-            int newWidth = (int)(r.Width * xRatio);
-            int newHeight = (int)(r.Height * yRatio);
-
-            c.Location = new Point(newX, newY);
-            c.Size = new Size(newWidth, newHeight);
-
-        }
+       
+       
         private void btnSignIn_Click(object sender, EventArgs e)
         {
             Landing_Page parent = this.ParentForm as Landing_Page;
@@ -98,6 +56,7 @@ namespace WorkHive.Views.LandingPage.LandingPagePages
                 txtConfirmPassword.Focus();
             }
         }
+      
 
         private void btnSignUp_Click(object sender, EventArgs e)
         {
@@ -105,7 +64,7 @@ namespace WorkHive.Views.LandingPage.LandingPagePages
             if (txtName.Text == "" || txtEmail.Text == "" || txtPassword.Text == "" || txtConfirmPassword.Text == "") new MessageBoxes("Empty Text Box\nFill up all Text Boxed");
             else
             {
-                if (IsPasswordHasNumber(txtPassword.Text) && HasCapitalLetter(txtPassword.Text) && Utility.IsEmailValid(txtEmail.Text))
+                if (IsPasswordHasNumber(txtPassword.Text) && HasCapitalLetter(txtPassword.Text) && PasswordLength(txtPassword.Text) && HasSpecialCharacter(txtPassword.Text) && Utility.IsEmailValid(txtEmail.Text))
                 if (model.Any(n => n.FirstName == txtName.Text)) new MessageBoxes("Username Taken");
                 else if (model.Any(m => m.Email == txtEmail.Text)) new MessageBoxes("Email Already Used");
                 else if (!(txtPassword.Text == txtConfirmPassword.Text)) new MessageBoxes("Password Does Not Match");
@@ -166,7 +125,31 @@ namespace WorkHive.Views.LandingPage.LandingPagePages
             
 
         }
+        private bool PasswordLength(string text)
+        {
+            string p = text;
+            if (p.Length >= 8)
+            {
+                return true;
+            }
+            new MessageBoxes("Password must be at least 8 characters long");
+            return false;
 
+            
+        }
+        private bool HasSpecialCharacter(string text)
+        {
+            string specialCharacters = "!@#$%^&*()_+[]{}|;:'\",.<>?/~`-=";
+            foreach (char c in text)
+            {
+                if (specialCharacters.Contains(c))
+                {
+                    return true;
+                }
+            }
+            new MessageBoxes("Must have at least 1 special character");
+            return false;
+        }
         private void txtPassword_OnValueChanged(object sender, EventArgs e)
         {
             Controller.Utility.PasswordInitialVisibility(txtPassword);

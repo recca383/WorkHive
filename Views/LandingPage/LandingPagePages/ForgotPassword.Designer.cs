@@ -38,6 +38,7 @@
             this.txtEmailAddress = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.bunifuToolTip1 = new Bunifu.UI.WinForms.BunifuToolTip(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.btnExitForgotPassword)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -58,6 +59,9 @@
             this.btnExitForgotPassword.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.btnExitForgotPassword.TabIndex = 21;
             this.btnExitForgotPassword.TabStop = false;
+            this.bunifuToolTip1.SetToolTip(this.btnExitForgotPassword, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.btnExitForgotPassword, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.btnExitForgotPassword, "");
             this.btnExitForgotPassword.Zoom = 10;
             this.btnExitForgotPassword.Click += new System.EventHandler(this.btnExitForgotPassword_Click);
             // 
@@ -98,6 +102,9 @@
             this.btnSend.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnSend.Textcolor = System.Drawing.Color.White;
             this.btnSend.TextFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuToolTip1.SetToolTip(this.btnSend, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.btnSend, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.btnSend, "");
             this.btnSend.Click += new System.EventHandler(this.btnSend_Click);
             // 
             // label2
@@ -109,6 +116,9 @@
             this.label2.Size = new System.Drawing.Size(213, 25);
             this.label2.TabIndex = 19;
             this.label2.Text = "Email Address";
+            this.bunifuToolTip1.SetToolTip(this.label2, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.label2, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.label2, "");
             // 
             // pictureBox1
             // 
@@ -120,6 +130,9 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 18;
             this.pictureBox1.TabStop = false;
+            this.bunifuToolTip1.SetToolTip(this.pictureBox1, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.pictureBox1, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.pictureBox1, "");
             // 
             // txtEmailAddress
             // 
@@ -143,6 +156,9 @@
             this.txtEmailAddress.Size = new System.Drawing.Size(337, 33);
             this.txtEmailAddress.TabIndex = 17;
             this.txtEmailAddress.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.bunifuToolTip1.SetToolTip(this.txtEmailAddress, "Enter your Email Address");
+            this.bunifuToolTip1.SetToolTipIcon(this.txtEmailAddress, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.txtEmailAddress, "");
             // 
             // label1
             // 
@@ -154,6 +170,9 @@
             this.label1.TabIndex = 16;
             this.label1.Text = "Please Enter Your Email Address To Receive A Verification Code.";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.bunifuToolTip1.SetToolTip(this.label1, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.label1, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.label1, "");
             // 
             // label3
             // 
@@ -165,6 +184,44 @@
             this.label3.TabIndex = 15;
             this.label3.Text = "Forgot Password";
             this.label3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.bunifuToolTip1.SetToolTip(this.label3, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.label3, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.label3, "");
+            // 
+            // bunifuToolTip1
+            // 
+            this.bunifuToolTip1.Active = true;
+            this.bunifuToolTip1.AlignTextWithTitle = true;
+            this.bunifuToolTip1.AllowAutoClose = false;
+            this.bunifuToolTip1.AllowFading = true;
+            this.bunifuToolTip1.AutoCloseDuration = 1000;
+            this.bunifuToolTip1.BackColor = System.Drawing.SystemColors.Control;
+            this.bunifuToolTip1.BorderColor = System.Drawing.Color.Gold;
+            this.bunifuToolTip1.ClickToShowDisplayControl = false;
+            this.bunifuToolTip1.ConvertNewlinesToBreakTags = true;
+            this.bunifuToolTip1.DisplayControl = null;
+            this.bunifuToolTip1.EntryAnimationSpeed = 350;
+            this.bunifuToolTip1.ExitAnimationSpeed = 200;
+            this.bunifuToolTip1.GenerateAutoCloseDuration = false;
+            this.bunifuToolTip1.IconMargin = 6;
+            this.bunifuToolTip1.InitialDelay = 0;
+            this.bunifuToolTip1.Name = "bunifuToolTip1";
+            this.bunifuToolTip1.Opacity = 1D;
+            this.bunifuToolTip1.OverrideToolTipTitles = false;
+            this.bunifuToolTip1.Padding = new System.Windows.Forms.Padding(10);
+            this.bunifuToolTip1.ReshowDelay = 10;
+            this.bunifuToolTip1.ShowAlways = false;
+            this.bunifuToolTip1.ShowBorders = true;
+            this.bunifuToolTip1.ShowIcons = true;
+            this.bunifuToolTip1.ShowShadows = true;
+            this.bunifuToolTip1.Tag = "";
+            this.bunifuToolTip1.TextFont = new System.Drawing.Font("Segoe UI", 9F);
+            this.bunifuToolTip1.TextForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.bunifuToolTip1.TextMargin = 2;
+            this.bunifuToolTip1.TitleFont = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.bunifuToolTip1.TitleForeColor = System.Drawing.Color.Black;
+            this.bunifuToolTip1.ToolTipPosition = new System.Drawing.Point(0, 0);
+            this.bunifuToolTip1.ToolTipTitle = null;
             // 
             // ForgotPassword
             // 
@@ -178,9 +235,12 @@
             this.Controls.Add(this.txtEmailAddress);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label3);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "ForgotPassword";
             this.Size = new System.Drawing.Size(535, 764);
+            this.bunifuToolTip1.SetToolTip(this, "");
+            this.bunifuToolTip1.SetToolTipIcon(this, null);
+            this.bunifuToolTip1.SetToolTipTitle(this, "");
             ((System.ComponentModel.ISupportInitialize)(this.btnExitForgotPassword)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -198,5 +258,6 @@
         private Bunifu.Framework.UI.BunifuMaterialTextbox txtEmailAddress;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
+        private Bunifu.UI.WinForms.BunifuToolTip bunifuToolTip1;
     }
 }
