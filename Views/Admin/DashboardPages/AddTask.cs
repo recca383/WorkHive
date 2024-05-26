@@ -18,9 +18,11 @@ namespace WorkHive
 {
     public partial class AddTask : UserControl
     {
+
         public static event Action<object, EventArgs> OnTasksAdded1;
-        List<ProjectModel > projects = ProjectModelAccess.GetProjects();
         public static event Action OnUpdate;
+        List<ProjectModel > projects = ProjectModelAccess.GetProjects();
+        
         public AddTask()
         {
             InitializeComponent();

@@ -21,6 +21,7 @@ namespace WorkHive.Views.Admin.DashboardPages
         List<ProjectModel> projectModels = ProjectModelAccess.GetProjects();
 
         public static event Action OnUpdate;
+        public static event Action<object, EventArgs> OnUpdate1;
 
         public EditTaskInformation(TaskModel _selectedtask)
         {

@@ -35,6 +35,10 @@ namespace WorkHive.Views.Admin.DashboardPages
         {
             InitializeComponent();
             this.Resize += CalendarView_Resize;
+            AddTask.OnUpdate += RefreshCalendar;
+            EditTaskInformation.OnUpdate += RefreshCalendar;
+
+
             //CalendarViewOriginalSize = this.Size;
 
             //DayContainer.MinimumSize = new Size(600, 200); // Set a minimum size to avoid making it too small
@@ -126,8 +130,12 @@ namespace WorkHive.Views.Admin.DashboardPages
             }
         }
 
-
-        private void CalendarView_Load(object sender, EventArgs e)
+        public void RefreshCalendar()
+        {
+            DayContainer.Controls.Clear();
+            displayDays();
+        }
+        public void CalendarView_Load(object sender, EventArgs e)
         {
             displayDays();
         }

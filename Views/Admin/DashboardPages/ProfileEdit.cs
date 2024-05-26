@@ -121,8 +121,6 @@ namespace WorkHive.Views.Admin
             EditPanel.Enabled = false;
             Editpicture.Visible = false;
             RefreshValues();
-            Dashboard_Admin dashboard = (Dashboard_Admin) Parent.Parent;
-            dashboard.RefreshPicture();
             OnUpdate();
         }
 

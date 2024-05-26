@@ -62,6 +62,8 @@ namespace WorkHive.Views.Admin
 
         private void MessageBtn_Click(object sender, EventArgs e)
         {
+            Dashboard_Admin dashboard_Admin = (Dashboard_Admin) ParentForm;
+            dashboard_Admin.btnChats_Click_1(sender, e);
             //lagyan mo okoj
         }
     }

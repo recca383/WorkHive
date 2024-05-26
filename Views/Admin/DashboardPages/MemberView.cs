@@ -29,7 +29,8 @@ namespace WorkHive.Views.Admin.DashboardPages
         public MemberView()
         {
             InitializeComponent();
-            AddMemberElements();
+            RefreshMemberElements();
+            ProfileEdit.OnUpdate += RefreshMemberElements;
             this.Resize += MemberView_Resize;
             MemberViewOriginalSize = this.Size;
             recMembersName = new Rectangle(MembersName.Location, MembersName.Size);
@@ -58,20 +59,19 @@ namespace WorkHive.Views.Admin.DashboardPages
 
         }
 
-        private void AddMemberElements()
+        private void RefreshMemberElements()
         {
-            
-
+            MembersFlow.Controls.Clear();
             members = MemberModelAccess.GetMemberModel();
             List<UserControl> users = new List<UserControl>();
 
-            if (members is null)
+            if (members.Count < 1)
             {
                 new MessageBoxes("Wala pang laman, palagyan ng design to HAHAHAHA");
             }
             else
             {
-                foreach (MemberModel member in members)
+                foreach (MemberModel member in members.OrderBy(n => n.IsLeader).OrderBy(n => n.FirstName))
                 {
                     if (member.IsLeader)
                     {
