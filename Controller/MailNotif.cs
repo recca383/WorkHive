@@ -48,7 +48,7 @@ namespace WorkHive.Controller
 
             var member = members.FirstOrDefault(m => m.Email == emailaddress);
 
-            var email = await Email
+            var email = Email
                 .From("0323-2059@lspu.edu.ph", "noreply - WorkHive")
                 .To(emailaddress)
                 .Subject("WorkHive Notif")
