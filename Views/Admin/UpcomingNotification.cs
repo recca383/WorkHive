@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace WorkHive.Views.Admin
 {
-    public partial class Notification : UserControl
+    public partial class UpcomingNotification : UserControl
     {
-        public Notification()
+        public UpcomingNotification()
         {
             InitializeComponent();
         }
