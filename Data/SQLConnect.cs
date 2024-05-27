@@ -41,12 +41,13 @@ namespace WorkHive.Data
                         results.Add(new ProjectModel
                         {
                             Id = (int)reader["ID"],
-                            Name = (string)reader["Name"],
+                            ProjectName = (string)reader["Name"],
                             Description = (string)reader["Description"],
                             StartDate = (DateTime)reader["StartDate"],
                             DeadLine = (DateTime)reader["DeadLine"],
                             Progress = (int)reader["Progress"],
-                            Archived = (bool)reader["Archived"]
+                            Archived = (bool)reader["Archived"],
+                            ColorStatus = (Color)Convert.ToInt32(reader["ColorStatus"])
                         });
                     }
                 }

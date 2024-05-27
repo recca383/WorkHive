@@ -64,7 +64,7 @@ namespace WorkHive.Controller
         {
             return memberModel;
         }
-        public void AddMember(MemberModel member)
+        public static void  AddMember(MemberModel member)
         {
 
             string template = "Insert into Members (Email, FirstName, Password, IsLeader,Sex) Values ( " +

@@ -100,7 +100,7 @@ namespace WorkHive.Views.Admin.DashboardPages
         {
             RefreshTaskViewLibraries();
             RefreshDataSources();
-            ProjectFilter.SelectedItem = ProjectModelAccess.GetProjectDetails(model.Id).Name;
+            ProjectFilter.SelectedItem = ProjectModelAccess.GetProjectDetails(model.Id).ProjectName;
 
         }
         private void StatusFilter_SelectedIndexChanged(object sender, EventArgs e)
