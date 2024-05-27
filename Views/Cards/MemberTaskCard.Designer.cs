@@ -126,7 +126,7 @@
             this.btnMarkAsDone.BackgroundImage = global::WorkHive.Properties.Resources.Button___Project;
             this.btnMarkAsDone.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnMarkAsDone.BorderRadius = 0;
-            this.btnMarkAsDone.ButtonText = "Mark As Done";
+            this.btnMarkAsDone.ButtonText = "Edit Status";
             this.btnMarkAsDone.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnMarkAsDone.DisabledColor = System.Drawing.Color.Gray;
             this.btnMarkAsDone.Iconcolor = System.Drawing.Color.Transparent;
@@ -150,7 +150,7 @@
             this.btnMarkAsDone.selected = false;
             this.btnMarkAsDone.Size = new System.Drawing.Size(195, 33);
             this.btnMarkAsDone.TabIndex = 22;
-            this.btnMarkAsDone.Text = "Mark As Done";
+            this.btnMarkAsDone.Text = "Edit Status";
             this.btnMarkAsDone.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnMarkAsDone.Textcolor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
             this.btnMarkAsDone.TextFont = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));

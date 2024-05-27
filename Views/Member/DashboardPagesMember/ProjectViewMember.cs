@@ -24,8 +24,18 @@ namespace WorkHive.Views.Member.DashboardPagesMember
             InitializeComponent();
             InitializeElements();
             ProjectSummaryMember.Visible = false;
-            
+            AddProject.OnProjectAdded1 += RefreshButton_Click;
         }
+
+        private void InitializeElements()
+        {
+            projects = ProjectModelAccess.GetProjects();
+            foreach (var project in projects)
+            {
+                ProjectsFlowMember.Controls.Add(new ProjectCard(project));
+            }
+        }
+
         public void Summary_Click(object sender, EventArgs e, ProjectModel projectModel)
         {
             ProjectSummaryMember.Controls.Clear();
@@ -35,14 +45,11 @@ namespace WorkHive.Views.Member.DashboardPagesMember
             ProjectSummaryMember.Visible = true;
 
         }
-        private void InitializeElements()
+        private void AddTaskPanel_ControlRemoved(object sender, ControlEventArgs e)
         {
-            projects = ProjectModelAccess.GetProjects();
-            foreach (var project in projects)
-            {
-                ProjectsFlowMember.Controls.Add(new ProjectCard(project));
-            }
+            ProjectSummaryMember.Visible = false;
         }
+
         private void RefreshList(List<ProjectModel> projectList)
         {
 
@@ -52,10 +59,12 @@ namespace WorkHive.Views.Member.DashboardPagesMember
                 ProjectsFlowMember.Controls.Add(new ProjectCard(projectModel));
             }
         }
+
         private void RefreshButton_Click(object sender, EventArgs e)
         {
             var results = project.ToList();
             RefreshList(results);
         }
+    
     }
 }

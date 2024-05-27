@@ -658,6 +658,12 @@
     <Compile Include="Views\Member\Dashboard-Member.Designer.cs">
       <DependentUpon>Dashboard-Member.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\Member\DashboardPagesMember\EditTaskMember.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Member\DashboardPagesMember\EditTaskMember.Designer.cs">
+      <DependentUpon>EditTaskMember.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\Member\DashboardPagesMember\ProfileEditMember.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -813,6 +819,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Views\Member\Dashboard-Member.resx">
       <DependentUpon>Dashboard-Member.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Member\DashboardPagesMember\EditTaskMember.resx">
+      <DependentUpon>EditTaskMember.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\Member\DashboardPagesMember\ProfileEditMember.resx">
       <DependentUpon>ProfileEditMember.cs</DependentUpon>

@@ -37,44 +37,25 @@ namespace WorkHive.Views.Cards
             Deadlinetxt.Text = ($"{CultureInfo.CurrentCulture.DateTimeFormat.GetMonthName(task.Deadline.Month)} {task.Deadline.Day}");
             if (task.ProjectAssigned is null) lblProjectName.Text = "No Project";
             else lblProjectName.Text = task.ProjectAssigned.Name;
-            
-            switch (task.TaskStatus)
-            {
-                case Status.Ongoing:
-                    btnMarkAsDone.Text = "Mark As Done";
-                    break;
-                case Status.Finished:
-                    btnMarkAsDone.Text = "Mark As Not Done";
-                    break;
-            }
-
+            var parent = Directory.GetParent(Directory.GetCurrentDirectory()).Parent.FullName;
             pictureboxFinished.Image = task.TaskImage;
-
-
         }
 
         private void btnMarkAsDone_Click(object sender, EventArgs e)
         {
 
-            if (task.TaskStatus != Status.Finished)
-            {
-                TaskModelAccess.EditTask(new TaskModel { TaskStatus = Status.Finished }, task.TaskID);
-                btnMarkAsDone.Text = "Mark As Not Done";
-            }
-            else
-            {
-                TaskModelAccess.EditTask(new TaskModel { TaskStatus = Status.Ongoing }, task.TaskID);
-                btnMarkAsDone.Text = "Mark As Done";
-            }
+            TaskViewMember editTask = (TaskViewMember)this.Parent.Parent;
 
-            OnUpdate();
+            editTask.btnEdittasks_Click(sender, e, task.TaskID);
+
+           OnUpdate();
 
         }
 
         private void btnDetails_Click(object sender, EventArgs e)
-        {
-            TaskViewMember parent = (TaskViewMember)this.Parent.Parent;
-            parent.btnDetails_Click(sender, e, task);
+        {           
+                TaskViewMember parent = (TaskViewMember)this.Parent.Parent;
+                parent.btnDetails_Click(sender, e, task);
         }
     }
 }

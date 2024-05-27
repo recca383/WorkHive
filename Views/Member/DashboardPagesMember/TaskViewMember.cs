@@ -21,16 +21,16 @@ namespace WorkHive.Views.Member.DashboardPagesMember
     {
         private List<TaskModel> tasks = TaskModelAccess.GetTaskModel();
         private List<ProjectModel> projects = ProjectModelAccess.GetProjects();
+
+
         public TaskViewMember()
         {
             InitializeComponent();
             RefreshDataSources();
-            var results = tasks.Where(p => p.TaskStatus != Status.Archived).ToList();
-            RefreshList(results);
             ProjectFilter.SelectedItem = null;
             StatusFilter.SelectedItem = null;
-
-           
+            var results = tasks.Where(a => a.TaskStatus != Status.Archived).ToList();
+            AddProject.OnProjectAdded2 += OnProjectTasksOnclick;
             ProjectCard.OnProjectModelClick += OnProjectTasksOnclick;
             RefreshList(results);
             AddTask.OnTasksAdded1 += btnAll_Click;
@@ -38,21 +38,6 @@ namespace WorkHive.Views.Member.DashboardPagesMember
             AddTaskPanel.Size = new Size(0, 0);
         }
 
-        private void RefreshList(List<TaskModel> tasks)
-        {
-           
-            TasksFlow.Controls.Clear();
-            tasks = tasks.OrderBy(t => t.Deadline).ToList();
-            foreach (TaskModel taskModel in tasks)
-            {
-                TasksFlow.Controls.Add(new MemberTaskCard(taskModel));
-            }
-        }
-        private void RefreshDataSources()
-        {
-            StatusFilter.DataSource = Enum.GetNames(typeof(Status));
-            ProjectFilter.DataSource = projects.Select(s => s.Name).ToList();
-        }
         public void btnDetails_Click(object sender, EventArgs e, TaskModel task)
         {
             AddTaskPanel.Controls.Clear();
@@ -60,6 +45,25 @@ namespace WorkHive.Views.Member.DashboardPagesMember
             AddTaskPanel.Size = new Size(285, 385);
 
         }
+
+        private void RefreshDataSources()
+        {
+            StatusFilter.DataSource = Enum.GetNames(typeof(Status));
+            ProjectFilter.DataSource = projects.Select(s => s.Name).ToList();
+        }
+
+
+        private void RefreshList(List<TaskModel> taskList)
+        {
+
+            TasksFlow.Controls.Clear();
+            taskList = taskList.OrderBy(t => t.Deadline).ToList();
+            foreach (TaskModel taskModel in taskList)
+            {
+                TasksFlow.Controls.Add(new MemberTaskCard(taskModel));
+            }
+        }
+
         public void btnAll_Click(object sender, EventArgs e)
         {
             ProjectFilter.SelectedItem = null;
@@ -67,21 +71,21 @@ namespace WorkHive.Views.Member.DashboardPagesMember
             var results = tasks.Where(a => a.TaskStatus != Status.Archived).ToList();
             RefreshList(results);
         }
-
-        private void btnAddtasks_Click(object sender, EventArgs e)
+       
+        private void AddTaskPanel_ControlRemoved(object sender, ControlEventArgs e)
         {
-            AddTaskPanel.Controls.Clear();
-            AddTaskPanel.Controls.Add(new AddTask());
-            AddTaskPanel.Size = new Size(500, 622);
+            if (AddTaskPanel.Controls.Count == 0)
+            {
+                AddTaskPanel.Size = new Size(0, 0);
+            }
         }
         public void btnEdittasks_Click(object sender, EventArgs e, int id)
         {
             AddTaskPanel.Controls.Clear();
-            AddTaskPanel.Controls.Add(new EditTaskInformation(TaskModelAccess.GetTaskInfo(id)));
+            AddTaskPanel.Controls.Add(new EditTaskMember(TaskModelAccess.GetTaskInfo(id)));
             AddTaskPanel.Size = new Size(500, 622);
 
         }
-       
 
         public void OnProjectTasksOnclick(ProjectModel model)
         {
