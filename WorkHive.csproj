@@ -588,9 +588,7 @@
     <Compile Include="Views\Admin\DashboardPages\ResetPassword.Designer.cs">
       <DependentUpon>ResetPassword.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\Admin\UpcomingNotification.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
+    <Compile Include="Views\Admin\UpcomingNotification.cs" />
     <Compile Include="Views\Admin\UpcomingNotification.Designer.cs">
       <DependentUpon>UpcomingNotification.cs</DependentUpon>
     </Compile>

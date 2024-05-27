@@ -46,8 +46,9 @@ namespace WorkHive.Data
                             StartDate = (DateTime)reader["StartDate"],
                             DeadLine = (DateTime)reader["DeadLine"],
                             Progress = (int)reader["Progress"],
-                            Archived = (bool)reader["Archived"]
-                        });
+                            Archived = (bool)reader["Archived"],
+                            ColorStatus = (Color)Convert.ToInt32(reader["ColorStatus"])
+                        }) ;
                     }
                 }
             }

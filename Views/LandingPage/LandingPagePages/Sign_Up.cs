@@ -70,7 +70,7 @@ namespace WorkHive.Views.LandingPage.LandingPagePages
                 else if (!(txtPassword.Text == txtConfirmPassword.Text)) new MessageBoxes("Password Does Not Match");
                 else
                 {
-                    memberModelAccess.AddMember(new MemberModel()
+                    MemberModelAccess.AddMember(new MemberModel()
                     {
                         ID = model.Count,
                         FirstName = txtName.Text,
