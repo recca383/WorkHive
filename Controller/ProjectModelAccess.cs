@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using WorkHive.Data;
+//using WorkHive.Data;
 using WorkHive.Model;
 using WorkHive.Views.LandingPage.LandingPagePages;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.TrackBar;
@@ -13,27 +13,27 @@ namespace WorkHive.Controller
 {
     class ProjectModelAccess
     {
-        static List<ProjectModel> _projects = SQLConnect.GetProjectsFromDB("Select * From Projects");
-        //{
-        //    new ProjectModel
-        //    {
-        //        Id = 0,
-        //        Name = "Sample Project",
-        //        StartDate = DateTime.Now,
-        //        Tasks = new List<TaskModel>(),
-        //        DeadLine = DateTime.Now,
-        //        Archived = false
-        //    },
-        //    new ProjectModel
-        //    {
-        //        Id = 1,
-        //        Name = "Sample Project 2",
-        //        StartDate = DateTime.Now,
-        //        Tasks = new List<TaskModel>(),
-        //        DeadLine = DateTime.Now,
-        //        Archived = false
-        //    }
-        //};
+        static List<ProjectModel> _projects = new List<ProjectModel>()
+        {
+            new ProjectModel
+            {
+                Id = 0,
+                ProjectName = "Sample Project",
+                StartDate = DateTime.Now,
+                Tasks = new List<TaskModel>(),
+                DeadLine = DateTime.Now,
+                Archived = false
+            },
+            new ProjectModel
+            {
+                Id = 1,
+                ProjectName = "Sample Project 2",
+                StartDate = DateTime.Now,
+                Tasks = new List<TaskModel>(),
+                DeadLine = DateTime.Now,
+                Archived = false
+            }
+        };
 
         public static ProjectModel GetProjectDetails (int id)
         {

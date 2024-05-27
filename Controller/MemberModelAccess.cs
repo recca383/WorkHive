@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Web.UI.Design.WebControls;
 using System.Windows.Forms;
-using WorkHive.Data;
+//using WorkHive.Data;
 using WorkHive.Model;
 using WorkHive.Views.LandingPage.LandingPagePages;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
@@ -19,47 +19,48 @@ namespace WorkHive.Controller
     internal class MemberModelAccess
     {
 
-        private static List<MemberModel> memberModel = SQLConnect.GetMembersFromDB("Select * From Members");
+        private static List<MemberModel> memberModel;
         
         public static void RefreshData()=>
-            memberModel = SQLConnect.GetMembersFromDB("Select * From Members");
-        //{
-        //    new MemberModel()
-        //    {//sirpatrick121402@gmail.com
-        //        ID = 0,
-        //        Email = "tatik",
-        //        FirstName = "tatik",
-        //        Password = "123",
-        //        IsLeader = false,
-        //        Profile_Pic = "Resources\\Default_Admin_Pics\\tatik.jpg",
-        //        Sex = sex.None
-        //    },
-        //    {
-        //    new MemberModel()
-        //    { //jokocomia05@gmail.com
-        //        ID = 1,
-        //        Email = "joko",
-        //        FirstName = "joko",
-        //        Password = "123",
-        //        IsLeader = true,
-        //        Profile_Pic = "Resources\\Default_Admin_Pics\\joko.jpg",
-        //        Sex = sex.None
-        //    }
-        //    },
-        //    {
-        //    new MemberModel()
-        //    { //crusitwincel@gmail.com
-        //        ID = 2,
-        //        Email = "Wincel",
-        //        FirstName = "Wincel",
-        //        Password = "123",
-        //        IsLeader = true,
-        //        Profile_Pic = "Resources\\Default_Admin_Pics\\wincel.jpg",
-        //        Sex = sex.None
-        //    }
-        //    }
+            //memberModel = SQLConnect.GetMembersFromDB("Select * From Members");
+            memberModel = new List<MemberModel>()
+        {
+            new MemberModel()
+            {//sirpatrick121402@gmail.com
+                ID = 0,
+                Email = "tatik",
+                FirstName = "tatik",
+                Password = "123",
+                IsLeader = false,
+                Profile_Pic = "Resources\\Default_Admin_Pics\\tatik.jpg",
+                Sex = sex.None
+            },
+            {
+            new MemberModel()
+            { //jokocomia05@gmail.com
+                ID = 1,
+                Email = "joko",
+                FirstName = "joko",
+                Password = "123",
+                IsLeader = true,
+                Profile_Pic = "Resources\\Default_Admin_Pics\\joko.jpg",
+                Sex = sex.None
+            }
+            },
+            {
+            new MemberModel()
+            { //crusitwincel@gmail.com
+                ID = 2,
+                Email = "Wincel",
+                FirstName = "Wincel",
+                Password = "123",
+                IsLeader = true,
+                Profile_Pic = "Resources\\Default_Admin_Pics\\wincel.jpg",
+                Sex = sex.None
+            }
+            }
 
-        //};
+        };
         public static List<MemberModel> GetMemberModel()
         {
             return memberModel;
@@ -76,7 +77,7 @@ namespace WorkHive.Controller
                 $");";
 
 
-            SQLConnect.ExecuteNonQuery(template);
+            //SQLConnect.ExecuteNonQuery(template);
         }
         public static bool ChangePassword (MemberModel member, string currentPassword, string newPassword, string newPasswordConfirm)
         {
