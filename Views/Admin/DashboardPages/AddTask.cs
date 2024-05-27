@@ -32,7 +32,7 @@ namespace WorkHive
 
         private void AddMembersToDropdown()
         {
-            Dropdownassignproject.DataSource = projects.Select(n => n.Name).ToArray(); 
+            Dropdownassignproject.DataSource = projects.Select(n => n.ProjectName).ToArray(); 
         }
 
         private void btnAddTaskExit_Click(object sender, EventArgs e)
@@ -52,13 +52,13 @@ namespace WorkHive
                 TaskName = TaskNametxt.Text, 
                 TaskDescription = TaskDescriptiontxt.Text, 
                 TaskStatus = Status.Ongoing,
-                ProjectAssigned = projects.FirstOrDefault(n => n.Name == Dropdownassignproject.SelectedItem.ToString()),
+                ProjectAssigned = projects.FirstOrDefault(n => n.ProjectName == Dropdownassignproject.SelectedItem.ToString()),
                 Deadline = DatePickerDeadline.Value,
                 TaskStart = DateTime.Now
             }
             );
             TasksView taskview = (TasksView)Parent.Parent;
-            taskview.OnProjectTasksOnclick(projects.FirstOrDefault(n => n.Name == Dropdownassignproject.SelectedItem.ToString()));
+            taskview.OnProjectTasksOnclick(projects.FirstOrDefault(n => n.ProjectName == Dropdownassignproject.SelectedItem.ToString()));
             this.Parent.Controls.Remove(this);
             OnUpdate();
             OnTasksAdded1(sender,e);

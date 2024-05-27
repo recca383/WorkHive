@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.panel11 = new System.Windows.Forms.Panel();
-            this.TaskId = new System.Windows.Forms.Label();
+            this.ProjectName = new System.Windows.Forms.Label();
             this.TaskName = new System.Windows.Forms.Label();
             this.TaskDeadline = new System.Windows.Forms.Label();
             this.panel11.SuspendLayout();
@@ -38,7 +38,7 @@
             // panel11
             // 
             this.panel11.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panel11.Controls.Add(this.TaskId);
+            this.panel11.Controls.Add(this.ProjectName);
             this.panel11.Controls.Add(this.TaskName);
             this.panel11.Controls.Add(this.TaskDeadline);
             this.panel11.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -48,26 +48,26 @@
             this.panel11.Size = new System.Drawing.Size(786, 42);
             this.panel11.TabIndex = 16;
             // 
-            // TaskId
+            // ProjectName
             // 
-            this.TaskId.AutoSize = true;
-            this.TaskId.Location = new System.Drawing.Point(413, 12);
-            this.TaskId.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.TaskId.Name = "TaskId";
-            this.TaskId.Size = new System.Drawing.Size(44, 16);
-            this.TaskId.TabIndex = 14;
-            this.TaskId.Text = "label1";
-            this.TaskId.Visible = false;
+            this.ProjectName.AutoSize = true;
+            this.ProjectName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ProjectName.Location = new System.Drawing.Point(16, 10);
+            this.ProjectName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.ProjectName.Name = "ProjectName";
+            this.ProjectName.Size = new System.Drawing.Size(123, 20);
+            this.ProjectName.TabIndex = 14;
+            this.ProjectName.Text = "Project Name";
             // 
             // TaskName
             // 
             this.TaskName.AutoSize = true;
-            this.TaskName.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TaskName.Location = new System.Drawing.Point(4, 7);
+            this.TaskName.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TaskName.Location = new System.Drawing.Point(350, 14);
             this.TaskName.Name = "TaskName";
-            this.TaskName.Size = new System.Drawing.Size(215, 23);
+            this.TaskName.Size = new System.Drawing.Size(78, 16);
             this.TaskName.TabIndex = 12;
-            this.TaskName.Text = "Final Project For ITEC 103";
+            this.TaskName.Text = "Task Name";
             // 
             // TaskDeadline
             // 
@@ -98,6 +98,6 @@
         private System.Windows.Forms.Panel panel11;
         private System.Windows.Forms.Label TaskName;
         private System.Windows.Forms.Label TaskDeadline;
-        private System.Windows.Forms.Label TaskId;
+        private System.Windows.Forms.Label ProjectName;
     }
 }

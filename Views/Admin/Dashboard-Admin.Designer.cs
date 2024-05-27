@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Dashboard_Admin));
             this.PnTitleBar = new System.Windows.Forms.Panel();
+            this.profilepanel = new System.Windows.Forms.Panel();
             this.Notificationbtn = new System.Windows.Forms.PictureBox();
             this.ProfilePicBox = new WorkHive.Views.CircularPictureBox();
             this.btnMenu = new System.Windows.Forms.Button();
@@ -46,7 +47,6 @@
             this.btnLogout = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnMembers = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnCalendar = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.profilepanel = new System.Windows.Forms.Panel();
             this.PnTitleBar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Notificationbtn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ProfilePicBox)).BeginInit();
@@ -69,6 +69,13 @@
             this.PnTitleBar.Name = "PnTitleBar";
             this.PnTitleBar.Size = new System.Drawing.Size(1463, 100);
             this.PnTitleBar.TabIndex = 8;
+            // 
+            // profilepanel
+            // 
+            this.profilepanel.Location = new System.Drawing.Point(834, 43);
+            this.profilepanel.Name = "profilepanel";
+            this.profilepanel.Size = new System.Drawing.Size(0, 0);
+            this.profilepanel.TabIndex = 4;
             // 
             // Notificationbtn
             // 
@@ -410,7 +417,7 @@
             this.btnMembers.BackColor = System.Drawing.Color.Transparent;
             this.btnMembers.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnMembers.BorderRadius = 0;
-            this.btnMembers.ButtonText = "   Members";
+            this.btnMembers.ButtonText = "   Users";
             this.btnMembers.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnMembers.DisabledColor = System.Drawing.Color.Gray;
             this.btnMembers.Iconcolor = System.Drawing.Color.Transparent;
@@ -435,7 +442,7 @@
             this.btnMembers.Size = new System.Drawing.Size(251, 51);
             this.btnMembers.TabIndex = 2;
             this.btnMembers.Tag = "Members";
-            this.btnMembers.Text = "   Members";
+            this.btnMembers.Text = "   Users";
             this.btnMembers.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnMembers.Textcolor = System.Drawing.Color.White;
             this.btnMembers.TextFont = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -478,13 +485,6 @@
             this.btnCalendar.Textcolor = System.Drawing.Color.White;
             this.btnCalendar.TextFont = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCalendar.Click += new System.EventHandler(this.btnCalendar_Click);
-            // 
-            // profilepanel
-            // 
-            this.profilepanel.Location = new System.Drawing.Point(834, 43);
-            this.profilepanel.Name = "profilepanel";
-            this.profilepanel.Size = new System.Drawing.Size(0, 0);
-            this.profilepanel.TabIndex = 4;
             // 
             // Dashboard_Admin
             // 

@@ -36,7 +36,7 @@ namespace WorkHive
             ProjectModel project = new ProjectModel
             {
                 Id = projects.Count(),
-                Name = ProjectTaskNametxt.Text,
+                ProjectName = ProjectTaskNametxt.Text,
                 Instructor = Instructortxt.Text,
                 ColorStatus = (Color)DesignFilter.SelectedIndex
             };

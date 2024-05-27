@@ -24,7 +24,7 @@ namespace WorkHive.Views.Cards
         {
             this.projectModel = projectModel;
             InitializeComponent();
-            lblProject_Title.Text = projectModel.Name;
+            lblProject_Title.Text = projectModel.ProjectName;
             lblName.Text = projectModel.Instructor;
             this.BackgroundImage = projectModel.ColorImage;
         }

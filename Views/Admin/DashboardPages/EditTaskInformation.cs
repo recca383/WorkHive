@@ -39,7 +39,7 @@ namespace WorkHive.Views.Admin.DashboardPages
             EditTaskNametxt.PlaceholderText = selectedtask.TaskName;
             EditDatePickerDeadline.Value = selectedtask.Deadline; // masyado daw maliit
             EditTaskDescriptiontxt.PlaceholderText = selectedtask.TaskDescription;
-            EditDropdownAssignProject.DataSource = projectModels.Select(n => n.Name).ToArray();
+            EditDropdownAssignProject.DataSource = projectModels.Select(n => n.ProjectName).ToArray();
             EditDropdownAssignProject.SelectedItem = selectedtask.ProjectAssigned;
 
         }
@@ -48,7 +48,7 @@ namespace WorkHive.Views.Admin.DashboardPages
             ProjectModel projectAssign = default;
             if (EditDropdownAssignProject.SelectedItem != null)
             {
-                ProjectModel selectedproject = projectModels.FirstOrDefault(n => n.Name == EditDropdownAssignProject.SelectedItem.ToString());
+                ProjectModel selectedproject = projectModels.FirstOrDefault(n => n.ProjectName == EditDropdownAssignProject.SelectedItem.ToString());
                 if (selectedproject != null) projectAssign = selectedproject;
             }
 

@@ -36,8 +36,18 @@ namespace WorkHive.Views.Cards
             lblTask_Date.Text = ($"{CultureInfo.CurrentCulture.DateTimeFormat.GetMonthName(task.TaskStart.Month)} {task.TaskStart.Day}");
             Deadlinetxt.Text = ($"{CultureInfo.CurrentCulture.DateTimeFormat.GetMonthName(task.Deadline.Month)} {task.Deadline.Day}");
             if (task.ProjectAssigned is null) lblProjectName.Text = "No Project";
-            else lblProjectName.Text = task.ProjectAssigned.Name;
-            var parent = Directory.GetParent(Directory.GetCurrentDirectory()).Parent.FullName;
+            else lblProjectName.Text = task.ProjectAssigned.ProjectName;
+            
+            switch (task.TaskStatus)
+            {
+                case Status.Ongoing:
+                    btnMarkAsDone.Text = "Mark As Done";
+                    break;
+                case Status.Finished:
+                    btnMarkAsDone.Text = "Mark As Not Done";
+                    break;
+            }
+
             pictureboxFinished.Image = task.TaskImage;
         }
 

@@ -25,7 +25,7 @@ namespace WorkHive.Views.Admin.DashboardPages
 
         private void InitializeElements(int projectID)
         {
-            ProjectName.Text = ProjectModelAccess.GetProjectDetails(projectID).Name;
+            ProjectName.Text = ProjectModelAccess.GetProjectDetails(projectID).ProjectName;
             AverageProgress.Value = ProjectModelAccess.GetProjectProgress(projectID);
         }
 

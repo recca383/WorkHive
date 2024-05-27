@@ -17,7 +17,7 @@ namespace WorkHive.Controller
             new ProjectModel
             {
                 Id = 0,
-                Name = "Sample Project",
+                ProjectName = "Sample Project",
                 Instructor = "Jahny Papa",
                 Tasks = new List<TaskModel>(),                
                 Archived = false
@@ -25,7 +25,7 @@ namespace WorkHive.Controller
             new ProjectModel
             {
                 Id = 1,
-                Name = "Sample Project 2",
+                ProjectName = "Sample Project 2",
                 Instructor = "Mark Tigas",
                 Tasks = new List<TaskModel>(),                
                 Archived = false
@@ -62,7 +62,7 @@ namespace WorkHive.Controller
             _projects.Add(new ProjectModel
             {
                 Id = _projects.Count,
-                Name = project.Name,
+                ProjectName = project.ProjectName,
                 Description = project.Description,
                 StartDate = DateTime.Now,
                 DeadLine = project.DeadLine,
@@ -98,7 +98,7 @@ namespace WorkHive.Controller
         {
             //Default valuess
             var projectId = CurrentprojectModel.Id;
-            var newProjectName = CurrentprojectModel.Name;
+            var newProjectName = CurrentprojectModel.ProjectName;
             var newProjectDescription = CurrentprojectModel.Description;
             var newProjectTasks = CurrentprojectModel.Tasks;
             var newProjectDeadline = CurrentprojectModel.DeadLine;
@@ -106,7 +106,7 @@ namespace WorkHive.Controller
             var newInstructor = CurrentprojectModel.Instructor;
 
 
-            if (NewprojectModel.Name != default) newProjectName = NewprojectModel.Name;
+            if (NewprojectModel.ProjectName != default) newProjectName = NewprojectModel.ProjectName;
             if (NewprojectModel.Description != default) newProjectDescription = NewprojectModel.Description;
             if (NewprojectModel.Tasks != default) newProjectTasks = NewprojectModel.Tasks;
             if (NewprojectModel.DeadLine != default) newProjectDeadline = NewprojectModel.DeadLine;
@@ -117,7 +117,7 @@ namespace WorkHive.Controller
             _projects.Add(new ProjectModel
             { 
                 Id = projectId,
-                Name = newProjectName,
+                ProjectName = newProjectName,
                 Description = newProjectDescription,
                 Tasks = newProjectTasks,
                 DeadLine = newProjectDeadline,

@@ -34,13 +34,13 @@
             this.Positionlbl = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.pnProfileBoxBG = new System.Windows.Forms.Panel();
-            this.ProfilePictureADMIN = new Bunifu.UI.WinForms.BunifuPictureBox();
             this.btnLogout = new Bunifu.Framework.UI.BunifuFlatButton();
             this.MessageBtn = new Bunifu.Framework.UI.BunifuFlatButton();
             this.ResetPassBtn = new Bunifu.Framework.UI.BunifuFlatButton();
             this.ProfileBtn = new Bunifu.Framework.UI.BunifuFlatButton();
             this.label2 = new System.Windows.Forms.Label();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.ProfilePictureADMIN = new System.Windows.Forms.PictureBox();
             this.pnProfileBoxBG.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ProfilePictureADMIN)).BeginInit();
             this.SuspendLayout();
@@ -96,24 +96,6 @@
             this.pnProfileBoxBG.Name = "pnProfileBoxBG";
             this.pnProfileBoxBG.Size = new System.Drawing.Size(383, 180);
             this.pnProfileBoxBG.TabIndex = 8;
-            // 
-            // ProfilePictureADMIN
-            // 
-            this.ProfilePictureADMIN.AllowFocused = false;
-            this.ProfilePictureADMIN.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.ProfilePictureADMIN.BackColor = System.Drawing.Color.Transparent;
-            this.ProfilePictureADMIN.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ProfilePictureADMIN.BackgroundImage")));
-            this.ProfilePictureADMIN.BorderRadius = 20;
-            this.ProfilePictureADMIN.Image = ((System.Drawing.Image)(resources.GetObject("ProfilePictureADMIN.Image")));
-            this.ProfilePictureADMIN.IsCircle = false;
-            this.ProfilePictureADMIN.Location = new System.Drawing.Point(26, 47);
-            this.ProfilePictureADMIN.Margin = new System.Windows.Forms.Padding(4);
-            this.ProfilePictureADMIN.Name = "ProfilePictureADMIN";
-            this.ProfilePictureADMIN.Size = new System.Drawing.Size(101, 95);
-            this.ProfilePictureADMIN.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.ProfilePictureADMIN.TabIndex = 1;
-            this.ProfilePictureADMIN.TabStop = false;
-            this.ProfilePictureADMIN.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Custom;
             // 
             // btnLogout
             // 
@@ -285,6 +267,18 @@
             this.toolTip1.ToolTipIcon = System.Windows.Forms.ToolTipIcon.Warning;
             this.toolTip1.ToolTipTitle = "Upcoming Soon";
             // 
+            // ProfilePictureADMIN
+            // 
+            this.ProfilePictureADMIN.BackgroundImage = global::WorkHive.Properties.Resources.Rectangle_14;
+            this.ProfilePictureADMIN.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ProfilePictureADMIN.Image = global::WorkHive.Properties.Resources.healthicons_ui_user_profile;
+            this.ProfilePictureADMIN.Location = new System.Drawing.Point(34, 49);
+            this.ProfilePictureADMIN.Name = "ProfilePictureADMIN";
+            this.ProfilePictureADMIN.Size = new System.Drawing.Size(101, 95);
+            this.ProfilePictureADMIN.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.ProfilePictureADMIN.TabIndex = 9;
+            this.ProfilePictureADMIN.TabStop = false;
+            // 
             // ProfileAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -309,7 +303,6 @@
         }
 
         #endregion
-        private Bunifu.UI.WinForms.BunifuPictureBox ProfilePictureADMIN;
         private Bunifu.Framework.UI.BunifuFlatButton ProfileBtn;
         private Bunifu.Framework.UI.BunifuFlatButton ResetPassBtn;
         private Bunifu.Framework.UI.BunifuFlatButton MessageBtn;
@@ -320,5 +313,6 @@
         private System.Windows.Forms.Panel pnProfileBoxBG;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ToolTip toolTip1;
+        private System.Windows.Forms.PictureBox ProfilePictureADMIN;
     }
 }

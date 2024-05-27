@@ -44,7 +44,7 @@ namespace WorkHive.Views.Cards
             lblTask_Date.Text = ($"{CultureInfo.CurrentCulture.DateTimeFormat.GetMonthName(task.TaskStart.Month)} {task.TaskStart.Day}");
             Deadlinetxt.Text = ($"{CultureInfo.CurrentCulture.DateTimeFormat.GetMonthName(task.Deadline.Month)} {task.Deadline.Day}");
             if (task.ProjectAssigned is null) lblProjectName.Text = "No Project";
-            else lblProjectName.Text = task.ProjectAssigned.Name;
+            else lblProjectName.Text = task.ProjectAssigned.ProjectName;
             var parent = Directory.GetParent(Directory.GetCurrentDirectory()).Parent.FullName;
             pictureboxFinished.Image = task.TaskImage;
 

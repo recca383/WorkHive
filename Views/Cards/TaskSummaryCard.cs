@@ -12,12 +12,13 @@ namespace WorkHive.Views.Cards
 {
     public partial class TaskSummaryCard : UserControl
     {
-        public TaskSummaryCard(string name, DateTime deadline, int id)
+        public TaskSummaryCard(string name1, string name, DateTime deadline, int id)
         {
             InitializeComponent();
+            ProjectName.Text = name1;
             TaskName.Text = name;
             TaskDeadline.Text = deadline.ToString("d");
-            TaskId.Text = id.ToString();
+            
         }
     }
 }

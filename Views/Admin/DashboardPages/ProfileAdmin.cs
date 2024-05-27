@@ -20,9 +20,11 @@ namespace WorkHive.Views.Admin
         readonly private MemberModel CurrentUser;
         public ProfileAdmin(MemberModel member)
         {
+            ProfileEdit.OnUpdate += SetElememts;
             CurrentUser = member;
             InitializeComponent();
             SetElememts();
+           
         }
         private void SetElememts()
         {

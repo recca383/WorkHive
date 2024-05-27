@@ -17,10 +17,16 @@ namespace WorkHive.Model
         PinkPassion
         
     }
+
+    public enum StatusProject
+    {
+        Finished,
+        Archived
+    }
     public class ProjectModel
     {
         public int Id { get; set; }
-        public string Name { get; set; }
+        public string ProjectName { get; set; }
         public string Description { get; set; }
         public List<TaskModel> Tasks { get; set; }
         public DateTime StartDate { get; set; } = DateTime.Now;
@@ -29,6 +35,7 @@ namespace WorkHive.Model
         public bool Archived { get; set; }
         public string Instructor { get; set; }
         public Color ColorStatus { get; set; }
+        public StatusProject ProjectStatus { get; set; }
 
         public Image ColorImage
         {
