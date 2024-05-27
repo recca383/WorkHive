@@ -46,8 +46,11 @@ namespace WorkHive.Views.Cards
 
         private void btnTasks_Click(object sender, EventArgs e)
         {
-            OnProjectTasksClick(sender, e);
-            OnProjectModelClick(projectModel);
+                OnProjectTasksClick(sender, e);
+                OnProjectModelClick(projectModel);
+
+
+            
         }
     }
 }

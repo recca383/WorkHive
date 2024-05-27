@@ -41,10 +41,10 @@
             // 
             this.ProjectSummaryMember.BackColor = System.Drawing.Color.Transparent;
             this.ProjectSummaryMember.ForeColor = System.Drawing.Color.Transparent;
-            this.ProjectSummaryMember.Location = new System.Drawing.Point(348, 24);
+            this.ProjectSummaryMember.Location = new System.Drawing.Point(368, 57);
             this.ProjectSummaryMember.Margin = new System.Windows.Forms.Padding(4);
             this.ProjectSummaryMember.Name = "ProjectSummaryMember";
-            this.ProjectSummaryMember.Size = new System.Drawing.Size(592, 654);
+            this.ProjectSummaryMember.Size = new System.Drawing.Size(595, 644);
             this.ProjectSummaryMember.TabIndex = 26;
             // 
             // ProjectsFlowMember
@@ -53,7 +53,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.ProjectsFlowMember.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-            this.ProjectsFlowMember.Location = new System.Drawing.Point(29, 90);
+            this.ProjectsFlowMember.Location = new System.Drawing.Point(24, 90);
             this.ProjectsFlowMember.Margin = new System.Windows.Forms.Padding(4);
             this.ProjectsFlowMember.Name = "ProjectsFlowMember";
             this.ProjectsFlowMember.Size = new System.Drawing.Size(1181, 631);
@@ -80,7 +80,7 @@
             this.RefreshButton.BorderRadius = 0;
             this.RefreshButton.Image = global::WorkHive.Properties.Resources.refresh;
             this.RefreshButton.IsCircle = false;
-            this.RefreshButton.Location = new System.Drawing.Point(1173, 24);
+            this.RefreshButton.Location = new System.Drawing.Point(1181, 28);
             this.RefreshButton.Margin = new System.Windows.Forms.Padding(4);
             this.RefreshButton.Name = "RefreshButton";
             this.RefreshButton.Size = new System.Drawing.Size(37, 32);
@@ -110,7 +110,7 @@
             this.bunifuVScrollBar1.BorderThickness = 1;
             this.bunifuVScrollBar1.DurationBeforeShrink = 2000;
             this.bunifuVScrollBar1.LargeChange = 10;
-            this.bunifuVScrollBar1.Location = new System.Drawing.Point(1219, 95);
+            this.bunifuVScrollBar1.Location = new System.Drawing.Point(1213, 90);
             this.bunifuVScrollBar1.Margin = new System.Windows.Forms.Padding(5);
             this.bunifuVScrollBar1.Maximum = 100;
             this.bunifuVScrollBar1.Minimum = 0;

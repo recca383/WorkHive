@@ -38,11 +38,6 @@ namespace WorkHive.Views.Admin.DashboardPages
             AddTask.OnUpdate += RefreshCalendar;
             EditTaskInformation.OnUpdate += RefreshCalendar;
 
-
-            //CalendarViewOriginalSize = this.Size;
-
-            //DayContainer.MinimumSize = new Size(600, 200); // Set a minimum size to avoid making it too small
-
             recDayContainer = new Rectangle(DayContainer.Location, DayContainer.Size);
             recCalendarName = new Rectangle(CalendarName.Location, CalendarName.Size);
             reclblDate = new Rectangle(lblDate.Location, lblDate.Size);
