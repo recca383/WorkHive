@@ -343,6 +343,16 @@ namespace WorkHive.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Coming_Soon___ {
+            get {
+                object obj = ResourceManager.GetObject("Coming Soon...", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Confirmbtn {
             get {
                 object obj = ResourceManager.GetObject("Confirmbtn", resourceCulture);

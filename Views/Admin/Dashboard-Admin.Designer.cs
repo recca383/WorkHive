@@ -70,6 +70,13 @@
             this.PnTitleBar.Size = new System.Drawing.Size(1463, 100);
             this.PnTitleBar.TabIndex = 8;
             // 
+            // profilepanel
+            // 
+            this.profilepanel.Location = new System.Drawing.Point(834, 43);
+            this.profilepanel.Name = "profilepanel";
+            this.profilepanel.Size = new System.Drawing.Size(0, 0);
+            this.profilepanel.TabIndex = 4;
+            // 
             // Notificationbtn
             // 
             this.Notificationbtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -410,7 +417,7 @@
             this.btnMembers.BackColor = System.Drawing.Color.Transparent;
             this.btnMembers.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnMembers.BorderRadius = 0;
-            this.btnMembers.ButtonText = "   Members";
+            this.btnMembers.ButtonText = "   Users";
             this.btnMembers.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnMembers.DisabledColor = System.Drawing.Color.Gray;
             this.btnMembers.Iconcolor = System.Drawing.Color.Transparent;
@@ -435,7 +442,7 @@
             this.btnMembers.Size = new System.Drawing.Size(251, 51);
             this.btnMembers.TabIndex = 2;
             this.btnMembers.Tag = "Members";
-            this.btnMembers.Text = "   Members";
+            this.btnMembers.Text = "   Users";
             this.btnMembers.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnMembers.Textcolor = System.Drawing.Color.White;
             this.btnMembers.TextFont = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));

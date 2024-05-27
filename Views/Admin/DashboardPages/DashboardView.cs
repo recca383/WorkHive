@@ -64,13 +64,16 @@ namespace WorkHive.Views.Pages
             }
             foreach(TaskModel task in tasks)
             {
-                TasksSummary.Controls.Add(new TaskSummaryCard(task.TaskName, task.Deadline, task.TaskID));
+                TasksSummary.Controls.Add(new TaskSummaryCard(task.ProjectName, task.TaskName, task.Deadline, task.TaskID));
             }
             int finishedtasks = tasks
                 .Where(t => t.TaskStatus == Status.Finished)
                 .Count();
             int activetasks = tasks
                 .Where(t => t.TaskStatus == Status.Ongoing)
+                .Count();
+            int finishedprojects = projects
+                .Where (t => t.ProjectStatus == StatusProject.Finished)
                 .Count();
             int totaltasks = activetasks + finishedtasks;
 
@@ -80,6 +83,8 @@ namespace WorkHive.Views.Pages
             lblActiveTasks.Text = activetasks
                 .ToString();
             lblFinishedTasks.Text = finishedtasks
+                .ToString();
+            lblFinishedProj.Text = finishedprojects
                 .ToString();
 
            // AverageProgress.Value = (int)Math.Floor(((decimal)finishedtasks / totaltasks * 100));
@@ -102,16 +107,6 @@ namespace WorkHive.Views.Pages
             if (projectID == 0) projectID = projects.Count() - 1 ;
             else projectID--;
             RefreshElements();
-        }
-
-        private void DashboardView_Load(object sender, EventArgs e)
-        {
-            //
-        }
-
-        private void label23_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

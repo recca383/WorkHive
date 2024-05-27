@@ -17,6 +17,8 @@ namespace WorkHive.Model
         Finished,
         Archived
     }
+
+   
     public class TaskModel
     {
         //TaskID, Name, Description, Progress, Status, date added, date Completed
@@ -26,6 +28,8 @@ namespace WorkHive.Model
         public DateTime TaskStart { get; set; }
         public DateTime TaskCompleted { get; set; }
         public Status TaskStatus { get; set; }
+       
+        public string ProjectName { get; set; }
         public DateTime Deadline { get; set; }
         public ProjectModel ProjectAssigned { get; set; }
 

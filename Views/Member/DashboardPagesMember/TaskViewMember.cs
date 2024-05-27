@@ -49,7 +49,7 @@ namespace WorkHive.Views.Member.DashboardPagesMember
         private void RefreshDataSources()
         {
             StatusFilter.DataSource = Enum.GetNames(typeof(Status));
-            ProjectFilter.DataSource = projects.Select(s => s.Name).ToList();
+            ProjectFilter.DataSource = projects.Select(s => s.ProjectName).ToList();
         }
 
 

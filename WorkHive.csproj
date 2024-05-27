@@ -432,9 +432,6 @@
       <Private>True</Private>
       <Private>True</Private>
     </Reference>
-    <Reference Include="ZstdSharp, Version=0.7.1.0, Culture=neutral, PublicKeyToken=8d151af33a4ad5cf, processorArchitecture=MSIL">
-      <HintPath>packages\ZstdSharp.Port.0.7.1\lib\net461\ZstdSharp.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\Resources.Designer.cs">
@@ -448,7 +445,6 @@
     <Compile Include="Views\Admin\AboutUs.Designer.cs">
       <DependentUpon>AboutUs.cs</DependentUpon>
     </Compile>
-    <Compile Include="Data\SQLConnect.cs" />
     <Compile Include="Views\Admin\DashboardPages\AddProject.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -592,11 +588,11 @@
     <Compile Include="Views\Admin\DashboardPages\ResetPassword.Designer.cs">
       <DependentUpon>ResetPassword.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\Admin\Notification.cs">
+    <Compile Include="Views\Admin\UpcomingNotification.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Views\Admin\Notification.Designer.cs">
-      <DependentUpon>Notification.cs</DependentUpon>
+    <Compile Include="Views\Admin\UpcomingNotification.Designer.cs">
+      <DependentUpon>UpcomingNotification.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\Cards\AdminCard.cs">
       <SubType>UserControl</SubType>
@@ -804,8 +800,8 @@
     <EmbeddedResource Include="Views\Admin\DashboardPages\ResetPassword.resx">
       <DependentUpon>ResetPassword.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\Admin\Notification.resx">
-      <DependentUpon>Notification.cs</DependentUpon>
+    <EmbeddedResource Include="Views\Admin\UpcomingNotification.resx">
+      <DependentUpon>UpcomingNotification.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\Cards\AdminCard.resx">
       <DependentUpon>AdminCard.cs</DependentUpon>
@@ -1039,6 +1035,7 @@
     <None Include="Resources\BirthdayCard2.png" />
     <None Include="Resources\aBOUT.png" />
     <None Include="Resources\ABOUT US.png" />
+    <None Include="Resources\Coming Soon....gif" />
     <Content Include="Resources\Default_Pics\Userdefault.png" />
     <None Include="Resources\logo1.png" />
     <None Include="Resources\logo name1.png" />

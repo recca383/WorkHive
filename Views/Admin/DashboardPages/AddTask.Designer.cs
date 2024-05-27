@@ -43,7 +43,6 @@
             this.DatePickerDeadline = new Bunifu.UI.WinForms.BunifuDatePicker();
             this.TaskDescriptiontxt = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox();
             this.btnAddTaskSubmit = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.ArchivedCheckbox = new Bunifu.Framework.UI.BunifuCheckbox();
             this.Dropdownassignproject = new Bunifu.UI.WinForms.BunifuDropdown();
             this.TaskName = new System.Windows.Forms.Label();
             this.AssignTask = new System.Windows.Forms.Label();
@@ -303,19 +302,6 @@
             this.btnAddTaskSubmit.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAddTaskSubmit.Click += new System.EventHandler(this.btnAddTaskSubmit_Click);
             // 
-            // ArchivedCheckbox
-            // 
-            this.ArchivedCheckbox.BackColor = System.Drawing.Color.Gold;
-            this.ArchivedCheckbox.ChechedOffColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
-            this.ArchivedCheckbox.Checked = true;
-            this.ArchivedCheckbox.CheckedOnColor = System.Drawing.Color.Gold;
-            this.ArchivedCheckbox.ForeColor = System.Drawing.Color.White;
-            this.ArchivedCheckbox.Location = new System.Drawing.Point(560, 453);
-            this.ArchivedCheckbox.Margin = new System.Windows.Forms.Padding(5);
-            this.ArchivedCheckbox.Name = "ArchivedCheckbox";
-            this.ArchivedCheckbox.Size = new System.Drawing.Size(20, 20);
-            this.ArchivedCheckbox.TabIndex = 6;
-            // 
             // Dropdownassignproject
             // 
             this.Dropdownassignproject.BackColor = System.Drawing.Color.White;
@@ -429,7 +415,6 @@
             this.Controls.Add(this.AssignTask);
             this.Controls.Add(this.TaskName);
             this.Controls.Add(this.Dropdownassignproject);
-            this.Controls.Add(this.ArchivedCheckbox);
             this.Controls.Add(this.btnAddTaskSubmit);
             this.Controls.Add(this.TaskDescriptiontxt);
             this.Controls.Add(this.DatePickerDeadline);
@@ -449,7 +434,6 @@
         private Bunifu.UI.WinForms.BunifuDatePicker DatePickerDeadline;
         private Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox TaskDescriptiontxt;
         private Bunifu.Framework.UI.BunifuFlatButton btnAddTaskSubmit;
-        private Bunifu.Framework.UI.BunifuCheckbox ArchivedCheckbox;
         private Bunifu.UI.WinForms.BunifuDropdown Dropdownassignproject;
         private System.Windows.Forms.Label TaskDescription;
         private System.Windows.Forms.Label DeadlineTask;

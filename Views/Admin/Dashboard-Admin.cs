@@ -43,6 +43,7 @@ namespace WorkHive.Views
             ProjectCard.OnProjectTasksClick += btnTasks_Click;
             AddProject.OnProjectAdded1 += btnTasks_Click;
             ProfileEdit.OnUpdate += RefreshPicture;
+            ProfileEdit.OnUpdate += RefreshProfilePic;
         }
 
              
@@ -178,8 +179,14 @@ namespace WorkHive.Views
             {
                 profilepanel.Size = new Size(0, 0);
             }
-        }
 
+        }
+        private void RefreshProfilePic() 
+        {
+            profilepanel.Controls.Clear();
+            ProfileAdmin profile = new ProfileAdmin(CurrentUser);
+            profilepanel.Controls.Add(profile);
+        }
        
     }
 
