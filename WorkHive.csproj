@@ -798,8 +798,8 @@
     <EmbeddedResource Include="Views\Admin\DashboardPages\ResetPassword.resx">
       <DependentUpon>ResetPassword.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\Admin\UpcomingNotification.resx">
-      <DependentUpon>UpcomingNotification.cs</DependentUpon>
+    <EmbeddedResource Include="Views\Admin\Notification.resx">
+      <DependentUpon>Notification.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\Cards\AdminCard.resx">
       <DependentUpon>AdminCard.cs</DependentUpon>
@@ -1033,7 +1033,6 @@
     <None Include="Resources\BirthdayCard2.png" />
     <None Include="Resources\aBOUT.png" />
     <None Include="Resources\ABOUT US.png" />
-    <None Include="Resources\Coming Soon....gif" />
     <Content Include="Resources\Default_Pics\Userdefault.png" />
     <None Include="Resources\logo1.png" />
     <None Include="Resources\logo name1.png" />
