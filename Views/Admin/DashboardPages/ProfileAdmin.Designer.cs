@@ -34,13 +34,13 @@
             this.Positionlbl = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.pnProfileBoxBG = new System.Windows.Forms.Panel();
-            this.ProfilePictureADMIN = new System.Windows.Forms.PictureBox();
             this.btnLogout = new Bunifu.Framework.UI.BunifuFlatButton();
             this.MessageBtn = new Bunifu.Framework.UI.BunifuFlatButton();
             this.ResetPassBtn = new Bunifu.Framework.UI.BunifuFlatButton();
             this.ProfileBtn = new Bunifu.Framework.UI.BunifuFlatButton();
             this.label2 = new System.Windows.Forms.Label();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.ProfilePictureADMIN = new System.Windows.Forms.PictureBox();
             this.pnProfileBoxBG.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ProfilePictureADMIN)).BeginInit();
             this.SuspendLayout();
@@ -96,18 +96,6 @@
             this.pnProfileBoxBG.Name = "pnProfileBoxBG";
             this.pnProfileBoxBG.Size = new System.Drawing.Size(383, 180);
             this.pnProfileBoxBG.TabIndex = 8;
-            // 
-            // ProfilePictureADMIN
-            // 
-            this.ProfilePictureADMIN.BackgroundImage = global::WorkHive.Properties.Resources.Rectangle_14;
-            this.ProfilePictureADMIN.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ProfilePictureADMIN.Image = global::WorkHive.Properties.Resources.healthicons_ui_user_profile;
-            this.ProfilePictureADMIN.Location = new System.Drawing.Point(34, 49);
-            this.ProfilePictureADMIN.Name = "ProfilePictureADMIN";
-            this.ProfilePictureADMIN.Size = new System.Drawing.Size(92, 92);
-            this.ProfilePictureADMIN.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.ProfilePictureADMIN.TabIndex = 9;
-            this.ProfilePictureADMIN.TabStop = false;
             // 
             // btnLogout
             // 
@@ -278,6 +266,18 @@
             this.toolTip1.Tag = "Click";
             this.toolTip1.ToolTipIcon = System.Windows.Forms.ToolTipIcon.Warning;
             this.toolTip1.ToolTipTitle = "Upcoming Soon";
+            // 
+            // ProfilePictureADMIN
+            // 
+            this.ProfilePictureADMIN.BackgroundImage = global::WorkHive.Properties.Resources.Rectangle_14;
+            this.ProfilePictureADMIN.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ProfilePictureADMIN.Image = global::WorkHive.Properties.Resources.healthicons_ui_user_profile;
+            this.ProfilePictureADMIN.Location = new System.Drawing.Point(34, 49);
+            this.ProfilePictureADMIN.Name = "ProfilePictureADMIN";
+            this.ProfilePictureADMIN.Size = new System.Drawing.Size(101, 95);
+            this.ProfilePictureADMIN.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.ProfilePictureADMIN.TabIndex = 9;
+            this.ProfilePictureADMIN.TabStop = false;
             // 
             // ProfileAdmin
             // 
