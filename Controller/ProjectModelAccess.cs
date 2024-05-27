@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WorkHive.Data;
 using WorkHive.Model;
 using WorkHive.Views.LandingPage.LandingPagePages;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.TrackBar;
@@ -12,25 +13,27 @@ namespace WorkHive.Controller
 {
     class ProjectModelAccess
     {
-        static List<ProjectModel> _projects = new List<ProjectModel>()
-        {
-            new ProjectModel
-            {
-                Id = 0,
-                ProjectName = "Sample Project",
-                Instructor = "Jahny Papa",
-                Tasks = new List<TaskModel>(),                
-                Archived = false
-            },
-            new ProjectModel
-            {
-                Id = 1,
-                ProjectName = "Sample Project 2",
-                Instructor = "Mark Tigas",
-                Tasks = new List<TaskModel>(),                
-                Archived = false
-            }
-        };
+        static List<ProjectModel> _projects = SQLConnect.GetProjectsFromDB("Select * From Projects");
+        //{
+        //    new ProjectModel
+        //    {
+        //        Id = 0,
+        //        Name = "Sample Project",
+        //        StartDate = DateTime.Now,
+        //        Tasks = new List<TaskModel>(),
+        //        DeadLine = DateTime.Now,
+        //        Archived = false
+        //    },
+        //    new ProjectModel
+        //    {
+        //        Id = 1,
+        //        Name = "Sample Project 2",
+        //        StartDate = DateTime.Now,
+        //        Tasks = new List<TaskModel>(),
+        //        DeadLine = DateTime.Now,
+        //        Archived = false
+        //    }
+        //};
 
         public static ProjectModel GetProjectDetails (int id)
         {
@@ -38,12 +41,14 @@ namespace WorkHive.Controller
         }
         public static int GetProjectProgress(int id)
         {
-            ProjectModel currentproject = GetProjectDetails (id);
-            
-            if(currentproject.Tasks.Count > 0)
+            List<TaskModel> tasks = TaskModelAccess.GetTaskModel();
+            ProjectModel currentproject = GetProjectDetails(id);
+            List<TaskModel> selectedtasks = tasks.Where(p => p.ProjectAssigned == currentproject).ToList();
+
+            if(selectedtasks.Count() > 0)
             {
-                int totaltasks = currentproject.Tasks.Count();
-                int finishedtasks = currentproject.Tasks.Count(t => t.TaskStatus == Status.Finished);
+                int totaltasks = selectedtasks.Count();
+                int finishedtasks = selectedtasks.Count(t => t.TaskStatus == Status.Finished);
 
                 float average = (float)finishedtasks / totaltasks * 100;
                 int averageprogress = (int) average;

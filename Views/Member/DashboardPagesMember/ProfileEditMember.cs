@@ -33,7 +33,7 @@ namespace WorkHive.Views.Member.DashboardPagesMember
             {
                 MemberPictureBox.Image = Image.FromFile(currentUser.Profile_Pic);
             }
-            if (currentUser.Profile_Pic == "")
+            if (currentUser.Profile_Pic == " ")
             {
                 MemberPictureBox.Image = Image.FromFile(Path.Combine(Path.GetDirectoryName(parent), "Resources\\Default_Pics\\Userdefault.png"));
             }

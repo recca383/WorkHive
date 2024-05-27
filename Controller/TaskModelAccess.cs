@@ -1,9 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics.Metrics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WorkHive.Data;
 using WorkHive.Model;
 using WorkHive.Views.LandingPage.LandingPagePages;
 
@@ -11,41 +13,42 @@ namespace WorkHive.Controller
 {
     public class TaskModelAccess
     {
-        private static List<TaskModel> Tasks = new List<TaskModel>()
-        {
-            new TaskModel
-            {
-                TaskID = 0,
-                TaskName = "Kalahati",
-                TaskDescription = "Lorem Ipsum",
-                TaskStatus = Status.Ongoing,
-                TaskStart = new DateTime(2024, 4, 16),
-                Deadline = new DateTime(2024, 5, 9),
-                ProjectAssigned = ProjectModelAccess.GetProjectDetails(0)
-            },
-            new TaskModel
-            {
-                TaskID = 1,
-                TaskName = "Done",
-                TaskDescription = "Lorem Ipsum",
-                TaskStatus = Status.Finished,
-                TaskStart = new DateTime(2024, 4, 16),
-                Deadline = new DateTime(2024, 5, 3),
-                ProjectAssigned = ProjectModelAccess.GetProjectDetails(0)
-            },
-            new TaskModel
-            {
-                TaskID = 2,
-                TaskName = "Archived",
-                TaskDescription = "Lorem Ipsum",
-                TaskStatus = Status.Archived,
-                TaskStart = new DateTime(2024, 4, 16),
-                Deadline = new DateTime(2024, 5, 7),
-                ProjectAssigned = ProjectModelAccess.GetProjectDetails(0)
+        private static List<TaskModel> Tasks = SQLConnect.GetTasksFromDB("Select * From Tasks");
 
-            },
+        //{x`
+        //    new TaskModel
+        //    {
+        //        TaskID = 0,
+        //        TaskName = "Kalahati",
+        //        TaskDescription = "Lorem Ipsum",
+        //        TaskStatus = Status.Ongoing,
+        //        TaskStart = new DateTime(2024, 4, 16),
+        //        Deadline = new DateTime(2024, 5, 9),
+        //        ProjectAssigned = ProjectModelAccess.GetProjectDetails(0)
+        //    },
+        //    new TaskModel
+        //    {
+        //        TaskID = 1,
+        //        TaskName = "Done",
+        //        TaskDescription = "Lorem Ipsum",
+        //        TaskStatus = Status.Finished,
+        //        TaskStart = new DateTime(2024, 4, 16),
+        //        Deadline = new DateTime(2024, 5, 3),
+        //        ProjectAssigned = ProjectModelAccess.GetProjectDetails(0)
+        //    },
+        //    new TaskModel
+        //    {
+        //        TaskID = 2,
+        //        TaskName = "Archived",
+        //        TaskDescription = "Lorem Ipsum",
+        //        TaskStatus = Status.Archived,
+        //        TaskStart = new DateTime(2024, 4, 16),
+        //        Deadline = new DateTime(2024, 5, 7),
+        //        ProjectAssigned = ProjectModelAccess.GetProjectDetails(0)
 
-        };
+        //    },
+
+        //};
 
         public static TaskModel GetTaskInfo(int ID)
         {
@@ -94,16 +97,29 @@ namespace WorkHive.Controller
         }
         public static void AddTask(TaskModel newTask)
         {
+            
             List<MemberModel> members = MemberModelAccess.GetMemberModel();
             try
             {
-                Tasks.Add(newTask);
-                new MessageBoxes("Task Added");
-                ProjectModelAccess.AssignTaskToProject(newTask, null);
-                foreach(var member in members)
+
+                string DateNow = DateTime.Now.ToString("yyyy-MM-dd");
+                string Deadline = newTask.Deadline.ToString("yyyy-MM-dd");
+                string template = "Insert into Tasks (TaskName, TaskDescription, TaskStatus,TaskStartDate, ProjectAssigned,Deadline) Values ( " +
+                $"\"{newTask.TaskName}\"," +
+                $"\"{newTask.TaskDescription}\"," +
+                $"{(int)newTask.TaskStatus}," +
+                $"\"{DateNow}\"," +
+                $"\"{newTask.ProjectAssigned.Id}\"," +
+                $"\"{Deadline}\"" +
+                $");";
+
+                
+                SQLConnect.ExecuteNonQuery(template);
+                foreach (var member in members)
                 {
                     new MailNotif(member.Email, newTask);
                 }
+                new MessageBoxes("Task Added");
             }
             catch (Exception e)
             {
