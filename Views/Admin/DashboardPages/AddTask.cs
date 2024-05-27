@@ -26,7 +26,6 @@ namespace WorkHive
             AddMembersToDropdown();
         }
 
-
         private void AddMembersToDropdown()
         {
             Dropdownassignproject.DataSource = projects.Select(n => n.Name).ToArray(); 

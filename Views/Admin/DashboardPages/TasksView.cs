@@ -43,6 +43,11 @@ namespace WorkHive.Views.Admin.DashboardPages
             TaskDetails.Visible = true;
         }
 
+        private void RefreshTaskViewLibraries()
+        {
+            tasks = TaskModelAccess.GetTaskModel();
+            projects = ProjectModelAccess.GetProjects();
+        }
         private void RefreshDataSources()
         {
             StatusFilter.DataSource = Enum.GetNames(typeof(Status));
@@ -92,8 +97,9 @@ namespace WorkHive.Views.Admin.DashboardPages
 
         public void OnProjectTasksOnclick(ProjectModel model)
         {
+            RefreshTaskViewLibraries();
             RefreshDataSources();
-            ProjectFilter.SelectedIndex = model.Id;
+            ProjectFilter.SelectedItem = ProjectModelAccess.GetProjectDetails(model.Id).Name;
 
         }
         private void StatusFilter_SelectedIndexChanged(object sender, EventArgs e)

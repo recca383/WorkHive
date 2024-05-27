@@ -22,7 +22,7 @@ namespace WorkHive.Views.Pages
         List<MemberModel> members;
         List<ProjectModel> projects;
         MemberModel currentUser;
-        int projectID = 0;
+        int projectID = 1;
 
 
         public DashboardView(MemberModel CurrentUser)

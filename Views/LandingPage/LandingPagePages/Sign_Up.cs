@@ -17,6 +17,8 @@ namespace WorkHive.Views.LandingPage.LandingPagePages
 {
     public partial class Sign_Up : UserControl
     {
+        MemberModelAccess memberModelAccess = new MemberModelAccess();
+
         private Size SignUpOriginalSize;
         private Rectangle reclabel3;
         private Rectangle reclabel6;
@@ -109,7 +111,7 @@ namespace WorkHive.Views.LandingPage.LandingPagePages
                 else if (!(txtPassword.Text == txtConfirmPassword.Text)) new MessageBoxes("Password Does Not Match");
                 else
                 {
-                    MemberModelAccess.AddMember(new MemberModel()
+                    memberModelAccess.AddMember(new MemberModel()
                     {
                         ID = model.Count,
                         FirstName = txtName.Text,
