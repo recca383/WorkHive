@@ -34,6 +34,7 @@ namespace WorkHive.Views.Member.DashboardPagesMember
             ProjectCard.OnProjectModelClick += OnProjectTasksOnclick;
             RefreshList(results);
             AddTask.OnTasksAdded1 += btnAll_Click;
+            EditTaskInformation.OnUpdate += RefreshTaskViewLibraries;
 
             AddTaskPanel.Size = new Size(0, 0);
         }
@@ -44,6 +45,11 @@ namespace WorkHive.Views.Member.DashboardPagesMember
             AddTaskPanel.Controls.Add(new TaskDetailsCard(task));
             AddTaskPanel.Size = new Size(285, 385);
 
+        }
+        private void RefreshTaskViewLibraries()
+        {
+            tasks = TaskModelAccess.GetTaskModel();
+            projects = ProjectModelAccess.GetProjects();
         }
 
         private void RefreshDataSources()
@@ -89,6 +95,7 @@ namespace WorkHive.Views.Member.DashboardPagesMember
 
         public void OnProjectTasksOnclick(ProjectModel model)
         {
+            RefreshTaskViewLibraries();
             RefreshDataSources();
             ProjectFilter.SelectedIndex = model.Id;
 

@@ -24,7 +24,7 @@ namespace WorkHive.Views.Cards
         private void InitializeElements(MemberModel member)
         {
             lblProfileName.Text = member.FullName;
-            lblProfileTitle.Text = "Leader";
+            lblProfileTitle.Text = "Member";
             lblProfilePhone.Text = member.ContactNumber.ToString();
             lblProfileEmail.Text = member.Email;
             lblAddress.Text = member.Address;

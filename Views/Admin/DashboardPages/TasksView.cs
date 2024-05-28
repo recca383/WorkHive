@@ -30,6 +30,7 @@ namespace WorkHive.Views.Admin.DashboardPages
             var results = tasks.Where(a => a.TaskStatus != Status.Archived).ToList();
             AddProject.OnProjectAdded2 += OnProjectTasksOnclick;
             ProjectCard.OnProjectModelClick += OnProjectTasksOnclick;
+            EditTaskInformation.OnUpdate += RefreshTaskViewLibraries;
             RefreshList(results);
             AddTask.OnTasksAdded1 += btnAll_Click;
 

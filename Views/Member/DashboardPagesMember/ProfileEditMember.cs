@@ -60,10 +60,10 @@ namespace WorkHive.Views.Member.DashboardPagesMember
             Memberemailtxt.Text = currentUser.Email;
 
             SexDrop.DataSource = Enum.GetNames(typeof(sex));
-            SexDrop.SelectedText = currentUser.Sex.ToString();
+            SexDrop.SelectedIndex = ((int)currentUser.Sex);
 
             bloodTypeDrop.DataSource = Enum.GetNames(typeof(bloodType));
-            bloodTypeDrop.SelectedText = currentUser.BloodType.ToString();
+            bloodTypeDrop.SelectedIndex = ((int)currentUser.BloodType);
 
             BirthPicker.Value = currentUser.Birthdate;
 
@@ -76,6 +76,7 @@ namespace WorkHive.Views.Member.DashboardPagesMember
 
             btnConfirmEdit1.Visible = false;
             btnCancelEdit1.Visible = false;
+            Editpicture.Visible = false;
         }
 
         private void btnEdit_Click(object sender, EventArgs e)
@@ -126,6 +127,7 @@ namespace WorkHive.Views.Member.DashboardPagesMember
             OnUpdate();
             Dashboard_Member dashboard = (Dashboard_Member)Parent.Parent;
             dashboard.RefreshImage();
+            Editpicture.Visible = false;
         }
         private void Editpicture_Click(object sender, EventArgs e)
         {

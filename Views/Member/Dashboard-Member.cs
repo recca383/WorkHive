@@ -38,6 +38,7 @@ namespace WorkHive.Views.Member.DashboardPagesMember
             Initialize_Navigation_Controls();
             LoadProfilePic();
             ProjectCard.OnProjectTasksClick += btnTasksMember_Click;
+            ProfileEditMember.OnUpdate += RefreshImage;
             ProfileEditMember.OnUpdate += LoadProfilePic;
             //profilepanel.Parent = ViewPanelMember;
 

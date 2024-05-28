@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Mysqlx.Crud;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -36,15 +37,22 @@ namespace WorkHive.Views.Admin.DashboardPages
             }
         }
 
-        public void Summary_Click(object sender, EventArgs e, ProjectModel projectModel)
+        public void Summary_Click(object sender, EventArgs e)
         {
-            ProjectSummary.Controls.Clear();
+            
             ProjectSummary.Location = new Point(148, 158);
             ProjectSummary.Size = new Size(640, 301);
-            ProjectSummary.Controls.Add(new ProjectSummary(projectModel));
             ProjectSummary.Visible = true;
 
         }
+
+        public void LoadProjectSummary(object sender, EventArgs e, ProjectModel project)
+        {
+            projects = ProjectModelAccess.GetProjects();
+            ProjectSummary.Controls.Clear();
+            ProjectSummary.Controls.Add(new ProjectSummary(project));
+        }
+
         private void AddTaskPanel_ControlRemoved(object sender, ControlEventArgs e)
         {
             ProjectSummary.Visible = false;

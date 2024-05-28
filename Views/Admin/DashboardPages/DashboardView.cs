@@ -22,7 +22,7 @@ namespace WorkHive.Views.Pages
         List<MemberModel> members;
         List<ProjectModel> projects;
         MemberModel currentUser;
-        int projectID = 1;
+        int projectID = 0;
 
 
         public DashboardView(MemberModel CurrentUser)
@@ -62,13 +62,13 @@ namespace WorkHive.Views.Pages
                 EventsPanel.Controls.Add(new BirthdayCard(member));
 
             }
-            foreach (ProjectModel project in projects)
+            
+            ProjectModel selectedproject = ProjectModelAccess.GetProjectDetails(projectID);
+            foreach (TaskModel task in selectedproject.Tasks)
             {
-                foreach (TaskModel task in tasks)
-                {
-                    TasksSummary.Controls.Add(new TaskSummaryCard(project.ProjectName, task.TaskName, task.Deadline, task.TaskID));
-                }
+                TasksSummary.Controls.Add(new TaskSummaryCard(selectedproject.ProjectName, task.TaskName, task.Deadline, task.TaskID));
             }
+            
             int finishedtasks = tasks
                 .Where(t => t.TaskStatus == Status.Finished)
                 .Count();

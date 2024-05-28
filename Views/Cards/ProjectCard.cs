@@ -11,6 +11,7 @@ using System.Windows.Forms;
 using WorkHive.Model;
 using WorkHive.Views.Admin.DashboardPages;
 using WorkHive.Views.Member.DashboardPagesMember;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.TextBox;
 
 namespace WorkHive.Views.Cards
 {
@@ -34,12 +35,14 @@ namespace WorkHive.Views.Cards
             if (this.Parent.Parent is ProjectView)
             {
                 ProjectView parent = (ProjectView)this.Parent.Parent;
-                parent.Summary_Click(sender, e, projectModel);
+                parent.LoadProjectSummary(sender,e, this.projectModel);
+                parent.Summary_Click(sender, e);
             }
             else
             {
                 ProjectViewMember parent1 = (ProjectViewMember)Parent.Parent;
-                parent1.Summary_Click(sender, e, projectModel);
+                parent1.LoadProjectSummary(sender, e, this.projectModel);
+                parent1.Summary_Click(sender, e);
             }
         }
         

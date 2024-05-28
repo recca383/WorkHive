@@ -43,9 +43,8 @@ namespace WorkHive.Controller
         }
         public static int GetProjectProgress(int id)
         {
-            List<TaskModel> tasks = TaskModelAccess.GetTaskModel();
             ProjectModel currentproject = GetProjectDetails(id);
-            List<TaskModel> selectedtasks = tasks.Where(p => p.ProjectAssigned == currentproject).ToList();
+            List<TaskModel> selectedtasks = currentproject.Tasks;
 
             if(selectedtasks.Count() > 0)
             {
