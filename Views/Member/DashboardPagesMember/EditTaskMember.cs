@@ -17,6 +17,7 @@ namespace WorkHive.Views.Member.DashboardPagesMember
     public partial class EditTaskMember : UserControl
     {
         TaskModel selectedtask;
+        
 
         public static event Action OnUpdate;
         public static event Action<object, EventArgs> OnUpdate1;
@@ -36,20 +37,19 @@ namespace WorkHive.Views.Member.DashboardPagesMember
         }
         private void EditTaskSubmitbtn_Click(object sender, EventArgs e)
         {
-            ProjectModel projectAssign = default;
+            //List<ProjectModel> projects = ProjectModelAccess.GetProjects();
+            //ProjectModel projectAssign = projects.FirstOrDefault(p => p.Tasks.Contains(selectedtask));
 
             TaskModelAccess.EditTask(new TaskModel
             {
                 TaskStatus = (Status)dropdownStatus.SelectedIndex,
-                ProjectAssigned = projectAssign
+                //ProjectAssigned = projectAssign
 
             }, selectedtask.TaskID);
             new MessageBoxes("Edit Task Complete!!");
-            TaskViewMember taskview = (TaskViewMember)Parent.Parent;
-            taskview.OnProjectTasksOnclick(projectAssign);
             this.Parent.Controls.Remove(this);
             OnUpdate();
-
+            OnUpdate1(sender, e);
         }
 
         private void EditTaskExitbtn_Click(object sender, EventArgs e)

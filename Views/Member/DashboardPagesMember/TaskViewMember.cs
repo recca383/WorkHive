@@ -35,6 +35,8 @@ namespace WorkHive.Views.Member.DashboardPagesMember
             RefreshList(results);
             AddTask.OnTasksAdded1 += RefreshButton_Click;
             EditTaskInformation.OnUpdate += RefreshTaskViewLibraries;
+            EditTaskMember.OnUpdate += RefreshTaskViewLibraries;
+            EditTaskMember.OnUpdate1 += RefreshButton_Click;
 
             AddTaskPanel.Size = new Size(0, 0);
         }

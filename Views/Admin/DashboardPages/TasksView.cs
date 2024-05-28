@@ -106,10 +106,9 @@ namespace WorkHive.Views.Admin.DashboardPages
         }
         private void StatusFilter_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (ProjectFilter.SelectedItem is null)
+            if (ProjectFilter.SelectedItem != null)
             {
                 var results = tasks
-                    
                     .Where(a => a.TaskStatus == (Status)StatusFilter.SelectedIndex)
                     .ToList();
                 RefreshList(results);

@@ -35,6 +35,7 @@ namespace WorkHive.Views.Pages
             AddTask.OnUpdate += RefreshElements;
             ProfileEditMember.OnUpdate += RefreshElements;
             ProfileEdit.OnUpdate += RefreshElements;
+            EditTaskMember.OnUpdate += RefreshElements;
         }
      
         public void RefreshElements()

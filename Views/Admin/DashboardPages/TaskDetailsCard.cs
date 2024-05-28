@@ -24,7 +24,15 @@ namespace WorkHive.Views.Admin.DashboardPages
 
         private void InitializeElements()
         {
-            lblProjectName.Text = task.ProjectAssigned.ProjectName;
+            if (task.ProjectAssigned != null)
+            {
+                lblProjectName.Text = task.ProjectAssigned.ProjectName;
+            }
+            else
+            {
+                lblProjectName.Text = "No Project Assigned";
+            }
+            
             lblTaskName.Text = task.TaskName;
             lblDateStarted.Text = task.TaskStart.ToString("MMMM dd, yyyy");
             lblDeadline.Text = task.Deadline.ToString("MMMM dd, yyyy");
