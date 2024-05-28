@@ -65,29 +65,31 @@ namespace WorkHive.Views.LandingPage.LandingPagePages
             else
             {
                 if (IsPasswordHasNumber(txtPassword.Text) && HasCapitalLetter(txtPassword.Text) && PasswordLength(txtPassword.Text) && HasSpecialCharacter(txtPassword.Text) && Utility.IsEmailValid(txtEmail.Text))
-                if (model.Any(n => n.FirstName == txtName.Text)) new MessageBoxes("Username Taken");
-                else if (model.Any(m => m.Email == txtEmail.Text)) new MessageBoxes("Email Already Used");
-                else if (!(txtPassword.Text == txtConfirmPassword.Text)) new MessageBoxes("Password Does Not Match");
-                else
-                {
-                    MemberModelAccess.AddMember(new MemberModel()
+                    if (model.Any(n => n.FirstName == txtName.Text)) new MessageBoxes("Username Taken");
+                    else if (model.Any(m => m.Email == txtEmail.Text)) new MessageBoxes("Email Already Used");
+                    else if (!(txtPassword.Text == txtConfirmPassword.Text)) new MessageBoxes("Password Does Not Match");
+                    else
                     {
-                        ID = model.Count,
-                        FirstName = txtName.Text,
-                        Email = txtEmail.Text,
-                        Password = txtPassword.Text,
-                        IsLeader = false // change to false for creating member as default
+                        MemberModelAccess.AddMember(new MemberModel()
+                        {
+                            ID = model.Count,
+                            FirstName = txtName.Text,
+                            Email = txtEmail.Text,
+                            Password = txtPassword.Text,
+                            IsLeader = false // change to false for creating member as default
 
-                    });
+                        });
 
-                    new MessageBoxes("Sign Up Complete!");
-                    txtName.Text = default;
-                    txtEmail.Text = default;
-                    txtPassword.Text = default;
-                    txtConfirmPassword.Text = default;
+                        new MessageBoxes("Sign Up Complete!");
+                        txtName.Text = default;
+                        txtEmail.Text = default;
+                        txtPassword.Text = default;
+                        txtConfirmPassword.Text = default;
 
+                        Landing_Page parent = this.ParentForm as Landing_Page;
+                        parent.btnSign_InEvent(sender, e);
+                    }
 
-                }
             }
             
         }

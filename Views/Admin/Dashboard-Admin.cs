@@ -40,6 +40,7 @@ namespace WorkHive.Views
             InitializeComponent();
             RefreshPicture();
             Initialize_Navigation_Controls();
+            RefreshProfilePic();
             ProjectCard.OnProjectTasksClick += btnTasks_Click;
             AddProject.OnProjectAdded1 += btnTasks_Click;
             ProfileEdit.OnUpdate += RefreshPicture;
@@ -161,13 +162,8 @@ namespace WorkHive.Views
             System.Diagnostics.Process.Start();
         }*/
 
-
         private void ProfilePicBox_Click(object sender, EventArgs e)
         {
-            ProfileAdmin profile = new ProfileAdmin(CurrentUser);
-            profilepanel.Controls.Add(profile);
-            profile.Anchor = AnchorStyles.Right;
-            profile.Show();
             profilepanel.Parent = ViewPanel;
             profilepanel.BringToFront();
             if (profilepanel.Size == new Size(0, 0))

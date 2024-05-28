@@ -139,9 +139,10 @@ namespace WorkHive.Views.Member.DashboardPagesMember
                 {
                     //Get the path of specified file
                     newPicture = openFileDialog.FileName;
+                    MemberPictureBox.Image = Image.FromFile(newPicture);
 
                 }
-                MemberPictureBox.Image = Image.FromFile(newPicture);
+                
             }
             
         }

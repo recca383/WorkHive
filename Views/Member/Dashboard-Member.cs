@@ -19,6 +19,7 @@ using WorkHive.Model;
 using WorkHive.Views.LandingPage;
 using WorkHive.Views.Member;
 using WorkHive.Views.Member.DashboardPagesMember;
+using WorkHive.Views.Cards;
 
 
 namespace WorkHive.Views.Member.DashboardPagesMember
@@ -35,7 +36,12 @@ namespace WorkHive.Views.Member.DashboardPagesMember
             InitializeComponent();
             RefreshImage();
             Initialize_Navigation_Controls();
-            
+            LoadProfilePic();
+            ProjectCard.OnProjectTasksClick += btnTasksMember_Click;
+            ProfileEditMember.OnUpdate += LoadProfilePic;
+            //profilepanel.Parent = ViewPanelMember;
+
+
         }
         public void RefreshImage()
         {
@@ -108,14 +114,15 @@ namespace WorkHive.Views.Member.DashboardPagesMember
             Landing_Page landing_Page = new Landing_Page();
             landing_Page.Show();
         }
-       
-
-        private void ProfilePicBoxMember_Click(object sender, EventArgs e)
+        private void LoadProfilePic()
         {
+            profilepanel.Controls.Clear();
             ProfileMember profile = new ProfileMember(CurrentUser);
             profilepanel.Controls.Add(profile);
-            profile.Anchor = AnchorStyles.Right;
-            profile.Show();
+        }       
+        
+        private void ProfilePicBoxMember_Click(object sender, EventArgs e)
+        {
             profilepanel.Parent = ViewPanelMember;
             profilepanel.BringToFront();
             if (profilepanel.Size == new Size(0, 0))

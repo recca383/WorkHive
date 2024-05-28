@@ -36,14 +36,14 @@ namespace WorkHive.Views.Admin.DashboardPages
         {
             if (this.Parent.Parent is TasksView)
             {
-                TasksView taskview = (TasksView)Parent.Parent;
-                taskview.btnAll_Click(sender, e);
+                //TasksView taskview = (TasksView)Parent.Parent;
+                //taskview.btnAll_Click(sender, e);
                 this.Parent.Controls.Remove(this);
                 this.Visible = false;
             }
             else {
-                TaskViewMember taskview1 = (TaskViewMember)Parent.Parent;
-                taskview1.btnAll_Click(sender, e);
+                //TaskViewMember taskview1 = (TaskViewMember)Parent.Parent;
+                //taskview1.btnAll_Click(sender, e);
                 this.Parent.Controls.Remove(this);
                 this.Visible = false;
             }
