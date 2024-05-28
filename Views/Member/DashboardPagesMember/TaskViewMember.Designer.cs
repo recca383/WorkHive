@@ -167,7 +167,7 @@
             this.ProjectFilter.ItemForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ProjectFilter.ItemHeight = 26;
             this.ProjectFilter.ItemHighLightColor = System.Drawing.Color.Gold;
-            this.ProjectFilter.Location = new System.Drawing.Point(367, 34);
+            this.ProjectFilter.Location = new System.Drawing.Point(377, 34);
             this.ProjectFilter.Margin = new System.Windows.Forms.Padding(4);
             this.ProjectFilter.Name = "ProjectFilter";
             this.ProjectFilter.Size = new System.Drawing.Size(288, 32);

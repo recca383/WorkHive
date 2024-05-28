@@ -33,7 +33,7 @@ namespace WorkHive.Views.Member.DashboardPagesMember
             {
                 MemberPictureBox.Image = Image.FromFile(currentUser.Profile_Pic);
             }
-            if (currentUser.Profile_Pic == " ")
+            else if (currentUser.Profile_Pic == " ")
             {
                 MemberPictureBox.Image = Image.FromFile(Path.Combine(Path.GetDirectoryName(parent), "Resources\\Default_Pics\\Userdefault.png"));
             }
@@ -48,7 +48,7 @@ namespace WorkHive.Views.Member.DashboardPagesMember
             //enum of positions
             //memberworklbl1.Text = "Manager";
 
-            MemberBirthdatelbl1.Text = currentUser.Birthdate.ToString();
+            MemberBirthdatelbl1.Text = currentUser.Birthdate.ToString("d");
             Membercontactlbl2.Text = currentUser.ContactNumber.ToString();
             Memberemaillbl1.Text = currentUser.Email;
             Memberaddresslbl1.Text = currentUser.Address;
@@ -87,7 +87,7 @@ namespace WorkHive.Views.Member.DashboardPagesMember
             Editpicture.Visible = true;
         }
 
-        private void btnCancelEdit_Click(object sender, EventArgs e)
+        private void btnCancelEdit1_Click(object sender, EventArgs e)
         {
             RefreshValues();
             EditPanel.Enabled = false;
@@ -113,12 +113,12 @@ namespace WorkHive.Views.Member.DashboardPagesMember
             editedmember.Barangay = barangaytxt.Text;
             editedmember.City_Municipality = citymunicipaltxt.Text;
             editedmember.Province = provincetxt.Text;
-            if(newPicture == "") editedmember.Profile_Pic = currentUser.Profile_Pic;
+            editedmember.ContactNumber = Membercontacttxt.Text;
+            if (newPicture == "") editedmember.Profile_Pic = currentUser.Profile_Pic;
             else editedmember.Profile_Pic = newPicture;
 
 
             if (Utility.IsEmailValid(Memberemailtxt.Text)) editedmember.Email = Memberemailtxt.Text;
-            if (int.TryParse(Membercontacttxt.Text, out contactresult)) editedmember.ContactNumber = contactresult;
             if (int.TryParse(zipcodetxt.Text, out zipcoderesult)) editedmember.ZipCode = zipcoderesult;
 
             MemberModelAccess.EditMemberInfo(editedmember, currentUser.ID);

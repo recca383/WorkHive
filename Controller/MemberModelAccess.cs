@@ -151,7 +151,7 @@ namespace WorkHive.Controller
             if (editedmember.LastName != null) newLastName = editedmember.LastName;
             if (editedmember.MiddleName != null) newMiddleName = editedmember.MiddleName;
             if (editedmember.ExtensionName != null) newExtensionName = editedmember.ExtensionName;
-            if (editedmember.ContactNumber != 0) newContactNumber = editedmember.ContactNumber;
+            if (editedmember.ContactNumber != null) newContactNumber = editedmember.ContactNumber;
             if (editedmember.Sex != sex.None) newSex = editedmember.Sex;
             if (editedmember.Profile_Pic != null) newpicture = editedmember.Profile_Pic;
             if (editedmember.BloodType != bloodType.None) newbloodType = editedmember.BloodType;

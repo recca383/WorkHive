@@ -75,7 +75,7 @@
             this.panel1.Location = new System.Drawing.Point(0, 63);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(383, 341);
+            this.panel1.Size = new System.Drawing.Size(463, 341);
             this.panel1.TabIndex = 0;
             // 
             // lblStatus
@@ -83,8 +83,8 @@
             this.lblStatus.AutoSize = true;
             this.lblStatus.BackColor = System.Drawing.Color.Transparent;
             this.lblStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblStatus.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.lblStatus.Location = new System.Drawing.Point(283, 316);
+            this.lblStatus.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(44)))), ((int)(((byte)(49)))));
+            this.lblStatus.Location = new System.Drawing.Point(365, 316);
             this.lblStatus.Name = "lblStatus";
             this.lblStatus.Size = new System.Drawing.Size(78, 20);
             this.lblStatus.TabIndex = 11;
@@ -96,18 +96,18 @@
             this.panel2.Location = new System.Drawing.Point(21, 203);
             this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(340, 97);
+            this.panel2.Size = new System.Drawing.Size(422, 97);
             this.panel2.TabIndex = 9;
             // 
             // lblDescription
             // 
             this.lblDescription.AllowDrop = true;
             this.lblDescription.AutoEllipsis = true;
-            this.lblDescription.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblDescription.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDescription.Location = new System.Drawing.Point(0, 0);
+            this.lblDescription.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(44)))), ((int)(((byte)(49)))));
+            this.lblDescription.Location = new System.Drawing.Point(0, 2);
             this.lblDescription.Name = "lblDescription";
-            this.lblDescription.Size = new System.Drawing.Size(340, 97);
+            this.lblDescription.Size = new System.Drawing.Size(419, 97);
             this.lblDescription.TabIndex = 10;
             this.lblDescription.Text = "abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabc" +
     "defghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz";
@@ -118,8 +118,8 @@
             this.label11.AutoSize = true;
             this.label11.BackColor = System.Drawing.Color.Transparent;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label11.Location = new System.Drawing.Point(207, 316);
+            this.label11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(44)))), ((int)(((byte)(49)))));
+            this.label11.Location = new System.Drawing.Point(289, 316);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(81, 20);
             this.label11.TabIndex = 10;
@@ -129,7 +129,8 @@
             // 
             this.lblDeadline.AutoSize = true;
             this.lblDeadline.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDeadline.Location = new System.Drawing.Point(115, 134);
+            this.lblDeadline.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(44)))), ((int)(((byte)(49)))));
+            this.lblDeadline.Location = new System.Drawing.Point(155, 141);
             this.lblDeadline.Name = "lblDeadline";
             this.lblDeadline.Size = new System.Drawing.Size(89, 20);
             this.lblDeadline.TabIndex = 8;
@@ -139,7 +140,8 @@
             // 
             this.lblDateStarted.AutoSize = true;
             this.lblDateStarted.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDateStarted.Location = new System.Drawing.Point(141, 98);
+            this.lblDateStarted.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(44)))), ((int)(((byte)(49)))));
+            this.lblDateStarted.Location = new System.Drawing.Point(155, 106);
             this.lblDateStarted.Name = "lblDateStarted";
             this.lblDateStarted.Size = new System.Drawing.Size(116, 20);
             this.lblDateStarted.TabIndex = 7;
@@ -148,30 +150,33 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(13, 172);
+            this.label6.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(44)))), ((int)(((byte)(49)))));
+            this.label6.Location = new System.Drawing.Point(13, 171);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(118, 20);
+            this.label6.Size = new System.Drawing.Size(132, 28);
             this.label6.TabIndex = 6;
             this.label6.Text = "Description: ";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(44)))), ((int)(((byte)(49)))));
             this.label5.Location = new System.Drawing.Point(13, 134);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(95, 20);
+            this.label5.Size = new System.Drawing.Size(106, 28);
             this.label5.TabIndex = 5;
             this.label5.Text = "Due Date:";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(44)))), ((int)(((byte)(49)))));
             this.label4.Location = new System.Drawing.Point(13, 98);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(122, 20);
+            this.label4.Size = new System.Drawing.Size(138, 28);
             this.label4.TabIndex = 4;
             this.label4.Text = "Date Started:";
             // 
@@ -179,7 +184,8 @@
             // 
             this.lblTaskName.AutoSize = true;
             this.lblTaskName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTaskName.Location = new System.Drawing.Point(128, 62);
+            this.lblTaskName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(44)))), ((int)(((byte)(49)))));
+            this.lblTaskName.Location = new System.Drawing.Point(155, 67);
             this.lblTaskName.Name = "lblTaskName";
             this.lblTaskName.Size = new System.Drawing.Size(103, 20);
             this.lblTaskName.TabIndex = 3;
@@ -187,31 +193,33 @@
             // 
             // lblProjectName
             // 
-            this.lblProjectName.AutoSize = true;
             this.lblProjectName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblProjectName.Location = new System.Drawing.Point(179, 18);
+            this.lblProjectName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(44)))), ((int)(((byte)(49)))));
+            this.lblProjectName.Location = new System.Drawing.Point(154, 21);
             this.lblProjectName.Name = "lblProjectName";
-            this.lblProjectName.Size = new System.Drawing.Size(141, 25);
+            this.lblProjectName.Size = new System.Drawing.Size(206, 46);
             this.lblProjectName.TabIndex = 2;
             this.lblProjectName.Text = "Project Name";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(44)))), ((int)(((byte)(49)))));
             this.label1.Location = new System.Drawing.Point(12, 18);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(148, 25);
+            this.label1.Size = new System.Drawing.Size(146, 28);
             this.label1.TabIndex = 1;
             this.label1.Text = "Project Name:";
             // 
             // TaskNamelbl
             // 
             this.TaskNamelbl.AutoSize = true;
-            this.TaskNamelbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TaskNamelbl.Location = new System.Drawing.Point(13, 62);
+            this.TaskNamelbl.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TaskNamelbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(44)))), ((int)(((byte)(49)))));
+            this.TaskNamelbl.Location = new System.Drawing.Point(13, 60);
             this.TaskNamelbl.Name = "TaskNamelbl";
-            this.TaskNamelbl.Size = new System.Drawing.Size(109, 20);
+            this.TaskNamelbl.Size = new System.Drawing.Size(120, 28);
             this.TaskNamelbl.TabIndex = 0;
             this.TaskNamelbl.Text = "Task Name:";
             // 
@@ -219,11 +227,11 @@
             // 
             this.label10.AutoSize = true;
             this.label10.BackColor = System.Drawing.Color.Transparent;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label10.Location = new System.Drawing.Point(125, 14);
+            this.label10.Font = new System.Drawing.Font("Montserrat", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(44)))), ((int)(((byte)(49)))));
+            this.label10.Location = new System.Drawing.Point(167, 14);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(138, 32);
+            this.label10.Size = new System.Drawing.Size(140, 39);
             this.label10.TabIndex = 10;
             this.label10.Text = "DETAILS";
             // 
@@ -231,7 +239,7 @@
             // 
             this.Exit.BackColor = System.Drawing.Color.Transparent;
             this.Exit.Image = global::WorkHive.Properties.Resources.EKIS;
-            this.Exit.Location = new System.Drawing.Point(330, 14);
+            this.Exit.Location = new System.Drawing.Point(414, 14);
             this.Exit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Exit.Name = "Exit";
             this.Exit.Size = new System.Drawing.Size(40, 34);
@@ -244,13 +252,14 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
             this.BackgroundImage = global::WorkHive.Properties.Resources.AddTask;
             this.Controls.Add(this.Exit);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.panel1);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "TaskDetailsCard";
-            this.Size = new System.Drawing.Size(383, 465);
+            this.Size = new System.Drawing.Size(466, 465);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);

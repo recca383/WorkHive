@@ -46,7 +46,7 @@ namespace WorkHive.Model
             } 
         }
 
-        public int ContactNumber { get; set; }
+        public string ContactNumber { get; set; } = string.Empty;
         public sex Sex { get; set;} = sex.None;
         public bloodType BloodType { get; set; }
         public DateTime Birthdate { get; set; } =  DateTime.Now;

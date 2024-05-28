@@ -139,6 +139,7 @@
             this.Editpicture.TabIndex = 128;
             this.Editpicture.TabStop = false;
             this.Editpicture.Visible = false;
+            this.Editpicture.Click += new System.EventHandler(this.Editpicture_Click);
             // 
             // Memberaddresslbl1
             // 
@@ -182,6 +183,7 @@
             this.btnConfirmEdit1.TabIndex = 52;
             this.btnConfirmEdit1.TabStop = false;
             this.btnConfirmEdit1.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Custom;
+            this.btnConfirmEdit1.Click += new System.EventHandler(this.btnConfirmEdit_Click);
             // 
             // Namelbl1
             // 
@@ -214,6 +216,7 @@
             this.btnCancelEdit1.TabIndex = 51;
             this.btnCancelEdit1.TabStop = false;
             this.btnCancelEdit1.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Custom;
+            this.btnCancelEdit1.Click += new System.EventHandler(this.btnCancelEdit1_Click);
             // 
             // Positionlbl1
             // 
@@ -248,6 +251,7 @@
             this.btnEdit.TabIndex = 49;
             this.btnEdit.TabStop = false;
             this.btnEdit.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Custom;
+            this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
             // 
             // MemberBirthdatelbl1
             // 
@@ -431,6 +435,7 @@
             this.Membercontacttxt.BackColor = System.Drawing.Color.WhiteSmoke;
             this.Membercontacttxt.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Membercontacttxt.Location = new System.Drawing.Point(49, 226);
+            this.Membercontacttxt.MaxLength = 99999;
             this.Membercontacttxt.Multiline = true;
             this.Membercontacttxt.Name = "Membercontacttxt";
             this.Membercontacttxt.Size = new System.Drawing.Size(159, 36);

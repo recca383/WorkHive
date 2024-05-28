@@ -45,7 +45,7 @@ namespace WorkHive.Views.Member.DashboardPagesMember
         {
             AddTaskPanel.Controls.Clear();
             AddTaskPanel.Controls.Add(new TaskDetailsCard(task));
-            AddTaskPanel.Size = new Size(285, 385);
+            AddTaskPanel.Size = new Size(351, 375);
 
         }
         private void RefreshTaskViewLibraries()
@@ -83,7 +83,7 @@ namespace WorkHive.Views.Member.DashboardPagesMember
         {
             AddTaskPanel.Controls.Clear();
             AddTaskPanel.Controls.Add(new EditTaskMember(TaskModelAccess.GetTaskInfo(id)));
-            AddTaskPanel.Size = new Size(417, 324);
+            AddTaskPanel.Size = new Size(327, 284);
 
         }
         public void OnProjectTasksOnclick(ProjectModel model)

@@ -110,11 +110,11 @@ namespace WorkHive.Views.Admin
                 editedmember.Barangay = barangaytxt.Text;
                 editedmember.City_Municipality = citymunicipaltxt.Text;
                 editedmember.Province = provincetxt.Text;
-                if(newPicture == "") editedmember.Profile_Pic = currentUser.Profile_Pic;
+                editedmember.ContactNumber = contacttxt.Text;
+                if (newPicture == "") editedmember.Profile_Pic = currentUser.Profile_Pic;
                 else editedmember.Profile_Pic = newPicture;
 
             if (Utility.IsEmailValid(emailtxt.Text)) editedmember.Email = emailtxt.Text;
-            if (int.TryParse(contacttxt.Text, out contactresult))editedmember.ContactNumber = contactresult;
             if (int.TryParse(zipcodetxt.Text, out zipcoderesult)) editedmember.ZipCode = zipcoderesult;
 
             MemberModelAccess.EditMemberInfo(editedmember, currentUser.ID);

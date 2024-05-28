@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Bunifu.Framework.UI;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -41,8 +42,7 @@ namespace WorkHive.Views.Admin.DashboardPages
         {
             AddTaskPanel.Controls.Clear();
             AddTaskPanel.Controls.Add(new TaskDetailsCard(task));
-            AddTaskPanel.Size = new Size(285, 385);
-            
+            AddTaskPanel.Size = new Size(351, 375);           
         }
 
         private void RefreshTaskViewLibraries()
