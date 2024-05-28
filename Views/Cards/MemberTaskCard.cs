@@ -19,11 +19,9 @@ namespace WorkHive.Views.Cards
     public partial class MemberTaskCard : UserControl
     {
         TaskModel task;
-        public static event Action OnUpdate;
 
         public MemberTaskCard(TaskModel task)
         {
-
             this.task = task;
             InitializeComponent();
             InitializeElements();
@@ -61,8 +59,6 @@ namespace WorkHive.Views.Cards
             TaskViewMember editTask = (TaskViewMember)this.Parent.Parent;
 
             editTask.btnEdittasks_Click(sender, e, task.TaskID);
-
-           OnUpdate();
 
         }
 

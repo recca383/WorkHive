@@ -73,11 +73,11 @@
             // 
             this.Employees.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.Employees.AutoSize = true;
-            this.Employees.Font = new System.Drawing.Font("Microsoft Sans Serif", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Employees.Location = new System.Drawing.Point(24, 32);
+            this.Employees.Font = new System.Drawing.Font("Montserrat", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Employees.Location = new System.Drawing.Point(11, 10);
             this.Employees.Margin = new System.Windows.Forms.Padding(0);
             this.Employees.Name = "Employees";
-            this.Employees.Size = new System.Drawing.Size(220, 51);
+            this.Employees.Size = new System.Drawing.Size(243, 60);
             this.Employees.TabIndex = 10;
             this.Employees.Text = "Password";
             // 
@@ -105,7 +105,7 @@
             this.bunifuLabel2.BackColor = System.Drawing.Color.White;
             this.bunifuLabel2.CursorType = null;
             this.bunifuLabel2.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuLabel2.Location = new System.Drawing.Point(164, 175);
+            this.bunifuLabel2.Location = new System.Drawing.Point(139, 177);
             this.bunifuLabel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bunifuLabel2.Name = "bunifuLabel2";
             this.bunifuLabel2.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -122,7 +122,7 @@
             this.bunifuLabel3.BackColor = System.Drawing.Color.White;
             this.bunifuLabel3.CursorType = null;
             this.bunifuLabel3.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuLabel3.Location = new System.Drawing.Point(164, 245);
+            this.bunifuLabel3.Location = new System.Drawing.Point(139, 247);
             this.bunifuLabel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bunifuLabel3.Name = "bunifuLabel3";
             this.bunifuLabel3.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -139,7 +139,7 @@
             this.bunifuLabel4.BackColor = System.Drawing.Color.White;
             this.bunifuLabel4.CursorType = null;
             this.bunifuLabel4.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuLabel4.Location = new System.Drawing.Point(164, 321);
+            this.bunifuLabel4.Location = new System.Drawing.Point(139, 323);
             this.bunifuLabel4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bunifuLabel4.Name = "bunifuLabel4";
             this.bunifuLabel4.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -156,7 +156,7 @@
             this.bunifuLabel5.BackColor = System.Drawing.Color.White;
             this.bunifuLabel5.CursorType = null;
             this.bunifuLabel5.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuLabel5.Location = new System.Drawing.Point(165, 391);
+            this.bunifuLabel5.Location = new System.Drawing.Point(140, 393);
             this.bunifuLabel5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bunifuLabel5.Name = "bunifuLabel5";
             this.bunifuLabel5.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -168,13 +168,16 @@
             // 
             // btnSend
             // 
-            this.btnSend.Location = new System.Drawing.Point(1111, 420);
+            this.btnSend.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.btnSend.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSend.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSend.Location = new System.Drawing.Point(343, 425);
             this.btnSend.Margin = new System.Windows.Forms.Padding(4);
             this.btnSend.Name = "btnSend";
-            this.btnSend.Size = new System.Drawing.Size(100, 28);
+            this.btnSend.Size = new System.Drawing.Size(100, 32);
             this.btnSend.TabIndex = 4;
             this.btnSend.Text = "Send Code";
-            this.btnSend.UseVisualStyleBackColor = true;
+            this.btnSend.UseVisualStyleBackColor = false;
             this.btnSend.Click += new System.EventHandler(this.btnSend_Click);
             // 
             // txtCode
@@ -205,7 +208,7 @@
             this.txtCode.IconRight = null;
             this.txtCode.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtCode.Lines = new string[0];
-            this.txtCode.Location = new System.Drawing.Point(164, 418);
+            this.txtCode.Location = new System.Drawing.Point(139, 420);
             this.txtCode.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtCode.MaxLength = 32767;
             this.txtCode.MinimumSize = new System.Drawing.Size(100, 34);
@@ -319,7 +322,7 @@
             this.txtConfirmPassword.IconRight = null;
             this.txtConfirmPassword.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtConfirmPassword.Lines = new string[0];
-            this.txtConfirmPassword.Location = new System.Drawing.Point(165, 343);
+            this.txtConfirmPassword.Location = new System.Drawing.Point(140, 345);
             this.txtConfirmPassword.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtConfirmPassword.MaxLength = 32767;
             this.txtConfirmPassword.MinimumSize = new System.Drawing.Size(100, 34);
@@ -395,7 +398,7 @@
             this.txtNewPassword.IconRight = null;
             this.txtNewPassword.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtNewPassword.Lines = new string[0];
-            this.txtNewPassword.Location = new System.Drawing.Point(165, 272);
+            this.txtNewPassword.Location = new System.Drawing.Point(140, 274);
             this.txtNewPassword.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtNewPassword.MaxLength = 32767;
             this.txtNewPassword.MinimumSize = new System.Drawing.Size(100, 34);
@@ -471,7 +474,7 @@
             this.txtCurrentPassword.IconRight = null;
             this.txtCurrentPassword.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtCurrentPassword.Lines = new string[0];
-            this.txtCurrentPassword.Location = new System.Drawing.Point(165, 198);
+            this.txtCurrentPassword.Location = new System.Drawing.Point(140, 200);
             this.txtCurrentPassword.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtCurrentPassword.MaxLength = 32767;
             this.txtCurrentPassword.MinimumSize = new System.Drawing.Size(100, 34);
@@ -556,10 +559,10 @@
             // ShowPassword3
             // 
             this.ShowPassword3.Image = global::WorkHive.Properties.Resources.eye_open;
-            this.ShowPassword3.Location = new System.Drawing.Point(1162, 345);
+            this.ShowPassword3.Location = new System.Drawing.Point(1139, 352);
             this.ShowPassword3.Margin = new System.Windows.Forms.Padding(4);
             this.ShowPassword3.Name = "ShowPassword3";
-            this.ShowPassword3.Size = new System.Drawing.Size(37, 42);
+            this.ShowPassword3.Size = new System.Drawing.Size(30, 33);
             this.ShowPassword3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.ShowPassword3.TabIndex = 35;
             this.ShowPassword3.TabStop = false;
@@ -568,10 +571,10 @@
             // ShowPassword2
             // 
             this.ShowPassword2.Image = global::WorkHive.Properties.Resources.eye_open;
-            this.ShowPassword2.Location = new System.Drawing.Point(1162, 273);
+            this.ShowPassword2.Location = new System.Drawing.Point(1139, 282);
             this.ShowPassword2.Margin = new System.Windows.Forms.Padding(4);
             this.ShowPassword2.Name = "ShowPassword2";
-            this.ShowPassword2.Size = new System.Drawing.Size(37, 42);
+            this.ShowPassword2.Size = new System.Drawing.Size(30, 33);
             this.ShowPassword2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.ShowPassword2.TabIndex = 34;
             this.ShowPassword2.TabStop = false;
@@ -580,10 +583,10 @@
             // ShowPassword
             // 
             this.ShowPassword.Image = global::WorkHive.Properties.Resources.eye_open;
-            this.ShowPassword.Location = new System.Drawing.Point(1162, 200);
+            this.ShowPassword.Location = new System.Drawing.Point(1139, 206);
             this.ShowPassword.Margin = new System.Windows.Forms.Padding(4);
             this.ShowPassword.Name = "ShowPassword";
-            this.ShowPassword.Size = new System.Drawing.Size(37, 42);
+            this.ShowPassword.Size = new System.Drawing.Size(30, 33);
             this.ShowPassword.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.ShowPassword.TabIndex = 31;
             this.ShowPassword.TabStop = false;

@@ -70,13 +70,7 @@ namespace WorkHive.Views.Member.DashboardPagesMember
             }
         }
 
-        public void btnAll_Click(object sender, EventArgs e)
-        {
-            ProjectFilter.SelectedItem = null;
-            StatusFilter.SelectedItem = null;
-            var results = tasks.Where(a => a.TaskStatus != Status.Archived).ToList();
-            RefreshList(results);
-        }
+
        
         private void AddTaskPanel_ControlRemoved(object sender, ControlEventArgs e)
         {
@@ -89,15 +83,20 @@ namespace WorkHive.Views.Member.DashboardPagesMember
         {
             AddTaskPanel.Controls.Clear();
             AddTaskPanel.Controls.Add(new EditTaskMember(TaskModelAccess.GetTaskInfo(id)));
-            AddTaskPanel.Size = new Size(500, 622);
+            AddTaskPanel.Size = new Size(417, 324);
 
+        }
+        private void RefreshTaskViewLibraries()
+        {
+            tasks = TaskModelAccess.GetTaskModel();
+            projects = ProjectModelAccess.GetProjects();
         }
 
         public void OnProjectTasksOnclick(ProjectModel model)
         {
             RefreshTaskViewLibraries();
             RefreshDataSources();
-            ProjectFilter.SelectedIndex = model.Id;
+            ProjectFilter.SelectedItem = ProjectModelAccess.GetProjectDetails(model.Id).ProjectName;
 
         }
         private void StatusFilter_SelectedIndexChanged(object sender, EventArgs e)
@@ -125,6 +124,16 @@ namespace WorkHive.Views.Member.DashboardPagesMember
                     .ToList();
                 RefreshList(results);
             }
+        }
+
+        public void RefreshButton_Click(object sender, EventArgs e)
+        {
+            
+                ProjectFilter.SelectedItem = null;
+                StatusFilter.SelectedItem = null;
+                var results = tasks.Where(a => a.TaskStatus != Status.Archived).ToList();
+                RefreshList(results);
+            
         }
     }
 }

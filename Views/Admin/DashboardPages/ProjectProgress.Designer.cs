@@ -58,11 +58,11 @@
             // 
             // ProjectName
             // 
-            this.ProjectName.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ProjectName.Font = new System.Drawing.Font("Montserrat SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ProjectName.Location = new System.Drawing.Point(3, 6);
             this.ProjectName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.ProjectName.Name = "ProjectName";
-            this.ProjectName.Size = new System.Drawing.Size(280, 22);
+            this.ProjectName.Size = new System.Drawing.Size(280, 35);
             this.ProjectName.TabIndex = 17;
             this.ProjectName.Text = "Project Name";
             this.ProjectName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -99,13 +99,13 @@
             this.AverageProgress.LabelVisible = true;
             this.AverageProgress.LineProgressThickness = 8;
             this.AverageProgress.LineThickness = 5;
-            this.AverageProgress.Location = new System.Drawing.Point(29, 30);
+            this.AverageProgress.Location = new System.Drawing.Point(29, 37);
             this.AverageProgress.Margin = new System.Windows.Forms.Padding(11, 9, 11, 9);
             this.AverageProgress.MaxValue = 100;
             this.AverageProgress.Name = "AverageProgress";
             this.AverageProgress.ProgressBackColor = System.Drawing.Color.Black;
             this.AverageProgress.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(170)))), ((int)(((byte)(0)))));
-            this.AverageProgress.Size = new System.Drawing.Size(220, 220);
+            this.AverageProgress.Size = new System.Drawing.Size(213, 213);
             this.AverageProgress.TabIndex = 14;
             this.AverageProgress.Value = 0;
             // 

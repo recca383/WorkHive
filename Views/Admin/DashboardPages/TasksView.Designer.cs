@@ -50,7 +50,7 @@
             this.TasksName.Location = new System.Drawing.Point(11, 10);
             this.TasksName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.TasksName.Name = "TasksName";
-            this.TasksName.Size = new System.Drawing.Size(154, 61);
+            this.TasksName.Size = new System.Drawing.Size(151, 60);
             this.TasksName.TabIndex = 2;
             this.TasksName.Text = "Tasks";
             // 
@@ -186,7 +186,7 @@
             this.StatusFilter.FillDropDown = false;
             this.StatusFilter.FillIndicator = false;
             this.StatusFilter.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.StatusFilter.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.StatusFilter.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.StatusFilter.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.StatusFilter.FormattingEnabled = true;
             this.StatusFilter.Icon = null;
@@ -196,8 +196,8 @@
             this.StatusFilter.ItemBorderColor = System.Drawing.Color.White;
             this.StatusFilter.ItemForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.StatusFilter.ItemHeight = 26;
-            this.StatusFilter.ItemHighLightColor = System.Drawing.Color.Goldenrod;
-            this.StatusFilter.Location = new System.Drawing.Point(775, 34);
+            this.StatusFilter.ItemHighLightColor = System.Drawing.Color.Gold;
+            this.StatusFilter.Location = new System.Drawing.Point(779, 34);
             this.StatusFilter.Margin = new System.Windows.Forms.Padding(4);
             this.StatusFilter.Name = "StatusFilter";
             this.StatusFilter.Size = new System.Drawing.Size(288, 32);
@@ -219,7 +219,7 @@
             this.ProjectFilter.FillDropDown = false;
             this.ProjectFilter.FillIndicator = false;
             this.ProjectFilter.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ProjectFilter.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ProjectFilter.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ProjectFilter.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ProjectFilter.FormattingEnabled = true;
             this.ProjectFilter.Icon = null;
@@ -229,8 +229,8 @@
             this.ProjectFilter.ItemBorderColor = System.Drawing.Color.White;
             this.ProjectFilter.ItemForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ProjectFilter.ItemHeight = 26;
-            this.ProjectFilter.ItemHighLightColor = System.Drawing.Color.Goldenrod;
-            this.ProjectFilter.Location = new System.Drawing.Point(363, 34);
+            this.ProjectFilter.ItemHighLightColor = System.Drawing.Color.Gold;
+            this.ProjectFilter.Location = new System.Drawing.Point(367, 34);
             this.ProjectFilter.Margin = new System.Windows.Forms.Padding(4);
             this.ProjectFilter.Name = "ProjectFilter";
             this.ProjectFilter.Size = new System.Drawing.Size(288, 32);

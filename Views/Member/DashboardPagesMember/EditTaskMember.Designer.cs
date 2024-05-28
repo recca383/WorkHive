@@ -85,6 +85,7 @@
             this.EditTaskExitbtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.EditTaskExitbtn.Textcolor = System.Drawing.Color.White;
             this.EditTaskExitbtn.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EditTaskExitbtn.Click += new System.EventHandler(this.EditTaskExitbtn_Click);
             // 
             // label1
             // 
