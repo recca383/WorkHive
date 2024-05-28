@@ -52,7 +52,11 @@ namespace WorkHive.Views
         {
             CurrentUser = MemberModelAccess.GetMemberInfo(ID);
             var parent = Directory.GetParent(Directory.GetCurrentDirectory()).FullName;
-            if (CurrentUser.Profile_Pic == " ")
+            if (CurrentUser.Profile_Pic.Contains("C:\\") || CurrentUser.Profile_Pic.Contains("D:\\"))
+            {
+                ProfilePicBox.Image = Image.FromFile(CurrentUser.Profile_Pic);
+            }
+            else if (CurrentUser.Profile_Pic == " ")
             {
                 ProfilePicBox.Image = Image.FromFile(Path.Combine(Path.GetDirectoryName(parent), "Resources\\Default_Pics\\Userdefault.png"));
             }
