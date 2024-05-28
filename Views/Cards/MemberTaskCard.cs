@@ -25,7 +25,6 @@ namespace WorkHive.Views.Cards
             this.task = task;
             InitializeComponent();
             InitializeElements();
-            OnUpdate += InitializeElements;
 
         }
 
@@ -40,16 +39,6 @@ namespace WorkHive.Views.Cards
             if (projectassigned == null) lblProjectName.Text = "No Project assigned";
             else lblProjectName.Text = projectassigned.ProjectName;
 
-            switch (task.TaskStatus)
-            {
-                case Status.Ongoing:
-                    btnMarkAsDone.Text = "Mark As Done";
-                    break;
-                case Status.Finished:
-                    btnMarkAsDone.Text = "Mark As Not Done";
-                    break;
-            }
-
             pictureboxFinished.Image = task.TaskImage;
         }
 
@@ -57,7 +46,6 @@ namespace WorkHive.Views.Cards
         {
 
             TaskViewMember editTask = (TaskViewMember)this.Parent.Parent;
-
             editTask.btnEdittasks_Click(sender, e, task.TaskID);
 
         }
