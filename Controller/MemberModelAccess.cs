@@ -73,7 +73,7 @@ namespace WorkHive.Controller
                 $");";
 
 
-            //SQLConnect.ExecuteNonQuery(template);
+            memberModel.Add(member);
         }
         public static bool ChangePassword (MemberModel member, string currentPassword, string newPassword, string newPasswordConfirm)
         {

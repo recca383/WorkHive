@@ -49,7 +49,7 @@ namespace WorkHive.Controller
 
             if(selectedtasks.Count() > 0)
             {
-                int totaltasks = selectedtasks.Count();
+                int totaltasks = selectedtasks.Count(t => t.TaskStatus != Status.Archived);
                 int finishedtasks = selectedtasks.Count(t => t.TaskStatus == Status.Finished);
 
                 float average = (float)finishedtasks / totaltasks * 100;

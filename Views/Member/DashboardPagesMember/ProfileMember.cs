@@ -21,6 +21,7 @@ namespace WorkHive.Views.Member.DashboardPagesMember
             this.currentMember = currentMember;
             InitializeComponent();
             InitializeElements();
+            ProfileEditMember.OnUpdate += InitializeElements;
         }
         private void InitializeElements()
         {
