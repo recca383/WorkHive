@@ -19,11 +19,7 @@ namespace WorkHive.Controller
     internal class MemberModelAccess
     {
 
-        private static List<MemberModel> memberModel;
-        
-        public static void RefreshData()=>
-            //memberModel = SQLConnect.GetMembersFromDB("Select * From Members");
-            memberModel = new List<MemberModel>()
+        private static List<MemberModel> memberModel = new List<MemberModel>
         {
             new MemberModel()
             {//sirpatrick121402@gmail.com

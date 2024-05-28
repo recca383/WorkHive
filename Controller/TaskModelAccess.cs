@@ -5,7 +5,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using WorkHive.Data;
 using WorkHive.Model;
 using WorkHive.Views.LandingPage.LandingPagePages;
 
@@ -13,44 +12,43 @@ namespace WorkHive.Controller
 {
     public class TaskModelAccess
     {
-        private static List<TaskModel> Tasks = SQLConnect.GetTasksFromDB("Select * From Tasks");
+        private static List<TaskModel> Tasks = new List<TaskModel>()
+        {
+            new TaskModel
+            {
+                TaskID = 0,
+                TaskName = "Kalahati",
+                TaskDescription = "Lorem Ipsum",
+                TaskStatus = Status.Ongoing,
+                TaskStart = new DateTime(2024, 4, 16),
+                Deadline = new DateTime(2024, 5, 9),
+                ProjectAssigned = ProjectModelAccess.GetProjectDetails(0)
+            },
+            new TaskModel
+            {
+                TaskID = 1,
+                TaskName = "Done",
+                TaskDescription = "Lorem Ipsum",
+                TaskStatus = Status.Finished,
+                TaskStart = new DateTime(2024, 4, 16),
+                Deadline = new DateTime(2024, 5, 3),
+                ProjectAssigned = ProjectModelAccess.GetProjectDetails(0)
+            },
+            new TaskModel
+            {
+                TaskID = 2,
+                TaskName = "Archived",
+                TaskDescription = "Lorem Ipsum",
+                TaskStatus = Status.Archived,
+                TaskStart = new DateTime(2024, 4, 16),
+                Deadline = new DateTime(2024, 5, 7),
+                ProjectAssigned = ProjectModelAccess.GetProjectDetails(0)
 
-        //{x`
-        //    new TaskModel
-        //    {
-        //        TaskID = 0,
-        //        TaskName = "Kalahati",
-        //        TaskDescription = "Lorem Ipsum",
-        //        TaskStatus = Status.Ongoing,
-        //        TaskStart = new DateTime(2024, 4, 16),
-        //        Deadline = new DateTime(2024, 5, 9),
-        //        ProjectAssigned = ProjectModelAccess.GetProjectDetails(0)
-        //    },
-        //    new TaskModel
-        //    {
-        //        TaskID = 1,
-        //        TaskName = "Done",
-        //        TaskDescription = "Lorem Ipsum",
-        //        TaskStatus = Status.Finished,
-        //        TaskStart = new DateTime(2024, 4, 16),
-        //        Deadline = new DateTime(2024, 5, 3),
-        //        ProjectAssigned = ProjectModelAccess.GetProjectDetails(0)
-        //    },
-        //    new TaskModel
-        //    {
-        //        TaskID = 2,
-        //        TaskName = "Archived",
-        //        TaskDescription = "Lorem Ipsum",
-        //        TaskStatus = Status.Archived,
-        //        TaskStart = new DateTime(2024, 4, 16),
-        //        Deadline = new DateTime(2024, 5, 7),
-        //        ProjectAssigned = ProjectModelAccess.GetProjectDetails(0)
+            },
 
-        //    },
+        };
 
-        //};
-
-        public static TaskModel GetTaskInfo(int ID)
+public static TaskModel GetTaskInfo(int ID)
         {
             return Tasks.FirstOrDefault(i => i.TaskID == ID);
         }
@@ -113,8 +111,7 @@ namespace WorkHive.Controller
                 $"\"{Deadline}\"" +
                 $");";
 
-                
-                SQLConnect.ExecuteNonQuery(template);
+                Tasks.Add(newTask);
                 foreach (var member in members)
                 {
                     new MailNotif(member.Email, newTask);

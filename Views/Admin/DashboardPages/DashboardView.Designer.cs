@@ -201,7 +201,6 @@
             this.label23.Size = new System.Drawing.Size(80, 26);
             this.label23.TabIndex = 10;
             this.label23.Text = "Deadline";
-            this.label23.Click += new System.EventHandler(this.label23_Click);
             // 
             // label22
             // 
@@ -643,7 +642,6 @@
             this.lblFinishedTasks.TabIndex = 8;
             this.lblFinishedTasks.Text = "0";
             this.lblFinishedTasks.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.lblFinishedTasks.Click += new System.EventHandler(this.lblFinishedTasks_Click);
             // 
             // label9
             // 
