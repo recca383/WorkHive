@@ -36,7 +36,7 @@ namespace WorkHive.Model
             {
                 if (MiddleName != "" && ExtensionName != "")
                 {
-                    return FirstName + " "+ MiddleName + "." + " " + LastName + " " + ExtensionName;
+                    return FirstName + " "+ MiddleName + " " + LastName + " " + ExtensionName;
                 }
                 else
                 {
