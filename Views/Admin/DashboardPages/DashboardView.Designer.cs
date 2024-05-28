@@ -578,7 +578,7 @@
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(208, 25);
             this.label8.TabIndex = 2;
-            this.label8.Text = "Finished Project";
+            this.label8.Text = "Total Projects";
             this.label8.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.label8.Click += new System.EventHandler(this.label8_Click);
             // 

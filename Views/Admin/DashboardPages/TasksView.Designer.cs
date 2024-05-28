@@ -196,8 +196,8 @@
             this.StatusFilter.ItemBorderColor = System.Drawing.Color.White;
             this.StatusFilter.ItemForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.StatusFilter.ItemHeight = 26;
-            this.StatusFilter.ItemHighLightColor = System.Drawing.Color.Goldenrod;
-            this.StatusFilter.Location = new System.Drawing.Point(775, 34);
+            this.StatusFilter.ItemHighLightColor = System.Drawing.Color.Gold;
+            this.StatusFilter.Location = new System.Drawing.Point(779, 34);
             this.StatusFilter.Margin = new System.Windows.Forms.Padding(4);
             this.StatusFilter.Name = "StatusFilter";
             this.StatusFilter.Size = new System.Drawing.Size(288, 32);
@@ -229,8 +229,8 @@
             this.ProjectFilter.ItemBorderColor = System.Drawing.Color.White;
             this.ProjectFilter.ItemForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ProjectFilter.ItemHeight = 26;
-            this.ProjectFilter.ItemHighLightColor = System.Drawing.Color.Goldenrod;
-            this.ProjectFilter.Location = new System.Drawing.Point(363, 34);
+            this.ProjectFilter.ItemHighLightColor = System.Drawing.Color.Gold;
+            this.ProjectFilter.Location = new System.Drawing.Point(367, 34);
             this.ProjectFilter.Margin = new System.Windows.Forms.Padding(4);
             this.ProjectFilter.Name = "ProjectFilter";
             this.ProjectFilter.Size = new System.Drawing.Size(288, 32);

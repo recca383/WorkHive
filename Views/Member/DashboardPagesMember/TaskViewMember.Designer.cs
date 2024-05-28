@@ -44,19 +44,20 @@
             // TasksFlow
             // 
             this.TasksFlow.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-            this.TasksFlow.Location = new System.Drawing.Point(27, 72);
+            this.TasksFlow.Location = new System.Drawing.Point(47, 86);
+            this.TasksFlow.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.TasksFlow.Name = "TasksFlow";
-            this.TasksFlow.Size = new System.Drawing.Size(886, 513);
+            this.TasksFlow.Size = new System.Drawing.Size(1157, 631);
             this.TasksFlow.TabIndex = 10;
             this.TasksFlow.WrapContents = false;
             // 
             // TasksName
             // 
-            this.TasksName.AutoSize = true;
-            this.TasksName.Font = new System.Drawing.Font("Microsoft Sans Serif", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TasksName.Location = new System.Drawing.Point(11, 11);
+            this.TasksName.Font = new System.Drawing.Font("Montserrat", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TasksName.Location = new System.Drawing.Point(11, 10);
+            this.TasksName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.TasksName.Name = "TasksName";
-            this.TasksName.Size = new System.Drawing.Size(116, 39);
+            this.TasksName.Size = new System.Drawing.Size(157, 60);
             this.TasksName.TabIndex = 9;
             this.TasksName.Text = "Tasks";
             // 
@@ -80,8 +81,8 @@
             this.bunifuVScrollBar1.BorderThickness = 1;
             this.bunifuVScrollBar1.DurationBeforeShrink = 2000;
             this.bunifuVScrollBar1.LargeChange = 10;
-            this.bunifuVScrollBar1.Location = new System.Drawing.Point(914, 72);
-            this.bunifuVScrollBar1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bunifuVScrollBar1.Location = new System.Drawing.Point(1219, 89);
+            this.bunifuVScrollBar1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.bunifuVScrollBar1.Maximum = 100;
             this.bunifuVScrollBar1.Minimum = 0;
             this.bunifuVScrollBar1.MinimumThumbLength = 18;
@@ -92,11 +93,11 @@
             this.bunifuVScrollBar1.ScrollBarBorderColor = System.Drawing.Color.Silver;
             this.bunifuVScrollBar1.ScrollBarColor = System.Drawing.Color.Silver;
             this.bunifuVScrollBar1.ShrinkSizeLimit = 3;
-            this.bunifuVScrollBar1.Size = new System.Drawing.Size(18, 509);
+            this.bunifuVScrollBar1.Size = new System.Drawing.Size(24, 626);
             this.bunifuVScrollBar1.SmallChange = 1;
             this.bunifuVScrollBar1.TabIndex = 15;
             this.bunifuVScrollBar1.ThumbColor = System.Drawing.Color.Gray;
-            this.bunifuVScrollBar1.ThumbLength = 50;
+            this.bunifuVScrollBar1.ThumbLength = 61;
             this.bunifuVScrollBar1.ThumbMargin = 1;
             this.bunifuVScrollBar1.ThumbStyle = Bunifu.UI.WinForms.BunifuVScrollBar.ThumbStyles.Inset;
             this.bunifuVScrollBar1.Value = 0;
@@ -109,9 +110,10 @@
             this.RefreshButton.BorderRadius = 0;
             this.RefreshButton.Image = global::WorkHive.Properties.Resources.refresh;
             this.RefreshButton.IsCircle = false;
-            this.RefreshButton.Location = new System.Drawing.Point(885, 29);
+            this.RefreshButton.Location = new System.Drawing.Point(1191, 34);
+            this.RefreshButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.RefreshButton.Name = "RefreshButton";
-            this.RefreshButton.Size = new System.Drawing.Size(28, 26);
+            this.RefreshButton.Size = new System.Drawing.Size(37, 32);
             this.RefreshButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.RefreshButton.TabIndex = 20;
             this.RefreshButton.TabStop = false;
@@ -121,26 +123,29 @@
             // 
             this.AddTaskPanel.BackColor = System.Drawing.Color.Transparent;
             this.AddTaskPanel.ForeColor = System.Drawing.Color.Transparent;
-            this.AddTaskPanel.Location = new System.Drawing.Point(290, 8);
+            this.AddTaskPanel.Location = new System.Drawing.Point(394, 4);
+            this.AddTaskPanel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.AddTaskPanel.Name = "AddTaskPanel";
-            this.AddTaskPanel.Size = new System.Drawing.Size(29, 36);
+            this.AddTaskPanel.Size = new System.Drawing.Size(39, 44);
             this.AddTaskPanel.TabIndex = 26;
             this.AddTaskPanel.ControlRemoved += new System.Windows.Forms.ControlEventHandler(this.AddTaskPanel_ControlRemoved);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(534, 39);
+            this.label1.Font = new System.Drawing.Font("Montserrat", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(687, 39);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(46, 13);
+            this.label1.Size = new System.Drawing.Size(80, 24);
             this.label1.TabIndex = 27;
             this.label1.Text = "Status : ";
             // 
             // ProjectFilter
             // 
             this.ProjectFilter.BackColor = System.Drawing.SystemColors.Control;
-            this.ProjectFilter.BorderRadius = 1;
-            this.ProjectFilter.Color = System.Drawing.Color.Gold;
+            this.ProjectFilter.BorderRadius = 5;
+            this.ProjectFilter.Color = System.Drawing.Color.Goldenrod;
             this.ProjectFilter.Direction = Bunifu.UI.WinForms.BunifuDropdown.Directions.Down;
             this.ProjectFilter.DisabledColor = System.Drawing.Color.Gray;
             this.ProjectFilter.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
@@ -150,6 +155,7 @@
             this.ProjectFilter.FillDropDown = false;
             this.ProjectFilter.FillIndicator = false;
             this.ProjectFilter.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ProjectFilter.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ProjectFilter.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ProjectFilter.FormattingEnabled = true;
             this.ProjectFilter.Icon = null;
@@ -160,17 +166,18 @@
             this.ProjectFilter.ItemForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ProjectFilter.ItemHeight = 26;
             this.ProjectFilter.ItemHighLightColor = System.Drawing.Color.Gold;
-            this.ProjectFilter.Location = new System.Drawing.Point(290, 29);
+            this.ProjectFilter.Location = new System.Drawing.Point(367, 34);
+            this.ProjectFilter.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ProjectFilter.Name = "ProjectFilter";
-            this.ProjectFilter.Size = new System.Drawing.Size(217, 32);
+            this.ProjectFilter.Size = new System.Drawing.Size(288, 32);
             this.ProjectFilter.TabIndex = 24;
             this.ProjectFilter.Text = null;
             // 
             // StatusFilter
             // 
             this.StatusFilter.BackColor = System.Drawing.SystemColors.Control;
-            this.StatusFilter.BorderRadius = 1;
-            this.StatusFilter.Color = System.Drawing.Color.Gold;
+            this.StatusFilter.BorderRadius = 5;
+            this.StatusFilter.Color = System.Drawing.Color.Goldenrod;
             this.StatusFilter.Direction = Bunifu.UI.WinForms.BunifuDropdown.Directions.Down;
             this.StatusFilter.DisabledColor = System.Drawing.Color.Gray;
             this.StatusFilter.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
@@ -180,6 +187,7 @@
             this.StatusFilter.FillDropDown = false;
             this.StatusFilter.FillIndicator = false;
             this.StatusFilter.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.StatusFilter.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.StatusFilter.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.StatusFilter.FormattingEnabled = true;
             this.StatusFilter.Icon = null;
@@ -190,9 +198,10 @@
             this.StatusFilter.ItemForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.StatusFilter.ItemHeight = 26;
             this.StatusFilter.ItemHighLightColor = System.Drawing.Color.Gold;
-            this.StatusFilter.Location = new System.Drawing.Point(586, 29);
+            this.StatusFilter.Location = new System.Drawing.Point(779, 34);
+            this.StatusFilter.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.StatusFilter.Name = "StatusFilter";
-            this.StatusFilter.Size = new System.Drawing.Size(217, 32);
+            this.StatusFilter.Size = new System.Drawing.Size(288, 32);
             this.StatusFilter.TabIndex = 25;
             this.StatusFilter.Text = null;
             this.StatusFilter.SelectedIndexChanged += new System.EventHandler(this.StatusFilter_SelectedIndexChanged);
@@ -200,15 +209,17 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(171, 37);
+            this.label2.Font = new System.Drawing.Font("Montserrat", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(220, 39);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(80, 13);
+            this.label2.Size = new System.Drawing.Size(144, 24);
             this.label2.TabIndex = 28;
             this.label2.Text = "Project Name : ";
             // 
             // TaskViewMember
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.AddTaskPanel);
             this.Controls.Add(this.label1);
@@ -219,9 +230,9 @@
             this.Controls.Add(this.bunifuVScrollBar1);
             this.Controls.Add(this.TasksFlow);
             this.Controls.Add(this.TasksName);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "TaskViewMember";
-            this.Size = new System.Drawing.Size(932, 585);
+            this.Size = new System.Drawing.Size(1243, 720);
             ((System.ComponentModel.ISupportInitialize)(this.RefreshButton)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
