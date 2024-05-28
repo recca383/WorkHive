@@ -50,7 +50,7 @@
             this.TasksName.Location = new System.Drawing.Point(11, 10);
             this.TasksName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.TasksName.Name = "TasksName";
-            this.TasksName.Size = new System.Drawing.Size(154, 61);
+            this.TasksName.Size = new System.Drawing.Size(151, 60);
             this.TasksName.TabIndex = 2;
             this.TasksName.Text = "Tasks";
             // 
@@ -186,7 +186,7 @@
             this.StatusFilter.FillDropDown = false;
             this.StatusFilter.FillIndicator = false;
             this.StatusFilter.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.StatusFilter.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.StatusFilter.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.StatusFilter.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.StatusFilter.FormattingEnabled = true;
             this.StatusFilter.Icon = null;
@@ -219,7 +219,7 @@
             this.ProjectFilter.FillDropDown = false;
             this.ProjectFilter.FillIndicator = false;
             this.ProjectFilter.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ProjectFilter.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ProjectFilter.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ProjectFilter.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ProjectFilter.FormattingEnabled = true;
             this.ProjectFilter.Icon = null;

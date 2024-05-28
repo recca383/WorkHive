@@ -133,19 +133,16 @@
         gg==
 </value>
   </data>
-  <metadata name="panel2.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
   <data name="bunifuVScrollBar1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAAA8AAAECCAYAAAAhP40gAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAFgSURBVGhD7dstTgNBHIbxlZXISiRHQCI5BoYEg0cikCgE
-        lyCpw+6HIqi9AYoqSEppgAQEvLPMJu1kFvYB+07yy2Zn/k+bPcAU6aqqaioncl3XdatnKaeyE0fySwOH
-        Ch6bpvnQ8zOx1Pl5HN1c4R808JQEqZXcanYSsy481ubz2tCgsizf9Lzow229LNYHRlio2w3xmV5y3/ib
-        q/5bc4c/UncX4tfc4RhFbnMsx5BjyDHkGHIMOYYcQ44hx5BjyDHkGHIMOYYcQ44hx5BjyDHkGHIMOYYc
-        Q44hx5BjyDHkGHIMOYYcQ44hx5BjyDHkGHIMOYYcQ44hx5BjyDHkGHIMOYYcQ46hf8d/uVzaCXGbbo70
-        EOLLZHOUcKs13E7d0wu9VLtSd9Dfyp3Je2ZoSNuFYSmcyHzkD9xrbhrT76WNLZnpcOgTXiTch94M15cO
-        9zV0o+cyRHqGG7shOoojcRXFF8ZXj5Zh3VVIAAAAAElFTkSuQmCC
+        iVBORw0KGgoAAAANSUhEUgAAAA8AAAEdCAYAAADTvz1uAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAFqSURBVHhe7dwvTgNBHEfxykpkJZIjIJEcA0OCwSMRSBSC
+        S5DUYftHEVRvgAIFSSkNkICA75RtUjZb2IcjeZN8stmZ32uzF5hOfQ2Hw14cxeVoNJrkOYjj2KpGmlcG
+        9hM8jMfj9zw/amY5P61Gv6/yDxl4rAV187jObLfKFuFhNp9WhtYaDAaveZ4tw828TFcHWpim2y7xSV6a
+        vvE3F8tvbTr8UbqbEr80HbbRadpsyxgyhowhY8gYMoaMIWPIGDKGjCFjyBgyhowhY8gYMoaMIWPIGDKG
+        jCFjyBgyhowhY8gYMoaMIWPIGDKGjCFjyBgyhowhY8gYMoaMIWPIGDKGjCFjyBgyhowhY8gY+sfxX+4y
+        WCjxpL7Z0n2Jz2ubrZRLFMplCDt5oXc4zNPtLS+B6Mdbw9A6k0VYVsJu3LX8gdvM9ar0a2VjI/o5XPcJ
+        z1Gu3/gerq4c7mboKs9ZifIsF0SU6KAaqVan8wlRLrKMQPiomgAAAABJRU5ErkJggg==
 </value>
   </data>
   <data name="pictureBox11.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
@@ -163,9 +160,6 @@
         gg==
 </value>
   </data>
-  <metadata name="panel3.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
   <metadata name="panel6.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
@@ -184,9 +178,6 @@
         gg==
 </value>
   </data>
-  <metadata name="panel4.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
   <data name="pictureBox8.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAALUAAABJCAYAAAB7A2fLAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
@@ -202,9 +193,6 @@
         gg==
 </value>
   </data>
-  <metadata name="panel5.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
   <data name="bunifuVScrollBar2.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABEAAADYCAYAAAANigiGAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
@@ -232,9 +220,6 @@
         gg==
 </value>
   </data>
-  <metadata name="panel7.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
   <data name="pictureBox3.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAALUAAABJCAYAAAB7A2fLAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
@@ -280,10 +265,4 @@
         gg==
 </value>
   </data>
-  <metadata name="RefreshButton.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="$this.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
 </root>

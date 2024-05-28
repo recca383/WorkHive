@@ -51,23 +51,23 @@
             this.CalendarName.Location = new System.Drawing.Point(11, 10);
             this.CalendarName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.CalendarName.Name = "CalendarName";
-            this.CalendarName.Size = new System.Drawing.Size(233, 61);
+            this.CalendarName.Size = new System.Drawing.Size(230, 60);
             this.CalendarName.TabIndex = 2;
             this.CalendarName.Text = "Calendar";
             // 
             // DayContainer
             // 
             this.DayContainer.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.DayContainer.Location = new System.Drawing.Point(15, 142);
+            this.DayContainer.Location = new System.Drawing.Point(69, 142);
             this.DayContainer.Name = "DayContainer";
-            this.DayContainer.Size = new System.Drawing.Size(1201, 641);
+            this.DayContainer.Size = new System.Drawing.Size(1236, 641);
             this.DayContainer.TabIndex = 3;
             // 
             // Sunday
             // 
             this.Sunday.AutoSize = true;
             this.Sunday.Font = new System.Drawing.Font("Montserrat", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Sunday.Location = new System.Drawing.Point(65, 100);
+            this.Sunday.Location = new System.Drawing.Point(107, 100);
             this.Sunday.Name = "Sunday";
             this.Sunday.Size = new System.Drawing.Size(77, 24);
             this.Sunday.TabIndex = 7;
@@ -77,7 +77,7 @@
             // 
             this.Monday.AutoSize = true;
             this.Monday.Font = new System.Drawing.Font("Montserrat", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Monday.Location = new System.Drawing.Point(230, 100);
+            this.Monday.Location = new System.Drawing.Point(277, 100);
             this.Monday.Name = "Monday";
             this.Monday.Size = new System.Drawing.Size(81, 24);
             this.Monday.TabIndex = 8;
@@ -88,7 +88,7 @@
             this.Tuesday.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.Tuesday.AutoSize = true;
             this.Tuesday.Font = new System.Drawing.Font("Montserrat", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Tuesday.Location = new System.Drawing.Point(398, 100);
+            this.Tuesday.Location = new System.Drawing.Point(438, 100);
             this.Tuesday.Name = "Tuesday";
             this.Tuesday.Size = new System.Drawing.Size(85, 24);
             this.Tuesday.TabIndex = 9;
@@ -99,7 +99,7 @@
             this.Wednesday.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.Wednesday.AutoSize = true;
             this.Wednesday.Font = new System.Drawing.Font("Montserrat", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Wednesday.Location = new System.Drawing.Point(551, 100);
+            this.Wednesday.Location = new System.Drawing.Point(596, 100);
             this.Wednesday.Name = "Wednesday";
             this.Wednesday.Size = new System.Drawing.Size(116, 24);
             this.Wednesday.TabIndex = 10;
@@ -110,7 +110,7 @@
             this.Thursday.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.Thursday.AutoSize = true;
             this.Thursday.Font = new System.Drawing.Font("Montserrat", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Thursday.Location = new System.Drawing.Point(725, 100);
+            this.Thursday.Location = new System.Drawing.Point(776, 100);
             this.Thursday.Name = "Thursday";
             this.Thursday.Size = new System.Drawing.Size(93, 24);
             this.Thursday.TabIndex = 11;
@@ -121,7 +121,7 @@
             this.Friday.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.Friday.AutoSize = true;
             this.Friday.Font = new System.Drawing.Font("Montserrat", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Friday.Location = new System.Drawing.Point(911, 100);
+            this.Friday.Location = new System.Drawing.Point(953, 100);
             this.Friday.Name = "Friday";
             this.Friday.Size = new System.Drawing.Size(65, 24);
             this.Friday.TabIndex = 12;
@@ -132,7 +132,7 @@
             this.Saturday.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.Saturday.AutoSize = true;
             this.Saturday.Font = new System.Drawing.Font("Montserrat", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Saturday.Location = new System.Drawing.Point(1080, 100);
+            this.Saturday.Location = new System.Drawing.Point(1113, 100);
             this.Saturday.Name = "Saturday";
             this.Saturday.Size = new System.Drawing.Size(89, 24);
             this.Saturday.TabIndex = 13;
@@ -142,7 +142,7 @@
             // 
             this.lblDate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblDate.Font = new System.Drawing.Font("Montserrat", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDate.Location = new System.Drawing.Point(604, 29);
+            this.lblDate.Location = new System.Drawing.Point(632, 29);
             this.lblDate.Name = "lblDate";
             this.lblDate.Size = new System.Drawing.Size(469, 42);
             this.lblDate.TabIndex = 15;
@@ -172,7 +172,7 @@
             this.btnPrevious.IconVisible = true;
             this.btnPrevious.IconZoom = 40D;
             this.btnPrevious.IsTab = false;
-            this.btnPrevious.Location = new System.Drawing.Point(1085, 29);
+            this.btnPrevious.Location = new System.Drawing.Point(1113, 29);
             this.btnPrevious.Margin = new System.Windows.Forms.Padding(0);
             this.btnPrevious.Name = "btnPrevious";
             this.btnPrevious.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(44)))), ((int)(((byte)(49)))));
@@ -203,14 +203,14 @@
             this.btnNext.Iconimage_right = null;
             this.btnNext.Iconimage_right_Selected = null;
             this.btnNext.Iconimage_Selected = null;
-            this.btnNext.IconMarginLeft = 20;
+            this.btnNext.IconMarginLeft = 15;
             this.btnNext.IconMarginRight = 0;
             this.btnNext.IconRightVisible = true;
             this.btnNext.IconRightZoom = 0D;
             this.btnNext.IconVisible = true;
             this.btnNext.IconZoom = 40D;
             this.btnNext.IsTab = false;
-            this.btnNext.Location = new System.Drawing.Point(1156, 29);
+            this.btnNext.Location = new System.Drawing.Point(1184, 29);
             this.btnNext.Margin = new System.Windows.Forms.Padding(0);
             this.btnNext.Name = "btnNext";
             this.btnNext.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(44)))), ((int)(((byte)(49)))));
@@ -227,6 +227,8 @@
             // 
             // panel1
             // 
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.Controls.Add(this.DayContainer);
             this.panel1.Controls.Add(this.lblDate);
             this.panel1.Controls.Add(this.Sunday);
@@ -241,7 +243,7 @@
             this.panel1.Controls.Add(this.Saturday);
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1243, 820);
+            this.panel1.Size = new System.Drawing.Size(1313, 820);
             this.panel1.TabIndex = 16;
             // 
             // CalendarView
@@ -250,7 +252,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.panel1);
             this.Name = "CalendarView";
-            this.Size = new System.Drawing.Size(1243, 823);
+            this.Size = new System.Drawing.Size(1355, 823);
             this.Load += new System.EventHandler(this.CalendarView_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

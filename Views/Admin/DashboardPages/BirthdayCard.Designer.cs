@@ -36,10 +36,10 @@
             // 
             this.MemberName.AutoSize = true;
             this.MemberName.BackColor = System.Drawing.Color.Transparent;
-            this.MemberName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.MemberName.Location = new System.Drawing.Point(60, 21);
+            this.MemberName.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MemberName.Location = new System.Drawing.Point(60, 11);
             this.MemberName.Name = "MemberName";
-            this.MemberName.Size = new System.Drawing.Size(190, 22);
+            this.MemberName.Size = new System.Drawing.Size(207, 28);
             this.MemberName.TabIndex = 0;
             this.MemberName.Text = "Nathaniel\'s Birthday";
             // 
@@ -47,17 +47,16 @@
             // 
             this.MemberBirthday.AutoSize = true;
             this.MemberBirthday.BackColor = System.Drawing.Color.Transparent;
-            this.MemberBirthday.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.MemberBirthday.Location = new System.Drawing.Point(161, 47);
+            this.MemberBirthday.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MemberBirthday.Location = new System.Drawing.Point(62, 39);
             this.MemberBirthday.Name = "MemberBirthday";
-            this.MemberBirthday.Size = new System.Drawing.Size(88, 13);
+            this.MemberBirthday.Size = new System.Drawing.Size(91, 17);
             this.MemberBirthday.TabIndex = 1;
             this.MemberBirthday.Text = "June 06, 2024";
             // 
             // BirthdayCard
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.AutoSize = true;
             this.BackgroundImage = global::WorkHive.Properties.Resources.BirthdayCard2;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Controls.Add(this.MemberBirthday);
@@ -65,7 +64,8 @@
             this.DoubleBuffered = true;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "BirthdayCard";
-            this.Size = new System.Drawing.Size(260, 63);
+            this.Padding = new System.Windows.Forms.Padding(2);
+            this.Size = new System.Drawing.Size(273, 63);
             this.ResumeLayout(false);
             this.PerformLayout();
 
