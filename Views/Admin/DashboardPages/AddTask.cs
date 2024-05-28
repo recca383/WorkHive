@@ -45,7 +45,7 @@ namespace WorkHive
         {
 
             int taskID = TaskModelAccess.GetTaskCount();
-            TaskModelAccess.AddTask( new TaskModel
+            TaskModel newTask = new TaskModel
             {
                 TaskID = taskID, 
                 TaskName = TaskNametxt.Text, 
@@ -55,7 +55,8 @@ namespace WorkHive
                 Deadline = DatePickerDeadline.Value,
                 TaskStart = DateTime.Now
             }
-            );
+            ;
+            TaskModelAccess.AddTask(newTask);
             TasksView taskview = (TasksView)Parent.Parent;
             taskview.OnProjectTasksOnclick(projects.FirstOrDefault(n => n.ProjectName == Dropdownassignproject.SelectedItem.ToString()));
             this.Parent.Controls.Remove(this);

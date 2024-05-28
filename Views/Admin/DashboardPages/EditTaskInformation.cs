@@ -33,14 +33,15 @@ namespace WorkHive.Views.Admin.DashboardPages
 
         private void SetDefaultValues()
         {
+            ProjectModel project = projectModels.FirstOrDefault(p => p.Tasks.Contains(selectedtask));
             dropdownStatus.DataSource = Enum.GetNames(typeof(Status));
             dropdownStatus.SelectedIndex = (int)selectedtask.TaskStatus;
 
             EditTaskNametxt.PlaceholderText = selectedtask.TaskName;
             EditDatePickerDeadline.Value = selectedtask.Deadline; // masyado daw maliit
             EditTaskDescriptiontxt.PlaceholderText = selectedtask.TaskDescription;
-            EditDropdownAssignProject.DataSource = projectModels.Select(n => n.ProjectName).ToArray();
-            EditDropdownAssignProject.SelectedItem = selectedtask.ProjectAssigned;
+            EditDropdownAssignProject.DataSource = projectModels.Select(p => p.ProjectName).ToArray();
+            EditDropdownAssignProject.SelectedIndex = projectModels.IndexOf(project);
 
         }
         private void EditTaskSubmitbtn_Click(object sender, EventArgs e)

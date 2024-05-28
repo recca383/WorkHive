@@ -38,8 +38,6 @@ namespace WorkHive.Views.Member.DashboardPagesMember
         {
             ProjectModel projectAssign = default;
 
-
-
             TaskModelAccess.EditTask(new TaskModel
             {
                 TaskStatus = (Status)dropdownStatus.SelectedIndex,

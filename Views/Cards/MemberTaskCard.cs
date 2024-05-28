@@ -25,18 +25,19 @@ namespace WorkHive.Views.Cards
             this.task = task;
             InitializeComponent();
             InitializeElements();
+
         }
 
         private void InitializeElements()
         {
+            List<ProjectModel> projects = ProjectModelAccess.GetProjects();
+            ProjectModel projectassigned = projects.FirstOrDefault(x => x.Tasks.Contains(task));
+
             lblTask_Title.Text = task.TaskName;
             lblTask_Date.Text = ($"{CultureInfo.CurrentCulture.DateTimeFormat.GetMonthName(task.TaskStart.Month)} {task.TaskStart.Day}");
             Deadlinetxt.Text = ($"{CultureInfo.CurrentCulture.DateTimeFormat.GetMonthName(task.Deadline.Month)} {task.Deadline.Day}");
-            if (task.ProjectAssigned is null) lblProjectName.Text = "No Project";
-            else lblProjectName.Text = task.ProjectAssigned.ProjectName;
-            
-   
-            
+            if (projectassigned == null) lblProjectName.Text = "No Project assigned";
+            else lblProjectName.Text = projectassigned.ProjectName;
 
             pictureboxFinished.Image = task.TaskImage;
         }
@@ -45,7 +46,6 @@ namespace WorkHive.Views.Cards
         {
 
             TaskViewMember editTask = (TaskViewMember)this.Parent.Parent;
-
             editTask.btnEdittasks_Click(sender, e, task.TaskID);
 
         }

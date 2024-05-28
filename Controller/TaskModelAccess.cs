@@ -112,6 +112,7 @@ public static TaskModel GetTaskInfo(int ID)
                 $");";
 
                 Tasks.Add(newTask);
+                ProjectModelAccess.AssignTaskToProject(newTask, null);
                 foreach (var member in members)
                 {
                     new MailNotif(member.Email, newTask);

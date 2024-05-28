@@ -25,6 +25,7 @@ namespace WorkHive.Views.Member.DashboardPagesMember
             InitializeElements();
             ProjectSummaryMember.Visible = false;
             AddProject.OnProjectAdded1 += RefreshButton_Click;
+            
         }
 
         private void InitializeElements()
@@ -36,14 +37,18 @@ namespace WorkHive.Views.Member.DashboardPagesMember
             }
         }
 
-        public void Summary_Click(object sender, EventArgs e, ProjectModel projectModel)
+        public void Summary_Click(object sender, EventArgs e)
         {
-            ProjectSummaryMember.Controls.Clear();
             ProjectSummaryMember.Location = new Point(148, 158);
             ProjectSummaryMember.Size = new Size(640, 301);
-            ProjectSummaryMember.Controls.Add(new ProjectSummary(projectModel));
             ProjectSummaryMember.Visible = true;
 
+        }
+        public void LoadProjectSummary(object sender, EventArgs e, ProjectModel projectModel)
+        {
+            projects = ProjectModelAccess.GetProjects();
+            ProjectSummaryMember.Controls.Clear();
+            ProjectSummaryMember.Controls.Add(new ProjectSummary(projectModel));
         }
         private void AddTaskPanel_ControlRemoved(object sender, ControlEventArgs e)
         {
