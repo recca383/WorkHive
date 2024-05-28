@@ -237,11 +237,11 @@
             // Deadlinetxt
             // 
             this.Deadlinetxt.AutoSize = true;
-            this.Deadlinetxt.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Deadlinetxt.Location = new System.Drawing.Point(788, 96);
+            this.Deadlinetxt.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Deadlinetxt.Location = new System.Drawing.Point(787, 84);
             this.Deadlinetxt.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Deadlinetxt.Name = "Deadlinetxt";
-            this.Deadlinetxt.Size = new System.Drawing.Size(59, 23);
+            this.Deadlinetxt.Size = new System.Drawing.Size(65, 23);
             this.Deadlinetxt.TabIndex = 13;
             this.Deadlinetxt.Text = "April 5";
             // 
@@ -270,11 +270,11 @@
             // lblTask_Date
             // 
             this.lblTask_Date.AutoSize = true;
-            this.lblTask_Date.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTask_Date.Location = new System.Drawing.Point(11, 96);
+            this.lblTask_Date.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTask_Date.Location = new System.Drawing.Point(10, 84);
             this.lblTask_Date.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTask_Date.Name = "lblTask_Date";
-            this.lblTask_Date.Size = new System.Drawing.Size(59, 23);
+            this.lblTask_Date.Size = new System.Drawing.Size(65, 23);
             this.lblTask_Date.TabIndex = 9;
             this.lblTask_Date.Text = "April 5";
             // 

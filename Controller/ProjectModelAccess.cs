@@ -19,6 +19,7 @@ namespace WorkHive.Controller
             {
                 Id = 0,
                 ProjectName = "Sample Project",
+                Instructor = "Johnny Villanueva",
                 StartDate = DateTime.Now,
                 Tasks = new List<TaskModel>(),
                 DeadLine = DateTime.Now,
@@ -28,6 +29,7 @@ namespace WorkHive.Controller
             {
                 Id = 1,
                 ProjectName = "Sample Project 2",
+                Instructor = "Johnny Kasalanan",
                 StartDate = DateTime.Now,
                 Tasks = new List<TaskModel>(),
                 DeadLine = DateTime.Now,

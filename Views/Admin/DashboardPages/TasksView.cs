@@ -129,5 +129,10 @@ namespace WorkHive.Views.Admin.DashboardPages
                 RefreshList(results);
             }
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

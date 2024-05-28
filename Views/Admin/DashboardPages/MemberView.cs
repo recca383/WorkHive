@@ -24,7 +24,7 @@ namespace WorkHive.Views.Admin.DashboardPages
         private Size MemberViewOriginalSize;
         private Rectangle recMembersName;
         private Rectangle recMembersFlow;
-        private Rectangle recbunifuVScrollBar1;
+
         List<MemberModel> members;
         public MemberView()
         {
@@ -35,14 +35,14 @@ namespace WorkHive.Views.Admin.DashboardPages
             MemberViewOriginalSize = this.Size;
             recMembersName = new Rectangle(MembersName.Location, MembersName.Size);
             recMembersFlow = new Rectangle(MembersFlow.Location, MembersFlow.Size);
-            recbunifuVScrollBar1 = new Rectangle(bunifuVScrollBar1.Location, bunifuVScrollBar1.Size);
+
         }
 
         private void MemberView_Resize(object sender, EventArgs e)
         {
             resize_Control(MembersName, recMembersName);
             resize_Control(MembersFlow, recMembersFlow);
-            resize_Control(bunifuVScrollBar1, recbunifuVScrollBar1);
+
         }
         private void resize_Control(Control c, Rectangle r)
         {

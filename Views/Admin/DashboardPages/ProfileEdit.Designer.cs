@@ -39,6 +39,12 @@
             this.bloodTypeDrop = new Bunifu.UI.WinForms.BunifuDropdown();
             this.EditPanel = new System.Windows.Forms.Panel();
             this.EditPanel2 = new System.Windows.Forms.Panel();
+            this.emailtxt = new System.Windows.Forms.TextBox();
+            this.contacttxt = new System.Windows.Forms.TextBox();
+            this.Extensiontxt = new System.Windows.Forms.TextBox();
+            this.Middlenametxt = new System.Windows.Forms.TextBox();
+            this.Lastnametxt = new System.Windows.Forms.TextBox();
+            this.firstnametxt = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
@@ -52,6 +58,12 @@
             this.BirthPicker = new Bunifu.UI.WinForms.BunifuDatePicker();
             this.bunifuPictureBox8 = new Bunifu.UI.WinForms.BunifuPictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.zipcodetxt = new System.Windows.Forms.TextBox();
+            this.provincetxt = new System.Windows.Forms.TextBox();
+            this.citymunicipaltxt = new System.Windows.Forms.TextBox();
+            this.barangaytxt = new System.Windows.Forms.TextBox();
+            this.Streettxt = new System.Windows.Forms.TextBox();
+            this.HouseNumbertxt = new System.Windows.Forms.TextBox();
             this.label17 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
@@ -71,18 +83,6 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.Editpicture = new System.Windows.Forms.PictureBox();
             this.addresslbl = new System.Windows.Forms.Label();
-            this.firstnametxt = new System.Windows.Forms.TextBox();
-            this.Lastnametxt = new System.Windows.Forms.TextBox();
-            this.Middlenametxt = new System.Windows.Forms.TextBox();
-            this.Extensiontxt = new System.Windows.Forms.TextBox();
-            this.contacttxt = new System.Windows.Forms.TextBox();
-            this.emailtxt = new System.Windows.Forms.TextBox();
-            this.HouseNumbertxt = new System.Windows.Forms.TextBox();
-            this.Streettxt = new System.Windows.Forms.TextBox();
-            this.barangaytxt = new System.Windows.Forms.TextBox();
-            this.citymunicipaltxt = new System.Windows.Forms.TextBox();
-            this.provincetxt = new System.Windows.Forms.TextBox();
-            this.zipcodetxt = new System.Windows.Forms.TextBox();
             this.EditPanel.SuspendLayout();
             this.EditPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox8)).BeginInit();
@@ -103,11 +103,11 @@
             // Employees
             // 
             this.Employees.AutoSize = true;
-            this.Employees.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Employees.Location = new System.Drawing.Point(24, 17);
+            this.Employees.Font = new System.Drawing.Font("Montserrat", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Employees.Location = new System.Drawing.Point(11, 10);
             this.Employees.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Employees.Name = "Employees";
-            this.Employees.Size = new System.Drawing.Size(259, 54);
+            this.Employees.Size = new System.Drawing.Size(282, 61);
             this.Employees.TabIndex = 10;
             this.Employees.Text = "Profile Edit";
             // 
@@ -305,6 +305,78 @@
             this.EditPanel2.Size = new System.Drawing.Size(587, 346);
             this.EditPanel2.TabIndex = 54;
             // 
+            // emailtxt
+            // 
+            this.emailtxt.AcceptsReturn = true;
+            this.emailtxt.AcceptsTab = true;
+            this.emailtxt.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.emailtxt.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.emailtxt.Location = new System.Drawing.Point(233, 227);
+            this.emailtxt.Multiline = true;
+            this.emailtxt.Name = "emailtxt";
+            this.emailtxt.Size = new System.Drawing.Size(159, 36);
+            this.emailtxt.TabIndex = 6;
+            // 
+            // contacttxt
+            // 
+            this.contacttxt.AcceptsReturn = true;
+            this.contacttxt.AcceptsTab = true;
+            this.contacttxt.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.contacttxt.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.contacttxt.Location = new System.Drawing.Point(49, 226);
+            this.contacttxt.Multiline = true;
+            this.contacttxt.Name = "contacttxt";
+            this.contacttxt.Size = new System.Drawing.Size(159, 36);
+            this.contacttxt.TabIndex = 5;
+            // 
+            // Extensiontxt
+            // 
+            this.Extensiontxt.AcceptsReturn = true;
+            this.Extensiontxt.AcceptsTab = true;
+            this.Extensiontxt.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.Extensiontxt.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Extensiontxt.Location = new System.Drawing.Point(49, 163);
+            this.Extensiontxt.Multiline = true;
+            this.Extensiontxt.Name = "Extensiontxt";
+            this.Extensiontxt.Size = new System.Drawing.Size(159, 36);
+            this.Extensiontxt.TabIndex = 4;
+            // 
+            // Middlenametxt
+            // 
+            this.Middlenametxt.AcceptsReturn = true;
+            this.Middlenametxt.AcceptsTab = true;
+            this.Middlenametxt.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.Middlenametxt.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Middlenametxt.Location = new System.Drawing.Point(413, 98);
+            this.Middlenametxt.Multiline = true;
+            this.Middlenametxt.Name = "Middlenametxt";
+            this.Middlenametxt.Size = new System.Drawing.Size(159, 36);
+            this.Middlenametxt.TabIndex = 3;
+            // 
+            // Lastnametxt
+            // 
+            this.Lastnametxt.AcceptsReturn = true;
+            this.Lastnametxt.AcceptsTab = true;
+            this.Lastnametxt.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.Lastnametxt.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Lastnametxt.Location = new System.Drawing.Point(233, 98);
+            this.Lastnametxt.Multiline = true;
+            this.Lastnametxt.Name = "Lastnametxt";
+            this.Lastnametxt.Size = new System.Drawing.Size(159, 36);
+            this.Lastnametxt.TabIndex = 2;
+            // 
+            // firstnametxt
+            // 
+            this.firstnametxt.AcceptsReturn = true;
+            this.firstnametxt.AcceptsTab = true;
+            this.firstnametxt.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.firstnametxt.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.firstnametxt.Location = new System.Drawing.Point(49, 97);
+            this.firstnametxt.Multiline = true;
+            this.firstnametxt.Name = "firstnametxt";
+            this.firstnametxt.Size = new System.Drawing.Size(159, 36);
+            this.firstnametxt.TabIndex = 1;
+            // 
             // label11
             // 
             this.label11.AutoSize = true;
@@ -471,6 +543,78 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(583, 346);
             this.panel2.TabIndex = 26;
+            // 
+            // zipcodetxt
+            // 
+            this.zipcodetxt.AcceptsReturn = true;
+            this.zipcodetxt.AcceptsTab = true;
+            this.zipcodetxt.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.zipcodetxt.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.zipcodetxt.Location = new System.Drawing.Point(301, 242);
+            this.zipcodetxt.Multiline = true;
+            this.zipcodetxt.Name = "zipcodetxt";
+            this.zipcodetxt.Size = new System.Drawing.Size(256, 36);
+            this.zipcodetxt.TabIndex = 74;
+            // 
+            // provincetxt
+            // 
+            this.provincetxt.AcceptsReturn = true;
+            this.provincetxt.AcceptsTab = true;
+            this.provincetxt.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.provincetxt.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.provincetxt.Location = new System.Drawing.Point(17, 242);
+            this.provincetxt.Multiline = true;
+            this.provincetxt.Name = "provincetxt";
+            this.provincetxt.Size = new System.Drawing.Size(256, 36);
+            this.provincetxt.TabIndex = 73;
+            // 
+            // citymunicipaltxt
+            // 
+            this.citymunicipaltxt.AcceptsReturn = true;
+            this.citymunicipaltxt.AcceptsTab = true;
+            this.citymunicipaltxt.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.citymunicipaltxt.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.citymunicipaltxt.Location = new System.Drawing.Point(301, 168);
+            this.citymunicipaltxt.Multiline = true;
+            this.citymunicipaltxt.Name = "citymunicipaltxt";
+            this.citymunicipaltxt.Size = new System.Drawing.Size(256, 36);
+            this.citymunicipaltxt.TabIndex = 72;
+            // 
+            // barangaytxt
+            // 
+            this.barangaytxt.AcceptsReturn = true;
+            this.barangaytxt.AcceptsTab = true;
+            this.barangaytxt.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.barangaytxt.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.barangaytxt.Location = new System.Drawing.Point(17, 168);
+            this.barangaytxt.Multiline = true;
+            this.barangaytxt.Name = "barangaytxt";
+            this.barangaytxt.Size = new System.Drawing.Size(256, 36);
+            this.barangaytxt.TabIndex = 71;
+            // 
+            // Streettxt
+            // 
+            this.Streettxt.AcceptsReturn = true;
+            this.Streettxt.AcceptsTab = true;
+            this.Streettxt.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.Streettxt.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Streettxt.Location = new System.Drawing.Point(301, 91);
+            this.Streettxt.Multiline = true;
+            this.Streettxt.Name = "Streettxt";
+            this.Streettxt.Size = new System.Drawing.Size(256, 36);
+            this.Streettxt.TabIndex = 70;
+            // 
+            // HouseNumbertxt
+            // 
+            this.HouseNumbertxt.AcceptsReturn = true;
+            this.HouseNumbertxt.AcceptsTab = true;
+            this.HouseNumbertxt.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.HouseNumbertxt.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.HouseNumbertxt.Location = new System.Drawing.Point(17, 91);
+            this.HouseNumbertxt.Multiline = true;
+            this.HouseNumbertxt.Name = "HouseNumbertxt";
+            this.HouseNumbertxt.Size = new System.Drawing.Size(256, 36);
+            this.HouseNumbertxt.TabIndex = 64;
             // 
             // label17
             // 
@@ -741,150 +885,6 @@
             this.addresslbl.Size = new System.Drawing.Size(170, 25);
             this.addresslbl.TabIndex = 53;
             this.addresslbl.Text = "Current Address";
-            // 
-            // firstnametxt
-            // 
-            this.firstnametxt.AcceptsReturn = true;
-            this.firstnametxt.AcceptsTab = true;
-            this.firstnametxt.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.firstnametxt.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.firstnametxt.Location = new System.Drawing.Point(49, 97);
-            this.firstnametxt.Multiline = true;
-            this.firstnametxt.Name = "firstnametxt";
-            this.firstnametxt.Size = new System.Drawing.Size(159, 36);
-            this.firstnametxt.TabIndex = 1;
-            // 
-            // Lastnametxt
-            // 
-            this.Lastnametxt.AcceptsReturn = true;
-            this.Lastnametxt.AcceptsTab = true;
-            this.Lastnametxt.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.Lastnametxt.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Lastnametxt.Location = new System.Drawing.Point(233, 98);
-            this.Lastnametxt.Multiline = true;
-            this.Lastnametxt.Name = "Lastnametxt";
-            this.Lastnametxt.Size = new System.Drawing.Size(159, 36);
-            this.Lastnametxt.TabIndex = 2;
-            // 
-            // Middlenametxt
-            // 
-            this.Middlenametxt.AcceptsReturn = true;
-            this.Middlenametxt.AcceptsTab = true;
-            this.Middlenametxt.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.Middlenametxt.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Middlenametxt.Location = new System.Drawing.Point(413, 98);
-            this.Middlenametxt.Multiline = true;
-            this.Middlenametxt.Name = "Middlenametxt";
-            this.Middlenametxt.Size = new System.Drawing.Size(159, 36);
-            this.Middlenametxt.TabIndex = 3;
-            // 
-            // Extensiontxt
-            // 
-            this.Extensiontxt.AcceptsReturn = true;
-            this.Extensiontxt.AcceptsTab = true;
-            this.Extensiontxt.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.Extensiontxt.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Extensiontxt.Location = new System.Drawing.Point(49, 163);
-            this.Extensiontxt.Multiline = true;
-            this.Extensiontxt.Name = "Extensiontxt";
-            this.Extensiontxt.Size = new System.Drawing.Size(159, 36);
-            this.Extensiontxt.TabIndex = 4;
-            // 
-            // contacttxt
-            // 
-            this.contacttxt.AcceptsReturn = true;
-            this.contacttxt.AcceptsTab = true;
-            this.contacttxt.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.contacttxt.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.contacttxt.Location = new System.Drawing.Point(49, 226);
-            this.contacttxt.Multiline = true;
-            this.contacttxt.Name = "contacttxt";
-            this.contacttxt.Size = new System.Drawing.Size(159, 36);
-            this.contacttxt.TabIndex = 5;
-            // 
-            // emailtxt
-            // 
-            this.emailtxt.AcceptsReturn = true;
-            this.emailtxt.AcceptsTab = true;
-            this.emailtxt.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.emailtxt.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.emailtxt.Location = new System.Drawing.Point(233, 227);
-            this.emailtxt.Multiline = true;
-            this.emailtxt.Name = "emailtxt";
-            this.emailtxt.Size = new System.Drawing.Size(159, 36);
-            this.emailtxt.TabIndex = 6;
-            // 
-            // HouseNumbertxt
-            // 
-            this.HouseNumbertxt.AcceptsReturn = true;
-            this.HouseNumbertxt.AcceptsTab = true;
-            this.HouseNumbertxt.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.HouseNumbertxt.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.HouseNumbertxt.Location = new System.Drawing.Point(17, 91);
-            this.HouseNumbertxt.Multiline = true;
-            this.HouseNumbertxt.Name = "HouseNumbertxt";
-            this.HouseNumbertxt.Size = new System.Drawing.Size(256, 36);
-            this.HouseNumbertxt.TabIndex = 64;
-            // 
-            // Streettxt
-            // 
-            this.Streettxt.AcceptsReturn = true;
-            this.Streettxt.AcceptsTab = true;
-            this.Streettxt.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.Streettxt.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Streettxt.Location = new System.Drawing.Point(301, 91);
-            this.Streettxt.Multiline = true;
-            this.Streettxt.Name = "Streettxt";
-            this.Streettxt.Size = new System.Drawing.Size(256, 36);
-            this.Streettxt.TabIndex = 70;
-            // 
-            // barangaytxt
-            // 
-            this.barangaytxt.AcceptsReturn = true;
-            this.barangaytxt.AcceptsTab = true;
-            this.barangaytxt.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.barangaytxt.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.barangaytxt.Location = new System.Drawing.Point(17, 168);
-            this.barangaytxt.Multiline = true;
-            this.barangaytxt.Name = "barangaytxt";
-            this.barangaytxt.Size = new System.Drawing.Size(256, 36);
-            this.barangaytxt.TabIndex = 71;
-            // 
-            // citymunicipaltxt
-            // 
-            this.citymunicipaltxt.AcceptsReturn = true;
-            this.citymunicipaltxt.AcceptsTab = true;
-            this.citymunicipaltxt.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.citymunicipaltxt.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.citymunicipaltxt.Location = new System.Drawing.Point(301, 168);
-            this.citymunicipaltxt.Multiline = true;
-            this.citymunicipaltxt.Name = "citymunicipaltxt";
-            this.citymunicipaltxt.Size = new System.Drawing.Size(256, 36);
-            this.citymunicipaltxt.TabIndex = 72;
-            // 
-            // provincetxt
-            // 
-            this.provincetxt.AcceptsReturn = true;
-            this.provincetxt.AcceptsTab = true;
-            this.provincetxt.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.provincetxt.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.provincetxt.Location = new System.Drawing.Point(17, 242);
-            this.provincetxt.Multiline = true;
-            this.provincetxt.Name = "provincetxt";
-            this.provincetxt.Size = new System.Drawing.Size(256, 36);
-            this.provincetxt.TabIndex = 73;
-            // 
-            // zipcodetxt
-            // 
-            this.zipcodetxt.AcceptsReturn = true;
-            this.zipcodetxt.AcceptsTab = true;
-            this.zipcodetxt.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.zipcodetxt.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.zipcodetxt.Location = new System.Drawing.Point(301, 242);
-            this.zipcodetxt.Multiline = true;
-            this.zipcodetxt.Name = "zipcodetxt";
-            this.zipcodetxt.Size = new System.Drawing.Size(256, 36);
-            this.zipcodetxt.TabIndex = 74;
             // 
             // ProfileEdit
             // 

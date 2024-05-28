@@ -400,7 +400,7 @@
             // 
             // bunifuElipse1
             // 
-            this.bunifuElipse1.ElipseRadius = 120;
+            this.bunifuElipse1.ElipseRadius = 70;
             this.bunifuElipse1.TargetControl = this;
             // 
             // AddTask

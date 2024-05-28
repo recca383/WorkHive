@@ -84,7 +84,7 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(44)))), ((int)(((byte)(49)))));
             this.pictureBox1.Image = global::WorkHive.Properties.Resources.Tasks___PENDING_SOLO;
-            this.pictureBox1.Location = new System.Drawing.Point(36, 50);
+            this.pictureBox1.Location = new System.Drawing.Point(32, 49);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(56, 65);

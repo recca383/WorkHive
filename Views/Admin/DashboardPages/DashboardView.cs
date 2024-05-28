@@ -62,9 +62,12 @@ namespace WorkHive.Views.Pages
                 EventsPanel.Controls.Add(new BirthdayCard(member));
 
             }
-            foreach(TaskModel task in tasks)
+            foreach (ProjectModel project in projects)
             {
-                TasksSummary.Controls.Add(new TaskSummaryCard(task.ProjectName, task.TaskName, task.Deadline, task.TaskID));
+                foreach (TaskModel task in tasks)
+                {
+                    TasksSummary.Controls.Add(new TaskSummaryCard(project.ProjectName, task.TaskName, task.Deadline, task.TaskID));
+                }
             }
             int finishedtasks = tasks
                 .Where(t => t.TaskStatus == Status.Finished)
@@ -107,6 +110,56 @@ namespace WorkHive.Views.Pages
             if (projectID == 0) projectID = projects.Count() - 1 ;
             else projectID--;
             RefreshElements();
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label9_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label10_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel7_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void DashboardView_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

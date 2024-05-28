@@ -46,11 +46,11 @@
             // TasksName
             // 
             this.TasksName.AutoSize = true;
-            this.TasksName.Font = new System.Drawing.Font("Microsoft Sans Serif", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TasksName.Location = new System.Drawing.Point(15, 14);
+            this.TasksName.Font = new System.Drawing.Font("Montserrat", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TasksName.Location = new System.Drawing.Point(11, 10);
             this.TasksName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.TasksName.Name = "TasksName";
-            this.TasksName.Size = new System.Drawing.Size(143, 51);
+            this.TasksName.Size = new System.Drawing.Size(154, 61);
             this.TasksName.TabIndex = 2;
             this.TasksName.Text = "Tasks";
             // 
@@ -175,8 +175,8 @@
             // StatusFilter
             // 
             this.StatusFilter.BackColor = System.Drawing.SystemColors.Control;
-            this.StatusFilter.BorderRadius = 1;
-            this.StatusFilter.Color = System.Drawing.Color.Gold;
+            this.StatusFilter.BorderRadius = 5;
+            this.StatusFilter.Color = System.Drawing.Color.Goldenrod;
             this.StatusFilter.Direction = Bunifu.UI.WinForms.BunifuDropdown.Directions.Down;
             this.StatusFilter.DisabledColor = System.Drawing.Color.Gray;
             this.StatusFilter.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
@@ -186,6 +186,7 @@
             this.StatusFilter.FillDropDown = false;
             this.StatusFilter.FillIndicator = false;
             this.StatusFilter.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.StatusFilter.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.StatusFilter.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.StatusFilter.FormattingEnabled = true;
             this.StatusFilter.Icon = null;
@@ -195,8 +196,8 @@
             this.StatusFilter.ItemBorderColor = System.Drawing.Color.White;
             this.StatusFilter.ItemForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.StatusFilter.ItemHeight = 26;
-            this.StatusFilter.ItemHighLightColor = System.Drawing.Color.Gold;
-            this.StatusFilter.Location = new System.Drawing.Point(788, 30);
+            this.StatusFilter.ItemHighLightColor = System.Drawing.Color.Goldenrod;
+            this.StatusFilter.Location = new System.Drawing.Point(775, 34);
             this.StatusFilter.Margin = new System.Windows.Forms.Padding(4);
             this.StatusFilter.Name = "StatusFilter";
             this.StatusFilter.Size = new System.Drawing.Size(288, 32);
@@ -207,8 +208,8 @@
             // ProjectFilter
             // 
             this.ProjectFilter.BackColor = System.Drawing.SystemColors.Control;
-            this.ProjectFilter.BorderRadius = 1;
-            this.ProjectFilter.Color = System.Drawing.Color.Gold;
+            this.ProjectFilter.BorderRadius = 5;
+            this.ProjectFilter.Color = System.Drawing.Color.Goldenrod;
             this.ProjectFilter.Direction = Bunifu.UI.WinForms.BunifuDropdown.Directions.Down;
             this.ProjectFilter.DisabledColor = System.Drawing.Color.Gray;
             this.ProjectFilter.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
@@ -218,6 +219,7 @@
             this.ProjectFilter.FillDropDown = false;
             this.ProjectFilter.FillIndicator = false;
             this.ProjectFilter.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ProjectFilter.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ProjectFilter.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ProjectFilter.FormattingEnabled = true;
             this.ProjectFilter.Icon = null;
@@ -227,8 +229,8 @@
             this.ProjectFilter.ItemBorderColor = System.Drawing.Color.White;
             this.ProjectFilter.ItemForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ProjectFilter.ItemHeight = 26;
-            this.ProjectFilter.ItemHighLightColor = System.Drawing.Color.Gold;
-            this.ProjectFilter.Location = new System.Drawing.Point(394, 30);
+            this.ProjectFilter.ItemHighLightColor = System.Drawing.Color.Goldenrod;
+            this.ProjectFilter.Location = new System.Drawing.Point(363, 34);
             this.ProjectFilter.Margin = new System.Windows.Forms.Padding(4);
             this.ProjectFilter.Name = "ProjectFilter";
             this.ProjectFilter.Size = new System.Drawing.Size(288, 32);
@@ -239,20 +241,23 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(719, 42);
+            this.label1.Font = new System.Drawing.Font("Montserrat", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(687, 39);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(53, 16);
+            this.label1.Size = new System.Drawing.Size(80, 24);
             this.label1.TabIndex = 22;
             this.label1.Text = "Status : ";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(235, 39);
+            this.label2.Font = new System.Drawing.Font("Montserrat", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(220, 39);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(98, 16);
+            this.label2.Size = new System.Drawing.Size(144, 24);
             this.label2.TabIndex = 23;
             this.label2.Text = "Project Name : ";
             // 
