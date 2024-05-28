@@ -19,15 +19,12 @@ namespace WorkHive.Views.Cards
     public partial class MemberTaskCard : UserControl
     {
         TaskModel task;
-        public static event Action OnUpdate;
 
         public MemberTaskCard(TaskModel task)
         {
-
             this.task = task;
             InitializeComponent();
             InitializeElements();
-            OnUpdate += InitializeElements;
         }
 
         private void InitializeElements()
@@ -38,15 +35,8 @@ namespace WorkHive.Views.Cards
             if (task.ProjectAssigned is null) lblProjectName.Text = "No Project";
             else lblProjectName.Text = task.ProjectAssigned.ProjectName;
             
-            switch (task.TaskStatus)
-            {
-                case Status.Ongoing:
-                    btnMarkAsDone.Text = "Mark As Done";
-                    break;
-                case Status.Finished:
-                    btnMarkAsDone.Text = "Mark As Not Done";
-                    break;
-            }
+   
+            
 
             pictureboxFinished.Image = task.TaskImage;
         }
@@ -57,8 +47,6 @@ namespace WorkHive.Views.Cards
             TaskViewMember editTask = (TaskViewMember)this.Parent.Parent;
 
             editTask.btnEdittasks_Click(sender, e, task.TaskID);
-
-           OnUpdate();
 
         }
 

@@ -30,14 +30,8 @@ namespace WorkHive.Views.Cards
         {
             this.task = task; 
             InitializeComponent();
-            InitializeElements();
-          
-           
+            InitializeElements();                   
         }
-
-
-       
-
         private void InitializeElements()
         {
             lblTask_Title.Text = task.TaskName;

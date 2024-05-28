@@ -45,7 +45,7 @@
             // 
             this.TasksFlow.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
             this.TasksFlow.Location = new System.Drawing.Point(47, 86);
-            this.TasksFlow.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TasksFlow.Margin = new System.Windows.Forms.Padding(4);
             this.TasksFlow.Name = "TasksFlow";
             this.TasksFlow.Size = new System.Drawing.Size(1157, 631);
             this.TasksFlow.TabIndex = 10;
@@ -82,7 +82,7 @@
             this.bunifuVScrollBar1.DurationBeforeShrink = 2000;
             this.bunifuVScrollBar1.LargeChange = 10;
             this.bunifuVScrollBar1.Location = new System.Drawing.Point(1219, 89);
-            this.bunifuVScrollBar1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.bunifuVScrollBar1.Margin = new System.Windows.Forms.Padding(5);
             this.bunifuVScrollBar1.Maximum = 100;
             this.bunifuVScrollBar1.Minimum = 0;
             this.bunifuVScrollBar1.MinimumThumbLength = 18;
@@ -111,20 +111,21 @@
             this.RefreshButton.Image = global::WorkHive.Properties.Resources.refresh;
             this.RefreshButton.IsCircle = false;
             this.RefreshButton.Location = new System.Drawing.Point(1191, 34);
-            this.RefreshButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.RefreshButton.Margin = new System.Windows.Forms.Padding(4);
             this.RefreshButton.Name = "RefreshButton";
             this.RefreshButton.Size = new System.Drawing.Size(37, 32);
             this.RefreshButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.RefreshButton.TabIndex = 20;
             this.RefreshButton.TabStop = false;
             this.RefreshButton.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Custom;
+            this.RefreshButton.Click += new System.EventHandler(this.RefreshButton_Click);
             // 
             // AddTaskPanel
             // 
             this.AddTaskPanel.BackColor = System.Drawing.Color.Transparent;
             this.AddTaskPanel.ForeColor = System.Drawing.Color.Transparent;
             this.AddTaskPanel.Location = new System.Drawing.Point(394, 4);
-            this.AddTaskPanel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.AddTaskPanel.Margin = new System.Windows.Forms.Padding(4);
             this.AddTaskPanel.Name = "AddTaskPanel";
             this.AddTaskPanel.Size = new System.Drawing.Size(39, 44);
             this.AddTaskPanel.TabIndex = 26;
@@ -167,7 +168,7 @@
             this.ProjectFilter.ItemHeight = 26;
             this.ProjectFilter.ItemHighLightColor = System.Drawing.Color.Gold;
             this.ProjectFilter.Location = new System.Drawing.Point(367, 34);
-            this.ProjectFilter.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ProjectFilter.Margin = new System.Windows.Forms.Padding(4);
             this.ProjectFilter.Name = "ProjectFilter";
             this.ProjectFilter.Size = new System.Drawing.Size(288, 32);
             this.ProjectFilter.TabIndex = 24;
@@ -199,7 +200,7 @@
             this.StatusFilter.ItemHeight = 26;
             this.StatusFilter.ItemHighLightColor = System.Drawing.Color.Gold;
             this.StatusFilter.Location = new System.Drawing.Point(779, 34);
-            this.StatusFilter.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.StatusFilter.Margin = new System.Windows.Forms.Padding(4);
             this.StatusFilter.Name = "StatusFilter";
             this.StatusFilter.Size = new System.Drawing.Size(288, 32);
             this.StatusFilter.TabIndex = 25;

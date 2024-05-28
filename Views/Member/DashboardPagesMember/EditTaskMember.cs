@@ -57,7 +57,7 @@ namespace WorkHive.Views.Member.DashboardPagesMember
         private void EditTaskExitbtn_Click(object sender, EventArgs e)
         {
             TaskViewMember taskview = (TaskViewMember)Parent.Parent;
-            taskview.btnAll_Click(sender, e);
+            taskview.RefreshButton_Click(sender, e);
             this.Parent.Controls.Remove(this);
         }
     }
