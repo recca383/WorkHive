@@ -49,23 +49,23 @@
             // Status
             // 
             this.Status.AutoSize = true;
-            this.Status.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Status.Font = new System.Drawing.Font("Montserrat", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Status.Location = new System.Drawing.Point(183, 261);
             this.Status.Name = "Status";
-            this.Status.Size = new System.Drawing.Size(66, 16);
+            this.Status.Size = new System.Drawing.Size(66, 18);
             this.Status.TabIndex = 15;
             this.Status.Text = "Finished";
             // 
             // ProjectName
             // 
-            this.ProjectName.AutoSize = true;
-            this.ProjectName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ProjectName.Location = new System.Drawing.Point(64, 6);
+            this.ProjectName.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ProjectName.Location = new System.Drawing.Point(3, 6);
             this.ProjectName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.ProjectName.Name = "ProjectName";
-            this.ProjectName.Size = new System.Drawing.Size(130, 22);
+            this.ProjectName.Size = new System.Drawing.Size(280, 22);
             this.ProjectName.TabIndex = 17;
             this.ProjectName.Text = "Project Name";
+            this.ProjectName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label1
             // 
@@ -79,10 +79,10 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Montserrat", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(66, 261);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(65, 16);
+            this.label2.Size = new System.Drawing.Size(68, 18);
             this.label2.TabIndex = 18;
             this.label2.Text = "Ongoing";
             // 

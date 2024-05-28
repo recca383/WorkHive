@@ -40,13 +40,12 @@
             // 
             // Dashboardlbl
             // 
-            this.Dashboardlbl.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Dashboardlbl.AutoSize = true;
-            this.Dashboardlbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Dashboardlbl.Location = new System.Drawing.Point(15, 11);
+            this.Dashboardlbl.Font = new System.Drawing.Font("Montserrat", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Dashboardlbl.Location = new System.Drawing.Point(11, 10);
             this.Dashboardlbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Dashboardlbl.Name = "Dashboardlbl";
-            this.Dashboardlbl.Size = new System.Drawing.Size(187, 51);
+            this.Dashboardlbl.Size = new System.Drawing.Size(216, 61);
             this.Dashboardlbl.TabIndex = 1;
             this.Dashboardlbl.Text = "Projects";
             // 
