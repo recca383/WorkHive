@@ -134,7 +134,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(167)))), ((int)(((byte)(167)))), ((int)(((byte)(167)))));
-            this.label1.Location = new System.Drawing.Point(18, 107);
+            this.label1.Location = new System.Drawing.Point(13, 107);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(84, 69);
             this.label1.TabIndex = 13;
@@ -162,7 +162,7 @@
             this.lblAddress.CursorType = null;
             this.lblAddress.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAddress.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(167)))), ((int)(((byte)(167)))), ((int)(((byte)(167)))));
-            this.lblAddress.Location = new System.Drawing.Point(109, 151);
+            this.lblAddress.Location = new System.Drawing.Point(109, 156);
             this.lblAddress.Margin = new System.Windows.Forms.Padding(4);
             this.lblAddress.Name = "lblAddress";
             this.lblAddress.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -194,7 +194,7 @@
             this.lblProfileEmail.CursorType = null;
             this.lblProfileEmail.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblProfileEmail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(167)))), ((int)(((byte)(167)))), ((int)(((byte)(167)))));
-            this.lblProfileEmail.Location = new System.Drawing.Point(109, 126);
+            this.lblProfileEmail.Location = new System.Drawing.Point(109, 131);
             this.lblProfileEmail.Margin = new System.Windows.Forms.Padding(4);
             this.lblProfileEmail.Name = "lblProfileEmail";
             this.lblProfileEmail.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -210,7 +210,7 @@
             this.lblProfilePhone.CursorType = null;
             this.lblProfilePhone.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblProfilePhone.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(167)))), ((int)(((byte)(167)))), ((int)(((byte)(167)))));
-            this.lblProfilePhone.Location = new System.Drawing.Point(109, 101);
+            this.lblProfilePhone.Location = new System.Drawing.Point(109, 106);
             this.lblProfilePhone.Margin = new System.Windows.Forms.Padding(4);
             this.lblProfilePhone.Name = "lblProfilePhone";
             this.lblProfilePhone.RightToLeft = System.Windows.Forms.RightToLeft.No;
