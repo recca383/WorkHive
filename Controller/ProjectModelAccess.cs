@@ -51,11 +51,10 @@ namespace WorkHive.Controller
                 int totaltasks = selectedtasks.Count(t => t.TaskStatus != Status.Archived);
                 int finishedtasks = selectedtasks.Count(t => t.TaskStatus == Status.Finished);
 
-                float average = (float)finishedtasks / totaltasks * 100;
-                int averageprogress = (int) average;
-                currentproject.Progress = averageprogress;
+                decimal average = (decimal)finishedtasks / totaltasks * 100;
+                currentproject.Progress = (int)Math.Round(average, 2);
 
-                return averageprogress;
+                return (int)Math.Round(average, 2);
             }
             return 0;
         }

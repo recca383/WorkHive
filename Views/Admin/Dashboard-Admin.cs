@@ -187,7 +187,21 @@ namespace WorkHive.Views
             ProfileAdmin profile = new ProfileAdmin(CurrentUser);
             profilepanel.Controls.Add(profile);
         }
-       
+
+        /*private void Notificationbtn_Click(object sender, EventArgs e)
+        {
+            profilepanel.Parent = ViewPanel;
+            profilepanel.BringToFront();
+            if (profilepanel.Size == new Size(0, 0))
+            {
+                profilepanel.Size = new Size(283, 370);
+
+            }
+            else
+            {
+                profilepanel.Size = new Size(0, 0);
+            }
+        }*/
     }
 
     public class CircularPictureBox : PictureBox

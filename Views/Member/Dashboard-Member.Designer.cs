@@ -100,6 +100,7 @@
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pictureBox3.TabIndex = 2;
             this.pictureBox3.TabStop = false;
+            this.pictureBox3.Visible = false;
             // 
             // ProfilePicBoxMember
             // 
@@ -120,7 +121,7 @@
             this.btnMenuMember.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(147)))), ((int)(((byte)(47)))));
             this.btnMenuMember.Image = ((System.Drawing.Image)(resources.GetObject("btnMenuMember.Image")));
             this.btnMenuMember.Location = new System.Drawing.Point(4, 11);
-            this.btnMenuMember.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnMenuMember.Margin = new System.Windows.Forms.Padding(4);
             this.btnMenuMember.Name = "btnMenuMember";
             this.btnMenuMember.Size = new System.Drawing.Size(61, 78);
             this.btnMenuMember.TabIndex = 0;

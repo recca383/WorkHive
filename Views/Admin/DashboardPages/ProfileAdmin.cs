@@ -66,7 +66,7 @@ namespace WorkHive.Views.Admin
         {
             Dashboard_Admin dashboard_Admin = (Dashboard_Admin) ParentForm;
             dashboard_Admin.btnChats_Click_1(sender, e);
-            //lagyan mo okoj
+            
         }
     }
 }
