@@ -90,7 +90,7 @@
             this.Notificationbtn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.Notificationbtn.TabIndex = 2;
             this.Notificationbtn.TabStop = false;
-            this.Notificationbtn.Click += new System.EventHandler(this.Notificationbtn_Click);
+         
             // 
             // btnMenu
             // 
