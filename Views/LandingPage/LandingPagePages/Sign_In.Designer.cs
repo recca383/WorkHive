@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Sign_In));
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
@@ -43,8 +42,6 @@
             this.btnSignUp = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.btnSignIn = new Bunifu.Framework.UI.BunifuFlatButton();
             this.ShowPassword = new WorkHive.Views.CircularPictureBox();
-            this.SEmailtt = new Bunifu.UI.WinForms.BunifuToolTip(this.components);
-            this.SPasstt = new Bunifu.UI.WinForms.BunifuToolTip(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.ShowPassword)).BeginInit();
             this.SuspendLayout();
             // 
@@ -57,12 +54,6 @@
             this.label3.Size = new System.Drawing.Size(264, 52);
             this.label3.TabIndex = 7;
             this.label3.Text = "Welcome!";
-            this.SEmailtt.SetToolTip(this.label3, "");
-            this.SPasstt.SetToolTip(this.label3, "");
-            this.SEmailtt.SetToolTipIcon(this.label3, null);
-            this.SPasstt.SetToolTipIcon(this.label3, null);
-            this.SPasstt.SetToolTipTitle(this.label3, "");
-            this.SEmailtt.SetToolTipTitle(this.label3, "");
             // 
             // txtPassword
             // 
@@ -89,12 +80,6 @@
             this.txtPassword.Size = new System.Drawing.Size(500, 46);
             this.txtPassword.TabIndex = 2;
             this.txtPassword.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.SEmailtt.SetToolTip(this.txtPassword, "");
-            this.SPasstt.SetToolTip(this.txtPassword, "Enter your Password");
-            this.SEmailtt.SetToolTipIcon(this.txtPassword, null);
-            this.SPasstt.SetToolTipIcon(this.txtPassword, null);
-            this.SPasstt.SetToolTipTitle(this.txtPassword, "");
-            this.SEmailtt.SetToolTipTitle(this.txtPassword, "");
             this.txtPassword.OnValueChanged += new System.EventHandler(this.txtPassword_OnValueChanged);
             this.txtPassword.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtPassword_KeyDown);
             // 
@@ -120,12 +105,6 @@
             this.txtEmail.Size = new System.Drawing.Size(500, 46);
             this.txtEmail.TabIndex = 1;
             this.txtEmail.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.SEmailtt.SetToolTip(this.txtEmail, "Enter your Email");
-            this.SPasstt.SetToolTip(this.txtEmail, "");
-            this.SEmailtt.SetToolTipIcon(this.txtEmail, null);
-            this.SPasstt.SetToolTipIcon(this.txtEmail, null);
-            this.SPasstt.SetToolTipTitle(this.txtEmail, "");
-            this.SEmailtt.SetToolTipTitle(this.txtEmail, "");
             // 
             // btnForgotPass
             // 
@@ -189,12 +168,6 @@
             this.btnForgotPass.TabIndex = 15;
             this.btnForgotPass.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnForgotPass.TextMarginLeft = 0;
-            this.SPasstt.SetToolTip(this.btnForgotPass, "");
-            this.SEmailtt.SetToolTip(this.btnForgotPass, "");
-            this.SPasstt.SetToolTipIcon(this.btnForgotPass, null);
-            this.SEmailtt.SetToolTipIcon(this.btnForgotPass, null);
-            this.SPasstt.SetToolTipTitle(this.btnForgotPass, "");
-            this.SEmailtt.SetToolTipTitle(this.btnForgotPass, "");
             this.btnForgotPass.UseDefaultRadiusAndThickness = true;
             this.btnForgotPass.Click += new System.EventHandler(this.btnForgotPass_Click);
             // 
@@ -261,12 +234,6 @@
             this.btnSignUp.TabIndex = 14;
             this.btnSignUp.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnSignUp.TextMarginLeft = 0;
-            this.SPasstt.SetToolTip(this.btnSignUp, "");
-            this.SEmailtt.SetToolTip(this.btnSignUp, "");
-            this.SPasstt.SetToolTipIcon(this.btnSignUp, null);
-            this.SEmailtt.SetToolTipIcon(this.btnSignUp, null);
-            this.SPasstt.SetToolTipTitle(this.btnSignUp, "");
-            this.SEmailtt.SetToolTipTitle(this.btnSignUp, "");
             this.btnSignUp.UseDefaultRadiusAndThickness = true;
             this.btnSignUp.Click += new System.EventHandler(this.btnSignUp_Click);
             // 
@@ -308,12 +275,6 @@
             this.btnSignIn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnSignIn.Textcolor = System.Drawing.Color.White;
             this.btnSignIn.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SEmailtt.SetToolTip(this.btnSignIn, "");
-            this.SPasstt.SetToolTip(this.btnSignIn, "");
-            this.SEmailtt.SetToolTipIcon(this.btnSignIn, null);
-            this.SPasstt.SetToolTipIcon(this.btnSignIn, null);
-            this.SPasstt.SetToolTipTitle(this.btnSignIn, "");
-            this.SEmailtt.SetToolTipTitle(this.btnSignIn, "");
             this.btnSignIn.Click += new System.EventHandler(this.btnSignIn_Click);
             // 
             // ShowPassword
@@ -327,83 +288,7 @@
             this.ShowPassword.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.ShowPassword.TabIndex = 31;
             this.ShowPassword.TabStop = false;
-            this.SPasstt.SetToolTip(this.ShowPassword, "");
-            this.SEmailtt.SetToolTip(this.ShowPassword, "");
-            this.SEmailtt.SetToolTipIcon(this.ShowPassword, null);
-            this.SPasstt.SetToolTipIcon(this.ShowPassword, null);
-            this.SPasstt.SetToolTipTitle(this.ShowPassword, "");
-            this.SEmailtt.SetToolTipTitle(this.ShowPassword, "");
             this.ShowPassword.Click += new System.EventHandler(this.ShowPassword_Click);
-            // 
-            // SEmailtt
-            // 
-            this.SEmailtt.Active = true;
-            this.SEmailtt.AlignTextWithTitle = true;
-            this.SEmailtt.AllowAutoClose = false;
-            this.SEmailtt.AllowFading = true;
-            this.SEmailtt.AutoCloseDuration = 1000;
-            this.SEmailtt.BackColor = System.Drawing.SystemColors.Control;
-            this.SEmailtt.BorderColor = System.Drawing.Color.Gold;
-            this.SEmailtt.ClickToShowDisplayControl = false;
-            this.SEmailtt.ConvertNewlinesToBreakTags = true;
-            this.SEmailtt.DisplayControl = null;
-            this.SEmailtt.EntryAnimationSpeed = 350;
-            this.SEmailtt.ExitAnimationSpeed = 200;
-            this.SEmailtt.GenerateAutoCloseDuration = false;
-            this.SEmailtt.IconMargin = 6;
-            this.SEmailtt.InitialDelay = 0;
-            this.SEmailtt.Name = "SEmailtt";
-            this.SEmailtt.Opacity = 1D;
-            this.SEmailtt.OverrideToolTipTitles = false;
-            this.SEmailtt.Padding = new System.Windows.Forms.Padding(10);
-            this.SEmailtt.ReshowDelay = 10;
-            this.SEmailtt.ShowAlways = false;
-            this.SEmailtt.ShowBorders = true;
-            this.SEmailtt.ShowIcons = true;
-            this.SEmailtt.ShowShadows = true;
-            this.SEmailtt.Tag = "";
-            this.SEmailtt.TextFont = new System.Drawing.Font("Segoe UI", 9F);
-            this.SEmailtt.TextForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.SEmailtt.TextMargin = 2;
-            this.SEmailtt.TitleFont = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
-            this.SEmailtt.TitleForeColor = System.Drawing.Color.Black;
-            this.SEmailtt.ToolTipPosition = new System.Drawing.Point(0, 0);
-            this.SEmailtt.ToolTipTitle = null;
-            // 
-            // SPasstt
-            // 
-            this.SPasstt.Active = true;
-            this.SPasstt.AlignTextWithTitle = true;
-            this.SPasstt.AllowAutoClose = false;
-            this.SPasstt.AllowFading = true;
-            this.SPasstt.AutoCloseDuration = 1000;
-            this.SPasstt.BackColor = System.Drawing.SystemColors.Control;
-            this.SPasstt.BorderColor = System.Drawing.Color.Gold;
-            this.SPasstt.ClickToShowDisplayControl = false;
-            this.SPasstt.ConvertNewlinesToBreakTags = true;
-            this.SPasstt.DisplayControl = null;
-            this.SPasstt.EntryAnimationSpeed = 350;
-            this.SPasstt.ExitAnimationSpeed = 200;
-            this.SPasstt.GenerateAutoCloseDuration = false;
-            this.SPasstt.IconMargin = 6;
-            this.SPasstt.InitialDelay = 0;
-            this.SPasstt.Name = "SPasstt";
-            this.SPasstt.Opacity = 1D;
-            this.SPasstt.OverrideToolTipTitles = false;
-            this.SPasstt.Padding = new System.Windows.Forms.Padding(10);
-            this.SPasstt.ReshowDelay = 100;
-            this.SPasstt.ShowAlways = false;
-            this.SPasstt.ShowBorders = true;
-            this.SPasstt.ShowIcons = true;
-            this.SPasstt.ShowShadows = true;
-            this.SPasstt.Tag = "";
-            this.SPasstt.TextFont = new System.Drawing.Font("Segoe UI", 9F);
-            this.SPasstt.TextForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.SPasstt.TextMargin = 2;
-            this.SPasstt.TitleFont = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
-            this.SPasstt.TitleForeColor = System.Drawing.Color.Black;
-            this.SPasstt.ToolTipPosition = new System.Drawing.Point(0, 0);
-            this.SPasstt.ToolTipTitle = null;
             // 
             // Sign_In
             // 
@@ -420,12 +305,6 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Sign_In";
             this.Size = new System.Drawing.Size(660, 809);
-            this.SPasstt.SetToolTip(this, "");
-            this.SEmailtt.SetToolTip(this, "");
-            this.SPasstt.SetToolTipIcon(this, null);
-            this.SEmailtt.SetToolTipIcon(this, null);
-            this.SPasstt.SetToolTipTitle(this, "");
-            this.SEmailtt.SetToolTipTitle(this, "");
             ((System.ComponentModel.ISupportInitialize)(this.ShowPassword)).EndInit();
             this.ResumeLayout(false);
 
@@ -439,7 +318,5 @@
         private Bunifu.Framework.UI.BunifuMaterialTextbox txtPassword;
         private Bunifu.Framework.UI.BunifuMaterialTextbox txtEmail;
         private CircularPictureBox ShowPassword;
-        private Bunifu.UI.WinForms.BunifuToolTip SEmailtt;
-        private Bunifu.UI.WinForms.BunifuToolTip SPasstt;
     }
 }
