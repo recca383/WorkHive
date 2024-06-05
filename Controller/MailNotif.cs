@@ -36,7 +36,7 @@ namespace WorkHive.Controller
             var sender = new SmtpSender(() => new SmtpClient("smtp.gmail.com", 587)
             {
                 DeliveryMethod = SmtpDeliveryMethod.Network,
-                Credentials = new NetworkCredential("0323-2059@lspu.edu.ph", "Huskar@2002"),
+                Credentials = new NetworkCredential("workhive00@gmail.com", "workhive123#"),
                 EnableSsl = true,
 
             });
@@ -49,7 +49,7 @@ namespace WorkHive.Controller
             var member = members.FirstOrDefault(m => m.Email == emailaddress);
 
             var email = Email
-                .From("0323-2059@lspu.edu.ph", "noreply - WorkHive")
+                .From("workhive00@gmail.com", "noreply - WorkHive")
                 .To(emailaddress)
                 .Subject("WorkHive Notif")
                 .UsingTemplate(template, new { member.FirstName })
